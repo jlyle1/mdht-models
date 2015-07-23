@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -58,8 +54,8 @@ public class CardiacArrestImpl extends ObservationImpl implements CardiacArrest 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCardiacArrestCauseRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CardiacArrestOperations.validateCardiacArrestCauseRelationship(this, diagnostics, context);
+	public boolean validateCardiacArrestCardiacArrestCauseRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CardiacArrestOperations.validateCardiacArrestCardiacArrestCauseRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +63,8 @@ public class CardiacArrestImpl extends ObservationImpl implements CardiacArrest 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCardiacArrestInformantParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CardiacArrestOperations.validateCardiacArrestInformantParticipation(this, diagnostics, context);
+	public boolean validateCardiacArrestCardiacArrestInformantParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CardiacArrestOperations.validateCardiacArrestCardiacArrestInformantParticipation(this, diagnostics, context);
 	}
 
 	/**
@@ -94,10 +90,8 @@ public class CardiacArrestImpl extends ObservationImpl implements CardiacArrest 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCardiacArrestSpontaneousCirculationRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CardiacArrestOperations.validateCardiacArrestSpontaneousCirculationRelationship(
-			this, diagnostics, context);
+	public boolean validateCardiacArrestSpontaneousCirculationRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CardiacArrestOperations.validateCardiacArrestSpontaneousCirculationRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -105,8 +99,7 @@ public class CardiacArrestImpl extends ObservationImpl implements CardiacArrest 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCardiacArrestDestinationRhythmRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateCardiacArrestDestinationRhythmRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CardiacArrestOperations.validateCardiacArrestDestinationRhythmRelationship(this, diagnostics, context);
 	}
 
@@ -115,8 +108,7 @@ public class CardiacArrestImpl extends ObservationImpl implements CardiacArrest 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCardiacArrestArrestRhythmRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateCardiacArrestArrestRhythmRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CardiacArrestOperations.validateCardiacArrestArrestRhythmRelationship(this, diagnostics, context);
 	}
 
@@ -179,8 +171,8 @@ public class CardiacArrestImpl extends ObservationImpl implements CardiacArrest 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CardiacArrest init() {
-		return Initializer.Util.init(this);
+	public boolean validateCardiacArrestCardiacArrestTimingRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CardiacArrestOperations.validateCardiacArrestCardiacArrestTimingRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -188,8 +180,25 @@ public class CardiacArrestImpl extends ObservationImpl implements CardiacArrest 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CardiacArrest init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	public boolean validateCardiacArrestCardiacArrestOutcomeRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CardiacArrestOperations.validateCardiacArrestCardiacArrestOutcomeRelationship(this, diagnostics, context);
 	}
-} // CardiacArrestImpl
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CardiacArrest init() {
+	    return Initializer.Util.init(this);
+	}
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public CardiacArrest init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //CardiacArrestImpl

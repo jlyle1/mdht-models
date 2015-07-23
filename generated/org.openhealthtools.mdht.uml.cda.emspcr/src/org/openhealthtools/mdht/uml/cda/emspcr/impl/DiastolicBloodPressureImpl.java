@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -17,12 +13,12 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
-import org.openhealthtools.mdht.uml.cda.consol.impl.VitalSignObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.DiastolicBloodPressure;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.DiastolicBloodPressureOperations;
+
+import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,7 +29,7 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.DiastolicBloodPressure
  *
  * @generated
  */
-public class DiastolicBloodPressureImpl extends VitalSignObservationImpl implements DiastolicBloodPressure {
+public class DiastolicBloodPressureImpl extends ObservationImpl implements DiastolicBloodPressure {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -51,6 +47,15 @@ public class DiastolicBloodPressureImpl extends VitalSignObservationImpl impleme
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.DIASTOLIC_BLOOD_PRESSURE;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDiastolicBloodPressureTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiastolicBloodPressureOperations.validateDiastolicBloodPressureTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -94,9 +99,8 @@ public class DiastolicBloodPressureImpl extends VitalSignObservationImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateVitalSignObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiastolicBloodPressureOperations.validateVitalSignObservationTemplateId(this, diagnostics, context);
+	public boolean validateDiastolicBloodPressureMethodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiastolicBloodPressureOperations.validateDiastolicBloodPressureMethodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -104,19 +108,16 @@ public class DiastolicBloodPressureImpl extends VitalSignObservationImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public DiastolicBloodPressure init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DiastolicBloodPressure init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // DiastolicBloodPressureImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public DiastolicBloodPressure init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //DiastolicBloodPressureImpl

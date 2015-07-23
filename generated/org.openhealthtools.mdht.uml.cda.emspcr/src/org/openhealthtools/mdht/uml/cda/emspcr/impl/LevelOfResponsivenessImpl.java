@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -122,16 +118,15 @@ public class LevelOfResponsivenessImpl extends ObservationImpl implements LevelO
 	 * @generated
 	 */
 	public LevelOfResponsiveness init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public LevelOfResponsiveness init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // LevelOfResponsivenessImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public LevelOfResponsiveness init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //LevelOfResponsivenessImpl

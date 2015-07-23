@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -60,10 +56,8 @@ public class EMSAdvanceDirectivesSectionImpl extends SectionImpl implements EMSA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSAdvanceDirectivesSectionTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EMSAdvanceDirectivesSectionOperations.validateEMSAdvanceDirectivesSectionTemplateId(
-			this, diagnostics, context);
+	public boolean validateEMSAdvanceDirectivesSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSAdvanceDirectivesSectionOperations.validateEMSAdvanceDirectivesSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -81,8 +75,7 @@ public class EMSAdvanceDirectivesSectionImpl extends SectionImpl implements EMSA
 	 * @generated
 	 */
 	public boolean validateEMSAdvanceDirectivesSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSAdvanceDirectivesSectionOperations.validateEMSAdvanceDirectivesSectionTitle(
-			this, diagnostics, context);
+		return EMSAdvanceDirectivesSectionOperations.validateEMSAdvanceDirectivesSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -99,10 +92,8 @@ public class EMSAdvanceDirectivesSectionImpl extends SectionImpl implements EMSA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSAdvanceDirectivesSectionAdvancedDirectiveObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EMSAdvanceDirectivesSectionOperations.validateEMSAdvanceDirectivesSectionAdvancedDirectiveObservation(
-			this, diagnostics, context);
+	public boolean validateEMSAdvanceDirectivesSectionAdvancedDirectiveObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSAdvanceDirectivesSectionOperations.validateEMSAdvanceDirectivesSectionAdvancedDirectiveObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -120,16 +111,15 @@ public class EMSAdvanceDirectivesSectionImpl extends SectionImpl implements EMSA
 	 * @generated
 	 */
 	public EMSAdvanceDirectivesSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMSAdvanceDirectivesSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // EMSAdvanceDirectivesSectionImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EMSAdvanceDirectivesSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //EMSAdvanceDirectivesSectionImpl

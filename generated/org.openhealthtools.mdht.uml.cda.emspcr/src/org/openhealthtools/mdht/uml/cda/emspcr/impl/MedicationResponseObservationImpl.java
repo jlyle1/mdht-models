@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -58,10 +54,8 @@ public class MedicationResponseObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationResponseObservationTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationResponseObservationOperations.validateMedicationResponseObservationTemplateId(
-			this, diagnostics, context);
+	public boolean validateMedicationResponseObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationResponseObservationOperations.validateMedicationResponseObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -69,10 +63,8 @@ public class MedicationResponseObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationResponseObservationMoodCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationResponseObservationOperations.validateMedicationResponseObservationMoodCode(
-			this, diagnostics, context);
+	public boolean validateMedicationResponseObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationResponseObservationOperations.validateMedicationResponseObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -81,8 +73,7 @@ public class MedicationResponseObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	public boolean validateMedicationResponseObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationResponseObservationOperations.validateMedicationResponseObservationCodeP(
-			this, diagnostics, context);
+		return MedicationResponseObservationOperations.validateMedicationResponseObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +82,7 @@ public class MedicationResponseObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	public boolean validateMedicationResponseObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationResponseObservationOperations.validateMedicationResponseObservationCode(
-			this, diagnostics, context);
+		return MedicationResponseObservationOperations.validateMedicationResponseObservationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -101,8 +91,16 @@ public class MedicationResponseObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	public boolean validateMedicationResponseObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationResponseObservationOperations.validateMedicationResponseObservationValue(
-			this, diagnostics, context);
+		return MedicationResponseObservationOperations.validateMedicationResponseObservationValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationResponseObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationResponseObservationOperations.validateMedicationResponseObservationValueP(this, diagnostics, context);
 	}
 
 	/**
@@ -111,16 +109,15 @@ public class MedicationResponseObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	public MedicationResponseObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MedicationResponseObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // MedicationResponseObservationImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public MedicationResponseObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //MedicationResponseObservationImpl

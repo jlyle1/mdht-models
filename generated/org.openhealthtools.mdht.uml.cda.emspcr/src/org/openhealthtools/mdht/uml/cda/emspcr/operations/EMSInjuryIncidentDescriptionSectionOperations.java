@@ -1,16 +1,15 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClassifier;
 
@@ -64,7 +63,7 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSInjuryIncidentDescriptionSection#getInjuryCauseCategory() <em>Get Injury Cause Category</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSInjuryIncidentDescriptionSection#getInjuryMechanism() <em>Get Injury Mechanism</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSInjuryIncidentDescriptionSection#getTraumaCenterCriteria() <em>Get Trauma Center Criteria</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSInjuryIncidentDescriptionSection#getInjuryRiskFactor() <em>Get Injury Risk Factor</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSInjuryIncidentDescriptionSection#getInjuryRiskFactors() <em>Get Injury Risk Factors</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSInjuryIncidentDescriptionSection#getVehicleImpactArea() <em>Get Vehicle Impact Area</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSInjuryIncidentDescriptionSection#getPatientLocationInVehicle() <em>Get Patient Location In Vehicle</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSInjuryIncidentDescriptionSection#getVehicleOccupantSafetyEquipment() <em>Get Vehicle Occupant Safety Equipment</em>}</li>
@@ -104,8 +103,9 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -117,32 +117,30 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSInjuryIncidentDescriptionSectionTemplateId(
-			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSInjuryIncidentDescriptionSectionTemplateId(EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION);
 			try {
 				VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsInjuryIncidentDescriptionSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsInjuryIncidentDescriptionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("EMSInjuryIncidentDescriptionSectionTemplateId"),
-					new Object[] { emsInjuryIncidentDescriptionSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("EMSInjuryIncidentDescriptionSectionEMSInjuryIncidentDescriptionSectionTemplateId"),
+						 new Object [] { emsInjuryIncidentDescriptionSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -156,9 +154,9 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '67800-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '67800-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEMSInjuryIncidentDescriptionSectionCode(EMSInjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Injury Incident Description Section Code</em>}' invariant operation.
@@ -168,8 +166,9 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -181,31 +180,30 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSInjuryIncidentDescriptionSectionCode(
-			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSInjuryIncidentDescriptionSectionCode(EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION);
 			try {
 				VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsInjuryIncidentDescriptionSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsInjuryIncidentDescriptionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_CODE,
-					EmspcrPlugin.INSTANCE.getString("EMSInjuryIncidentDescriptionSectionCode"),
-					new Object[] { emsInjuryIncidentDescriptionSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_CODE,
+						 EmspcrPlugin.INSTANCE.getString("EMSInjuryIncidentDescriptionSectionEMSInjuryIncidentDescriptionSectionCode"),
+						 new Object [] { emsInjuryIncidentDescriptionSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -229,8 +227,9 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -242,32 +241,30 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSInjuryIncidentDescriptionSectionTitle(
-			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSInjuryIncidentDescriptionSectionTitle(EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION);
 			try {
 				VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsInjuryIncidentDescriptionSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsInjuryIncidentDescriptionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TITLE,
-					EmspcrPlugin.INSTANCE.getString("EMSInjuryIncidentDescriptionSectionTitle"),
-					new Object[] { emsInjuryIncidentDescriptionSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TITLE,
+						 EmspcrPlugin.INSTANCE.getString("EMSInjuryIncidentDescriptionSectionEMSInjuryIncidentDescriptionSectionTitle"),
+						 new Object [] { emsInjuryIncidentDescriptionSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -291,8 +288,9 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -304,31 +302,30 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSInjuryIncidentDescriptionSectionText(
-			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSInjuryIncidentDescriptionSectionText(EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION);
 			try {
 				VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsInjuryIncidentDescriptionSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsInjuryIncidentDescriptionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TEXT,
-					EmspcrPlugin.INSTANCE.getString("EMSInjuryIncidentDescriptionSectionText"),
-					new Object[] { emsInjuryIncidentDescriptionSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TEXT,
+						 EmspcrPlugin.INSTANCE.getString("EMSInjuryIncidentDescriptionSectionEMSInjuryIncidentDescriptionSectionText"),
+						 new Object [] { emsInjuryIncidentDescriptionSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -352,8 +349,9 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_CAUSE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -365,32 +363,30 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSInjuryIncidentDescriptionSectionInjuryCauseCategory(
-			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSInjuryIncidentDescriptionSectionInjuryCauseCategory(EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_CAUSE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION);
 			try {
 				VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_CAUSE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_CAUSE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_CAUSE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsInjuryIncidentDescriptionSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_CAUSE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsInjuryIncidentDescriptionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_CAUSE_CATEGORY,
-					EmspcrPlugin.INSTANCE.getString("EMSInjuryIncidentDescriptionSectionInjuryCauseCategory"),
-					new Object[] { emsInjuryIncidentDescriptionSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_CAUSE_CATEGORY,
+						 EmspcrPlugin.INSTANCE.getString("EMSInjuryIncidentDescriptionSectionEMSInjuryIncidentDescriptionSectionInjuryCauseCategory"),
+						 new Object [] { emsInjuryIncidentDescriptionSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -414,8 +410,9 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_MECHANISM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -427,32 +424,30 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSInjuryIncidentDescriptionSectionInjuryMechanism(
-			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSInjuryIncidentDescriptionSectionInjuryMechanism(EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_MECHANISM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION);
 			try {
 				VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_MECHANISM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_MECHANISM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_MECHANISM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsInjuryIncidentDescriptionSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_MECHANISM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsInjuryIncidentDescriptionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_MECHANISM,
-					EmspcrPlugin.INSTANCE.getString("EMSInjuryIncidentDescriptionSectionInjuryMechanism"),
-					new Object[] { emsInjuryIncidentDescriptionSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_MECHANISM,
+						 EmspcrPlugin.INSTANCE.getString("EMSInjuryIncidentDescriptionSectionEMSInjuryIncidentDescriptionSectionInjuryMechanism"),
+						 new Object [] { emsInjuryIncidentDescriptionSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -476,8 +471,9 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TRAUMA_CENTER_CRITERIA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -489,32 +485,30 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSInjuryIncidentDescriptionSectionTraumaCenterCriteria(
-			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSInjuryIncidentDescriptionSectionTraumaCenterCriteria(EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TRAUMA_CENTER_CRITERIA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION);
 			try {
 				VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TRAUMA_CENTER_CRITERIA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TRAUMA_CENTER_CRITERIA__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TRAUMA_CENTER_CRITERIA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsInjuryIncidentDescriptionSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TRAUMA_CENTER_CRITERIA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsInjuryIncidentDescriptionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TRAUMA_CENTER_CRITERIA,
-					EmspcrPlugin.INSTANCE.getString("EMSInjuryIncidentDescriptionSectionTraumaCenterCriteria"),
-					new Object[] { emsInjuryIncidentDescriptionSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TRAUMA_CENTER_CRITERIA,
+						 EmspcrPlugin.INSTANCE.getString("EMSInjuryIncidentDescriptionSectionEMSInjuryIncidentDescriptionSectionTraumaCenterCriteria"),
+						 new Object [] { emsInjuryIncidentDescriptionSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -528,7 +522,7 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_RISK_FACTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::InjuryRiskFactor) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
+	protected static final String VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_RISK_FACTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::InjuryRiskFactor) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEMSInjuryIncidentDescriptionSectionInjuryRiskFactor(EMSInjuryIncidentDescriptionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Injury Incident Description Section Injury Risk Factor</em>}' invariant operation.
@@ -538,8 +532,9 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_RISK_FACTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -551,32 +546,30 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSInjuryIncidentDescriptionSectionInjuryRiskFactor(
-			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSInjuryIncidentDescriptionSectionInjuryRiskFactor(EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_RISK_FACTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION);
 			try {
 				VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_RISK_FACTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_RISK_FACTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_RISK_FACTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsInjuryIncidentDescriptionSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_RISK_FACTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsInjuryIncidentDescriptionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_RISK_FACTOR,
-					EmspcrPlugin.INSTANCE.getString("EMSInjuryIncidentDescriptionSectionInjuryRiskFactor"),
-					new Object[] { emsInjuryIncidentDescriptionSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_INJURY_RISK_FACTOR,
+						 EmspcrPlugin.INSTANCE.getString("EMSInjuryIncidentDescriptionSectionEMSInjuryIncidentDescriptionSectionInjuryRiskFactor"),
+						 new Object [] { emsInjuryIncidentDescriptionSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -600,8 +593,9 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_IMPACT_AREA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -613,32 +607,30 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSInjuryIncidentDescriptionSectionVehicleImpactArea(
-			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSInjuryIncidentDescriptionSectionVehicleImpactArea(EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_IMPACT_AREA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION);
 			try {
 				VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_IMPACT_AREA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_IMPACT_AREA__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_IMPACT_AREA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsInjuryIncidentDescriptionSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_IMPACT_AREA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsInjuryIncidentDescriptionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_IMPACT_AREA,
-					EmspcrPlugin.INSTANCE.getString("EMSInjuryIncidentDescriptionSectionVehicleImpactArea"),
-					new Object[] { emsInjuryIncidentDescriptionSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_IMPACT_AREA,
+						 EmspcrPlugin.INSTANCE.getString("EMSInjuryIncidentDescriptionSectionEMSInjuryIncidentDescriptionSectionVehicleImpactArea"),
+						 new Object [] { emsInjuryIncidentDescriptionSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -662,8 +654,9 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_PATIENT_LOCATION_IN_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -675,32 +668,30 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSInjuryIncidentDescriptionSectionPatientLocationInVehicle(
-			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSInjuryIncidentDescriptionSectionPatientLocationInVehicle(EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_PATIENT_LOCATION_IN_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION);
 			try {
 				VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_PATIENT_LOCATION_IN_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_PATIENT_LOCATION_IN_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_PATIENT_LOCATION_IN_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsInjuryIncidentDescriptionSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_PATIENT_LOCATION_IN_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsInjuryIncidentDescriptionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_PATIENT_LOCATION_IN_VEHICLE,
-					EmspcrPlugin.INSTANCE.getString("EMSInjuryIncidentDescriptionSectionPatientLocationInVehicle"),
-					new Object[] { emsInjuryIncidentDescriptionSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_PATIENT_LOCATION_IN_VEHICLE,
+						 EmspcrPlugin.INSTANCE.getString("EMSInjuryIncidentDescriptionSectionEMSInjuryIncidentDescriptionSectionPatientLocationInVehicle"),
+						 new Object [] { emsInjuryIncidentDescriptionSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -724,8 +715,9 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -737,32 +729,30 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSInjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment(
-			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSInjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment(EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION);
 			try {
 				VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsInjuryIncidentDescriptionSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsInjuryIncidentDescriptionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT,
-					EmspcrPlugin.INSTANCE.getString("EMSInjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment"),
-					new Object[] { emsInjuryIncidentDescriptionSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT,
+						 EmspcrPlugin.INSTANCE.getString("EMSInjuryIncidentDescriptionSectionEMSInjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment"),
+						 new Object [] { emsInjuryIncidentDescriptionSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -786,8 +776,9 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_AIRBAG_DEPLOYMENT_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -799,32 +790,30 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSInjuryIncidentDescriptionSectionAirbagDeploymentStatus(
-			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSInjuryIncidentDescriptionSectionAirbagDeploymentStatus(EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_AIRBAG_DEPLOYMENT_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION);
 			try {
 				VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_AIRBAG_DEPLOYMENT_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_AIRBAG_DEPLOYMENT_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_AIRBAG_DEPLOYMENT_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsInjuryIncidentDescriptionSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_AIRBAG_DEPLOYMENT_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsInjuryIncidentDescriptionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_AIRBAG_DEPLOYMENT_STATUS,
-					EmspcrPlugin.INSTANCE.getString("EMSInjuryIncidentDescriptionSectionAirbagDeploymentStatus"),
-					new Object[] { emsInjuryIncidentDescriptionSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_AIRBAG_DEPLOYMENT_STATUS,
+						 EmspcrPlugin.INSTANCE.getString("EMSInjuryIncidentDescriptionSectionEMSInjuryIncidentDescriptionSectionAirbagDeploymentStatus"),
+						 new Object [] { emsInjuryIncidentDescriptionSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -848,8 +837,9 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_HEIGHT_OF_FALL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -861,32 +851,30 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSInjuryIncidentDescriptionSectionHeightOfFall(
-			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSInjuryIncidentDescriptionSectionHeightOfFall(EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_HEIGHT_OF_FALL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION);
 			try {
 				VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_HEIGHT_OF_FALL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_HEIGHT_OF_FALL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_HEIGHT_OF_FALL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsInjuryIncidentDescriptionSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_HEIGHT_OF_FALL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsInjuryIncidentDescriptionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_HEIGHT_OF_FALL,
-					EmspcrPlugin.INSTANCE.getString("EMSInjuryIncidentDescriptionSectionHeightOfFall"),
-					new Object[] { emsInjuryIncidentDescriptionSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_HEIGHT_OF_FALL,
+						 EmspcrPlugin.INSTANCE.getString("EMSInjuryIncidentDescriptionSectionEMSInjuryIncidentDescriptionSectionHeightOfFall"),
+						 new Object [] { emsInjuryIncidentDescriptionSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -910,8 +898,9 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_DISASTER_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -923,32 +912,30 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSInjuryIncidentDescriptionSectionDisasterType(
-			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSInjuryIncidentDescriptionSectionDisasterType(EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_DISASTER_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION);
 			try {
 				VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_DISASTER_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_DISASTER_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_DISASTER_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsInjuryIncidentDescriptionSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_DISASTER_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsInjuryIncidentDescriptionSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_DISASTER_TYPE,
-					EmspcrPlugin.INSTANCE.getString("EMSInjuryIncidentDescriptionSectionDisasterType"),
-					new Object[] { emsInjuryIncidentDescriptionSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_DISASTER_TYPE,
+						 EmspcrPlugin.INSTANCE.getString("EMSInjuryIncidentDescriptionSectionEMSInjuryIncidentDescriptionSectionDisasterType"),
+						 new Object [] { emsInjuryIncidentDescriptionSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -979,17 +966,15 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-
-	public static InjuryCauseCategory getInjuryCauseCategory(
-			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection) {
+	
+	public static  InjuryCauseCategory getInjuryCauseCategory(EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection) {
 		if (GET_INJURY_CAUSE_CATEGORY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION,
-				EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(69));
+			helper.setOperationContext(EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION, EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(69));
 			try {
 				GET_INJURY_CAUSE_CATEGORY__EOCL_QRY = helper.createQuery(GET_INJURY_CAUSE_CATEGORY__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1022,17 +1007,15 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-
-	public static InjuryMechanism getInjuryMechanism(
-			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection) {
+	
+	public static  InjuryMechanism getInjuryMechanism(EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection) {
 		if (GET_INJURY_MECHANISM__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION,
-				EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(70));
+			helper.setOperationContext(EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION, EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(70));
 			try {
 				GET_INJURY_MECHANISM__EOCL_QRY = helper.createQuery(GET_INJURY_MECHANISM__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1065,17 +1048,15 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-
-	public static TraumaCenterCriteria getTraumaCenterCriteria(
-			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection) {
+	
+	public static  TraumaCenterCriteria getTraumaCenterCriteria(EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection) {
 		if (GET_TRAUMA_CENTER_CRITERIA__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION,
-				EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(71));
+			helper.setOperationContext(EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION, EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(71));
 			try {
 				GET_TRAUMA_CENTER_CRITERIA__EOCL_QRY = helper.createQuery(GET_TRAUMA_CENTER_CRITERIA__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1084,46 +1065,46 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getInjuryRiskFactor(EMSInjuryIncidentDescriptionSection) <em>Get Injury Risk Factor</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getInjuryRiskFactors(EMSInjuryIncidentDescriptionSection) <em>Get Injury Risk Factors</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getInjuryRiskFactor(EMSInjuryIncidentDescriptionSection)
+	 * @see #getInjuryRiskFactors(EMSInjuryIncidentDescriptionSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_INJURY_RISK_FACTOR__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::InjuryRiskFactor))->asSequence()->any(true).oclAsType(emspcr::InjuryRiskFactor)";
+	protected static final String GET_INJURY_RISK_FACTORS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::InjuryRiskFactor)).oclAsType(emspcr::InjuryRiskFactor)";
 
 	/**
-	 * The cached OCL query for the '{@link #getInjuryRiskFactor(EMSInjuryIncidentDescriptionSection) <em>Get Injury Risk Factor</em>}' query operation.
+	 * The cached OCL query for the '{@link #getInjuryRiskFactors(EMSInjuryIncidentDescriptionSection) <em>Get Injury Risk Factors</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getInjuryRiskFactor(EMSInjuryIncidentDescriptionSection)
+	 * @see #getInjuryRiskFactors(EMSInjuryIncidentDescriptionSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_INJURY_RISK_FACTOR__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_INJURY_RISK_FACTORS__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-
-	public static InjuryRiskFactor getInjuryRiskFactor(
-			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection) {
-		if (GET_INJURY_RISK_FACTOR__EOCL_QRY == null) {
+	
+	public static  EList<InjuryRiskFactor> getInjuryRiskFactors(EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection) {
+		if (GET_INJURY_RISK_FACTORS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION,
-				EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(72));
+			helper.setOperationContext(EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION, EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(72));
 			try {
-				GET_INJURY_RISK_FACTOR__EOCL_QRY = helper.createQuery(GET_INJURY_RISK_FACTOR__EOCL_EXP);
-			} catch (ParserException pe) {
+				GET_INJURY_RISK_FACTORS__EOCL_QRY = helper.createQuery(GET_INJURY_RISK_FACTORS__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_INJURY_RISK_FACTOR__EOCL_QRY);
-		return (InjuryRiskFactor) query.evaluate(emsInjuryIncidentDescriptionSection);
+		OCL.Query query = EOCL_ENV.createQuery(GET_INJURY_RISK_FACTORS__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<InjuryRiskFactor> result = (Collection<InjuryRiskFactor>) query.evaluate(emsInjuryIncidentDescriptionSection);
+		return new BasicEList.UnmodifiableEList<InjuryRiskFactor>(result.size(), result.toArray());
 	}
 
 	/**
@@ -1151,17 +1132,15 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-
-	public static VehicleImpactArea getVehicleImpactArea(
-			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection) {
+	
+	public static  VehicleImpactArea getVehicleImpactArea(EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection) {
 		if (GET_VEHICLE_IMPACT_AREA__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION,
-				EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(73));
+			helper.setOperationContext(EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION, EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(73));
 			try {
 				GET_VEHICLE_IMPACT_AREA__EOCL_QRY = helper.createQuery(GET_VEHICLE_IMPACT_AREA__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1194,17 +1173,15 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-
-	public static PatientLocationInVehicle getPatientLocationInVehicle(
-			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection) {
+	
+	public static  PatientLocationInVehicle getPatientLocationInVehicle(EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection) {
 		if (GET_PATIENT_LOCATION_IN_VEHICLE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION,
-				EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(74));
+			helper.setOperationContext(EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION, EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(74));
 			try {
 				GET_PATIENT_LOCATION_IN_VEHICLE__EOCL_QRY = helper.createQuery(GET_PATIENT_LOCATION_IN_VEHICLE__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1237,17 +1214,15 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-
-	public static VehicleOccupantSafetyEquipment getVehicleOccupantSafetyEquipment(
-			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection) {
+	
+	public static  VehicleOccupantSafetyEquipment getVehicleOccupantSafetyEquipment(EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection) {
 		if (GET_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION,
-				EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(75));
+			helper.setOperationContext(EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION, EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(75));
 			try {
 				GET_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__EOCL_QRY = helper.createQuery(GET_VEHICLE_OCCUPANT_SAFETY_EQUIPMENT__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1280,17 +1255,15 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-
-	public static AirbagDeploymentStatus getAirbagDeploymentStatus(
-			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection) {
+	
+	public static  AirbagDeploymentStatus getAirbagDeploymentStatus(EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection) {
 		if (GET_AIRBAG_DEPLOYMENT_STATUS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION,
-				EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(76));
+			helper.setOperationContext(EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION, EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(76));
 			try {
 				GET_AIRBAG_DEPLOYMENT_STATUS__EOCL_QRY = helper.createQuery(GET_AIRBAG_DEPLOYMENT_STATUS__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1323,16 +1296,15 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-
-	public static HeightOfFall getHeightOfFall(EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection) {
+	
+	public static  HeightOfFall getHeightOfFall(EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection) {
 		if (GET_HEIGHT_OF_FALL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION,
-				EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(77));
+			helper.setOperationContext(EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION, EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(77));
 			try {
 				GET_HEIGHT_OF_FALL__EOCL_QRY = helper.createQuery(GET_HEIGHT_OF_FALL__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -1365,16 +1337,15 @@ public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-
-	public static DisasterType getDisasterType(EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection) {
+	
+	public static  DisasterType getDisasterType(EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection) {
 		if (GET_DISASTER_TYPE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION,
-				EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(78));
+			helper.setOperationContext(EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION, EmspcrPackage.Literals.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION.getEAllOperations().get(78));
 			try {
 				GET_DISASTER_TYPE__EOCL_QRY = helper.createQuery(GET_DISASTER_TYPE__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -84,7 +80,7 @@ public interface TurnaroundDelay extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17059-9\' or value.code = \'LA17587-9\' or value.code = \'LA17590-3\' or value.code = \'LA17592-9\' or value.code = \'LA17593-7\' or value.code = \'LA17594-5\' or value.code = \'LA17598-6\' or value.code = \'LA17599-4\' or value.code = \'LA17600-0\' or value.code = \'LA17601-8\' or value.code = \'LA17602-6\' or value.code = \'LA17603-4\' or value.code = \'LA18081-2\' or value.code = \'LA18270-1\' or value.code = \'LA18271-9\' or value.code = \'LA7497-6\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17059-9\' or value.code = \'LA17587-9\' or value.code = \'LA17590-3\' or value.code = \'LA17592-9\' or value.code = \'LA17593-7\' or value.code = \'LA17594-5\' or value.code = \'LA17598-6\' or value.code = \'LA17599-4\' or value.code = \'LA17600-0\' or value.code = \'LA17601-8\' or value.code = \'LA17602-6\' or value.code = \'LA18081-2\' or value.code = \'LA18270-1\' or value.code = \'LA18271-9\' or value.code = \'LA7497-6\' or value.code = \'LOINC_TBDA_619\' or value.code = \'LOINC_TBDA_620\')))'"
 	 * @generated
 	 */
 	boolean validateTurnaroundDelayValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -107,11 +103,10 @@ public interface TurnaroundDelay extends Observation {
 	 * @generated
 	 */
 	public TurnaroundDelay init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public TurnaroundDelay init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public TurnaroundDelay init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // TurnaroundDelay

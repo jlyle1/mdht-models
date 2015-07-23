@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -84,8 +80,9 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -97,30 +94,30 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPastMedicalHistorySectionTemplateId(
-			EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPastMedicalHistorySectionTemplateId(EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PAST_MEDICAL_HISTORY_SECTION);
 			try {
 				VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPastMedicalHistorySection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPastMedicalHistorySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PAST_MEDICAL_HISTORY_SECTION__EMS_PAST_MEDICAL_HISTORY_SECTION_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("EMSPastMedicalHistorySectionTemplateId"),
-					new Object[] { emsPastMedicalHistorySection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PAST_MEDICAL_HISTORY_SECTION__EMS_PAST_MEDICAL_HISTORY_SECTION_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("EMSPastMedicalHistorySectionEMSPastMedicalHistorySectionTemplateId"),
+						 new Object [] { emsPastMedicalHistorySection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -134,9 +131,9 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '67842-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '67842-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEMSPastMedicalHistorySectionCode(EMSPastMedicalHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Past Medical History Section Code</em>}' invariant operation.
@@ -146,8 +143,9 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -159,30 +157,30 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPastMedicalHistorySectionCode(
-			EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPastMedicalHistorySectionCode(EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PAST_MEDICAL_HISTORY_SECTION);
 			try {
 				VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPastMedicalHistorySection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPastMedicalHistorySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PAST_MEDICAL_HISTORY_SECTION__EMS_PAST_MEDICAL_HISTORY_SECTION_CODE,
-					EmspcrPlugin.INSTANCE.getString("EMSPastMedicalHistorySectionCode"),
-					new Object[] { emsPastMedicalHistorySection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PAST_MEDICAL_HISTORY_SECTION__EMS_PAST_MEDICAL_HISTORY_SECTION_CODE,
+						 EmspcrPlugin.INSTANCE.getString("EMSPastMedicalHistorySectionEMSPastMedicalHistorySectionCode"),
+						 new Object [] { emsPastMedicalHistorySection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -206,8 +204,9 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -219,30 +218,30 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPastMedicalHistorySectionCodeP(
-			EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPastMedicalHistorySectionCodeP(EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PAST_MEDICAL_HISTORY_SECTION);
 			try {
 				VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPastMedicalHistorySection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPastMedicalHistorySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PAST_MEDICAL_HISTORY_SECTION__EMS_PAST_MEDICAL_HISTORY_SECTION_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("EMSPastMedicalHistorySectionCodeP"),
-					new Object[] { emsPastMedicalHistorySection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PAST_MEDICAL_HISTORY_SECTION__EMS_PAST_MEDICAL_HISTORY_SECTION_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("EMSPastMedicalHistorySectionEMSPastMedicalHistorySectionCodeP"),
+						 new Object [] { emsPastMedicalHistorySection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -266,8 +265,9 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -279,30 +279,30 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPastMedicalHistorySectionTitle(
-			EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPastMedicalHistorySectionTitle(EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PAST_MEDICAL_HISTORY_SECTION);
 			try {
 				VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPastMedicalHistorySection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPastMedicalHistorySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PAST_MEDICAL_HISTORY_SECTION__EMS_PAST_MEDICAL_HISTORY_SECTION_TITLE,
-					EmspcrPlugin.INSTANCE.getString("EMSPastMedicalHistorySectionTitle"),
-					new Object[] { emsPastMedicalHistorySection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PAST_MEDICAL_HISTORY_SECTION__EMS_PAST_MEDICAL_HISTORY_SECTION_TITLE,
+						 EmspcrPlugin.INSTANCE.getString("EMSPastMedicalHistorySectionEMSPastMedicalHistorySectionTitle"),
+						 new Object [] { emsPastMedicalHistorySection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -326,8 +326,9 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -339,30 +340,30 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPastMedicalHistorySectionText(
-			EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPastMedicalHistorySectionText(EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PAST_MEDICAL_HISTORY_SECTION);
 			try {
 				VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPastMedicalHistorySection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPastMedicalHistorySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PAST_MEDICAL_HISTORY_SECTION__EMS_PAST_MEDICAL_HISTORY_SECTION_TEXT,
-					EmspcrPlugin.INSTANCE.getString("EMSPastMedicalHistorySectionText"),
-					new Object[] { emsPastMedicalHistorySection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PAST_MEDICAL_HISTORY_SECTION__EMS_PAST_MEDICAL_HISTORY_SECTION_TEXT,
+						 EmspcrPlugin.INSTANCE.getString("EMSPastMedicalHistorySectionEMSPastMedicalHistorySectionText"),
+						 new Object [] { emsPastMedicalHistorySection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -386,8 +387,9 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_EXISTENCE_OF_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -399,32 +401,30 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPastMedicalHistorySectionExistenceOfHistoryOfCondition(
-			EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPastMedicalHistorySectionExistenceOfHistoryOfCondition(EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_EXISTENCE_OF_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PAST_MEDICAL_HISTORY_SECTION);
 			try {
 				VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_EXISTENCE_OF_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_EXISTENCE_OF_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_EXISTENCE_OF_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPastMedicalHistorySection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_EXISTENCE_OF_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPastMedicalHistorySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PAST_MEDICAL_HISTORY_SECTION__EMS_PAST_MEDICAL_HISTORY_SECTION_EXISTENCE_OF_HISTORY_OF_CONDITION,
-					EmspcrPlugin.INSTANCE.getString("EMSPastMedicalHistorySectionExistenceOfHistoryOfCondition"),
-					new Object[] { emsPastMedicalHistorySection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PAST_MEDICAL_HISTORY_SECTION__EMS_PAST_MEDICAL_HISTORY_SECTION_EXISTENCE_OF_HISTORY_OF_CONDITION,
+						 EmspcrPlugin.INSTANCE.getString("EMSPastMedicalHistorySectionEMSPastMedicalHistorySectionExistenceOfHistoryOfCondition"),
+						 new Object [] { emsPastMedicalHistorySection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -448,8 +448,9 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -461,32 +462,30 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPastMedicalHistorySectionHistoryOfCondition(
-			EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPastMedicalHistorySectionHistoryOfCondition(EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PAST_MEDICAL_HISTORY_SECTION);
 			try {
 				VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPastMedicalHistorySection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPastMedicalHistorySection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PAST_MEDICAL_HISTORY_SECTION__EMS_PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_CONDITION,
-					EmspcrPlugin.INSTANCE.getString("EMSPastMedicalHistorySectionHistoryOfCondition"),
-					new Object[] { emsPastMedicalHistorySection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PAST_MEDICAL_HISTORY_SECTION__EMS_PAST_MEDICAL_HISTORY_SECTION_HISTORY_OF_CONDITION,
+						 EmspcrPlugin.INSTANCE.getString("EMSPastMedicalHistorySectionEMSPastMedicalHistorySectionHistoryOfCondition"),
+						 new Object [] { emsPastMedicalHistorySection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -517,17 +516,15 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-
-	public static ExistenceOfHistoryOfCondition getExistenceOfHistoryOfCondition(
-			EMSPastMedicalHistorySection emsPastMedicalHistorySection) {
+	
+	public static  ExistenceOfHistoryOfCondition getExistenceOfHistoryOfCondition(EMSPastMedicalHistorySection emsPastMedicalHistorySection) {
 		if (GET_EXISTENCE_OF_HISTORY_OF_CONDITION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.EMS_PAST_MEDICAL_HISTORY_SECTION,
-				EmspcrPackage.Literals.EMS_PAST_MEDICAL_HISTORY_SECTION.getEAllOperations().get(62));
+			helper.setOperationContext(EmspcrPackage.Literals.EMS_PAST_MEDICAL_HISTORY_SECTION, EmspcrPackage.Literals.EMS_PAST_MEDICAL_HISTORY_SECTION.getEAllOperations().get(62));
 			try {
 				GET_EXISTENCE_OF_HISTORY_OF_CONDITION__EOCL_QRY = helper.createQuery(GET_EXISTENCE_OF_HISTORY_OF_CONDITION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -560,17 +557,15 @@ public class EMSPastMedicalHistorySectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-
-	public static EList<HistoryOfCondition> getHistoryOfConditions(
-			EMSPastMedicalHistorySection emsPastMedicalHistorySection) {
+	
+	public static  EList<HistoryOfCondition> getHistoryOfConditions(EMSPastMedicalHistorySection emsPastMedicalHistorySection) {
 		if (GET_HISTORY_OF_CONDITIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.EMS_PAST_MEDICAL_HISTORY_SECTION,
-				EmspcrPackage.Literals.EMS_PAST_MEDICAL_HISTORY_SECTION.getEAllOperations().get(63));
+			helper.setOperationContext(EmspcrPackage.Literals.EMS_PAST_MEDICAL_HISTORY_SECTION, EmspcrPackage.Literals.EMS_PAST_MEDICAL_HISTORY_SECTION.getEAllOperations().get(63));
 			try {
 				GET_HISTORY_OF_CONDITIONS__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_CONDITIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

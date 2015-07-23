@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -58,10 +54,8 @@ public class PrearrivalActivationObservationImpl extends ObservationImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrearrivalActivationObservationTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PrearrivalActivationObservationOperations.validatePrearrivalActivationObservationTemplateId(
-			this, diagnostics, context);
+	public boolean validatePrearrivalActivationObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PrearrivalActivationObservationOperations.validatePrearrivalActivationObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -69,10 +63,8 @@ public class PrearrivalActivationObservationImpl extends ObservationImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrearrivalActivationObservationMoodCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PrearrivalActivationObservationOperations.validatePrearrivalActivationObservationMoodCode(
-			this, diagnostics, context);
+	public boolean validatePrearrivalActivationObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PrearrivalActivationObservationOperations.validatePrearrivalActivationObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -81,8 +73,7 @@ public class PrearrivalActivationObservationImpl extends ObservationImpl impleme
 	 * @generated
 	 */
 	public boolean validatePrearrivalActivationObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrearrivalActivationObservationOperations.validatePrearrivalActivationObservationCodeP(
-			this, diagnostics, context);
+		return PrearrivalActivationObservationOperations.validatePrearrivalActivationObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +82,7 @@ public class PrearrivalActivationObservationImpl extends ObservationImpl impleme
 	 * @generated
 	 */
 	public boolean validatePrearrivalActivationObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrearrivalActivationObservationOperations.validatePrearrivalActivationObservationCode(
-			this, diagnostics, context);
+		return PrearrivalActivationObservationOperations.validatePrearrivalActivationObservationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -100,10 +90,8 @@ public class PrearrivalActivationObservationImpl extends ObservationImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrearrivalActivationObservationEffectiveTime(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PrearrivalActivationObservationOperations.validatePrearrivalActivationObservationEffectiveTime(
-			this, diagnostics, context);
+	public boolean validatePrearrivalActivationObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PrearrivalActivationObservationOperations.validatePrearrivalActivationObservationEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -112,8 +100,7 @@ public class PrearrivalActivationObservationImpl extends ObservationImpl impleme
 	 * @generated
 	 */
 	public boolean validatePrearrivalActivationObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PrearrivalActivationObservationOperations.validatePrearrivalActivationObservationValue(
-			this, diagnostics, context);
+		return PrearrivalActivationObservationOperations.validatePrearrivalActivationObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -122,16 +109,15 @@ public class PrearrivalActivationObservationImpl extends ObservationImpl impleme
 	 * @generated
 	 */
 	public PrearrivalActivationObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PrearrivalActivationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // PrearrivalActivationObservationImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PrearrivalActivationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //PrearrivalActivationObservationImpl

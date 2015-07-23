@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -33,8 +29,7 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
  *
  * @generated
  */
-public class MedicationPriorAdministrationObservationImpl extends ObservationImpl implements
-		MedicationPriorAdministrationObservation {
+public class MedicationPriorAdministrationObservationImpl extends ObservationImpl implements MedicationPriorAdministrationObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -59,10 +54,8 @@ public class MedicationPriorAdministrationObservationImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationPriorAdministrationObservationTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationPriorAdministrationObservationOperations.validateMedicationPriorAdministrationObservationTemplateId(
-			this, diagnostics, context);
+	public boolean validateMedicationPriorAdministrationObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationPriorAdministrationObservationOperations.validateMedicationPriorAdministrationObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -70,10 +63,8 @@ public class MedicationPriorAdministrationObservationImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationPriorAdministrationObservationMoodCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationPriorAdministrationObservationOperations.validateMedicationPriorAdministrationObservationMoodCode(
-			this, diagnostics, context);
+	public boolean validateMedicationPriorAdministrationObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationPriorAdministrationObservationOperations.validateMedicationPriorAdministrationObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -81,10 +72,8 @@ public class MedicationPriorAdministrationObservationImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationPriorAdministrationObservationCodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationPriorAdministrationObservationOperations.validateMedicationPriorAdministrationObservationCodeP(
-			this, diagnostics, context);
+	public boolean validateMedicationPriorAdministrationObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationPriorAdministrationObservationOperations.validateMedicationPriorAdministrationObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -92,10 +81,8 @@ public class MedicationPriorAdministrationObservationImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationPriorAdministrationObservationCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationPriorAdministrationObservationOperations.validateMedicationPriorAdministrationObservationCode(
-			this, diagnostics, context);
+	public boolean validateMedicationPriorAdministrationObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationPriorAdministrationObservationOperations.validateMedicationPriorAdministrationObservationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -103,10 +90,8 @@ public class MedicationPriorAdministrationObservationImpl extends ObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationPriorAdministrationObservationValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return MedicationPriorAdministrationObservationOperations.validateMedicationPriorAdministrationObservationValue(
-			this, diagnostics, context);
+	public boolean validateMedicationPriorAdministrationObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationPriorAdministrationObservationOperations.validateMedicationPriorAdministrationObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -115,16 +100,15 @@ public class MedicationPriorAdministrationObservationImpl extends ObservationImp
 	 * @generated
 	 */
 	public MedicationPriorAdministrationObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MedicationPriorAdministrationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // MedicationPriorAdministrationObservationImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public MedicationPriorAdministrationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //MedicationPriorAdministrationObservationImpl

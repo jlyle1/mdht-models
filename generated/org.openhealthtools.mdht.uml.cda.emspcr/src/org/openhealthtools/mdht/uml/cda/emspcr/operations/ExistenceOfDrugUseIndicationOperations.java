@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -72,8 +68,9 @@ public class ExistenceOfDrugUseIndicationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,30 +82,30 @@ public class ExistenceOfDrugUseIndicationOperations extends ClinicalStatementOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateExistenceOfDrugUseIndicationTemplateId(
-			ExistenceOfDrugUseIndication existenceOfDrugUseIndication, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateExistenceOfDrugUseIndicationTemplateId(ExistenceOfDrugUseIndication existenceOfDrugUseIndication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EXISTENCE_OF_DRUG_USE_INDICATION);
 			try {
 				VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			existenceOfDrugUseIndication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(existenceOfDrugUseIndication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EXISTENCE_OF_DRUG_USE_INDICATION__EXISTENCE_OF_DRUG_USE_INDICATION_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("ExistenceOfDrugUseIndicationTemplateId"),
-					new Object[] { existenceOfDrugUseIndication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EXISTENCE_OF_DRUG_USE_INDICATION__EXISTENCE_OF_DRUG_USE_INDICATION_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("ExistenceOfDrugUseIndicationExistenceOfDrugUseIndicationTemplateId"),
+						 new Object [] { existenceOfDrugUseIndication }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -132,8 +129,9 @@ public class ExistenceOfDrugUseIndicationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -145,30 +143,30 @@ public class ExistenceOfDrugUseIndicationOperations extends ClinicalStatementOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateExistenceOfDrugUseIndicationMoodCode(
-			ExistenceOfDrugUseIndication existenceOfDrugUseIndication, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateExistenceOfDrugUseIndicationMoodCode(ExistenceOfDrugUseIndication existenceOfDrugUseIndication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EXISTENCE_OF_DRUG_USE_INDICATION);
 			try {
 				VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			existenceOfDrugUseIndication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(existenceOfDrugUseIndication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EXISTENCE_OF_DRUG_USE_INDICATION__EXISTENCE_OF_DRUG_USE_INDICATION_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("ExistenceOfDrugUseIndicationMoodCode"),
-					new Object[] { existenceOfDrugUseIndication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EXISTENCE_OF_DRUG_USE_INDICATION__EXISTENCE_OF_DRUG_USE_INDICATION_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("ExistenceOfDrugUseIndicationExistenceOfDrugUseIndicationMoodCode"),
+						 new Object [] { existenceOfDrugUseIndication }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -192,8 +190,9 @@ public class ExistenceOfDrugUseIndicationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -205,30 +204,30 @@ public class ExistenceOfDrugUseIndicationOperations extends ClinicalStatementOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateExistenceOfDrugUseIndicationCodeP(
-			ExistenceOfDrugUseIndication existenceOfDrugUseIndication, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateExistenceOfDrugUseIndicationCodeP(ExistenceOfDrugUseIndication existenceOfDrugUseIndication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EXISTENCE_OF_DRUG_USE_INDICATION);
 			try {
 				VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			existenceOfDrugUseIndication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(existenceOfDrugUseIndication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EXISTENCE_OF_DRUG_USE_INDICATION__EXISTENCE_OF_DRUG_USE_INDICATION_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("ExistenceOfDrugUseIndicationCodeP"),
-					new Object[] { existenceOfDrugUseIndication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EXISTENCE_OF_DRUG_USE_INDICATION__EXISTENCE_OF_DRUG_USE_INDICATION_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("ExistenceOfDrugUseIndicationExistenceOfDrugUseIndicationCodeP"),
+						 new Object [] { existenceOfDrugUseIndication }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -240,7 +239,7 @@ public class ExistenceOfDrugUseIndicationOperations extends ClinicalStatementOpe
 				}
 				passToken.add(existenceOfDrugUseIndication);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -254,9 +253,9 @@ public class ExistenceOfDrugUseIndicationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '69757-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '69757-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateExistenceOfDrugUseIndicationCode(ExistenceOfDrugUseIndication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Existence Of Drug Use Indication Code</em>}' invariant operation.
@@ -266,8 +265,9 @@ public class ExistenceOfDrugUseIndicationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -279,38 +279,36 @@ public class ExistenceOfDrugUseIndicationOperations extends ClinicalStatementOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateExistenceOfDrugUseIndicationCode(
-			ExistenceOfDrugUseIndication existenceOfDrugUseIndication, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.ExistenceOfDrugUseIndicationCodeP");
+	
+	public static  boolean validateExistenceOfDrugUseIndicationCode(ExistenceOfDrugUseIndication existenceOfDrugUseIndication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.ExistenceOfDrugUseIndicationCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(existenceOfDrugUseIndication)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EXISTENCE_OF_DRUG_USE_INDICATION);
 			try {
 				VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			existenceOfDrugUseIndication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(existenceOfDrugUseIndication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EXISTENCE_OF_DRUG_USE_INDICATION__EXISTENCE_OF_DRUG_USE_INDICATION_CODE,
-					EmspcrPlugin.INSTANCE.getString("ExistenceOfDrugUseIndicationCode"),
-					new Object[] { existenceOfDrugUseIndication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EXISTENCE_OF_DRUG_USE_INDICATION__EXISTENCE_OF_DRUG_USE_INDICATION_CODE,
+						 EmspcrPlugin.INSTANCE.getString("ExistenceOfDrugUseIndicationExistenceOfDrugUseIndicationCode"),
+						 new Object [] { existenceOfDrugUseIndication }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -334,8 +332,9 @@ public class ExistenceOfDrugUseIndicationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -347,30 +346,30 @@ public class ExistenceOfDrugUseIndicationOperations extends ClinicalStatementOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateExistenceOfDrugUseIndicationValue(
-			ExistenceOfDrugUseIndication existenceOfDrugUseIndication, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateExistenceOfDrugUseIndicationValue(ExistenceOfDrugUseIndication existenceOfDrugUseIndication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EXISTENCE_OF_DRUG_USE_INDICATION);
 			try {
 				VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			existenceOfDrugUseIndication)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EXISTENCE_OF_DRUG_USE_INDICATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(existenceOfDrugUseIndication)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EXISTENCE_OF_DRUG_USE_INDICATION__EXISTENCE_OF_DRUG_USE_INDICATION_VALUE,
-					EmspcrPlugin.INSTANCE.getString("ExistenceOfDrugUseIndicationValue"),
-					new Object[] { existenceOfDrugUseIndication }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EXISTENCE_OF_DRUG_USE_INDICATION__EXISTENCE_OF_DRUG_USE_INDICATION_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("ExistenceOfDrugUseIndicationExistenceOfDrugUseIndicationValue"),
+						 new Object [] { existenceOfDrugUseIndication }));
 			}
-
+			 
 			return false;
 		}
 		return true;

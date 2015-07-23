@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -17,8 +13,7 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
-import org.openhealthtools.mdht.uml.cda.Organizer;
-
+import org.openhealthtools.mdht.uml.cda.emspcr.DrugAllergyOrganizer;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSAllergiesAndAdverseReactionsSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.NonDrugAllergyOrganizer;
@@ -36,8 +31,7 @@ import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
  *
  * @generated
  */
-public class EMSAllergiesAndAdverseReactionsSectionImpl extends SectionImpl implements
-		EMSAllergiesAndAdverseReactionsSection {
+public class EMSAllergiesAndAdverseReactionsSectionImpl extends SectionImpl implements EMSAllergiesAndAdverseReactionsSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -62,10 +56,8 @@ public class EMSAllergiesAndAdverseReactionsSectionImpl extends SectionImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSAllergiesAndAdverseReactionsSectionTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EMSAllergiesAndAdverseReactionsSectionOperations.validateEMSAllergiesAndAdverseReactionsSectionTemplateId(
-			this, diagnostics, context);
+	public boolean validateEMSAllergiesAndAdverseReactionsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSAllergiesAndAdverseReactionsSectionOperations.validateEMSAllergiesAndAdverseReactionsSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -73,10 +65,8 @@ public class EMSAllergiesAndAdverseReactionsSectionImpl extends SectionImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSAllergiesAndAdverseReactionsSectionCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EMSAllergiesAndAdverseReactionsSectionOperations.validateEMSAllergiesAndAdverseReactionsSectionCode(
-			this, diagnostics, context);
+	public boolean validateEMSAllergiesAndAdverseReactionsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSAllergiesAndAdverseReactionsSectionOperations.validateEMSAllergiesAndAdverseReactionsSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -84,10 +74,8 @@ public class EMSAllergiesAndAdverseReactionsSectionImpl extends SectionImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSAllergiesAndAdverseReactionsSectionTitle(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EMSAllergiesAndAdverseReactionsSectionOperations.validateEMSAllergiesAndAdverseReactionsSectionTitle(
-			this, diagnostics, context);
+	public boolean validateEMSAllergiesAndAdverseReactionsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSAllergiesAndAdverseReactionsSectionOperations.validateEMSAllergiesAndAdverseReactionsSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -95,10 +83,8 @@ public class EMSAllergiesAndAdverseReactionsSectionImpl extends SectionImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSAllergiesAndAdverseReactionsSectionText(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EMSAllergiesAndAdverseReactionsSectionOperations.validateEMSAllergiesAndAdverseReactionsSectionText(
-			this, diagnostics, context);
+	public boolean validateEMSAllergiesAndAdverseReactionsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSAllergiesAndAdverseReactionsSectionOperations.validateEMSAllergiesAndAdverseReactionsSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -106,10 +92,8 @@ public class EMSAllergiesAndAdverseReactionsSectionImpl extends SectionImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSAllergiesAndAdverseReactionsSectionEnvironmentalAllergies(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EMSAllergiesAndAdverseReactionsSectionOperations.validateEMSAllergiesAndAdverseReactionsSectionEnvironmentalAllergies(
-			this, diagnostics, context);
+	public boolean validateEMSAllergiesAndAdverseReactionsSectionEnvironmentalAllergies(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSAllergiesAndAdverseReactionsSectionOperations.validateEMSAllergiesAndAdverseReactionsSectionEnvironmentalAllergies(this, diagnostics, context);
 	}
 
 	/**
@@ -117,10 +101,8 @@ public class EMSAllergiesAndAdverseReactionsSectionImpl extends SectionImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSAllergiesAndAdverseReactionsSectionEMSDrugAllergyOrganizer(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EMSAllergiesAndAdverseReactionsSectionOperations.validateEMSAllergiesAndAdverseReactionsSectionEMSDrugAllergyOrganizer(
-			this, diagnostics, context);
+	public boolean validateEMSAllergiesAndAdverseReactionsSectionEMSDrugAllergyOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSAllergiesAndAdverseReactionsSectionOperations.validateEMSAllergiesAndAdverseReactionsSectionEMSDrugAllergyOrganizer(this, diagnostics, context);
 	}
 
 	/**
@@ -137,7 +119,7 @@ public class EMSAllergiesAndAdverseReactionsSectionImpl extends SectionImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Organizer getEMSDrugAllergyOrganizer() {
+	public DrugAllergyOrganizer getEMSDrugAllergyOrganizer() {
 		return EMSAllergiesAndAdverseReactionsSectionOperations.getEMSDrugAllergyOrganizer(this);
 	}
 
@@ -147,16 +129,15 @@ public class EMSAllergiesAndAdverseReactionsSectionImpl extends SectionImpl impl
 	 * @generated
 	 */
 	public EMSAllergiesAndAdverseReactionsSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMSAllergiesAndAdverseReactionsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // EMSAllergiesAndAdverseReactionsSectionImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EMSAllergiesAndAdverseReactionsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //EMSAllergiesAndAdverseReactionsSectionImpl

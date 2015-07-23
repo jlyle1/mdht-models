@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -40,7 +36,7 @@ public final class EmspcrPlugin extends EMFPlugin {
 	 * @generated
 	 */
 	public EmspcrPlugin() {
-		super(new ResourceLocator[] {});
+		super(new ResourceLocator [] {});
 	}
 
 	/**

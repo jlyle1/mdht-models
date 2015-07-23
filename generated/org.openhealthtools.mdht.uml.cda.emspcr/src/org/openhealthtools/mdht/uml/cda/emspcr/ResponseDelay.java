@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -84,7 +80,7 @@ public interface ResponseDelay extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17059-9\' or value.code = \'LA17583-8\' or value.code = \'LA17585-3\' or value.code = \'LA17586-1\' or value.code = \'LA17587-9\' or value.code = \'LA17588-7\' or value.code = \'LA17590-3\' or value.code = \'LA17591-1\' or value.code = \'LA17592-9\' or value.code = \'LA17593-7\' or value.code = \'LA17594-5\' or value.code = \'LA18081-2\' or value.code = \'LA18270-1\' or value.code = \'LA18271-9\' or value.code = \'LA18301-4\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17059-9\' or value.code = \'LA17583-8\' or value.code = \'LA17585-3\' or value.code = \'LA17586-1\' or value.code = \'LA17587-9\' or value.code = \'LA17588-7\' or value.code = \'LA17590-3\' or value.code = \'LA17591-1\' or value.code = \'LA17592-9\' or value.code = \'LA17593-7\' or value.code = \'LA17594-5\' or value.code = \'LA18081-2\' or value.code = \'LA18270-1\' or value.code = \'LA18271-9\' or value.code = \'LA18301-4\' or value.code = \'LOINC_TBDA_614\' or value.code = \'LOINC_TBDA_615\')))'"
 	 * @generated
 	 */
 	boolean validateResponseDelayValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -107,11 +103,10 @@ public interface ResponseDelay extends Observation {
 	 * @generated
 	 */
 	public ResponseDelay init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ResponseDelay init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ResponseDelay init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ResponseDelay

@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -85,6 +81,15 @@ public class OxygenSaturationImpl extends ObservationImpl implements OxygenSatur
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateOxygenSaturationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OxygenSaturationOperations.validateOxygenSaturationEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateOxygenSaturationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OxygenSaturationOperations.validateOxygenSaturationValue(this, diagnostics, context);
 	}
@@ -95,16 +100,15 @@ public class OxygenSaturationImpl extends ObservationImpl implements OxygenSatur
 	 * @generated
 	 */
 	public OxygenSaturation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public OxygenSaturation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // OxygenSaturationImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public OxygenSaturation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //OxygenSaturationImpl

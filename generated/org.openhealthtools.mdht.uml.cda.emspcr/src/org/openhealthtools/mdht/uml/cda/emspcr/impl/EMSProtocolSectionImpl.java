@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -11,6 +7,7 @@ import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
@@ -96,8 +93,7 @@ public class EMSProtocolSectionImpl extends SectionImpl implements EMSProtocolSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSProtocolSectionProtocolObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateEMSProtocolSectionProtocolObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EMSProtocolSectionOperations.validateEMSProtocolSectionProtocolObservation(this, diagnostics, context);
 	}
 
@@ -106,10 +102,8 @@ public class EMSProtocolSectionImpl extends SectionImpl implements EMSProtocolSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSProtocolSectionCandidatePatientRegistryType(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EMSProtocolSectionOperations.validateEMSProtocolSectionCandidatePatientRegistryType(
-			this, diagnostics, context);
+	public boolean validateEMSProtocolSectionCandidatePatientRegistryType(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSProtocolSectionOperations.validateEMSProtocolSectionCandidatePatientRegistryType(this, diagnostics, context);
 	}
 
 	/**
@@ -117,8 +111,8 @@ public class EMSProtocolSectionImpl extends SectionImpl implements EMSProtocolSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProtocolObservation getProtocolObservation() {
-		return EMSProtocolSectionOperations.getProtocolObservation(this);
+	public EList<ProtocolObservation> getProtocolObservations() {
+		return EMSProtocolSectionOperations.getProtocolObservations(this);
 	}
 
 	/**
@@ -136,16 +130,15 @@ public class EMSProtocolSectionImpl extends SectionImpl implements EMSProtocolSe
 	 * @generated
 	 */
 	public EMSProtocolSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMSProtocolSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // EMSProtocolSectionImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EMSProtocolSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //EMSProtocolSectionImpl

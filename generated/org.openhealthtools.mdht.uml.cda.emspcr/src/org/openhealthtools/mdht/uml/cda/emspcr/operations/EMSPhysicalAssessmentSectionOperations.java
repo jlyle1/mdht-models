@@ -1,16 +1,15 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClassifier;
 
@@ -54,7 +53,7 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSPhysicalAssessmentSection#validateEMSPhysicalAssessmentSectionPatientAge(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Physical Assessment Section Patient Age</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSPhysicalAssessmentSection#validateEMSPhysicalAssessmentSectionThrombolyticContraindications(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Physical Assessment Section Thrombolytic Contraindications</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSPhysicalAssessmentSection#validateEMSPhysicalAssessmentSectionBarriersToPatientCare(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Physical Assessment Section Barriers To Patient Care</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSPhysicalAssessmentSection#getPhysicalAssessmentOrganizer() <em>Get Physical Assessment Organizer</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSPhysicalAssessmentSection#getPhysicalAssessmentOrganizers() <em>Get Physical Assessment Organizers</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSPhysicalAssessmentSection#getPatientPregnancy() <em>Get Patient Pregnancy</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSPhysicalAssessmentSection#getLastOralIntake() <em>Get Last Oral Intake</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSPhysicalAssessmentSection#getPatientAge() <em>Get Patient Age</em>}</li>
@@ -93,8 +92,9 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -106,30 +106,30 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPhysicalAssessmentSectionTemplateId(
-			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPhysicalAssessmentSectionTemplateId(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION);
 			try {
 				VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPhysicalAssessmentSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPhysicalAssessmentSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("EMSPhysicalAssessmentSectionTemplateId"),
-					new Object[] { emsPhysicalAssessmentSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("EMSPhysicalAssessmentSectionEMSPhysicalAssessmentSectionTemplateId"),
+						 new Object [] { emsPhysicalAssessmentSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -143,9 +143,9 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '29545-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '29545-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEMSPhysicalAssessmentSectionCode(EMSPhysicalAssessmentSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Physical Assessment Section Code</em>}' invariant operation.
@@ -155,8 +155,9 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -168,30 +169,30 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPhysicalAssessmentSectionCode(
-			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPhysicalAssessmentSectionCode(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION);
 			try {
 				VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPhysicalAssessmentSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPhysicalAssessmentSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_CODE,
-					EmspcrPlugin.INSTANCE.getString("EMSPhysicalAssessmentSectionCode"),
-					new Object[] { emsPhysicalAssessmentSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_CODE,
+						 EmspcrPlugin.INSTANCE.getString("EMSPhysicalAssessmentSectionEMSPhysicalAssessmentSectionCode"),
+						 new Object [] { emsPhysicalAssessmentSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -215,8 +216,9 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -228,30 +230,30 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPhysicalAssessmentSectionCodeP(
-			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPhysicalAssessmentSectionCodeP(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION);
 			try {
 				VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPhysicalAssessmentSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPhysicalAssessmentSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("EMSPhysicalAssessmentSectionCodeP"),
-					new Object[] { emsPhysicalAssessmentSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("EMSPhysicalAssessmentSectionEMSPhysicalAssessmentSectionCodeP"),
+						 new Object [] { emsPhysicalAssessmentSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -275,8 +277,9 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -288,30 +291,30 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPhysicalAssessmentSectionTitle(
-			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPhysicalAssessmentSectionTitle(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION);
 			try {
 				VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPhysicalAssessmentSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPhysicalAssessmentSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_TITLE,
-					EmspcrPlugin.INSTANCE.getString("EMSPhysicalAssessmentSectionTitle"),
-					new Object[] { emsPhysicalAssessmentSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_TITLE,
+						 EmspcrPlugin.INSTANCE.getString("EMSPhysicalAssessmentSectionEMSPhysicalAssessmentSectionTitle"),
+						 new Object [] { emsPhysicalAssessmentSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -335,8 +338,9 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -348,30 +352,30 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPhysicalAssessmentSectionText(
-			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPhysicalAssessmentSectionText(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION);
 			try {
 				VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPhysicalAssessmentSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPhysicalAssessmentSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_TEXT,
-					EmspcrPlugin.INSTANCE.getString("EMSPhysicalAssessmentSectionText"),
-					new Object[] { emsPhysicalAssessmentSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_TEXT,
+						 EmspcrPlugin.INSTANCE.getString("EMSPhysicalAssessmentSectionEMSPhysicalAssessmentSectionText"),
+						 new Object [] { emsPhysicalAssessmentSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -385,7 +389,7 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_PHYSICAL_ASSESSMENT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(emspcr::PhysicalAssessmentOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
+	protected static final String VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_PHYSICAL_ASSESSMENT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(emspcr::PhysicalAssessmentOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEMSPhysicalAssessmentSectionPhysicalAssessmentOrganizer(EMSPhysicalAssessmentSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Physical Assessment Section Physical Assessment Organizer</em>}' invariant operation.
@@ -395,8 +399,9 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_PHYSICAL_ASSESSMENT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -408,32 +413,30 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPhysicalAssessmentSectionPhysicalAssessmentOrganizer(
-			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPhysicalAssessmentSectionPhysicalAssessmentOrganizer(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_PHYSICAL_ASSESSMENT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION);
 			try {
 				VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_PHYSICAL_ASSESSMENT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_PHYSICAL_ASSESSMENT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_PHYSICAL_ASSESSMENT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPhysicalAssessmentSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_PHYSICAL_ASSESSMENT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPhysicalAssessmentSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_PHYSICAL_ASSESSMENT_ORGANIZER,
-					EmspcrPlugin.INSTANCE.getString("EMSPhysicalAssessmentSectionPhysicalAssessmentOrganizer"),
-					new Object[] { emsPhysicalAssessmentSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_PHYSICAL_ASSESSMENT_ORGANIZER,
+						 EmspcrPlugin.INSTANCE.getString("EMSPhysicalAssessmentSectionEMSPhysicalAssessmentSectionPhysicalAssessmentOrganizer"),
+						 new Object [] { emsPhysicalAssessmentSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -457,8 +460,9 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_PATIENT_PREGNANCY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -470,31 +474,30 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPhysicalAssessmentSectionPatientPregnancy(
-			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPhysicalAssessmentSectionPatientPregnancy(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_PATIENT_PREGNANCY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION);
 			try {
 				VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_PATIENT_PREGNANCY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_PATIENT_PREGNANCY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_PATIENT_PREGNANCY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPhysicalAssessmentSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_PATIENT_PREGNANCY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPhysicalAssessmentSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_PATIENT_PREGNANCY,
-					EmspcrPlugin.INSTANCE.getString("EMSPhysicalAssessmentSectionPatientPregnancy"),
-					new Object[] { emsPhysicalAssessmentSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_PATIENT_PREGNANCY,
+						 EmspcrPlugin.INSTANCE.getString("EMSPhysicalAssessmentSectionEMSPhysicalAssessmentSectionPatientPregnancy"),
+						 new Object [] { emsPhysicalAssessmentSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -518,8 +521,9 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_LAST_ORAL_INTAKE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -531,31 +535,30 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPhysicalAssessmentSectionLastOralIntake(
-			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPhysicalAssessmentSectionLastOralIntake(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_LAST_ORAL_INTAKE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION);
 			try {
 				VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_LAST_ORAL_INTAKE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_LAST_ORAL_INTAKE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_LAST_ORAL_INTAKE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPhysicalAssessmentSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_LAST_ORAL_INTAKE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPhysicalAssessmentSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_LAST_ORAL_INTAKE,
-					EmspcrPlugin.INSTANCE.getString("EMSPhysicalAssessmentSectionLastOralIntake"),
-					new Object[] { emsPhysicalAssessmentSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_LAST_ORAL_INTAKE,
+						 EmspcrPlugin.INSTANCE.getString("EMSPhysicalAssessmentSectionEMSPhysicalAssessmentSectionLastOralIntake"),
+						 new Object [] { emsPhysicalAssessmentSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -579,8 +582,9 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_PATIENT_AGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -592,30 +596,30 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPhysicalAssessmentSectionPatientAge(
-			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPhysicalAssessmentSectionPatientAge(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_PATIENT_AGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION);
 			try {
 				VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_PATIENT_AGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_PATIENT_AGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_PATIENT_AGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPhysicalAssessmentSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_PATIENT_AGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPhysicalAssessmentSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_PATIENT_AGE,
-					EmspcrPlugin.INSTANCE.getString("EMSPhysicalAssessmentSectionPatientAge"),
-					new Object[] { emsPhysicalAssessmentSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_PATIENT_AGE,
+						 EmspcrPlugin.INSTANCE.getString("EMSPhysicalAssessmentSectionEMSPhysicalAssessmentSectionPatientAge"),
+						 new Object [] { emsPhysicalAssessmentSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -639,8 +643,9 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_THROMBOLYTIC_CONTRAINDICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -652,32 +657,30 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPhysicalAssessmentSectionThrombolyticContraindications(
-			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPhysicalAssessmentSectionThrombolyticContraindications(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_THROMBOLYTIC_CONTRAINDICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION);
 			try {
 				VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_THROMBOLYTIC_CONTRAINDICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_THROMBOLYTIC_CONTRAINDICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_THROMBOLYTIC_CONTRAINDICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPhysicalAssessmentSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_THROMBOLYTIC_CONTRAINDICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPhysicalAssessmentSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_THROMBOLYTIC_CONTRAINDICATIONS,
-					EmspcrPlugin.INSTANCE.getString("EMSPhysicalAssessmentSectionThrombolyticContraindications"),
-					new Object[] { emsPhysicalAssessmentSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_THROMBOLYTIC_CONTRAINDICATIONS,
+						 EmspcrPlugin.INSTANCE.getString("EMSPhysicalAssessmentSectionEMSPhysicalAssessmentSectionThrombolyticContraindications"),
+						 new Object [] { emsPhysicalAssessmentSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -701,8 +704,9 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_BARRIERS_TO_PATIENT_CARE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -714,78 +718,76 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPhysicalAssessmentSectionBarriersToPatientCare(
-			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPhysicalAssessmentSectionBarriersToPatientCare(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_BARRIERS_TO_PATIENT_CARE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION);
 			try {
 				VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_BARRIERS_TO_PATIENT_CARE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_BARRIERS_TO_PATIENT_CARE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_BARRIERS_TO_PATIENT_CARE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPhysicalAssessmentSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PHYSICAL_ASSESSMENT_SECTION_BARRIERS_TO_PATIENT_CARE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPhysicalAssessmentSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_BARRIERS_TO_PATIENT_CARE,
-					EmspcrPlugin.INSTANCE.getString("EMSPhysicalAssessmentSectionBarriersToPatientCare"),
-					new Object[] { emsPhysicalAssessmentSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_BARRIERS_TO_PATIENT_CARE,
+						 EmspcrPlugin.INSTANCE.getString("EMSPhysicalAssessmentSectionEMSPhysicalAssessmentSectionBarriersToPatientCare"),
+						 new Object [] { emsPhysicalAssessmentSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getPhysicalAssessmentOrganizer(EMSPhysicalAssessmentSection) <em>Get Physical Assessment Organizer</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getPhysicalAssessmentOrganizers(EMSPhysicalAssessmentSection) <em>Get Physical Assessment Organizers</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPhysicalAssessmentOrganizer(EMSPhysicalAssessmentSection)
+	 * @see #getPhysicalAssessmentOrganizers(EMSPhysicalAssessmentSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PHYSICAL_ASSESSMENT_ORGANIZER__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(emspcr::PhysicalAssessmentOrganizer))->asSequence()->any(true).oclAsType(emspcr::PhysicalAssessmentOrganizer)";
+	protected static final String GET_PHYSICAL_ASSESSMENT_ORGANIZERS__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(emspcr::PhysicalAssessmentOrganizer)).oclAsType(emspcr::PhysicalAssessmentOrganizer)";
 
 	/**
-	 * The cached OCL query for the '{@link #getPhysicalAssessmentOrganizer(EMSPhysicalAssessmentSection) <em>Get Physical Assessment Organizer</em>}' query operation.
+	 * The cached OCL query for the '{@link #getPhysicalAssessmentOrganizers(EMSPhysicalAssessmentSection) <em>Get Physical Assessment Organizers</em>}' query operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPhysicalAssessmentOrganizer(EMSPhysicalAssessmentSection)
+	 * @see #getPhysicalAssessmentOrganizers(EMSPhysicalAssessmentSection)
 	 * @generated
 	 * @ordered
 	 */
-	protected static OCLExpression<EClassifier> GET_PHYSICAL_ASSESSMENT_ORGANIZER__EOCL_QRY;
+	protected static OCLExpression<EClassifier> GET_PHYSICAL_ASSESSMENT_ORGANIZERS__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-
-	public static PhysicalAssessmentOrganizer getPhysicalAssessmentOrganizer(
-			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection) {
-		if (GET_PHYSICAL_ASSESSMENT_ORGANIZER__EOCL_QRY == null) {
+	
+	public static  EList<PhysicalAssessmentOrganizer> getPhysicalAssessmentOrganizers(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection) {
+		if (GET_PHYSICAL_ASSESSMENT_ORGANIZERS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION,
-				EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION.getEAllOperations().get(66));
+			helper.setOperationContext(EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION, EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION.getEAllOperations().get(66));
 			try {
-				GET_PHYSICAL_ASSESSMENT_ORGANIZER__EOCL_QRY = helper.createQuery(GET_PHYSICAL_ASSESSMENT_ORGANIZER__EOCL_EXP);
-			} catch (ParserException pe) {
+				GET_PHYSICAL_ASSESSMENT_ORGANIZERS__EOCL_QRY = helper.createQuery(GET_PHYSICAL_ASSESSMENT_ORGANIZERS__EOCL_EXP);
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PHYSICAL_ASSESSMENT_ORGANIZER__EOCL_QRY);
-		return (PhysicalAssessmentOrganizer) query.evaluate(emsPhysicalAssessmentSection);
+		OCL.Query query = EOCL_ENV.createQuery(GET_PHYSICAL_ASSESSMENT_ORGANIZERS__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<PhysicalAssessmentOrganizer> result = (Collection<PhysicalAssessmentOrganizer>) query.evaluate(emsPhysicalAssessmentSection);
+		return new BasicEList.UnmodifiableEList<PhysicalAssessmentOrganizer>(result.size(), result.toArray());
 	}
 
 	/**
@@ -813,16 +815,15 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-
-	public static PatientPregnancy getPatientPregnancy(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection) {
+	
+	public static  PatientPregnancy getPatientPregnancy(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection) {
 		if (GET_PATIENT_PREGNANCY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION,
-				EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION.getEAllOperations().get(67));
+			helper.setOperationContext(EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION, EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION.getEAllOperations().get(67));
 			try {
 				GET_PATIENT_PREGNANCY__EOCL_QRY = helper.createQuery(GET_PATIENT_PREGNANCY__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -855,16 +856,15 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-
-	public static LastOralIntake getLastOralIntake(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection) {
+	
+	public static  LastOralIntake getLastOralIntake(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection) {
 		if (GET_LAST_ORAL_INTAKE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION,
-				EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION.getEAllOperations().get(68));
+			helper.setOperationContext(EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION, EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION.getEAllOperations().get(68));
 			try {
 				GET_LAST_ORAL_INTAKE__EOCL_QRY = helper.createQuery(GET_LAST_ORAL_INTAKE__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -897,16 +897,15 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-
-	public static PatientAge getPatientAge(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection) {
+	
+	public static  PatientAge getPatientAge(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection) {
 		if (GET_PATIENT_AGE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION,
-				EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION.getEAllOperations().get(69));
+			helper.setOperationContext(EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION, EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION.getEAllOperations().get(69));
 			try {
 				GET_PATIENT_AGE__EOCL_QRY = helper.createQuery(GET_PATIENT_AGE__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -939,17 +938,15 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-
-	public static ThrombolyticContraindications getThrombolyticContraindications(
-			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection) {
+	
+	public static  ThrombolyticContraindications getThrombolyticContraindications(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection) {
 		if (GET_THROMBOLYTIC_CONTRAINDICATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION,
-				EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION.getEAllOperations().get(70));
+			helper.setOperationContext(EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION, EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION.getEAllOperations().get(70));
 			try {
 				GET_THROMBOLYTIC_CONTRAINDICATIONS__EOCL_QRY = helper.createQuery(GET_THROMBOLYTIC_CONTRAINDICATIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -982,17 +979,15 @@ public class EMSPhysicalAssessmentSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-
-	public static BarriersToPatientCare getBarriersToPatientCare(
-			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection) {
+	
+	public static  BarriersToPatientCare getBarriersToPatientCare(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection) {
 		if (GET_BARRIERS_TO_PATIENT_CARE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION,
-				EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION.getEAllOperations().get(71));
+			helper.setOperationContext(EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION, EmspcrPackage.Literals.EMS_PHYSICAL_ASSESSMENT_SECTION.getEAllOperations().get(71));
 			try {
 				GET_BARRIERS_TO_PATIENT_CARE__EOCL_QRY = helper.createQuery(GET_BARRIERS_TO_PATIENT_CARE__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

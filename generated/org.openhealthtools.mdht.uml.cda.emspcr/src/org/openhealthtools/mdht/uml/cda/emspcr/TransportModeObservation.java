@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -25,7 +21,8 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getTransportModeObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TransportModeObservationTemplateId TransportModeObservationMoodCode TransportModeObservationCode TransportModeObservationCodeP TransportModeObservationValue TransportModeObservationValueP' templateId.root='2.16.840.1.1133883.17.3.10.1.33' moodCode='EVN' code.code='67550-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Transport mode from scene NEMSIS' constraints.validation.dependOn.TransportModeObservationCode='TransportModeObservationCodeP' value.codeSystem='2.16.840.1.113883.6.1' value.codeSystemName='LOINC'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TransportModeObservationTemplateId TransportModeObservationMoodCode TransportModeObservationCode TransportModeObservationCodeP TransportModeObservationValue TransportModeObservationValueP TransportModeObservationTransportModeQualifierRelationship' templateId.root='2.16.840.1.1133883.17.3.10.1.33' moodCode='EVN' code.code='67550-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Transport mode from scene NEMSIS' constraints.validation.dependOn.TransportModeObservationCode='TransportModeObservationCodeP' value.codeSystem='2.16.840.1.113883.6.1' value.codeSystemName='LOINC'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrTransportModeObservationTransportModeQualifierRelationship typeCode='COMP' constraints.validation.error='TransportModeObservationTransportModeQualifierRelationshipTypeCode TransportModeObservationTransportModeQualifierRelationshipObservation'"
  * @generated
  */
 public interface TransportModeObservation extends Observation {
@@ -84,7 +81,7 @@ public interface TransportModeObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17168-8\' or value.code = \'LA17169-6\' or value.code = \'LA17170-4\' or value.code = \'LA17171-2\' or value.code = \'LA17172-0\' or value.code = \'LA17173-8\' or value.code = \'LA17174-6\' or value.code = \'LA17175-3\' or value.code = \'LA17176-1\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17177-9\' or value.code = \'LA17178-7\' or value.code = \'LA17179-5\' or value.code = \'LA17180-3\')))'"
 	 * @generated
 	 */
 	boolean validateTransportModeObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -104,14 +101,25 @@ public interface TransportModeObservation extends Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	public TransportModeObservation init();
+	boolean validateTransportModeObservationTransportModeQualifierRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TransportModeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public TransportModeObservation init();
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public TransportModeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // TransportModeObservation

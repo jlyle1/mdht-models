@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -94,6 +90,15 @@ public class SkinAssessmentImpl extends ObservationImpl implements SkinAssessmen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSkinAssessmentEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SkinAssessmentOperations.validateSkinAssessmentEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSkinAssessmentValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SkinAssessmentOperations.validateSkinAssessmentValue(this, diagnostics, context);
 	}
@@ -113,16 +118,15 @@ public class SkinAssessmentImpl extends ObservationImpl implements SkinAssessmen
 	 * @generated
 	 */
 	public SkinAssessment init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public SkinAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // SkinAssessmentImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SkinAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //SkinAssessmentImpl

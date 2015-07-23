@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -58,10 +54,8 @@ public class DispatchLocationOrganizerImpl extends OrganizerImpl implements Disp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDispatchLocationOrganizerDispatchLocationNameRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return DispatchLocationOrganizerOperations.validateDispatchLocationOrganizerDispatchLocationNameRelationship(
-			this, diagnostics, context);
+	public boolean validateDispatchLocationOrganizerDispatchLocationNameRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DispatchLocationOrganizerOperations.validateDispatchLocationOrganizerDispatchLocationNameRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -69,10 +63,8 @@ public class DispatchLocationOrganizerImpl extends OrganizerImpl implements Disp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDispatchLocationOrganizerDispatchLocationLatitudeRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return DispatchLocationOrganizerOperations.validateDispatchLocationOrganizerDispatchLocationLatitudeRelationship(
-			this, diagnostics, context);
+	public boolean validateDispatchLocationOrganizerDispatchLocationLatitudeRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DispatchLocationOrganizerOperations.validateDispatchLocationOrganizerDispatchLocationLatitudeRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -80,10 +72,8 @@ public class DispatchLocationOrganizerImpl extends OrganizerImpl implements Disp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDispatchLocationOrganizerDispatchLocationLongtudeRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return DispatchLocationOrganizerOperations.validateDispatchLocationOrganizerDispatchLocationLongtudeRelationship(
-			this, diagnostics, context);
+	public boolean validateDispatchLocationOrganizerDispatchLocationLongtudeRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DispatchLocationOrganizerOperations.validateDispatchLocationOrganizerDispatchLocationLongtudeRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -92,8 +82,7 @@ public class DispatchLocationOrganizerImpl extends OrganizerImpl implements Disp
 	 * @generated
 	 */
 	public boolean validateDispatchLocationOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DispatchLocationOrganizerOperations.validateDispatchLocationOrganizerTemplateId(
-			this, diagnostics, context);
+		return DispatchLocationOrganizerOperations.validateDispatchLocationOrganizerTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -102,16 +91,15 @@ public class DispatchLocationOrganizerImpl extends OrganizerImpl implements Disp
 	 * @generated
 	 */
 	public DispatchLocationOrganizer init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public DispatchLocationOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // DispatchLocationOrganizerImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public DispatchLocationOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //DispatchLocationOrganizerImpl

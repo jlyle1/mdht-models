@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -95,11 +91,10 @@ public interface UnitEnRouteTime extends Observation {
 	 * @generated
 	 */
 	public UnitEnRouteTime init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public UnitEnRouteTime init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public UnitEnRouteTime init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // UnitEnRouteTime

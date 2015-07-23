@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -58,10 +54,8 @@ public class ExistenceOfHistoryOfConditionImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExistenceOfHistoryOfConditionTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ExistenceOfHistoryOfConditionOperations.validateExistenceOfHistoryOfConditionTemplateId(
-			this, diagnostics, context);
+	public boolean validateExistenceOfHistoryOfConditionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ExistenceOfHistoryOfConditionOperations.validateExistenceOfHistoryOfConditionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -69,10 +63,8 @@ public class ExistenceOfHistoryOfConditionImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExistenceOfHistoryOfConditionMoodCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ExistenceOfHistoryOfConditionOperations.validateExistenceOfHistoryOfConditionMoodCode(
-			this, diagnostics, context);
+	public boolean validateExistenceOfHistoryOfConditionMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ExistenceOfHistoryOfConditionOperations.validateExistenceOfHistoryOfConditionMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -81,8 +73,7 @@ public class ExistenceOfHistoryOfConditionImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	public boolean validateExistenceOfHistoryOfConditionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ExistenceOfHistoryOfConditionOperations.validateExistenceOfHistoryOfConditionCode(
-			this, diagnostics, context);
+		return ExistenceOfHistoryOfConditionOperations.validateExistenceOfHistoryOfConditionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +82,7 @@ public class ExistenceOfHistoryOfConditionImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	public boolean validateExistenceOfHistoryOfConditionValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ExistenceOfHistoryOfConditionOperations.validateExistenceOfHistoryOfConditionValue(
-			this, diagnostics, context);
+		return ExistenceOfHistoryOfConditionOperations.validateExistenceOfHistoryOfConditionValue(this, diagnostics, context);
 	}
 
 	/**
@@ -101,16 +91,15 @@ public class ExistenceOfHistoryOfConditionImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	public ExistenceOfHistoryOfCondition init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ExistenceOfHistoryOfCondition init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // ExistenceOfHistoryOfConditionImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ExistenceOfHistoryOfCondition init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //ExistenceOfHistoryOfConditionImpl

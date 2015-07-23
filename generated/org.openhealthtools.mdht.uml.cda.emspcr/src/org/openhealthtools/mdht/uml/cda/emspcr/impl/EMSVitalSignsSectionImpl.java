@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -18,7 +14,6 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
-import org.openhealthtools.mdht.uml.cda.emspcr.AdditionalVitalSignsOrganizer;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSVitalSignsSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.VitalSignsOrganizer;
@@ -97,21 +92,8 @@ public class EMSVitalSignsSectionImpl extends SectionImpl implements EMSVitalSig
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSVitalSignsSectionVitalSignsOrganizer(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EMSVitalSignsSectionOperations.validateEMSVitalSignsSectionVitalSignsOrganizer(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateEMSVitalSignsSectionAdditionalVitalSignsOrganizer(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EMSVitalSignsSectionOperations.validateEMSVitalSignsSectionAdditionalVitalSignsOrganizer(
-			this, diagnostics, context);
+	public boolean validateEMSVitalSignsSectionVitalSignsOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSVitalSignsSectionOperations.validateEMSVitalSignsSectionVitalSignsOrganizer(this, diagnostics, context);
 	}
 
 	/**
@@ -128,26 +110,16 @@ public class EMSVitalSignsSectionImpl extends SectionImpl implements EMSVitalSig
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<AdditionalVitalSignsOrganizer> getAdditionalVitalSignsOrganizers() {
-		return EMSVitalSignsSectionOperations.getAdditionalVitalSignsOrganizers(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EMSVitalSignsSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMSVitalSignsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // EMSVitalSignsSectionImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EMSVitalSignsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //EMSVitalSignsSectionImpl

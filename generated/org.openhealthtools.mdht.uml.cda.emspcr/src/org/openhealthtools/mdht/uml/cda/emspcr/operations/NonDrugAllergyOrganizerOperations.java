@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -80,8 +76,9 @@ public class NonDrugAllergyOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_EXISTENCE_OF_NON_DRUG_ALLERGY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -93,31 +90,30 @@ public class NonDrugAllergyOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateNonDrugAllergyOrganizerExistenceOfNonDrugAllergy(
-			NonDrugAllergyOrganizer nonDrugAllergyOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateNonDrugAllergyOrganizerExistenceOfNonDrugAllergy(NonDrugAllergyOrganizer nonDrugAllergyOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_EXISTENCE_OF_NON_DRUG_ALLERGY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.NON_DRUG_ALLERGY_ORGANIZER);
 			try {
 				VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_EXISTENCE_OF_NON_DRUG_ALLERGY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_EXISTENCE_OF_NON_DRUG_ALLERGY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_EXISTENCE_OF_NON_DRUG_ALLERGY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nonDrugAllergyOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_EXISTENCE_OF_NON_DRUG_ALLERGY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonDrugAllergyOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.NON_DRUG_ALLERGY_ORGANIZER__NON_DRUG_ALLERGY_ORGANIZER_EXISTENCE_OF_NON_DRUG_ALLERGY,
-					EmspcrPlugin.INSTANCE.getString("NonDrugAllergyOrganizerExistenceOfNonDrugAllergy"),
-					new Object[] { nonDrugAllergyOrganizer }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.NON_DRUG_ALLERGY_ORGANIZER__NON_DRUG_ALLERGY_ORGANIZER_EXISTENCE_OF_NON_DRUG_ALLERGY,
+						 EmspcrPlugin.INSTANCE.getString("NonDrugAllergyOrganizerNonDrugAllergyOrganizerExistenceOfNonDrugAllergy"),
+						 new Object [] { nonDrugAllergyOrganizer }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -141,8 +137,9 @@ public class NonDrugAllergyOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_NON_DRUG_ALLERGY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -154,29 +151,30 @@ public class NonDrugAllergyOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateNonDrugAllergyOrganizerNonDrugAllergy(
-			NonDrugAllergyOrganizer nonDrugAllergyOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateNonDrugAllergyOrganizerNonDrugAllergy(NonDrugAllergyOrganizer nonDrugAllergyOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_NON_DRUG_ALLERGY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.NON_DRUG_ALLERGY_ORGANIZER);
 			try {
 				VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_NON_DRUG_ALLERGY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_NON_DRUG_ALLERGY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_NON_DRUG_ALLERGY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nonDrugAllergyOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_NON_DRUG_ALLERGY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonDrugAllergyOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.NON_DRUG_ALLERGY_ORGANIZER__NON_DRUG_ALLERGY_ORGANIZER_NON_DRUG_ALLERGY,
-					EmspcrPlugin.INSTANCE.getString("NonDrugAllergyOrganizerNonDrugAllergy"),
-					new Object[] { nonDrugAllergyOrganizer }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.NON_DRUG_ALLERGY_ORGANIZER__NON_DRUG_ALLERGY_ORGANIZER_NON_DRUG_ALLERGY,
+						 EmspcrPlugin.INSTANCE.getString("NonDrugAllergyOrganizerNonDrugAllergyOrganizerNonDrugAllergy"),
+						 new Object [] { nonDrugAllergyOrganizer }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -200,8 +198,9 @@ public class NonDrugAllergyOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -213,29 +212,30 @@ public class NonDrugAllergyOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateNonDrugAllergyOrganizerTemplateId(NonDrugAllergyOrganizer nonDrugAllergyOrganizer,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateNonDrugAllergyOrganizerTemplateId(NonDrugAllergyOrganizer nonDrugAllergyOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.NON_DRUG_ALLERGY_ORGANIZER);
 			try {
 				VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nonDrugAllergyOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_NON_DRUG_ALLERGY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonDrugAllergyOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.NON_DRUG_ALLERGY_ORGANIZER__NON_DRUG_ALLERGY_ORGANIZER_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("NonDrugAllergyOrganizerTemplateId"),
-					new Object[] { nonDrugAllergyOrganizer }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.NON_DRUG_ALLERGY_ORGANIZER__NON_DRUG_ALLERGY_ORGANIZER_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("NonDrugAllergyOrganizerNonDrugAllergyOrganizerTemplateId"),
+						 new Object [] { nonDrugAllergyOrganizer }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -266,16 +266,15 @@ public class NonDrugAllergyOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-
-	public static ExistenceOfNonDrugAllergy getExistenceOfNonDrugAllergy(NonDrugAllergyOrganizer nonDrugAllergyOrganizer) {
+	
+	public static  ExistenceOfNonDrugAllergy getExistenceOfNonDrugAllergy(NonDrugAllergyOrganizer nonDrugAllergyOrganizer) {
 		if (GET_EXISTENCE_OF_NON_DRUG_ALLERGY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.NON_DRUG_ALLERGY_ORGANIZER,
-				EmspcrPackage.Literals.NON_DRUG_ALLERGY_ORGANIZER.getEAllOperations().get(55));
+			helper.setOperationContext(EmspcrPackage.Literals.NON_DRUG_ALLERGY_ORGANIZER, EmspcrPackage.Literals.NON_DRUG_ALLERGY_ORGANIZER.getEAllOperations().get(55));
 			try {
 				GET_EXISTENCE_OF_NON_DRUG_ALLERGY__EOCL_QRY = helper.createQuery(GET_EXISTENCE_OF_NON_DRUG_ALLERGY__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -308,16 +307,15 @@ public class NonDrugAllergyOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-
-	public static EList<NonDrugAllergy> getNonDrugAllergies(NonDrugAllergyOrganizer nonDrugAllergyOrganizer) {
+	
+	public static  EList<NonDrugAllergy> getNonDrugAllergies(NonDrugAllergyOrganizer nonDrugAllergyOrganizer) {
 		if (GET_NON_DRUG_ALLERGIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.NON_DRUG_ALLERGY_ORGANIZER,
-				EmspcrPackage.Literals.NON_DRUG_ALLERGY_ORGANIZER.getEAllOperations().get(56));
+			helper.setOperationContext(EmspcrPackage.Literals.NON_DRUG_ALLERGY_ORGANIZER, EmspcrPackage.Literals.NON_DRUG_ALLERGY_ORGANIZER.getEAllOperations().get(56));
 			try {
 				GET_NON_DRUG_ALLERGIES__EOCL_QRY = helper.createQuery(GET_NON_DRUG_ALLERGIES__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

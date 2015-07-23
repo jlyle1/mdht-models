@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -11,6 +7,7 @@ import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
 
@@ -60,7 +57,7 @@ public interface GlasgowComaScoreOrganizer extends Organizer {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->one(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(emspcr::GlasgowQualifier))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(emspcr::GlasgowQualifier))'"
 	 * @generated
 	 */
 	boolean validateGlasgowComaScoreOrganizerGlasgowQualifier(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -135,10 +132,10 @@ public interface GlasgowComaScoreOrganizer extends Organizer {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::GlasgowQualifier))->asSequence()->any(true).oclAsType(emspcr::GlasgowQualifier)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::GlasgowQualifier)).oclAsType(emspcr::GlasgowQualifier)'"
 	 * @generated
 	 */
-	GlasgowQualifier getGlasgowQualifier();
+	EList<GlasgowQualifier> getGlasgowQualifiers();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -164,11 +161,10 @@ public interface GlasgowComaScoreOrganizer extends Organizer {
 	 * @generated
 	 */
 	public GlasgowComaScoreOrganizer init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public GlasgowComaScoreOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public GlasgowComaScoreOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // GlasgowComaScoreOrganizer

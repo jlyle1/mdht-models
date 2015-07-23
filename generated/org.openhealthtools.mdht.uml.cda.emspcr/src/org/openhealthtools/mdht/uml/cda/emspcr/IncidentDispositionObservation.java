@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -84,7 +80,7 @@ public interface IncidentDispositionObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17154-8\' or value.code = \'LA17155-5\' or value.code = \'LA17156-3\' or value.code = \'LA17157-1\' or value.code = \'LA17158-9\' or value.code = \'LA17159-7\' or value.code = \'LA17160-5\' or value.code = \'LA17161-3\' or value.code = \'LA17162-1\' or value.code = \'LA17163-9\' or value.code = \'LA17164-7\' or value.code = \'LA17165-4\' or value.code = \'LA17166-2\' or value.code = \'LA17167-0\' or value.code = \'LA18080-4\' or value.code = \'LA18212-3\' or value.code = \'LA18213-1\' or value.code = \'LA18214-9\' or value.code = \'LA18215-6\' or value.code = \'LA18216-4\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17154-8\' or value.code = \'LA17155-5\' or value.code = \'LA17156-3\' or value.code = \'LA17159-7\' or value.code = \'LA17160-5\' or value.code = \'LA17161-3\' or value.code = \'LA17162-1\' or value.code = \'LA17163-9\' or value.code = \'LA17164-7\' or value.code = \'LA17165-4\' or value.code = \'LA17166-2\' or value.code = \'LA17167-0\' or value.code = \'LA18080-4\' or value.code = \'LA18212-3\' or value.code = \'LA18213-1\' or value.code = \'LA18214-9\' or value.code = \'LA18215-6\' or value.code = \'LA18216-4\' or value.code = \'LOINC_TBDA_561\' or value.code = \'LOINC_TBDA_562\' or value.code = \'LOINC_TBDA_563\' or value.code = \'LOINC_TBDA_564\')))'"
 	 * @generated
 	 */
 	boolean validateIncidentDispositionObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -107,11 +103,10 @@ public interface IncidentDispositionObservation extends Observation {
 	 * @generated
 	 */
 	public IncidentDispositionObservation init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public IncidentDispositionObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public IncidentDispositionObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // IncidentDispositionObservation

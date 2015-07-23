@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -72,8 +68,9 @@ public class LastOralIntakeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_LAST_ORAL_INTAKE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,28 +82,30 @@ public class LastOralIntakeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateLastOralIntakeTemplateId(LastOralIntake lastOralIntake, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateLastOralIntakeTemplateId(LastOralIntake lastOralIntake, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_LAST_ORAL_INTAKE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.LAST_ORAL_INTAKE);
 			try {
 				VALIDATE_LAST_ORAL_INTAKE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LAST_ORAL_INTAKE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LAST_ORAL_INTAKE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			lastOralIntake)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_LAST_ORAL_INTAKE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(lastOralIntake)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.LAST_ORAL_INTAKE__LAST_ORAL_INTAKE_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("LastOralIntakeTemplateId"), new Object[] { lastOralIntake }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.LAST_ORAL_INTAKE__LAST_ORAL_INTAKE_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("LastOralIntakeLastOralIntakeTemplateId"),
+						 new Object [] { lastOralIntake }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -130,8 +129,9 @@ public class LastOralIntakeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_LAST_ORAL_INTAKE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -143,28 +143,30 @@ public class LastOralIntakeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateLastOralIntakeMoodCode(LastOralIntake lastOralIntake, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateLastOralIntakeMoodCode(LastOralIntake lastOralIntake, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_LAST_ORAL_INTAKE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.LAST_ORAL_INTAKE);
 			try {
 				VALIDATE_LAST_ORAL_INTAKE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LAST_ORAL_INTAKE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LAST_ORAL_INTAKE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			lastOralIntake)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_LAST_ORAL_INTAKE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(lastOralIntake)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.LAST_ORAL_INTAKE__LAST_ORAL_INTAKE_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("LastOralIntakeMoodCode"), new Object[] { lastOralIntake }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.LAST_ORAL_INTAKE__LAST_ORAL_INTAKE_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("LastOralIntakeLastOralIntakeMoodCode"),
+						 new Object [] { lastOralIntake }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -188,8 +190,9 @@ public class LastOralIntakeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_LAST_ORAL_INTAKE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -201,28 +204,30 @@ public class LastOralIntakeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateLastOralIntakeCodeP(LastOralIntake lastOralIntake, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateLastOralIntakeCodeP(LastOralIntake lastOralIntake, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_LAST_ORAL_INTAKE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.LAST_ORAL_INTAKE);
 			try {
 				VALIDATE_LAST_ORAL_INTAKE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LAST_ORAL_INTAKE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LAST_ORAL_INTAKE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			lastOralIntake)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_LAST_ORAL_INTAKE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(lastOralIntake)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.LAST_ORAL_INTAKE__LAST_ORAL_INTAKE_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("LastOralIntakeCodeP"), new Object[] { lastOralIntake }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.LAST_ORAL_INTAKE__LAST_ORAL_INTAKE_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("LastOralIntakeLastOralIntakeCodeP"),
+						 new Object [] { lastOralIntake }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -234,7 +239,7 @@ public class LastOralIntakeOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(lastOralIntake);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -248,9 +253,9 @@ public class LastOralIntakeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_LAST_ORAL_INTAKE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67517-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_LAST_ORAL_INTAKE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67517-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLastOralIntakeCode(LastOralIntake, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Last Oral Intake Code</em>}' invariant operation.
@@ -260,8 +265,9 @@ public class LastOralIntakeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_LAST_ORAL_INTAKE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -273,35 +279,36 @@ public class LastOralIntakeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateLastOralIntakeCode(LastOralIntake lastOralIntake, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.LastOralIntakeCodeP");
+	
+	public static  boolean validateLastOralIntakeCode(LastOralIntake lastOralIntake, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.LastOralIntakeCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(lastOralIntake)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_LAST_ORAL_INTAKE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.LAST_ORAL_INTAKE);
 			try {
 				VALIDATE_LAST_ORAL_INTAKE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LAST_ORAL_INTAKE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_LAST_ORAL_INTAKE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(lastOralIntake)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.LAST_ORAL_INTAKE__LAST_ORAL_INTAKE_CODE,
-					EmspcrPlugin.INSTANCE.getString("LastOralIntakeCode"), new Object[] { lastOralIntake }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.LAST_ORAL_INTAKE__LAST_ORAL_INTAKE_CODE,
+						 EmspcrPlugin.INSTANCE.getString("LastOralIntakeLastOralIntakeCode"),
+						 new Object [] { lastOralIntake }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -325,8 +332,9 @@ public class LastOralIntakeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_LAST_ORAL_INTAKE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -338,27 +346,30 @@ public class LastOralIntakeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateLastOralIntakeValue(LastOralIntake lastOralIntake, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateLastOralIntakeValue(LastOralIntake lastOralIntake, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_LAST_ORAL_INTAKE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.LAST_ORAL_INTAKE);
 			try {
 				VALIDATE_LAST_ORAL_INTAKE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LAST_ORAL_INTAKE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_LAST_ORAL_INTAKE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(lastOralIntake)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.LAST_ORAL_INTAKE__LAST_ORAL_INTAKE_VALUE,
-					EmspcrPlugin.INSTANCE.getString("LastOralIntakeValue"), new Object[] { lastOralIntake }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.LAST_ORAL_INTAKE__LAST_ORAL_INTAKE_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("LastOralIntakeLastOralIntakeValue"),
+						 new Object [] { lastOralIntake }));
 			}
-
+			 
 			return false;
 		}
 		return true;

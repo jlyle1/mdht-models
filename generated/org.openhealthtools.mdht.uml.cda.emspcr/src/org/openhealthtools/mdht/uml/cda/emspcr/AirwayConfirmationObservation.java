@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -108,7 +104,7 @@ public interface AirwayConfirmationObservation extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (self.methodCode->size() = 1 and self.methodCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = element.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA18672-8\' or value.code = \'LA18673-6\' or value.code = \'LA18674-4\' or value.code = \'LA18675-1\' or value.code = \'LA18676-9\' or value.code = \'LA18677-7\' or value.code = \'LA18678-5\' or value.code = \'LA18679-3\' or value.code = \'LA18680-1\' or value.code = \'LA18681-9\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (self.methodCode->size() = 1 and self.methodCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = element.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA18672-8\' or value.code = \'LA18673-6\' or value.code = \'LA18674-4\' or value.code = \'LA18675-1\' or value.code = \'LA18676-9\' or value.code = \'LA18677-7\' or value.code = \'LA18678-5\' or value.code = \'LA18680-1\' or value.code = \'LA18681-9\')))'"
 	 * @generated
 	 */
 	boolean validateAirwayConfirmationObservationMethodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -131,11 +127,10 @@ public interface AirwayConfirmationObservation extends Observation {
 	 * @generated
 	 */
 	public AirwayConfirmationObservation init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AirwayConfirmationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AirwayConfirmationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AirwayConfirmationObservation

@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -72,8 +68,9 @@ public class GlasgowTotalOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_GLASGOW_TOTAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,28 +82,30 @@ public class GlasgowTotalOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateGlasgowTotalTemplateId(GlasgowTotal glasgowTotal, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateGlasgowTotalTemplateId(GlasgowTotal glasgowTotal, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_GLASGOW_TOTAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_TOTAL);
 			try {
 				VALIDATE_GLASGOW_TOTAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_TOTAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_TOTAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			glasgowTotal)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_TOTAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(glasgowTotal)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.GLASGOW_TOTAL__GLASGOW_TOTAL_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("GlasgowTotalTemplateId"), new Object[] { glasgowTotal }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.GLASGOW_TOTAL__GLASGOW_TOTAL_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("GlasgowTotalGlasgowTotalTemplateId"),
+						 new Object [] { glasgowTotal }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -130,8 +129,9 @@ public class GlasgowTotalOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_GLASGOW_TOTAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -143,27 +143,30 @@ public class GlasgowTotalOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateGlasgowTotalMoodCode(GlasgowTotal glasgowTotal, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateGlasgowTotalMoodCode(GlasgowTotal glasgowTotal, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_GLASGOW_TOTAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_TOTAL);
 			try {
 				VALIDATE_GLASGOW_TOTAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_TOTAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_TOTAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(glasgowTotal)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.GLASGOW_TOTAL__GLASGOW_TOTAL_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("GlasgowTotalMoodCode"), new Object[] { glasgowTotal }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.GLASGOW_TOTAL__GLASGOW_TOTAL_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("GlasgowTotalGlasgowTotalMoodCode"),
+						 new Object [] { glasgowTotal }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -187,8 +190,9 @@ public class GlasgowTotalOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_GLASGOW_TOTAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -200,27 +204,30 @@ public class GlasgowTotalOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateGlasgowTotalCodeP(GlasgowTotal glasgowTotal, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateGlasgowTotalCodeP(GlasgowTotal glasgowTotal, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_GLASGOW_TOTAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_TOTAL);
 			try {
 				VALIDATE_GLASGOW_TOTAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_TOTAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_TOTAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(glasgowTotal)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.GLASGOW_TOTAL__GLASGOW_TOTAL_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("GlasgowTotalCodeP"), new Object[] { glasgowTotal }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.GLASGOW_TOTAL__GLASGOW_TOTAL_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("GlasgowTotalGlasgowTotalCodeP"),
+						 new Object [] { glasgowTotal }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -232,7 +239,7 @@ public class GlasgowTotalOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(glasgowTotal);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -246,9 +253,9 @@ public class GlasgowTotalOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GLASGOW_TOTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '9269-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_GLASGOW_TOTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '9269-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGlasgowTotalCode(GlasgowTotal, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Total Code</em>}' invariant operation.
@@ -258,8 +265,9 @@ public class GlasgowTotalOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_GLASGOW_TOTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -271,35 +279,36 @@ public class GlasgowTotalOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateGlasgowTotalCode(GlasgowTotal glasgowTotal, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.GlasgowTotalCodeP");
+	
+	public static  boolean validateGlasgowTotalCode(GlasgowTotal glasgowTotal, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.GlasgowTotalCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(glasgowTotal)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_GLASGOW_TOTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_TOTAL);
 			try {
 				VALIDATE_GLASGOW_TOTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_TOTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_TOTAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(glasgowTotal)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.GLASGOW_TOTAL__GLASGOW_TOTAL_CODE,
-					EmspcrPlugin.INSTANCE.getString("GlasgowTotalCode"), new Object[] { glasgowTotal }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.GLASGOW_TOTAL__GLASGOW_TOTAL_CODE,
+						 EmspcrPlugin.INSTANCE.getString("GlasgowTotalGlasgowTotalCode"),
+						 new Object [] { glasgowTotal }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -323,8 +332,9 @@ public class GlasgowTotalOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_GLASGOW_TOTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -336,27 +346,30 @@ public class GlasgowTotalOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateGlasgowTotalValue(GlasgowTotal glasgowTotal, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateGlasgowTotalValue(GlasgowTotal glasgowTotal, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_GLASGOW_TOTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_TOTAL);
 			try {
 				VALIDATE_GLASGOW_TOTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_TOTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_TOTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(glasgowTotal)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.GLASGOW_TOTAL__GLASGOW_TOTAL_VALUE,
-					EmspcrPlugin.INSTANCE.getString("GlasgowTotalValue"), new Object[] { glasgowTotal }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.GLASGOW_TOTAL__GLASGOW_TOTAL_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("GlasgowTotalGlasgowTotalValue"),
+						 new Object [] { glasgowTotal }));
 			}
-
+			 
 			return false;
 		}
 		return true;

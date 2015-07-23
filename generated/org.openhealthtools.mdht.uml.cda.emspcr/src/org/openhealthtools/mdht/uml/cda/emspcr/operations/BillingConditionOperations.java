@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -73,8 +69,9 @@ public class BillingConditionOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_BILLING_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,28 +83,30 @@ public class BillingConditionOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateBillingConditionTemplateId(BillingCondition billingCondition,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateBillingConditionTemplateId(BillingCondition billingCondition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_BILLING_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.BILLING_CONDITION);
 			try {
 				VALIDATE_BILLING_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BILLING_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BILLING_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			billingCondition)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_BILLING_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(billingCondition)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.BILLING_CONDITION__BILLING_CONDITION_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("BillingConditionTemplateId"), new Object[] { billingCondition }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.BILLING_CONDITION__BILLING_CONDITION_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("BillingConditionBillingConditionTemplateId"),
+						 new Object [] { billingCondition }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -131,8 +130,9 @@ public class BillingConditionOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_BILLING_CONDITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -144,28 +144,30 @@ public class BillingConditionOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateBillingConditionCodeP(BillingCondition billingCondition, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateBillingConditionCodeP(BillingCondition billingCondition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_BILLING_CONDITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.BILLING_CONDITION);
 			try {
 				VALIDATE_BILLING_CONDITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BILLING_CONDITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BILLING_CONDITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			billingCondition)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_BILLING_CONDITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(billingCondition)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.BILLING_CONDITION__BILLING_CONDITION_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("BillingConditionCodeP"), new Object[] { billingCondition }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.BILLING_CONDITION__BILLING_CONDITION_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("BillingConditionBillingConditionCodeP"),
+						 new Object [] { billingCondition }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -177,7 +179,7 @@ public class BillingConditionOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(billingCondition);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -191,9 +193,9 @@ public class BillingConditionOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_BILLING_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67556-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_BILLING_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67556-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateBillingConditionCode(BillingCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Billing Condition Code</em>}' invariant operation.
@@ -203,8 +205,9 @@ public class BillingConditionOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_BILLING_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -216,36 +219,36 @@ public class BillingConditionOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateBillingConditionCode(BillingCondition billingCondition, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.BillingConditionCodeP");
+	
+	public static  boolean validateBillingConditionCode(BillingCondition billingCondition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.BillingConditionCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(billingCondition)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_BILLING_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.BILLING_CONDITION);
 			try {
 				VALIDATE_BILLING_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BILLING_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BILLING_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			billingCondition)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_BILLING_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(billingCondition)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.BILLING_CONDITION__BILLING_CONDITION_CODE,
-					EmspcrPlugin.INSTANCE.getString("BillingConditionCode"), new Object[] { billingCondition }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.BILLING_CONDITION__BILLING_CONDITION_CODE,
+						 EmspcrPlugin.INSTANCE.getString("BillingConditionBillingConditionCode"),
+						 new Object [] { billingCondition }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -259,9 +262,9 @@ public class BillingConditionOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_BILLING_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.90'))";
+	protected static final String VALIDATE_BILLING_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.90'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateBillingConditionValue(BillingCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Billing Condition Value</em>}' invariant operation.
@@ -271,8 +274,9 @@ public class BillingConditionOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_BILLING_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -284,28 +288,30 @@ public class BillingConditionOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateBillingConditionValue(BillingCondition billingCondition, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateBillingConditionValue(BillingCondition billingCondition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_BILLING_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.BILLING_CONDITION);
 			try {
 				VALIDATE_BILLING_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BILLING_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BILLING_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			billingCondition)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_BILLING_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(billingCondition)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.BILLING_CONDITION__BILLING_CONDITION_VALUE,
-					EmspcrPlugin.INSTANCE.getString("BillingConditionValue"), new Object[] { billingCondition }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.BILLING_CONDITION__BILLING_CONDITION_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("BillingConditionBillingConditionValue"),
+						 new Object [] { billingCondition }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -319,7 +325,7 @@ public class BillingConditionOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_BILLING_CONDITION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
+	protected static final String VALIDATE_BILLING_CONDITION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateBillingConditionValueP(BillingCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Billing Condition Value P</em>}' invariant operation.
@@ -329,8 +335,9 @@ public class BillingConditionOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_BILLING_CONDITION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -342,28 +349,30 @@ public class BillingConditionOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateBillingConditionValueP(BillingCondition billingCondition,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateBillingConditionValueP(BillingCondition billingCondition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_BILLING_CONDITION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.BILLING_CONDITION);
 			try {
 				VALIDATE_BILLING_CONDITION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BILLING_CONDITION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BILLING_CONDITION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			billingCondition)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_BILLING_CONDITION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(billingCondition)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.BILLING_CONDITION__BILLING_CONDITION_VALUE_P,
-					EmspcrPlugin.INSTANCE.getString("BillingConditionValueP"), new Object[] { billingCondition }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.BILLING_CONDITION__BILLING_CONDITION_VALUE_P,
+						 EmspcrPlugin.INSTANCE.getString("BillingConditionBillingConditionValueP"),
+						 new Object [] { billingCondition }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -387,8 +396,9 @@ public class BillingConditionOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_BILLING_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -400,28 +410,30 @@ public class BillingConditionOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateBillingConditionMoodCode(BillingCondition billingCondition,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateBillingConditionMoodCode(BillingCondition billingCondition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_BILLING_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.BILLING_CONDITION);
 			try {
 				VALIDATE_BILLING_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BILLING_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BILLING_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			billingCondition)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_BILLING_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(billingCondition)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.BILLING_CONDITION__BILLING_CONDITION_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("BillingConditionMoodCode"), new Object[] { billingCondition }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.BILLING_CONDITION__BILLING_CONDITION_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("BillingConditionBillingConditionMoodCode"),
+						 new Object [] { billingCondition }));
 			}
-
+			 
 			return false;
 		}
 		return true;

@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -61,10 +57,8 @@ public class NonDrugAllergyOrganizerImpl extends OrganizerImpl implements NonDru
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNonDrugAllergyOrganizerExistenceOfNonDrugAllergy(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonDrugAllergyOrganizerOperations.validateNonDrugAllergyOrganizerExistenceOfNonDrugAllergy(
-			this, diagnostics, context);
+	public boolean validateNonDrugAllergyOrganizerExistenceOfNonDrugAllergy(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NonDrugAllergyOrganizerOperations.validateNonDrugAllergyOrganizerExistenceOfNonDrugAllergy(this, diagnostics, context);
 	}
 
 	/**
@@ -72,10 +66,8 @@ public class NonDrugAllergyOrganizerImpl extends OrganizerImpl implements NonDru
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNonDrugAllergyOrganizerNonDrugAllergy(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return NonDrugAllergyOrganizerOperations.validateNonDrugAllergyOrganizerNonDrugAllergy(
-			this, diagnostics, context);
+	public boolean validateNonDrugAllergyOrganizerNonDrugAllergy(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return NonDrugAllergyOrganizerOperations.validateNonDrugAllergyOrganizerNonDrugAllergy(this, diagnostics, context);
 	}
 
 	/**
@@ -111,16 +103,15 @@ public class NonDrugAllergyOrganizerImpl extends OrganizerImpl implements NonDru
 	 * @generated
 	 */
 	public NonDrugAllergyOrganizer init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NonDrugAllergyOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // NonDrugAllergyOrganizerImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public NonDrugAllergyOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //NonDrugAllergyOrganizerImpl

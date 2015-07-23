@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -84,7 +80,7 @@ public interface ComplaintReportedByDispatch extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA15468-4\' or value.code = \'LA15903-0\' or value.code = \'LA17117-5\' or value.code = \'LA17118-3\' or value.code = \'LA17119-1\' or value.code = \'LA17120-9\' or value.code = \'LA17121-7\' or value.code = \'LA17122-5\' or value.code = \'LA17123-3\' or value.code = \'LA17124-1\' or value.code = \'LA17125-8\' or value.code = \'LA17126-6\' or value.code = \'LA17127-4\' or value.code = \'LA17128-2\' or value.code = \'LA17129-0\' or value.code = \'LA17131-6\' or value.code = \'LA17132-4\' or value.code = \'LA17133-2\' or value.code = \'LA17134-0\' or value.code = \'LA17135-7\' or value.code = \'LA17136-5\' or value.code = \'LA17137-3\' or value.code = \'LA17138-1\' or value.code = \'LA17140-7\' or value.code = \'LA17141-5\' or value.code = \'LA17142-3\' or value.code = \'LA17143-1\' or value.code = \'LA17144-9\' or value.code = \'LA17145-6\' or value.code = \'LA17146-4\' or value.code = \'LA17147-2\' or value.code = \'LA17148-0\' or value.code = \'LA17149-8\' or value.code = \'LA17150-6\' or value.code = \'LA18093-7\' or value.code = \'LA18209-9\' or value.code = \'LA18210-7\' or value.code = \'LA18211-5\' or value.code = \'LA9553-4\' or value.code = \'LA9555-9\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA15468-4\' or value.code = \'LA15903-0\' or value.code = \'LA17117-5\' or value.code = \'LA17118-3\' or value.code = \'LA17119-1\' or value.code = \'LA17120-9\' or value.code = \'LA17121-7\' or value.code = \'LA17122-5\' or value.code = \'LA17123-3\' or value.code = \'LA17124-1\' or value.code = \'LA17125-8\' or value.code = \'LA17126-6\' or value.code = \'LA17127-4\' or value.code = \'LA17128-2\' or value.code = \'LA17129-0\' or value.code = \'LA17131-6\' or value.code = \'LA17132-4\' or value.code = \'LA17133-2\' or value.code = \'LA17134-0\' or value.code = \'LA17135-7\' or value.code = \'LA17136-5\' or value.code = \'LA17137-3\' or value.code = \'LA17138-1\' or value.code = \'LA17140-7\' or value.code = \'LA17141-5\' or value.code = \'LA17142-3\' or value.code = \'LA17143-1\' or value.code = \'LA17144-9\' or value.code = \'LA17145-6\' or value.code = \'LA17146-4\' or value.code = \'LA17147-2\' or value.code = \'LA17148-0\' or value.code = \'LA17149-8\' or value.code = \'LA17150-6\' or value.code = \'LA18093-7\' or value.code = \'LA18209-9\' or value.code = \'LA18210-7\' or value.code = \'LA18211-5\' or value.code = \'LA9553-4\' or value.code = \'LA9555-9\' or value.code = \'LOINC_TBDA_959\' or value.code = \'LOINC_TBDA_960\')))'"
 	 * @generated
 	 */
 	boolean validateComplaintReportedByDispatchValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -107,11 +103,10 @@ public interface ComplaintReportedByDispatch extends Observation {
 	 * @generated
 	 */
 	public ComplaintReportedByDispatch init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ComplaintReportedByDispatch init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ComplaintReportedByDispatch init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ComplaintReportedByDispatch

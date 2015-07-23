@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -87,8 +83,7 @@ public interface EMSCardiacArrestEventSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::CardiacArrest) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
 	 * @generated
 	 */
-	boolean validateEMSCardiacArrestEventSectionCardiacArrestExistence(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateEMSCardiacArrestEventSectionCardiacArrestExistence(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -105,11 +100,10 @@ public interface EMSCardiacArrestEventSection extends Section {
 	 * @generated
 	 */
 	public EMSCardiacArrestEventSection init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMSCardiacArrestEventSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EMSCardiacArrestEventSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EMSCardiacArrestEventSection

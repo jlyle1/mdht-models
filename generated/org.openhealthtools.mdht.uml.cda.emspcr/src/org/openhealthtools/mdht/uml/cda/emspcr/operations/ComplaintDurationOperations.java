@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -72,8 +68,9 @@ public class ComplaintDurationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_COMPLAINT_DURATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,28 +82,30 @@ public class ComplaintDurationOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateComplaintDurationTemplateId(ComplaintDuration complaintDuration,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateComplaintDurationTemplateId(ComplaintDuration complaintDuration, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_COMPLAINT_DURATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.COMPLAINT_DURATION);
 			try {
 				VALIDATE_COMPLAINT_DURATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COMPLAINT_DURATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COMPLAINT_DURATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			complaintDuration)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_COMPLAINT_DURATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(complaintDuration)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.COMPLAINT_DURATION__COMPLAINT_DURATION_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("ComplaintDurationTemplateId"), new Object[] { complaintDuration }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.COMPLAINT_DURATION__COMPLAINT_DURATION_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("ComplaintDurationComplaintDurationTemplateId"),
+						 new Object [] { complaintDuration }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -130,8 +129,9 @@ public class ComplaintDurationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_COMPLAINT_DURATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -143,28 +143,30 @@ public class ComplaintDurationOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateComplaintDurationMoodCode(ComplaintDuration complaintDuration,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateComplaintDurationMoodCode(ComplaintDuration complaintDuration, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_COMPLAINT_DURATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.COMPLAINT_DURATION);
 			try {
 				VALIDATE_COMPLAINT_DURATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COMPLAINT_DURATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COMPLAINT_DURATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			complaintDuration)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_COMPLAINT_DURATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(complaintDuration)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.COMPLAINT_DURATION__COMPLAINT_DURATION_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("ComplaintDurationMoodCode"), new Object[] { complaintDuration }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.COMPLAINT_DURATION__COMPLAINT_DURATION_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("ComplaintDurationComplaintDurationMoodCode"),
+						 new Object [] { complaintDuration }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -188,8 +190,9 @@ public class ComplaintDurationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_COMPLAINT_DURATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -201,28 +204,30 @@ public class ComplaintDurationOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateComplaintDurationCodeP(ComplaintDuration complaintDuration,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateComplaintDurationCodeP(ComplaintDuration complaintDuration, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_COMPLAINT_DURATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.COMPLAINT_DURATION);
 			try {
 				VALIDATE_COMPLAINT_DURATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COMPLAINT_DURATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COMPLAINT_DURATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			complaintDuration)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_COMPLAINT_DURATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(complaintDuration)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.COMPLAINT_DURATION__COMPLAINT_DURATION_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("ComplaintDurationCodeP"), new Object[] { complaintDuration }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.COMPLAINT_DURATION__COMPLAINT_DURATION_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("ComplaintDurationComplaintDurationCodeP"),
+						 new Object [] { complaintDuration }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -234,7 +239,7 @@ public class ComplaintDurationOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(complaintDuration);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -248,9 +253,9 @@ public class ComplaintDurationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_COMPLAINT_DURATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67491-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_COMPLAINT_DURATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67491-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateComplaintDurationCode(ComplaintDuration, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Complaint Duration Code</em>}' invariant operation.
@@ -260,8 +265,9 @@ public class ComplaintDurationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_COMPLAINT_DURATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -273,36 +279,36 @@ public class ComplaintDurationOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateComplaintDurationCode(ComplaintDuration complaintDuration,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.ComplaintDurationCodeP");
+	
+	public static  boolean validateComplaintDurationCode(ComplaintDuration complaintDuration, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.ComplaintDurationCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(complaintDuration)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_COMPLAINT_DURATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.COMPLAINT_DURATION);
 			try {
 				VALIDATE_COMPLAINT_DURATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COMPLAINT_DURATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COMPLAINT_DURATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			complaintDuration)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_COMPLAINT_DURATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(complaintDuration)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.COMPLAINT_DURATION__COMPLAINT_DURATION_CODE,
-					EmspcrPlugin.INSTANCE.getString("ComplaintDurationCode"), new Object[] { complaintDuration }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.COMPLAINT_DURATION__COMPLAINT_DURATION_CODE,
+						 EmspcrPlugin.INSTANCE.getString("ComplaintDurationComplaintDurationCode"),
+						 new Object [] { complaintDuration }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -326,8 +332,9 @@ public class ComplaintDurationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_COMPLAINT_DURATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -339,28 +346,30 @@ public class ComplaintDurationOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateComplaintDurationValue(ComplaintDuration complaintDuration,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateComplaintDurationValue(ComplaintDuration complaintDuration, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_COMPLAINT_DURATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.COMPLAINT_DURATION);
 			try {
 				VALIDATE_COMPLAINT_DURATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COMPLAINT_DURATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COMPLAINT_DURATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			complaintDuration)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_COMPLAINT_DURATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(complaintDuration)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.COMPLAINT_DURATION__COMPLAINT_DURATION_VALUE,
-					EmspcrPlugin.INSTANCE.getString("ComplaintDurationValue"), new Object[] { complaintDuration }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.COMPLAINT_DURATION__COMPLAINT_DURATION_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("ComplaintDurationComplaintDurationValue"),
+						 new Object [] { complaintDuration }));
 			}
-
+			 
 			return false;
 		}
 		return true;

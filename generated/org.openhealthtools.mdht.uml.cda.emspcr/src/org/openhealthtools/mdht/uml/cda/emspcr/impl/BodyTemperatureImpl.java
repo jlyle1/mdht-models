@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -17,12 +13,12 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
-import org.openhealthtools.mdht.uml.cda.consol.impl.VitalSignObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.BodyTemperature;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.BodyTemperatureOperations;
+
+import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,7 +29,7 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.BodyTemperatureOperati
  *
  * @generated
  */
-public class BodyTemperatureImpl extends VitalSignObservationImpl implements BodyTemperature {
+public class BodyTemperatureImpl extends ObservationImpl implements BodyTemperature {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -51,6 +47,15 @@ public class BodyTemperatureImpl extends VitalSignObservationImpl implements Bod
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.BODY_TEMPERATURE;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateBodyTemperatureTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return BodyTemperatureOperations.validateBodyTemperatureTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -94,29 +99,16 @@ public class BodyTemperatureImpl extends VitalSignObservationImpl implements Bod
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateVitalSignObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return BodyTemperatureOperations.validateVitalSignObservationTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public BodyTemperature init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public BodyTemperature init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // BodyTemperatureImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public BodyTemperature init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //BodyTemperatureImpl

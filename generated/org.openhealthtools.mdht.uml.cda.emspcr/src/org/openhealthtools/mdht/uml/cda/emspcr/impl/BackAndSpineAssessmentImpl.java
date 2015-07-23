@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -121,6 +117,15 @@ public class BackAndSpineAssessmentImpl extends ObservationImpl implements BackA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateBackAndSpineAssessmentTargetSiteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return BackAndSpineAssessmentOperations.validateBackAndSpineAssessmentTargetSiteCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateBackAndSpineAssessmentTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return BackAndSpineAssessmentOperations.validateBackAndSpineAssessmentTargetSiteCode(this, diagnostics, context);
 	}
@@ -130,28 +135,16 @@ public class BackAndSpineAssessmentImpl extends ObservationImpl implements BackA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateBackAndSpineAssessmentTargetSiteCodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return BackAndSpineAssessmentOperations.validateBackAndSpineAssessmentTargetSiteCodeP(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public BackAndSpineAssessment init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public BackAndSpineAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // BackAndSpineAssessmentImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public BackAndSpineAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //BackAndSpineAssessmentImpl

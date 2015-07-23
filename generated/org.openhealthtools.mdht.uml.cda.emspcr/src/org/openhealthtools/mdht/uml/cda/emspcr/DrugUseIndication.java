@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -72,7 +68,7 @@ public interface DrugUseIndication extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17323-9\' or value.code = \'LA17324-7\' or value.code = \'LA17325-4\' or value.code = \'LA17326-2\' or value.code = \'LA17327-0\' or value.code = \'LA17328-8\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17323-9\' or value.code = \'LA17324-7\' or value.code = \'LA17325-4\' or value.code = \'LA17326-2\' or value.code = \'LA17327-0\' or value.code = \'LA17328-8\')))'"
 	 * @generated
 	 */
 	boolean validateDrugUseIndicationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -83,11 +79,10 @@ public interface DrugUseIndication extends Observation {
 	 * @generated
 	 */
 	public DrugUseIndication init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public DrugUseIndication init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public DrugUseIndication init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DrugUseIndication

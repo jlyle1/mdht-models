@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -39,8 +35,7 @@ public interface NumberOfPatientsTransportedObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.1133883.17.3.10.1.31\')'"
 	 * @generated
 	 */
-	boolean validateNumberOfPatientsTransportedObservationTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateNumberOfPatientsTransportedObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -52,8 +47,7 @@ public interface NumberOfPatientsTransportedObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'moodCode\')'"
 	 * @generated
 	 */
-	boolean validateNumberOfPatientsTransportedObservationMoodCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateNumberOfPatientsTransportedObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -97,11 +91,10 @@ public interface NumberOfPatientsTransportedObservation extends Observation {
 	 * @generated
 	 */
 	public NumberOfPatientsTransportedObservation init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NumberOfPatientsTransportedObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public NumberOfPatientsTransportedObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // NumberOfPatientsTransportedObservation

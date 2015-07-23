@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -71,8 +67,9 @@ public class EMSPatientCareNarrativeSectionOperations extends SectionOperations 
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -84,31 +81,30 @@ public class EMSPatientCareNarrativeSectionOperations extends SectionOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPatientCareNarrativeSectionTemplateId(
-			EMSPatientCareNarrativeSection emsPatientCareNarrativeSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPatientCareNarrativeSectionTemplateId(EMSPatientCareNarrativeSection emsPatientCareNarrativeSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PATIENT_CARE_NARRATIVE_SECTION);
 			try {
 				VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPatientCareNarrativeSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPatientCareNarrativeSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PATIENT_CARE_NARRATIVE_SECTION__EMS_PATIENT_CARE_NARRATIVE_SECTION_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("EMSPatientCareNarrativeSectionTemplateId"),
-					new Object[] { emsPatientCareNarrativeSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PATIENT_CARE_NARRATIVE_SECTION__EMS_PATIENT_CARE_NARRATIVE_SECTION_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("EMSPatientCareNarrativeSectionEMSPatientCareNarrativeSectionTemplateId"),
+						 new Object [] { emsPatientCareNarrativeSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -122,9 +118,9 @@ public class EMSPatientCareNarrativeSectionOperations extends SectionOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '67781-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '67781-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEMSPatientCareNarrativeSectionCode(EMSPatientCareNarrativeSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Patient Care Narrative Section Code</em>}' invariant operation.
@@ -134,8 +130,9 @@ public class EMSPatientCareNarrativeSectionOperations extends SectionOperations 
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,30 +144,30 @@ public class EMSPatientCareNarrativeSectionOperations extends SectionOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPatientCareNarrativeSectionCode(
-			EMSPatientCareNarrativeSection emsPatientCareNarrativeSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPatientCareNarrativeSectionCode(EMSPatientCareNarrativeSection emsPatientCareNarrativeSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PATIENT_CARE_NARRATIVE_SECTION);
 			try {
 				VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPatientCareNarrativeSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPatientCareNarrativeSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PATIENT_CARE_NARRATIVE_SECTION__EMS_PATIENT_CARE_NARRATIVE_SECTION_CODE,
-					EmspcrPlugin.INSTANCE.getString("EMSPatientCareNarrativeSectionCode"),
-					new Object[] { emsPatientCareNarrativeSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PATIENT_CARE_NARRATIVE_SECTION__EMS_PATIENT_CARE_NARRATIVE_SECTION_CODE,
+						 EmspcrPlugin.INSTANCE.getString("EMSPatientCareNarrativeSectionEMSPatientCareNarrativeSectionCode"),
+						 new Object [] { emsPatientCareNarrativeSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -194,8 +191,9 @@ public class EMSPatientCareNarrativeSectionOperations extends SectionOperations 
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -207,30 +205,30 @@ public class EMSPatientCareNarrativeSectionOperations extends SectionOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPatientCareNarrativeSectionCodeP(
-			EMSPatientCareNarrativeSection emsPatientCareNarrativeSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPatientCareNarrativeSectionCodeP(EMSPatientCareNarrativeSection emsPatientCareNarrativeSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PATIENT_CARE_NARRATIVE_SECTION);
 			try {
 				VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPatientCareNarrativeSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPatientCareNarrativeSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PATIENT_CARE_NARRATIVE_SECTION__EMS_PATIENT_CARE_NARRATIVE_SECTION_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("EMSPatientCareNarrativeSectionCodeP"),
-					new Object[] { emsPatientCareNarrativeSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PATIENT_CARE_NARRATIVE_SECTION__EMS_PATIENT_CARE_NARRATIVE_SECTION_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("EMSPatientCareNarrativeSectionEMSPatientCareNarrativeSectionCodeP"),
+						 new Object [] { emsPatientCareNarrativeSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -254,8 +252,9 @@ public class EMSPatientCareNarrativeSectionOperations extends SectionOperations 
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -267,30 +266,30 @@ public class EMSPatientCareNarrativeSectionOperations extends SectionOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPatientCareNarrativeSectionTitle(
-			EMSPatientCareNarrativeSection emsPatientCareNarrativeSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPatientCareNarrativeSectionTitle(EMSPatientCareNarrativeSection emsPatientCareNarrativeSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PATIENT_CARE_NARRATIVE_SECTION);
 			try {
 				VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPatientCareNarrativeSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPatientCareNarrativeSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PATIENT_CARE_NARRATIVE_SECTION__EMS_PATIENT_CARE_NARRATIVE_SECTION_TITLE,
-					EmspcrPlugin.INSTANCE.getString("EMSPatientCareNarrativeSectionTitle"),
-					new Object[] { emsPatientCareNarrativeSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PATIENT_CARE_NARRATIVE_SECTION__EMS_PATIENT_CARE_NARRATIVE_SECTION_TITLE,
+						 EmspcrPlugin.INSTANCE.getString("EMSPatientCareNarrativeSectionEMSPatientCareNarrativeSectionTitle"),
+						 new Object [] { emsPatientCareNarrativeSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -314,8 +313,9 @@ public class EMSPatientCareNarrativeSectionOperations extends SectionOperations 
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -327,30 +327,30 @@ public class EMSPatientCareNarrativeSectionOperations extends SectionOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPatientCareNarrativeSectionText(
-			EMSPatientCareNarrativeSection emsPatientCareNarrativeSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPatientCareNarrativeSectionText(EMSPatientCareNarrativeSection emsPatientCareNarrativeSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PATIENT_CARE_NARRATIVE_SECTION);
 			try {
 				VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPatientCareNarrativeSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PATIENT_CARE_NARRATIVE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPatientCareNarrativeSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PATIENT_CARE_NARRATIVE_SECTION__EMS_PATIENT_CARE_NARRATIVE_SECTION_TEXT,
-					EmspcrPlugin.INSTANCE.getString("EMSPatientCareNarrativeSectionText"),
-					new Object[] { emsPatientCareNarrativeSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PATIENT_CARE_NARRATIVE_SECTION__EMS_PATIENT_CARE_NARRATIVE_SECTION_TEXT,
+						 EmspcrPlugin.INSTANCE.getString("EMSPatientCareNarrativeSectionEMSPatientCareNarrativeSectionText"),
+						 new Object [] { emsPatientCareNarrativeSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;

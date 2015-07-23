@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -73,8 +69,9 @@ public class AdverseEventTypeObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,30 +83,30 @@ public class AdverseEventTypeObservationOperations extends ClinicalStatementOper
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateAdverseEventTypeObservationTemplateId(
-			AdverseEventTypeObservation adverseEventTypeObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateAdverseEventTypeObservationTemplateId(AdverseEventTypeObservation adverseEventTypeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ADVERSE_EVENT_TYPE_OBSERVATION);
 			try {
 				VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			adverseEventTypeObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEventTypeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.ADVERSE_EVENT_TYPE_OBSERVATION__ADVERSE_EVENT_TYPE_OBSERVATION_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("AdverseEventTypeObservationTemplateId"),
-					new Object[] { adverseEventTypeObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.ADVERSE_EVENT_TYPE_OBSERVATION__ADVERSE_EVENT_TYPE_OBSERVATION_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("AdverseEventTypeObservationAdverseEventTypeObservationTemplateId"),
+						 new Object [] { adverseEventTypeObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -133,8 +130,9 @@ public class AdverseEventTypeObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -146,30 +144,30 @@ public class AdverseEventTypeObservationOperations extends ClinicalStatementOper
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateAdverseEventTypeObservationMoodCode(
-			AdverseEventTypeObservation adverseEventTypeObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateAdverseEventTypeObservationMoodCode(AdverseEventTypeObservation adverseEventTypeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ADVERSE_EVENT_TYPE_OBSERVATION);
 			try {
 				VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			adverseEventTypeObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEventTypeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.ADVERSE_EVENT_TYPE_OBSERVATION__ADVERSE_EVENT_TYPE_OBSERVATION_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("AdverseEventTypeObservationMoodCode"),
-					new Object[] { adverseEventTypeObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.ADVERSE_EVENT_TYPE_OBSERVATION__ADVERSE_EVENT_TYPE_OBSERVATION_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("AdverseEventTypeObservationAdverseEventTypeObservationMoodCode"),
+						 new Object [] { adverseEventTypeObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -193,8 +191,9 @@ public class AdverseEventTypeObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -206,30 +205,30 @@ public class AdverseEventTypeObservationOperations extends ClinicalStatementOper
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateAdverseEventTypeObservationCodeP(
-			AdverseEventTypeObservation adverseEventTypeObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateAdverseEventTypeObservationCodeP(AdverseEventTypeObservation adverseEventTypeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ADVERSE_EVENT_TYPE_OBSERVATION);
 			try {
 				VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			adverseEventTypeObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEventTypeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.ADVERSE_EVENT_TYPE_OBSERVATION__ADVERSE_EVENT_TYPE_OBSERVATION_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("AdverseEventTypeObservationCodeP"),
-					new Object[] { adverseEventTypeObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.ADVERSE_EVENT_TYPE_OBSERVATION__ADVERSE_EVENT_TYPE_OBSERVATION_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("AdverseEventTypeObservationAdverseEventTypeObservationCodeP"),
+						 new Object [] { adverseEventTypeObservation }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -241,7 +240,7 @@ public class AdverseEventTypeObservationOperations extends ClinicalStatementOper
 				}
 				passToken.add(adverseEventTypeObservation);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -255,9 +254,9 @@ public class AdverseEventTypeObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67555-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67555-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAdverseEventTypeObservationCode(AdverseEventTypeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Adverse Event Type Observation Code</em>}' invariant operation.
@@ -267,8 +266,9 @@ public class AdverseEventTypeObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -280,38 +280,36 @@ public class AdverseEventTypeObservationOperations extends ClinicalStatementOper
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateAdverseEventTypeObservationCode(
-			AdverseEventTypeObservation adverseEventTypeObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.AdverseEventTypeObservationCodeP");
+	
+	public static  boolean validateAdverseEventTypeObservationCode(AdverseEventTypeObservation adverseEventTypeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.AdverseEventTypeObservationCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(adverseEventTypeObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ADVERSE_EVENT_TYPE_OBSERVATION);
 			try {
 				VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			adverseEventTypeObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEventTypeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.ADVERSE_EVENT_TYPE_OBSERVATION__ADVERSE_EVENT_TYPE_OBSERVATION_CODE,
-					EmspcrPlugin.INSTANCE.getString("AdverseEventTypeObservationCode"),
-					new Object[] { adverseEventTypeObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.ADVERSE_EVENT_TYPE_OBSERVATION__ADVERSE_EVENT_TYPE_OBSERVATION_CODE,
+						 EmspcrPlugin.INSTANCE.getString("AdverseEventTypeObservationAdverseEventTypeObservationCode"),
+						 new Object [] { adverseEventTypeObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -325,9 +323,9 @@ public class AdverseEventTypeObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA137-2' or value.code = 'LA17059-9' or value.code = 'LA17402-1' or value.code = 'LA17403-9' or value.code = 'LA17404-7' or value.code = 'LA17405-4' or value.code = 'LA17406-2' or value.code = 'LA17407-0' or value.code = 'LA17408-8' or value.code = 'LA17409-6' or value.code = 'LA17410-4' or value.code = 'LA17411-2' or value.code = 'LA17412-0' or value.code = 'LA17413-8' or value.code = 'LA17414-6')))";
+	protected static final String VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA137-2' or value.code = 'LA17059-9' or value.code = 'LA17402-1' or value.code = 'LA17403-9' or value.code = 'LA17404-7' or value.code = 'LA17405-4' or value.code = 'LA17406-2' or value.code = 'LA17407-0' or value.code = 'LA17408-8' or value.code = 'LA17409-6' or value.code = 'LA17410-4' or value.code = 'LA17411-2' or value.code = 'LA17412-0' or value.code = 'LA17413-8' or value.code = 'LA17414-6')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAdverseEventTypeObservationValue(AdverseEventTypeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Adverse Event Type Observation Value</em>}' invariant operation.
@@ -337,8 +335,9 @@ public class AdverseEventTypeObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -350,30 +349,30 @@ public class AdverseEventTypeObservationOperations extends ClinicalStatementOper
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateAdverseEventTypeObservationValue(
-			AdverseEventTypeObservation adverseEventTypeObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateAdverseEventTypeObservationValue(AdverseEventTypeObservation adverseEventTypeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ADVERSE_EVENT_TYPE_OBSERVATION);
 			try {
 				VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			adverseEventTypeObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEventTypeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.ADVERSE_EVENT_TYPE_OBSERVATION__ADVERSE_EVENT_TYPE_OBSERVATION_VALUE,
-					EmspcrPlugin.INSTANCE.getString("AdverseEventTypeObservationValue"),
-					new Object[] { adverseEventTypeObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.ADVERSE_EVENT_TYPE_OBSERVATION__ADVERSE_EVENT_TYPE_OBSERVATION_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("AdverseEventTypeObservationAdverseEventTypeObservationValue"),
+						 new Object [] { adverseEventTypeObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -397,8 +396,9 @@ public class AdverseEventTypeObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -410,30 +410,30 @@ public class AdverseEventTypeObservationOperations extends ClinicalStatementOper
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateAdverseEventTypeObservationValueP(
-			AdverseEventTypeObservation adverseEventTypeObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateAdverseEventTypeObservationValueP(AdverseEventTypeObservation adverseEventTypeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ADVERSE_EVENT_TYPE_OBSERVATION);
 			try {
 				VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			adverseEventTypeObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_TYPE_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEventTypeObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.ADVERSE_EVENT_TYPE_OBSERVATION__ADVERSE_EVENT_TYPE_OBSERVATION_VALUE_P,
-					EmspcrPlugin.INSTANCE.getString("AdverseEventTypeObservationValueP"),
-					new Object[] { adverseEventTypeObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.ADVERSE_EVENT_TYPE_OBSERVATION__ADVERSE_EVENT_TYPE_OBSERVATION_VALUE_P,
+						 EmspcrPlugin.INSTANCE.getString("AdverseEventTypeObservationAdverseEventTypeObservationValueP"),
+						 new Object [] { adverseEventTypeObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;

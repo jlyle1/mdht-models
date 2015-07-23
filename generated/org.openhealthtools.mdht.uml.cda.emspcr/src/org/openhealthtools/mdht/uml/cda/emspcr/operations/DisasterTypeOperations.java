@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -70,8 +66,9 @@ public class DisasterTypeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_DISASTER_TYPE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -83,28 +80,30 @@ public class DisasterTypeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateDisasterTypeTemplateId(DisasterType disasterType, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateDisasterTypeTemplateId(DisasterType disasterType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_DISASTER_TYPE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISASTER_TYPE);
 			try {
 				VALIDATE_DISASTER_TYPE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISASTER_TYPE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISASTER_TYPE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			disasterType)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISASTER_TYPE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(disasterType)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISASTER_TYPE__DISASTER_TYPE_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("DisasterTypeTemplateId"), new Object[] { disasterType }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISASTER_TYPE__DISASTER_TYPE_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("DisasterTypeDisasterTypeTemplateId"),
+						 new Object [] { disasterType }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -128,8 +127,9 @@ public class DisasterTypeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_DISASTER_TYPE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -141,27 +141,30 @@ public class DisasterTypeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateDisasterTypeMoodCode(DisasterType disasterType, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateDisasterTypeMoodCode(DisasterType disasterType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_DISASTER_TYPE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISASTER_TYPE);
 			try {
 				VALIDATE_DISASTER_TYPE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISASTER_TYPE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_DISASTER_TYPE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(disasterType)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISASTER_TYPE__DISASTER_TYPE_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("DisasterTypeMoodCode"), new Object[] { disasterType }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISASTER_TYPE__DISASTER_TYPE_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("DisasterTypeDisasterTypeMoodCode"),
+						 new Object [] { disasterType }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -175,9 +178,9 @@ public class DisasterTypeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DISASTER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '69463-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_DISASTER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '69463-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDisasterTypeCode(DisasterType, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disaster Type Code</em>}' invariant operation.
@@ -187,8 +190,9 @@ public class DisasterTypeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_DISASTER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -200,27 +204,30 @@ public class DisasterTypeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateDisasterTypeCode(DisasterType disasterType, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateDisasterTypeCode(DisasterType disasterType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_DISASTER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISASTER_TYPE);
 			try {
 				VALIDATE_DISASTER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISASTER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_DISASTER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(disasterType)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISASTER_TYPE__DISASTER_TYPE_CODE,
-					EmspcrPlugin.INSTANCE.getString("DisasterTypeCode"), new Object[] { disasterType }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISASTER_TYPE__DISASTER_TYPE_CODE,
+						 EmspcrPlugin.INSTANCE.getString("DisasterTypeDisasterTypeCode"),
+						 new Object [] { disasterType }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -234,9 +241,9 @@ public class DisasterTypeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DISASTER_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17594-5' or value.code = 'LA18089-5' or value.code = 'LA18090-3' or value.code = 'LA18091-1' or value.code = 'LA18092-9' or value.code = 'LA18093-7' or value.code = 'LA18094-5' or value.code = 'LA18095-2' or value.code = 'LA18096-0' or value.code = 'LA18097-8' or value.code = 'LA18098-6' or value.code = 'LA18099-4' or value.code = 'LA18100-0' or value.code = 'LA18101-8')))";
+	protected static final String VALIDATE_DISASTER_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17594-5' or value.code = 'LA18089-5' or value.code = 'LA18090-3' or value.code = 'LA18091-1' or value.code = 'LA18092-9' or value.code = 'LA18093-7' or value.code = 'LA18094-5' or value.code = 'LA18095-2' or value.code = 'LA18096-0' or value.code = 'LA18097-8' or value.code = 'LA18098-6' or value.code = 'LA18099-4' or value.code = 'LA18100-0' or value.code = 'LA18101-8')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDisasterTypeValue(DisasterType, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Disaster Type Value</em>}' invariant operation.
@@ -246,8 +253,9 @@ public class DisasterTypeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_DISASTER_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -259,27 +267,30 @@ public class DisasterTypeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateDisasterTypeValue(DisasterType disasterType, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateDisasterTypeValue(DisasterType disasterType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_DISASTER_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISASTER_TYPE);
 			try {
 				VALIDATE_DISASTER_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISASTER_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_DISASTER_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(disasterType)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISASTER_TYPE__DISASTER_TYPE_VALUE,
-					EmspcrPlugin.INSTANCE.getString("DisasterTypeValue"), new Object[] { disasterType }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISASTER_TYPE__DISASTER_TYPE_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("DisasterTypeDisasterTypeValue"),
+						 new Object [] { disasterType }));
 			}
-
+			 
 			return false;
 		}
 		return true;

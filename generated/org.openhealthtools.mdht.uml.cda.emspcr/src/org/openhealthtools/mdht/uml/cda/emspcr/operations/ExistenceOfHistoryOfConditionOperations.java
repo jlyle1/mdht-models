@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -70,8 +66,9 @@ public class ExistenceOfHistoryOfConditionOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -83,31 +80,30 @@ public class ExistenceOfHistoryOfConditionOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateExistenceOfHistoryOfConditionTemplateId(
-			ExistenceOfHistoryOfCondition existenceOfHistoryOfCondition, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateExistenceOfHistoryOfConditionTemplateId(ExistenceOfHistoryOfCondition existenceOfHistoryOfCondition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EXISTENCE_OF_HISTORY_OF_CONDITION);
 			try {
 				VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			existenceOfHistoryOfCondition)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(existenceOfHistoryOfCondition)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EXISTENCE_OF_HISTORY_OF_CONDITION__EXISTENCE_OF_HISTORY_OF_CONDITION_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("ExistenceOfHistoryOfConditionTemplateId"),
-					new Object[] { existenceOfHistoryOfCondition }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EXISTENCE_OF_HISTORY_OF_CONDITION__EXISTENCE_OF_HISTORY_OF_CONDITION_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("ExistenceOfHistoryOfConditionExistenceOfHistoryOfConditionTemplateId"),
+						 new Object [] { existenceOfHistoryOfCondition }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -131,8 +127,9 @@ public class ExistenceOfHistoryOfConditionOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -144,30 +141,30 @@ public class ExistenceOfHistoryOfConditionOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateExistenceOfHistoryOfConditionMoodCode(
-			ExistenceOfHistoryOfCondition existenceOfHistoryOfCondition, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateExistenceOfHistoryOfConditionMoodCode(ExistenceOfHistoryOfCondition existenceOfHistoryOfCondition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EXISTENCE_OF_HISTORY_OF_CONDITION);
 			try {
 				VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			existenceOfHistoryOfCondition)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(existenceOfHistoryOfCondition)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EXISTENCE_OF_HISTORY_OF_CONDITION__EXISTENCE_OF_HISTORY_OF_CONDITION_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("ExistenceOfHistoryOfConditionMoodCode"),
-					new Object[] { existenceOfHistoryOfCondition }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EXISTENCE_OF_HISTORY_OF_CONDITION__EXISTENCE_OF_HISTORY_OF_CONDITION_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("ExistenceOfHistoryOfConditionExistenceOfHistoryOfConditionMoodCode"),
+						 new Object [] { existenceOfHistoryOfCondition }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -181,9 +178,9 @@ public class ExistenceOfHistoryOfConditionOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67793-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67793-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateExistenceOfHistoryOfConditionCode(ExistenceOfHistoryOfCondition, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Existence Of History Of Condition Code</em>}' invariant operation.
@@ -193,8 +190,9 @@ public class ExistenceOfHistoryOfConditionOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -206,30 +204,30 @@ public class ExistenceOfHistoryOfConditionOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateExistenceOfHistoryOfConditionCode(
-			ExistenceOfHistoryOfCondition existenceOfHistoryOfCondition, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateExistenceOfHistoryOfConditionCode(ExistenceOfHistoryOfCondition existenceOfHistoryOfCondition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EXISTENCE_OF_HISTORY_OF_CONDITION);
 			try {
 				VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			existenceOfHistoryOfCondition)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(existenceOfHistoryOfCondition)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EXISTENCE_OF_HISTORY_OF_CONDITION__EXISTENCE_OF_HISTORY_OF_CONDITION_CODE,
-					EmspcrPlugin.INSTANCE.getString("ExistenceOfHistoryOfConditionCode"),
-					new Object[] { existenceOfHistoryOfCondition }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EXISTENCE_OF_HISTORY_OF_CONDITION__EXISTENCE_OF_HISTORY_OF_CONDITION_CODE,
+						 EmspcrPlugin.INSTANCE.getString("ExistenceOfHistoryOfConditionExistenceOfHistoryOfConditionCode"),
+						 new Object [] { existenceOfHistoryOfCondition }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -253,8 +251,9 @@ public class ExistenceOfHistoryOfConditionOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -266,30 +265,30 @@ public class ExistenceOfHistoryOfConditionOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateExistenceOfHistoryOfConditionValue(
-			ExistenceOfHistoryOfCondition existenceOfHistoryOfCondition, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateExistenceOfHistoryOfConditionValue(ExistenceOfHistoryOfCondition existenceOfHistoryOfCondition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EXISTENCE_OF_HISTORY_OF_CONDITION);
 			try {
 				VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			existenceOfHistoryOfCondition)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EXISTENCE_OF_HISTORY_OF_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(existenceOfHistoryOfCondition)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EXISTENCE_OF_HISTORY_OF_CONDITION__EXISTENCE_OF_HISTORY_OF_CONDITION_VALUE,
-					EmspcrPlugin.INSTANCE.getString("ExistenceOfHistoryOfConditionValue"),
-					new Object[] { existenceOfHistoryOfCondition }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EXISTENCE_OF_HISTORY_OF_CONDITION__EXISTENCE_OF_HISTORY_OF_CONDITION_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("ExistenceOfHistoryOfConditionExistenceOfHistoryOfConditionValue"),
+						 new Object [] { existenceOfHistoryOfCondition }));
 			}
-
+			 
 			return false;
 		}
 		return true;

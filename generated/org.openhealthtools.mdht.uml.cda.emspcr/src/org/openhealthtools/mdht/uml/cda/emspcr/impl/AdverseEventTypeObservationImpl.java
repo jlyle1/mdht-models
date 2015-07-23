@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -58,10 +54,8 @@ public class AdverseEventTypeObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdverseEventTypeObservationTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdverseEventTypeObservationOperations.validateAdverseEventTypeObservationTemplateId(
-			this, diagnostics, context);
+	public boolean validateAdverseEventTypeObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdverseEventTypeObservationOperations.validateAdverseEventTypeObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -70,8 +64,7 @@ public class AdverseEventTypeObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateAdverseEventTypeObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdverseEventTypeObservationOperations.validateAdverseEventTypeObservationMoodCode(
-			this, diagnostics, context);
+		return AdverseEventTypeObservationOperations.validateAdverseEventTypeObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -80,8 +73,7 @@ public class AdverseEventTypeObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateAdverseEventTypeObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdverseEventTypeObservationOperations.validateAdverseEventTypeObservationCodeP(
-			this, diagnostics, context);
+		return AdverseEventTypeObservationOperations.validateAdverseEventTypeObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -99,8 +91,7 @@ public class AdverseEventTypeObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateAdverseEventTypeObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdverseEventTypeObservationOperations.validateAdverseEventTypeObservationValue(
-			this, diagnostics, context);
+		return AdverseEventTypeObservationOperations.validateAdverseEventTypeObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -109,8 +100,7 @@ public class AdverseEventTypeObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateAdverseEventTypeObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdverseEventTypeObservationOperations.validateAdverseEventTypeObservationValueP(
-			this, diagnostics, context);
+		return AdverseEventTypeObservationOperations.validateAdverseEventTypeObservationValueP(this, diagnostics, context);
 	}
 
 	/**
@@ -119,16 +109,15 @@ public class AdverseEventTypeObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public AdverseEventTypeObservation init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AdverseEventTypeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // AdverseEventTypeObservationImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AdverseEventTypeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //AdverseEventTypeObservationImpl

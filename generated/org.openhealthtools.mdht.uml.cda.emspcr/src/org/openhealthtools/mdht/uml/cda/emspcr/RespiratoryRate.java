@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -16,7 +12,7 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
-import org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation;
+import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,10 +21,22 @@ import org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getRespiratoryRate()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignObservationTemplateId RespiratoryRateMoodCode RespiratoryRateCode RespiratoryRateValue' templateId.root='2.16.840.1.1133883.17.3.10.1.146' moodCode='EVN' code.code='9279-1' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Respiratory rate' constraints.validation.info='RespiratoryRateEffectiveTime'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='RespiratoryRateTemplateId RespiratoryRateMoodCode RespiratoryRateCode RespiratoryRateValue' templateId.root='2.16.840.1.1133883.17.3.10.1.146' moodCode='EVN' code.code='9279-1' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Respiratory rate' constraints.validation.info='RespiratoryRateEffectiveTime'"
  * @generated
  */
-public interface RespiratoryRate extends VitalSignObservation {
+public interface RespiratoryRate extends Observation {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.1133883.17.3.10.1.146\')'"
+	 * @generated
+	 */
+	boolean validateRespiratoryRateTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -72,7 +80,7 @@ public interface RespiratoryRate extends VitalSignObservation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::PQ)))'"
 	 * @generated
 	 */
 	boolean validateRespiratoryRateValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -83,11 +91,10 @@ public interface RespiratoryRate extends VitalSignObservation {
 	 * @generated
 	 */
 	public RespiratoryRate init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public RespiratoryRate init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public RespiratoryRate init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // RespiratoryRate

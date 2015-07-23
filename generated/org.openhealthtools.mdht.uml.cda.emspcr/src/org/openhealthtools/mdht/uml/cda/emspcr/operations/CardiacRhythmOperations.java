@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -77,8 +73,9 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_CARDIAC_RHYTHM_PARTICIPANT1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -90,28 +87,30 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateCardiacRhythmParticipant1(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateCardiacRhythmParticipant1(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CARDIAC_RHYTHM_PARTICIPANT1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARDIAC_RHYTHM);
 			try {
 				VALIDATE_CARDIAC_RHYTHM_PARTICIPANT1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARDIAC_RHYTHM_PARTICIPANT1__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_RHYTHM_PARTICIPANT1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			cardiacRhythm)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_RHYTHM_PARTICIPANT1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(cardiacRhythm)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.CARDIAC_RHYTHM__CARDIAC_RHYTHM_PARTICIPANT1,
-					EmspcrPlugin.INSTANCE.getString("CardiacRhythmParticipant1"), new Object[] { cardiacRhythm }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.CARDIAC_RHYTHM__CARDIAC_RHYTHM_PARTICIPANT1,
+						 EmspcrPlugin.INSTANCE.getString("CardiacRhythmCardiacRhythmParticipant1"),
+						 new Object [] { cardiacRhythm }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -135,8 +134,9 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_CARDIAC_RHYTHM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,28 +148,30 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateCardiacRhythmTemplateId(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateCardiacRhythmTemplateId(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CARDIAC_RHYTHM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARDIAC_RHYTHM);
 			try {
 				VALIDATE_CARDIAC_RHYTHM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARDIAC_RHYTHM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_RHYTHM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			cardiacRhythm)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_RHYTHM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(cardiacRhythm)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.CARDIAC_RHYTHM__CARDIAC_RHYTHM_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("CardiacRhythmTemplateId"), new Object[] { cardiacRhythm }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.CARDIAC_RHYTHM__CARDIAC_RHYTHM_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("CardiacRhythmCardiacRhythmTemplateId"),
+						 new Object [] { cardiacRhythm }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -193,8 +195,9 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_CARDIAC_RHYTHM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -206,28 +209,30 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateCardiacRhythmMoodCode(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateCardiacRhythmMoodCode(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CARDIAC_RHYTHM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARDIAC_RHYTHM);
 			try {
 				VALIDATE_CARDIAC_RHYTHM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARDIAC_RHYTHM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_RHYTHM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			cardiacRhythm)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_RHYTHM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(cardiacRhythm)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.CARDIAC_RHYTHM__CARDIAC_RHYTHM_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("CardiacRhythmMoodCode"), new Object[] { cardiacRhythm }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.CARDIAC_RHYTHM__CARDIAC_RHYTHM_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("CardiacRhythmCardiacRhythmMoodCode"),
+						 new Object [] { cardiacRhythm }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -251,8 +256,9 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_CARDIAC_RHYTHM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -264,27 +270,30 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateCardiacRhythmCodeP(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateCardiacRhythmCodeP(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CARDIAC_RHYTHM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARDIAC_RHYTHM);
 			try {
 				VALIDATE_CARDIAC_RHYTHM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARDIAC_RHYTHM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_RHYTHM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(cardiacRhythm)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.CARDIAC_RHYTHM__CARDIAC_RHYTHM_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("CardiacRhythmCodeP"), new Object[] { cardiacRhythm }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.CARDIAC_RHYTHM__CARDIAC_RHYTHM_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("CardiacRhythmCardiacRhythmCodeP"),
+						 new Object [] { cardiacRhythm }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -296,7 +305,7 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(cardiacRhythm);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -310,9 +319,9 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CARDIAC_RHYTHM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67519-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_CARDIAC_RHYTHM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67519-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCardiacRhythmCode(CardiacRhythm, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Rhythm Code</em>}' invariant operation.
@@ -322,8 +331,9 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_CARDIAC_RHYTHM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -335,35 +345,36 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateCardiacRhythmCode(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.CardiacRhythmCodeP");
+	
+	public static  boolean validateCardiacRhythmCode(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.CardiacRhythmCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(cardiacRhythm)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_CARDIAC_RHYTHM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARDIAC_RHYTHM);
 			try {
 				VALIDATE_CARDIAC_RHYTHM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARDIAC_RHYTHM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_RHYTHM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(cardiacRhythm)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.CARDIAC_RHYTHM__CARDIAC_RHYTHM_CODE,
-					EmspcrPlugin.INSTANCE.getString("CardiacRhythmCode"), new Object[] { cardiacRhythm }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.CARDIAC_RHYTHM__CARDIAC_RHYTHM_CODE,
+						 EmspcrPlugin.INSTANCE.getString("CardiacRhythmCardiacRhythmCode"),
+						 new Object [] { cardiacRhythm }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -387,8 +398,9 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_CARDIAC_RHYTHM_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -400,28 +412,30 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateCardiacRhythmEffectiveTime(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateCardiacRhythmEffectiveTime(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CARDIAC_RHYTHM_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARDIAC_RHYTHM);
 			try {
 				VALIDATE_CARDIAC_RHYTHM_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARDIAC_RHYTHM_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_RHYTHM_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			cardiacRhythm)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_RHYTHM_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(cardiacRhythm)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.CARDIAC_RHYTHM__CARDIAC_RHYTHM_EFFECTIVE_TIME,
-					EmspcrPlugin.INSTANCE.getString("CardiacRhythmEffectiveTime"), new Object[] { cardiacRhythm }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.CARDIAC_RHYTHM__CARDIAC_RHYTHM_EFFECTIVE_TIME,
+						 EmspcrPlugin.INSTANCE.getString("CardiacRhythmCardiacRhythmEffectiveTime"),
+						 new Object [] { cardiacRhythm }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -435,9 +449,9 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CARDIAC_RHYTHM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA12904-1' or value.code = 'LA17059-9' or value.code = 'LA17068-0' or value.code = 'LA17070-6' or value.code = 'LA17071-4' or value.code = 'LA17072-2' or value.code = 'LA17073-0' or value.code = 'LA17074-8' or value.code = 'LA17083-9' or value.code = 'LA17084-7' or value.code = 'LA17085-4' or value.code = 'LA17086-2' or value.code = 'LA17087-0' or value.code = 'LA17088-8' or value.code = 'LA17089-6' or value.code = 'LA17090-4' or value.code = 'LA17091-2' or value.code = 'LA17093-8' or value.code = 'LA17094-6' or value.code = 'LA17095-3' or value.code = 'LA17096-1' or value.code = 'LA17097-9' or value.code = 'LA17394-0' or value.code = 'LA17099-5' or value.code = 'LA17100-1' or value.code = 'LA17101-9' or value.code = 'LA17703-2' or value.code = 'LA17704-0' or value.code = 'LA17705-7' or value.code = 'LA17706-5' or value.code = 'LA17708-1' or value.code = 'LA17718-0' or value.code = 'LA18205-7' or value.code = 'LA18206-5' or value.code = 'LA18207-3' or value.code = 'LA18208-1')))";
+	protected static final String VALIDATE_CARDIAC_RHYTHM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA12904-1' or value.code = 'LA17059-9' or value.code = 'LA17068-0' or value.code = 'LA17070-6' or value.code = 'LA17071-4' or value.code = 'LA17072-2' or value.code = 'LA17073-0' or value.code = 'LA17074-8' or value.code = 'LA17083-9' or value.code = 'LA17084-7' or value.code = 'LA17085-4' or value.code = 'LA17086-2' or value.code = 'LA17087-0' or value.code = 'LA17088-8' or value.code = 'LA17089-6' or value.code = 'LA17090-4' or value.code = 'LA17091-2' or value.code = 'LA17093-8' or value.code = 'LA17094-6' or value.code = 'LA17095-3' or value.code = 'LA17096-1' or value.code = 'LA17097-9' or value.code = 'LA17394-0' or value.code = 'LA17099-5' or value.code = 'LA17100-1' or value.code = 'LA17101-9' or value.code = 'LA17703-2' or value.code = 'LA17704-0' or value.code = 'LA17705-7' or value.code = 'LA17706-5' or value.code = 'LA17708-1' or value.code = 'LA17718-0' or value.code = 'LA18205-7' or value.code = 'LA18206-5' or value.code = 'LA18207-3' or value.code = 'LA18208-1')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCardiacRhythmValue(CardiacRhythm, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Rhythm Value</em>}' invariant operation.
@@ -447,8 +461,9 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_CARDIAC_RHYTHM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -460,27 +475,30 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateCardiacRhythmValue(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateCardiacRhythmValue(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CARDIAC_RHYTHM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARDIAC_RHYTHM);
 			try {
 				VALIDATE_CARDIAC_RHYTHM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARDIAC_RHYTHM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_RHYTHM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(cardiacRhythm)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.CARDIAC_RHYTHM__CARDIAC_RHYTHM_VALUE,
-					EmspcrPlugin.INSTANCE.getString("CardiacRhythmValue"), new Object[] { cardiacRhythm }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.CARDIAC_RHYTHM__CARDIAC_RHYTHM_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("CardiacRhythmCardiacRhythmValue"),
+						 new Object [] { cardiacRhythm }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -494,7 +512,7 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CARDIAC_RHYTHM_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
+	protected static final String VALIDATE_CARDIAC_RHYTHM_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCardiacRhythmValueP(CardiacRhythm, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Rhythm Value P</em>}' invariant operation.
@@ -504,8 +522,9 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_CARDIAC_RHYTHM_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -517,27 +536,30 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateCardiacRhythmValueP(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateCardiacRhythmValueP(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CARDIAC_RHYTHM_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARDIAC_RHYTHM);
 			try {
 				VALIDATE_CARDIAC_RHYTHM_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARDIAC_RHYTHM_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_RHYTHM_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(cardiacRhythm)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.CARDIAC_RHYTHM__CARDIAC_RHYTHM_VALUE_P,
-					EmspcrPlugin.INSTANCE.getString("CardiacRhythmValueP"), new Object[] { cardiacRhythm }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.CARDIAC_RHYTHM__CARDIAC_RHYTHM_VALUE_P,
+						 EmspcrPlugin.INSTANCE.getString("CardiacRhythmCardiacRhythmValueP"),
+						 new Object [] { cardiacRhythm }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -551,9 +573,9 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CARDIAC_RHYTHM_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (self.methodCode->size() = 1 and self.methodCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = element.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA18682-7' or value.code = 'LA18683-5' or value.code = 'LA18684-3' or value.code = 'LA18685-0')))";
+	protected static final String VALIDATE_CARDIAC_RHYTHM_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (not self.methodCode->isEmpty() and self.methodCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = element.oclAsType(datatypes::CE) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA18682-7' or value.code = 'LA18683-5' or value.code = 'LA18684-3' or value.code = 'LA18685-0')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCardiacRhythmMethodCode(CardiacRhythm, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Rhythm Method Code</em>}' invariant operation.
@@ -563,8 +585,9 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_CARDIAC_RHYTHM_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -576,28 +599,30 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateCardiacRhythmMethodCode(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateCardiacRhythmMethodCode(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CARDIAC_RHYTHM_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARDIAC_RHYTHM);
 			try {
 				VALIDATE_CARDIAC_RHYTHM_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARDIAC_RHYTHM_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_RHYTHM_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			cardiacRhythm)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_RHYTHM_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(cardiacRhythm)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.CARDIAC_RHYTHM__CARDIAC_RHYTHM_METHOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("CardiacRhythmMethodCode"), new Object[] { cardiacRhythm }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.CARDIAC_RHYTHM__CARDIAC_RHYTHM_METHOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("CardiacRhythmCardiacRhythmMethodCode"),
+						 new Object [] { cardiacRhythm }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -611,7 +636,7 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CARDIAC_RHYTHM_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (self.methodCode->size() = 1)";
+	protected static final String VALIDATE_CARDIAC_RHYTHM_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (not self.methodCode->isEmpty())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCardiacRhythmMethodCodeP(CardiacRhythm, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Cardiac Rhythm Method Code P</em>}' invariant operation.
@@ -621,8 +646,9 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_CARDIAC_RHYTHM_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -634,28 +660,30 @@ public class CardiacRhythmOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateCardiacRhythmMethodCodeP(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateCardiacRhythmMethodCodeP(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CARDIAC_RHYTHM_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARDIAC_RHYTHM);
 			try {
 				VALIDATE_CARDIAC_RHYTHM_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARDIAC_RHYTHM_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_RHYTHM_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			cardiacRhythm)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CARDIAC_RHYTHM_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(cardiacRhythm)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.CARDIAC_RHYTHM__CARDIAC_RHYTHM_METHOD_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("CardiacRhythmMethodCodeP"), new Object[] { cardiacRhythm }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.CARDIAC_RHYTHM__CARDIAC_RHYTHM_METHOD_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("CardiacRhythmCardiacRhythmMethodCodeP"),
+						 new Object [] { cardiacRhythm }));
 			}
-
+			 
 			return false;
 		}
 		return true;

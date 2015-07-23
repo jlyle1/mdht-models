@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -119,11 +115,10 @@ public interface HeartAssessment extends Observation {
 	 * @generated
 	 */
 	public HeartAssessment init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public HeartAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public HeartAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HeartAssessment

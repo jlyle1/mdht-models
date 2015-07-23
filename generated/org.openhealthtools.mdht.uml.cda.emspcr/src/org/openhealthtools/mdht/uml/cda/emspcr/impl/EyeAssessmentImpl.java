@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -121,15 +117,6 @@ public class EyeAssessmentImpl extends ObservationImpl implements EyeAssessment 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEyeAssessmentTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EyeAssessmentOperations.validateEyeAssessmentTargetSiteCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateEyeAssessmentTargetSiteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EyeAssessmentOperations.validateEyeAssessmentTargetSiteCodeP(this, diagnostics, context);
 	}
@@ -139,8 +126,8 @@ public class EyeAssessmentImpl extends ObservationImpl implements EyeAssessment 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EyeAssessment init() {
-		return Initializer.Util.init(this);
+	public boolean validateEyeAssessmentTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EyeAssessmentOperations.validateEyeAssessmentTargetSiteCode(this, diagnostics, context);
 	}
 
 	/**
@@ -148,8 +135,16 @@ public class EyeAssessmentImpl extends ObservationImpl implements EyeAssessment 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EyeAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	public EyeAssessment init() {
+	    return Initializer.Util.init(this);
 	}
-} // EyeAssessmentImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EyeAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //EyeAssessmentImpl

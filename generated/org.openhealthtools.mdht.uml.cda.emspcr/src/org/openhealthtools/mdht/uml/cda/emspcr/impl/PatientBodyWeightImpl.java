@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -85,6 +81,15 @@ public class PatientBodyWeightImpl extends ObservationImpl implements PatientBod
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePatientBodyWeightEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientBodyWeightOperations.validatePatientBodyWeightEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePatientBodyWeightValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientBodyWeightOperations.validatePatientBodyWeightValue(this, diagnostics, context);
 	}
@@ -95,16 +100,15 @@ public class PatientBodyWeightImpl extends ObservationImpl implements PatientBod
 	 * @generated
 	 */
 	public PatientBodyWeight init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PatientBodyWeight init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // PatientBodyWeightImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PatientBodyWeight init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //PatientBodyWeightImpl

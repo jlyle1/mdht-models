@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -112,8 +108,8 @@ public class TransportModeObservationImpl extends ObservationImpl implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TransportModeObservation init() {
-		return Initializer.Util.init(this);
+	public boolean validateTransportModeObservationTransportModeQualifierRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TransportModeObservationOperations.validateTransportModeObservationTransportModeQualifierRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -121,8 +117,16 @@ public class TransportModeObservationImpl extends ObservationImpl implements Tra
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TransportModeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	public TransportModeObservation init() {
+	    return Initializer.Util.init(this);
 	}
-} // TransportModeObservationImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public TransportModeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //TransportModeObservationImpl

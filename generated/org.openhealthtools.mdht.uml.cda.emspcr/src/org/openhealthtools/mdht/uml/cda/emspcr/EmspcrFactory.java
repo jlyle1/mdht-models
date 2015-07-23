@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -116,24 +112,6 @@ public interface EmspcrFactory extends EFactory {
 	EMSAllergiesAndAdverseReactionsSection createEMSAllergiesAndAdverseReactionsSection();
 
 	/**
-	 * Returns a new object of class '<em>Existence Of Drug Allergy Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Existence Of Drug Allergy Observation</em>'.
-	 * @generated
-	 */
-	ExistenceOfDrugAllergyObservation createExistenceOfDrugAllergyObservation();
-
-	/**
-	 * Returns a new object of class '<em>EMS Drug Allergy</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>EMS Drug Allergy</em>'.
-	 * @generated
-	 */
-	EMSDrugAllergy createEMSDrugAllergy();
-
-	/**
 	 * Returns a new object of class '<em>Non Drug Allergy Organizer</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -159,6 +137,33 @@ public interface EmspcrFactory extends EFactory {
 	 * @generated
 	 */
 	NonDrugAllergy createNonDrugAllergy();
+
+	/**
+	 * Returns a new object of class '<em>Drug Allergy Organizer</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Drug Allergy Organizer</em>'.
+	 * @generated
+	 */
+	DrugAllergyOrganizer createDrugAllergyOrganizer();
+
+	/**
+	 * Returns a new object of class '<em>Drug Allergy</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Drug Allergy</em>'.
+	 * @generated
+	 */
+	DrugAllergy createDrugAllergy();
+
+	/**
+	 * Returns a new object of class '<em>Existence Of Drug Allergy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Existence Of Drug Allergy Observation</em>'.
+	 * @generated
+	 */
+	ExistenceOfDrugAllergyObservation createExistenceOfDrugAllergyObservation();
 
 	/**
 	 * Returns a new object of class '<em>EMS Past Medical History Section</em>'.
@@ -350,15 +355,6 @@ public interface EmspcrFactory extends EFactory {
 	FirstUnitIndicator createFirstUnitIndicator();
 
 	/**
-	 * Returns a new object of class '<em>First Unit On Scene</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>First Unit On Scene</em>'.
-	 * @generated
-	 */
-	FirstUnitOnScene createFirstUnitOnScene();
-
-	/**
 	 * Returns a new object of class '<em>Scene Patient Count</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -476,13 +472,31 @@ public interface EmspcrFactory extends EFactory {
 	PrearrivalActivationObservation createPrearrivalActivationObservation();
 
 	/**
-	 * Returns a new object of class '<em>Patient Condition Change At Destination Observation</em>'.
+	 * Returns a new object of class '<em>Patient Condition At Destination Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Patient Condition Change At Destination Observation</em>'.
+	 * @return a new object of class '<em>Patient Condition At Destination Observation</em>'.
 	 * @generated
 	 */
-	PatientConditionChangeAtDestinationObservation createPatientConditionChangeAtDestinationObservation();
+	PatientConditionAtDestinationObservation createPatientConditionAtDestinationObservation();
+
+	/**
+	 * Returns a new object of class '<em>Primary Destination Hospital Capability</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Primary Destination Hospital Capability</em>'.
+	 * @generated
+	 */
+	PrimaryDestinationHospitalCapability createPrimaryDestinationHospitalCapability();
+
+	/**
+	 * Returns a new object of class '<em>Destination Ward</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Destination Ward</em>'.
+	 * @generated
+	 */
+	DestinationWard createDestinationWard();
 
 	/**
 	 * Returns a new object of class '<em>EMS Personnel Adverse Event Section</em>'.
@@ -584,6 +598,24 @@ public interface EmspcrFactory extends EFactory {
 	ResponseModeToScene createResponseModeToScene();
 
 	/**
+	 * Returns a new object of class '<em>Response Mode Qualifier</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Response Mode Qualifier</em>'.
+	 * @generated
+	 */
+	ResponseModeQualifier createResponseModeQualifier();
+
+	/**
+	 * Returns a new object of class '<em>Unit Level Of Care Capability</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Unit Level Of Care Capability</em>'.
+	 * @generated
+	 */
+	UnitLevelOfCareCapability createUnitLevelOfCareCapability();
+
+	/**
 	 * Returns a new object of class '<em>EMS Situation Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -656,13 +688,13 @@ public interface EmspcrFactory extends EFactory {
 	InitialPatientAcuity createInitialPatientAcuity();
 
 	/**
-	 * Returns a new object of class '<em>Times Section</em>'.
+	 * Returns a new object of class '<em>EMS Times Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Times Section</em>'.
+	 * @return a new object of class '<em>EMS Times Section</em>'.
 	 * @generated
 	 */
-	TimesSection createTimesSection();
+	EMSTimesSection createEMSTimesSection();
 
 	/**
 	 * Returns a new object of class '<em>Call Time</em>'.
@@ -1178,13 +1210,13 @@ public interface EmspcrFactory extends EFactory {
 	MentalStatusAssessment createMentalStatusAssessment();
 
 	/**
-	 * Returns a new object of class '<em>Cardiac Arrest With Timing</em>'.
+	 * Returns a new object of class '<em>Cardiac Arrest Timing</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Cardiac Arrest With Timing</em>'.
+	 * @return a new object of class '<em>Cardiac Arrest Timing</em>'.
 	 * @generated
 	 */
-	CardiacArrestWithTiming createCardiacArrestWithTiming();
+	CardiacArrestTiming createCardiacArrestTiming();
 
 	/**
 	 * Returns a new object of class '<em>Cardiac Arrest Cause</em>'.
@@ -1520,22 +1552,22 @@ public interface EmspcrFactory extends EFactory {
 	ResponseEndingOdometerReading createResponseEndingOdometerReading();
 
 	/**
-	 * Returns a new object of class '<em>Non Drug Allergy Organizer Actually Dreg</em>'.
+	 * Returns a new object of class '<em>Cardiac Arrest Outcome</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Non Drug Allergy Organizer Actually Dreg</em>'.
+	 * @return a new object of class '<em>Cardiac Arrest Outcome</em>'.
 	 * @generated
 	 */
-	NonDrugAllergyOrganizerActuallyDreg createNonDrugAllergyOrganizerActuallyDreg();
+	CardiacArrestOutcome createCardiacArrestOutcome();
 
 	/**
-	 * Returns a new object of class '<em>EMS Drug Allergy Organizer</em>'.
+	 * Returns a new object of class '<em>Transport Mode Qualifier</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>EMS Drug Allergy Organizer</em>'.
+	 * @return a new object of class '<em>Transport Mode Qualifier</em>'.
 	 * @generated
 	 */
-	EMSDrugAllergyOrganizer createEMSDrugAllergyOrganizer();
+	TransportModeQualifier createTransportModeQualifier();
 
 	/**
 	 * Returns the package supported by this factory.
@@ -1546,4 +1578,4 @@ public interface EmspcrFactory extends EFactory {
 	 */
 	EmspcrPackage getEmspcrPackage();
 
-} // EmspcrFactory
+} //EmspcrFactory

@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -58,10 +54,8 @@ public class ResponseEndingOdometerReadingImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResponseEndingOdometerReadingTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ResponseEndingOdometerReadingOperations.validateResponseEndingOdometerReadingTemplateId(
-			this, diagnostics, context);
+	public boolean validateResponseEndingOdometerReadingTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResponseEndingOdometerReadingOperations.validateResponseEndingOdometerReadingTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -69,10 +63,8 @@ public class ResponseEndingOdometerReadingImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResponseEndingOdometerReadingMoodCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ResponseEndingOdometerReadingOperations.validateResponseEndingOdometerReadingMoodCode(
-			this, diagnostics, context);
+	public boolean validateResponseEndingOdometerReadingMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResponseEndingOdometerReadingOperations.validateResponseEndingOdometerReadingMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -81,8 +73,7 @@ public class ResponseEndingOdometerReadingImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	public boolean validateResponseEndingOdometerReadingCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResponseEndingOdometerReadingOperations.validateResponseEndingOdometerReadingCodeP(
-			this, diagnostics, context);
+		return ResponseEndingOdometerReadingOperations.validateResponseEndingOdometerReadingCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +82,7 @@ public class ResponseEndingOdometerReadingImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	public boolean validateResponseEndingOdometerReadingCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResponseEndingOdometerReadingOperations.validateResponseEndingOdometerReadingCode(
-			this, diagnostics, context);
+		return ResponseEndingOdometerReadingOperations.validateResponseEndingOdometerReadingCode(this, diagnostics, context);
 	}
 
 	/**
@@ -101,8 +91,7 @@ public class ResponseEndingOdometerReadingImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	public boolean validateResponseEndingOdometerReadingValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResponseEndingOdometerReadingOperations.validateResponseEndingOdometerReadingValue(
-			this, diagnostics, context);
+		return ResponseEndingOdometerReadingOperations.validateResponseEndingOdometerReadingValue(this, diagnostics, context);
 	}
 
 	/**
@@ -111,16 +100,15 @@ public class ResponseEndingOdometerReadingImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	public ResponseEndingOdometerReading init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ResponseEndingOdometerReading init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // ResponseEndingOdometerReadingImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ResponseEndingOdometerReading init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //ResponseEndingOdometerReadingImpl

@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -72,8 +68,9 @@ public class UnitBackInServiceTimeOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_UNIT_BACK_IN_SERVICE_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,29 +82,30 @@ public class UnitBackInServiceTimeOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateUnitBackInServiceTimeTemplateId(UnitBackInServiceTime unitBackInServiceTime,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateUnitBackInServiceTimeTemplateId(UnitBackInServiceTime unitBackInServiceTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_UNIT_BACK_IN_SERVICE_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.UNIT_BACK_IN_SERVICE_TIME);
 			try {
 				VALIDATE_UNIT_BACK_IN_SERVICE_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNIT_BACK_IN_SERVICE_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_UNIT_BACK_IN_SERVICE_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unitBackInServiceTime)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_UNIT_BACK_IN_SERVICE_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(unitBackInServiceTime)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.UNIT_BACK_IN_SERVICE_TIME__UNIT_BACK_IN_SERVICE_TIME_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("UnitBackInServiceTimeTemplateId"),
-					new Object[] { unitBackInServiceTime }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.UNIT_BACK_IN_SERVICE_TIME__UNIT_BACK_IN_SERVICE_TIME_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("UnitBackInServiceTimeUnitBackInServiceTimeTemplateId"),
+						 new Object [] { unitBackInServiceTime }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -131,8 +129,9 @@ public class UnitBackInServiceTimeOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_UNIT_BACK_IN_SERVICE_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -144,29 +143,30 @@ public class UnitBackInServiceTimeOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateUnitBackInServiceTimeMoodCode(UnitBackInServiceTime unitBackInServiceTime,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateUnitBackInServiceTimeMoodCode(UnitBackInServiceTime unitBackInServiceTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_UNIT_BACK_IN_SERVICE_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.UNIT_BACK_IN_SERVICE_TIME);
 			try {
 				VALIDATE_UNIT_BACK_IN_SERVICE_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNIT_BACK_IN_SERVICE_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_UNIT_BACK_IN_SERVICE_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unitBackInServiceTime)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_UNIT_BACK_IN_SERVICE_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(unitBackInServiceTime)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.UNIT_BACK_IN_SERVICE_TIME__UNIT_BACK_IN_SERVICE_TIME_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("UnitBackInServiceTimeMoodCode"),
-					new Object[] { unitBackInServiceTime }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.UNIT_BACK_IN_SERVICE_TIME__UNIT_BACK_IN_SERVICE_TIME_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("UnitBackInServiceTimeUnitBackInServiceTimeMoodCode"),
+						 new Object [] { unitBackInServiceTime }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -190,8 +190,9 @@ public class UnitBackInServiceTimeOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_UNIT_BACK_IN_SERVICE_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -203,29 +204,30 @@ public class UnitBackInServiceTimeOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateUnitBackInServiceTimeCodeP(UnitBackInServiceTime unitBackInServiceTime,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateUnitBackInServiceTimeCodeP(UnitBackInServiceTime unitBackInServiceTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_UNIT_BACK_IN_SERVICE_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.UNIT_BACK_IN_SERVICE_TIME);
 			try {
 				VALIDATE_UNIT_BACK_IN_SERVICE_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNIT_BACK_IN_SERVICE_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_UNIT_BACK_IN_SERVICE_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unitBackInServiceTime)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_UNIT_BACK_IN_SERVICE_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(unitBackInServiceTime)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.UNIT_BACK_IN_SERVICE_TIME__UNIT_BACK_IN_SERVICE_TIME_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("UnitBackInServiceTimeCodeP"),
-					new Object[] { unitBackInServiceTime }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.UNIT_BACK_IN_SERVICE_TIME__UNIT_BACK_IN_SERVICE_TIME_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("UnitBackInServiceTimeUnitBackInServiceTimeCodeP"),
+						 new Object [] { unitBackInServiceTime }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -237,7 +239,7 @@ public class UnitBackInServiceTimeOperations extends ClinicalStatementOperations
 				}
 				passToken.add(unitBackInServiceTime);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -251,9 +253,9 @@ public class UnitBackInServiceTimeOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_UNIT_BACK_IN_SERVICE_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '69477-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_UNIT_BACK_IN_SERVICE_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '69477-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateUnitBackInServiceTimeCode(UnitBackInServiceTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit Back In Service Time Code</em>}' invariant operation.
@@ -263,8 +265,9 @@ public class UnitBackInServiceTimeOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_UNIT_BACK_IN_SERVICE_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -276,37 +279,36 @@ public class UnitBackInServiceTimeOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateUnitBackInServiceTimeCode(UnitBackInServiceTime unitBackInServiceTime,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.UnitBackInServiceTimeCodeP");
+	
+	public static  boolean validateUnitBackInServiceTimeCode(UnitBackInServiceTime unitBackInServiceTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.UnitBackInServiceTimeCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(unitBackInServiceTime)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_UNIT_BACK_IN_SERVICE_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.UNIT_BACK_IN_SERVICE_TIME);
 			try {
 				VALIDATE_UNIT_BACK_IN_SERVICE_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNIT_BACK_IN_SERVICE_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_UNIT_BACK_IN_SERVICE_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unitBackInServiceTime)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_UNIT_BACK_IN_SERVICE_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(unitBackInServiceTime)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.UNIT_BACK_IN_SERVICE_TIME__UNIT_BACK_IN_SERVICE_TIME_CODE,
-					EmspcrPlugin.INSTANCE.getString("UnitBackInServiceTimeCode"),
-					new Object[] { unitBackInServiceTime }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.UNIT_BACK_IN_SERVICE_TIME__UNIT_BACK_IN_SERVICE_TIME_CODE,
+						 EmspcrPlugin.INSTANCE.getString("UnitBackInServiceTimeUnitBackInServiceTimeCode"),
+						 new Object [] { unitBackInServiceTime }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -330,8 +332,9 @@ public class UnitBackInServiceTimeOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_UNIT_BACK_IN_SERVICE_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -343,29 +346,30 @@ public class UnitBackInServiceTimeOperations extends ClinicalStatementOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateUnitBackInServiceTimeValue(UnitBackInServiceTime unitBackInServiceTime,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateUnitBackInServiceTimeValue(UnitBackInServiceTime unitBackInServiceTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_UNIT_BACK_IN_SERVICE_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.UNIT_BACK_IN_SERVICE_TIME);
 			try {
 				VALIDATE_UNIT_BACK_IN_SERVICE_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNIT_BACK_IN_SERVICE_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_UNIT_BACK_IN_SERVICE_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unitBackInServiceTime)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_UNIT_BACK_IN_SERVICE_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(unitBackInServiceTime)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.UNIT_BACK_IN_SERVICE_TIME__UNIT_BACK_IN_SERVICE_TIME_VALUE,
-					EmspcrPlugin.INSTANCE.getString("UnitBackInServiceTimeValue"),
-					new Object[] { unitBackInServiceTime }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.UNIT_BACK_IN_SERVICE_TIME__UNIT_BACK_IN_SERVICE_TIME_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("UnitBackInServiceTimeUnitBackInServiceTimeValue"),
+						 new Object [] { unitBackInServiceTime }));
 			}
-
+			 
 			return false;
 		}
 		return true;

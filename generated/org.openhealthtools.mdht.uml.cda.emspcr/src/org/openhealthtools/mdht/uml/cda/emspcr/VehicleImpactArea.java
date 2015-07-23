@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -83,11 +79,10 @@ public interface VehicleImpactArea extends Observation {
 	 * @generated
 	 */
 	public VehicleImpactArea init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public VehicleImpactArea init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public VehicleImpactArea init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // VehicleImpactArea

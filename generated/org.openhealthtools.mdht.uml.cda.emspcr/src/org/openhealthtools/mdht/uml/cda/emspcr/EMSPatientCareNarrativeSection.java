@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -95,11 +91,10 @@ public interface EMSPatientCareNarrativeSection extends Section {
 	 * @generated
 	 */
 	public EMSPatientCareNarrativeSection init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMSPatientCareNarrativeSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EMSPatientCareNarrativeSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EMSPatientCareNarrativeSection

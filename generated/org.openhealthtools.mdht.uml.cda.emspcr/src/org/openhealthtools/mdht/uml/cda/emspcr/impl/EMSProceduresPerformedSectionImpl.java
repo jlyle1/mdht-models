@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -60,10 +56,8 @@ public class EMSProceduresPerformedSectionImpl extends SectionImpl implements EM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSProceduresPerformedSectionTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EMSProceduresPerformedSectionOperations.validateEMSProceduresPerformedSectionTemplateId(
-			this, diagnostics, context);
+	public boolean validateEMSProceduresPerformedSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSProceduresPerformedSectionOperations.validateEMSProceduresPerformedSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +66,7 @@ public class EMSProceduresPerformedSectionImpl extends SectionImpl implements EM
 	 * @generated
 	 */
 	public boolean validateEMSProceduresPerformedSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSProceduresPerformedSectionOperations.validateEMSProceduresPerformedSectionCode(
-			this, diagnostics, context);
+		return EMSProceduresPerformedSectionOperations.validateEMSProceduresPerformedSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -82,8 +75,7 @@ public class EMSProceduresPerformedSectionImpl extends SectionImpl implements EM
 	 * @generated
 	 */
 	public boolean validateEMSProceduresPerformedSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSProceduresPerformedSectionOperations.validateEMSProceduresPerformedSectionCodeP(
-			this, diagnostics, context);
+		return EMSProceduresPerformedSectionOperations.validateEMSProceduresPerformedSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -92,8 +84,7 @@ public class EMSProceduresPerformedSectionImpl extends SectionImpl implements EM
 	 * @generated
 	 */
 	public boolean validateEMSProceduresPerformedSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSProceduresPerformedSectionOperations.validateEMSProceduresPerformedSectionTitle(
-			this, diagnostics, context);
+		return EMSProceduresPerformedSectionOperations.validateEMSProceduresPerformedSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -102,8 +93,7 @@ public class EMSProceduresPerformedSectionImpl extends SectionImpl implements EM
 	 * @generated
 	 */
 	public boolean validateEMSProceduresPerformedSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSProceduresPerformedSectionOperations.validateEMSProceduresPerformedSectionText(
-			this, diagnostics, context);
+		return EMSProceduresPerformedSectionOperations.validateEMSProceduresPerformedSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -111,10 +101,8 @@ public class EMSProceduresPerformedSectionImpl extends SectionImpl implements EM
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSProceduresPerformedSectionProcedureActivityProcedure1(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EMSProceduresPerformedSectionOperations.validateEMSProceduresPerformedSectionProcedureActivityProcedure1(
-			this, diagnostics, context);
+	public boolean validateEMSProceduresPerformedSectionProcedureActivityProcedure1(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSProceduresPerformedSectionOperations.validateEMSProceduresPerformedSectionProcedureActivityProcedure1(this, diagnostics, context);
 	}
 
 	/**
@@ -132,16 +120,15 @@ public class EMSProceduresPerformedSectionImpl extends SectionImpl implements EM
 	 * @generated
 	 */
 	public EMSProceduresPerformedSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMSProceduresPerformedSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // EMSProceduresPerformedSectionImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EMSProceduresPerformedSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //EMSProceduresPerformedSectionImpl

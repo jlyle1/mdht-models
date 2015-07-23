@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -56,9 +52,8 @@ public class ProcedureImpl extends org.openhealthtools.mdht.uml.cda.impl.Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPCRProcedureAbandonedProcedureRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureOperations.validateEMSPCRProcedureAbandonedProcedureRelationship(this, diagnostics, context);
+	public boolean validateProcedureAbandonedProcedureRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureOperations.validateProcedureAbandonedProcedureRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -66,9 +61,8 @@ public class ProcedureImpl extends org.openhealthtools.mdht.uml.cda.impl.Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPCRProcedureProcedurePriorRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureOperations.validateEMSPCRProcedureProcedurePriorRelationship(this, diagnostics, context);
+	public boolean validateProcedurePriorRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureOperations.validateProcedurePriorRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -76,10 +70,8 @@ public class ProcedureImpl extends org.openhealthtools.mdht.uml.cda.impl.Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPCRProcedureProcedureNumberOfAttemptsRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureOperations.validateEMSPCRProcedureProcedureNumberOfAttemptsRelationship(
-			this, diagnostics, context);
+	public boolean validateProcedureNumberOfAttemptsRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureOperations.validateProcedureNumberOfAttemptsRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -87,9 +79,8 @@ public class ProcedureImpl extends org.openhealthtools.mdht.uml.cda.impl.Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPCRProcedureProcedureSuccessfulRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureOperations.validateEMSPCRProcedureProcedureSuccessfulRelationship(this, diagnostics, context);
+	public boolean validateProcedureSuccessfulRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureOperations.validateProcedureSuccessfulRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -97,9 +88,8 @@ public class ProcedureImpl extends org.openhealthtools.mdht.uml.cda.impl.Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPCRProcedureProcedureComplicationsRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureOperations.validateEMSPCRProcedureProcedureComplicationsRelationship(this, diagnostics, context);
+	public boolean validateProcedureComplicationsRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureOperations.validateProcedureComplicationsRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -107,10 +97,8 @@ public class ProcedureImpl extends org.openhealthtools.mdht.uml.cda.impl.Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPCRProcedureProcedurePatientResponseRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureOperations.validateEMSPCRProcedureProcedurePatientResponseRelationship(
-			this, diagnostics, context);
+	public boolean validateProcedurePatientResponseRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureOperations.validateProcedurePatientResponseRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -118,8 +106,8 @@ public class ProcedureImpl extends org.openhealthtools.mdht.uml.cda.impl.Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPCRProcedureProcedurePerformer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureOperations.validateEMSPCRProcedureProcedurePerformer(this, diagnostics, context);
+	public boolean validateProcedurePerformer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureOperations.validateProcedurePerformer(this, diagnostics, context);
 	}
 
 	/**
@@ -127,9 +115,8 @@ public class ProcedureImpl extends org.openhealthtools.mdht.uml.cda.impl.Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPCRProcedureAirwayConfirmationRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureOperations.validateEMSPCRProcedureAirwayConfirmationRelationship(this, diagnostics, context);
+	public boolean validateProcedureAirwayConfirmationRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureOperations.validateProcedureAirwayConfirmationRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -137,10 +124,8 @@ public class ProcedureImpl extends org.openhealthtools.mdht.uml.cda.impl.Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPCRProcedureReasonProcedureNotAttemptedRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureOperations.validateEMSPCRProcedureReasonProcedureNotAttemptedRelationship(
-			this, diagnostics, context);
+	public boolean validateProcedureReasonProcedureNotAttemptedRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureOperations.validateProcedureReasonProcedureNotAttemptedRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -148,8 +133,8 @@ public class ProcedureImpl extends org.openhealthtools.mdht.uml.cda.impl.Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPCRProcedureTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureOperations.validateEMSPCRProcedureTemplateId(this, diagnostics, context);
+	public boolean validateProcedureTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureOperations.validateProcedureTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -157,8 +142,8 @@ public class ProcedureImpl extends org.openhealthtools.mdht.uml.cda.impl.Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPCRProcedureCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureOperations.validateEMSPCRProcedureCode(this, diagnostics, context);
+	public boolean validateProcedureCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureOperations.validateProcedureCode(this, diagnostics, context);
 	}
 
 	/**
@@ -166,8 +151,8 @@ public class ProcedureImpl extends org.openhealthtools.mdht.uml.cda.impl.Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPCRProcedureNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureOperations.validateEMSPCRProcedureNegationInd(this, diagnostics, context);
+	public boolean validateProcedureNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureOperations.validateProcedureNegationInd(this, diagnostics, context);
 	}
 
 	/**
@@ -175,8 +160,8 @@ public class ProcedureImpl extends org.openhealthtools.mdht.uml.cda.impl.Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPCRProcedureStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureOperations.validateEMSPCRProcedureStatusCodeP(this, diagnostics, context);
+	public boolean validateProcedureStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureOperations.validateProcedureStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -184,8 +169,8 @@ public class ProcedureImpl extends org.openhealthtools.mdht.uml.cda.impl.Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPCRProcedureStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureOperations.validateEMSPCRProcedureStatusCode(this, diagnostics, context);
+	public boolean validateProcedureStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureOperations.validateProcedureStatusCode(this, diagnostics, context);
 	}
 
 	/**
@@ -193,8 +178,8 @@ public class ProcedureImpl extends org.openhealthtools.mdht.uml.cda.impl.Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPCRProcedureEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureOperations.validateEMSPCRProcedureEffectiveTime(this, diagnostics, context);
+	public boolean validateProcedureEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureOperations.validateProcedureEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -202,8 +187,8 @@ public class ProcedureImpl extends org.openhealthtools.mdht.uml.cda.impl.Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPCRProcedureApproachSiteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureOperations.validateEMSPCRProcedureApproachSiteCodeP(this, diagnostics, context);
+	public boolean validateProcedureApproachSiteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureOperations.validateProcedureApproachSiteCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -211,8 +196,8 @@ public class ProcedureImpl extends org.openhealthtools.mdht.uml.cda.impl.Procedu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPCRProcedureApproachSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureOperations.validateEMSPCRProcedureApproachSiteCode(this, diagnostics, context);
+	public boolean validateProcedureApproachSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureOperations.validateProcedureApproachSiteCode(this, diagnostics, context);
 	}
 
 	/**
@@ -221,16 +206,15 @@ public class ProcedureImpl extends org.openhealthtools.mdht.uml.cda.impl.Procedu
 	 * @generated
 	 */
 	public Procedure init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Procedure init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // ProcedureImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public Procedure init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //ProcedureImpl

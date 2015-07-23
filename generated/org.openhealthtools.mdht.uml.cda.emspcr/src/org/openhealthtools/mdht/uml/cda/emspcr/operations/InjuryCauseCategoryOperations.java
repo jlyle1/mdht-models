@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -70,8 +66,9 @@ public class InjuryCauseCategoryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_INJURY_CAUSE_CATEGORY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -83,29 +80,30 @@ public class InjuryCauseCategoryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateInjuryCauseCategoryTemplateId(InjuryCauseCategory injuryCauseCategory,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateInjuryCauseCategoryTemplateId(InjuryCauseCategory injuryCauseCategory, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_INJURY_CAUSE_CATEGORY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.INJURY_CAUSE_CATEGORY);
 			try {
 				VALIDATE_INJURY_CAUSE_CATEGORY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_CAUSE_CATEGORY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_CAUSE_CATEGORY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			injuryCauseCategory)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_CAUSE_CATEGORY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injuryCauseCategory)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.INJURY_CAUSE_CATEGORY__INJURY_CAUSE_CATEGORY_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("InjuryCauseCategoryTemplateId"),
-					new Object[] { injuryCauseCategory }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.INJURY_CAUSE_CATEGORY__INJURY_CAUSE_CATEGORY_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("InjuryCauseCategoryInjuryCauseCategoryTemplateId"),
+						 new Object [] { injuryCauseCategory }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -129,8 +127,9 @@ public class InjuryCauseCategoryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_INJURY_CAUSE_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -142,29 +141,30 @@ public class InjuryCauseCategoryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateInjuryCauseCategoryMoodCode(InjuryCauseCategory injuryCauseCategory,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateInjuryCauseCategoryMoodCode(InjuryCauseCategory injuryCauseCategory, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_INJURY_CAUSE_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.INJURY_CAUSE_CATEGORY);
 			try {
 				VALIDATE_INJURY_CAUSE_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_CAUSE_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_CAUSE_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			injuryCauseCategory)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_CAUSE_CATEGORY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injuryCauseCategory)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.INJURY_CAUSE_CATEGORY__INJURY_CAUSE_CATEGORY_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("InjuryCauseCategoryMoodCode"),
-					new Object[] { injuryCauseCategory }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.INJURY_CAUSE_CATEGORY__INJURY_CAUSE_CATEGORY_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("InjuryCauseCategoryInjuryCauseCategoryMoodCode"),
+						 new Object [] { injuryCauseCategory }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -178,9 +178,9 @@ public class InjuryCauseCategoryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INJURY_CAUSE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '69543-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_INJURY_CAUSE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '69543-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInjuryCauseCategoryCode(InjuryCauseCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Cause Category Code</em>}' invariant operation.
@@ -190,8 +190,9 @@ public class InjuryCauseCategoryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_INJURY_CAUSE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -203,28 +204,30 @@ public class InjuryCauseCategoryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateInjuryCauseCategoryCode(InjuryCauseCategory injuryCauseCategory,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateInjuryCauseCategoryCode(InjuryCauseCategory injuryCauseCategory, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_INJURY_CAUSE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.INJURY_CAUSE_CATEGORY);
 			try {
 				VALIDATE_INJURY_CAUSE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_CAUSE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_CAUSE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			injuryCauseCategory)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_CAUSE_CATEGORY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injuryCauseCategory)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.INJURY_CAUSE_CATEGORY__INJURY_CAUSE_CATEGORY_CODE,
-					EmspcrPlugin.INSTANCE.getString("InjuryCauseCategoryCode"), new Object[] { injuryCauseCategory }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.INJURY_CAUSE_CATEGORY__INJURY_CAUSE_CATEGORY_CODE,
+						 EmspcrPlugin.INSTANCE.getString("InjuryCauseCategoryInjuryCauseCategoryCode"),
+						 new Object [] { injuryCauseCategory }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -238,9 +241,9 @@ public class InjuryCauseCategoryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INJURY_CAUSE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.90'))";
+	protected static final String VALIDATE_INJURY_CAUSE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.90'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInjuryCauseCategoryValue(InjuryCauseCategory, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Cause Category Value</em>}' invariant operation.
@@ -250,8 +253,9 @@ public class InjuryCauseCategoryOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_INJURY_CAUSE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -263,28 +267,30 @@ public class InjuryCauseCategoryOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateInjuryCauseCategoryValue(InjuryCauseCategory injuryCauseCategory,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateInjuryCauseCategoryValue(InjuryCauseCategory injuryCauseCategory, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_INJURY_CAUSE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.INJURY_CAUSE_CATEGORY);
 			try {
 				VALIDATE_INJURY_CAUSE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_CAUSE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_CAUSE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			injuryCauseCategory)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_CAUSE_CATEGORY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injuryCauseCategory)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.INJURY_CAUSE_CATEGORY__INJURY_CAUSE_CATEGORY_VALUE,
-					EmspcrPlugin.INSTANCE.getString("InjuryCauseCategoryValue"), new Object[] { injuryCauseCategory }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.INJURY_CAUSE_CATEGORY__INJURY_CAUSE_CATEGORY_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("InjuryCauseCategoryInjuryCauseCategoryValue"),
+						 new Object [] { injuryCauseCategory }));
 			}
-
+			 
 			return false;
 		}
 		return true;

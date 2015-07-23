@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -25,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getCardiacArrest()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='CardiacArrestCauseRelationship CardiacArrestInformantParticipation CardiacArrestPriorCPRRelationship CardiacArrestPriorAEDRelationship CardiacArrestSpontaneousCirculationRelationship CardiacArrestDestinationRhythmRelationship CardiacArrestArrestRhythmRelationship' constraints.validation.error='CardiacArrestTemplateId CardiacArrestMoodCode CardiacArrestCode CardiacArrestValue' templateId.root='2.16.840.1.1133883.17.3.10.1.27' moodCode='EVN' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='ASSERTION' constraints.validation.warning='CardiacArrestNegationInd CardiacArrestEffectiveTime' value.code='410429000' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' value.displayName='cardiac arrest'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CardiacArrestCardiacArrestCauseRelationship CardiacArrestCardiacArrestInformantParticipation CardiacArrestPriorCPRRelationship CardiacArrestPriorAEDRelationship CardiacArrestSpontaneousCirculationRelationship CardiacArrestDestinationRhythmRelationship CardiacArrestArrestRhythmRelationship CardiacArrestTemplateId CardiacArrestMoodCode CardiacArrestCode CardiacArrestValue CardiacArrestCardiacArrestTimingRelationship CardiacArrestCardiacArrestOutcomeRelationship' templateId.root='2.16.840.1.1133883.17.3.10.1.27' moodCode='EVN' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='ASSERTION' constraints.validation.warning='CardiacArrestNegationInd CardiacArrestEffectiveTime' value.code='410429000' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT' value.displayName='cardiac arrest'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrCardiacArrestCardiacArrestTimingRelationship typeCode='SUBJ' constraints.validation.error='CardiacArrestCardiacArrestTimingRelationshipTypeCode CardiacArrestCardiacArrestTimingRelationshipInversionInd' inversionInd='TRUE'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrCardiacArrestCardiacArrestCauseRelationship constraints.validation.error='CardiacArrestCardiacArrestCauseRelationshipCardiacArrestCause CardiacArrestCardiacArrestCauseRelationshipTypeCode CardiacArrestCardiacArrestCauseRelationshipInversionInd' typeCode='SUBJ' inversionInd='TRUE'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrCardiacArrestCardiacArrestInformantParticipation constraints.validation.error='CardiacArrestCardiacArrestInformantParticipationCardiacArrestInformantRole CardiacArrestCardiacArrestInformantParticipationTypeCode' typeCode='INF'"
@@ -35,6 +31,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrCardiacArrestArrestRhythmRelationship constraints.validation.error='CardiacArrestArrestRhythmRelationshipObservation CardiacArrestArrestRhythmRelationshipTypeCode CardiacArrestArrestRhythmRelationshipInversionInd' typeCode='SUBJ' inversionInd='TRUE'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrCardiacArrestSpontaneousCirculationRelationship constraints.validation.error='CardiacArrestSpontaneousCirculationRelationshipReturnOfSpontaneousCirculation CardiacArrestSpontaneousCirculationRelationshipTypeCode CardiacArrestSpontaneousCirculationRelationshipInversionInd' typeCode='SUBJ' inversionInd='TRUE'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrCardiacArrestDestinationRhythmRelationship constraints.validation.error='CardiacArrestDestinationRhythmRelationshipDestinationRhythm CardiacArrestDestinationRhythmRelationshipTypeCode CardiacArrestDestinationRhythmRelationshipInversionInd' typeCode='SUBJ' inversionInd='TRUE'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrCardiacArrestCardiacArrestOutcomeRelationship typeCode='COMP' constraints.validation.error='CardiacArrestCardiacArrestOutcomeRelationshipTypeCode CardiacArrestCardiacArrestOutcomeRelationshipCardiacArrestOutcome'"
  * @generated
  */
 public interface CardiacArrest extends Observation {
@@ -48,7 +45,7 @@ public interface CardiacArrest extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateCardiacArrestCauseRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCardiacArrestCardiacArrestCauseRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -57,10 +54,10 @@ public interface CardiacArrest extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.informant->one(informant : cda::Informant12 | not informant.oclIsUndefined() and informant.oclIsKindOf(cda::Informant12))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.informant->exists(informant : cda::Informant12 | not informant.oclIsUndefined() and informant.oclIsKindOf(cda::Informant12))'"
 	 * @generated
 	 */
-	boolean validateCardiacArrestInformantParticipation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateCardiacArrestCardiacArrestInformantParticipation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -93,11 +90,10 @@ public interface CardiacArrest extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	boolean validateCardiacArrestSpontaneousCirculationRelationship(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateCardiacArrestSpontaneousCirculationRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -198,14 +194,37 @@ public interface CardiacArrest extends Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
-	public CardiacArrest init();
+	boolean validateCardiacArrestCardiacArrestTimingRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
+	 * @generated
+	 */
+	boolean validateCardiacArrestCardiacArrestOutcomeRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CardiacArrest init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public CardiacArrest init();
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public CardiacArrest init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CardiacArrest

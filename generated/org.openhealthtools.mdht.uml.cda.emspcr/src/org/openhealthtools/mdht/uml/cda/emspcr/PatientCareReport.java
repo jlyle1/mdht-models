@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -11,8 +7,8 @@ import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EObject;
 
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
@@ -28,17 +24,20 @@ import org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints;
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getPatientCareReport()
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralHeaderConstraintsTemplateId PatientCareReportClassCode PatientCareReportMoodCode GeneralHeaderConstraintsId PatientCareReportCode PatientCareReportCodeP GeneralHeaderConstraintsTitle PatientCareReportConfidentialityCode PatientCareReportRecordTarget PatientCareReportCurrentMedication PatientCareReportAllergiesAndAdverseReactionsSection PatientCareReportPastMedicalHistorySection PatientCareReportSocialHistorySection PatientCareReportPhysicalAssessmentSection PatientCareReportProceduresPerformedSection PatientCareReportPatientCareNarrativeSection PatientCareReportSceneSection GeneralHeaderConstraintsComponentOf PatientCareReportDispatchSection PatientCareReportPersonnelAdverseEventSection PatientCareReportProtocolSection PatientCareReportResponseSection PatientCareReportSituationSection PatientCareReportVitalSignsSection PatientCareReportAuthorParticipation GeneralHeaderConstraintsCustodian PatientCareReportDocumentationOf PatientCareReportParticipant PatientCareReportInjuryIncidentDescriptionSection' templateId.root='2.16.840.1.113883.17.3.10.2' classCode='DOCCLIN' moodCode='EVN' code.code='67796-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='EMS patient care report - version 3.1 Document NEMSIS' constraints.validation.dependOn.PatientCareReportCode='PatientCareReportCodeP' title.mixed='EMS Patient Care Report' confidentialityCode.codeSystem='2.16.840.1.113883.5.25' confidentialityCode.codeSystemName='ConfidentialityCode' constraints.validation.info='GeneralHeaderConstraintsVersionNumber PatientCareReportCardiacArrestEvent PatientCareReportMedicationsAdministeredSection PatientCareReportDispositionSection PatientCareReportTimesSection PatientCareReportRelatedDocument' constraints.validation.warning='PatientCareReportAdvanceDirectives PatientCareReportEMSBillingSection'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportRecordTarget constraints.validation.error='PatientCareReportRecordTargetPatientRole'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportRecordTargetPatientRole constraints.validation.error='PatientCareReportRecordTargetPatientRoleAddr PatientCareReportRecordTargetPatientRoleId PatientCareReportRecordTargetPatientRolePatient'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportRecordTargetPatientRolePatient constraints.validation.warning='PatientCareReportRecordTargetPatientRolePatientBirthTime PatientCareReportRecordTargetPatientRolePatientName' ethnicGroupCode.codeSystem='2.16.840.1.113883.6.238' ethnicGroupCode.codeSystemName='Race and Ethnicity - CDC' constraints.validation.error='PatientCareReportRecordTargetPatientRolePatientEthnicGroupCode PatientCareReportRecordTargetPatientRolePatientRaceCode PatientCareReportRecordTargetPatientRolePatientAdministrativeGenderCode' constraints.validation.info='PatientCareReportRecordTargetPatientRolePatientEthnicGroupCodeP PatientCareReportRecordTargetPatientRolePatientSDTCRaceCode' constraints.validation.dependOn.PatientCareReportRecordTargetPatientRolePatientEthnicGroupCode='PatientCareReportRecordTargetPatientRolePatientEthnicGroupCodeP'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportRecordTargetPatientRole constraints.validation.error='PatientCareReportRecordTargetPatientRoleAddr PatientCareReportRecordTargetPatientRoleId PatientCareReportRecordTargetPatientRoleTelecom PatientCareReportRecordTargetPatientRolePatient'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportRecordTargetPatientRolePatient constraints.validation.warning='PatientCareReportRecordTargetPatientRolePatientBirthTime PatientCareReportRecordTargetPatientRolePatientName' ethnicGroupCode.codeSystem='2.16.840.1.113883.6.238' ethnicGroupCode.codeSystemName='Race and Ethnicity - CDC' constraints.validation.error='PatientCareReportRecordTargetPatientRolePatientEthnicGroupCode PatientCareReportRecordTargetPatientRolePatientRaceCode PatientCareReportRecordTargetPatientRolePatientAdministrativeGenderCode' constraints.validation.info='PatientCareReportRecordTargetPatientRolePatientEthnicGroupCodeP' constraints.validation.dependOn.PatientCareReportRecordTargetPatientRolePatientEthnicGroupCode='PatientCareReportRecordTargetPatientRolePatientEthnicGroupCodeP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportAuthorParticipation constraints.validation.error='PatientCareReportAuthorParticipationAuthorRole'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportAuthorParticipationAuthorRole constraints.validation.error='PatientCareReportAuthorParticipationAuthorRoleId PatientCareReportAuthorParticipationAuthorRoleAddr PatientCareReportAuthorParticipationAuthorRoleTelecom' constraints.validation.info='PatientCareReportAuthorParticipationAuthorRoleHumanAuthor PatientCareReportAuthorParticipationAuthorRoleAuthoringDevice'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportAuthorParticipationAuthorRoleHumanAuthor constraints.validation.error='PatientCareReportAuthorParticipationAuthorRoleHumanAuthorName'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportAuthorParticipationAuthorRoleAuthoringDevice constraints.validation.error='GeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceManufacturerModelName GeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceSoftwareName'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEncompassingEncounterRelationship typeCode='COMP' constraints.validation.error='PatientCareReportEncompassingEncounterRelationshipTypeCode PatientCareReportEncompassingEncounterRelationshipEncompassingEncounter'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEncompassingEncounterRelationshipEncompassingEncounter constraints.validation.error='PatientCareReportEncompassingEncounterRelationshipEncompassingEncounterEffectiveTime PatientCareReportEncompassingEncounterRelationshipEncompassingEncounterLocation'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEncompassingEncounterRelationshipEncompassingEncounterLocation constraints.validation.error='PatientCareReportEncompassingEncounterRelationshipEncompassingEncounterLocationHealthCareFacility'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEncompassingEncounterRelationshipEncompassingEncounterLocationHealthCareFacility constraints.validation.error='PatientCareReportEncompassingEncounterRelationshipEncompassingEncounterLocationHealthCareFacilityId PatientCareReportEncompassingEncounterRelationshipEncompassingEncounterLocationHealthCareFacilityCode PatientCareReportEncompassingEncounterRelationshipEncompassingEncounterLocationHealthCareFacilityPlace' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEncompassingEncounterRelationshipEncompassingEncounterLocationHealthCareFacilityPlace classCode='PLC' constraints.validation.error='PatientCareReportEncompassingEncounterRelationshipEncompassingEncounterLocationHealthCareFacilityPlaceClassCode' constraints.validation.info='PatientCareReportEncompassingEncounterRelationshipEncompassingEncounterLocationHealthCareFacilityPlaceName PatientCareReportEncompassingEncounterRelationshipEncompassingEncounterLocationHealthCareFacilityPlaceAddr'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounter constraints.validation.error='PatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterEffectiveTime PatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterId PatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterLocation' constraints.validation.info='PatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterOtherAgencyAtSceneParticipation'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterLocation constraints.validation.error='PatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterLocationHealthCareFacility'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterLocationHealthCareFacility constraints.validation.error='PatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterLocationHealthCareFacilityId PatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterLocationHealthCareFacilityCode PatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterLocationHealthCareFacilityCodeP PatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterLocationHealthCareFacilityPlace' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterLocationHealthCareFacilityPlace classCode='PLC' constraints.validation.error='PatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterLocationHealthCareFacilityPlaceClassCode' constraints.validation.info='PatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterLocationHealthCareFacilityPlaceName PatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterLocationHealthCareFacilityPlaceAddr'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterOtherAgencyAtSceneParticipation typeCode='CON'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterOtherAgencyAtSceneParticipationOtherAgencyAtSceneRole classCode='ASSIGNED' constraints.validation.error='PatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterOtherAgencyAtSceneParticipationOtherAgencyAtSceneRoleClassCode'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterOtherAgencyAtSceneParticipationOtherAgencyAtSceneRoleOtherAgencyAtScene constraints.validation.error='PatientCareReportEncompassingEncounterRelationshipEMSEncompassingEncounterOtherAgencyAtSceneParticipationOtherAgencyAtSceneRoleOtherAgencyAtSceneName'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportCustodianParticipation constraints.validation.error='PatientCareReportCustodianParticipationCustodianRole'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportCustodianParticipationCustodianRole constraints.validation.error='PatientCareReportCustodianParticipationCustodianRoleCustodian'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportCustodianParticipationCustodianRoleCustodian constraints.validation.error='PatientCareReportCustodianParticipationCustodianRoleCustodianAddr PatientCareReportCustodianParticipationCustodianRoleCustodianId PatientCareReportCustodianParticipationCustodianRoleCustodianName'"
@@ -47,9 +46,9 @@ import org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportServiceEventParticipationServiceEventPerformerParticipation functionCode.codeSystem='2.16.840.1.113883.6.1' functionCode.codeSystemName='LOINC' constraints.validation.error='PatientCareReportServiceEventParticipationServiceEventPerformerParticipationFunctionCode PatientCareReportServiceEventParticipationServiceEventPerformerParticipationPerformerRole'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportServiceEventParticipationServiceEventPerformerParticipationPerformerRole code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.error='PatientCareReportServiceEventParticipationServiceEventPerformerParticipationPerformerRoleCode PatientCareReportServiceEventParticipationServiceEventPerformerParticipationPerformerRoleCodeP PatientCareReportServiceEventParticipationServiceEventPerformerParticipationPerformerRoleId PatientCareReportServiceEventParticipationServiceEventPerformerParticipationPerformerRoleAddr PatientCareReportServiceEventParticipationServiceEventPerformerParticipationPerformerRoleTelecom PatientCareReportServiceEventParticipationServiceEventPerformerParticipationPerformerRolePerformer'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportServiceEventParticipationServiceEventPerformerParticipationPerformerRolePerformer constraints.validation.error='PatientCareReportServiceEventParticipationServiceEventPerformerParticipationPerformerRolePerformerName'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportParentDocumentRelationship typeCode='RPLC' constraints.validation.info='PatientCareReportParentDocumentRelationshipParentDocument'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportParentDocumentRelationship typeCode='RPLC' constraints.validation.error='PatientCareReportParentDocumentRelationshipTypeCode' constraints.validation.info='PatientCareReportParentDocumentRelationshipParentDocument'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportParentDocumentRelationshipParentDocument constraints.validation.error='PatientCareReportParentDocumentRelationshipParentDocumentId'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportDestinationParticipantParticipation typeCode='DST' constraints.validation.error='PatientCareReportDestinationParticipantParticipationTypeCode'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportDestinationParticipantParticipation typeCode='DST' constraints.validation.error='PatientCareReportDestinationParticipantParticipationTypeCode PatientCareReportDestinationParticipantParticipationTime'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportDestinationParticipantParticipationDestinationRole constraints.validation.warning='PatientCareReportDestinationParticipantParticipationDestinationRoleAddr' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.error='PatientCareReportDestinationParticipantParticipationDestinationRoleCode' classCode='SDLOC'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportDestinationParticipantParticipationDestinationRoleDestinationOrganization constraints.validation.error='PatientCareReportDestinationParticipantParticipationDestinationRoleDestinationOrganizationName'"
  * @generated
@@ -173,8 +172,7 @@ public interface PatientCareReport extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSAllergiesAndAdverseReactionsSection))'"
 	 * @generated
 	 */
-	boolean validatePatientCareReportAllergiesAndAdverseReactionsSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePatientCareReportAllergiesAndAdverseReactionsSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -222,8 +220,7 @@ public interface PatientCareReport extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSMedicationsAdministeredSection))'"
 	 * @generated
 	 */
-	boolean validatePatientCareReportMedicationsAdministeredSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePatientCareReportMedicationsAdministeredSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -247,8 +244,7 @@ public interface PatientCareReport extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSPatientCareNarrativeSection))'"
 	 * @generated
 	 */
-	boolean validatePatientCareReportPatientCareNarrativeSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePatientCareReportPatientCareNarrativeSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -296,8 +292,7 @@ public interface PatientCareReport extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSPersonnelAdverseEventSection))'"
 	 * @generated
 	 */
-	boolean validatePatientCareReportPersonnelAdverseEventSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePatientCareReportPersonnelAdverseEventSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -342,7 +337,7 @@ public interface PatientCareReport extends GeneralHeaderConstraints {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::TimesSection))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSTimesSection))'"
 	 * @generated
 	 */
 	boolean validatePatientCareReportTimesSection(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -417,8 +412,7 @@ public interface PatientCareReport extends GeneralHeaderConstraints {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSInjuryIncidentDescriptionSection))'"
 	 * @generated
 	 */
-	boolean validatePatientCareReportInjuryIncidentDescriptionSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validatePatientCareReportInjuryIncidentDescriptionSection(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -589,10 +583,10 @@ public interface PatientCareReport extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::TimesSection))->asSequence()->any(true).oclAsType(emspcr::TimesSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSTimesSection))->asSequence()->any(true).oclAsType(emspcr::EMSTimesSection)'"
 	 * @generated
 	 */
-	TimesSection getTimesSection();
+	EMSTimesSection getTimesSection();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -627,11 +621,10 @@ public interface PatientCareReport extends GeneralHeaderConstraints {
 	 * @generated
 	 */
 	public PatientCareReport init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PatientCareReport init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PatientCareReport init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PatientCareReport

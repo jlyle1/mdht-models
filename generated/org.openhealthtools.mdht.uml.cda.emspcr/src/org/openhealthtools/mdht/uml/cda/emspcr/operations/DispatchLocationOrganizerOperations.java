@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -70,8 +66,9 @@ public class DispatchLocationOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_NAME_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -83,32 +80,30 @@ public class DispatchLocationOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateDispatchLocationOrganizerDispatchLocationNameRelationship(
-			DispatchLocationOrganizer dispatchLocationOrganizer, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateDispatchLocationOrganizerDispatchLocationNameRelationship(DispatchLocationOrganizer dispatchLocationOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_NAME_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_LOCATION_ORGANIZER);
 			try {
 				VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_NAME_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_NAME_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_NAME_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dispatchLocationOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_NAME_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dispatchLocationOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_LOCATION_ORGANIZER__DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_NAME_RELATIONSHIP,
-					EmspcrPlugin.INSTANCE.getString("DispatchLocationOrganizerDispatchLocationNameRelationship"),
-					new Object[] { dispatchLocationOrganizer }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_LOCATION_ORGANIZER__DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_NAME_RELATIONSHIP,
+						 EmspcrPlugin.INSTANCE.getString("DispatchLocationOrganizerDispatchLocationOrganizerDispatchLocationNameRelationship"),
+						 new Object [] { dispatchLocationOrganizer }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -132,8 +127,9 @@ public class DispatchLocationOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LATITUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -145,32 +141,30 @@ public class DispatchLocationOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateDispatchLocationOrganizerDispatchLocationLatitudeRelationship(
-			DispatchLocationOrganizer dispatchLocationOrganizer, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateDispatchLocationOrganizerDispatchLocationLatitudeRelationship(DispatchLocationOrganizer dispatchLocationOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LATITUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_LOCATION_ORGANIZER);
 			try {
 				VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LATITUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LATITUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LATITUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dispatchLocationOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LATITUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dispatchLocationOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_LOCATION_ORGANIZER__DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LATITUDE_RELATIONSHIP,
-					EmspcrPlugin.INSTANCE.getString("DispatchLocationOrganizerDispatchLocationLatitudeRelationship"),
-					new Object[] { dispatchLocationOrganizer }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_LOCATION_ORGANIZER__DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LATITUDE_RELATIONSHIP,
+						 EmspcrPlugin.INSTANCE.getString("DispatchLocationOrganizerDispatchLocationOrganizerDispatchLocationLatitudeRelationship"),
+						 new Object [] { dispatchLocationOrganizer }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -194,8 +188,9 @@ public class DispatchLocationOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LONGTUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -207,32 +202,30 @@ public class DispatchLocationOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateDispatchLocationOrganizerDispatchLocationLongtudeRelationship(
-			DispatchLocationOrganizer dispatchLocationOrganizer, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateDispatchLocationOrganizerDispatchLocationLongtudeRelationship(DispatchLocationOrganizer dispatchLocationOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LONGTUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_LOCATION_ORGANIZER);
 			try {
 				VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LONGTUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LONGTUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LONGTUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dispatchLocationOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LONGTUDE_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dispatchLocationOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_LOCATION_ORGANIZER__DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LONGTUDE_RELATIONSHIP,
-					EmspcrPlugin.INSTANCE.getString("DispatchLocationOrganizerDispatchLocationLongtudeRelationship"),
-					new Object[] { dispatchLocationOrganizer }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_LOCATION_ORGANIZER__DISPATCH_LOCATION_ORGANIZER_DISPATCH_LOCATION_LONGTUDE_RELATIONSHIP,
+						 EmspcrPlugin.INSTANCE.getString("DispatchLocationOrganizerDispatchLocationOrganizerDispatchLocationLongtudeRelationship"),
+						 new Object [] { dispatchLocationOrganizer }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -256,8 +249,9 @@ public class DispatchLocationOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_DISPATCH_LOCATION_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -269,30 +263,30 @@ public class DispatchLocationOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateDispatchLocationOrganizerTemplateId(
-			DispatchLocationOrganizer dispatchLocationOrganizer, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateDispatchLocationOrganizerTemplateId(DispatchLocationOrganizer dispatchLocationOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_DISPATCH_LOCATION_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_LOCATION_ORGANIZER);
 			try {
 				VALIDATE_DISPATCH_LOCATION_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_LOCATION_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_LOCATION_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dispatchLocationOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_LOCATION_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dispatchLocationOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_LOCATION_ORGANIZER__DISPATCH_LOCATION_ORGANIZER_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("DispatchLocationOrganizerTemplateId"),
-					new Object[] { dispatchLocationOrganizer }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_LOCATION_ORGANIZER__DISPATCH_LOCATION_ORGANIZER_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("DispatchLocationOrganizerDispatchLocationOrganizerTemplateId"),
+						 new Object [] { dispatchLocationOrganizer }));
 			}
-
+			 
 			return false;
 		}
 		return true;

@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -70,8 +66,9 @@ public class DispatchLocationNameOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_DISPATCH_LOCATION_NAME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -83,29 +80,30 @@ public class DispatchLocationNameOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateDispatchLocationNameTemplateId(DispatchLocationName dispatchLocationName,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateDispatchLocationNameTemplateId(DispatchLocationName dispatchLocationName, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_DISPATCH_LOCATION_NAME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_LOCATION_NAME);
 			try {
 				VALIDATE_DISPATCH_LOCATION_NAME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_LOCATION_NAME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_LOCATION_NAME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dispatchLocationName)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_LOCATION_NAME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dispatchLocationName)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_LOCATION_NAME__DISPATCH_LOCATION_NAME_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("DispatchLocationNameTemplateId"),
-					new Object[] { dispatchLocationName }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_LOCATION_NAME__DISPATCH_LOCATION_NAME_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("DispatchLocationNameDispatchLocationNameTemplateId"),
+						 new Object [] { dispatchLocationName }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -129,8 +127,9 @@ public class DispatchLocationNameOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_DISPATCH_LOCATION_NAME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -142,29 +141,30 @@ public class DispatchLocationNameOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateDispatchLocationNameMoodCode(DispatchLocationName dispatchLocationName,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateDispatchLocationNameMoodCode(DispatchLocationName dispatchLocationName, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_DISPATCH_LOCATION_NAME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_LOCATION_NAME);
 			try {
 				VALIDATE_DISPATCH_LOCATION_NAME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_LOCATION_NAME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_LOCATION_NAME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dispatchLocationName)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_LOCATION_NAME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dispatchLocationName)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_LOCATION_NAME__DISPATCH_LOCATION_NAME_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("DispatchLocationNameMoodCode"),
-					new Object[] { dispatchLocationName }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_LOCATION_NAME__DISPATCH_LOCATION_NAME_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("DispatchLocationNameDispatchLocationNameMoodCode"),
+						 new Object [] { dispatchLocationName }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -178,9 +178,9 @@ public class DispatchLocationNameOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DISPATCH_LOCATION_NAME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '69466-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_DISPATCH_LOCATION_NAME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '69466-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDispatchLocationNameCode(DispatchLocationName, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Location Name Code</em>}' invariant operation.
@@ -190,8 +190,9 @@ public class DispatchLocationNameOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_DISPATCH_LOCATION_NAME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -203,28 +204,30 @@ public class DispatchLocationNameOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateDispatchLocationNameCode(DispatchLocationName dispatchLocationName,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateDispatchLocationNameCode(DispatchLocationName dispatchLocationName, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_DISPATCH_LOCATION_NAME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_LOCATION_NAME);
 			try {
 				VALIDATE_DISPATCH_LOCATION_NAME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_LOCATION_NAME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_LOCATION_NAME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dispatchLocationName)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_LOCATION_NAME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dispatchLocationName)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_LOCATION_NAME__DISPATCH_LOCATION_NAME_CODE,
-					EmspcrPlugin.INSTANCE.getString("DispatchLocationNameCode"), new Object[] { dispatchLocationName }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_LOCATION_NAME__DISPATCH_LOCATION_NAME_CODE,
+						 EmspcrPlugin.INSTANCE.getString("DispatchLocationNameDispatchLocationNameCode"),
+						 new Object [] { dispatchLocationName }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -248,8 +251,9 @@ public class DispatchLocationNameOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_DISPATCH_LOCATION_NAME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -261,28 +265,30 @@ public class DispatchLocationNameOperations extends ClinicalStatementOperations 
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateDispatchLocationNameValue(DispatchLocationName dispatchLocationName,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateDispatchLocationNameValue(DispatchLocationName dispatchLocationName, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_DISPATCH_LOCATION_NAME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_LOCATION_NAME);
 			try {
 				VALIDATE_DISPATCH_LOCATION_NAME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_LOCATION_NAME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_LOCATION_NAME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dispatchLocationName)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_LOCATION_NAME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dispatchLocationName)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_LOCATION_NAME__DISPATCH_LOCATION_NAME_VALUE,
-					EmspcrPlugin.INSTANCE.getString("DispatchLocationNameValue"), new Object[] { dispatchLocationName }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_LOCATION_NAME__DISPATCH_LOCATION_NAME_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("DispatchLocationNameDispatchLocationNameValue"),
+						 new Object [] { dispatchLocationName }));
 			}
-
+			 
 			return false;
 		}
 		return true;

@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -21,8 +17,7 @@ import org.eclipse.ocl.ecore.OCL;
 
 import org.eclipse.ocl.expressions.OCLExpression;
 
-import org.openhealthtools.mdht.uml.cda.Organizer;
-
+import org.openhealthtools.mdht.uml.cda.emspcr.DrugAllergyOrganizer;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSAllergiesAndAdverseReactionsSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
@@ -81,8 +76,9 @@ public class EMSAllergiesAndAdverseReactionsSectionOperations extends SectionOpe
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -94,32 +90,30 @@ public class EMSAllergiesAndAdverseReactionsSectionOperations extends SectionOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSAllergiesAndAdverseReactionsSectionTemplateId(
-			EMSAllergiesAndAdverseReactionsSection emsAllergiesAndAdverseReactionsSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSAllergiesAndAdverseReactionsSectionTemplateId(EMSAllergiesAndAdverseReactionsSection emsAllergiesAndAdverseReactionsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION);
 			try {
 				VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsAllergiesAndAdverseReactionsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsAllergiesAndAdverseReactionsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("EMSAllergiesAndAdverseReactionsSectionTemplateId"),
-					new Object[] { emsAllergiesAndAdverseReactionsSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("EMSAllergiesAndAdverseReactionsSectionEMSAllergiesAndAdverseReactionsSectionTemplateId"),
+						 new Object [] { emsAllergiesAndAdverseReactionsSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -133,9 +127,9 @@ public class EMSAllergiesAndAdverseReactionsSectionOperations extends SectionOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEMSAllergiesAndAdverseReactionsSectionCode(EMSAllergiesAndAdverseReactionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Allergies And Adverse Reactions Section Code</em>}' invariant operation.
@@ -145,8 +139,9 @@ public class EMSAllergiesAndAdverseReactionsSectionOperations extends SectionOpe
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -158,32 +153,30 @@ public class EMSAllergiesAndAdverseReactionsSectionOperations extends SectionOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSAllergiesAndAdverseReactionsSectionCode(
-			EMSAllergiesAndAdverseReactionsSection emsAllergiesAndAdverseReactionsSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSAllergiesAndAdverseReactionsSectionCode(EMSAllergiesAndAdverseReactionsSection emsAllergiesAndAdverseReactionsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION);
 			try {
 				VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsAllergiesAndAdverseReactionsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsAllergiesAndAdverseReactionsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_CODE,
-					EmspcrPlugin.INSTANCE.getString("EMSAllergiesAndAdverseReactionsSectionCode"),
-					new Object[] { emsAllergiesAndAdverseReactionsSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_CODE,
+						 EmspcrPlugin.INSTANCE.getString("EMSAllergiesAndAdverseReactionsSectionEMSAllergiesAndAdverseReactionsSectionCode"),
+						 new Object [] { emsAllergiesAndAdverseReactionsSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -207,8 +200,9 @@ public class EMSAllergiesAndAdverseReactionsSectionOperations extends SectionOpe
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -220,32 +214,30 @@ public class EMSAllergiesAndAdverseReactionsSectionOperations extends SectionOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSAllergiesAndAdverseReactionsSectionTitle(
-			EMSAllergiesAndAdverseReactionsSection emsAllergiesAndAdverseReactionsSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSAllergiesAndAdverseReactionsSectionTitle(EMSAllergiesAndAdverseReactionsSection emsAllergiesAndAdverseReactionsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION);
 			try {
 				VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsAllergiesAndAdverseReactionsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsAllergiesAndAdverseReactionsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_TITLE,
-					EmspcrPlugin.INSTANCE.getString("EMSAllergiesAndAdverseReactionsSectionTitle"),
-					new Object[] { emsAllergiesAndAdverseReactionsSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_TITLE,
+						 EmspcrPlugin.INSTANCE.getString("EMSAllergiesAndAdverseReactionsSectionEMSAllergiesAndAdverseReactionsSectionTitle"),
+						 new Object [] { emsAllergiesAndAdverseReactionsSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -269,8 +261,9 @@ public class EMSAllergiesAndAdverseReactionsSectionOperations extends SectionOpe
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -282,32 +275,30 @@ public class EMSAllergiesAndAdverseReactionsSectionOperations extends SectionOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSAllergiesAndAdverseReactionsSectionText(
-			EMSAllergiesAndAdverseReactionsSection emsAllergiesAndAdverseReactionsSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSAllergiesAndAdverseReactionsSectionText(EMSAllergiesAndAdverseReactionsSection emsAllergiesAndAdverseReactionsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION);
 			try {
 				VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsAllergiesAndAdverseReactionsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsAllergiesAndAdverseReactionsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_TEXT,
-					EmspcrPlugin.INSTANCE.getString("EMSAllergiesAndAdverseReactionsSectionText"),
-					new Object[] { emsAllergiesAndAdverseReactionsSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_TEXT,
+						 EmspcrPlugin.INSTANCE.getString("EMSAllergiesAndAdverseReactionsSectionEMSAllergiesAndAdverseReactionsSectionText"),
+						 new Object [] { emsAllergiesAndAdverseReactionsSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -331,8 +322,9 @@ public class EMSAllergiesAndAdverseReactionsSectionOperations extends SectionOpe
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_ENVIRONMENTAL_ALLERGIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -344,32 +336,30 @@ public class EMSAllergiesAndAdverseReactionsSectionOperations extends SectionOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSAllergiesAndAdverseReactionsSectionEnvironmentalAllergies(
-			EMSAllergiesAndAdverseReactionsSection emsAllergiesAndAdverseReactionsSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSAllergiesAndAdverseReactionsSectionEnvironmentalAllergies(EMSAllergiesAndAdverseReactionsSection emsAllergiesAndAdverseReactionsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_ENVIRONMENTAL_ALLERGIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION);
 			try {
 				VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_ENVIRONMENTAL_ALLERGIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_ENVIRONMENTAL_ALLERGIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_ENVIRONMENTAL_ALLERGIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsAllergiesAndAdverseReactionsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_ENVIRONMENTAL_ALLERGIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsAllergiesAndAdverseReactionsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_ENVIRONMENTAL_ALLERGIES,
-					EmspcrPlugin.INSTANCE.getString("EMSAllergiesAndAdverseReactionsSectionEnvironmentalAllergies"),
-					new Object[] { emsAllergiesAndAdverseReactionsSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_ENVIRONMENTAL_ALLERGIES,
+						 EmspcrPlugin.INSTANCE.getString("EMSAllergiesAndAdverseReactionsSectionEMSAllergiesAndAdverseReactionsSectionEnvironmentalAllergies"),
+						 new Object [] { emsAllergiesAndAdverseReactionsSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -383,7 +373,7 @@ public class EMSAllergiesAndAdverseReactionsSectionOperations extends SectionOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_EMS_DRUG_ALLERGY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(cda::Organizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
+	protected static final String VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_EMS_DRUG_ALLERGY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(emspcr::DrugAllergyOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEMSAllergiesAndAdverseReactionsSectionEMSDrugAllergyOrganizer(EMSAllergiesAndAdverseReactionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Allergies And Adverse Reactions Section EMS Drug Allergy Organizer</em>}' invariant operation.
@@ -393,8 +383,9 @@ public class EMSAllergiesAndAdverseReactionsSectionOperations extends SectionOpe
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_EMS_DRUG_ALLERGY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -406,32 +397,30 @@ public class EMSAllergiesAndAdverseReactionsSectionOperations extends SectionOpe
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSAllergiesAndAdverseReactionsSectionEMSDrugAllergyOrganizer(
-			EMSAllergiesAndAdverseReactionsSection emsAllergiesAndAdverseReactionsSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSAllergiesAndAdverseReactionsSectionEMSDrugAllergyOrganizer(EMSAllergiesAndAdverseReactionsSection emsAllergiesAndAdverseReactionsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_EMS_DRUG_ALLERGY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION);
 			try {
 				VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_EMS_DRUG_ALLERGY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_EMS_DRUG_ALLERGY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_EMS_DRUG_ALLERGY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsAllergiesAndAdverseReactionsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_EMS_DRUG_ALLERGY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsAllergiesAndAdverseReactionsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_EMS_DRUG_ALLERGY_ORGANIZER,
-					EmspcrPlugin.INSTANCE.getString("EMSAllergiesAndAdverseReactionsSectionEMSDrugAllergyOrganizer"),
-					new Object[] { emsAllergiesAndAdverseReactionsSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_EMS_DRUG_ALLERGY_ORGANIZER,
+						 EmspcrPlugin.INSTANCE.getString("EMSAllergiesAndAdverseReactionsSectionEMSAllergiesAndAdverseReactionsSectionEMSDrugAllergyOrganizer"),
+						 new Object [] { emsAllergiesAndAdverseReactionsSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -462,17 +451,15 @@ public class EMSAllergiesAndAdverseReactionsSectionOperations extends SectionOpe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-
-	public static NonDrugAllergyOrganizer getEnvironmentalAllergies(
-			EMSAllergiesAndAdverseReactionsSection emsAllergiesAndAdverseReactionsSection) {
+	
+	public static  NonDrugAllergyOrganizer getEnvironmentalAllergies(EMSAllergiesAndAdverseReactionsSection emsAllergiesAndAdverseReactionsSection) {
 		if (GET_ENVIRONMENTAL_ALLERGIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION,
-				EmspcrPackage.Literals.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION.getEAllOperations().get(61));
+			helper.setOperationContext(EmspcrPackage.Literals.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION, EmspcrPackage.Literals.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION.getEAllOperations().get(61));
 			try {
 				GET_ENVIRONMENTAL_ALLERGIES__EOCL_QRY = helper.createQuery(GET_ENVIRONMENTAL_ALLERGIES__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -488,7 +475,7 @@ public class EMSAllergiesAndAdverseReactionsSectionOperations extends SectionOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_EMS_DRUG_ALLERGY_ORGANIZER__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(cda::Organizer))->asSequence()->any(true).oclAsType(cda::Organizer)";
+	protected static final String GET_EMS_DRUG_ALLERGY_ORGANIZER__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(emspcr::DrugAllergyOrganizer))->asSequence()->any(true).oclAsType(emspcr::DrugAllergyOrganizer)";
 
 	/**
 	 * The cached OCL query for the '{@link #getEMSDrugAllergyOrganizer(EMSAllergiesAndAdverseReactionsSection) <em>Get EMS Drug Allergy Organizer</em>}' query operation.
@@ -505,22 +492,20 @@ public class EMSAllergiesAndAdverseReactionsSectionOperations extends SectionOpe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-
-	public static Organizer getEMSDrugAllergyOrganizer(
-			EMSAllergiesAndAdverseReactionsSection emsAllergiesAndAdverseReactionsSection) {
+	
+	public static  DrugAllergyOrganizer getEMSDrugAllergyOrganizer(EMSAllergiesAndAdverseReactionsSection emsAllergiesAndAdverseReactionsSection) {
 		if (GET_EMS_DRUG_ALLERGY_ORGANIZER__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION,
-				EmspcrPackage.Literals.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION.getEAllOperations().get(62));
+			helper.setOperationContext(EmspcrPackage.Literals.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION, EmspcrPackage.Literals.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION.getEAllOperations().get(62));
 			try {
 				GET_EMS_DRUG_ALLERGY_ORGANIZER__EOCL_QRY = helper.createQuery(GET_EMS_DRUG_ALLERGY_ORGANIZER__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_EMS_DRUG_ALLERGY_ORGANIZER__EOCL_QRY);
-		return (Organizer) query.evaluate(emsAllergiesAndAdverseReactionsSection);
+		return (DrugAllergyOrganizer) query.evaluate(emsAllergiesAndAdverseReactionsSection);
 	}
 
 } // EMSAllergiesAndAdverseReactionsSectionOperations

@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -58,10 +54,8 @@ public class ResponseBeginningOdometerReadingImpl extends ObservationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResponseBeginningOdometerReadingTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ResponseBeginningOdometerReadingOperations.validateResponseBeginningOdometerReadingTemplateId(
-			this, diagnostics, context);
+	public boolean validateResponseBeginningOdometerReadingTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResponseBeginningOdometerReadingOperations.validateResponseBeginningOdometerReadingTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -69,10 +63,8 @@ public class ResponseBeginningOdometerReadingImpl extends ObservationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResponseBeginningOdometerReadingMoodCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ResponseBeginningOdometerReadingOperations.validateResponseBeginningOdometerReadingMoodCode(
-			this, diagnostics, context);
+	public boolean validateResponseBeginningOdometerReadingMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResponseBeginningOdometerReadingOperations.validateResponseBeginningOdometerReadingMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -80,10 +72,8 @@ public class ResponseBeginningOdometerReadingImpl extends ObservationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResponseBeginningOdometerReadingCodeP(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ResponseBeginningOdometerReadingOperations.validateResponseBeginningOdometerReadingCodeP(
-			this, diagnostics, context);
+	public boolean validateResponseBeginningOdometerReadingCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResponseBeginningOdometerReadingOperations.validateResponseBeginningOdometerReadingCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -92,8 +82,7 @@ public class ResponseBeginningOdometerReadingImpl extends ObservationImpl implem
 	 * @generated
 	 */
 	public boolean validateResponseBeginningOdometerReadingCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResponseBeginningOdometerReadingOperations.validateResponseBeginningOdometerReadingCode(
-			this, diagnostics, context);
+		return ResponseBeginningOdometerReadingOperations.validateResponseBeginningOdometerReadingCode(this, diagnostics, context);
 	}
 
 	/**
@@ -101,10 +90,8 @@ public class ResponseBeginningOdometerReadingImpl extends ObservationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResponseBeginningOdometerReadingValue(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ResponseBeginningOdometerReadingOperations.validateResponseBeginningOdometerReadingValue(
-			this, diagnostics, context);
+	public boolean validateResponseBeginningOdometerReadingValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResponseBeginningOdometerReadingOperations.validateResponseBeginningOdometerReadingValue(this, diagnostics, context);
 	}
 
 	/**
@@ -113,16 +100,15 @@ public class ResponseBeginningOdometerReadingImpl extends ObservationImpl implem
 	 * @generated
 	 */
 	public ResponseBeginningOdometerReading init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ResponseBeginningOdometerReading init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // ResponseBeginningOdometerReadingImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ResponseBeginningOdometerReading init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //ResponseBeginningOdometerReadingImpl

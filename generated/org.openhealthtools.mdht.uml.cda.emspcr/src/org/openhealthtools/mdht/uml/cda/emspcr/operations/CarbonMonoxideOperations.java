@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -73,8 +69,9 @@ public class CarbonMonoxideOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_CARBON_MONOXIDE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,28 +83,30 @@ public class CarbonMonoxideOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateCarbonMonoxideTemplateId(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateCarbonMonoxideTemplateId(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CARBON_MONOXIDE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARBON_MONOXIDE);
 			try {
 				VALIDATE_CARBON_MONOXIDE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARBON_MONOXIDE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CARBON_MONOXIDE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			carbonMonoxide)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CARBON_MONOXIDE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(carbonMonoxide)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.CARBON_MONOXIDE__CARBON_MONOXIDE_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("CarbonMonoxideTemplateId"), new Object[] { carbonMonoxide }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.CARBON_MONOXIDE__CARBON_MONOXIDE_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("CarbonMonoxideCarbonMonoxideTemplateId"),
+						 new Object [] { carbonMonoxide }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -131,8 +130,9 @@ public class CarbonMonoxideOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_CARBON_MONOXIDE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -144,28 +144,30 @@ public class CarbonMonoxideOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateCarbonMonoxideMoodCode(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateCarbonMonoxideMoodCode(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CARBON_MONOXIDE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARBON_MONOXIDE);
 			try {
 				VALIDATE_CARBON_MONOXIDE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARBON_MONOXIDE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CARBON_MONOXIDE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			carbonMonoxide)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CARBON_MONOXIDE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(carbonMonoxide)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.CARBON_MONOXIDE__CARBON_MONOXIDE_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("CarbonMonoxideMoodCode"), new Object[] { carbonMonoxide }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.CARBON_MONOXIDE__CARBON_MONOXIDE_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("CarbonMonoxideCarbonMonoxideMoodCode"),
+						 new Object [] { carbonMonoxide }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -189,8 +191,9 @@ public class CarbonMonoxideOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_CARBON_MONOXIDE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -202,27 +205,30 @@ public class CarbonMonoxideOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateCarbonMonoxideCodeP(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateCarbonMonoxideCodeP(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CARBON_MONOXIDE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARBON_MONOXIDE);
 			try {
 				VALIDATE_CARBON_MONOXIDE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARBON_MONOXIDE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CARBON_MONOXIDE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(carbonMonoxide)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.CARBON_MONOXIDE__CARBON_MONOXIDE_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("CarbonMonoxideCodeP"), new Object[] { carbonMonoxide }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.CARBON_MONOXIDE__CARBON_MONOXIDE_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("CarbonMonoxideCarbonMonoxideCodeP"),
+						 new Object [] { carbonMonoxide }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -234,7 +240,7 @@ public class CarbonMonoxideOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(carbonMonoxide);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -248,9 +254,9 @@ public class CarbonMonoxideOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CARBON_MONOXIDE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '20563-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_CARBON_MONOXIDE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '20563-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCarbonMonoxideCode(CarbonMonoxide, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Carbon Monoxide Code</em>}' invariant operation.
@@ -260,8 +266,9 @@ public class CarbonMonoxideOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_CARBON_MONOXIDE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -273,35 +280,36 @@ public class CarbonMonoxideOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateCarbonMonoxideCode(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.CarbonMonoxideCodeP");
+	
+	public static  boolean validateCarbonMonoxideCode(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.CarbonMonoxideCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(carbonMonoxide)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_CARBON_MONOXIDE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARBON_MONOXIDE);
 			try {
 				VALIDATE_CARBON_MONOXIDE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARBON_MONOXIDE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CARBON_MONOXIDE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(carbonMonoxide)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.CARBON_MONOXIDE__CARBON_MONOXIDE_CODE,
-					EmspcrPlugin.INSTANCE.getString("CarbonMonoxideCode"), new Object[] { carbonMonoxide }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.CARBON_MONOXIDE__CARBON_MONOXIDE_CODE,
+						 EmspcrPlugin.INSTANCE.getString("CarbonMonoxideCarbonMonoxideCode"),
+						 new Object [] { carbonMonoxide }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -325,8 +333,9 @@ public class CarbonMonoxideOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_CARBON_MONOXIDE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -338,28 +347,30 @@ public class CarbonMonoxideOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateCarbonMonoxideEffectiveTime(CarbonMonoxide carbonMonoxide,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateCarbonMonoxideEffectiveTime(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CARBON_MONOXIDE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARBON_MONOXIDE);
 			try {
 				VALIDATE_CARBON_MONOXIDE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARBON_MONOXIDE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CARBON_MONOXIDE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			carbonMonoxide)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_CARBON_MONOXIDE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(carbonMonoxide)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.CARBON_MONOXIDE__CARBON_MONOXIDE_EFFECTIVE_TIME,
-					EmspcrPlugin.INSTANCE.getString("CarbonMonoxideEffectiveTime"), new Object[] { carbonMonoxide }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.CARBON_MONOXIDE__CARBON_MONOXIDE_EFFECTIVE_TIME,
+						 EmspcrPlugin.INSTANCE.getString("CarbonMonoxideCarbonMonoxideEffectiveTime"),
+						 new Object [] { carbonMonoxide }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -383,8 +394,9 @@ public class CarbonMonoxideOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_CARBON_MONOXIDE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -396,27 +408,30 @@ public class CarbonMonoxideOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateCarbonMonoxideValue(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateCarbonMonoxideValue(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CARBON_MONOXIDE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CARBON_MONOXIDE);
 			try {
 				VALIDATE_CARBON_MONOXIDE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CARBON_MONOXIDE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CARBON_MONOXIDE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(carbonMonoxide)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.CARBON_MONOXIDE__CARBON_MONOXIDE_VALUE,
-					EmspcrPlugin.INSTANCE.getString("CarbonMonoxideValue"), new Object[] { carbonMonoxide }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.CARBON_MONOXIDE__CARBON_MONOXIDE_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("CarbonMonoxideCarbonMonoxideValue"),
+						 new Object [] { carbonMonoxide }));
 			}
-
+			 
 			return false;
 		}
 		return true;

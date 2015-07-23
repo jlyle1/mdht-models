@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -17,12 +13,12 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
-import org.openhealthtools.mdht.uml.cda.consol.impl.VitalSignObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.RespiratoryRate;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.RespiratoryRateOperations;
+
+import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,7 +29,7 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.RespiratoryRateOperati
  *
  * @generated
  */
-public class RespiratoryRateImpl extends VitalSignObservationImpl implements RespiratoryRate {
+public class RespiratoryRateImpl extends ObservationImpl implements RespiratoryRate {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -51,6 +47,15 @@ public class RespiratoryRateImpl extends VitalSignObservationImpl implements Res
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.RESPIRATORY_RATE;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRespiratoryRateTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RespiratoryRateOperations.validateRespiratoryRateTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -94,29 +99,16 @@ public class RespiratoryRateImpl extends VitalSignObservationImpl implements Res
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateVitalSignObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return RespiratoryRateOperations.validateVitalSignObservationTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public RespiratoryRate init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public RespiratoryRate init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // RespiratoryRateImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public RespiratoryRate init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //RespiratoryRateImpl

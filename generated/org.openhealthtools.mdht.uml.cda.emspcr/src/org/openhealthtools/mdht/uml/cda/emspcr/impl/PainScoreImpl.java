@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -94,8 +90,8 @@ public class PainScoreImpl extends ObservationImpl implements PainScore {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PainScore init() {
-		return Initializer.Util.init(this);
+	public boolean validatePainScoreValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PainScoreOperations.validatePainScoreValue(this, diagnostics, context);
 	}
 
 	/**
@@ -103,8 +99,16 @@ public class PainScoreImpl extends ObservationImpl implements PainScore {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PainScore init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	public PainScore init() {
+	    return Initializer.Util.init(this);
 	}
-} // PainScoreImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PainScore init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //PainScoreImpl

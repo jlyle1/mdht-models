@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -62,10 +58,8 @@ public class EMSCurrentMedicationSectionImpl extends SectionImpl implements EMSC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSCurrentMedicationSectionTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionTemplateId(
-			this, diagnostics, context);
+	public boolean validateEMSCurrentMedicationSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -83,8 +77,7 @@ public class EMSCurrentMedicationSectionImpl extends SectionImpl implements EMSC
 	 * @generated
 	 */
 	public boolean validateEMSCurrentMedicationSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionTitle(
-			this, diagnostics, context);
+		return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -101,10 +94,8 @@ public class EMSCurrentMedicationSectionImpl extends SectionImpl implements EMSC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSCurrentMedicationSectionCurrentlyOnMedication(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionCurrentlyOnMedication(
-			this, diagnostics, context);
+	public boolean validateEMSCurrentMedicationSectionCurrentlyOnMedication(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionCurrentlyOnMedication(this, diagnostics, context);
 	}
 
 	/**
@@ -112,10 +103,8 @@ public class EMSCurrentMedicationSectionImpl extends SectionImpl implements EMSC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSCurrentMedicationSectionPatientOnAnticoagulants(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionPatientOnAnticoagulants(
-			this, diagnostics, context);
+	public boolean validateEMSCurrentMedicationSectionPatientOnAnticoagulants(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionPatientOnAnticoagulants(this, diagnostics, context);
 	}
 
 	/**
@@ -123,10 +112,8 @@ public class EMSCurrentMedicationSectionImpl extends SectionImpl implements EMSC
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSCurrentMedicationSectionCurrentMedication(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionCurrentMedication(
-			this, diagnostics, context);
+	public boolean validateEMSCurrentMedicationSectionCurrentMedication(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionCurrentMedication(this, diagnostics, context);
 	}
 
 	/**
@@ -162,16 +149,15 @@ public class EMSCurrentMedicationSectionImpl extends SectionImpl implements EMSC
 	 * @generated
 	 */
 	public EMSCurrentMedicationSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMSCurrentMedicationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // EMSCurrentMedicationSectionImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EMSCurrentMedicationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //EMSCurrentMedicationSectionImpl

@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -71,8 +67,9 @@ public class PriorAEDUseOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PRIOR_AED_USE_PRIOR_AED_PROVIDER_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -84,29 +81,30 @@ public class PriorAEDUseOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validatePriorAEDUsePriorAEDProviderParticipation(PriorAEDUse priorAEDUse,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validatePriorAEDUsePriorAEDProviderParticipation(PriorAEDUse priorAEDUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PRIOR_AED_USE_PRIOR_AED_PROVIDER_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PRIOR_AED_USE);
 			try {
 				VALIDATE_PRIOR_AED_USE_PRIOR_AED_PROVIDER_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRIOR_AED_USE_PRIOR_AED_PROVIDER_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PRIOR_AED_USE_PRIOR_AED_PROVIDER_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(priorAEDUse)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PRIOR_AED_USE_PRIOR_AED_PROVIDER_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(priorAEDUse)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PRIOR_AED_USE__PRIOR_AED_USE_PRIOR_AED_PROVIDER_PARTICIPATION,
-					EmspcrPlugin.INSTANCE.getString("PriorAEDUsePriorAEDProviderParticipation"),
-					new Object[] { priorAEDUse }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PRIOR_AED_USE__PRIOR_AED_USE_PRIOR_AED_PROVIDER_PARTICIPATION,
+						 EmspcrPlugin.INSTANCE.getString("PriorAEDUsePriorAEDUsePriorAEDProviderParticipation"),
+						 new Object [] { priorAEDUse }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -130,8 +128,9 @@ public class PriorAEDUseOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PRIOR_AED_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -143,27 +142,30 @@ public class PriorAEDUseOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validatePriorAEDUseTemplateId(PriorAEDUse priorAEDUse, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validatePriorAEDUseTemplateId(PriorAEDUse priorAEDUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PRIOR_AED_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PRIOR_AED_USE);
 			try {
 				VALIDATE_PRIOR_AED_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRIOR_AED_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PRIOR_AED_USE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(priorAEDUse)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PRIOR_AED_USE__PRIOR_AED_USE_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("PriorAEDUseTemplateId"), new Object[] { priorAEDUse }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PRIOR_AED_USE__PRIOR_AED_USE_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("PriorAEDUsePriorAEDUseTemplateId"),
+						 new Object [] { priorAEDUse }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -187,8 +189,9 @@ public class PriorAEDUseOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PRIOR_AED_USE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -200,27 +203,30 @@ public class PriorAEDUseOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validatePriorAEDUseMoodCode(PriorAEDUse priorAEDUse, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validatePriorAEDUseMoodCode(PriorAEDUse priorAEDUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PRIOR_AED_USE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PRIOR_AED_USE);
 			try {
 				VALIDATE_PRIOR_AED_USE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRIOR_AED_USE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PRIOR_AED_USE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(priorAEDUse)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PRIOR_AED_USE__PRIOR_AED_USE_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("PriorAEDUseMoodCode"), new Object[] { priorAEDUse }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PRIOR_AED_USE__PRIOR_AED_USE_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("PriorAEDUsePriorAEDUseMoodCode"),
+						 new Object [] { priorAEDUse }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -234,9 +240,9 @@ public class PriorAEDUseOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PRIOR_AED_USE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67508-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PRIOR_AED_USE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67508-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePriorAEDUseCode(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prior AED Use Code</em>}' invariant operation.
@@ -246,8 +252,9 @@ public class PriorAEDUseOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PRIOR_AED_USE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -259,27 +266,30 @@ public class PriorAEDUseOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validatePriorAEDUseCode(PriorAEDUse priorAEDUse, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validatePriorAEDUseCode(PriorAEDUse priorAEDUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PRIOR_AED_USE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PRIOR_AED_USE);
 			try {
 				VALIDATE_PRIOR_AED_USE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRIOR_AED_USE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PRIOR_AED_USE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(priorAEDUse)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PRIOR_AED_USE__PRIOR_AED_USE_CODE,
-					EmspcrPlugin.INSTANCE.getString("PriorAEDUseCode"), new Object[] { priorAEDUse }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PRIOR_AED_USE__PRIOR_AED_USE_CODE,
+						 EmspcrPlugin.INSTANCE.getString("PriorAEDUsePriorAEDUseCode"),
+						 new Object [] { priorAEDUse }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -293,9 +303,9 @@ public class PriorAEDUseOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PRIOR_AED_USE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17066-4' or value.code = 'LA17067-2' or value.code = 'LA32-8')))";
+	protected static final String VALIDATE_PRIOR_AED_USE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17066-4' or value.code = 'LA17067-2' or value.code = 'LA32-8')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePriorAEDUseValue(PriorAEDUse, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prior AED Use Value</em>}' invariant operation.
@@ -305,8 +315,9 @@ public class PriorAEDUseOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PRIOR_AED_USE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -318,27 +329,30 @@ public class PriorAEDUseOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validatePriorAEDUseValue(PriorAEDUse priorAEDUse, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validatePriorAEDUseValue(PriorAEDUse priorAEDUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PRIOR_AED_USE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PRIOR_AED_USE);
 			try {
 				VALIDATE_PRIOR_AED_USE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRIOR_AED_USE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_PRIOR_AED_USE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(priorAEDUse)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PRIOR_AED_USE__PRIOR_AED_USE_VALUE,
-					EmspcrPlugin.INSTANCE.getString("PriorAEDUseValue"), new Object[] { priorAEDUse }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PRIOR_AED_USE__PRIOR_AED_USE_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("PriorAEDUsePriorAEDUseValue"),
+						 new Object [] { priorAEDUse }));
 			}
-
+			 
 			return false;
 		}
 		return true;

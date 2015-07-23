@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -75,8 +71,9 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -88,30 +85,30 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateAirwayConfirmationObservationTemplateId(
-			AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateAirwayConfirmationObservationTemplateId(AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.AIRWAY_CONFIRMATION_OBSERVATION);
 			try {
 				VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			airwayConfirmationObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(airwayConfirmationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.AIRWAY_CONFIRMATION_OBSERVATION__AIRWAY_CONFIRMATION_OBSERVATION_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("AirwayConfirmationObservationTemplateId"),
-					new Object[] { airwayConfirmationObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.AIRWAY_CONFIRMATION_OBSERVATION__AIRWAY_CONFIRMATION_OBSERVATION_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("AirwayConfirmationObservationAirwayConfirmationObservationTemplateId"),
+						 new Object [] { airwayConfirmationObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -135,8 +132,9 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,30 +146,30 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateAirwayConfirmationObservationMoodCode(
-			AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateAirwayConfirmationObservationMoodCode(AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.AIRWAY_CONFIRMATION_OBSERVATION);
 			try {
 				VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			airwayConfirmationObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(airwayConfirmationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.AIRWAY_CONFIRMATION_OBSERVATION__AIRWAY_CONFIRMATION_OBSERVATION_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("AirwayConfirmationObservationMoodCode"),
-					new Object[] { airwayConfirmationObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.AIRWAY_CONFIRMATION_OBSERVATION__AIRWAY_CONFIRMATION_OBSERVATION_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("AirwayConfirmationObservationAirwayConfirmationObservationMoodCode"),
+						 new Object [] { airwayConfirmationObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -195,8 +193,9 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -208,30 +207,30 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateAirwayConfirmationObservationCodeP(
-			AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateAirwayConfirmationObservationCodeP(AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.AIRWAY_CONFIRMATION_OBSERVATION);
 			try {
 				VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			airwayConfirmationObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(airwayConfirmationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.AIRWAY_CONFIRMATION_OBSERVATION__AIRWAY_CONFIRMATION_OBSERVATION_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("AirwayConfirmationObservationCodeP"),
-					new Object[] { airwayConfirmationObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.AIRWAY_CONFIRMATION_OBSERVATION__AIRWAY_CONFIRMATION_OBSERVATION_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("AirwayConfirmationObservationAirwayConfirmationObservationCodeP"),
+						 new Object [] { airwayConfirmationObservation }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -243,7 +242,7 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 				}
 				passToken.add(airwayConfirmationObservation);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -257,9 +256,9 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '71576-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '71576-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAirwayConfirmationObservationCode(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Code</em>}' invariant operation.
@@ -269,8 +268,9 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -282,38 +282,36 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateAirwayConfirmationObservationCode(
-			AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.AirwayConfirmationObservationCodeP");
+	
+	public static  boolean validateAirwayConfirmationObservationCode(AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.AirwayConfirmationObservationCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(airwayConfirmationObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.AIRWAY_CONFIRMATION_OBSERVATION);
 			try {
 				VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			airwayConfirmationObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(airwayConfirmationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.AIRWAY_CONFIRMATION_OBSERVATION__AIRWAY_CONFIRMATION_OBSERVATION_CODE,
-					EmspcrPlugin.INSTANCE.getString("AirwayConfirmationObservationCode"),
-					new Object[] { airwayConfirmationObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.AIRWAY_CONFIRMATION_OBSERVATION__AIRWAY_CONFIRMATION_OBSERVATION_CODE,
+						 EmspcrPlugin.INSTANCE.getString("AirwayConfirmationObservationAirwayConfirmationObservationCode"),
+						 new Object [] { airwayConfirmationObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -337,8 +335,9 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -350,31 +349,30 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateAirwayConfirmationObservationEffectiveTime(
-			AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateAirwayConfirmationObservationEffectiveTime(AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.AIRWAY_CONFIRMATION_OBSERVATION);
 			try {
 				VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			airwayConfirmationObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(airwayConfirmationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.AIRWAY_CONFIRMATION_OBSERVATION__AIRWAY_CONFIRMATION_OBSERVATION_EFFECTIVE_TIME,
-					EmspcrPlugin.INSTANCE.getString("AirwayConfirmationObservationEffectiveTime"),
-					new Object[] { airwayConfirmationObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.AIRWAY_CONFIRMATION_OBSERVATION__AIRWAY_CONFIRMATION_OBSERVATION_EFFECTIVE_TIME,
+						 EmspcrPlugin.INSTANCE.getString("AirwayConfirmationObservationAirwayConfirmationObservationEffectiveTime"),
+						 new Object [] { airwayConfirmationObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -398,8 +396,9 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -411,30 +410,30 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateAirwayConfirmationObservationValue(
-			AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateAirwayConfirmationObservationValue(AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.AIRWAY_CONFIRMATION_OBSERVATION);
 			try {
 				VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			airwayConfirmationObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(airwayConfirmationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.AIRWAY_CONFIRMATION_OBSERVATION__AIRWAY_CONFIRMATION_OBSERVATION_VALUE,
-					EmspcrPlugin.INSTANCE.getString("AirwayConfirmationObservationValue"),
-					new Object[] { airwayConfirmationObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.AIRWAY_CONFIRMATION_OBSERVATION__AIRWAY_CONFIRMATION_OBSERVATION_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("AirwayConfirmationObservationAirwayConfirmationObservationValue"),
+						 new Object [] { airwayConfirmationObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -448,9 +447,9 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (self.methodCode->size() = 1 and self.methodCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = element.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA18672-8' or value.code = 'LA18673-6' or value.code = 'LA18674-4' or value.code = 'LA18675-1' or value.code = 'LA18676-9' or value.code = 'LA18677-7' or value.code = 'LA18678-5' or value.code = 'LA18679-3' or value.code = 'LA18680-1' or value.code = 'LA18681-9')))";
+	protected static final String VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (self.methodCode->size() = 1 and self.methodCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = element.oclAsType(datatypes::CE) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA18672-8' or value.code = 'LA18673-6' or value.code = 'LA18674-4' or value.code = 'LA18675-1' or value.code = 'LA18676-9' or value.code = 'LA18677-7' or value.code = 'LA18678-5' or value.code = 'LA18680-1' or value.code = 'LA18681-9')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAirwayConfirmationObservationMethodCode(AirwayConfirmationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Airway Confirmation Observation Method Code</em>}' invariant operation.
@@ -460,8 +459,9 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -473,30 +473,30 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateAirwayConfirmationObservationMethodCode(
-			AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateAirwayConfirmationObservationMethodCode(AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.AIRWAY_CONFIRMATION_OBSERVATION);
 			try {
 				VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			airwayConfirmationObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(airwayConfirmationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.AIRWAY_CONFIRMATION_OBSERVATION__AIRWAY_CONFIRMATION_OBSERVATION_METHOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("AirwayConfirmationObservationMethodCode"),
-					new Object[] { airwayConfirmationObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.AIRWAY_CONFIRMATION_OBSERVATION__AIRWAY_CONFIRMATION_OBSERVATION_METHOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("AirwayConfirmationObservationAirwayConfirmationObservationMethodCode"),
+						 new Object [] { airwayConfirmationObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -520,8 +520,9 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -533,31 +534,30 @@ public class AirwayConfirmationObservationOperations extends ClinicalStatementOp
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateAirwayConfirmationObservationMethodCodeP(
-			AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateAirwayConfirmationObservationMethodCodeP(AirwayConfirmationObservation airwayConfirmationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.AIRWAY_CONFIRMATION_OBSERVATION);
 			try {
 				VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			airwayConfirmationObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_AIRWAY_CONFIRMATION_OBSERVATION_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(airwayConfirmationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.AIRWAY_CONFIRMATION_OBSERVATION__AIRWAY_CONFIRMATION_OBSERVATION_METHOD_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("AirwayConfirmationObservationMethodCodeP"),
-					new Object[] { airwayConfirmationObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.AIRWAY_CONFIRMATION_OBSERVATION__AIRWAY_CONFIRMATION_OBSERVATION_METHOD_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("AirwayConfirmationObservationAirwayConfirmationObservationMethodCodeP"),
+						 new Object [] { airwayConfirmationObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;

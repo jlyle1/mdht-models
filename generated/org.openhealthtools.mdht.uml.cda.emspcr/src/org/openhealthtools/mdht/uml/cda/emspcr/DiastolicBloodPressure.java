@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -16,7 +12,7 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
-import org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation;
+import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,10 +21,22 @@ import org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getDiastolicBloodPressure()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignObservationTemplateId DiastolicBloodPressureMoodCode DiastolicBloodPressureCode DiastolicBloodPressureValue' templateId.root='2.16.840.1.1133883.17.3.10.1.144' moodCode='EVN' code.code='8462-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Diastolic blood pressure' constraints.validation.info='DiastolicBloodPressureEffectiveTime'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='DiastolicBloodPressureTemplateId DiastolicBloodPressureMoodCode DiastolicBloodPressureCode DiastolicBloodPressureValue DiastolicBloodPressureMethodCode' templateId.root='2.16.840.1.1133883.17.3.10.1.144' moodCode='EVN' code.code='8462-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Diastolic blood pressure' constraints.validation.info='DiastolicBloodPressureEffectiveTime'"
  * @generated
  */
-public interface DiastolicBloodPressure extends VitalSignObservation {
+public interface DiastolicBloodPressure extends Observation {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.1133883.17.3.10.1.144\')'"
+	 * @generated
+	 */
+	boolean validateDiastolicBloodPressureTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -72,7 +80,7 @@ public interface DiastolicBloodPressure extends VitalSignObservation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::PQ)))'"
 	 * @generated
 	 */
 	boolean validateDiastolicBloodPressureValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -80,14 +88,25 @@ public interface DiastolicBloodPressure extends VitalSignObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (self.methodCode->size() = 1)'"
 	 * @generated
 	 */
-	public DiastolicBloodPressure init();
+	boolean validateDiastolicBloodPressureMethodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DiastolicBloodPressure init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public DiastolicBloodPressure init();
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public DiastolicBloodPressure init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DiastolicBloodPressure

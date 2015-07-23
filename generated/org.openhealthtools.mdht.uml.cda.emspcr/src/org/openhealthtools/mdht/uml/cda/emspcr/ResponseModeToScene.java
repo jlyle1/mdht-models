@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -25,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getResponseModeToScene()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResponseModeToSceneTemplateId ResponseModeToSceneMoodCode ResponseModeToSceneCode ResponseModeToSceneCodeP ResponseModeToSceneValue ResponseModeToSceneValueP' templateId.root='2.16.840.1.1133883.17.3.10.1.182' moodCode='EVN' code.code='67482-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Response mode to scene NEMSIS' constraints.validation.dependOn.ResponseModeToSceneCode='ResponseModeToSceneCodeP' value.codeSystem='2.16.840.1.113883.6.1' value.codeSystemName='LOINC'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResponseModeToSceneTemplateId ResponseModeToSceneMoodCode ResponseModeToSceneCode ResponseModeToSceneCodeP ResponseModeToSceneValue ResponseModeToSceneValueP ResponseModeToSceneResponseModeQualifier' templateId.root='2.16.840.1.1133883.17.3.10.1.182' moodCode='EVN' code.code='67482-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Response mode to scene NEMSIS' constraints.validation.dependOn.ResponseModeToSceneCode='ResponseModeToSceneCodeP' value.codeSystem='2.16.840.1.113883.6.1' value.codeSystemName='LOINC'"
  * @generated
  */
 public interface ResponseModeToScene extends Observation {
@@ -104,14 +100,34 @@ public interface ResponseModeToScene extends Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(emspcr::ResponseModeQualifier))'"
 	 * @generated
 	 */
-	public ResponseModeToScene init();
+	boolean validateResponseModeToSceneResponseModeQualifier(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::ResponseModeQualifier))->asSequence()->any(true).oclAsType(emspcr::ResponseModeQualifier)'"
+	 * @generated
+	 */
+	ResponseModeQualifier getResponseModeQualifier();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ResponseModeToScene init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public ResponseModeToScene init();
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ResponseModeToScene init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ResponseModeToScene

@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -94,6 +90,15 @@ public class MentalStatusAssessmentImpl extends ObservationImpl implements Menta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMentalStatusAssessmentEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MentalStatusAssessmentOperations.validateMentalStatusAssessmentEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateMentalStatusAssessmentValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MentalStatusAssessmentOperations.validateMentalStatusAssessmentValue(this, diagnostics, context);
 	}
@@ -104,16 +109,15 @@ public class MentalStatusAssessmentImpl extends ObservationImpl implements Menta
 	 * @generated
 	 */
 	public MentalStatusAssessment init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MentalStatusAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // MentalStatusAssessmentImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public MentalStatusAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //MentalStatusAssessmentImpl

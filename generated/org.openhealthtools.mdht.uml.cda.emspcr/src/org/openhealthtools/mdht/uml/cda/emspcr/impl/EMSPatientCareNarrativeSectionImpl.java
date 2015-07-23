@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -58,10 +54,8 @@ public class EMSPatientCareNarrativeSectionImpl extends SectionImpl implements E
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPatientCareNarrativeSectionTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EMSPatientCareNarrativeSectionOperations.validateEMSPatientCareNarrativeSectionTemplateId(
-			this, diagnostics, context);
+	public boolean validateEMSPatientCareNarrativeSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSPatientCareNarrativeSectionOperations.validateEMSPatientCareNarrativeSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -70,8 +64,7 @@ public class EMSPatientCareNarrativeSectionImpl extends SectionImpl implements E
 	 * @generated
 	 */
 	public boolean validateEMSPatientCareNarrativeSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPatientCareNarrativeSectionOperations.validateEMSPatientCareNarrativeSectionCode(
-			this, diagnostics, context);
+		return EMSPatientCareNarrativeSectionOperations.validateEMSPatientCareNarrativeSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -80,8 +73,7 @@ public class EMSPatientCareNarrativeSectionImpl extends SectionImpl implements E
 	 * @generated
 	 */
 	public boolean validateEMSPatientCareNarrativeSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPatientCareNarrativeSectionOperations.validateEMSPatientCareNarrativeSectionCodeP(
-			this, diagnostics, context);
+		return EMSPatientCareNarrativeSectionOperations.validateEMSPatientCareNarrativeSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -90,8 +82,7 @@ public class EMSPatientCareNarrativeSectionImpl extends SectionImpl implements E
 	 * @generated
 	 */
 	public boolean validateEMSPatientCareNarrativeSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPatientCareNarrativeSectionOperations.validateEMSPatientCareNarrativeSectionTitle(
-			this, diagnostics, context);
+		return EMSPatientCareNarrativeSectionOperations.validateEMSPatientCareNarrativeSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -100,8 +91,7 @@ public class EMSPatientCareNarrativeSectionImpl extends SectionImpl implements E
 	 * @generated
 	 */
 	public boolean validateEMSPatientCareNarrativeSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPatientCareNarrativeSectionOperations.validateEMSPatientCareNarrativeSectionText(
-			this, diagnostics, context);
+		return EMSPatientCareNarrativeSectionOperations.validateEMSPatientCareNarrativeSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -110,16 +100,15 @@ public class EMSPatientCareNarrativeSectionImpl extends SectionImpl implements E
 	 * @generated
 	 */
 	public EMSPatientCareNarrativeSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMSPatientCareNarrativeSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // EMSPatientCareNarrativeSectionImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EMSPatientCareNarrativeSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //EMSPatientCareNarrativeSectionImpl

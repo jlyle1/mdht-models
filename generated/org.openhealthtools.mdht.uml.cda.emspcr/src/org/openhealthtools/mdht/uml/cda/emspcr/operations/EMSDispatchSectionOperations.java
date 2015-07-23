@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -80,8 +76,9 @@ public class EMSDispatchSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_DISPATCH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -93,29 +90,30 @@ public class EMSDispatchSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSDispatchSectionTemplateId(EMSDispatchSection emsDispatchSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSDispatchSectionTemplateId(EMSDispatchSection emsDispatchSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_DISPATCH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_DISPATCH_SECTION);
 			try {
 				VALIDATE_EMS_DISPATCH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_DISPATCH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPATCH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsDispatchSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPATCH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsDispatchSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_DISPATCH_SECTION__EMS_DISPATCH_SECTION_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("EMSDispatchSectionTemplateId"),
-					new Object[] { emsDispatchSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_DISPATCH_SECTION__EMS_DISPATCH_SECTION_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("EMSDispatchSectionEMSDispatchSectionTemplateId"),
+						 new Object [] { emsDispatchSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -129,9 +127,9 @@ public class EMSDispatchSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EMS_DISPATCH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '67660-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_EMS_DISPATCH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '67660-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEMSDispatchSectionCode(EMSDispatchSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Dispatch Section Code</em>}' invariant operation.
@@ -141,8 +139,9 @@ public class EMSDispatchSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_DISPATCH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -154,28 +153,30 @@ public class EMSDispatchSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSDispatchSectionCode(EMSDispatchSection emsDispatchSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSDispatchSectionCode(EMSDispatchSection emsDispatchSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_DISPATCH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_DISPATCH_SECTION);
 			try {
 				VALIDATE_EMS_DISPATCH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_DISPATCH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPATCH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsDispatchSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPATCH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsDispatchSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_DISPATCH_SECTION__EMS_DISPATCH_SECTION_CODE,
-					EmspcrPlugin.INSTANCE.getString("EMSDispatchSectionCode"), new Object[] { emsDispatchSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_DISPATCH_SECTION__EMS_DISPATCH_SECTION_CODE,
+						 EmspcrPlugin.INSTANCE.getString("EMSDispatchSectionEMSDispatchSectionCode"),
+						 new Object [] { emsDispatchSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -199,8 +200,9 @@ public class EMSDispatchSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_DISPATCH_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -212,28 +214,30 @@ public class EMSDispatchSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSDispatchSectionTitle(EMSDispatchSection emsDispatchSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSDispatchSectionTitle(EMSDispatchSection emsDispatchSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_DISPATCH_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_DISPATCH_SECTION);
 			try {
 				VALIDATE_EMS_DISPATCH_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_DISPATCH_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPATCH_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsDispatchSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPATCH_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsDispatchSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_DISPATCH_SECTION__EMS_DISPATCH_SECTION_TITLE,
-					EmspcrPlugin.INSTANCE.getString("EMSDispatchSectionTitle"), new Object[] { emsDispatchSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_DISPATCH_SECTION__EMS_DISPATCH_SECTION_TITLE,
+						 EmspcrPlugin.INSTANCE.getString("EMSDispatchSectionEMSDispatchSectionTitle"),
+						 new Object [] { emsDispatchSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -257,8 +261,9 @@ public class EMSDispatchSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_DISPATCH_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -270,28 +275,30 @@ public class EMSDispatchSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSDispatchSectionText(EMSDispatchSection emsDispatchSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSDispatchSectionText(EMSDispatchSection emsDispatchSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_DISPATCH_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_DISPATCH_SECTION);
 			try {
 				VALIDATE_EMS_DISPATCH_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_DISPATCH_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPATCH_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsDispatchSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPATCH_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsDispatchSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_DISPATCH_SECTION__EMS_DISPATCH_SECTION_TEXT,
-					EmspcrPlugin.INSTANCE.getString("EMSDispatchSectionText"), new Object[] { emsDispatchSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_DISPATCH_SECTION__EMS_DISPATCH_SECTION_TEXT,
+						 EmspcrPlugin.INSTANCE.getString("EMSDispatchSectionEMSDispatchSectionText"),
+						 new Object [] { emsDispatchSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -315,8 +322,9 @@ public class EMSDispatchSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_DISPATCH_SECTION_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -328,30 +336,30 @@ public class EMSDispatchSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSDispatchSectionEmergencyMedicalDispatchObservation(
-			EMSDispatchSection emsDispatchSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSDispatchSectionEmergencyMedicalDispatchObservation(EMSDispatchSection emsDispatchSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_DISPATCH_SECTION_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_DISPATCH_SECTION);
 			try {
 				VALIDATE_EMS_DISPATCH_SECTION_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_DISPATCH_SECTION_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_DISPATCH_SECTION_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsDispatchSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPATCH_SECTION_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsDispatchSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_DISPATCH_SECTION__EMS_DISPATCH_SECTION_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION,
-					EmspcrPlugin.INSTANCE.getString("EMSDispatchSectionEmergencyMedicalDispatchObservation"),
-					new Object[] { emsDispatchSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_DISPATCH_SECTION__EMS_DISPATCH_SECTION_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION,
+						 EmspcrPlugin.INSTANCE.getString("EMSDispatchSectionEMSDispatchSectionEmergencyMedicalDispatchObservation"),
+						 new Object [] { emsDispatchSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -375,8 +383,9 @@ public class EMSDispatchSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_DISPATCH_SECTION_COMPLAINT_REPORTED_BY_DISPATCH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -388,30 +397,30 @@ public class EMSDispatchSectionOperations extends SectionOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSDispatchSectionComplaintReportedByDispatch(EMSDispatchSection emsDispatchSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSDispatchSectionComplaintReportedByDispatch(EMSDispatchSection emsDispatchSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_DISPATCH_SECTION_COMPLAINT_REPORTED_BY_DISPATCH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_DISPATCH_SECTION);
 			try {
 				VALIDATE_EMS_DISPATCH_SECTION_COMPLAINT_REPORTED_BY_DISPATCH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_DISPATCH_SECTION_COMPLAINT_REPORTED_BY_DISPATCH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_DISPATCH_SECTION_COMPLAINT_REPORTED_BY_DISPATCH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsDispatchSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPATCH_SECTION_COMPLAINT_REPORTED_BY_DISPATCH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsDispatchSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_DISPATCH_SECTION__EMS_DISPATCH_SECTION_COMPLAINT_REPORTED_BY_DISPATCH,
-					EmspcrPlugin.INSTANCE.getString("EMSDispatchSectionComplaintReportedByDispatch"),
-					new Object[] { emsDispatchSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_DISPATCH_SECTION__EMS_DISPATCH_SECTION_COMPLAINT_REPORTED_BY_DISPATCH,
+						 EmspcrPlugin.INSTANCE.getString("EMSDispatchSectionEMSDispatchSectionComplaintReportedByDispatch"),
+						 new Object [] { emsDispatchSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -442,17 +451,15 @@ public class EMSDispatchSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-
-	public static EmergencyMedicalDispatchObservation getEmergencyMedicalDispatchObservation(
-			EMSDispatchSection emsDispatchSection) {
+	
+	public static  EmergencyMedicalDispatchObservation getEmergencyMedicalDispatchObservation(EMSDispatchSection emsDispatchSection) {
 		if (GET_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.EMS_DISPATCH_SECTION,
-				EmspcrPackage.Literals.EMS_DISPATCH_SECTION.getEAllOperations().get(61));
+			helper.setOperationContext(EmspcrPackage.Literals.EMS_DISPATCH_SECTION, EmspcrPackage.Literals.EMS_DISPATCH_SECTION.getEAllOperations().get(61));
 			try {
 				GET_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION__EOCL_QRY = helper.createQuery(GET_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -485,16 +492,15 @@ public class EMSDispatchSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-
-	public static ComplaintReportedByDispatch getComplaintReportedByDispatch(EMSDispatchSection emsDispatchSection) {
+	
+	public static  ComplaintReportedByDispatch getComplaintReportedByDispatch(EMSDispatchSection emsDispatchSection) {
 		if (GET_COMPLAINT_REPORTED_BY_DISPATCH__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.EMS_DISPATCH_SECTION,
-				EmspcrPackage.Literals.EMS_DISPATCH_SECTION.getEAllOperations().get(62));
+			helper.setOperationContext(EmspcrPackage.Literals.EMS_DISPATCH_SECTION, EmspcrPackage.Literals.EMS_DISPATCH_SECTION.getEAllOperations().get(62));
 			try {
 				GET_COMPLAINT_REPORTED_BY_DISPATCH__EOCL_QRY = helper.createQuery(GET_COMPLAINT_REPORTED_BY_DISPATCH__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

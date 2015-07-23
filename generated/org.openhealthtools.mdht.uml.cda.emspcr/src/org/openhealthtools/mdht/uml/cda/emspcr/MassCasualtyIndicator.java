@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -95,11 +91,10 @@ public interface MassCasualtyIndicator extends Observation {
 	 * @generated
 	 */
 	public MassCasualtyIndicator init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MassCasualtyIndicator init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public MassCasualtyIndicator init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // MassCasualtyIndicator

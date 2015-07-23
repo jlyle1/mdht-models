@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -72,8 +68,9 @@ public class CallTimeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_CALL_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,27 +82,30 @@ public class CallTimeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateCallTimeTemplateId(CallTime callTime, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateCallTimeTemplateId(CallTime callTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CALL_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CALL_TIME);
 			try {
 				VALIDATE_CALL_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CALL_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CALL_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(callTime)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.CALL_TIME__CALL_TIME_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("CallTimeTemplateId"), new Object[] { callTime }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.CALL_TIME__CALL_TIME_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("CallTimeCallTimeTemplateId"),
+						 new Object [] { callTime }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -129,8 +129,9 @@ public class CallTimeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_CALL_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -142,27 +143,30 @@ public class CallTimeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateCallTimeMoodCode(CallTime callTime, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateCallTimeMoodCode(CallTime callTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CALL_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CALL_TIME);
 			try {
 				VALIDATE_CALL_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CALL_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CALL_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(callTime)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.CALL_TIME__CALL_TIME_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("CallTimeMoodCode"), new Object[] { callTime }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.CALL_TIME__CALL_TIME_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("CallTimeCallTimeMoodCode"),
+						 new Object [] { callTime }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -186,8 +190,9 @@ public class CallTimeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_CALL_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -199,26 +204,30 @@ public class CallTimeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateCallTimeCodeP(CallTime callTime, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateCallTimeCodeP(CallTime callTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CALL_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CALL_TIME);
 			try {
 				VALIDATE_CALL_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CALL_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CALL_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(callTime)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE, EmspcrValidator.CALL_TIME__CALL_TIME_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("CallTimeCodeP"), new Object[] { callTime }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.CALL_TIME__CALL_TIME_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("CallTimeCallTimeCodeP"),
+						 new Object [] { callTime }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -230,7 +239,7 @@ public class CallTimeOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(callTime);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -244,9 +253,9 @@ public class CallTimeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CALL_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '69469-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_CALL_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '69469-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCallTimeCode(CallTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Call Time Code</em>}' invariant operation.
@@ -256,8 +265,9 @@ public class CallTimeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_CALL_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -269,34 +279,36 @@ public class CallTimeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateCallTimeCode(CallTime callTime, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.CallTimeCodeP");
+	
+	public static  boolean validateCallTimeCode(CallTime callTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.CallTimeCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(callTime)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_CALL_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CALL_TIME);
 			try {
 				VALIDATE_CALL_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CALL_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CALL_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(callTime)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE, EmspcrValidator.CALL_TIME__CALL_TIME_CODE,
-					EmspcrPlugin.INSTANCE.getString("CallTimeCode"), new Object[] { callTime }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.CALL_TIME__CALL_TIME_CODE,
+						 EmspcrPlugin.INSTANCE.getString("CallTimeCallTimeCode"),
+						 new Object [] { callTime }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -320,8 +332,9 @@ public class CallTimeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_CALL_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -333,26 +346,30 @@ public class CallTimeOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateCallTimeValue(CallTime callTime, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateCallTimeValue(CallTime callTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CALL_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CALL_TIME);
 			try {
 				VALIDATE_CALL_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CALL_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_CALL_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(callTime)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE, EmspcrValidator.CALL_TIME__CALL_TIME_VALUE,
-					EmspcrPlugin.INSTANCE.getString("CallTimeValue"), new Object[] { callTime }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.CALL_TIME__CALL_TIME_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("CallTimeCallTimeValue"),
+						 new Object [] { callTime }));
 			}
-
+			 
 			return false;
 		}
 		return true;

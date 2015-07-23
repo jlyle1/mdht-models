@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -76,6 +72,15 @@ public class InjuryRiskFactorImpl extends ObservationImpl implements InjuryRiskF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateInjuryRiskFactorCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InjuryRiskFactorOperations.validateInjuryRiskFactorCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateInjuryRiskFactorCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InjuryRiskFactorOperations.validateInjuryRiskFactorCode(this, diagnostics, context);
 	}
@@ -94,8 +99,8 @@ public class InjuryRiskFactorImpl extends ObservationImpl implements InjuryRiskF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public InjuryRiskFactor init() {
-		return Initializer.Util.init(this);
+	public boolean validateInjuryRiskFactorValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InjuryRiskFactorOperations.validateInjuryRiskFactorValueP(this, diagnostics, context);
 	}
 
 	/**
@@ -103,8 +108,16 @@ public class InjuryRiskFactorImpl extends ObservationImpl implements InjuryRiskF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public InjuryRiskFactor init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	public InjuryRiskFactor init() {
+	    return Initializer.Util.init(this);
 	}
-} // InjuryRiskFactorImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public InjuryRiskFactor init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //InjuryRiskFactorImpl

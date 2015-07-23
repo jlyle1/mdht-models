@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -25,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getComplaint()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='ComplaintDurationRelationship ComplaintTypeRelationship ComplaintValue' constraints.validation.warning='ComplaintOrganSystemRelationship ComplaintTargetSiteCodeP' constraints.validation.error='ComplaintTemplateId ComplaintMoodCode ComplaintCode ComplaintCodeP ComplaintEffectiveTime ComplaintTargetSiteCode' templateId.root='2.16.840.1.1133883.17.3.10.1.63' moodCode='EVN' code.code='10154-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Chief complaint Narrative - Reported' constraints.validation.dependOn.ComplaintCode='ComplaintCodeP' targetSiteCode.codeSystem='2.16.840.1.113883.6.1' targetSiteCode.codeSystemName='LOINC'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='ComplaintDurationRelationship ComplaintTypeRelationship ComplaintValue' constraints.validation.warning='ComplaintOrganSystemRelationship' constraints.validation.error='ComplaintTemplateId ComplaintMoodCode ComplaintCode ComplaintCodeP ComplaintEffectiveTime ComplaintTargetSiteCode ComplaintTargetSiteCodeP' templateId.root='2.16.840.1.1133883.17.3.10.1.63' moodCode='EVN' code.code='10154-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Chief complaint Narrative - Reported' constraints.validation.dependOn.ComplaintCode='ComplaintCodeP' targetSiteCode.codeSystem='2.16.840.1.113883.6.1' targetSiteCode.codeSystemName='LOINC'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrComplaintComplaintOrganSystemRelationship constraints.validation.error='ComplaintComplaintOrganSystemRelationshipComplaintOrganSystem'"
  * @generated
  */
@@ -168,11 +164,10 @@ public interface Complaint extends Observation {
 	 * @generated
 	 */
 	public Complaint init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Complaint init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public Complaint init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // Complaint

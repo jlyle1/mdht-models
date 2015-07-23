@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -25,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getEMSSceneSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EMSSceneSectionTemplateId EMSSceneSectionCode EMSSceneSectionTitle EMSSceneSectionText EMSSceneSectionFirstUnitIndicator EMSSceneSectionFirstUnitOnScene EMSSceneSectionScenePatientCount EMSSceneSectionMassCasualtyIndicator EMSSceneSectionLocationTypeObservation' templateId.root='2.16.840.1.113883.17.3.10.1.8' code.code='67665-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='EMS scene Narrative NEMSIS' title.mixed='EMS Scene'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EMSSceneSectionTemplateId EMSSceneSectionCode EMSSceneSectionTitle EMSSceneSectionText EMSSceneSectionFirstUnitIndicator EMSSceneSectionScenePatientCount EMSSceneSectionMassCasualtyIndicator EMSSceneSectionLocationTypeObservation' templateId.root='2.16.840.1.113883.17.3.10.1.8' code.code='67665-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='EMS scene Narrative NEMSIS' title.mixed='EMS Scene'"
  * @generated
  */
 public interface EMSSceneSection extends Section {
@@ -96,18 +92,6 @@ public interface EMSSceneSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::FirstUnitOnScene) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
-	 * @generated
-	 */
-	boolean validateEMSSceneSectionFirstUnitOnScene(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::ScenePatientCount) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
 	 * @generated
 	 */
@@ -150,15 +134,6 @@ public interface EMSSceneSection extends Section {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::FirstUnitOnScene))->asSequence()->any(true).oclAsType(emspcr::FirstUnitOnScene)'"
-	 * @generated
-	 */
-	FirstUnitOnScene getFirstUnitOnScene();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @model kind="operation" required="true" ordered="false"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::ScenePatientCount))->asSequence()->any(true).oclAsType(emspcr::ScenePatientCount)'"
 	 * @generated
 	 */
@@ -188,11 +163,10 @@ public interface EMSSceneSection extends Section {
 	 * @generated
 	 */
 	public EMSSceneSection init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMSSceneSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EMSSceneSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EMSSceneSection

@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -61,10 +57,8 @@ public class EMSPersonnelAdverseEventSectionImpl extends SectionImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPersonnelAdverseEventSectionTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EMSPersonnelAdverseEventSectionOperations.validateEMSPersonnelAdverseEventSectionTemplateId(
-			this, diagnostics, context);
+	public boolean validateEMSPersonnelAdverseEventSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSPersonnelAdverseEventSectionOperations.validateEMSPersonnelAdverseEventSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -73,8 +67,7 @@ public class EMSPersonnelAdverseEventSectionImpl extends SectionImpl implements 
 	 * @generated
 	 */
 	public boolean validateEMSPersonnelAdverseEventSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPersonnelAdverseEventSectionOperations.validateEMSPersonnelAdverseEventSectionCode(
-			this, diagnostics, context);
+		return EMSPersonnelAdverseEventSectionOperations.validateEMSPersonnelAdverseEventSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -83,8 +76,7 @@ public class EMSPersonnelAdverseEventSectionImpl extends SectionImpl implements 
 	 * @generated
 	 */
 	public boolean validateEMSPersonnelAdverseEventSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPersonnelAdverseEventSectionOperations.validateEMSPersonnelAdverseEventSectionCodeP(
-			this, diagnostics, context);
+		return EMSPersonnelAdverseEventSectionOperations.validateEMSPersonnelAdverseEventSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -93,8 +85,7 @@ public class EMSPersonnelAdverseEventSectionImpl extends SectionImpl implements 
 	 * @generated
 	 */
 	public boolean validateEMSPersonnelAdverseEventSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPersonnelAdverseEventSectionOperations.validateEMSPersonnelAdverseEventSectionTitle(
-			this, diagnostics, context);
+		return EMSPersonnelAdverseEventSectionOperations.validateEMSPersonnelAdverseEventSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -103,8 +94,7 @@ public class EMSPersonnelAdverseEventSectionImpl extends SectionImpl implements 
 	 * @generated
 	 */
 	public boolean validateEMSPersonnelAdverseEventSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPersonnelAdverseEventSectionOperations.validateEMSPersonnelAdverseEventSectionText(
-			this, diagnostics, context);
+		return EMSPersonnelAdverseEventSectionOperations.validateEMSPersonnelAdverseEventSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -112,10 +102,8 @@ public class EMSPersonnelAdverseEventSectionImpl extends SectionImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPersonnelAdverseEventSectionAdverseEventIndicator(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EMSPersonnelAdverseEventSectionOperations.validateEMSPersonnelAdverseEventSectionAdverseEventIndicator(
-			this, diagnostics, context);
+	public boolean validateEMSPersonnelAdverseEventSectionAdverseEventIndicator(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSPersonnelAdverseEventSectionOperations.validateEMSPersonnelAdverseEventSectionAdverseEventIndicator(this, diagnostics, context);
 	}
 
 	/**
@@ -123,10 +111,8 @@ public class EMSPersonnelAdverseEventSectionImpl extends SectionImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSPersonnelAdverseEventSectionAdverseEventTypeObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EMSPersonnelAdverseEventSectionOperations.validateEMSPersonnelAdverseEventSectionAdverseEventTypeObservation(
-			this, diagnostics, context);
+	public boolean validateEMSPersonnelAdverseEventSectionAdverseEventTypeObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSPersonnelAdverseEventSectionOperations.validateEMSPersonnelAdverseEventSectionAdverseEventTypeObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -153,16 +139,15 @@ public class EMSPersonnelAdverseEventSectionImpl extends SectionImpl implements 
 	 * @generated
 	 */
 	public EMSPersonnelAdverseEventSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMSPersonnelAdverseEventSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // EMSPersonnelAdverseEventSectionImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EMSPersonnelAdverseEventSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //EMSPersonnelAdverseEventSectionImpl

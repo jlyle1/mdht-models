@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -25,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getEMSDispositionSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EMSDispositionSectionTemplateId EMSDispositionSectionCode EMSDispositionSectionCodeP EMSDispositionSectionTitle EMSDispositionSectionText EMSDispositionSectionNumberOfPatientsObservation EMSDispositionSectionIncidentDispositionObservation EMSDispositionSectionTransportModeObservation EMSDispositionSectionTransportMethodObservation EMSDispositionSectionReasonForChoosingDestinationObservation EMSDispositionSectionPrearrivalActivationObservation EMSDispositionSectionPatientConditionChangeAtDestinationObservation' templateId.root='2.16.840.1.113883.17.3.10.1.4' code.code='67661-9' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='EMS disposition Narrative NEMSIS' title.mixed='EMS Disposition'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EMSDispositionSectionTemplateId EMSDispositionSectionCode EMSDispositionSectionCodeP EMSDispositionSectionTitle EMSDispositionSectionText EMSDispositionSectionNumberOfPatientsObservation EMSDispositionSectionIncidentDispositionObservation EMSDispositionSectionTransportModeObservation EMSDispositionSectionTransportMethodObservation EMSDispositionSectionReasonForChoosingDestinationObservation EMSDispositionSectionPrearrivalActivationObservation EMSDispositionSectionPatientConditionChangeAtDestinationObservation EMSDispositionSectionPrimaryDestinationHospitalCapability EMSDispositionSectionDestinationWard' templateId.root='2.16.840.1.113883.17.3.10.1.4' code.code='67661-9' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='EMS disposition Narrative NEMSIS' title.mixed='EMS Disposition'"
  * @generated
  */
 public interface EMSDispositionSection extends Section {
@@ -99,8 +95,7 @@ public interface EMSDispositionSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::NumberOfPatientsTransportedObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
 	 * @generated
 	 */
-	boolean validateEMSDispositionSectionNumberOfPatientsObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateEMSDispositionSectionNumberOfPatientsObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -112,8 +107,7 @@ public interface EMSDispositionSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::IncidentDispositionObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
 	 * @generated
 	 */
-	boolean validateEMSDispositionSectionIncidentDispositionObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateEMSDispositionSectionIncidentDispositionObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -125,8 +119,7 @@ public interface EMSDispositionSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::TransportModeObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
 	 * @generated
 	 */
-	boolean validateEMSDispositionSectionTransportModeObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateEMSDispositionSectionTransportModeObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -138,8 +131,7 @@ public interface EMSDispositionSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::TransportMethodObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
 	 * @generated
 	 */
-	boolean validateEMSDispositionSectionTransportMethodObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateEMSDispositionSectionTransportMethodObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -151,8 +143,7 @@ public interface EMSDispositionSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::ReasonForChoosingDestinationObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
 	 * @generated
 	 */
-	boolean validateEMSDispositionSectionReasonForChoosingDestinationObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateEMSDispositionSectionReasonForChoosingDestinationObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -164,8 +155,7 @@ public interface EMSDispositionSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::PrearrivalActivationObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
 	 * @generated
 	 */
-	boolean validateEMSDispositionSectionPrearrivalActivationObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateEMSDispositionSectionPrearrivalActivationObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -174,11 +164,34 @@ public interface EMSDispositionSection extends Section {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::PatientConditionChangeAtDestinationObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::PatientConditionAtDestinationObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
 	 * @generated
 	 */
-	boolean validateEMSDispositionSectionPatientConditionChangeAtDestinationObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateEMSDispositionSectionPatientConditionChangeAtDestinationObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::PrimaryDestinationHospitalCapability) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
+	 * @generated
+	 */
+	boolean validateEMSDispositionSectionPrimaryDestinationHospitalCapability(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::DestinationWard) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
+	 * @generated
+	 */
+	boolean validateEMSDispositionSectionDestinationWard(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -238,10 +251,28 @@ public interface EMSDispositionSection extends Section {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::PatientConditionChangeAtDestinationObservation))->asSequence()->any(true).oclAsType(emspcr::PatientConditionChangeAtDestinationObservation)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::PatientConditionAtDestinationObservation))->asSequence()->any(true).oclAsType(emspcr::PatientConditionAtDestinationObservation)'"
 	 * @generated
 	 */
-	PatientConditionChangeAtDestinationObservation getPatientConditionChangeAtDestinationObservation();
+	PatientConditionAtDestinationObservation getPatientConditionChangeAtDestinationObservation();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::PrimaryDestinationHospitalCapability))->asSequence()->any(true).oclAsType(emspcr::PrimaryDestinationHospitalCapability)'"
+	 * @generated
+	 */
+	PrimaryDestinationHospitalCapability getPrimaryDestinationHospitalCapability();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::DestinationWard))->asSequence()->any(true).oclAsType(emspcr::DestinationWard)'"
+	 * @generated
+	 */
+	DestinationWard getDestinationWard();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -249,11 +280,10 @@ public interface EMSDispositionSection extends Section {
 	 * @generated
 	 */
 	public EMSDispositionSection init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMSDispositionSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EMSDispositionSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EMSDispositionSection

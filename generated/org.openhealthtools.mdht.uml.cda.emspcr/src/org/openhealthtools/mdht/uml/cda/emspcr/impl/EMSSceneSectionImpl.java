@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -20,7 +16,6 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSSceneSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.FirstUnitIndicator;
-import org.openhealthtools.mdht.uml.cda.emspcr.FirstUnitOnScene;
 import org.openhealthtools.mdht.uml.cda.emspcr.LocationTypeObservation;
 import org.openhealthtools.mdht.uml.cda.emspcr.MassCasualtyIndicator;
 import org.openhealthtools.mdht.uml.cda.emspcr.ScenePatientCount;
@@ -108,15 +103,6 @@ public class EMSSceneSectionImpl extends SectionImpl implements EMSSceneSection 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSSceneSectionFirstUnitOnScene(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSSceneSectionOperations.validateEMSSceneSectionFirstUnitOnScene(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateEMSSceneSectionScenePatientCount(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EMSSceneSectionOperations.validateEMSSceneSectionScenePatientCount(this, diagnostics, context);
 	}
@@ -135,8 +121,7 @@ public class EMSSceneSectionImpl extends SectionImpl implements EMSSceneSection 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSSceneSectionLocationTypeObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateEMSSceneSectionLocationTypeObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EMSSceneSectionOperations.validateEMSSceneSectionLocationTypeObservation(this, diagnostics, context);
 	}
 
@@ -147,15 +132,6 @@ public class EMSSceneSectionImpl extends SectionImpl implements EMSSceneSection 
 	 */
 	public FirstUnitIndicator getFirstUnitIndicator() {
 		return EMSSceneSectionOperations.getFirstUnitIndicator(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public FirstUnitOnScene getFirstUnitOnScene() {
-		return EMSSceneSectionOperations.getFirstUnitOnScene(this);
 	}
 
 	/**
@@ -191,16 +167,15 @@ public class EMSSceneSectionImpl extends SectionImpl implements EMSSceneSection 
 	 * @generated
 	 */
 	public EMSSceneSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMSSceneSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // EMSSceneSectionImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EMSSceneSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //EMSSceneSectionImpl

@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -83,11 +79,10 @@ public interface DestinationRhythm extends Observation {
 	 * @generated
 	 */
 	public DestinationRhythm init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public DestinationRhythm init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public DestinationRhythm init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DestinationRhythm

@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -84,8 +80,9 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -97,32 +94,30 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPersonnelAdverseEventSectionTemplateId(
-			EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPersonnelAdverseEventSectionTemplateId(EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PERSONNEL_ADVERSE_EVENT_SECTION);
 			try {
 				VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPersonnelAdverseEventSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPersonnelAdverseEventSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PERSONNEL_ADVERSE_EVENT_SECTION__EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("EMSPersonnelAdverseEventSectionTemplateId"),
-					new Object[] { emsPersonnelAdverseEventSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PERSONNEL_ADVERSE_EVENT_SECTION__EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("EMSPersonnelAdverseEventSectionEMSPersonnelAdverseEventSectionTemplateId"),
+						 new Object [] { emsPersonnelAdverseEventSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -136,9 +131,9 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '67658-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '67658-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEMSPersonnelAdverseEventSectionCode(EMSPersonnelAdverseEventSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Personnel Adverse Event Section Code</em>}' invariant operation.
@@ -148,8 +143,9 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -161,30 +157,30 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPersonnelAdverseEventSectionCode(
-			EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPersonnelAdverseEventSectionCode(EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PERSONNEL_ADVERSE_EVENT_SECTION);
 			try {
 				VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPersonnelAdverseEventSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPersonnelAdverseEventSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PERSONNEL_ADVERSE_EVENT_SECTION__EMS_PERSONNEL_ADVERSE_EVENT_SECTION_CODE,
-					EmspcrPlugin.INSTANCE.getString("EMSPersonnelAdverseEventSectionCode"),
-					new Object[] { emsPersonnelAdverseEventSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PERSONNEL_ADVERSE_EVENT_SECTION__EMS_PERSONNEL_ADVERSE_EVENT_SECTION_CODE,
+						 EmspcrPlugin.INSTANCE.getString("EMSPersonnelAdverseEventSectionEMSPersonnelAdverseEventSectionCode"),
+						 new Object [] { emsPersonnelAdverseEventSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -208,8 +204,9 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -221,30 +218,30 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPersonnelAdverseEventSectionCodeP(
-			EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPersonnelAdverseEventSectionCodeP(EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PERSONNEL_ADVERSE_EVENT_SECTION);
 			try {
 				VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPersonnelAdverseEventSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPersonnelAdverseEventSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PERSONNEL_ADVERSE_EVENT_SECTION__EMS_PERSONNEL_ADVERSE_EVENT_SECTION_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("EMSPersonnelAdverseEventSectionCodeP"),
-					new Object[] { emsPersonnelAdverseEventSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PERSONNEL_ADVERSE_EVENT_SECTION__EMS_PERSONNEL_ADVERSE_EVENT_SECTION_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("EMSPersonnelAdverseEventSectionEMSPersonnelAdverseEventSectionCodeP"),
+						 new Object [] { emsPersonnelAdverseEventSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -268,8 +265,9 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -281,30 +279,30 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPersonnelAdverseEventSectionTitle(
-			EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPersonnelAdverseEventSectionTitle(EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PERSONNEL_ADVERSE_EVENT_SECTION);
 			try {
 				VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPersonnelAdverseEventSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPersonnelAdverseEventSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PERSONNEL_ADVERSE_EVENT_SECTION__EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TITLE,
-					EmspcrPlugin.INSTANCE.getString("EMSPersonnelAdverseEventSectionTitle"),
-					new Object[] { emsPersonnelAdverseEventSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PERSONNEL_ADVERSE_EVENT_SECTION__EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TITLE,
+						 EmspcrPlugin.INSTANCE.getString("EMSPersonnelAdverseEventSectionEMSPersonnelAdverseEventSectionTitle"),
+						 new Object [] { emsPersonnelAdverseEventSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -328,8 +326,9 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -341,30 +340,30 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPersonnelAdverseEventSectionText(
-			EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPersonnelAdverseEventSectionText(EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PERSONNEL_ADVERSE_EVENT_SECTION);
 			try {
 				VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPersonnelAdverseEventSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPersonnelAdverseEventSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PERSONNEL_ADVERSE_EVENT_SECTION__EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TEXT,
-					EmspcrPlugin.INSTANCE.getString("EMSPersonnelAdverseEventSectionText"),
-					new Object[] { emsPersonnelAdverseEventSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PERSONNEL_ADVERSE_EVENT_SECTION__EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TEXT,
+						 EmspcrPlugin.INSTANCE.getString("EMSPersonnelAdverseEventSectionEMSPersonnelAdverseEventSectionText"),
+						 new Object [] { emsPersonnelAdverseEventSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -388,8 +387,9 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_ADVERSE_EVENT_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -401,32 +401,30 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPersonnelAdverseEventSectionAdverseEventIndicator(
-			EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPersonnelAdverseEventSectionAdverseEventIndicator(EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_ADVERSE_EVENT_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PERSONNEL_ADVERSE_EVENT_SECTION);
 			try {
 				VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_ADVERSE_EVENT_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_ADVERSE_EVENT_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_ADVERSE_EVENT_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPersonnelAdverseEventSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_ADVERSE_EVENT_INDICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPersonnelAdverseEventSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PERSONNEL_ADVERSE_EVENT_SECTION__EMS_PERSONNEL_ADVERSE_EVENT_SECTION_ADVERSE_EVENT_INDICATOR,
-					EmspcrPlugin.INSTANCE.getString("EMSPersonnelAdverseEventSectionAdverseEventIndicator"),
-					new Object[] { emsPersonnelAdverseEventSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PERSONNEL_ADVERSE_EVENT_SECTION__EMS_PERSONNEL_ADVERSE_EVENT_SECTION_ADVERSE_EVENT_INDICATOR,
+						 EmspcrPlugin.INSTANCE.getString("EMSPersonnelAdverseEventSectionEMSPersonnelAdverseEventSectionAdverseEventIndicator"),
+						 new Object [] { emsPersonnelAdverseEventSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -450,8 +448,9 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_ADVERSE_EVENT_TYPE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -463,32 +462,30 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEMSPersonnelAdverseEventSectionAdverseEventTypeObservation(
-			EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEMSPersonnelAdverseEventSectionAdverseEventTypeObservation(EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_ADVERSE_EVENT_TYPE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_PERSONNEL_ADVERSE_EVENT_SECTION);
 			try {
 				VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_ADVERSE_EVENT_TYPE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_ADVERSE_EVENT_TYPE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_ADVERSE_EVENT_TYPE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsPersonnelAdverseEventSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMS_PERSONNEL_ADVERSE_EVENT_SECTION_ADVERSE_EVENT_TYPE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsPersonnelAdverseEventSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_PERSONNEL_ADVERSE_EVENT_SECTION__EMS_PERSONNEL_ADVERSE_EVENT_SECTION_ADVERSE_EVENT_TYPE_OBSERVATION,
-					EmspcrPlugin.INSTANCE.getString("EMSPersonnelAdverseEventSectionAdverseEventTypeObservation"),
-					new Object[] { emsPersonnelAdverseEventSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_PERSONNEL_ADVERSE_EVENT_SECTION__EMS_PERSONNEL_ADVERSE_EVENT_SECTION_ADVERSE_EVENT_TYPE_OBSERVATION,
+						 EmspcrPlugin.INSTANCE.getString("EMSPersonnelAdverseEventSectionEMSPersonnelAdverseEventSectionAdverseEventTypeObservation"),
+						 new Object [] { emsPersonnelAdverseEventSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -519,17 +516,15 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-
-	public static AdverseEventIndicator getAdverseEventIndicator(
-			EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection) {
+	
+	public static  AdverseEventIndicator getAdverseEventIndicator(EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection) {
 		if (GET_ADVERSE_EVENT_INDICATOR__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.EMS_PERSONNEL_ADVERSE_EVENT_SECTION,
-				EmspcrPackage.Literals.EMS_PERSONNEL_ADVERSE_EVENT_SECTION.getEAllOperations().get(62));
+			helper.setOperationContext(EmspcrPackage.Literals.EMS_PERSONNEL_ADVERSE_EVENT_SECTION, EmspcrPackage.Literals.EMS_PERSONNEL_ADVERSE_EVENT_SECTION.getEAllOperations().get(62));
 			try {
 				GET_ADVERSE_EVENT_INDICATOR__EOCL_QRY = helper.createQuery(GET_ADVERSE_EVENT_INDICATOR__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -562,17 +557,15 @@ public class EMSPersonnelAdverseEventSectionOperations extends SectionOperations
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-
-	public static EList<AdverseEventTypeObservation> getAdverseEventTypeObservations(
-			EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection) {
+	
+	public static  EList<AdverseEventTypeObservation> getAdverseEventTypeObservations(EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection) {
 		if (GET_ADVERSE_EVENT_TYPE_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.EMS_PERSONNEL_ADVERSE_EVENT_SECTION,
-				EmspcrPackage.Literals.EMS_PERSONNEL_ADVERSE_EVENT_SECTION.getEAllOperations().get(63));
+			helper.setOperationContext(EmspcrPackage.Literals.EMS_PERSONNEL_ADVERSE_EVENT_SECTION, EmspcrPackage.Literals.EMS_PERSONNEL_ADVERSE_EVENT_SECTION.getEAllOperations().get(63));
 			try {
 				GET_ADVERSE_EVENT_TYPE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_ADVERSE_EVENT_TYPE_OBSERVATIONS__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}

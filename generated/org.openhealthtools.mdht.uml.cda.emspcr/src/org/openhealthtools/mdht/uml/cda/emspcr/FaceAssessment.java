@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -96,7 +92,7 @@ public interface FaceAssessment extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17208-2\' or value.code = \'LA17209-0\' or value.code = \'LA17210-8\' or value.code = \'LA17211-6\' or value.code = \'LA17213-2\' or value.code = \'LA17214-0\' or value.code = \'LA17215-7\' or value.code = \'LA17216-5\' or value.code = \'LA17220-7\' or value.code = \'LA17244-7\' or value.code = \'LA17245-4\' or value.code = \'LA18220-6\' or value.code = \'LA18221-4\' or value.code = \'LA18222-2\' or value.code = \'LA18223-0\' or value.code = \'LA18224-8\' or value.code = \'LA18225-5\' or value.code = \'LA18226-3\' or value.code = \'LA6626-1\' or value.code = \'LA6630-3\' or value.code = \'LA7410-9\' or value.code = \'LA7452-1\' or value.code = \'LA7460-4\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA17208-2\' or value.code = \'LA17209-0\' or value.code = \'LA17211-6\' or value.code = \'LA17213-2\' or value.code = \'LA17214-0\' or value.code = \'LA17216-5\' or value.code = \'LOINC_TBDA_962\' or value.code = \'LA18220-6\' or value.code = \'LA18221-4\' or value.code = \'LA18222-2\' or value.code = \'LA18223-0\' or value.code = \'LA18224-8\' or value.code = \'LA18225-5\' or value.code = \'LA18226-3\' or value.code = \'LA6626-1\' or value.code = \'LA6630-3\' or value.code = \'LA7410-9\' or value.code = \'LA7452-1\' or value.code = \'LA7460-4\' or value.code = \'LOINC_TBDA_545\' or value.code = \'LOINC_TBDA_546\' or value.code = \'LOINC_TBDA_547\' or value.code = \'LOINC_TBDA_548\')))'"
 	 * @generated
 	 */
 	boolean validateFaceAssessmentValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -119,11 +115,10 @@ public interface FaceAssessment extends Observation {
 	 * @generated
 	 */
 	public FaceAssessment init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public FaceAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public FaceAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FaceAssessment

@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -23,6 +19,7 @@ import org.openhealthtools.mdht.uml.cda.emspcr.EMSResponseSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.ResponseModeToScene;
 import org.openhealthtools.mdht.uml.cda.emspcr.ResponseOdometerReadingOrganizer;
+import org.openhealthtools.mdht.uml.cda.emspcr.UnitLevelOfCareCapability;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.EMSResponseSectionOperations;
 
@@ -116,10 +113,8 @@ public class EMSResponseSectionImpl extends SectionImpl implements EMSResponseSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSResponseSectionDispatchLocationOrganizer(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EMSResponseSectionOperations.validateEMSResponseSectionDispatchLocationOrganizer(
-			this, diagnostics, context);
+	public boolean validateEMSResponseSectionDispatchLocationOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSResponseSectionOperations.validateEMSResponseSectionDispatchLocationOrganizer(this, diagnostics, context);
 	}
 
 	/**
@@ -127,10 +122,8 @@ public class EMSResponseSectionImpl extends SectionImpl implements EMSResponseSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSResponseSectionResponseOdometerReadingOrganizer(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EMSResponseSectionOperations.validateEMSResponseSectionResponseOdometerReadingOrganizer(
-			this, diagnostics, context);
+	public boolean validateEMSResponseSectionResponseOdometerReadingOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSResponseSectionOperations.validateEMSResponseSectionResponseOdometerReadingOrganizer(this, diagnostics, context);
 	}
 
 	/**
@@ -138,9 +131,17 @@ public class EMSResponseSectionImpl extends SectionImpl implements EMSResponseSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSResponseSectionResponseModeToScene(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateEMSResponseSectionResponseModeToScene(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EMSResponseSectionOperations.validateEMSResponseSectionResponseModeToScene(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEMSResponseSectionUnitLevelOfCareCapability(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSResponseSectionOperations.validateEMSResponseSectionUnitLevelOfCareCapability(this, diagnostics, context);
 	}
 
 	/**
@@ -184,8 +185,8 @@ public class EMSResponseSectionImpl extends SectionImpl implements EMSResponseSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EMSResponseSection init() {
-		return Initializer.Util.init(this);
+	public UnitLevelOfCareCapability getUnitLevelOfCareCapability() {
+		return EMSResponseSectionOperations.getUnitLevelOfCareCapability(this);
 	}
 
 	/**
@@ -193,8 +194,16 @@ public class EMSResponseSectionImpl extends SectionImpl implements EMSResponseSe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EMSResponseSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	public EMSResponseSection init() {
+	    return Initializer.Util.init(this);
 	}
-} // EMSResponseSectionImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EMSResponseSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //EMSResponseSectionImpl

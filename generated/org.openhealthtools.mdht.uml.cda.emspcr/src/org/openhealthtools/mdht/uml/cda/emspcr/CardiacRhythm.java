@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -25,10 +21,10 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getCardiacRhythm()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='CardiacRhythmParticipant1' constraints.validation.error='CardiacRhythmTemplateId CardiacRhythmMoodCode CardiacRhythmCode CardiacRhythmCodeP CardiacRhythmValue CardiacRhythmValueP CardiacRhythmMethodCode CardiacRhythmMethodCodeP' templateId.root='2.16.840.1.1133883.17.3.10.1.169' moodCode='EVN' code.code='67519-9' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Cardiac rhythm NEMSIS' constraints.validation.dependOn.CardiacRhythmCode='CardiacRhythmCodeP' constraints.validation.info='CardiacRhythmEffectiveTime' value.codeSystem='2.16.840.1.113883.6.1' value.codeSystemName='LOINC' methodCode.codeSystem='2.16.840.1.113883.6.1' methodCode.codeSystemName='LOINC'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CardiacRhythmParticipant1 CardiacRhythmTemplateId CardiacRhythmMoodCode CardiacRhythmCode CardiacRhythmCodeP CardiacRhythmValue CardiacRhythmValueP CardiacRhythmMethodCode CardiacRhythmMethodCodeP' templateId.root='2.16.840.1.1133883.17.3.10.1.169' moodCode='EVN' code.code='67519-9' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Cardiac rhythm NEMSIS' constraints.validation.dependOn.CardiacRhythmCode='CardiacRhythmCodeP' constraints.validation.info='CardiacRhythmEffectiveTime' value.codeSystem='2.16.840.1.113883.6.1' value.codeSystemName='LOINC' methodCode.codeSystem='2.16.840.1.113883.6.1' methodCode.codeSystemName='LOINC'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrCardiacRhythmECGParticipant constraints.validation.error='CardiacRhythmECGParticipantParticipantRole'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrCardiacRhythmECGParticipantECGParticipantRole constraints.validation.error='CardiacRhythmECGParticipantECGParticipantRolePlayingDevice'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrCardiacRhythmECGParticipantECGParticipantRoleECGDevice code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.error='CardiacRhythmECGParticipantECGParticipantRoleECGDeviceCode CardiacRhythmECGParticipantECGParticipantRoleECGDeviceCodeP'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrCardiacRhythmECGParticipantECGParticipantRoleECGDevice code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.error='CardiacRhythmECGParticipantECGParticipantRoleECGDeviceCode CardiacRhythmECGParticipantECGParticipantRoleECGDeviceCodeP CardiacRhythmECGParticipantECGParticipantRoleECGDeviceClassCode CardiacRhythmECGParticipantECGParticipantRoleECGDeviceDeterminerCode' classCode='DEV' determinerCode='INSTANCE'"
  * @generated
  */
 public interface CardiacRhythm extends Observation {
@@ -111,7 +107,7 @@ public interface CardiacRhythm extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA12904-1\' or value.code = \'LA17059-9\' or value.code = \'LA17068-0\' or value.code = \'LA17070-6\' or value.code = \'LA17071-4\' or value.code = \'LA17072-2\' or value.code = \'LA17073-0\' or value.code = \'LA17074-8\' or value.code = \'LA17083-9\' or value.code = \'LA17084-7\' or value.code = \'LA17085-4\' or value.code = \'LA17086-2\' or value.code = \'LA17087-0\' or value.code = \'LA17088-8\' or value.code = \'LA17089-6\' or value.code = \'LA17090-4\' or value.code = \'LA17091-2\' or value.code = \'LA17093-8\' or value.code = \'LA17094-6\' or value.code = \'LA17095-3\' or value.code = \'LA17096-1\' or value.code = \'LA17097-9\' or value.code = \'LA17394-0\' or value.code = \'LA17099-5\' or value.code = \'LA17100-1\' or value.code = \'LA17101-9\' or value.code = \'LA17703-2\' or value.code = \'LA17704-0\' or value.code = \'LA17705-7\' or value.code = \'LA17706-5\' or value.code = \'LA17708-1\' or value.code = \'LA17718-0\' or value.code = \'LA18205-7\' or value.code = \'LA18206-5\' or value.code = \'LA18207-3\' or value.code = \'LA18208-1\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA12904-1\' or value.code = \'LA17059-9\' or value.code = \'LA17068-0\' or value.code = \'LA17070-6\' or value.code = \'LA17071-4\' or value.code = \'LA17072-2\' or value.code = \'LA17073-0\' or value.code = \'LA17074-8\' or value.code = \'LA17083-9\' or value.code = \'LA17084-7\' or value.code = \'LA17085-4\' or value.code = \'LA17086-2\' or value.code = \'LA17087-0\' or value.code = \'LA17088-8\' or value.code = \'LA17089-6\' or value.code = \'LA17090-4\' or value.code = \'LA17091-2\' or value.code = \'LA17093-8\' or value.code = \'LA17094-6\' or value.code = \'LA17095-3\' or value.code = \'LA17096-1\' or value.code = \'LA17097-9\' or value.code = \'LA17394-0\' or value.code = \'LA17099-5\' or value.code = \'LA17100-1\' or value.code = \'LA17101-9\' or value.code = \'LA17703-2\' or value.code = \'LA17704-0\' or value.code = \'LA17705-7\' or value.code = \'LA17706-5\' or value.code = \'LA17708-1\' or value.code = \'LA17718-0\' or value.code = \'LA18205-7\' or value.code = \'LA18206-5\' or value.code = \'LA18207-3\' or value.code = \'LA18208-1\')))'"
 	 * @generated
 	 */
 	boolean validateCardiacRhythmValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -123,7 +119,7 @@ public interface CardiacRhythm extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))'"
 	 * @generated
 	 */
 	boolean validateCardiacRhythmValueP(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -135,7 +131,7 @@ public interface CardiacRhythm extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (self.methodCode->size() = 1 and self.methodCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = element.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA18682-7\' or value.code = \'LA18683-5\' or value.code = \'LA18684-3\' or value.code = \'LA18685-0\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (not self.methodCode->isEmpty() and self.methodCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = element.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.6.1\' and (value.code = \'LA18682-7\' or value.code = \'LA18683-5\' or value.code = \'LA18684-3\' or value.code = \'LA18685-0\')))'"
 	 * @generated
 	 */
 	boolean validateCardiacRhythmMethodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -147,7 +143,7 @@ public interface CardiacRhythm extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (self.methodCode->size() = 1)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (not self.methodCode->isEmpty())'"
 	 * @generated
 	 */
 	boolean validateCardiacRhythmMethodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -158,11 +154,10 @@ public interface CardiacRhythm extends Observation {
 	 * @generated
 	 */
 	public CardiacRhythm init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public CardiacRhythm init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public CardiacRhythm init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CardiacRhythm

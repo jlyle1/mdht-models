@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -76,8 +72,9 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_STROKE_SCORE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -89,27 +86,30 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateStrokeScoreTemplateId(StrokeScore strokeScore, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateStrokeScoreTemplateId(StrokeScore strokeScore, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_STROKE_SCORE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.STROKE_SCORE);
 			try {
 				VALIDATE_STROKE_SCORE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STROKE_SCORE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STROKE_SCORE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(strokeScore)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.STROKE_SCORE__STROKE_SCORE_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("StrokeScoreTemplateId"), new Object[] { strokeScore }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.STROKE_SCORE__STROKE_SCORE_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("StrokeScoreStrokeScoreTemplateId"),
+						 new Object [] { strokeScore }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -133,8 +133,9 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_STROKE_SCORE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -146,27 +147,30 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateStrokeScoreMoodCode(StrokeScore strokeScore, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateStrokeScoreMoodCode(StrokeScore strokeScore, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_STROKE_SCORE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.STROKE_SCORE);
 			try {
 				VALIDATE_STROKE_SCORE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STROKE_SCORE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STROKE_SCORE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(strokeScore)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.STROKE_SCORE__STROKE_SCORE_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("StrokeScoreMoodCode"), new Object[] { strokeScore }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.STROKE_SCORE__STROKE_SCORE_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("StrokeScoreStrokeScoreMoodCode"),
+						 new Object [] { strokeScore }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -190,8 +194,9 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_STROKE_SCORE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -203,27 +208,30 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateStrokeScoreCodeP(StrokeScore strokeScore, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateStrokeScoreCodeP(StrokeScore strokeScore, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_STROKE_SCORE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.STROKE_SCORE);
 			try {
 				VALIDATE_STROKE_SCORE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STROKE_SCORE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STROKE_SCORE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(strokeScore)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.STROKE_SCORE__STROKE_SCORE_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("StrokeScoreCodeP"), new Object[] { strokeScore }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.STROKE_SCORE__STROKE_SCORE_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("StrokeScoreStrokeScoreCodeP"),
+						 new Object [] { strokeScore }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -235,7 +243,7 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(strokeScore);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -249,9 +257,9 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_STROKE_SCORE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67520-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_STROKE_SCORE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67520-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateStrokeScoreCode(StrokeScore, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Stroke Score Code</em>}' invariant operation.
@@ -261,8 +269,9 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_STROKE_SCORE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -274,35 +283,36 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateStrokeScoreCode(StrokeScore strokeScore, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.StrokeScoreCodeP");
+	
+	public static  boolean validateStrokeScoreCode(StrokeScore strokeScore, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.StrokeScoreCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(strokeScore)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_STROKE_SCORE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.STROKE_SCORE);
 			try {
 				VALIDATE_STROKE_SCORE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STROKE_SCORE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STROKE_SCORE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(strokeScore)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.STROKE_SCORE__STROKE_SCORE_CODE,
-					EmspcrPlugin.INSTANCE.getString("StrokeScoreCode"), new Object[] { strokeScore }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.STROKE_SCORE__STROKE_SCORE_CODE,
+						 EmspcrPlugin.INSTANCE.getString("StrokeScoreStrokeScoreCode"),
+						 new Object [] { strokeScore }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -326,8 +336,9 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_STROKE_SCORE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -339,28 +350,30 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateStrokeScoreEffectiveTime(StrokeScore strokeScore, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateStrokeScoreEffectiveTime(StrokeScore strokeScore, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_STROKE_SCORE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.STROKE_SCORE);
 			try {
 				VALIDATE_STROKE_SCORE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STROKE_SCORE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STROKE_SCORE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			strokeScore)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_STROKE_SCORE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(strokeScore)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.STROKE_SCORE__STROKE_SCORE_EFFECTIVE_TIME,
-					EmspcrPlugin.INSTANCE.getString("StrokeScoreEffectiveTime"), new Object[] { strokeScore }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.STROKE_SCORE__STROKE_SCORE_EFFECTIVE_TIME,
+						 EmspcrPlugin.INSTANCE.getString("StrokeScoreStrokeScoreEffectiveTime"),
+						 new Object [] { strokeScore }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -374,9 +387,9 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_STROKE_SCORE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17109-2' or value.code = 'LA6576-8' or value.code = 'LA6577-6')))";
+	protected static final String VALIDATE_STROKE_SCORE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17109-2' or value.code = 'LA6576-8' or value.code = 'LA6577-6')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateStrokeScoreValue(StrokeScore, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Stroke Score Value</em>}' invariant operation.
@@ -386,8 +399,9 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_STROKE_SCORE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -399,27 +413,30 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateStrokeScoreValue(StrokeScore strokeScore, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateStrokeScoreValue(StrokeScore strokeScore, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_STROKE_SCORE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.STROKE_SCORE);
 			try {
 				VALIDATE_STROKE_SCORE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STROKE_SCORE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STROKE_SCORE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(strokeScore)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.STROKE_SCORE__STROKE_SCORE_VALUE,
-					EmspcrPlugin.INSTANCE.getString("StrokeScoreValue"), new Object[] { strokeScore }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.STROKE_SCORE__STROKE_SCORE_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("StrokeScoreStrokeScoreValue"),
+						 new Object [] { strokeScore }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -443,8 +460,9 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_STROKE_SCORE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -456,27 +474,30 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateStrokeScoreValueP(StrokeScore strokeScore, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateStrokeScoreValueP(StrokeScore strokeScore, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_STROKE_SCORE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.STROKE_SCORE);
 			try {
 				VALIDATE_STROKE_SCORE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STROKE_SCORE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STROKE_SCORE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(strokeScore)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.STROKE_SCORE__STROKE_SCORE_VALUE_P,
-					EmspcrPlugin.INSTANCE.getString("StrokeScoreValueP"), new Object[] { strokeScore }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.STROKE_SCORE__STROKE_SCORE_VALUE_P,
+						 EmspcrPlugin.INSTANCE.getString("StrokeScoreStrokeScoreValueP"),
+						 new Object [] { strokeScore }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -490,9 +511,9 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_STROKE_SCORE_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (self.methodCode->size() = 1 and self.methodCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = element.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17110-0' or value.code = 'LA17111-8' or value.code = 'LA17112-6' or value.code = 'LA17113-4' or value.code = 'LA18300-6' or value.code = 'LA3774-2')))";
+	protected static final String VALIDATE_STROKE_SCORE_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (self.methodCode->size() = 1 and self.methodCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = element.oclAsType(datatypes::CE) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17110-0' or value.code = 'LA17111-8' or value.code = 'LA17112-6' or value.code = 'LA17113-4' or value.code = 'LA18300-6' or value.code = 'LA3774-2' or value.code = 'LOINC_TBDA_617')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateStrokeScoreMethodCode(StrokeScore, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Stroke Score Method Code</em>}' invariant operation.
@@ -502,8 +523,9 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_STROKE_SCORE_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -515,27 +537,30 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateStrokeScoreMethodCode(StrokeScore strokeScore, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateStrokeScoreMethodCode(StrokeScore strokeScore, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_STROKE_SCORE_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.STROKE_SCORE);
 			try {
 				VALIDATE_STROKE_SCORE_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STROKE_SCORE_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_STROKE_SCORE_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(strokeScore)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.STROKE_SCORE__STROKE_SCORE_METHOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("StrokeScoreMethodCode"), new Object[] { strokeScore }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.STROKE_SCORE__STROKE_SCORE_METHOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("StrokeScoreStrokeScoreMethodCode"),
+						 new Object [] { strokeScore }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -559,8 +584,9 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_STROKE_SCORE_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -572,28 +598,30 @@ public class StrokeScoreOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateStrokeScoreMethodCodeP(StrokeScore strokeScore, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateStrokeScoreMethodCodeP(StrokeScore strokeScore, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_STROKE_SCORE_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.STROKE_SCORE);
 			try {
 				VALIDATE_STROKE_SCORE_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STROKE_SCORE_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STROKE_SCORE_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			strokeScore)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_STROKE_SCORE_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(strokeScore)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.STROKE_SCORE__STROKE_SCORE_METHOD_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("StrokeScoreMethodCodeP"), new Object[] { strokeScore }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.STROKE_SCORE__STROKE_SCORE_METHOD_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("StrokeScoreStrokeScoreMethodCodeP"),
+						 new Object [] { strokeScore }));
 			}
-
+			 
 			return false;
 		}
 		return true;

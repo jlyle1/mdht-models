@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -11,7 +7,6 @@ import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
@@ -67,10 +62,8 @@ public class AdditionalVitalSignsOrganizerImpl extends OrganizerImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdditionalVitalSignsOrganizerStrokeScoreComponent(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerStrokeScoreComponent(
-			this, diagnostics, context);
+	public boolean validateAdditionalVitalSignsOrganizerStrokeScoreComponent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerStrokeScoreComponent(this, diagnostics, context);
 	}
 
 	/**
@@ -78,10 +71,8 @@ public class AdditionalVitalSignsOrganizerImpl extends OrganizerImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdditionalVitalSignsOrganizerPainScoreComponent(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerPainScoreComponent(
-			this, diagnostics, context);
+	public boolean validateAdditionalVitalSignsOrganizerPainScoreComponent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerPainScoreComponent(this, diagnostics, context);
 	}
 
 	/**
@@ -89,10 +80,8 @@ public class AdditionalVitalSignsOrganizerImpl extends OrganizerImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdditionalVitalSignsOrganizerLevelOfResponsivenessComponent(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerLevelOfResponsivenessComponent(
-			this, diagnostics, context);
+	public boolean validateAdditionalVitalSignsOrganizerLevelOfResponsivenessComponent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerLevelOfResponsivenessComponent(this, diagnostics, context);
 	}
 
 	/**
@@ -100,10 +89,8 @@ public class AdditionalVitalSignsOrganizerImpl extends OrganizerImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdditionalVitalSignsOrganizerBloodGlucoseComponent(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerBloodGlucoseComponent(
-			this, diagnostics, context);
+	public boolean validateAdditionalVitalSignsOrganizerBloodGlucoseComponent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerBloodGlucoseComponent(this, diagnostics, context);
 	}
 
 	/**
@@ -111,10 +98,8 @@ public class AdditionalVitalSignsOrganizerImpl extends OrganizerImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdditionalVitalSignsOrganizerCarbonMonoxideComponent(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerCarbonMonoxideComponent(
-			this, diagnostics, context);
+	public boolean validateAdditionalVitalSignsOrganizerCarbonMonoxideComponent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerCarbonMonoxideComponent(this, diagnostics, context);
 	}
 
 	/**
@@ -122,10 +107,8 @@ public class AdditionalVitalSignsOrganizerImpl extends OrganizerImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdditionalVitalSignsOrganizerCarbonDioxideComponent(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerCarbonDioxideComponent(
-			this, diagnostics, context);
+	public boolean validateAdditionalVitalSignsOrganizerCarbonDioxideComponent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerCarbonDioxideComponent(this, diagnostics, context);
 	}
 
 	/**
@@ -133,10 +116,8 @@ public class AdditionalVitalSignsOrganizerImpl extends OrganizerImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdditionalVitalSignsOrganizerCardiacRhythmComponent(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerCardiacRhythmComponent(
-			this, diagnostics, context);
+	public boolean validateAdditionalVitalSignsOrganizerCardiacRhythmComponent(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerCardiacRhythmComponent(this, diagnostics, context);
 	}
 
 	/**
@@ -144,10 +125,8 @@ public class AdditionalVitalSignsOrganizerImpl extends OrganizerImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdditionalVitalSignsOrganizerTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerTemplateId(
-			this, diagnostics, context);
+	public boolean validateAdditionalVitalSignsOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -155,10 +134,8 @@ public class AdditionalVitalSignsOrganizerImpl extends OrganizerImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdditionalVitalSignsOrganizerMoodCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerMoodCode(
-			this, diagnostics, context);
+	public boolean validateAdditionalVitalSignsOrganizerMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -166,10 +143,8 @@ public class AdditionalVitalSignsOrganizerImpl extends OrganizerImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdditionalVitalSignsOrganizerEffectiveTime(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerEffectiveTime(
-			this, diagnostics, context);
+	public boolean validateAdditionalVitalSignsOrganizerEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -177,10 +152,8 @@ public class AdditionalVitalSignsOrganizerImpl extends OrganizerImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdditionalVitalSignsOrganizerGlasgowComaScoreOrganizer(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerGlasgowComaScoreOrganizer(
-			this, diagnostics, context);
+	public boolean validateAdditionalVitalSignsOrganizerGlasgowComaScoreOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerGlasgowComaScoreOrganizer(this, diagnostics, context);
 	}
 
 	/**
@@ -251,8 +224,8 @@ public class AdditionalVitalSignsOrganizerImpl extends OrganizerImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<GlasgowComaScoreOrganizer> getGlasgowComaScoreOrganizers() {
-		return AdditionalVitalSignsOrganizerOperations.getGlasgowComaScoreOrganizers(this);
+	public GlasgowComaScoreOrganizer getGlasgowComaScoreOrganizer() {
+		return AdditionalVitalSignsOrganizerOperations.getGlasgowComaScoreOrganizer(this);
 	}
 
 	/**
@@ -261,16 +234,15 @@ public class AdditionalVitalSignsOrganizerImpl extends OrganizerImpl implements 
 	 * @generated
 	 */
 	public AdditionalVitalSignsOrganizer init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AdditionalVitalSignsOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // AdditionalVitalSignsOrganizerImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AdditionalVitalSignsOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //AdditionalVitalSignsOrganizerImpl

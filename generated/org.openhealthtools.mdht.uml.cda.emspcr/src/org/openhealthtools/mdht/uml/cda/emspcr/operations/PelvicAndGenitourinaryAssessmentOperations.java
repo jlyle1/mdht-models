@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -72,8 +68,9 @@ public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatemen
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,32 +82,30 @@ public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatemen
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validatePelvicAndGenitourinaryAssessmentTemplateId(
-			PelvicAndGenitourinaryAssessment pelvicAndGenitourinaryAssessment, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validatePelvicAndGenitourinaryAssessmentTemplateId(PelvicAndGenitourinaryAssessment pelvicAndGenitourinaryAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PELVIC_AND_GENITOURINARY_ASSESSMENT);
 			try {
 				VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			pelvicAndGenitourinaryAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pelvicAndGenitourinaryAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PELVIC_AND_GENITOURINARY_ASSESSMENT__PELVIC_AND_GENITOURINARY_ASSESSMENT_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("PelvicAndGenitourinaryAssessmentTemplateId"),
-					new Object[] { pelvicAndGenitourinaryAssessment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PELVIC_AND_GENITOURINARY_ASSESSMENT__PELVIC_AND_GENITOURINARY_ASSESSMENT_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("PelvicAndGenitourinaryAssessmentPelvicAndGenitourinaryAssessmentTemplateId"),
+						 new Object [] { pelvicAndGenitourinaryAssessment }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -134,8 +129,9 @@ public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatemen
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,31 +143,30 @@ public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatemen
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validatePelvicAndGenitourinaryAssessmentMoodCode(
-			PelvicAndGenitourinaryAssessment pelvicAndGenitourinaryAssessment, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validatePelvicAndGenitourinaryAssessmentMoodCode(PelvicAndGenitourinaryAssessment pelvicAndGenitourinaryAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PELVIC_AND_GENITOURINARY_ASSESSMENT);
 			try {
 				VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			pelvicAndGenitourinaryAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pelvicAndGenitourinaryAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PELVIC_AND_GENITOURINARY_ASSESSMENT__PELVIC_AND_GENITOURINARY_ASSESSMENT_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("PelvicAndGenitourinaryAssessmentMoodCode"),
-					new Object[] { pelvicAndGenitourinaryAssessment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PELVIC_AND_GENITOURINARY_ASSESSMENT__PELVIC_AND_GENITOURINARY_ASSESSMENT_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("PelvicAndGenitourinaryAssessmentPelvicAndGenitourinaryAssessmentMoodCode"),
+						 new Object [] { pelvicAndGenitourinaryAssessment }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -185,9 +180,9 @@ public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatemen
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67531-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67531-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePelvicAndGenitourinaryAssessmentCode(PelvicAndGenitourinaryAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pelvic And Genitourinary Assessment Code</em>}' invariant operation.
@@ -197,8 +192,9 @@ public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatemen
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -210,30 +206,30 @@ public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatemen
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validatePelvicAndGenitourinaryAssessmentCode(
-			PelvicAndGenitourinaryAssessment pelvicAndGenitourinaryAssessment, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validatePelvicAndGenitourinaryAssessmentCode(PelvicAndGenitourinaryAssessment pelvicAndGenitourinaryAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PELVIC_AND_GENITOURINARY_ASSESSMENT);
 			try {
 				VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			pelvicAndGenitourinaryAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pelvicAndGenitourinaryAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PELVIC_AND_GENITOURINARY_ASSESSMENT__PELVIC_AND_GENITOURINARY_ASSESSMENT_CODE,
-					EmspcrPlugin.INSTANCE.getString("PelvicAndGenitourinaryAssessmentCode"),
-					new Object[] { pelvicAndGenitourinaryAssessment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PELVIC_AND_GENITOURINARY_ASSESSMENT__PELVIC_AND_GENITOURINARY_ASSESSMENT_CODE,
+						 EmspcrPlugin.INSTANCE.getString("PelvicAndGenitourinaryAssessmentPelvicAndGenitourinaryAssessmentCode"),
+						 new Object [] { pelvicAndGenitourinaryAssessment }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -257,8 +253,9 @@ public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatemen
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -270,32 +267,30 @@ public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatemen
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validatePelvicAndGenitourinaryAssessmentEffectiveTime(
-			PelvicAndGenitourinaryAssessment pelvicAndGenitourinaryAssessment, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validatePelvicAndGenitourinaryAssessmentEffectiveTime(PelvicAndGenitourinaryAssessment pelvicAndGenitourinaryAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PELVIC_AND_GENITOURINARY_ASSESSMENT);
 			try {
 				VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			pelvicAndGenitourinaryAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pelvicAndGenitourinaryAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PELVIC_AND_GENITOURINARY_ASSESSMENT__PELVIC_AND_GENITOURINARY_ASSESSMENT_EFFECTIVE_TIME,
-					EmspcrPlugin.INSTANCE.getString("PelvicAndGenitourinaryAssessmentEffectiveTime"),
-					new Object[] { pelvicAndGenitourinaryAssessment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PELVIC_AND_GENITOURINARY_ASSESSMENT__PELVIC_AND_GENITOURINARY_ASSESSMENT_EFFECTIVE_TIME,
+						 EmspcrPlugin.INSTANCE.getString("PelvicAndGenitourinaryAssessmentPelvicAndGenitourinaryAssessmentEffectiveTime"),
+						 new Object [] { pelvicAndGenitourinaryAssessment }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -309,9 +304,9 @@ public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatemen
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA14123-6' or value.code = 'LA17208-2' or value.code = 'LA17209-0' or value.code = 'LA17213-2' or value.code = 'LA17214-0' or value.code = 'LA17215-7' or value.code = 'LA17220-7' or value.code = 'LA17244-7' or value.code = 'LA17245-4' or value.code = 'LA17248-8' or value.code = 'LA17249-6' or value.code = 'LA17250-4' or value.code = 'LA17251-2' or value.code = 'LA17252-0' or value.code = 'LA17253-8' or value.code = 'LA17254-6' or value.code = 'LA17255-3' or value.code = 'LA17709-9' or value.code = 'LA18220-6' or value.code = 'LA18221-4' or value.code = 'LA18222-2' or value.code = 'LA18223-0' or value.code = 'LA18224-8' or value.code = 'LA18225-5' or value.code = 'LA18226-3' or value.code = 'LA6626-1' or value.code = 'LA6630-3' or value.code = 'LA7410-9' or value.code = 'LA7452-1' or value.code = 'LA7460-4')))";
+	protected static final String VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17208-2' or value.code = 'LA17209-0' or value.code = 'LA17213-2' or value.code = 'LA17214-0' or value.code = 'LOINC_TBDA_966' or value.code = 'LA17248-8' or value.code = 'LA17249-6' or value.code = 'LA17250-4' or value.code = 'LA17251-2' or value.code = 'LA17252-0' or value.code = 'LA17253-8' or value.code = 'LA17254-6' or value.code = 'LA17255-3' or value.code = 'LA17709-9' or value.code = 'LA18220-6' or value.code = 'LA18221-4' or value.code = 'LA18222-2' or value.code = 'LA18223-0' or value.code = 'LA18224-8' or value.code = 'LA18225-5' or value.code = 'LA18226-3' or value.code = 'LA6626-1' or value.code = 'LA6630-3' or value.code = 'LA7410-9' or value.code = 'LA7452-1' or value.code = 'LA7460-4' or value.code = 'LOINC_TBDA_585' or value.code = 'LOINC_TBDA_586' or value.code = 'LOINC_TBDA_587')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePelvicAndGenitourinaryAssessmentValue(PelvicAndGenitourinaryAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pelvic And Genitourinary Assessment Value</em>}' invariant operation.
@@ -321,8 +316,9 @@ public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatemen
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -334,30 +330,30 @@ public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatemen
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validatePelvicAndGenitourinaryAssessmentValue(
-			PelvicAndGenitourinaryAssessment pelvicAndGenitourinaryAssessment, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validatePelvicAndGenitourinaryAssessmentValue(PelvicAndGenitourinaryAssessment pelvicAndGenitourinaryAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PELVIC_AND_GENITOURINARY_ASSESSMENT);
 			try {
 				VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			pelvicAndGenitourinaryAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pelvicAndGenitourinaryAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PELVIC_AND_GENITOURINARY_ASSESSMENT__PELVIC_AND_GENITOURINARY_ASSESSMENT_VALUE,
-					EmspcrPlugin.INSTANCE.getString("PelvicAndGenitourinaryAssessmentValue"),
-					new Object[] { pelvicAndGenitourinaryAssessment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PELVIC_AND_GENITOURINARY_ASSESSMENT__PELVIC_AND_GENITOURINARY_ASSESSMENT_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("PelvicAndGenitourinaryAssessmentPelvicAndGenitourinaryAssessmentValue"),
+						 new Object [] { pelvicAndGenitourinaryAssessment }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -381,8 +377,9 @@ public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatemen
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -394,30 +391,30 @@ public class PelvicAndGenitourinaryAssessmentOperations extends ClinicalStatemen
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validatePelvicAndGenitourinaryAssessmentValueP(
-			PelvicAndGenitourinaryAssessment pelvicAndGenitourinaryAssessment, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validatePelvicAndGenitourinaryAssessmentValueP(PelvicAndGenitourinaryAssessment pelvicAndGenitourinaryAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PELVIC_AND_GENITOURINARY_ASSESSMENT);
 			try {
 				VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			pelvicAndGenitourinaryAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PELVIC_AND_GENITOURINARY_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pelvicAndGenitourinaryAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PELVIC_AND_GENITOURINARY_ASSESSMENT__PELVIC_AND_GENITOURINARY_ASSESSMENT_VALUE_P,
-					EmspcrPlugin.INSTANCE.getString("PelvicAndGenitourinaryAssessmentValueP"),
-					new Object[] { pelvicAndGenitourinaryAssessment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PELVIC_AND_GENITOURINARY_ASSESSMENT__PELVIC_AND_GENITOURINARY_ASSESSMENT_VALUE_P,
+						 EmspcrPlugin.INSTANCE.getString("PelvicAndGenitourinaryAssessmentPelvicAndGenitourinaryAssessmentValueP"),
+						 new Object [] { pelvicAndGenitourinaryAssessment }));
 			}
-
+			 
 			return false;
 		}
 		return true;

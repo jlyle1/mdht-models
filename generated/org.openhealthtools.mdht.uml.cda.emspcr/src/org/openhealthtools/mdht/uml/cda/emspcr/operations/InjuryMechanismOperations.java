@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -70,8 +66,9 @@ public class InjuryMechanismOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_INJURY_MECHANISM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -83,28 +80,30 @@ public class InjuryMechanismOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateInjuryMechanismTemplateId(InjuryMechanism injuryMechanism,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateInjuryMechanismTemplateId(InjuryMechanism injuryMechanism, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_INJURY_MECHANISM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.INJURY_MECHANISM);
 			try {
 				VALIDATE_INJURY_MECHANISM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_MECHANISM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_MECHANISM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			injuryMechanism)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_MECHANISM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injuryMechanism)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.INJURY_MECHANISM__INJURY_MECHANISM_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("InjuryMechanismTemplateId"), new Object[] { injuryMechanism }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.INJURY_MECHANISM__INJURY_MECHANISM_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("InjuryMechanismInjuryMechanismTemplateId"),
+						 new Object [] { injuryMechanism }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -128,8 +127,9 @@ public class InjuryMechanismOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_INJURY_MECHANISM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -141,28 +141,30 @@ public class InjuryMechanismOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateInjuryMechanismMoodCode(InjuryMechanism injuryMechanism, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateInjuryMechanismMoodCode(InjuryMechanism injuryMechanism, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_INJURY_MECHANISM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.INJURY_MECHANISM);
 			try {
 				VALIDATE_INJURY_MECHANISM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_MECHANISM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_MECHANISM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			injuryMechanism)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_MECHANISM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injuryMechanism)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.INJURY_MECHANISM__INJURY_MECHANISM_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("InjuryMechanismMoodCode"), new Object[] { injuryMechanism }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.INJURY_MECHANISM__INJURY_MECHANISM_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("InjuryMechanismInjuryMechanismMoodCode"),
+						 new Object [] { injuryMechanism }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -176,9 +178,9 @@ public class InjuryMechanismOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INJURY_MECHANISM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67494-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_INJURY_MECHANISM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67494-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInjuryMechanismCode(InjuryMechanism, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Mechanism Code</em>}' invariant operation.
@@ -188,8 +190,9 @@ public class InjuryMechanismOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_INJURY_MECHANISM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -201,27 +204,30 @@ public class InjuryMechanismOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateInjuryMechanismCode(InjuryMechanism injuryMechanism, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateInjuryMechanismCode(InjuryMechanism injuryMechanism, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_INJURY_MECHANISM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.INJURY_MECHANISM);
 			try {
 				VALIDATE_INJURY_MECHANISM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_MECHANISM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_MECHANISM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injuryMechanism)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.INJURY_MECHANISM__INJURY_MECHANISM_CODE,
-					EmspcrPlugin.INSTANCE.getString("InjuryMechanismCode"), new Object[] { injuryMechanism }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.INJURY_MECHANISM__INJURY_MECHANISM_CODE,
+						 EmspcrPlugin.INSTANCE.getString("InjuryMechanismInjuryMechanismCode"),
+						 new Object [] { injuryMechanism }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -235,9 +241,9 @@ public class InjuryMechanismOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INJURY_MECHANISM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17335-3' or value.code = 'LA17336-1' or value.code = 'LA46-8' or value.code = 'LA7318-4')))";
+	protected static final String VALIDATE_INJURY_MECHANISM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17335-3' or value.code = 'LA17336-1' or value.code = 'LA46-8' or value.code = 'LA7318-4')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInjuryMechanismValue(InjuryMechanism, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Mechanism Value</em>}' invariant operation.
@@ -247,8 +253,9 @@ public class InjuryMechanismOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_INJURY_MECHANISM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -260,28 +267,30 @@ public class InjuryMechanismOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateInjuryMechanismValue(InjuryMechanism injuryMechanism, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateInjuryMechanismValue(InjuryMechanism injuryMechanism, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_INJURY_MECHANISM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.INJURY_MECHANISM);
 			try {
 				VALIDATE_INJURY_MECHANISM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_MECHANISM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_MECHANISM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			injuryMechanism)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_MECHANISM_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injuryMechanism)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.INJURY_MECHANISM__INJURY_MECHANISM_VALUE,
-					EmspcrPlugin.INSTANCE.getString("InjuryMechanismValue"), new Object[] { injuryMechanism }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.INJURY_MECHANISM__INJURY_MECHANISM_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("InjuryMechanismInjuryMechanismValue"),
+						 new Object [] { injuryMechanism }));
 			}
-
+			 
 			return false;
 		}
 		return true;

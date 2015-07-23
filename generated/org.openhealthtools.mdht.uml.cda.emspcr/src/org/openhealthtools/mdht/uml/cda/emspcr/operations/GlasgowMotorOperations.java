@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -62,7 +58,7 @@ public class GlasgowMotorOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GLASGOW_MOTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.176')";
+	protected static final String VALIDATE_GLASGOW_MOTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.1133883.17.3.10.1.192')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGlasgowMotorTemplateId(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Motor Template Id</em>}' invariant operation.
@@ -72,8 +68,9 @@ public class GlasgowMotorOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_GLASGOW_MOTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,28 +82,30 @@ public class GlasgowMotorOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateGlasgowMotorTemplateId(GlasgowMotor glasgowMotor, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateGlasgowMotorTemplateId(GlasgowMotor glasgowMotor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_GLASGOW_MOTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_MOTOR);
 			try {
 				VALIDATE_GLASGOW_MOTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_MOTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_MOTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			glasgowMotor)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_MOTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(glasgowMotor)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.GLASGOW_MOTOR__GLASGOW_MOTOR_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("GlasgowMotorTemplateId"), new Object[] { glasgowMotor }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.GLASGOW_MOTOR__GLASGOW_MOTOR_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("GlasgowMotorGlasgowMotorTemplateId"),
+						 new Object [] { glasgowMotor }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -130,8 +129,9 @@ public class GlasgowMotorOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_GLASGOW_MOTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -143,27 +143,30 @@ public class GlasgowMotorOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateGlasgowMotorMoodCode(GlasgowMotor glasgowMotor, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateGlasgowMotorMoodCode(GlasgowMotor glasgowMotor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_GLASGOW_MOTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_MOTOR);
 			try {
 				VALIDATE_GLASGOW_MOTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_MOTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_MOTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(glasgowMotor)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.GLASGOW_MOTOR__GLASGOW_MOTOR_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("GlasgowMotorMoodCode"), new Object[] { glasgowMotor }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.GLASGOW_MOTOR__GLASGOW_MOTOR_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("GlasgowMotorGlasgowMotorMoodCode"),
+						 new Object [] { glasgowMotor }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -187,8 +190,9 @@ public class GlasgowMotorOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_GLASGOW_MOTOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -200,27 +204,30 @@ public class GlasgowMotorOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateGlasgowMotorCodeP(GlasgowMotor glasgowMotor, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateGlasgowMotorCodeP(GlasgowMotor glasgowMotor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_GLASGOW_MOTOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_MOTOR);
 			try {
 				VALIDATE_GLASGOW_MOTOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_MOTOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_MOTOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(glasgowMotor)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.GLASGOW_MOTOR__GLASGOW_MOTOR_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("GlasgowMotorCodeP"), new Object[] { glasgowMotor }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.GLASGOW_MOTOR__GLASGOW_MOTOR_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("GlasgowMotorGlasgowMotorCodeP"),
+						 new Object [] { glasgowMotor }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -232,7 +239,7 @@ public class GlasgowMotorOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(glasgowMotor);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -246,9 +253,9 @@ public class GlasgowMotorOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_GLASGOW_MOTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '9268-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_GLASGOW_MOTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '9268-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGlasgowMotorCode(GlasgowMotor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Glasgow Motor Code</em>}' invariant operation.
@@ -258,8 +265,9 @@ public class GlasgowMotorOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_GLASGOW_MOTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -271,35 +279,36 @@ public class GlasgowMotorOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateGlasgowMotorCode(GlasgowMotor glasgowMotor, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.GlasgowMotorCodeP");
+	
+	public static  boolean validateGlasgowMotorCode(GlasgowMotor glasgowMotor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.GlasgowMotorCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(glasgowMotor)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_GLASGOW_MOTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_MOTOR);
 			try {
 				VALIDATE_GLASGOW_MOTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_MOTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_MOTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(glasgowMotor)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.GLASGOW_MOTOR__GLASGOW_MOTOR_CODE,
-					EmspcrPlugin.INSTANCE.getString("GlasgowMotorCode"), new Object[] { glasgowMotor }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.GLASGOW_MOTOR__GLASGOW_MOTOR_CODE,
+						 EmspcrPlugin.INSTANCE.getString("GlasgowMotorGlasgowMotorCode"),
+						 new Object [] { glasgowMotor }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -323,8 +332,9 @@ public class GlasgowMotorOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_GLASGOW_MOTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -336,27 +346,30 @@ public class GlasgowMotorOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateGlasgowMotorValue(GlasgowMotor glasgowMotor, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateGlasgowMotorValue(GlasgowMotor glasgowMotor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_GLASGOW_MOTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_MOTOR);
 			try {
 				VALIDATE_GLASGOW_MOTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_MOTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_MOTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(glasgowMotor)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.GLASGOW_MOTOR__GLASGOW_MOTOR_VALUE,
-					EmspcrPlugin.INSTANCE.getString("GlasgowMotorValue"), new Object[] { glasgowMotor }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.GLASGOW_MOTOR__GLASGOW_MOTOR_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("GlasgowMotorGlasgowMotorValue"),
+						 new Object [] { glasgowMotor }));
 			}
-
+			 
 			return false;
 		}
 		return true;

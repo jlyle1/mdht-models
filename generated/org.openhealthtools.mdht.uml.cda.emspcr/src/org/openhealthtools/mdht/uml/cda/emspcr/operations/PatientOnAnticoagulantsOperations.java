@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -70,8 +66,9 @@ public class PatientOnAnticoagulantsOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PATIENT_ON_ANTICOAGULANTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -83,29 +80,30 @@ public class PatientOnAnticoagulantsOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validatePatientOnAnticoagulantsTemplateId(PatientOnAnticoagulants patientOnAnticoagulants,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validatePatientOnAnticoagulantsTemplateId(PatientOnAnticoagulants patientOnAnticoagulants, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PATIENT_ON_ANTICOAGULANTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_ON_ANTICOAGULANTS);
 			try {
 				VALIDATE_PATIENT_ON_ANTICOAGULANTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_ON_ANTICOAGULANTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_ON_ANTICOAGULANTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientOnAnticoagulants)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_ON_ANTICOAGULANTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientOnAnticoagulants)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PATIENT_ON_ANTICOAGULANTS__PATIENT_ON_ANTICOAGULANTS_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("PatientOnAnticoagulantsTemplateId"),
-					new Object[] { patientOnAnticoagulants }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PATIENT_ON_ANTICOAGULANTS__PATIENT_ON_ANTICOAGULANTS_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("PatientOnAnticoagulantsPatientOnAnticoagulantsTemplateId"),
+						 new Object [] { patientOnAnticoagulants }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -129,8 +127,9 @@ public class PatientOnAnticoagulantsOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PATIENT_ON_ANTICOAGULANTS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -142,29 +141,30 @@ public class PatientOnAnticoagulantsOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validatePatientOnAnticoagulantsMoodCode(PatientOnAnticoagulants patientOnAnticoagulants,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validatePatientOnAnticoagulantsMoodCode(PatientOnAnticoagulants patientOnAnticoagulants, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PATIENT_ON_ANTICOAGULANTS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_ON_ANTICOAGULANTS);
 			try {
 				VALIDATE_PATIENT_ON_ANTICOAGULANTS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_ON_ANTICOAGULANTS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_ON_ANTICOAGULANTS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientOnAnticoagulants)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_ON_ANTICOAGULANTS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientOnAnticoagulants)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PATIENT_ON_ANTICOAGULANTS__PATIENT_ON_ANTICOAGULANTS_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("PatientOnAnticoagulantsMoodCode"),
-					new Object[] { patientOnAnticoagulants }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PATIENT_ON_ANTICOAGULANTS__PATIENT_ON_ANTICOAGULANTS_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("PatientOnAnticoagulantsPatientOnAnticoagulantsMoodCode"),
+						 new Object [] { patientOnAnticoagulants }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -178,9 +178,9 @@ public class PatientOnAnticoagulantsOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_ON_ANTICOAGULANTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '69749-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PATIENT_ON_ANTICOAGULANTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '69749-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientOnAnticoagulantsCode(PatientOnAnticoagulants, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient On Anticoagulants Code</em>}' invariant operation.
@@ -190,8 +190,9 @@ public class PatientOnAnticoagulantsOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PATIENT_ON_ANTICOAGULANTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -203,29 +204,30 @@ public class PatientOnAnticoagulantsOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validatePatientOnAnticoagulantsCode(PatientOnAnticoagulants patientOnAnticoagulants,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validatePatientOnAnticoagulantsCode(PatientOnAnticoagulants patientOnAnticoagulants, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PATIENT_ON_ANTICOAGULANTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_ON_ANTICOAGULANTS);
 			try {
 				VALIDATE_PATIENT_ON_ANTICOAGULANTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_ON_ANTICOAGULANTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_ON_ANTICOAGULANTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientOnAnticoagulants)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_ON_ANTICOAGULANTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientOnAnticoagulants)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PATIENT_ON_ANTICOAGULANTS__PATIENT_ON_ANTICOAGULANTS_CODE,
-					EmspcrPlugin.INSTANCE.getString("PatientOnAnticoagulantsCode"),
-					new Object[] { patientOnAnticoagulants }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PATIENT_ON_ANTICOAGULANTS__PATIENT_ON_ANTICOAGULANTS_CODE,
+						 EmspcrPlugin.INSTANCE.getString("PatientOnAnticoagulantsPatientOnAnticoagulantsCode"),
+						 new Object [] { patientOnAnticoagulants }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -249,8 +251,9 @@ public class PatientOnAnticoagulantsOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PATIENT_ON_ANTICOAGULANTS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -262,29 +265,30 @@ public class PatientOnAnticoagulantsOperations extends ClinicalStatementOperatio
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validatePatientOnAnticoagulantsValue(PatientOnAnticoagulants patientOnAnticoagulants,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validatePatientOnAnticoagulantsValue(PatientOnAnticoagulants patientOnAnticoagulants, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PATIENT_ON_ANTICOAGULANTS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_ON_ANTICOAGULANTS);
 			try {
 				VALIDATE_PATIENT_ON_ANTICOAGULANTS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_ON_ANTICOAGULANTS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_ON_ANTICOAGULANTS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientOnAnticoagulants)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_ON_ANTICOAGULANTS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientOnAnticoagulants)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PATIENT_ON_ANTICOAGULANTS__PATIENT_ON_ANTICOAGULANTS_VALUE,
-					EmspcrPlugin.INSTANCE.getString("PatientOnAnticoagulantsValue"),
-					new Object[] { patientOnAnticoagulants }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PATIENT_ON_ANTICOAGULANTS__PATIENT_ON_ANTICOAGULANTS_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("PatientOnAnticoagulantsPatientOnAnticoagulantsValue"),
+						 new Object [] { patientOnAnticoagulants }));
 			}
-
+			 
 			return false;
 		}
 		return true;

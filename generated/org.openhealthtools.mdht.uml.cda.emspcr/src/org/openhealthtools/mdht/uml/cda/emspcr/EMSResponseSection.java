@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -25,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getEMSResponseSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EMSResponseSectionTemplateId EMSResponseSectionCode EMSResponseSectionCodeP EMSResponseSectionTitle EMSResponseSectionText EMSResponseSectionDelayOrganizer EMSResponseSectionDispatchLocationOrganizer EMSResponseSectionResponseOdometerReadingOrganizer EMSResponseSectionResponseModeToScene' templateId.root='2.16.840.1.113883.17.3.10.1.3' code.code='67664-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='EMS response Narrative NEMSIS' title.mixed='EMS Response'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EMSResponseSectionTemplateId EMSResponseSectionCode EMSResponseSectionCodeP EMSResponseSectionTitle EMSResponseSectionText EMSResponseSectionDelayOrganizer EMSResponseSectionDispatchLocationOrganizer EMSResponseSectionResponseOdometerReadingOrganizer EMSResponseSectionResponseModeToScene EMSResponseSectionUnitLevelOfCareCapability' templateId.root='2.16.840.1.113883.17.3.10.1.3' code.code='67664-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='EMS response Narrative NEMSIS' title.mixed='EMS Response'"
  * @generated
  */
 public interface EMSResponseSection extends Section {
@@ -123,8 +119,7 @@ public interface EMSResponseSection extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(emspcr::ResponseOdometerReadingOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
 	 * @generated
 	 */
-	boolean validateEMSResponseSectionResponseOdometerReadingOrganizer(DiagnosticChain diagnostics,
-			Map<Object, Object> context);
+	boolean validateEMSResponseSectionResponseOdometerReadingOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -137,6 +132,18 @@ public interface EMSResponseSection extends Section {
 	 * @generated
 	 */
 	boolean validateEMSResponseSectionResponseModeToScene(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.nullFlavor <> vocab::NullFlavor::NI implies entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(emspcr::UnitLevelOfCareCapability) and entry.typeCode = vocab::x_ActRelationshipEntry::COMP)'"
+	 * @generated
+	 */
+	boolean validateEMSResponseSectionUnitLevelOfCareCapability(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -177,14 +184,22 @@ public interface EMSResponseSection extends Section {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(emspcr::UnitLevelOfCareCapability))->asSequence()->any(true).oclAsType(emspcr::UnitLevelOfCareCapability)'"
 	 * @generated
 	 */
-	public EMSResponseSection init();
+	UnitLevelOfCareCapability getUnitLevelOfCareCapability();
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EMSResponseSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public EMSResponseSection init();
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EMSResponseSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EMSResponseSection

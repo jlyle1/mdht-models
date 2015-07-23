@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -59,8 +55,7 @@ public class ExistenceOfNonDrugAllergyImpl extends ObservationImpl implements Ex
 	 * @generated
 	 */
 	public boolean validateExistenceOfNonDrugAllergyTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ExistenceOfNonDrugAllergyOperations.validateExistenceOfNonDrugAllergyTemplateId(
-			this, diagnostics, context);
+		return ExistenceOfNonDrugAllergyOperations.validateExistenceOfNonDrugAllergyTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -96,16 +91,15 @@ public class ExistenceOfNonDrugAllergyImpl extends ObservationImpl implements Ex
 	 * @generated
 	 */
 	public ExistenceOfNonDrugAllergy init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ExistenceOfNonDrugAllergy init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // ExistenceOfNonDrugAllergyImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ExistenceOfNonDrugAllergy init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //ExistenceOfNonDrugAllergyImpl

@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -112,8 +108,8 @@ public class ExtremitiesAssessmentImpl extends ObservationImpl implements Extrem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateExtremitiesAssessmentTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ExtremitiesAssessmentOperations.validateExtremitiesAssessmentTargetSiteCode(this, diagnostics, context);
+	public boolean validateExtremitiesAssessmentValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ExtremitiesAssessmentOperations.validateExtremitiesAssessmentValueP(this, diagnostics, context);
 	}
 
 	/**
@@ -130,8 +126,8 @@ public class ExtremitiesAssessmentImpl extends ObservationImpl implements Extrem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ExtremitiesAssessment init() {
-		return Initializer.Util.init(this);
+	public boolean validateExtremitiesAssessmentTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ExtremitiesAssessmentOperations.validateExtremitiesAssessmentTargetSiteCode(this, diagnostics, context);
 	}
 
 	/**
@@ -139,8 +135,16 @@ public class ExtremitiesAssessmentImpl extends ObservationImpl implements Extrem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ExtremitiesAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
+	public ExtremitiesAssessment init() {
+	    return Initializer.Util.init(this);
 	}
-} // ExtremitiesAssessmentImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public ExtremitiesAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //ExtremitiesAssessmentImpl

@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -119,11 +115,10 @@ public interface LevelOfResponsiveness extends Observation {
 	 * @generated
 	 */
 	public LevelOfResponsiveness init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public LevelOfResponsiveness init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public LevelOfResponsiveness init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // LevelOfResponsiveness

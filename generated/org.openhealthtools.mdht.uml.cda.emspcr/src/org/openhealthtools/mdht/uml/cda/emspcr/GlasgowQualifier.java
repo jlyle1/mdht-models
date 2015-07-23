@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -107,11 +103,10 @@ public interface GlasgowQualifier extends Observation {
 	 * @generated
 	 */
 	public GlasgowQualifier init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public GlasgowQualifier init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public GlasgowQualifier init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // GlasgowQualifier

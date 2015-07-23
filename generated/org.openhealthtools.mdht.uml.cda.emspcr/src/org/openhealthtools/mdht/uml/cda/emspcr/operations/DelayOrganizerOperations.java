@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -72,8 +68,9 @@ public class DelayOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_DELAY_ORGANIZER_DISPATCH_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,29 +82,30 @@ public class DelayOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateDelayOrganizerDispatchDelayRelationship(DelayOrganizer delayOrganizer,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateDelayOrganizerDispatchDelayRelationship(DelayOrganizer delayOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_DELAY_ORGANIZER_DISPATCH_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DELAY_ORGANIZER);
 			try {
 				VALIDATE_DELAY_ORGANIZER_DISPATCH_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DELAY_ORGANIZER_DISPATCH_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DELAY_ORGANIZER_DISPATCH_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			delayOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DELAY_ORGANIZER_DISPATCH_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(delayOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DELAY_ORGANIZER__DELAY_ORGANIZER_DISPATCH_DELAY_RELATIONSHIP,
-					EmspcrPlugin.INSTANCE.getString("DelayOrganizerDispatchDelayRelationship"),
-					new Object[] { delayOrganizer }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DELAY_ORGANIZER__DELAY_ORGANIZER_DISPATCH_DELAY_RELATIONSHIP,
+						 EmspcrPlugin.INSTANCE.getString("DelayOrganizerDelayOrganizerDispatchDelayRelationship"),
+						 new Object [] { delayOrganizer }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -131,8 +129,9 @@ public class DelayOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_DELAY_ORGANIZER_RESPONSE_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -144,29 +143,30 @@ public class DelayOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateDelayOrganizerResponseDelayRelationship(DelayOrganizer delayOrganizer,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateDelayOrganizerResponseDelayRelationship(DelayOrganizer delayOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_DELAY_ORGANIZER_RESPONSE_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DELAY_ORGANIZER);
 			try {
 				VALIDATE_DELAY_ORGANIZER_RESPONSE_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DELAY_ORGANIZER_RESPONSE_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DELAY_ORGANIZER_RESPONSE_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			delayOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DELAY_ORGANIZER_RESPONSE_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(delayOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DELAY_ORGANIZER__DELAY_ORGANIZER_RESPONSE_DELAY_RELATIONSHIP,
-					EmspcrPlugin.INSTANCE.getString("DelayOrganizerResponseDelayRelationship"),
-					new Object[] { delayOrganizer }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DELAY_ORGANIZER__DELAY_ORGANIZER_RESPONSE_DELAY_RELATIONSHIP,
+						 EmspcrPlugin.INSTANCE.getString("DelayOrganizerDelayOrganizerResponseDelayRelationship"),
+						 new Object [] { delayOrganizer }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -190,8 +190,9 @@ public class DelayOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_DELAY_ORGANIZER_SCENE_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -203,29 +204,30 @@ public class DelayOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateDelayOrganizerSceneDelayRelationship(DelayOrganizer delayOrganizer,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateDelayOrganizerSceneDelayRelationship(DelayOrganizer delayOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_DELAY_ORGANIZER_SCENE_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DELAY_ORGANIZER);
 			try {
 				VALIDATE_DELAY_ORGANIZER_SCENE_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DELAY_ORGANIZER_SCENE_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DELAY_ORGANIZER_SCENE_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			delayOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DELAY_ORGANIZER_SCENE_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(delayOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DELAY_ORGANIZER__DELAY_ORGANIZER_SCENE_DELAY_RELATIONSHIP,
-					EmspcrPlugin.INSTANCE.getString("DelayOrganizerSceneDelayRelationship"),
-					new Object[] { delayOrganizer }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DELAY_ORGANIZER__DELAY_ORGANIZER_SCENE_DELAY_RELATIONSHIP,
+						 EmspcrPlugin.INSTANCE.getString("DelayOrganizerDelayOrganizerSceneDelayRelationship"),
+						 new Object [] { delayOrganizer }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -249,8 +251,9 @@ public class DelayOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_DELAY_ORGANIZER_TRANSPORT_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -262,29 +265,30 @@ public class DelayOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateDelayOrganizerTransportDelayRelationship(DelayOrganizer delayOrganizer,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateDelayOrganizerTransportDelayRelationship(DelayOrganizer delayOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_DELAY_ORGANIZER_TRANSPORT_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DELAY_ORGANIZER);
 			try {
 				VALIDATE_DELAY_ORGANIZER_TRANSPORT_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DELAY_ORGANIZER_TRANSPORT_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DELAY_ORGANIZER_TRANSPORT_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			delayOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DELAY_ORGANIZER_TRANSPORT_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(delayOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DELAY_ORGANIZER__DELAY_ORGANIZER_TRANSPORT_DELAY_RELATIONSHIP,
-					EmspcrPlugin.INSTANCE.getString("DelayOrganizerTransportDelayRelationship"),
-					new Object[] { delayOrganizer }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DELAY_ORGANIZER__DELAY_ORGANIZER_TRANSPORT_DELAY_RELATIONSHIP,
+						 EmspcrPlugin.INSTANCE.getString("DelayOrganizerDelayOrganizerTransportDelayRelationship"),
+						 new Object [] { delayOrganizer }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -308,8 +312,9 @@ public class DelayOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_DELAY_ORGANIZER_TURNAOUND_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -321,29 +326,30 @@ public class DelayOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateDelayOrganizerTurnaoundDelayRelationship(DelayOrganizer delayOrganizer,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateDelayOrganizerTurnaoundDelayRelationship(DelayOrganizer delayOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_DELAY_ORGANIZER_TURNAOUND_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DELAY_ORGANIZER);
 			try {
 				VALIDATE_DELAY_ORGANIZER_TURNAOUND_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DELAY_ORGANIZER_TURNAOUND_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DELAY_ORGANIZER_TURNAOUND_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			delayOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DELAY_ORGANIZER_TURNAOUND_DELAY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(delayOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DELAY_ORGANIZER__DELAY_ORGANIZER_TURNAOUND_DELAY_RELATIONSHIP,
-					EmspcrPlugin.INSTANCE.getString("DelayOrganizerTurnaoundDelayRelationship"),
-					new Object[] { delayOrganizer }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DELAY_ORGANIZER__DELAY_ORGANIZER_TURNAOUND_DELAY_RELATIONSHIP,
+						 EmspcrPlugin.INSTANCE.getString("DelayOrganizerDelayOrganizerTurnaoundDelayRelationship"),
+						 new Object [] { delayOrganizer }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -367,8 +373,9 @@ public class DelayOrganizerOperations extends OrganizerOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_DELAY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -380,28 +387,30 @@ public class DelayOrganizerOperations extends OrganizerOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateDelayOrganizerTemplateId(DelayOrganizer delayOrganizer, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateDelayOrganizerTemplateId(DelayOrganizer delayOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_DELAY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DELAY_ORGANIZER);
 			try {
 				VALIDATE_DELAY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DELAY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DELAY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			delayOrganizer)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DELAY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(delayOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DELAY_ORGANIZER__DELAY_ORGANIZER_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("DelayOrganizerTemplateId"), new Object[] { delayOrganizer }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DELAY_ORGANIZER__DELAY_ORGANIZER_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("DelayOrganizerDelayOrganizerTemplateId"),
+						 new Object [] { delayOrganizer }));
 			}
-
+			 
 			return false;
 		}
 		return true;

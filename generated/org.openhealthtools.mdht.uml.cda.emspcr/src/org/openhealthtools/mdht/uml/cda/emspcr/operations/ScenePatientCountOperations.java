@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -72,8 +68,9 @@ public class ScenePatientCountOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_SCENE_PATIENT_COUNT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,28 +82,30 @@ public class ScenePatientCountOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateScenePatientCountTemplateId(ScenePatientCount scenePatientCount,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateScenePatientCountTemplateId(ScenePatientCount scenePatientCount, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_SCENE_PATIENT_COUNT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.SCENE_PATIENT_COUNT);
 			try {
 				VALIDATE_SCENE_PATIENT_COUNT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SCENE_PATIENT_COUNT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SCENE_PATIENT_COUNT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			scenePatientCount)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SCENE_PATIENT_COUNT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(scenePatientCount)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.SCENE_PATIENT_COUNT__SCENE_PATIENT_COUNT_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("ScenePatientCountTemplateId"), new Object[] { scenePatientCount }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.SCENE_PATIENT_COUNT__SCENE_PATIENT_COUNT_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("ScenePatientCountScenePatientCountTemplateId"),
+						 new Object [] { scenePatientCount }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -130,8 +129,9 @@ public class ScenePatientCountOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_SCENE_PATIENT_COUNT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -143,28 +143,30 @@ public class ScenePatientCountOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateScenePatientCountMoodCode(ScenePatientCount scenePatientCount,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateScenePatientCountMoodCode(ScenePatientCount scenePatientCount, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_SCENE_PATIENT_COUNT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.SCENE_PATIENT_COUNT);
 			try {
 				VALIDATE_SCENE_PATIENT_COUNT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SCENE_PATIENT_COUNT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SCENE_PATIENT_COUNT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			scenePatientCount)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SCENE_PATIENT_COUNT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(scenePatientCount)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.SCENE_PATIENT_COUNT__SCENE_PATIENT_COUNT_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("ScenePatientCountMoodCode"), new Object[] { scenePatientCount }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.SCENE_PATIENT_COUNT__SCENE_PATIENT_COUNT_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("ScenePatientCountScenePatientCountMoodCode"),
+						 new Object [] { scenePatientCount }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -188,8 +190,9 @@ public class ScenePatientCountOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_SCENE_PATIENT_COUNT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -201,28 +204,30 @@ public class ScenePatientCountOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateScenePatientCountCodeP(ScenePatientCount scenePatientCount,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateScenePatientCountCodeP(ScenePatientCount scenePatientCount, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_SCENE_PATIENT_COUNT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.SCENE_PATIENT_COUNT);
 			try {
 				VALIDATE_SCENE_PATIENT_COUNT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SCENE_PATIENT_COUNT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SCENE_PATIENT_COUNT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			scenePatientCount)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SCENE_PATIENT_COUNT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(scenePatientCount)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.SCENE_PATIENT_COUNT__SCENE_PATIENT_COUNT_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("ScenePatientCountCodeP"), new Object[] { scenePatientCount }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.SCENE_PATIENT_COUNT__SCENE_PATIENT_COUNT_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("ScenePatientCountScenePatientCountCodeP"),
+						 new Object [] { scenePatientCount }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -234,7 +239,7 @@ public class ScenePatientCountOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(scenePatientCount);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -248,9 +253,9 @@ public class ScenePatientCountOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SCENE_PATIENT_COUNT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67489-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_SCENE_PATIENT_COUNT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67489-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateScenePatientCountCode(ScenePatientCount, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Scene Patient Count Code</em>}' invariant operation.
@@ -260,8 +265,9 @@ public class ScenePatientCountOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_SCENE_PATIENT_COUNT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -273,36 +279,36 @@ public class ScenePatientCountOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateScenePatientCountCode(ScenePatientCount scenePatientCount,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.ScenePatientCountCodeP");
+	
+	public static  boolean validateScenePatientCountCode(ScenePatientCount scenePatientCount, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.ScenePatientCountCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(scenePatientCount)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_SCENE_PATIENT_COUNT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.SCENE_PATIENT_COUNT);
 			try {
 				VALIDATE_SCENE_PATIENT_COUNT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SCENE_PATIENT_COUNT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SCENE_PATIENT_COUNT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			scenePatientCount)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SCENE_PATIENT_COUNT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(scenePatientCount)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.SCENE_PATIENT_COUNT__SCENE_PATIENT_COUNT_CODE,
-					EmspcrPlugin.INSTANCE.getString("ScenePatientCountCode"), new Object[] { scenePatientCount }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.SCENE_PATIENT_COUNT__SCENE_PATIENT_COUNT_CODE,
+						 EmspcrPlugin.INSTANCE.getString("ScenePatientCountScenePatientCountCode"),
+						 new Object [] { scenePatientCount }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -326,8 +332,9 @@ public class ScenePatientCountOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_SCENE_PATIENT_COUNT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -339,28 +346,30 @@ public class ScenePatientCountOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateScenePatientCountValue(ScenePatientCount scenePatientCount,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateScenePatientCountValue(ScenePatientCount scenePatientCount, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_SCENE_PATIENT_COUNT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.SCENE_PATIENT_COUNT);
 			try {
 				VALIDATE_SCENE_PATIENT_COUNT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SCENE_PATIENT_COUNT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SCENE_PATIENT_COUNT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			scenePatientCount)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_SCENE_PATIENT_COUNT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(scenePatientCount)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.SCENE_PATIENT_COUNT__SCENE_PATIENT_COUNT_VALUE,
-					EmspcrPlugin.INSTANCE.getString("ScenePatientCountValue"), new Object[] { scenePatientCount }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.SCENE_PATIENT_COUNT__SCENE_PATIENT_COUNT_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("ScenePatientCountScenePatientCountValue"),
+						 new Object [] { scenePatientCount }));
 			}
-
+			 
 			return false;
 		}
 		return true;

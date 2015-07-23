@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -41,8 +37,8 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EyeAssessment#validateEyeAssessmentEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Eye Assessment Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EyeAssessment#validateEyeAssessmentValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Eye Assessment Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EyeAssessment#validateEyeAssessmentValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Eye Assessment Value P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EyeAssessment#validateEyeAssessmentTargetSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Eye Assessment Target Site Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EyeAssessment#validateEyeAssessmentTargetSiteCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Eye Assessment Target Site Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EyeAssessment#validateEyeAssessmentTargetSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Eye Assessment Target Site Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -76,8 +72,9 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EYE_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -89,28 +86,30 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEyeAssessmentTemplateId(EyeAssessment eyeAssessment, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEyeAssessmentTemplateId(EyeAssessment eyeAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EYE_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EYE_ASSESSMENT);
 			try {
 				VALIDATE_EYE_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EYE_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EYE_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			eyeAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EYE_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eyeAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EYE_ASSESSMENT__EYE_ASSESSMENT_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("EyeAssessmentTemplateId"), new Object[] { eyeAssessment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EYE_ASSESSMENT__EYE_ASSESSMENT_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("EyeAssessmentEyeAssessmentTemplateId"),
+						 new Object [] { eyeAssessment }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -134,8 +133,9 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EYE_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,28 +147,30 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEyeAssessmentMoodCode(EyeAssessment eyeAssessment, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEyeAssessmentMoodCode(EyeAssessment eyeAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EYE_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EYE_ASSESSMENT);
 			try {
 				VALIDATE_EYE_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EYE_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EYE_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			eyeAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EYE_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eyeAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EYE_ASSESSMENT__EYE_ASSESSMENT_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("EyeAssessmentMoodCode"), new Object[] { eyeAssessment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EYE_ASSESSMENT__EYE_ASSESSMENT_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("EyeAssessmentEyeAssessmentMoodCode"),
+						 new Object [] { eyeAssessment }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -192,8 +194,9 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EYE_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -205,27 +208,30 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEyeAssessmentCodeP(EyeAssessment eyeAssessment, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEyeAssessmentCodeP(EyeAssessment eyeAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EYE_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EYE_ASSESSMENT);
 			try {
 				VALIDATE_EYE_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EYE_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_EYE_ASSESSMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eyeAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EYE_ASSESSMENT__EYE_ASSESSMENT_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("EyeAssessmentCodeP"), new Object[] { eyeAssessment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EYE_ASSESSMENT__EYE_ASSESSMENT_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("EyeAssessmentEyeAssessmentCodeP"),
+						 new Object [] { eyeAssessment }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -237,7 +243,7 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(eyeAssessment);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -251,9 +257,9 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EYE_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67534-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_EYE_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67534-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEyeAssessmentCode(EyeAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Eye Assessment Code</em>}' invariant operation.
@@ -263,8 +269,9 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EYE_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -276,35 +283,36 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEyeAssessmentCode(EyeAssessment eyeAssessment, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.EyeAssessmentCodeP");
+	
+	public static  boolean validateEyeAssessmentCode(EyeAssessment eyeAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.EyeAssessmentCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(eyeAssessment)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_EYE_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EYE_ASSESSMENT);
 			try {
 				VALIDATE_EYE_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EYE_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_EYE_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eyeAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EYE_ASSESSMENT__EYE_ASSESSMENT_CODE,
-					EmspcrPlugin.INSTANCE.getString("EyeAssessmentCode"), new Object[] { eyeAssessment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EYE_ASSESSMENT__EYE_ASSESSMENT_CODE,
+						 EmspcrPlugin.INSTANCE.getString("EyeAssessmentEyeAssessmentCode"),
+						 new Object [] { eyeAssessment }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -328,8 +336,9 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EYE_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -341,28 +350,30 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEyeAssessmentEffectiveTime(EyeAssessment eyeAssessment, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEyeAssessmentEffectiveTime(EyeAssessment eyeAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EYE_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EYE_ASSESSMENT);
 			try {
 				VALIDATE_EYE_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EYE_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EYE_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			eyeAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EYE_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eyeAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EYE_ASSESSMENT__EYE_ASSESSMENT_EFFECTIVE_TIME,
-					EmspcrPlugin.INSTANCE.getString("EyeAssessmentEffectiveTime"), new Object[] { eyeAssessment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EYE_ASSESSMENT__EYE_ASSESSMENT_EFFECTIVE_TIME,
+						 EmspcrPlugin.INSTANCE.getString("EyeAssessmentEyeAssessmentEffectiveTime"),
+						 new Object [] { eyeAssessment }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -376,9 +387,9 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EYE_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA14698-7' or value.code = 'LA15255-5' or value.code = 'LA15256-3' or value.code = 'LA17275-1' or value.code = 'LA17276-9' or value.code = 'LA17277-7' or value.code = 'LA17278-5' or value.code = 'LA17279-3' or value.code = 'LA17280-1' or value.code = 'LA17281-9' or value.code = 'LA17282-7' or value.code = 'LA17283-5' or value.code = 'LA17284-3' or value.code = 'LA17285-0' or value.code = 'LA17710-7' or value.code = 'LA18225-5' or value.code = 'LA18226-3' or value.code = 'LA18250-3' or value.code = 'LA18251-1' or value.code = 'LA18253-7' or value.code = 'LA18254-5' or value.code = 'LA18255-2' or value.code = 'LA18256-0' or value.code = 'LA18257-8' or value.code = 'LA18258-6' or value.code = 'LA6630-3')))";
+	protected static final String VALIDATE_EYE_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA14698-7' or value.code = 'LA15255-5' or value.code = 'LA15256-3' or value.code = 'LA17275-1' or value.code = 'LA17276-9' or value.code = 'LA17277-7' or value.code = 'LA17278-5' or value.code = 'LA17279-3' or value.code = 'LA17280-1' or value.code = 'LA17281-9' or value.code = 'LA17282-7' or value.code = 'LA17283-5' or value.code = 'LA17284-3' or value.code = 'LA17285-0' or value.code = 'LA17710-7' or value.code = 'LA18225-5' or value.code = 'LA18226-3' or value.code = 'LA18250-3' or value.code = 'LA18251-1' or value.code = 'LA18253-7' or value.code = 'LA18254-5' or value.code = 'LA18255-2' or value.code = 'LA18256-0' or value.code = 'LA18257-8' or value.code = 'LA18258-6' or value.code = 'LA6630-3' or value.code = 'LOINC_TBDA_541' or value.code = 'LOINC_TBDA_542' or value.code = 'LOINC_TBDA_543' or value.code = 'LOINC_TBDA_544')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEyeAssessmentValue(EyeAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Eye Assessment Value</em>}' invariant operation.
@@ -388,8 +399,9 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EYE_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -401,27 +413,30 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEyeAssessmentValue(EyeAssessment eyeAssessment, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEyeAssessmentValue(EyeAssessment eyeAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EYE_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EYE_ASSESSMENT);
 			try {
 				VALIDATE_EYE_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EYE_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_EYE_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eyeAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EYE_ASSESSMENT__EYE_ASSESSMENT_VALUE,
-					EmspcrPlugin.INSTANCE.getString("EyeAssessmentValue"), new Object[] { eyeAssessment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EYE_ASSESSMENT__EYE_ASSESSMENT_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("EyeAssessmentEyeAssessmentValue"),
+						 new Object [] { eyeAssessment }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -435,7 +450,7 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EYE_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
+	protected static final String VALIDATE_EYE_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEyeAssessmentValueP(EyeAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Eye Assessment Value P</em>}' invariant operation.
@@ -445,8 +460,9 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EYE_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -458,87 +474,30 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEyeAssessmentValueP(EyeAssessment eyeAssessment, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEyeAssessmentValueP(EyeAssessment eyeAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EYE_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EYE_ASSESSMENT);
 			try {
 				VALIDATE_EYE_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EYE_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
 		if (!EOCL_ENV.createQuery(VALIDATE_EYE_ASSESSMENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eyeAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EYE_ASSESSMENT__EYE_ASSESSMENT_VALUE_P,
-					EmspcrPlugin.INSTANCE.getString("EyeAssessmentValueP"), new Object[] { eyeAssessment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EYE_ASSESSMENT__EYE_ASSESSMENT_VALUE_P,
+						 EmspcrPlugin.INSTANCE.getString("EyeAssessmentEyeAssessmentValueP"),
+						 new Object [] { eyeAssessment }));
 			}
-
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateEyeAssessmentTargetSiteCode(EyeAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Eye Assessment Target Site Code</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateEyeAssessmentTargetSiteCode(EyeAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_EYE_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->size() = 1 and self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA18787-4' or value.code = 'LA18788-2' or value.code = 'LA18789-0')))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateEyeAssessmentTargetSiteCode(EyeAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Eye Assessment Target Site Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateEyeAssessmentTargetSiteCode(EyeAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_EYE_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param eyeAssessment The receiving '<em><b>Eye Assessment</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateEyeAssessmentTargetSiteCode(EyeAssessment eyeAssessment, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		if (VALIDATE_EYE_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(EmspcrPackage.Literals.EYE_ASSESSMENT);
-			try {
-				VALIDATE_EYE_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EYE_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EYE_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			eyeAssessment)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EYE_ASSESSMENT__EYE_ASSESSMENT_TARGET_SITE_CODE,
-					EmspcrPlugin.INSTANCE.getString("EyeAssessmentTargetSiteCode"), new Object[] { eyeAssessment }));
-			}
-
+			 
 			return false;
 		}
 		return true;
@@ -552,7 +511,7 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EYE_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->size() = 1)";
+	protected static final String VALIDATE_EYE_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode->isEmpty())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEyeAssessmentTargetSiteCodeP(EyeAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Eye Assessment Target Site Code P</em>}' invariant operation.
@@ -562,8 +521,9 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EYE_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -575,28 +535,111 @@ public class EyeAssessmentOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEyeAssessmentTargetSiteCodeP(EyeAssessment eyeAssessment,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateEyeAssessmentTargetSiteCodeP(EyeAssessment eyeAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EYE_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EYE_ASSESSMENT);
 			try {
 				VALIDATE_EYE_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EYE_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EYE_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			eyeAssessment)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EYE_ASSESSMENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eyeAssessment)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EYE_ASSESSMENT__EYE_ASSESSMENT_TARGET_SITE_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("EyeAssessmentTargetSiteCodeP"), new Object[] { eyeAssessment }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EYE_ASSESSMENT__EYE_ASSESSMENT_TARGET_SITE_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("EyeAssessmentEyeAssessmentTargetSiteCodeP"),
+						 new Object [] { eyeAssessment }));
 			}
+			
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.emspcr.EyeAssessmentTargetSiteCodeP");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.openhealthtools.mdht.uml.cda.emspcr.EyeAssessmentTargetSiteCodeP", passToken);
+				}
+				passToken.add(eyeAssessment);
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
+	/**
+	 * The cached OCL expression body for the '{@link #validateEyeAssessmentTargetSiteCode(EyeAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Eye Assessment Target Site Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateEyeAssessmentTargetSiteCode(EyeAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_EYE_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.targetSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA18787-4' or value.code = 'LA18788-2' or value.code = 'LA18789-0')))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateEyeAssessmentTargetSiteCode(EyeAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Eye Assessment Target Site Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateEyeAssessmentTargetSiteCode(EyeAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_EYE_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param eyeAssessment The receiving '<em><b>Eye Assessment</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateEyeAssessmentTargetSiteCode(EyeAssessment eyeAssessment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.EyeAssessmentTargetSiteCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(eyeAssessment)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+  	  
+		if (VALIDATE_EYE_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(EmspcrPackage.Literals.EYE_ASSESSMENT);
+			try {
+				VALIDATE_EYE_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EYE_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_EYE_ASSESSMENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eyeAssessment)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EYE_ASSESSMENT__EYE_ASSESSMENT_TARGET_SITE_CODE,
+						 EmspcrPlugin.INSTANCE.getString("EyeAssessmentEyeAssessmentTargetSiteCode"),
+						 new Object [] { eyeAssessment }));
+			}
+			 
 			return false;
 		}
 		return true;

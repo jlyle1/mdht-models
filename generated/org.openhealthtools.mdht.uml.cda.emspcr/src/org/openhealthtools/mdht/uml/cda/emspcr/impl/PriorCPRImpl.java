@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -58,8 +54,8 @@ public class PriorCPRImpl extends ObservationImpl implements PriorCPR {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePriorCPRProviderParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PriorCPROperations.validatePriorCPRProviderParticipation(this, diagnostics, context);
+	public boolean validatePriorCPRPriorCPRProviderParticipation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PriorCPROperations.validatePriorCPRPriorCPRProviderParticipation(this, diagnostics, context);
 	}
 
 	/**
@@ -104,16 +100,15 @@ public class PriorCPRImpl extends ObservationImpl implements PriorCPR {
 	 * @generated
 	 */
 	public PriorCPR init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PriorCPR init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // PriorCPRImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PriorCPR init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //PriorCPRImpl

@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -73,8 +69,9 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,31 +83,30 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validatePrearrivalActivationObservationTemplateId(
-			PrearrivalActivationObservation prearrivalActivationObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validatePrearrivalActivationObservationTemplateId(PrearrivalActivationObservation prearrivalActivationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PREARRIVAL_ACTIVATION_OBSERVATION);
 			try {
 				VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			prearrivalActivationObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(prearrivalActivationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PREARRIVAL_ACTIVATION_OBSERVATION__PREARRIVAL_ACTIVATION_OBSERVATION_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("PrearrivalActivationObservationTemplateId"),
-					new Object[] { prearrivalActivationObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PREARRIVAL_ACTIVATION_OBSERVATION__PREARRIVAL_ACTIVATION_OBSERVATION_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("PrearrivalActivationObservationPrearrivalActivationObservationTemplateId"),
+						 new Object [] { prearrivalActivationObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -134,8 +130,9 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,30 +144,30 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validatePrearrivalActivationObservationMoodCode(
-			PrearrivalActivationObservation prearrivalActivationObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validatePrearrivalActivationObservationMoodCode(PrearrivalActivationObservation prearrivalActivationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PREARRIVAL_ACTIVATION_OBSERVATION);
 			try {
 				VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			prearrivalActivationObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(prearrivalActivationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PREARRIVAL_ACTIVATION_OBSERVATION__PREARRIVAL_ACTIVATION_OBSERVATION_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("PrearrivalActivationObservationMoodCode"),
-					new Object[] { prearrivalActivationObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PREARRIVAL_ACTIVATION_OBSERVATION__PREARRIVAL_ACTIVATION_OBSERVATION_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("PrearrivalActivationObservationPrearrivalActivationObservationMoodCode"),
+						 new Object [] { prearrivalActivationObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -194,8 +191,9 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -207,30 +205,30 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validatePrearrivalActivationObservationCodeP(
-			PrearrivalActivationObservation prearrivalActivationObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validatePrearrivalActivationObservationCodeP(PrearrivalActivationObservation prearrivalActivationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PREARRIVAL_ACTIVATION_OBSERVATION);
 			try {
 				VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			prearrivalActivationObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(prearrivalActivationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PREARRIVAL_ACTIVATION_OBSERVATION__PREARRIVAL_ACTIVATION_OBSERVATION_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("PrearrivalActivationObservationCodeP"),
-					new Object[] { prearrivalActivationObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PREARRIVAL_ACTIVATION_OBSERVATION__PREARRIVAL_ACTIVATION_OBSERVATION_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("PrearrivalActivationObservationPrearrivalActivationObservationCodeP"),
+						 new Object [] { prearrivalActivationObservation }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -238,12 +236,11 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
-					context.put(
-						"org.openhealthtools.mdht.uml.cda.emspcr.PrearrivalActivationObservationCodeP", passToken);
+					context.put("org.openhealthtools.mdht.uml.cda.emspcr.PrearrivalActivationObservationCodeP", passToken);
 				}
 				passToken.add(prearrivalActivationObservation);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -257,9 +254,9 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '69462-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '69462-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePrearrivalActivationObservationCode(PrearrivalActivationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prearrival Activation Observation Code</em>}' invariant operation.
@@ -269,8 +266,9 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -282,39 +280,36 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validatePrearrivalActivationObservationCode(
-			PrearrivalActivationObservation prearrivalActivationObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.PrearrivalActivationObservationCodeP");
-		if ((passToken instanceof Collection<?>) &&
-				((Collection<?>) passToken).contains(prearrivalActivationObservation)) {
+	
+	public static  boolean validatePrearrivalActivationObservationCode(PrearrivalActivationObservation prearrivalActivationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.PrearrivalActivationObservationCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(prearrivalActivationObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PREARRIVAL_ACTIVATION_OBSERVATION);
 			try {
 				VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			prearrivalActivationObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(prearrivalActivationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PREARRIVAL_ACTIVATION_OBSERVATION__PREARRIVAL_ACTIVATION_OBSERVATION_CODE,
-					EmspcrPlugin.INSTANCE.getString("PrearrivalActivationObservationCode"),
-					new Object[] { prearrivalActivationObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PREARRIVAL_ACTIVATION_OBSERVATION__PREARRIVAL_ACTIVATION_OBSERVATION_CODE,
+						 EmspcrPlugin.INSTANCE.getString("PrearrivalActivationObservationPrearrivalActivationObservationCode"),
+						 new Object [] { prearrivalActivationObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -338,8 +333,9 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -351,32 +347,30 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validatePrearrivalActivationObservationEffectiveTime(
-			PrearrivalActivationObservation prearrivalActivationObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validatePrearrivalActivationObservationEffectiveTime(PrearrivalActivationObservation prearrivalActivationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PREARRIVAL_ACTIVATION_OBSERVATION);
 			try {
 				VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			prearrivalActivationObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(prearrivalActivationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PREARRIVAL_ACTIVATION_OBSERVATION__PREARRIVAL_ACTIVATION_OBSERVATION_EFFECTIVE_TIME,
-					EmspcrPlugin.INSTANCE.getString("PrearrivalActivationObservationEffectiveTime"),
-					new Object[] { prearrivalActivationObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PREARRIVAL_ACTIVATION_OBSERVATION__PREARRIVAL_ACTIVATION_OBSERVATION_EFFECTIVE_TIME,
+						 EmspcrPlugin.INSTANCE.getString("PrearrivalActivationObservationPrearrivalActivationObservationEffectiveTime"),
+						 new Object [] { prearrivalActivationObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -400,8 +394,9 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -413,30 +408,30 @@ public class PrearrivalActivationObservationOperations extends ClinicalStatement
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validatePrearrivalActivationObservationValue(
-			PrearrivalActivationObservation prearrivalActivationObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validatePrearrivalActivationObservationValue(PrearrivalActivationObservation prearrivalActivationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PREARRIVAL_ACTIVATION_OBSERVATION);
 			try {
 				VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			prearrivalActivationObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PREARRIVAL_ACTIVATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(prearrivalActivationObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PREARRIVAL_ACTIVATION_OBSERVATION__PREARRIVAL_ACTIVATION_OBSERVATION_VALUE,
-					EmspcrPlugin.INSTANCE.getString("PrearrivalActivationObservationValue"),
-					new Object[] { prearrivalActivationObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PREARRIVAL_ACTIVATION_OBSERVATION__PREARRIVAL_ACTIVATION_OBSERVATION_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("PrearrivalActivationObservationPrearrivalActivationObservationValue"),
+						 new Object [] { prearrivalActivationObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;

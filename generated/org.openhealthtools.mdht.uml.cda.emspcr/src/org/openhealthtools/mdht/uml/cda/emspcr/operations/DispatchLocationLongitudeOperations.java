@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -70,8 +66,9 @@ public class DispatchLocationLongitudeOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_DISPATCH_LOCATION_LONGITUDE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -83,30 +80,30 @@ public class DispatchLocationLongitudeOperations extends ClinicalStatementOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateDispatchLocationLongitudeTemplateId(
-			DispatchLocationLongitude dispatchLocationLongitude, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateDispatchLocationLongitudeTemplateId(DispatchLocationLongitude dispatchLocationLongitude, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_DISPATCH_LOCATION_LONGITUDE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_LOCATION_LONGITUDE);
 			try {
 				VALIDATE_DISPATCH_LOCATION_LONGITUDE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_LOCATION_LONGITUDE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_LOCATION_LONGITUDE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dispatchLocationLongitude)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_LOCATION_LONGITUDE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dispatchLocationLongitude)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_LOCATION_LONGITUDE__DISPATCH_LOCATION_LONGITUDE_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("DispatchLocationLongitudeTemplateId"),
-					new Object[] { dispatchLocationLongitude }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_LOCATION_LONGITUDE__DISPATCH_LOCATION_LONGITUDE_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("DispatchLocationLongitudeDispatchLocationLongitudeTemplateId"),
+						 new Object [] { dispatchLocationLongitude }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -130,8 +127,9 @@ public class DispatchLocationLongitudeOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_DISPATCH_LOCATION_LONGITUDE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -143,30 +141,30 @@ public class DispatchLocationLongitudeOperations extends ClinicalStatementOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateDispatchLocationLongitudeMoodCode(
-			DispatchLocationLongitude dispatchLocationLongitude, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateDispatchLocationLongitudeMoodCode(DispatchLocationLongitude dispatchLocationLongitude, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_DISPATCH_LOCATION_LONGITUDE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_LOCATION_LONGITUDE);
 			try {
 				VALIDATE_DISPATCH_LOCATION_LONGITUDE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_LOCATION_LONGITUDE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_LOCATION_LONGITUDE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dispatchLocationLongitude)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_LOCATION_LONGITUDE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dispatchLocationLongitude)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_LOCATION_LONGITUDE__DISPATCH_LOCATION_LONGITUDE_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("DispatchLocationLongitudeMoodCode"),
-					new Object[] { dispatchLocationLongitude }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_LOCATION_LONGITUDE__DISPATCH_LOCATION_LONGITUDE_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("DispatchLocationLongitudeDispatchLocationLongitudeMoodCode"),
+						 new Object [] { dispatchLocationLongitude }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -180,9 +178,9 @@ public class DispatchLocationLongitudeOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DISPATCH_LOCATION_LONGITUDE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '52003-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_DISPATCH_LOCATION_LONGITUDE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '52003-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDispatchLocationLongitudeCode(DispatchLocationLongitude, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Location Longitude Code</em>}' invariant operation.
@@ -192,8 +190,9 @@ public class DispatchLocationLongitudeOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_DISPATCH_LOCATION_LONGITUDE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -205,29 +204,30 @@ public class DispatchLocationLongitudeOperations extends ClinicalStatementOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateDispatchLocationLongitudeCode(DispatchLocationLongitude dispatchLocationLongitude,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateDispatchLocationLongitudeCode(DispatchLocationLongitude dispatchLocationLongitude, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_DISPATCH_LOCATION_LONGITUDE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_LOCATION_LONGITUDE);
 			try {
 				VALIDATE_DISPATCH_LOCATION_LONGITUDE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_LOCATION_LONGITUDE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_LOCATION_LONGITUDE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dispatchLocationLongitude)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_LOCATION_LONGITUDE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dispatchLocationLongitude)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_LOCATION_LONGITUDE__DISPATCH_LOCATION_LONGITUDE_CODE,
-					EmspcrPlugin.INSTANCE.getString("DispatchLocationLongitudeCode"),
-					new Object[] { dispatchLocationLongitude }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_LOCATION_LONGITUDE__DISPATCH_LOCATION_LONGITUDE_CODE,
+						 EmspcrPlugin.INSTANCE.getString("DispatchLocationLongitudeDispatchLocationLongitudeCode"),
+						 new Object [] { dispatchLocationLongitude }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -251,8 +251,9 @@ public class DispatchLocationLongitudeOperations extends ClinicalStatementOperat
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_DISPATCH_LOCATION_LONGITUDE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -264,29 +265,30 @@ public class DispatchLocationLongitudeOperations extends ClinicalStatementOperat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateDispatchLocationLongitudeValue(DispatchLocationLongitude dispatchLocationLongitude,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+	
+	public static  boolean validateDispatchLocationLongitudeValue(DispatchLocationLongitude dispatchLocationLongitude, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_DISPATCH_LOCATION_LONGITUDE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_LOCATION_LONGITUDE);
 			try {
 				VALIDATE_DISPATCH_LOCATION_LONGITUDE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_LOCATION_LONGITUDE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_LOCATION_LONGITUDE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dispatchLocationLongitude)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_LOCATION_LONGITUDE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dispatchLocationLongitude)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_LOCATION_LONGITUDE__DISPATCH_LOCATION_LONGITUDE_VALUE,
-					EmspcrPlugin.INSTANCE.getString("DispatchLocationLongitudeValue"),
-					new Object[] { dispatchLocationLongitude }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_LOCATION_LONGITUDE__DISPATCH_LOCATION_LONGITUDE_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("DispatchLocationLongitudeDispatchLocationLongitudeValue"),
+						 new Object [] { dispatchLocationLongitude }));
 			}
-
+			 
 			return false;
 		}
 		return true;

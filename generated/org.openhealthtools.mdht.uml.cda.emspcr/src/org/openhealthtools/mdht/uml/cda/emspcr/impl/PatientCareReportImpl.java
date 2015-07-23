@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -39,10 +35,10 @@ import org.openhealthtools.mdht.uml.cda.emspcr.EMSResponseSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSSceneSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSSituationSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSSocialHistorySection;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSTimesSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSVitalSignsSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport;
-import org.openhealthtools.mdht.uml.cda.emspcr.TimesSection;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.PatientCareReportOperations;
 
@@ -161,10 +157,8 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientCareReportAllergiesAndAdverseReactionsSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PatientCareReportOperations.validatePatientCareReportAllergiesAndAdverseReactionsSection(
-			this, diagnostics, context);
+	public boolean validatePatientCareReportAllergiesAndAdverseReactionsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientCareReportOperations.validatePatientCareReportAllergiesAndAdverseReactionsSection(this, diagnostics, context);
 	}
 
 	/**
@@ -172,10 +166,8 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientCareReportPastMedicalHistorySection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PatientCareReportOperations.validatePatientCareReportPastMedicalHistorySection(
-			this, diagnostics, context);
+	public boolean validatePatientCareReportPastMedicalHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientCareReportOperations.validatePatientCareReportPastMedicalHistorySection(this, diagnostics, context);
 	}
 
 	/**
@@ -183,8 +175,7 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientCareReportSocialHistorySection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validatePatientCareReportSocialHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validatePatientCareReportSocialHistorySection(this, diagnostics, context);
 	}
 
@@ -193,10 +184,8 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientCareReportPhysicalAssessmentSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PatientCareReportOperations.validatePatientCareReportPhysicalAssessmentSection(
-			this, diagnostics, context);
+	public boolean validatePatientCareReportPhysicalAssessmentSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientCareReportOperations.validatePatientCareReportPhysicalAssessmentSection(this, diagnostics, context);
 	}
 
 	/**
@@ -204,10 +193,8 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientCareReportMedicationsAdministeredSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PatientCareReportOperations.validatePatientCareReportMedicationsAdministeredSection(
-			this, diagnostics, context);
+	public boolean validatePatientCareReportMedicationsAdministeredSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientCareReportOperations.validatePatientCareReportMedicationsAdministeredSection(this, diagnostics, context);
 	}
 
 	/**
@@ -215,10 +202,8 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientCareReportProceduresPerformedSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PatientCareReportOperations.validatePatientCareReportProceduresPerformedSection(
-			this, diagnostics, context);
+	public boolean validatePatientCareReportProceduresPerformedSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientCareReportOperations.validatePatientCareReportProceduresPerformedSection(this, diagnostics, context);
 	}
 
 	/**
@@ -226,10 +211,8 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientCareReportPatientCareNarrativeSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PatientCareReportOperations.validatePatientCareReportPatientCareNarrativeSection(
-			this, diagnostics, context);
+	public boolean validatePatientCareReportPatientCareNarrativeSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientCareReportOperations.validatePatientCareReportPatientCareNarrativeSection(this, diagnostics, context);
 	}
 
 	/**
@@ -264,10 +247,8 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientCareReportPersonnelAdverseEventSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PatientCareReportOperations.validatePatientCareReportPersonnelAdverseEventSection(
-			this, diagnostics, context);
+	public boolean validatePatientCareReportPersonnelAdverseEventSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientCareReportOperations.validatePatientCareReportPersonnelAdverseEventSection(this, diagnostics, context);
 	}
 
 	/**
@@ -356,10 +337,8 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientCareReportInjuryIncidentDescriptionSection(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return PatientCareReportOperations.validatePatientCareReportInjuryIncidentDescriptionSection(
-			this, diagnostics, context);
+	public boolean validatePatientCareReportInjuryIncidentDescriptionSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientCareReportOperations.validatePatientCareReportInjuryIncidentDescriptionSection(this, diagnostics, context);
 	}
 
 	/**
@@ -529,7 +508,7 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TimesSection getTimesSection() {
+	public EMSTimesSection getTimesSection() {
 		return PatientCareReportOperations.getTimesSection(this);
 	}
 
@@ -596,8 +575,7 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsVersionNumber(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsVersionNumber(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientCareReportOperations.validateGeneralHeaderConstraintsVersionNumber(this, diagnostics, context);
 	}
 
@@ -626,19 +604,16 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
 	public PatientCareReport init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public PatientCareReport init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // PatientCareReportImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PatientCareReport init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //PatientCareReportImpl

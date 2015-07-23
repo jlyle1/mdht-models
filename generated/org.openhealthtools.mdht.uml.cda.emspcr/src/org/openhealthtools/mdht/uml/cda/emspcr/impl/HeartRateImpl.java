@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -17,12 +13,12 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
-import org.openhealthtools.mdht.uml.cda.consol.impl.VitalSignObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.HeartRate;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.HeartRateOperations;
+
+import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,7 +29,7 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.HeartRateOperations;
  *
  * @generated
  */
-public class HeartRateImpl extends VitalSignObservationImpl implements HeartRate {
+public class HeartRateImpl extends ObservationImpl implements HeartRate {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -51,6 +47,15 @@ public class HeartRateImpl extends VitalSignObservationImpl implements HeartRate
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.HEART_RATE;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHeartRateTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HeartRateOperations.validateHeartRateTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -103,29 +108,16 @@ public class HeartRateImpl extends VitalSignObservationImpl implements HeartRate
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateVitalSignObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HeartRateOperations.validateVitalSignObservationTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public HeartRate init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public HeartRate init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // HeartRateImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public HeartRate init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //HeartRateImpl

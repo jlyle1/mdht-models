@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -59,10 +55,8 @@ public class EMSCardiacArrestEventSectionImpl extends SectionImpl implements EMS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSCardiacArrestEventSectionTemplateId(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EMSCardiacArrestEventSectionOperations.validateEMSCardiacArrestEventSectionTemplateId(
-			this, diagnostics, context);
+	public boolean validateEMSCardiacArrestEventSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSCardiacArrestEventSectionOperations.validateEMSCardiacArrestEventSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +65,7 @@ public class EMSCardiacArrestEventSectionImpl extends SectionImpl implements EMS
 	 * @generated
 	 */
 	public boolean validateEMSCardiacArrestEventSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSCardiacArrestEventSectionOperations.validateEMSCardiacArrestEventSectionCode(
-			this, diagnostics, context);
+		return EMSCardiacArrestEventSectionOperations.validateEMSCardiacArrestEventSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -81,8 +74,7 @@ public class EMSCardiacArrestEventSectionImpl extends SectionImpl implements EMS
 	 * @generated
 	 */
 	public boolean validateEMSCardiacArrestEventSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSCardiacArrestEventSectionOperations.validateEMSCardiacArrestEventSectionTitle(
-			this, diagnostics, context);
+		return EMSCardiacArrestEventSectionOperations.validateEMSCardiacArrestEventSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +83,7 @@ public class EMSCardiacArrestEventSectionImpl extends SectionImpl implements EMS
 	 * @generated
 	 */
 	public boolean validateEMSCardiacArrestEventSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSCardiacArrestEventSectionOperations.validateEMSCardiacArrestEventSectionText(
-			this, diagnostics, context);
+		return EMSCardiacArrestEventSectionOperations.validateEMSCardiacArrestEventSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -100,10 +91,8 @@ public class EMSCardiacArrestEventSectionImpl extends SectionImpl implements EMS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEMSCardiacArrestEventSectionCardiacArrestExistence(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return EMSCardiacArrestEventSectionOperations.validateEMSCardiacArrestEventSectionCardiacArrestExistence(
-			this, diagnostics, context);
+	public boolean validateEMSCardiacArrestEventSectionCardiacArrestExistence(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EMSCardiacArrestEventSectionOperations.validateEMSCardiacArrestEventSectionCardiacArrestExistence(this, diagnostics, context);
 	}
 
 	/**
@@ -121,16 +110,15 @@ public class EMSCardiacArrestEventSectionImpl extends SectionImpl implements EMS
 	 * @generated
 	 */
 	public EMSCardiacArrestEventSection init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMSCardiacArrestEventSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // EMSCardiacArrestEventSectionImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public EMSCardiacArrestEventSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //EMSCardiacArrestEventSectionImpl

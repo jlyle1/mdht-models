@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -72,8 +68,9 @@ public class ProcedureNumberOfAttemptsObservationOperations extends ClinicalStat
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,32 +82,30 @@ public class ProcedureNumberOfAttemptsObservationOperations extends ClinicalStat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateProcedureNumberOfAttemptsObservationTemplateId(
-			ProcedureNumberOfAttemptsObservation procedureNumberOfAttemptsObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateProcedureNumberOfAttemptsObservationTemplateId(ProcedureNumberOfAttemptsObservation procedureNumberOfAttemptsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION);
 			try {
 				VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureNumberOfAttemptsObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureNumberOfAttemptsObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION__PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("ProcedureNumberOfAttemptsObservationTemplateId"),
-					new Object[] { procedureNumberOfAttemptsObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION__PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("ProcedureNumberOfAttemptsObservationProcedureNumberOfAttemptsObservationTemplateId"),
+						 new Object [] { procedureNumberOfAttemptsObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -134,8 +129,9 @@ public class ProcedureNumberOfAttemptsObservationOperations extends ClinicalStat
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,32 +143,30 @@ public class ProcedureNumberOfAttemptsObservationOperations extends ClinicalStat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateProcedureNumberOfAttemptsObservationMoodCode(
-			ProcedureNumberOfAttemptsObservation procedureNumberOfAttemptsObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateProcedureNumberOfAttemptsObservationMoodCode(ProcedureNumberOfAttemptsObservation procedureNumberOfAttemptsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION);
 			try {
 				VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureNumberOfAttemptsObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureNumberOfAttemptsObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION__PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("ProcedureNumberOfAttemptsObservationMoodCode"),
-					new Object[] { procedureNumberOfAttemptsObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION__PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("ProcedureNumberOfAttemptsObservationProcedureNumberOfAttemptsObservationMoodCode"),
+						 new Object [] { procedureNumberOfAttemptsObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -196,8 +190,9 @@ public class ProcedureNumberOfAttemptsObservationOperations extends ClinicalStat
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -209,32 +204,30 @@ public class ProcedureNumberOfAttemptsObservationOperations extends ClinicalStat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateProcedureNumberOfAttemptsObservationCodeP(
-			ProcedureNumberOfAttemptsObservation procedureNumberOfAttemptsObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateProcedureNumberOfAttemptsObservationCodeP(ProcedureNumberOfAttemptsObservation procedureNumberOfAttemptsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION);
 			try {
 				VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureNumberOfAttemptsObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureNumberOfAttemptsObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION__PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("ProcedureNumberOfAttemptsObservationCodeP"),
-					new Object[] { procedureNumberOfAttemptsObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION__PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("ProcedureNumberOfAttemptsObservationProcedureNumberOfAttemptsObservationCodeP"),
+						 new Object [] { procedureNumberOfAttemptsObservation }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -242,12 +235,11 @@ public class ProcedureNumberOfAttemptsObservationOperations extends ClinicalStat
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
-					context.put(
-						"org.openhealthtools.mdht.uml.cda.emspcr.ProcedureNumberOfAttemptsObservationCodeP", passToken);
+					context.put("org.openhealthtools.mdht.uml.cda.emspcr.ProcedureNumberOfAttemptsObservationCodeP", passToken);
 				}
 				passToken.add(procedureNumberOfAttemptsObservation);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -261,9 +253,9 @@ public class ProcedureNumberOfAttemptsObservationOperations extends ClinicalStat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67543-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67543-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureNumberOfAttemptsObservationCode(ProcedureNumberOfAttemptsObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Number Of Attempts Observation Code</em>}' invariant operation.
@@ -273,8 +265,9 @@ public class ProcedureNumberOfAttemptsObservationOperations extends ClinicalStat
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -286,41 +279,36 @@ public class ProcedureNumberOfAttemptsObservationOperations extends ClinicalStat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateProcedureNumberOfAttemptsObservationCode(
-			ProcedureNumberOfAttemptsObservation procedureNumberOfAttemptsObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.ProcedureNumberOfAttemptsObservationCodeP");
-		if ((passToken instanceof Collection<?>) &&
-				((Collection<?>) passToken).contains(procedureNumberOfAttemptsObservation)) {
+	
+	public static  boolean validateProcedureNumberOfAttemptsObservationCode(ProcedureNumberOfAttemptsObservation procedureNumberOfAttemptsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.ProcedureNumberOfAttemptsObservationCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(procedureNumberOfAttemptsObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION);
 			try {
 				VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureNumberOfAttemptsObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureNumberOfAttemptsObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION__PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_CODE,
-					EmspcrPlugin.INSTANCE.getString("ProcedureNumberOfAttemptsObservationCode"),
-					new Object[] { procedureNumberOfAttemptsObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION__PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_CODE,
+						 EmspcrPlugin.INSTANCE.getString("ProcedureNumberOfAttemptsObservationProcedureNumberOfAttemptsObservationCode"),
+						 new Object [] { procedureNumberOfAttemptsObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -344,8 +332,9 @@ public class ProcedureNumberOfAttemptsObservationOperations extends ClinicalStat
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -357,32 +346,30 @@ public class ProcedureNumberOfAttemptsObservationOperations extends ClinicalStat
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateProcedureNumberOfAttemptsObservationValue(
-			ProcedureNumberOfAttemptsObservation procedureNumberOfAttemptsObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateProcedureNumberOfAttemptsObservationValue(ProcedureNumberOfAttemptsObservation procedureNumberOfAttemptsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION);
 			try {
 				VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			procedureNumberOfAttemptsObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureNumberOfAttemptsObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION__PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_VALUE,
-					EmspcrPlugin.INSTANCE.getString("ProcedureNumberOfAttemptsObservationValue"),
-					new Object[] { procedureNumberOfAttemptsObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION__PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("ProcedureNumberOfAttemptsObservationProcedureNumberOfAttemptsObservationValue"),
+						 new Object [] { procedureNumberOfAttemptsObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;

@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
@@ -17,12 +13,12 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
-import org.openhealthtools.mdht.uml.cda.consol.impl.VitalSignObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.SystolicBloodPressure;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.SystolicBloodPressureOperations;
+
+import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,7 +29,7 @@ import org.openhealthtools.mdht.uml.cda.emspcr.operations.SystolicBloodPressureO
  *
  * @generated
  */
-public class SystolicBloodPressureImpl extends VitalSignObservationImpl implements SystolicBloodPressure {
+public class SystolicBloodPressureImpl extends ObservationImpl implements SystolicBloodPressure {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -51,6 +47,15 @@ public class SystolicBloodPressureImpl extends VitalSignObservationImpl implemen
 	@Override
 	protected EClass eStaticClass() {
 		return EmspcrPackage.Literals.SYSTOLIC_BLOOD_PRESSURE;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSystolicBloodPressureTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SystolicBloodPressureOperations.validateSystolicBloodPressureTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -76,6 +81,15 @@ public class SystolicBloodPressureImpl extends VitalSignObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSystolicBloodPressureEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SystolicBloodPressureOperations.validateSystolicBloodPressureEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSystolicBloodPressureValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SystolicBloodPressureOperations.validateSystolicBloodPressureValue(this, diagnostics, context);
 	}
@@ -85,9 +99,8 @@ public class SystolicBloodPressureImpl extends VitalSignObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateVitalSignObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SystolicBloodPressureOperations.validateVitalSignObservationTemplateId(this, diagnostics, context);
+	public boolean validateSystolicBloodPressureMethodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SystolicBloodPressureOperations.validateSystolicBloodPressureMethodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -95,29 +108,16 @@ public class SystolicBloodPressureImpl extends VitalSignObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateVitalSignObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SystolicBloodPressureOperations.validateVitalSignObservationEffectiveTime(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public SystolicBloodPressure init() {
-		return Initializer.Util.init(this);
+	    return Initializer.Util.init(this);
 	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public SystolicBloodPressure init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
-} // SystolicBloodPressureImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public SystolicBloodPressure init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //SystolicBloodPressureImpl

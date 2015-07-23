@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -73,8 +69,9 @@ public class AbandonedProcedureReasonObservationOperations extends ClinicalState
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,32 +83,30 @@ public class AbandonedProcedureReasonObservationOperations extends ClinicalState
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateAbandonedProcedureReasonObservationTemplateId(
-			AbandonedProcedureReasonObservation abandonedProcedureReasonObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateAbandonedProcedureReasonObservationTemplateId(AbandonedProcedureReasonObservation abandonedProcedureReasonObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ABANDONED_PROCEDURE_REASON_OBSERVATION);
 			try {
 				VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			abandonedProcedureReasonObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(abandonedProcedureReasonObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.ABANDONED_PROCEDURE_REASON_OBSERVATION__ABANDONED_PROCEDURE_REASON_OBSERVATION_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("AbandonedProcedureReasonObservationTemplateId"),
-					new Object[] { abandonedProcedureReasonObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.ABANDONED_PROCEDURE_REASON_OBSERVATION__ABANDONED_PROCEDURE_REASON_OBSERVATION_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("AbandonedProcedureReasonObservationAbandonedProcedureReasonObservationTemplateId"),
+						 new Object [] { abandonedProcedureReasonObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -135,8 +130,9 @@ public class AbandonedProcedureReasonObservationOperations extends ClinicalState
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,32 +144,30 @@ public class AbandonedProcedureReasonObservationOperations extends ClinicalState
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateAbandonedProcedureReasonObservationMoodCode(
-			AbandonedProcedureReasonObservation abandonedProcedureReasonObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateAbandonedProcedureReasonObservationMoodCode(AbandonedProcedureReasonObservation abandonedProcedureReasonObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ABANDONED_PROCEDURE_REASON_OBSERVATION);
 			try {
 				VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			abandonedProcedureReasonObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(abandonedProcedureReasonObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.ABANDONED_PROCEDURE_REASON_OBSERVATION__ABANDONED_PROCEDURE_REASON_OBSERVATION_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("AbandonedProcedureReasonObservationMoodCode"),
-					new Object[] { abandonedProcedureReasonObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.ABANDONED_PROCEDURE_REASON_OBSERVATION__ABANDONED_PROCEDURE_REASON_OBSERVATION_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("AbandonedProcedureReasonObservationAbandonedProcedureReasonObservationMoodCode"),
+						 new Object [] { abandonedProcedureReasonObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -197,8 +191,9 @@ public class AbandonedProcedureReasonObservationOperations extends ClinicalState
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -210,32 +205,30 @@ public class AbandonedProcedureReasonObservationOperations extends ClinicalState
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateAbandonedProcedureReasonObservationCodeP(
-			AbandonedProcedureReasonObservation abandonedProcedureReasonObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateAbandonedProcedureReasonObservationCodeP(AbandonedProcedureReasonObservation abandonedProcedureReasonObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ABANDONED_PROCEDURE_REASON_OBSERVATION);
 			try {
 				VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			abandonedProcedureReasonObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(abandonedProcedureReasonObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.ABANDONED_PROCEDURE_REASON_OBSERVATION__ABANDONED_PROCEDURE_REASON_OBSERVATION_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("AbandonedProcedureReasonObservationCodeP"),
-					new Object[] { abandonedProcedureReasonObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.ABANDONED_PROCEDURE_REASON_OBSERVATION__ABANDONED_PROCEDURE_REASON_OBSERVATION_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("AbandonedProcedureReasonObservationAbandonedProcedureReasonObservationCodeP"),
+						 new Object [] { abandonedProcedureReasonObservation }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -243,12 +236,11 @@ public class AbandonedProcedureReasonObservationOperations extends ClinicalState
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
-					context.put(
-						"org.openhealthtools.mdht.uml.cda.emspcr.AbandonedProcedureReasonObservationCodeP", passToken);
+					context.put("org.openhealthtools.mdht.uml.cda.emspcr.AbandonedProcedureReasonObservationCodeP", passToken);
 				}
 				passToken.add(abandonedProcedureReasonObservation);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -262,9 +254,9 @@ public class AbandonedProcedureReasonObservationOperations extends ClinicalState
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')";
+	protected static final String VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAbandonedProcedureReasonObservationCode(AbandonedProcedureReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Abandoned Procedure Reason Observation Code</em>}' invariant operation.
@@ -274,8 +266,9 @@ public class AbandonedProcedureReasonObservationOperations extends ClinicalState
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -287,40 +280,36 @@ public class AbandonedProcedureReasonObservationOperations extends ClinicalState
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateAbandonedProcedureReasonObservationCode(
-			AbandonedProcedureReasonObservation abandonedProcedureReasonObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.AbandonedProcedureReasonObservationCodeP");
-		if ((passToken instanceof Collection<?>) &&
-				((Collection<?>) passToken).contains(abandonedProcedureReasonObservation)) {
+	
+	public static  boolean validateAbandonedProcedureReasonObservationCode(AbandonedProcedureReasonObservation abandonedProcedureReasonObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.AbandonedProcedureReasonObservationCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(abandonedProcedureReasonObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ABANDONED_PROCEDURE_REASON_OBSERVATION);
 			try {
 				VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			abandonedProcedureReasonObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(abandonedProcedureReasonObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.ABANDONED_PROCEDURE_REASON_OBSERVATION__ABANDONED_PROCEDURE_REASON_OBSERVATION_CODE,
-					EmspcrPlugin.INSTANCE.getString("AbandonedProcedureReasonObservationCode"),
-					new Object[] { abandonedProcedureReasonObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.ABANDONED_PROCEDURE_REASON_OBSERVATION__ABANDONED_PROCEDURE_REASON_OBSERVATION_CODE,
+						 EmspcrPlugin.INSTANCE.getString("AbandonedProcedureReasonObservationAbandonedProcedureReasonObservationCode"),
+						 new Object [] { abandonedProcedureReasonObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -334,9 +323,9 @@ public class AbandonedProcedureReasonObservationOperations extends ClinicalState
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17078-9' or value.code = 'LA17079-7' or value.code = 'LA17080-5' or value.code = 'LA17081-3' or value.code = 'LA17082-1' or value.code = 'LA18204-0')))";
+	protected static final String VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17078-9' or value.code = 'LA17079-7' or value.code = 'LA17080-5' or value.code = 'LA17081-3' or value.code = 'LA17082-1' or value.code = 'LA18204-0')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAbandonedProcedureReasonObservationValue(AbandonedProcedureReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Abandoned Procedure Reason Observation Value</em>}' invariant operation.
@@ -346,8 +335,9 @@ public class AbandonedProcedureReasonObservationOperations extends ClinicalState
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -359,31 +349,30 @@ public class AbandonedProcedureReasonObservationOperations extends ClinicalState
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateAbandonedProcedureReasonObservationValue(
-			AbandonedProcedureReasonObservation abandonedProcedureReasonObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateAbandonedProcedureReasonObservationValue(AbandonedProcedureReasonObservation abandonedProcedureReasonObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ABANDONED_PROCEDURE_REASON_OBSERVATION);
 			try {
 				VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			abandonedProcedureReasonObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(abandonedProcedureReasonObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.ABANDONED_PROCEDURE_REASON_OBSERVATION__ABANDONED_PROCEDURE_REASON_OBSERVATION_VALUE,
-					EmspcrPlugin.INSTANCE.getString("AbandonedProcedureReasonObservationValue"),
-					new Object[] { abandonedProcedureReasonObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.ABANDONED_PROCEDURE_REASON_OBSERVATION__ABANDONED_PROCEDURE_REASON_OBSERVATION_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("AbandonedProcedureReasonObservationAbandonedProcedureReasonObservationValue"),
+						 new Object [] { abandonedProcedureReasonObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -407,8 +396,9 @@ public class AbandonedProcedureReasonObservationOperations extends ClinicalState
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -420,32 +410,30 @@ public class AbandonedProcedureReasonObservationOperations extends ClinicalState
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateAbandonedProcedureReasonObservationValueP(
-			AbandonedProcedureReasonObservation abandonedProcedureReasonObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateAbandonedProcedureReasonObservationValueP(AbandonedProcedureReasonObservation abandonedProcedureReasonObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.ABANDONED_PROCEDURE_REASON_OBSERVATION);
 			try {
 				VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			abandonedProcedureReasonObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ABANDONED_PROCEDURE_REASON_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(abandonedProcedureReasonObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.ABANDONED_PROCEDURE_REASON_OBSERVATION__ABANDONED_PROCEDURE_REASON_OBSERVATION_VALUE_P,
-					EmspcrPlugin.INSTANCE.getString("AbandonedProcedureReasonObservationValueP"),
-					new Object[] { abandonedProcedureReasonObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.ABANDONED_PROCEDURE_REASON_OBSERVATION__ABANDONED_PROCEDURE_REASON_OBSERVATION_VALUE_P,
+						 EmspcrPlugin.INSTANCE.getString("AbandonedProcedureReasonObservationAbandonedProcedureReasonObservationValueP"),
+						 new Object [] { abandonedProcedureReasonObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;

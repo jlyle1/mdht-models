@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -25,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getGlasgowMotor()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GlasgowMotorTemplateId GlasgowMotorMoodCode GlasgowMotorCode GlasgowMotorCodeP GlasgowMotorValue' templateId.root='2.16.840.1.1133883.17.3.10.1.176' moodCode='EVN' code.code='9268-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Glasgow coma score.motor' constraints.validation.dependOn.GlasgowMotorCode='GlasgowMotorCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GlasgowMotorTemplateId GlasgowMotorMoodCode GlasgowMotorCode GlasgowMotorCodeP GlasgowMotorValue' templateId.root='2.16.840.1.1133883.17.3.10.1.192' moodCode='EVN' code.code='9268-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Glasgow coma score.motor' constraints.validation.dependOn.GlasgowMotorCode='GlasgowMotorCodeP'"
  * @generated
  */
 public interface GlasgowMotor extends Observation {
@@ -36,7 +32,7 @@ public interface GlasgowMotor extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.1133883.17.3.10.1.176\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.1133883.17.3.10.1.192\')'"
 	 * @generated
 	 */
 	boolean validateGlasgowMotorTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -95,11 +91,10 @@ public interface GlasgowMotor extends Observation {
 	 * @generated
 	 */
 	public GlasgowMotor init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public GlasgowMotor init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public GlasgowMotor init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // GlasgowMotor

@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -73,8 +69,9 @@ public class EmergencyMedicalDispatchObservationOperations extends ClinicalState
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,32 +83,30 @@ public class EmergencyMedicalDispatchObservationOperations extends ClinicalState
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEmergencyMedicalDispatchObservationTemplateId(
-			EmergencyMedicalDispatchObservation emergencyMedicalDispatchObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEmergencyMedicalDispatchObservationTemplateId(EmergencyMedicalDispatchObservation emergencyMedicalDispatchObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMERGENCY_MEDICAL_DISPATCH_OBSERVATION);
 			try {
 				VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emergencyMedicalDispatchObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emergencyMedicalDispatchObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMERGENCY_MEDICAL_DISPATCH_OBSERVATION__EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("EmergencyMedicalDispatchObservationTemplateId"),
-					new Object[] { emergencyMedicalDispatchObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMERGENCY_MEDICAL_DISPATCH_OBSERVATION__EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("EmergencyMedicalDispatchObservationEmergencyMedicalDispatchObservationTemplateId"),
+						 new Object [] { emergencyMedicalDispatchObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -135,8 +130,9 @@ public class EmergencyMedicalDispatchObservationOperations extends ClinicalState
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,32 +144,30 @@ public class EmergencyMedicalDispatchObservationOperations extends ClinicalState
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEmergencyMedicalDispatchObservationMoodCode(
-			EmergencyMedicalDispatchObservation emergencyMedicalDispatchObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEmergencyMedicalDispatchObservationMoodCode(EmergencyMedicalDispatchObservation emergencyMedicalDispatchObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMERGENCY_MEDICAL_DISPATCH_OBSERVATION);
 			try {
 				VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emergencyMedicalDispatchObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emergencyMedicalDispatchObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMERGENCY_MEDICAL_DISPATCH_OBSERVATION__EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("EmergencyMedicalDispatchObservationMoodCode"),
-					new Object[] { emergencyMedicalDispatchObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMERGENCY_MEDICAL_DISPATCH_OBSERVATION__EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("EmergencyMedicalDispatchObservationEmergencyMedicalDispatchObservationMoodCode"),
+						 new Object [] { emergencyMedicalDispatchObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -197,8 +191,9 @@ public class EmergencyMedicalDispatchObservationOperations extends ClinicalState
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -210,32 +205,30 @@ public class EmergencyMedicalDispatchObservationOperations extends ClinicalState
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEmergencyMedicalDispatchObservationCodeP(
-			EmergencyMedicalDispatchObservation emergencyMedicalDispatchObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEmergencyMedicalDispatchObservationCodeP(EmergencyMedicalDispatchObservation emergencyMedicalDispatchObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMERGENCY_MEDICAL_DISPATCH_OBSERVATION);
 			try {
 				VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emergencyMedicalDispatchObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emergencyMedicalDispatchObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMERGENCY_MEDICAL_DISPATCH_OBSERVATION__EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("EmergencyMedicalDispatchObservationCodeP"),
-					new Object[] { emergencyMedicalDispatchObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMERGENCY_MEDICAL_DISPATCH_OBSERVATION__EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("EmergencyMedicalDispatchObservationEmergencyMedicalDispatchObservationCodeP"),
+						 new Object [] { emergencyMedicalDispatchObservation }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -243,12 +236,11 @@ public class EmergencyMedicalDispatchObservationOperations extends ClinicalState
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
-					context.put(
-						"org.openhealthtools.mdht.uml.cda.emspcr.EmergencyMedicalDispatchObservationCodeP", passToken);
+					context.put("org.openhealthtools.mdht.uml.cda.emspcr.EmergencyMedicalDispatchObservationCodeP", passToken);
 				}
 				passToken.add(emergencyMedicalDispatchObservation);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -262,9 +254,9 @@ public class EmergencyMedicalDispatchObservationOperations extends ClinicalState
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67488-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67488-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEmergencyMedicalDispatchObservationCode(EmergencyMedicalDispatchObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emergency Medical Dispatch Observation Code</em>}' invariant operation.
@@ -274,8 +266,9 @@ public class EmergencyMedicalDispatchObservationOperations extends ClinicalState
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -287,40 +280,36 @@ public class EmergencyMedicalDispatchObservationOperations extends ClinicalState
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEmergencyMedicalDispatchObservationCode(
-			EmergencyMedicalDispatchObservation emergencyMedicalDispatchObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.EmergencyMedicalDispatchObservationCodeP");
-		if ((passToken instanceof Collection<?>) &&
-				((Collection<?>) passToken).contains(emergencyMedicalDispatchObservation)) {
+	
+	public static  boolean validateEmergencyMedicalDispatchObservationCode(EmergencyMedicalDispatchObservation emergencyMedicalDispatchObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.EmergencyMedicalDispatchObservationCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(emergencyMedicalDispatchObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMERGENCY_MEDICAL_DISPATCH_OBSERVATION);
 			try {
 				VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emergencyMedicalDispatchObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emergencyMedicalDispatchObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMERGENCY_MEDICAL_DISPATCH_OBSERVATION__EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_CODE,
-					EmspcrPlugin.INSTANCE.getString("EmergencyMedicalDispatchObservationCode"),
-					new Object[] { emergencyMedicalDispatchObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMERGENCY_MEDICAL_DISPATCH_OBSERVATION__EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_CODE,
+						 EmspcrPlugin.INSTANCE.getString("EmergencyMedicalDispatchObservationEmergencyMedicalDispatchObservationCode"),
+						 new Object [] { emergencyMedicalDispatchObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -334,9 +323,9 @@ public class EmergencyMedicalDispatchObservationOperations extends ClinicalState
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17151-4' or value.code = 'LA17152-2' or value.code = 'LA17153-0' or value.code = 'LA32-8')))";
+	protected static final String VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17151-4' or value.code = 'LA17152-2' or value.code = 'LA17153-0' or value.code = 'LA32-8')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEmergencyMedicalDispatchObservationValue(EmergencyMedicalDispatchObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Emergency Medical Dispatch Observation Value</em>}' invariant operation.
@@ -346,8 +335,9 @@ public class EmergencyMedicalDispatchObservationOperations extends ClinicalState
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -359,31 +349,30 @@ public class EmergencyMedicalDispatchObservationOperations extends ClinicalState
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEmergencyMedicalDispatchObservationValue(
-			EmergencyMedicalDispatchObservation emergencyMedicalDispatchObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEmergencyMedicalDispatchObservationValue(EmergencyMedicalDispatchObservation emergencyMedicalDispatchObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMERGENCY_MEDICAL_DISPATCH_OBSERVATION);
 			try {
 				VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emergencyMedicalDispatchObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emergencyMedicalDispatchObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMERGENCY_MEDICAL_DISPATCH_OBSERVATION__EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_VALUE,
-					EmspcrPlugin.INSTANCE.getString("EmergencyMedicalDispatchObservationValue"),
-					new Object[] { emergencyMedicalDispatchObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMERGENCY_MEDICAL_DISPATCH_OBSERVATION__EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("EmergencyMedicalDispatchObservationEmergencyMedicalDispatchObservationValue"),
+						 new Object [] { emergencyMedicalDispatchObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -407,8 +396,9 @@ public class EmergencyMedicalDispatchObservationOperations extends ClinicalState
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -420,32 +410,30 @@ public class EmergencyMedicalDispatchObservationOperations extends ClinicalState
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validateEmergencyMedicalDispatchObservationValueP(
-			EmergencyMedicalDispatchObservation emergencyMedicalDispatchObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validateEmergencyMedicalDispatchObservationValueP(EmergencyMedicalDispatchObservation emergencyMedicalDispatchObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMERGENCY_MEDICAL_DISPATCH_OBSERVATION);
 			try {
 				VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emergencyMedicalDispatchObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emergencyMedicalDispatchObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMERGENCY_MEDICAL_DISPATCH_OBSERVATION__EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_VALUE_P,
-					EmspcrPlugin.INSTANCE.getString("EmergencyMedicalDispatchObservationValueP"),
-					new Object[] { emergencyMedicalDispatchObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMERGENCY_MEDICAL_DISPATCH_OBSERVATION__EMERGENCY_MEDICAL_DISPATCH_OBSERVATION_VALUE_P,
+						 EmspcrPlugin.INSTANCE.getString("EmergencyMedicalDispatchObservationEmergencyMedicalDispatchObservationValueP"),
+						 new Object [] { emergencyMedicalDispatchObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;

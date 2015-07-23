@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
@@ -112,11 +108,10 @@ public interface DelayOrganizer extends Organizer {
 	 * @generated
 	 */
 	public DelayOrganizer init();
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public DelayOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public DelayOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DelayOrganizer

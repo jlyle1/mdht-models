@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
@@ -72,8 +68,9 @@ public class PatientArrivedAtDestinationTimeOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,32 +82,30 @@ public class PatientArrivedAtDestinationTimeOperations extends ClinicalStatement
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validatePatientArrivedAtDestinationTimeTemplateId(
-			PatientArrivedAtDestinationTime patientArrivedAtDestinationTime, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validatePatientArrivedAtDestinationTimeTemplateId(PatientArrivedAtDestinationTime patientArrivedAtDestinationTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_ARRIVED_AT_DESTINATION_TIME);
 			try {
 				VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientArrivedAtDestinationTime)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientArrivedAtDestinationTime)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PATIENT_ARRIVED_AT_DESTINATION_TIME__PATIENT_ARRIVED_AT_DESTINATION_TIME_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("PatientArrivedAtDestinationTimeTemplateId"),
-					new Object[] { patientArrivedAtDestinationTime }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PATIENT_ARRIVED_AT_DESTINATION_TIME__PATIENT_ARRIVED_AT_DESTINATION_TIME_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("PatientArrivedAtDestinationTimePatientArrivedAtDestinationTimeTemplateId"),
+						 new Object [] { patientArrivedAtDestinationTime }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -134,8 +129,9 @@ public class PatientArrivedAtDestinationTimeOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,31 +143,30 @@ public class PatientArrivedAtDestinationTimeOperations extends ClinicalStatement
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validatePatientArrivedAtDestinationTimeMoodCode(
-			PatientArrivedAtDestinationTime patientArrivedAtDestinationTime, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validatePatientArrivedAtDestinationTimeMoodCode(PatientArrivedAtDestinationTime patientArrivedAtDestinationTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_ARRIVED_AT_DESTINATION_TIME);
 			try {
 				VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientArrivedAtDestinationTime)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientArrivedAtDestinationTime)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PATIENT_ARRIVED_AT_DESTINATION_TIME__PATIENT_ARRIVED_AT_DESTINATION_TIME_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("PatientArrivedAtDestinationTimeMoodCode"),
-					new Object[] { patientArrivedAtDestinationTime }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PATIENT_ARRIVED_AT_DESTINATION_TIME__PATIENT_ARRIVED_AT_DESTINATION_TIME_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("PatientArrivedAtDestinationTimePatientArrivedAtDestinationTimeMoodCode"),
+						 new Object [] { patientArrivedAtDestinationTime }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -195,8 +190,9 @@ public class PatientArrivedAtDestinationTimeOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -208,30 +204,30 @@ public class PatientArrivedAtDestinationTimeOperations extends ClinicalStatement
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validatePatientArrivedAtDestinationTimeCodeP(
-			PatientArrivedAtDestinationTime patientArrivedAtDestinationTime, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validatePatientArrivedAtDestinationTimeCodeP(PatientArrivedAtDestinationTime patientArrivedAtDestinationTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_ARRIVED_AT_DESTINATION_TIME);
 			try {
 				VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientArrivedAtDestinationTime)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientArrivedAtDestinationTime)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PATIENT_ARRIVED_AT_DESTINATION_TIME__PATIENT_ARRIVED_AT_DESTINATION_TIME_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("PatientArrivedAtDestinationTimeCodeP"),
-					new Object[] { patientArrivedAtDestinationTime }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PATIENT_ARRIVED_AT_DESTINATION_TIME__PATIENT_ARRIVED_AT_DESTINATION_TIME_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("PatientArrivedAtDestinationTimePatientArrivedAtDestinationTimeCodeP"),
+						 new Object [] { patientArrivedAtDestinationTime }));
 			}
-
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -239,12 +235,11 @@ public class PatientArrivedAtDestinationTimeOperations extends ClinicalStatement
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
-					context.put(
-						"org.openhealthtools.mdht.uml.cda.emspcr.PatientArrivedAtDestinationTimeCodeP", passToken);
+					context.put("org.openhealthtools.mdht.uml.cda.emspcr.PatientArrivedAtDestinationTimeCodeP", passToken);
 				}
 				passToken.add(patientArrivedAtDestinationTime);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -258,9 +253,9 @@ public class PatientArrivedAtDestinationTimeOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '69476-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '69476-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientArrivedAtDestinationTimeCode(PatientArrivedAtDestinationTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Arrived At Destination Time Code</em>}' invariant operation.
@@ -270,8 +265,9 @@ public class PatientArrivedAtDestinationTimeOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -283,39 +279,36 @@ public class PatientArrivedAtDestinationTimeOperations extends ClinicalStatement
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validatePatientArrivedAtDestinationTimeCode(
-			PatientArrivedAtDestinationTime patientArrivedAtDestinationTime, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.PatientArrivedAtDestinationTimeCodeP");
-		if ((passToken instanceof Collection<?>) &&
-				((Collection<?>) passToken).contains(patientArrivedAtDestinationTime)) {
+	
+	public static  boolean validatePatientArrivedAtDestinationTimeCode(PatientArrivedAtDestinationTime patientArrivedAtDestinationTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.PatientArrivedAtDestinationTimeCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(patientArrivedAtDestinationTime)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
+  	  
 		if (VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_ARRIVED_AT_DESTINATION_TIME);
 			try {
 				VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientArrivedAtDestinationTime)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientArrivedAtDestinationTime)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PATIENT_ARRIVED_AT_DESTINATION_TIME__PATIENT_ARRIVED_AT_DESTINATION_TIME_CODE,
-					EmspcrPlugin.INSTANCE.getString("PatientArrivedAtDestinationTimeCode"),
-					new Object[] { patientArrivedAtDestinationTime }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PATIENT_ARRIVED_AT_DESTINATION_TIME__PATIENT_ARRIVED_AT_DESTINATION_TIME_CODE,
+						 EmspcrPlugin.INSTANCE.getString("PatientArrivedAtDestinationTimePatientArrivedAtDestinationTimeCode"),
+						 new Object [] { patientArrivedAtDestinationTime }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -339,8 +332,9 @@ public class PatientArrivedAtDestinationTimeOperations extends ClinicalStatement
 	 * @generated
 	 * @ordered
 	 */
-
+	
 	protected static Constraint VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -352,30 +346,30 @@ public class PatientArrivedAtDestinationTimeOperations extends ClinicalStatement
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-
-	public static boolean validatePatientArrivedAtDestinationTimeValue(
-			PatientArrivedAtDestinationTime patientArrivedAtDestinationTime, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-
+	
+	public static  boolean validatePatientArrivedAtDestinationTimeValue(PatientArrivedAtDestinationTime patientArrivedAtDestinationTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.PATIENT_ARRIVED_AT_DESTINATION_TIME);
 			try {
 				VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			patientArrivedAtDestinationTime)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_ARRIVED_AT_DESTINATION_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientArrivedAtDestinationTime)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.PATIENT_ARRIVED_AT_DESTINATION_TIME__PATIENT_ARRIVED_AT_DESTINATION_TIME_VALUE,
-					EmspcrPlugin.INSTANCE.getString("PatientArrivedAtDestinationTimeValue"),
-					new Object[] { patientArrivedAtDestinationTime }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.PATIENT_ARRIVED_AT_DESTINATION_TIME__PATIENT_ARRIVED_AT_DESTINATION_TIME_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("PatientArrivedAtDestinationTimePatientArrivedAtDestinationTimeValue"),
+						 new Object [] { patientArrivedAtDestinationTime }));
 			}
-
+			 
 			return false;
 		}
 		return true;
