@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
     <booktitle>
 		<mainbooktitle>Emergency Medical Services Patient Care Report</mainbooktitle>
-		<booktitlealt id="ballot">September 2013</booktitlealt>
+		<booktitlealt id="ballot">May 2015</booktitlealt>
 		<booktitlealt id="image"><image href="images/hl7logo.gif"/></booktitlealt>	
     </booktitle>
     <bookmeta>
@@ -14,7 +14,7 @@
     	<prodinfo>
 			<prodname>CDAR2L3_IG_EMSRUNRPT</prodname>
 			<vrmlist>
-				<vrm release="R1" version="2014FEB" ></vrm>
+				<vrm release="R2" version="2015AUG" ></vrm>
 			</vrmlist>
 			<brand>HL7 IG for CDA R2</brand>
 			<series>Normative</series>
@@ -32,7 +32,7 @@
                 <year>2009</year>
             </copyrfirst>
             <copyrlast>
-                <year>2013</year>
+                <year>2015</year>
             </copyrlast>
             <bookowner>
                 <organization/>
@@ -53,7 +53,7 @@
     </frontmatter>
     <chapter format="ditamap" href="introduction/introduction.ditamap"/>
   <chapter format="ditamap" href="content/content.ditamap"/>
-<!--     <chapter href="appendices/appendices.ditamap" format="ditamap"/> -->
+  <chapter format="ditamap" href="appendices/appendices.ditamap" /> 
     <backmatter>
         <topicref href="Sample.dita" navtitle="SAMPLE" type="topic"/>
  

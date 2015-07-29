@@ -8,7 +8,7 @@
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1"><tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
@@ -16,7 +16,7 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Class of person providing care to an EMS patient, including the patient</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table frame="all" rowsep="1" colsep="1"><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
@@ -39,7 +39,10 @@
 <row><entry>LA18714-8</entry><entry>LOINC</entry><entry>Patient/lay person</entry></row>
 <row><entry>LA4687-5</entry><entry>LOINC</entry><entry>Physician</entry></row>
 <row><entry>LA9297-8</entry><entry>LOINC</entry><entry>Respiratory therapist</entry></row>
-<row><entry>LA9401-6</entry><entry>LOINC</entry><entry>Nurse</entry></row>
+<row><entry>LOINC_TBDA_606</entry><entry>LOINC</entry><entry>Nurse Practitioner</entry></row>
+<row><entry>LOINC_TBDA_607</entry><entry>LOINC</entry><entry>Physician Assistant</entry></row>
+<row><entry>LOINC_TBDA_608</entry><entry>LOINC</entry><entry>Licensed Practical Nurse (LPN)</entry></row>
+<row><entry>LOINC_TBDA_609</entry><entry>LOINC</entry><entry>Registered Nurse</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

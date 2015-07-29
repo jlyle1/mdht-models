@@ -8,7 +8,7 @@
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1"><tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
@@ -16,7 +16,7 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Circumstance affecting likelihood of injury</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table frame="all" rowsep="1" colsep="1"><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
@@ -31,6 +31,12 @@
 <row><entry>LA17357-7</entry><entry>LOINC</entry><entry>Crash intrusion: > 12 in. occupant site; > 18 in. any site</entry></row>
 <row><entry>LA17360-1</entry><entry>LOINC</entry><entry>Auto v. pedestrian/bicyclist thrown, run over, or > 20 MPH impact</entry></row>
 <row><entry>LA18124-0</entry><entry>LOINC</entry><entry>Crash vehicle telemetry data (AACN) consistent with high risk of injury</entry></row>
+<row><entry>LOINC_TBDA_565</entry><entry>LOINC</entry><entry>Anticoagulants and Bleeding Disorders</entry></row>
+<row><entry>LOINC_TBDA_566</entry><entry>LOINC</entry><entry>SBP < 110 for age > 65</entry></row>
+<row><entry>LOINC_TBDA_567</entry><entry>LOINC</entry><entry>Pregnancy > 20 weeks</entry></row>
+<row><entry>LOINC_TBDA_568</entry><entry>LOINC</entry><entry>EMS Provider Judgment</entry></row>
+<row><entry>LOINC_TBDA_569</entry><entry>LOINC</entry><entry>Burn, without other trauma</entry></row>
+<row><entry>LOINC_TBDA_570</entry><entry>LOINC</entry><entry>Burn, with trauma mechanism</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

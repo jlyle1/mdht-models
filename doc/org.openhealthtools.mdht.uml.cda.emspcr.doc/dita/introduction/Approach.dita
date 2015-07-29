@@ -38,6 +38,9 @@
 			clinical setting and an EMS-specific code is needed. Similarly, harmonization with the 
 			Emergency Department specification<i>Data Elements for Emergency Department Systems</i>
 			(DEEDS) depends on the use of extant or related LOINC codes for shared elements. </p>
+		<p>The templates in this guide are open, meaning that information not specified in the guide
+		may be included in document instances, though recipeints are under no obligation to 
+		comprehend that additional information.</p>
 		<p>This release is generated from UML models developed in the Open Health Tools (OHT)
 			Model-Driven Health Tools (MDHT) project. The data specifications have been formalized
 			into computational models expressed in UML. These models are used by automated tooling

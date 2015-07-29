@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Unit Level Of Care</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.113883.17.3.11.105"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table frame="all" rowsep="1" colsep="1"><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>UnitLevelOfCare - 2.16.840.1.113883.17.3.11.105</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Definition</entry><entry>Levels of care a unit may be able to provide</entry></row>
+</tbody></tgroup></table>
+<table frame="all" rowsep="1" colsep="1"><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>LA22851-2</entry><entry>LOINC</entry><entry>BLS-First Responder/EMR</entry></row>
+<row><entry>LA22852-0</entry><entry>LOINC</entry><entry>BLS-Basic /EMT</entry></row>
+<row><entry>LA22854-6</entry><entry>LOINC</entry><entry>BLS-Intermediate</entry></row>
+<row><entry>LA22862-9</entry><entry>LOINC</entry><entry>BLS-Community Paramedicine</entry></row>
+<row><entry>LA22855-3</entry><entry>LOINC</entry><entry>ALS-AEMT</entry></row>
+<row><entry>LA22856-1</entry><entry>LOINC</entry><entry>ALS-Intermediate</entry></row>
+<row><entry>LA22857-9</entry><entry>LOINC</entry><entry>ALS-Paramedic</entry></row>
+<row><entry>LA22858-7</entry><entry>LOINC</entry><entry>ALS-Community Paramedicine</entry></row>
+<row><entry>LA22859-5</entry><entry>LOINC</entry><entry>ALS-Nurse</entry></row>
+<row><entry>LA22860-3</entry><entry>LOINC</entry><entry>ALS-Physician</entry></row>
+<row><entry>LA22861-1</entry><entry>LOINC</entry><entry>Specialty Critical Care</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

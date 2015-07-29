@@ -1,0 +1,36 @@
+<?eclipse version="3.0"?>
+<project name="CDA Model Transformation"  basedir="." default="applyURI">
+
+	
+	
+	<target name="applyURI">
+		
+	
+		
+		<sequential>
+			<replace dir="${basedir}/model" token='href="../../../org.openhealthtools.mdht.uml.term.models/model/' value='href="pathmap://TERM_MODEL/'/>
+			<replace dir="${basedir}/model" token='href="../../org.openhealthtools.mdht.uml.term.models/model/' value='href="pathmap://TERM_MODEL/'/>		
+
+			<replace dir="${basedir}/model" token='href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml' value='href="pathmap://DATATYPES_MODEL/datatypes.uml'/>
+			<replace dir="${basedir}/model" token='href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml' value='href="pathmap://DATATYPES_MODEL/datatypes.uml'/>
+
+			<replace dir="${basedir}/model" token='href="../../../org.openhealthtools.mdht.uml.hl7.rim/model/rim.uml' value='href="pathmap://RIM_MODEL/rim.uml'/>
+			<replace dir="${basedir}/model" token='href="../../org.openhealthtools.mdht.uml.hl7.rim/model/rim.uml' value='href="pathmap://RIM_MODEL/rim.uml'/>
+				
+			<replace dir="${basedir}/model" token='href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml' value='href="pathmap://VOCAB_MODEL/vocab.uml'/>
+			<replace dir="${basedir}/model" token='href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml' value='href="pathmap://VOCAB_MODEL/vocab.uml'/>
+			
+			<replace dir="${basedir}/model" token='href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml' value='href="pathmap://CDA_MODEL/cda.uml'/>
+			<replace dir="${basedir}/model" token='href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml' value='href="pathmap://CDA_MODEL/cda.uml'/>
+			
+	 		<replace dir="${basedir}/model" token='href="../../../org.openhealthtools.mdht.uml.cda.consol.model/model/' value='href="pathmap://CONSOL_MODEL/'/>
+			<replace dir="${basedir}/model" token='href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/' value='href="pathmap://CONSOL_MODEL/'/>
+				
+				
+			<replace dir="${basedir}/model" token='href="../../../org.hl7.cbcc.privacy.consentdirective.model/model/' value='href="pathmap://CONSENTDIRECTIVE_MODEL/'/>
+			<replace dir="${basedir}/model" token='href="../../org.hl7.cbcc.privacy.consentdirective.model/model/' value='href="pathmap://CONSENTDIRECTIVE_MODEL/'/>
+						
+		</sequential>
+		
+	</target>
+</project>

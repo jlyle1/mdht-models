@@ -48,8 +48,9 @@
 <meta name="DC.Relation" scheme="URI" content="../classes/DispatchLocationName.html"/>
 <meta name="DC.Relation" scheme="URI" content="../classes/DispatchLocationOrganizer.html"/>
 <meta name="DC.Relation" scheme="URI" content="../classes/DispatchNotifiedTime.html"/>
-<meta name="DC.Relation" scheme="URI" content="../classes/DrugAllergy.html"/>
 <meta name="DC.Relation" scheme="URI" content="../classes/DrugUseIndication.html"/>
+<meta name="DC.Relation" scheme="URI" content="../classes/EMSDrugAllergy.html"/>
+<meta name="DC.Relation" scheme="URI" content="../classes/EMSDrugAllergyOrganizer.html"/>
 <meta name="DC.Relation" scheme="URI" content="../classes/EmergencyMedicalDispatchObservation.html"/>
 <meta name="DC.Relation" scheme="URI" content="../classes/ExistenceOfDrugAllergyObservation.html"/>
 <meta name="DC.Relation" scheme="URI" content="../classes/ExistenceOfDrugUseIndication.html"/>
@@ -92,6 +93,7 @@
 <meta name="DC.Relation" scheme="URI" content="../classes/NeurologicalAssessment.html"/>
 <meta name="DC.Relation" scheme="URI" content="../classes/NonDrugAllergy.html"/>
 <meta name="DC.Relation" scheme="URI" content="../classes/NonDrugAllergyOrganizer.html"/>
+<meta name="DC.Relation" scheme="URI" content="../classes/NonDrugAllergyOrganizerActuallyDreg.html"/>
 <meta name="DC.Relation" scheme="URI" content="../classes/NumberOfPatientsTransportedObservation.html"/>
 <meta name="DC.Relation" scheme="URI" content="../classes/OtherSymptoms.html"/>
 <meta name="DC.Relation" scheme="URI" content="../classes/OxygenSaturation.html"/>
@@ -255,10 +257,12 @@
 [Organizer: templateId <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.96</tt>]</li>
 <li class="link ulchildlink"><strong><a href="../classes/DispatchNotifiedTime.html">Dispatch Notified Time</a></strong><br/>
 [Observation: templateId <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.46</tt>]</li>
-<li class="link ulchildlink"><strong><a href="../classes/DrugAllergy.html">Drug Allergy</a></strong><br/>
-[Act: templateId <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.48</tt>]</li>
 <li class="link ulchildlink"><strong><a href="../classes/DrugUseIndication.html">Drug Use Indication</a></strong><br/>
 [Observation: templateId <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.71</tt>]</li>
+<li class="link ulchildlink"><strong><a href="../classes/EMSDrugAllergy.html">EMS Drug Allergy</a></strong><br/>
+[Act: templateId <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.48</tt>]</li>
+<li class="link ulchildlink"><strong><a href="../classes/EMSDrugAllergyOrganizer.html">EMS Drug Allergy Organizer</a></strong><br/>
+[Organizer: templateId <tt class="ph tt">null</tt>]</li>
 <li class="link ulchildlink"><strong><a href="../classes/EmergencyMedicalDispatchObservation.html">Emergency Medical Dispatch Observation</a></strong><br/>
 [Observation: templateId <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.73</tt>]</li>
 <li class="link ulchildlink"><strong><a href="../classes/ExistenceOfDrugAllergyObservation.html">Existence Of Drug Allergy Observation</a></strong><br/>
@@ -343,6 +347,8 @@
 [Observation: templateId <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.104</tt>]</li>
 <li class="link ulchildlink"><strong><a href="../classes/NonDrugAllergyOrganizer.html">Non Drug Allergy Organizer</a></strong><br/>
 [Organizer: templateId <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.49</tt>]</li>
+<li class="link ulchildlink"><strong><a href="../classes/NonDrugAllergyOrganizerActuallyDreg.html">Non Drug Allergy Organizer Actually Dreg</a></strong><br/>
+[Organizer: templateId <tt class="ph tt">null</tt>]</li>
 <li class="link ulchildlink"><strong><a href="../classes/NumberOfPatientsTransportedObservation.html">Number Of Patients Transported Observation</a></strong><br/>
 [Observation: templateId <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.31</tt>]</li>
 <li class="link ulchildlink"><strong><a href="../classes/OtherSymptoms.html">Other Symptoms</a></strong><br/>
@@ -382,7 +388,7 @@
 <li class="link ulchildlink"><strong><a href="../classes/PriorCPR.html">Prior CPR</a></strong><br/>
 [Observation: templateId <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.125</tt>]</li>
 <li class="link ulchildlink"><strong><a href="../classes/Procedure.html">Procedure</a></strong><br/>
-[Procedure: templateId <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.98</tt>]</li>
+[Procedure: templateId <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.181</tt>]</li>
 <li class="link ulchildlink"><strong><a href="../classes/ProcedureComplicationsObservation.html">Procedure Complications Observation</a></strong><br/>
 [Observation: templateId <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.179</tt>]</li>
 <li class="link ulchildlink"><strong><a href="../classes/ProcedureNumberOfAttemptsObservation.html">Procedure Number Of Attempts Observation</a></strong><br/>
@@ -416,7 +422,7 @@
 <li class="link ulchildlink"><strong><a href="../classes/ResponseEndingOdometerReading.html">Response Ending Odometer Reading</a></strong><br/>
 [Observation: templateId <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.174</tt>]</li>
 <li class="link ulchildlink"><strong><a href="../classes/ResponseModeToScene.html">Response Mode To Scene</a></strong><br/>
-[Observation: templateId <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.98</tt>]</li>
+[Observation: templateId <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.182</tt>]</li>
 <li class="link ulchildlink"><strong><a href="../classes/ResponseOdometerReadingOrganizer.html">Response Odometer Reading Organizer</a></strong><br/>
 [Organizer: templateId <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.97</tt>]</li>
 <li class="link ulchildlink"><strong><a href="../classes/ResponseOnSceneOdometerReading.html">Response On Scene Odometer Reading</a></strong><br/>

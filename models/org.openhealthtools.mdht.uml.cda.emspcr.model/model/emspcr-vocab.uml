@@ -4,17 +4,6 @@
     <packageImport xmi:id="_B6Fj0FSiEeSZZcCOxVJjaQ">
       <importedPackage href="pathmap://TERM_MODEL/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
     </packageImport>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Pg4m8GlfEeG4boS-IbG8Zw" name="EMSLevelOfService">
-      <ownedLiteral xmi:id="_dkbm8MFTEeGyGv5RKvEgDA" name="LA18102-6"/>
-      <ownedLiteral xmi:id="_dkiUoMFTEeGyGv5RKvEgDA" name="LA18103-4"/>
-      <ownedLiteral xmi:id="_dkobQMFTEeGyGv5RKvEgDA" name="LA18104-2"/>
-      <ownedLiteral xmi:id="_dkvI8MFTEeGyGv5RKvEgDA" name="LA18105-9"/>
-      <ownedLiteral xmi:id="_dk12oMFTEeGyGv5RKvEgDA" name="LA18106-7"/>
-      <ownedLiteral xmi:id="_dk79QMFTEeGyGv5RKvEgDA" name="LA18107-5"/>
-      <ownedLiteral xmi:id="_dlCq8MFTEeGyGv5RKvEgDA" name="LA18108-3"/>
-      <ownedLiteral xmi:id="_dlJYoMFTEeGyGv5RKvEgDA" name="LA18109-1"/>
-      <ownedLiteral xmi:id="_dlPfQMFTEeGyGv5RKvEgDA" name="LA18110-9"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Z7NJEHSJEeGa4IXs2ghZEw" name="MechanismOfInjury">
       <ownedLiteral xmi:id="_cGxWIMFTEeGyGv5RKvEgDA" name="LA17335-3"/>
       <ownedLiteral xmi:id="_cIl7EMFTEeGyGv5RKvEgDA" name="LA17336-1"/>
@@ -160,9 +149,9 @@
       <ownedLiteral xmi:id="_cX1Q8MFTEeGyGv5RKvEgDA" name="LA18219-8"/>
       <ownedLiteral xmi:id="_cX7XkMFTEeGyGv5RKvEgDA" name="LA6626-1"/>
       <ownedLiteral xmi:id="_cYBeMMFTEeGyGv5RKvEgDA" name="LA6630-3"/>
-      <ownedLiteral xmi:id="_0MqBwNNZEeSysKjHSGZfJQ" name="LOINC_TBDA_921"/>
-      <ownedLiteral xmi:id="_3uUxsNNZEeSysKjHSGZfJQ" name="LOINC_TBDA_922"/>
-      <ownedLiteral xmi:id="_6GbRgNNZEeSysKjHSGZfJQ" name="LOINC_TBDA_923"/>
+      <ownedLiteral xmi:id="_0MqBwNNZEeSysKjHSGZfJQ" name="LA23806-5"/>
+      <ownedLiteral xmi:id="_3uUxsNNZEeSysKjHSGZfJQ" name="LA23807-3"/>
+      <ownedLiteral xmi:id="_6GbRgNNZEeSysKjHSGZfJQ" name="LA23808-1"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_ygAfIHSKEeGa4IXs2ghZEw" name="HeadAssessmentFinding">
       <ownedLiteral xmi:id="_cYHk0MFTEeGyGv5RKvEgDA" name="LA17208-2"/>
@@ -196,7 +185,7 @@
       <ownedLiteral xmi:id="_capUYMFTEeGyGv5RKvEgDA" name="LA17213-2"/>
       <ownedLiteral xmi:id="_cavbAMFTEeGyGv5RKvEgDA" name="LA17214-0"/>
       <ownedLiteral xmi:id="_ca7oQMFTEeGyGv5RKvEgDA" name="LA17216-5"/>
-      <ownedLiteral xmi:id="_cbOjMMFTEeGyGv5RKvEgDA" name="LOINC_TBDA_962"/>
+      <ownedLiteral xmi:id="_cbOjMMFTEeGyGv5RKvEgDA" name="LA17212-4"/>
       <ownedLiteral xmi:id="_cbUp0MFTEeGyGv5RKvEgDA" name="LA18220-6"/>
       <ownedLiteral xmi:id="_cbawcMFTEeGyGv5RKvEgDA" name="LA18221-4"/>
       <ownedLiteral xmi:id="_cbg3EMFTEeGyGv5RKvEgDA" name="LA18222-2"/>
@@ -221,7 +210,7 @@
       <ownedLiteral xmi:id="_ccypcMFTEeGyGv5RKvEgDA" name="LA17214-0"/>
       <ownedLiteral xmi:id="_cc_dwMFTEeGyGv5RKvEgDA" name="LA17217-3"/>
       <ownedLiteral xmi:id="_cdFkYMFTEeGyGv5RKvEgDA" name="LA17219-9"/>
-      <ownedLiteral xmi:id="_cdYfUMFTEeGyGv5RKvEgDA" name="LOINC_TBDA_963"/>
+      <ownedLiteral xmi:id="_cdYfUMFTEeGyGv5RKvEgDA" name="LA17212-4"/>
       <ownedLiteral xmi:id="_cdqzMMFTEeGyGv5RKvEgDA" name="LA17612-5"/>
       <ownedLiteral xmi:id="_cdw50MFTEeGyGv5RKvEgDA" name="LA18220-6"/>
       <ownedLiteral xmi:id="_cd3ngMFTEeGyGv5RKvEgDA" name="LA18221-4"/>
@@ -236,10 +225,10 @@
       <ownedLiteral xmi:id="_cewYUMFTEeGyGv5RKvEgDA" name="LA7410-9"/>
       <ownedLiteral xmi:id="_ce2e8MFTEeGyGv5RKvEgDA" name="LA7452-1"/>
       <ownedLiteral xmi:id="_ce9MoMFTEeGyGv5RKvEgDA" name="LA7460-4"/>
-      <ownedLiteral xmi:id="_Ze9MQNYbEeSOzuJFX8ssTQ" name="LOINC_TBDA_581"/>
-      <ownedLiteral xmi:id="_cWTM0NYbEeSOzuJFX8ssTQ" name="LOINC_TBDA_582"/>
-      <ownedLiteral xmi:id="_fm0iYNYbEeSOzuJFX8ssTQ" name="LOINC_TBDA_583"/>
-      <ownedLiteral xmi:id="_i2gxgNYbEeSOzuJFX8ssTQ" name="LOINC_TBDA_584"/>
+      <ownedLiteral xmi:id="_Ze9MQNYbEeSOzuJFX8ssTQ" name="LA17229-8"/>
+      <ownedLiteral xmi:id="_cWTM0NYbEeSOzuJFX8ssTQ" name="LA22440-4"/>
+      <ownedLiteral xmi:id="_fm0iYNYbEeSOzuJFX8ssTQ" name="LA7423-2"/>
+      <ownedLiteral xmi:id="_i2gxgNYbEeSOzuJFX8ssTQ" name="LA17709-9"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_aeoe4HSMEeGa4IXs2ghZEw" name="ChestLungAssessmentFinding">
       <ownedLiteral xmi:id="_cfDTQMFTEeGyGv5RKvEgDA" name="LA17208-2"/>
@@ -261,7 +250,7 @@
       <ownedLiteral xmi:id="_cg0N0MFTEeGyGv5RKvEgDA" name="LA17236-3"/>
       <ownedLiteral xmi:id="_cg6UcMFTEeGyGv5RKvEgDA" name="LA17237-1"/>
       <ownedLiteral xmi:id="_chBCIMFTEeGyGv5RKvEgDA" name="LA17238-9"/>
-      <ownedLiteral xmi:id="_chNPYMFTEeGyGv5RKvEgDA" name="LOINC_TBDA_964"/>
+      <ownedLiteral xmi:id="_chNPYMFTEeGyGv5RKvEgDA" name="LA17212-4"/>
       <ownedLiteral xmi:id="_chT9EMFTEeGyGv5RKvEgDA" name="LA18220-6"/>
       <ownedLiteral xmi:id="_chaDsMFTEeGyGv5RKvEgDA" name="LA18221-4"/>
       <ownedLiteral xmi:id="_chgKUMFTEeGyGv5RKvEgDA" name="LA18222-2"/>
@@ -287,9 +276,9 @@
       <ownedLiteral xmi:id="_cjegQMFTEeGyGv5RKvEgDA" name="LA7410-9"/>
       <ownedLiteral xmi:id="_cjlN8MFTEeGyGv5RKvEgDA" name="LA7452-1"/>
       <ownedLiteral xmi:id="_cjrUkMFTEeGyGv5RKvEgDA" name="LA7460-4"/>
-      <ownedLiteral xmi:id="_D-yDcNNqEeSysKjHSGZfJQ" name="LOINC_TBDA_968"/>
-      <ownedLiteral xmi:id="_IHj2sNNqEeSysKjHSGZfJQ" name="LOINC_TBDA_969"/>
-      <ownedLiteral xmi:id="_LX-ekNNqEeSysKjHSGZfJQ" name="LOINC_TBDA_970"/>
+      <ownedLiteral xmi:id="_D-yDcNNqEeSysKjHSGZfJQ" name="LA22440-4"/>
+      <ownedLiteral xmi:id="_IHj2sNNqEeSysKjHSGZfJQ" name="LA7423-2"/>
+      <ownedLiteral xmi:id="_LX-ekNNqEeSysKjHSGZfJQ" name="LA23810-7"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_f2bC8HSMEeGa4IXs2ghZEw" name="TraumaCenterCriteria">
       <ownedLiteral xmi:id="_cjyCQMFTEeGyGv5RKvEgDA" name="LA17337-9"/>
@@ -341,10 +330,10 @@
       <ownedLiteral xmi:id="_coVyIMFTEeGyGv5RKvEgDA" name="LA7410-9"/>
       <ownedLiteral xmi:id="_cob4wMFTEeGyGv5RKvEgDA" name="LA7452-1"/>
       <ownedLiteral xmi:id="_coimcMFTEeGyGv5RKvEgDA" name="LA7460-4"/>
-      <ownedLiteral xmi:id="_KVgvQNNaEeSysKjHSGZfJQ" name="LOINC_TBDA_925"/>
-      <ownedLiteral xmi:id="_OIvwUNNaEeSysKjHSGZfJQ" name="LOINC_TBDA_926"/>
+      <ownedLiteral xmi:id="_KVgvQNNaEeSysKjHSGZfJQ" name="LA23814-9"/>
+      <ownedLiteral xmi:id="_OIvwUNNaEeSysKjHSGZfJQ" name="LA23815-6"/>
       <ownedLiteral xmi:id="_3s-3ENWMEeS4GMCgd_3pyQ" name="LA17229-8"/>
-      <ownedLiteral xmi:id="_9m4psNWMEeS4GMCgd_3pyQ" name="LOINC_TBDA_531"/>
+      <ownedLiteral xmi:id="_9m4psNWMEeS4GMCgd_3pyQ" name="LA22440-4"/>
       <ownedLiteral xmi:id="_E-9qgNWNEeS4GMCgd_3pyQ" name="LA7423-2"/>
       <ownedLiteral xmi:id="_NgNS0NWNEeS4GMCgd_3pyQ" name="LA18225-5"/>
     </packagedElement>
@@ -362,7 +351,7 @@
       <ownedLiteral xmi:id="_cpbXQMFTEeGyGv5RKvEgDA" name="LA17209-0"/>
       <ownedLiteral xmi:id="_cpiE8MFTEeGyGv5RKvEgDA" name="LA17213-2"/>
       <ownedLiteral xmi:id="_cpoLkMFTEeGyGv5RKvEgDA" name="LA17214-0"/>
-      <ownedLiteral xmi:id="_cqBNIMFTEeGyGv5RKvEgDA" name="LOINC_TBDA_966"/>
+      <ownedLiteral xmi:id="_cqBNIMFTEeGyGv5RKvEgDA" name="LA17212-4"/>
       <ownedLiteral xmi:id="_cqH60MFTEeGyGv5RKvEgDA" name="LA17248-8"/>
       <ownedLiteral xmi:id="_cqOBcMFTEeGyGv5RKvEgDA" name="LA17249-6"/>
       <ownedLiteral xmi:id="_cqUIEMFTEeGyGv5RKvEgDA" name="LA17250-4"/>
@@ -384,8 +373,8 @@
       <ownedLiteral xmi:id="_cr5ccMFTEeGyGv5RKvEgDA" name="LA7410-9"/>
       <ownedLiteral xmi:id="_cr_jEMFTEeGyGv5RKvEgDA" name="LA7452-1"/>
       <ownedLiteral xmi:id="_csGQwMFTEeGyGv5RKvEgDA" name="LA7460-4"/>
-      <ownedLiteral xmi:id="_BxnXwNYcEeSOzuJFX8ssTQ" name="LOINC_TBDA_585"/>
-      <ownedLiteral xmi:id="_E0WI8NYcEeSOzuJFX8ssTQ" name="LOINC_TBDA_586"/>
+      <ownedLiteral xmi:id="_BxnXwNYcEeSOzuJFX8ssTQ" name="LA17229-8"/>
+      <ownedLiteral xmi:id="_E0WI8NYcEeSOzuJFX8ssTQ" name="LA7423-2"/>
       <ownedLiteral xmi:id="_JnGGQNYcEeSOzuJFX8ssTQ" name="LOINC_TBDA_587"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_um6bwHSMEeGa4IXs2ghZEw" name="BackSpineAssessmentFinding">
@@ -564,8 +553,8 @@
       <ownedLiteral xmi:id="_c-Rl4MFTEeGyGv5RKvEgDA" name="LA18264-4"/>
       <ownedLiteral xmi:id="_c-YTkMFTEeGyGv5RKvEgDA" name="LA18265-1"/>
       <ownedLiteral xmi:id="_c-qncMFTEeGyGv5RKvEgDA" name="LA6630-3"/>
-      <ownedLiteral xmi:id="_u3uH8NNaEeSysKjHSGZfJQ" name="LOINC_TBDA_931"/>
-      <ownedLiteral xmi:id="_yH-XwNNaEeSysKjHSGZfJQ" name="LOINC_TBDA_932"/>
+      <ownedLiteral xmi:id="_u3uH8NNaEeSysKjHSGZfJQ" name="LA23822-2"/>
+      <ownedLiteral xmi:id="_yH-XwNNaEeSysKjHSGZfJQ" name="LA23823-0"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_RqmA8HSNEeGa4IXs2ghZEw" name="ExistenceOfContraindicationsToThrombolyticUse">
       <ownedLiteral xmi:id="_c-wuEMFTEeGyGv5RKvEgDA" name="LA17114-2"/>
@@ -660,6 +649,17 @@
       <ownedLiteral xmi:id="_dDkVkMFTEeGyGv5RKvEgDA" name="LA18655-3"/>
       <ownedLiteral xmi:id="_dDqcMMFTEeGyGv5RKvEgDA" name="LA18656-1"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Pg4m8GlfEeG4boS-IbG8Zw" name="EMSLevelOfService">
+      <ownedLiteral xmi:id="_dkbm8MFTEeGyGv5RKvEgDA" name="LA18102-6"/>
+      <ownedLiteral xmi:id="_dkiUoMFTEeGyGv5RKvEgDA" name="LA18103-4"/>
+      <ownedLiteral xmi:id="_dkobQMFTEeGyGv5RKvEgDA" name="LA18104-2"/>
+      <ownedLiteral xmi:id="_dkvI8MFTEeGyGv5RKvEgDA" name="LA18105-9"/>
+      <ownedLiteral xmi:id="_dk12oMFTEeGyGv5RKvEgDA" name="LA18106-7"/>
+      <ownedLiteral xmi:id="_dk79QMFTEeGyGv5RKvEgDA" name="LA18107-5"/>
+      <ownedLiteral xmi:id="_dlCq8MFTEeGyGv5RKvEgDA" name="LA18108-3"/>
+      <ownedLiteral xmi:id="_dlJYoMFTEeGyGv5RKvEgDA" name="LA18109-1"/>
+      <ownedLiteral xmi:id="_dlPfQMFTEeGyGv5RKvEgDA" name="LA18110-9"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_jOzCEHSOEeGa4IXs2ghZEw" name="EMDPerformed">
       <ownedLiteral xmi:id="_dDxJ4MFTEeGyGv5RKvEgDA" name="LA17151-4"/>
       <ownedLiteral xmi:id="_dD3QgMFTEeGyGv5RKvEgDA" name="LA17152-2"/>
@@ -667,7 +667,7 @@
       <ownedLiteral xmi:id="_dEEE0MFTEeGyGv5RKvEgDA" name="LA32-8"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_nw_a4HSOEeGa4IXs2ghZEw" name="Complaint">
-      <ownedLiteral xmi:id="_dEKygMFTEeGyGv5RKvEgDA" name="LA15468-4"/>
+      <ownedLiteral xmi:id="_dEKygMFTEeGyGv5RKvEgDA" name="LA23843-8"/>
       <ownedLiteral xmi:id="_dESuUMFTEeGyGv5RKvEgDA" name="LA15903-0"/>
       <ownedLiteral xmi:id="_dEZcAMFTEeGyGv5RKvEgDA" name="LA17117-5"/>
       <ownedLiteral xmi:id="_dEfioMFTEeGyGv5RKvEgDA" name="LA17118-3"/>
@@ -707,8 +707,8 @@
       <ownedLiteral xmi:id="_dH7RIMFTEeGyGv5RKvEgDA" name="LA18211-5"/>
       <ownedLiteral xmi:id="_dIBXwMFTEeGyGv5RKvEgDA" name="LA9553-4"/>
       <ownedLiteral xmi:id="_dIIFcMFTEeGyGv5RKvEgDA" name="LA9555-9"/>
-      <ownedLiteral xmi:id="_ce0nkNNmEeSysKjHSGZfJQ" name="LOINC_TBDA_959"/>
-      <ownedLiteral xmi:id="_fVBYoNNmEeSysKjHSGZfJQ" name="LOINC_TBDA_960"/>
+      <ownedLiteral xmi:id="_ce0nkNNmEeSysKjHSGZfJQ" name="LA17130-8"/>
+      <ownedLiteral xmi:id="_fVBYoNNmEeSysKjHSGZfJQ" name="LA23800-8"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_9Ifj8HSOEeGa4IXs2ghZEw" name="DispatchDelayType">
       <ownedLiteral xmi:id="_dJbtAMFTEeGyGv5RKvEgDA" name="LA17059-9"/>
@@ -845,12 +845,6 @@
       <ownedLiteral xmi:id="_kqw5MNYiEeSOzuJFX8ssTQ" name="LOINC_TBDA_619"/>
       <ownedLiteral xmi:id="_nlHxgNYiEeSOzuJFX8ssTQ" name="LOINC_TBDA_620"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_YT_E4HSPEeGa4IXs2ghZEw" name="TransportationMode">
-      <ownedLiteral xmi:id="_dfdAUMFTEeGyGv5RKvEgDA" name="LA17177-9"/>
-      <ownedLiteral xmi:id="_dfjuAMFTEeGyGv5RKvEgDA" name="LA17178-7"/>
-      <ownedLiteral xmi:id="_dfwiUMFTEeGyGv5RKvEgDA" name="LA17179-5"/>
-      <ownedLiteral xmi:id="_dgEEUMFTEeGyGv5RKvEgDA" name="LA17180-3"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_dEV1gHSPEeGa4IXs2ghZEw" name="Infusion Site">
       <ownedLiteral xmi:id="_dRW58MFTEeGyGv5RKvEgDA" name="LA18757-7"/>
       <ownedLiteral xmi:id="_dRdAkMFTEeGyGv5RKvEgDA" name="LA18758-5"/>
@@ -919,7 +913,7 @@
       <ownedLiteral xmi:id="_dWHeIMFTEeGyGv5RKvEgDA" name="LA17393-2"/>
       <ownedLiteral xmi:id="_dWNkwMFTEeGyGv5RKvEgDA" name="LA17394-0"/>
       <ownedLiteral xmi:id="_dWUScMFTEeGyGv5RKvEgDA" name="LA17396-5"/>
-      <ownedLiteral xmi:id="_dWaZEMFTEeGyGv5RKvEgDA" name="LOINC_TBDA_949"/>
+      <ownedLiteral xmi:id="_dWaZEMFTEeGyGv5RKvEgDA" name="LA20641-9"/>
       <ownedLiteral xmi:id="_dWhGwMFTEeGyGv5RKvEgDA" name="LA17489-8"/>
       <ownedLiteral xmi:id="_dWn0cMFTEeGyGv5RKvEgDA" name="LA17490-6"/>
       <ownedLiteral xmi:id="_dWt7EMFTEeGyGv5RKvEgDA" name="LA17713-1"/>
@@ -932,8 +926,8 @@
       <ownedLiteral xmi:id="_dXhzYMFTEeGyGv5RKvEgDA" name="LA9540-1"/>
       <ownedLiteral xmi:id="_dXohEMFTEeGyGv5RKvEgDA" name="LA9541-9"/>
       <ownedLiteral xmi:id="_dXunsMFTEeGyGv5RKvEgDA" name="LA9548-4"/>
-      <ownedLiteral xmi:id="_TSTKMPfuEeK_n7ZHGRzt1Q" name="LOINC_TBDA_950"/>
-      <ownedLiteral xmi:id="_ldbT8NYcEeSOzuJFX8ssTQ" name="LOINC_TBDA_589"/>
+      <ownedLiteral xmi:id="_TSTKMPfuEeK_n7ZHGRzt1Q" name="LA20642-7"/>
+      <ownedLiteral xmi:id="_ldbT8NYcEeSOzuJFX8ssTQ" name="LA18266-9"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_wrYGgHSPEeGa4IXs2ghZEw" name="VehiclePassengerLocation">
       <ownedLiteral xmi:id="_dX1VYMFTEeGyGv5RKvEgDA" name="LA17361-9"/>
@@ -1173,34 +1167,34 @@
       <ownedLiteral xmi:id="_dvEwsMFTEeGyGv5RKvEgDA" name="LA18269-3"/>
       <ownedLiteral xmi:id="_dvLeYMFTEeGyGv5RKvEgDA" name="LA46-8"/>
       <ownedLiteral xmi:id="_dvSMEMFTEeGyGv5RKvEgDA" name="LA6630-3"/>
-      <ownedLiteral xmi:id="_97e-4NNWEeSysKjHSGZfJQ" name="LOINC_TBDA_903"/>
-      <ownedLiteral xmi:id="_DOnFYNNXEeSysKjHSGZfJQ" name="LOINC_TBDA_904"/>
-      <ownedLiteral xmi:id="_IDphsNNXEeSysKjHSGZfJQ" name="LOINC_TBDA_905"/>
-      <ownedLiteral xmi:id="_MLfg0NNXEeSysKjHSGZfJQ" name="LOINC_TBDA_906"/>
-      <ownedLiteral xmi:id="_P5YH0NNXEeSysKjHSGZfJQ" name="LOINC_TBDA_907"/>
-      <ownedLiteral xmi:id="_T5BNMNNXEeSysKjHSGZfJQ" name="LOINC_TBDA_908"/>
-      <ownedLiteral xmi:id="_XY6bgNNXEeSysKjHSGZfJQ" name="LOINC_TBDA_909"/>
-      <ownedLiteral xmi:id="_bCBQMNNXEeSysKjHSGZfJQ" name="LOINC_TBDA_910"/>
-      <ownedLiteral xmi:id="_fKYzwNNXEeSysKjHSGZfJQ" name="LOINC_TBDA_911"/>
-      <ownedLiteral xmi:id="_iElUANNXEeSysKjHSGZfJQ" name="LOINC_TBDA_912"/>
-      <ownedLiteral xmi:id="_lccAoNNXEeSysKjHSGZfJQ" name="LOINC_TBDA_913"/>
-      <ownedLiteral xmi:id="_oxpo8NNXEeSysKjHSGZfJQ" name="LOINC_TBDA_914"/>
-      <ownedLiteral xmi:id="_EJjDANYdEeSOzuJFX8ssTQ" name="LOINC_TBDA_590"/>
-      <ownedLiteral xmi:id="_AOwL8NYeEeSOzuJFX8ssTQ" name="LOINC_TBDA_591"/>
-      <ownedLiteral xmi:id="_ECHI0NYeEeSOzuJFX8ssTQ" name="LOINC_TBDA_592"/>
-      <ownedLiteral xmi:id="_HRbkgNYeEeSOzuJFX8ssTQ" name="LOINC_TBDA_593"/>
-      <ownedLiteral xmi:id="_NRS1MNYeEeSOzuJFX8ssTQ" name="LOINC_TBDA_594"/>
-      <ownedLiteral xmi:id="_PznA8NYeEeSOzuJFX8ssTQ" name="LOINC_TBDA_595"/>
-      <ownedLiteral xmi:id="_S8TQMNYeEeSOzuJFX8ssTQ" name="LOINC_TBDA_596"/>
-      <ownedLiteral xmi:id="_V9SU8NYeEeSOzuJFX8ssTQ" name="LOINC_TBDA_597"/>
-      <ownedLiteral xmi:id="_ZKFBENYeEeSOzuJFX8ssTQ" name="LOINC_TBDA_598"/>
-      <ownedLiteral xmi:id="_c2S0INYeEeSOzuJFX8ssTQ" name="LOINC_TBDA_599"/>
-      <ownedLiteral xmi:id="_frdDYNYeEeSOzuJFX8ssTQ" name="LOINC_TBDA_600"/>
-      <ownedLiteral xmi:id="_i-e6YNYeEeSOzuJFX8ssTQ" name="LOINC_TBDA_601"/>
-      <ownedLiteral xmi:id="_ltLVQNYeEeSOzuJFX8ssTQ" name="LOINC_TBDA_602"/>
-      <ownedLiteral xmi:id="_oq1ZMNYeEeSOzuJFX8ssTQ" name="LOINC_TBDA_603"/>
-      <ownedLiteral xmi:id="_rdlNoNYeEeSOzuJFX8ssTQ" name="LOINC_TBDA_604"/>
-      <ownedLiteral xmi:id="_uhCXkNYeEeSOzuJFX8ssTQ" name="LOINC_TBDA_605"/>
+      <ownedLiteral xmi:id="_97e-4NNWEeSysKjHSGZfJQ" name="LA23828-9"/>
+      <ownedLiteral xmi:id="_DOnFYNNXEeSysKjHSGZfJQ" name="LA23829-7"/>
+      <ownedLiteral xmi:id="_IDphsNNXEeSysKjHSGZfJQ" name="LA23830-5"/>
+      <ownedLiteral xmi:id="_MLfg0NNXEeSysKjHSGZfJQ" name="LA23831-3"/>
+      <ownedLiteral xmi:id="_P5YH0NNXEeSysKjHSGZfJQ" name="LA23832-1"/>
+      <ownedLiteral xmi:id="_T5BNMNNXEeSysKjHSGZfJQ" name="LA23833-9"/>
+      <ownedLiteral xmi:id="_XY6bgNNXEeSysKjHSGZfJQ" name="LA23834-7"/>
+      <ownedLiteral xmi:id="_bCBQMNNXEeSysKjHSGZfJQ" name="LA23835-4"/>
+      <ownedLiteral xmi:id="_fKYzwNNXEeSysKjHSGZfJQ" name="LA23836-2"/>
+      <ownedLiteral xmi:id="_iElUANNXEeSysKjHSGZfJQ" name="LA23837-0"/>
+      <ownedLiteral xmi:id="_lccAoNNXEeSysKjHSGZfJQ" name="LA23838-8"/>
+      <ownedLiteral xmi:id="_oxpo8NNXEeSysKjHSGZfJQ" name="LA23839-6"/>
+      <ownedLiteral xmi:id="_EJjDANYdEeSOzuJFX8ssTQ" name="LA24136-6"/>
+      <ownedLiteral xmi:id="_AOwL8NYeEeSOzuJFX8ssTQ" name="LA24137-4"/>
+      <ownedLiteral xmi:id="_ECHI0NYeEeSOzuJFX8ssTQ" name="LA24139-0"/>
+      <ownedLiteral xmi:id="_HRbkgNYeEeSOzuJFX8ssTQ" name="LA24140-8"/>
+      <ownedLiteral xmi:id="_NRS1MNYeEeSOzuJFX8ssTQ" name="LA24141-6"/>
+      <ownedLiteral xmi:id="_PznA8NYeEeSOzuJFX8ssTQ" name="LA24142-4"/>
+      <ownedLiteral xmi:id="_S8TQMNYeEeSOzuJFX8ssTQ" name="LA24143-2"/>
+      <ownedLiteral xmi:id="_V9SU8NYeEeSOzuJFX8ssTQ" name="LA24144-0"/>
+      <ownedLiteral xmi:id="_ZKFBENYeEeSOzuJFX8ssTQ" name="LA24145-7"/>
+      <ownedLiteral xmi:id="_c2S0INYeEeSOzuJFX8ssTQ" name="LA24146-5"/>
+      <ownedLiteral xmi:id="_frdDYNYeEeSOzuJFX8ssTQ" name="LA24147-3"/>
+      <ownedLiteral xmi:id="_i-e6YNYeEeSOzuJFX8ssTQ" name="LA24148-1"/>
+      <ownedLiteral xmi:id="_ltLVQNYeEeSOzuJFX8ssTQ" name="LA24149-9"/>
+      <ownedLiteral xmi:id="_oq1ZMNYeEeSOzuJFX8ssTQ" name="LA24150-7"/>
+      <ownedLiteral xmi:id="_rdlNoNYeEeSOzuJFX8ssTQ" name="LA24151-5"/>
+      <ownedLiteral xmi:id="_uhCXkNYeEeSOzuJFX8ssTQ" name="LA23827-1"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_5ARNgHSSEeGa4IXs2ghZEw" name="RegistryType">
       <ownedLiteral xmi:id="_dvY5wMFTEeGyGv5RKvEgDA" name="LA17057-3"/>
@@ -1295,18 +1289,13 @@
       <ownedLiteral xmi:id="_d3cpkMFTEeGyGv5RKvEgDA" name="LA17576-2"/>
       <ownedLiteral xmi:id="_d3jXQMFTEeGyGv5RKvEgDA" name="LA17577-0"/>
       <ownedLiteral xmi:id="_d3qsAMFTEeGyGv5RKvEgDA" name="LA17578-8"/>
-      <ownedLiteral xmi:id="_vTXVkNNvEeSysKjHSGZfJQ" name="LOINC_TBDA_971"/>
-      <ownedLiteral xmi:id="_xx1jINNvEeSysKjHSGZfJQ" name="LOINC_TBDA_972"/>
+      <ownedLiteral xmi:id="_vTXVkNNvEeSysKjHSGZfJQ" name="LA23840-4"/>
+      <ownedLiteral xmi:id="_xx1jINNvEeSysKjHSGZfJQ" name="LA23841-2"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_yL1P0HSTEeGa4IXs2ghZEw" name="NonDrugAllergyType">
-      <ownedLiteral xmi:id="_d3xZsMFTEeGyGv5RKvEgDA" name="LA137-2"/>
-      <ownedLiteral xmi:id="_d34HYMFTEeGyGv5RKvEgDA" name="LA17059-9"/>
-      <ownedLiteral xmi:id="_d3-1EMFTEeGyGv5RKvEgDA" name="LA18356-8"/>
-      <ownedLiteral xmi:id="_d4E7sMFTEeGyGv5RKvEgDA" name="LA18357-6"/>
-      <ownedLiteral xmi:id="_d4LpYMFTEeGyGv5RKvEgDA" name="LA18358-4"/>
-      <ownedLiteral xmi:id="_d4SXEMFTEeGyGv5RKvEgDA" name="LA18359-2"/>
-      <ownedLiteral xmi:id="_d4ZEwMFTEeGyGv5RKvEgDA" name="LA18360-0"/>
-      <ownedLiteral xmi:id="_d4fycMFTEeGyGv5RKvEgDA" name="LA18361-8"/>
+      <ownedComment xmi:id="_LyrcgDXhEeWpTYI46fwViQ">
+        <body>Valid values are SNOMED CT descendants of 419199007 Allergy to Substance or 258155009 photosensitization due to sun.  Reference the NEMSIS Suggested Lists at: http://nemsis.org/v3/resources.html</body>
+      </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_1rU1gHSTEeGa4IXs2ghZEw" name="MentalStatusFinding">
       <ownedLiteral xmi:id="_d4mgIMFTEeGyGv5RKvEgDA" name="LA17286-8"/>
@@ -1320,9 +1309,9 @@
       <ownedLiteral xmi:id="_d5a_gMFTEeGyGv5RKvEgDA" name="LA6630-3"/>
       <ownedLiteral xmi:id="_d5htMMFTEeGyGv5RKvEgDA" name="LA7438-0"/>
       <ownedLiteral xmi:id="_d5nz0MFTEeGyGv5RKvEgDA" name="LA9343-0"/>
-      <ownedLiteral xmi:id="_dvifANNaEeSysKjHSGZfJQ" name="LOINC_TBDA_928"/>
-      <ownedLiteral xmi:id="_f2dIMNNaEeSysKjHSGZfJQ" name="LOINC_TBDA_929"/>
-      <ownedLiteral xmi:id="_pDI6MNNaEeSysKjHSGZfJQ" name="LOINC_TBDA_930"/>
+      <ownedLiteral xmi:id="_dvifANNaEeSysKjHSGZfJQ" name="LA6150-2"/>
+      <ownedLiteral xmi:id="_f2dIMNNaEeSysKjHSGZfJQ" name="LA23818-0"/>
+      <ownedLiteral xmi:id="_pDI6MNNaEeSysKjHSGZfJQ" name="LA17666-1"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_4pdakHSTEeGa4IXs2ghZEw" name="BarrierToCare">
       <ownedLiteral xmi:id="_d5uhgMFTEeGyGv5RKvEgDA" name="LA17306-4"/>
@@ -1403,12 +1392,28 @@
       <ownedLiteral xmi:id="_eAHdYMFTEeGyGv5RKvEgDA" name="LA4389-8"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_YZGKgMFTEeGyGv5RKvEgDA" name="Confidentiality"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Ycs4IMFTEeGyGv5RKvEgDA" name="HL7 Confidentiality"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Ycs4IMFTEeGyGv5RKvEgDA" name="HL7 Confidentiality">
+      <ownedComment xmi:id="_qkGlgDXlEeWpTYI46fwViQ">
+        <body>Types of privacy metadata classifying an IT resource (data, information object, service, or system capability) according to its level of sensitivity, which is based on an analysis of applicable privacy policies and the risk of financial, reputational, or other harm to an individual or entity that could result if made available or disclosed to unauthorized individuals, entities, or processes.</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Yc5scMFTEeGyGv5RKvEgDA" name="Human language"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_YdC2YMFTEeGyGv5RKvEgDA" name="HL7 Human Language"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_YdC2YMFTEeGyGv5RKvEgDA" name="HL7 Human Language">
+      <ownedComment xmi:id="_uFGnEDXlEeWpTYI46fwViQ">
+        <body>Codes for the Representation of Names of Languages</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_YdLZQMFTEeGyGv5RKvEgDA" name="Administrative Gender "/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_YdPDoMFTEeGyGv5RKvEgDA" name="HL7 Administrative Gender"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_YgJ0wMFTEeGyGv5RKvEgDA" name="LOINC"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_YdPDoMFTEeGyGv5RKvEgDA" name="HL7 Administrative Gender">
+      <ownedComment xmi:id="_sWdT8DXlEeWpTYI46fwViQ">
+        <body>The gender of a person used for adminstrative purposes (as opposed to clinical gender)</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_YgJ0wMFTEeGyGv5RKvEgDA" name="LOINC">
+      <ownedComment xmi:id="_G0WvEDXmEeWpTYI46fwViQ">
+        <body>Logical Observation Identifiers Names and Codes</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_YhXVsMFTEeGyGv5RKvEgDA" name="Stroke Scale Interpretation">
       <ownedLiteral xmi:id="_eAOLEMFTEeGyGv5RKvEgDA" name="LA17109-2"/>
       <ownedLiteral xmi:id="_eAU4wMFTEeGyGv5RKvEgDA" name="LA6576-8"/>
@@ -1426,11 +1431,27 @@
       <ownedLiteral xmi:id="_eBJ_MMFTEeGyGv5RKvEgDA" name="LA4389-8"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_l2HA0McHEeGjDJAyT0XW9Q" name="Ethnicity"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_M5r9gMcdEeGjDJAyT0XW9Q" name="ICD-10"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_q2WlkMcdEeGjDJAyT0XW9Q" name="ICD-10 PCS"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_t_HGQMcdEeGjDJAyT0XW9Q" name="ICD-10 CM"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_M5r9gMcdEeGjDJAyT0XW9Q" name="ICD-10">
+      <ownedComment xmi:id="_zght8DXlEeWpTYI46fwViQ">
+        <body>Classifications for diseases, signs and symptoms, abnormal findings, complaints, social circumstances, and external causes of injury or diseases</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_q2WlkMcdEeGjDJAyT0XW9Q" name="ICD-10 PCS">
+      <ownedComment xmi:id="_4ckKIDXlEeWpTYI46fwViQ">
+        <body>ICD-10 Procedure Coding System</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_t_HGQMcdEeGjDJAyT0XW9Q" name="ICD-10 CM">
+      <ownedComment xmi:id="_19aAEDXlEeWpTYI46fwViQ">
+        <body>International Classification of Diseases, 10th Revision, Clinical Modification</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_33fskFKGEeK-YbJf-zpN1g" name="FDA Route of Administration"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_vP6qUFg6EeK-i8RB1gvLUA" name="RxNorm"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_vP6qUFg6EeK-i8RB1gvLUA" name="RxNorm">
+      <ownedComment xmi:id="_qfofwDXmEeWpTYI46fwViQ">
+        <body>Normalized names for clinical drugs</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_m-xX4FhYEeK-i8RB1gvLUA" name="EMSMedicationAdministrationDevice">
       <ownedLiteral xmi:id="_xkzicFhYEeK-i8RB1gvLUA" name="39849001"/>
       <ownedLiteral xmi:id="_EnRGwFhZEeK-i8RB1gvLUA" name="427591007"/>
@@ -1447,6 +1468,12 @@
       <ownedLiteral xmi:id="_JcA-0LMUEeKNbt70lHd2Eg" name="LA17063-1"/>
       <ownedLiteral xmi:id="_LAykQLMUEeKNbt70lHd2Eg" name="LA17064-9"/>
       <ownedLiteral xmi:id="_MAbcULMUEeKNbt70lHd2Eg" name="LA17065-6"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_YT_E4HSPEeGa4IXs2ghZEw" name="TransportationMode">
+      <ownedLiteral xmi:id="_dfdAUMFTEeGyGv5RKvEgDA" name="LA17177-9"/>
+      <ownedLiteral xmi:id="_dfjuAMFTEeGyGv5RKvEgDA" name="LA17178-7"/>
+      <ownedLiteral xmi:id="_dfwiUMFTEeGyGv5RKvEgDA" name="LA17179-5"/>
+      <ownedLiteral xmi:id="_dgEEUMFTEeGyGv5RKvEgDA" name="LA17180-3"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_7DuooLMpEeKNbt70lHd2Eg" name="RaceCategory">
       <ownedLiteral xmi:id="_BAdFwLMqEeKNbt70lHd2Eg" name="1002-5"/>
@@ -1474,89 +1501,88 @@
       <ownedLiteral xmi:id="_OhT_YMtZEeSbT7e8VE5niQ" name="LA22797-7"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_TLVzoMtbEeSbT7e8VE5niQ" name="TransportModeQualifier">
-      <ownedLiteral xmi:id="_3A7W4MtbEeSbT7e8VE5niQ" name="LOINC_TBDA_007"/>
-      <ownedLiteral xmi:id="_AB0IkMtcEeSbT7e8VE5niQ" name="LOINC_TBDA_008"/>
-      <ownedLiteral xmi:id="_D7yDwMtcEeSbT7e8VE5niQ" name="LOINC_TBDA_009"/>
-      <ownedLiteral xmi:id="_Ja70EMtcEeSbT7e8VE5niQ" name="LOINC_TBDA_010"/>
-      <ownedLiteral xmi:id="_NONRYMtcEeSbT7e8VE5niQ" name="LOINC_TBDA_011"/>
-      <ownedLiteral xmi:id="_Q9rz0MtcEeSbT7e8VE5niQ" name="LOINC_TBDA_012"/>
-      <ownedLiteral xmi:id="_UP_SEMtcEeSbT7e8VE5niQ" name="LOINC_TBDA_013"/>
-      <ownedLiteral xmi:id="_XVKTQMtcEeSbT7e8VE5niQ" name="LOINC_TBDA_014"/>
-      <ownedLiteral xmi:id="_bVA0AMtcEeSbT7e8VE5niQ" name="LOINC_TBDA_015"/>
-      <ownedLiteral xmi:id="_e6QcYMtcEeSbT7e8VE5niQ" name="LOINC_TBDA_016"/>
+      <ownedLiteral xmi:id="_3A7W4MtbEeSbT7e8VE5niQ" name="LA22798-5"/>
+      <ownedLiteral xmi:id="_AB0IkMtcEeSbT7e8VE5niQ" name="LA22799-3"/>
+      <ownedLiteral xmi:id="_D7yDwMtcEeSbT7e8VE5niQ" name="LA22800-9"/>
+      <ownedLiteral xmi:id="_Ja70EMtcEeSbT7e8VE5niQ" name="LA22801-7"/>
+      <ownedLiteral xmi:id="_NONRYMtcEeSbT7e8VE5niQ" name="LA22802-5"/>
+      <ownedLiteral xmi:id="_Q9rz0MtcEeSbT7e8VE5niQ" name="LA22803-3"/>
+      <ownedLiteral xmi:id="_UP_SEMtcEeSbT7e8VE5niQ" name="LA22804-1"/>
+      <ownedLiteral xmi:id="_XVKTQMtcEeSbT7e8VE5niQ" name="LA22805-8"/>
+      <ownedLiteral xmi:id="_e6QcYMtcEeSbT7e8VE5niQ" name="LA22807-4"/>
+      <ownedLiteral xmi:id="_bVA0AMtcEeSbT7e8VE5niQ" name="LA22806-6"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_1wps0MxCEeSOI6Ao2VuoSQ" name="PrimaryHospitalCapability">
-      <ownedLiteral xmi:id="_7w-QgMxCEeSOI6Ao2VuoSQ" name="LOINC_TBDA_401"/>
-      <ownedLiteral xmi:id="_DL80UMxDEeSOI6Ao2VuoSQ" name="LOINC_TBDA_402"/>
-      <ownedLiteral xmi:id="_Fvr8YMxDEeSOI6Ao2VuoSQ" name="LOINC_TBDA_403"/>
-      <ownedLiteral xmi:id="_J4FVIMxDEeSOI6Ao2VuoSQ" name="LOINC_TBDA_404"/>
-      <ownedLiteral xmi:id="_NTByAMxDEeSOI6Ao2VuoSQ" name="LOINC_TBDA_405"/>
-      <ownedLiteral xmi:id="_VuPDwMxDEeSOI6Ao2VuoSQ" name="LOINC_TBDA_406"/>
-      <ownedLiteral xmi:id="_ZzVQ4MxDEeSOI6Ao2VuoSQ" name="LOINC_TBDA_407"/>
-      <ownedLiteral xmi:id="_crZDIMxDEeSOI6Ao2VuoSQ" name="LOINC_TBDA_408"/>
-      <ownedLiteral xmi:id="_fsJeYMxDEeSOI6Ao2VuoSQ" name="LOINC_TBDA_409"/>
-      <ownedLiteral xmi:id="_ipFwoMxDEeSOI6Ao2VuoSQ" name="LOINC_TBDA_410"/>
-      <ownedLiteral xmi:id="_lSsQIMxDEeSOI6Ao2VuoSQ" name="LOINC_TBDA_411"/>
-      <ownedLiteral xmi:id="_phekwMxDEeSOI6Ao2VuoSQ" name="LOINC_TBDA_412"/>
-      <ownedLiteral xmi:id="_rvJ9QMxDEeSOI6Ao2VuoSQ" name="LOINC_TBDA_413"/>
-      <ownedLiteral xmi:id="_vFwssMxDEeSOI6Ao2VuoSQ" name="LOINC_TBDA_414"/>
-      <ownedLiteral xmi:id="_yrkVwMxDEeSOI6Ao2VuoSQ" name="LOINC_TBDA_415"/>
+      <ownedLiteral xmi:id="_7w-QgMxCEeSOI6Ao2VuoSQ" name="LA22833-0"/>
+      <ownedLiteral xmi:id="_DL80UMxDEeSOI6Ao2VuoSQ" name="LA22834-8"/>
+      <ownedLiteral xmi:id="_Fvr8YMxDEeSOI6Ao2VuoSQ" name="LA22835-5"/>
+      <ownedLiteral xmi:id="_J4FVIMxDEeSOI6Ao2VuoSQ" name="LA22836-3"/>
+      <ownedLiteral xmi:id="_NTByAMxDEeSOI6Ao2VuoSQ" name="LA22837-1"/>
+      <ownedLiteral xmi:id="_VuPDwMxDEeSOI6Ao2VuoSQ" name="LA22838-9"/>
+      <ownedLiteral xmi:id="_ZzVQ4MxDEeSOI6Ao2VuoSQ" name="LA22841-3"/>
+      <ownedLiteral xmi:id="_crZDIMxDEeSOI6Ao2VuoSQ" name="LA22842-1"/>
+      <ownedLiteral xmi:id="_fsJeYMxDEeSOI6Ao2VuoSQ" name="LA22843-9"/>
+      <ownedLiteral xmi:id="_ipFwoMxDEeSOI6Ao2VuoSQ" name="LA22844-7"/>
+      <ownedLiteral xmi:id="_lSsQIMxDEeSOI6Ao2VuoSQ" name="LA22845-4"/>
+      <ownedLiteral xmi:id="_phekwMxDEeSOI6Ao2VuoSQ" name="LA22846-2"/>
+      <ownedLiteral xmi:id="_rvJ9QMxDEeSOI6Ao2VuoSQ" name="LA22847-0"/>
+      <ownedLiteral xmi:id="_vFwssMxDEeSOI6Ao2VuoSQ" name="LA22848-8"/>
+      <ownedLiteral xmi:id="_yrkVwMxDEeSOI6Ao2VuoSQ" name="LA22849-6"/>
       <ownedLiteral xmi:id="_3jkmgMxDEeSOI6Ao2VuoSQ" name="LOINC_TBDA_416"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_PLHNoMxGEeSOI6Ao2VuoSQ" name="DestinationWardKind">
-      <ownedLiteral xmi:id="_bdovMMxGEeSOI6Ao2VuoSQ" name="LOINC_TBDA_301"/>
-      <ownedLiteral xmi:id="_kpW34MxGEeSOI6Ao2VuoSQ" name="LOINC_TBDA_302"/>
-      <ownedLiteral xmi:id="_ffIxkMxNEeSng9W-IRKXig" name="LOINC_TBDA_303"/>
-      <ownedLiteral xmi:id="_rHHhUMxNEeSng9W-IRKXig" name="LOINC_TBDA_304"/>
-      <ownedLiteral xmi:id="_uMeIsMxNEeSng9W-IRKXig" name="LOINC_TBDA_305"/>
-      <ownedLiteral xmi:id="_xA7NUMxNEeSng9W-IRKXig" name="LOINC_TBDA_306"/>
-      <ownedLiteral xmi:id="_1oHa4MxNEeSng9W-IRKXig" name="LOINC_TBDA_307"/>
-      <ownedLiteral xmi:id="_4vD9sMxNEeSng9W-IRKXig" name="LOINC_TBDA_308"/>
-      <ownedLiteral xmi:id="_8HSdwMxNEeSng9W-IRKXig" name="LOINC_TBDA_309"/>
-      <ownedLiteral xmi:id="__tVXYMxNEeSng9W-IRKXig" name="LOINC_TBDA_310"/>
-      <ownedLiteral xmi:id="_C2vYUMxOEeSng9W-IRKXig" name="LOINC_TBDA_311"/>
-      <ownedLiteral xmi:id="_GB9-MMxOEeSng9W-IRKXig" name="LOINC_TBDA_312"/>
-      <ownedLiteral xmi:id="_KWWkgMxOEeSng9W-IRKXig" name="LOINC_TBDA_313"/>
-      <ownedLiteral xmi:id="_NYaAQMxOEeSng9W-IRKXig" name="LOINC_TBDA_314"/>
-      <ownedLiteral xmi:id="_QRP1oMxOEeSng9W-IRKXig" name="LOINC_TBDA_315"/>
-      <ownedLiteral xmi:id="_VDYu8MxOEeSng9W-IRKXig" name="LOINC_TBDA_316"/>
-      <ownedLiteral xmi:id="_YcnUkMxOEeSng9W-IRKXig" name="LOINC_TBDA_317"/>
-      <ownedLiteral xmi:id="_bKkvoMxOEeSng9W-IRKXig" name="LOINC_TBDA_318"/>
-      <ownedLiteral xmi:id="_gDke4MxOEeSng9W-IRKXig" name="LOINC_TBDA_319"/>
-      <ownedLiteral xmi:id="_0AF3sMxOEeSng9W-IRKXig" name="LOINC_TBDA_320"/>
-      <ownedLiteral xmi:id="_41k_8MxOEeSng9W-IRKXig" name="LOINC_TBDA_321"/>
-      <ownedLiteral xmi:id="_8J5QYMxOEeSng9W-IRKXig" name="LOINC_TBDA_322"/>
-      <ownedLiteral xmi:id="__XemsMxOEeSng9W-IRKXig" name="LOINC_TBDA_323"/>
-      <ownedLiteral xmi:id="_C1HyQMxPEeSng9W-IRKXig" name="LOINC_TBDA_324"/>
-      <ownedLiteral xmi:id="_ID5kQMxPEeSng9W-IRKXig" name="LOINC_TBDA_325"/>
+      <ownedLiteral xmi:id="_bdovMMxGEeSOI6Ao2VuoSQ" name="LA22808-2"/>
+      <ownedLiteral xmi:id="_kpW34MxGEeSOI6Ao2VuoSQ" name="LA22809-0"/>
+      <ownedLiteral xmi:id="_ffIxkMxNEeSng9W-IRKXig" name="LA22810-8"/>
+      <ownedLiteral xmi:id="_YcnUkMxOEeSng9W-IRKXig" name="LA22824-9"/>
+      <ownedLiteral xmi:id="_rHHhUMxNEeSng9W-IRKXig" name="LA22811-6"/>
+      <ownedLiteral xmi:id="_uMeIsMxNEeSng9W-IRKXig" name="LA22812-4"/>
+      <ownedLiteral xmi:id="_xA7NUMxNEeSng9W-IRKXig" name="LA22813-2"/>
+      <ownedLiteral xmi:id="_1oHa4MxNEeSng9W-IRKXig" name="LA22814-0"/>
+      <ownedLiteral xmi:id="_4vD9sMxNEeSng9W-IRKXig" name="LA22815-7"/>
+      <ownedLiteral xmi:id="_8HSdwMxNEeSng9W-IRKXig" name="LA22816-5"/>
+      <ownedLiteral xmi:id="__tVXYMxNEeSng9W-IRKXig" name="LA22817-3"/>
+      <ownedLiteral xmi:id="_C2vYUMxOEeSng9W-IRKXig" name="LA22818-1"/>
+      <ownedLiteral xmi:id="_GB9-MMxOEeSng9W-IRKXig" name="LA22819-9"/>
+      <ownedLiteral xmi:id="_KWWkgMxOEeSng9W-IRKXig" name="LA22820-7"/>
+      <ownedLiteral xmi:id="_NYaAQMxOEeSng9W-IRKXig" name="LA22821-5"/>
+      <ownedLiteral xmi:id="_QRP1oMxOEeSng9W-IRKXig" name="LA22822-3"/>
+      <ownedLiteral xmi:id="_VDYu8MxOEeSng9W-IRKXig" name="LA22823-1"/>
+      <ownedLiteral xmi:id="_bKkvoMxOEeSng9W-IRKXig" name="LA22825-6"/>
+      <ownedLiteral xmi:id="_gDke4MxOEeSng9W-IRKXig" name="LA22826-4"/>
+      <ownedLiteral xmi:id="_0AF3sMxOEeSng9W-IRKXig" name="LA22827-2"/>
+      <ownedLiteral xmi:id="_41k_8MxOEeSng9W-IRKXig" name="LA22828-0"/>
+      <ownedLiteral xmi:id="_8J5QYMxOEeSng9W-IRKXig" name="LA22829-8"/>
+      <ownedLiteral xmi:id="__XemsMxOEeSng9W-IRKXig" name="LA22830-6"/>
+      <ownedLiteral xmi:id="_C1HyQMxPEeSng9W-IRKXig" name="LA22831-4"/>
+      <ownedLiteral xmi:id="_ID5kQMxPEeSng9W-IRKXig" name="LA22832-2"/>
       <ownedLiteral xmi:id="_LxURMMxPEeSng9W-IRKXig" name="LOINC_TBDA_326"/>
       <ownedLiteral xmi:id="_PVeUcMxPEeSng9W-IRKXig" name="LOINC_TBDA_327"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_X3nYwM0MEeS2tKNWeEWjGg" name="UnitLevelOfCare">
-      <ownedLiteral xmi:id="_N1e6kM0OEeS2tKNWeEWjGg" name="LOINC_TBDA_501"/>
-      <ownedLiteral xmi:id="_WKonoM0OEeS2tKNWeEWjGg" name="LOINC_TBDA_502"/>
-      <ownedLiteral xmi:id="_cItvoM0OEeS2tKNWeEWjGg" name="LOINC_TBDA_503"/>
-      <ownedLiteral xmi:id="_icpL0M0OEeS2tKNWeEWjGg" name="LOINC_TBDA_504"/>
-      <ownedLiteral xmi:id="_nh5OYM0OEeS2tKNWeEWjGg" name="LOINC_TBDA_505"/>
-      <ownedLiteral xmi:id="_qit7EM0OEeS2tKNWeEWjGg" name="LOINC_TBDA_506"/>
-      <ownedLiteral xmi:id="_uV_YYM0OEeS2tKNWeEWjGg" name="LOINC_TBDA_507"/>
-      <ownedLiteral xmi:id="_xaXvYM0OEeS2tKNWeEWjGg" name="LOINC_TBDA_508"/>
-      <ownedLiteral xmi:id="_00POMM0OEeS2tKNWeEWjGg" name="LOINC_TBDA_509"/>
-      <ownedLiteral xmi:id="_4a5y4M0OEeS2tKNWeEWjGg" name="LOINC_TBDA_510"/>
-      <ownedLiteral xmi:id="_ClFu8M0PEeS2tKNWeEWjGg" name="LOINC_TBDA_511"/>
-      <ownedLiteral xmi:id="_GJRnYM0PEeS2tKNWeEWjGg" name="LOINC_TBDA_512"/>
+      <ownedLiteral xmi:id="_N1e6kM0OEeS2tKNWeEWjGg" name="LA22851-2"/>
+      <ownedLiteral xmi:id="_WKonoM0OEeS2tKNWeEWjGg" name="LA22852-0"/>
+      <ownedLiteral xmi:id="_icpL0M0OEeS2tKNWeEWjGg" name="LA22854-6"/>
+      <ownedLiteral xmi:id="_nh5OYM0OEeS2tKNWeEWjGg" name="LA22862-9"/>
+      <ownedLiteral xmi:id="_qit7EM0OEeS2tKNWeEWjGg" name="LA22855-3"/>
+      <ownedLiteral xmi:id="_uV_YYM0OEeS2tKNWeEWjGg" name="LA22856-1"/>
+      <ownedLiteral xmi:id="_xaXvYM0OEeS2tKNWeEWjGg" name="LA22857-9"/>
+      <ownedLiteral xmi:id="_00POMM0OEeS2tKNWeEWjGg" name="LA22858-7"/>
+      <ownedLiteral xmi:id="_4a5y4M0OEeS2tKNWeEWjGg" name="LA22859-5"/>
+      <ownedLiteral xmi:id="_ClFu8M0PEeS2tKNWeEWjGg" name="LA22860-3"/>
+      <ownedLiteral xmi:id="_GJRnYM0PEeS2tKNWeEWjGg" name="LA22861-1"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Ldot4M0YEeSJm6m0rTs9zw" name="ResponseModeQualifier">
-      <ownedLiteral xmi:id="_Ldot4c0YEeSJm6m0rTs9zw" name="LOINC_TBDA_007"/>
-      <ownedLiteral xmi:id="_Ldot4s0YEeSJm6m0rTs9zw" name="LOINC_TBDA_008"/>
-      <ownedLiteral xmi:id="_Ldot480YEeSJm6m0rTs9zw" name="LOINC_TBDA_009"/>
-      <ownedLiteral xmi:id="_Ldot5M0YEeSJm6m0rTs9zw" name="LOINC_TBDA_010"/>
-      <ownedLiteral xmi:id="_Ldot5c0YEeSJm6m0rTs9zw" name="LOINC_TBDA_011"/>
-      <ownedLiteral xmi:id="_Ldot5s0YEeSJm6m0rTs9zw" name="LOINC_TBDA_012"/>
-      <ownedLiteral xmi:id="_Ldot580YEeSJm6m0rTs9zw" name="LOINC_TBDA_013"/>
-      <ownedLiteral xmi:id="_Ldot6M0YEeSJm6m0rTs9zw" name="LOINC_TBDA_014"/>
-      <ownedLiteral xmi:id="_Ldot6c0YEeSJm6m0rTs9zw" name="LOINC_TBDA_015"/>
-      <ownedLiteral xmi:id="_Ldot6s0YEeSJm6m0rTs9zw" name="LOINC_TBDA_016"/>
+      <ownedLiteral xmi:id="_Ldot4c0YEeSJm6m0rTs9zw" name="LA22798-5"/>
+      <ownedLiteral xmi:id="_Ldot4s0YEeSJm6m0rTs9zw" name="LA22799-3"/>
+      <ownedLiteral xmi:id="_Ldot480YEeSJm6m0rTs9zw" name="LA22800-9"/>
+      <ownedLiteral xmi:id="_Ldot5M0YEeSJm6m0rTs9zw" name="LA22801-7"/>
+      <ownedLiteral xmi:id="_Ldot5c0YEeSJm6m0rTs9zw" name="LA22802-5"/>
+      <ownedLiteral xmi:id="_Ldot5s0YEeSJm6m0rTs9zw" name="LA22803-3"/>
+      <ownedLiteral xmi:id="_Ldot580YEeSJm6m0rTs9zw" name="LA22804-1"/>
+      <ownedLiteral xmi:id="_Ldot6M0YEeSJm6m0rTs9zw" name="LA22805-8"/>
+      <ownedLiteral xmi:id="_Ldot6c0YEeSJm6m0rTs9zw" name="LA22806-6"/>
+      <ownedLiteral xmi:id="_Ldot6s0YEeSJm6m0rTs9zw" name="LA22807-4"/>
       <ownedLiteral xmi:id="_ajPbEM0YEeSJm6m0rTs9zw" name="LOINC_TBDA_017"/>
       <ownedLiteral xmi:id="_e6aPoM0YEeSJm6m0rTs9zw" name="LOINC_TBDA_018"/>
     </packagedElement>
@@ -1629,7 +1655,9 @@
   <term:ValueSetVersion xmi:id="_WDkhcHSPEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.11.54" definition="Kind of circumstance delaying EMS readiness after an incident" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_WDj6YHSPEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_YT_r8HSPEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.11.66" definition="Urgency of transport" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_YT_E4HSPEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_dEWckHSPEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.11.56" definition="Anatomical location of administered infusion, typically intravenous" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_dEV1gHSPEeGa4IXs2ghZEw"/>
-  <term:ValueSetVersion xmi:id="_hkDiEHSPEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.11.90" definition="Rationale for not attempting to resuscitate a patient" binding="Dynamic" base_Enumeration="_hkC7AHSPEeGa4IXs2ghZEw"/>
+  <term:ValueSetVersion xmi:id="_hkDiEHSPEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.11.90" definition="Rationale for not attempting to resuscitate a patient" binding="Dynamic" base_Enumeration="_hkC7AHSPEeGa4IXs2ghZEw">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_olMpkHSPEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.11.57" definition="Kind of procedure used for cardiopulmonary resuscitation" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_olMCgHSPEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_s33_sHSPEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.11.58" definition="Kind of abnormal effect associated with the performance of a procedure" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_s33YoHSPEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_wrYtkHSPEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.11.6" definition="Location of a passenger within a vehicle" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_wrYGgHSPEeGa4IXs2ghZEw"/>
@@ -1670,7 +1698,7 @@
   <term:CodeSystemVersion xmi:id="_YdC2YcFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.6.121" version="" fullName="Codes for the Representation of Names of Languages" source="HL7" base_Enumeration="_YdC2YMFTEeGyGv5RKvEgDA"/>
   <term:ValueSetVersion xmi:id="_YdLZQcFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.1.11.1" definition="Gender of the patient for administrative purposes" binding="Dynamic" codeSystem="_YdPqsMFTEeGyGv5RKvEgDA" base_Enumeration="_YdLZQMFTEeGyGv5RKvEgDA"/>
   <term:CodeSystemVersion xmi:id="_YdPqsMFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.5.1" version="" fullName="The gender of a person used for adminstrative purposes (as opposed to clinical gender)" source="HL7" base_Enumeration="_YdPDoMFTEeGyGv5RKvEgDA"/>
-  <term:CodeSystemVersion xmi:id="_YgJ0wcFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.6.1" version="" source="NEMSIS" base_Enumeration="_YgJ0wMFTEeGyGv5RKvEgDA"/>
+  <term:CodeSystemVersion xmi:id="_YgJ0wcFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.6.1" version="" fullName="Logical Observation Identifiers Names and Codes" source="NEMSIS" base_Enumeration="_YgJ0wMFTEeGyGv5RKvEgDA"/>
   <term:ValueSetVersion xmi:id="_YhX8wMFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.17.3.11.93" definition="Finding based on a stroke scale instrument" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_YhXVsMFTEeGyGv5RKvEgDA"/>
   <term:ValueSetVersion xmi:id="_YheDYcFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.17.3.11.94" definition="Relative primacy of complaint" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_YheDYMFTEeGyGv5RKvEgDA"/>
   <term:ValueSetVersion xmi:id="_YhkKAcFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.17.3.11.95" definition="Rationale for not completing an otherwise indicated procedure" binding="Dynamic" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_YhkKAMFTEeGyGv5RKvEgDA"/>
@@ -2677,14 +2705,6 @@
   <term:ValueSetCode xmi:id="_d3cpkcFTEeGyGv5RKvEgDA" conceptName="Non-Transport Assistance" base_EnumerationLiteral="_d3cpkMFTEeGyGv5RKvEgDA" xxxxx="LA17576-2"/>
   <term:ValueSetCode xmi:id="_d3klYMFTEeGyGv5RKvEgDA" conceptName="Non-Transport Rescue" base_EnumerationLiteral="_d3jXQMFTEeGyGv5RKvEgDA" xxxxx="LA17577-0"/>
   <term:ValueSetCode xmi:id="_d3qsAcFTEeGyGv5RKvEgDA" conceptName="Non-Transport Administrative (e.g., Supervisor)" base_EnumerationLiteral="_d3qsAMFTEeGyGv5RKvEgDA" xxxxx="LA17578-8"/>
-  <term:ValueSetCode xmi:id="_d3xZscFTEeGyGv5RKvEgDA" conceptName="None" base_EnumerationLiteral="_d3xZsMFTEeGyGv5RKvEgDA" xxxxx="LA137-2"/>
-  <term:ValueSetCode xmi:id="_d34HYcFTEeGyGv5RKvEgDA" conceptName="Other (not listed)" base_EnumerationLiteral="_d34HYMFTEeGyGv5RKvEgDA" xxxxx="LA17059-9"/>
-  <term:ValueSetCode xmi:id="_d3-1EcFTEeGyGv5RKvEgDA" conceptName="Chemical" base_EnumerationLiteral="_d3-1EMFTEeGyGv5RKvEgDA" xxxxx="LA18356-8"/>
-  <term:ValueSetCode xmi:id="_d4FiwMFTEeGyGv5RKvEgDA" conceptName="Dander/dust/mold/pollen" base_EnumerationLiteral="_d4E7sMFTEeGyGv5RKvEgDA" xxxxx="LA18357-6"/>
-  <term:ValueSetCode xmi:id="_d4MQcMFTEeGyGv5RKvEgDA" conceptName="Food allergy" base_EnumerationLiteral="_d4LpYMFTEeGyGv5RKvEgDA" xxxxx="LA18358-4"/>
-  <term:ValueSetCode xmi:id="_d4SXEcFTEeGyGv5RKvEgDA" conceptName="Insect sting" base_EnumerationLiteral="_d4SXEMFTEeGyGv5RKvEgDA" xxxxx="LA18359-2"/>
-  <term:ValueSetCode xmi:id="_d4ZEwcFTEeGyGv5RKvEgDA" conceptName="Latex" base_EnumerationLiteral="_d4ZEwMFTEeGyGv5RKvEgDA" xxxxx="LA18360-0"/>
-  <term:ValueSetCode xmi:id="_d4fyccFTEeGyGv5RKvEgDA" conceptName="Plant" base_EnumerationLiteral="_d4fycMFTEeGyGv5RKvEgDA" xxxxx="LA18361-8"/>
   <term:ValueSetCode xmi:id="_d4mgIcFTEeGyGv5RKvEgDA" conceptName="Normal baseline for patient" base_EnumerationLiteral="_d4mgIMFTEeGyGv5RKvEgDA" xxxxx="LA17286-8"/>
   <term:ValueSetCode xmi:id="_d4smwcFTEeGyGv5RKvEgDA" conceptName="Combative" base_EnumerationLiteral="_d4smwMFTEeGyGv5RKvEgDA" xxxxx="LA17287-6"/>
   <term:ValueSetCode xmi:id="_d4zUccFTEeGyGv5RKvEgDA" conceptName="Oriented-person" base_EnumerationLiteral="_d4zUcMFTEeGyGv5RKvEgDA" xxxxx="LA17288-4"/>
@@ -2837,7 +2857,7 @@
   <term:ValueSetCode xmi:id="_YCL8AbMqEeKNbt70lHd2Eg" conceptName="White" base_EnumerationLiteral="_YCL8ALMqEeKNbt70lHd2Eg">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetCode>
-  <term:ValueSetVersion xmi:id="_gyJxQLM0EeKq7sXu8zXehQ" identifier="2.16.840.1.114222.4.11.837" binding="Dynamic" codeSystem="_vgktgLM0EeKq7sXu8zXehQ" base_Enumeration="_gx7u0LM0EeKq7sXu8zXehQ"/>
+  <term:ValueSetVersion xmi:id="_gyJxQLM0EeKq7sXu8zXehQ" identifier="2.16.840.1.114222.4.11.837" definition="Abbreviated set of ethnic backgrounds" binding="Dynamic" codeSystem="_vgktgLM0EeKq7sXu8zXehQ" base_Enumeration="_gx7u0LM0EeKq7sXu8zXehQ"/>
   <term:ValueSetCode xmi:id="_jKN00LM0EeKq7sXu8zXehQ" conceptName="Hispanic or Latino" base_EnumerationLiteral="_jKNNwLM0EeKq7sXu8zXehQ"/>
   <term:ValueSetCode xmi:id="_nLeDwLM0EeKq7sXu8zXehQ" conceptName="Not Hispanic or Latino" base_EnumerationLiteral="_nLdcsLM0EeKq7sXu8zXehQ"/>
   <term:CodeSystemVersion xmi:id="_vgktgLM0EeKq7sXu8zXehQ" identifier="2.16.840.1.113883.6.238" fullName="Specific race codes" url="https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.238" base_Enumeration="_vgkGcLM0EeKq7sXu8zXehQ"/>
@@ -2874,7 +2894,9 @@
   <term:ValueSetCode xmi:id="_XVKTQctcEeSbT7e8VE5niQ" conceptName="No Lights or Sirens" base_EnumerationLiteral="_XVKTQMtcEeSbT7e8VE5niQ"/>
   <term:ValueSetCode xmi:id="_bVBbEMtcEeSbT7e8VE5niQ" conceptName="Initial No Lights or Sirens, Upgraded to Lights and Sirens" base_EnumerationLiteral="_bVA0AMtcEeSbT7e8VE5niQ"/>
   <term:ValueSetCode xmi:id="_e6RDcMtcEeSbT7e8VE5niQ" conceptName="Initial Lights and Sirens, Downgraded to No Lights or Sirens" base_EnumerationLiteral="_e6QcYMtcEeSbT7e8VE5niQ"/>
-  <term:ValueSetVersion xmi:id="_1wsJEMxCEeSOI6Ao2VuoSQ" identifier="2.16.840.1.113883.17.3.11.104" definition="Characteristic hospital capabilities that might be germane to an EMS destination selection" base_Enumeration="_1wps0MxCEeSOI6Ao2VuoSQ"/>
+  <term:ValueSetVersion xmi:id="_1wsJEMxCEeSOI6Ao2VuoSQ" identifier="2.16.840.1.113883.17.3.11.104" definition="Characteristic hospital capabilities that might be germane to an EMS destination selection" base_Enumeration="_1wps0MxCEeSOI6Ao2VuoSQ">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_7w-3kMxCEeSOI6Ao2VuoSQ" conceptName="Behavioral health" base_EnumerationLiteral="_7w-QgMxCEeSOI6Ao2VuoSQ"/>
   <term:ValueSetCode xmi:id="_DL9bYMxDEeSOI6Ao2VuoSQ" conceptName="Burn center" base_EnumerationLiteral="_DL80UMxDEeSOI6Ao2VuoSQ"/>
   <term:ValueSetCode xmi:id="_FvsjcMxDEeSOI6Ao2VuoSQ" conceptName="Critical access hospital" base_EnumerationLiteral="_Fvr8YMxDEeSOI6Ao2VuoSQ"/>
@@ -2920,13 +2942,12 @@
   <term:ValueSetCode xmi:id="_C1IZUMxPEeSng9W-IRKXig" conceptName="Hospital-rehabilitation" base_EnumerationLiteral="_C1HyQMxPEeSng9W-IRKXig"/>
   <term:ValueSetCode xmi:id="_ID6LUMxPEeSng9W-IRKXig" conceptName="Hospital-SICU" base_EnumerationLiteral="_ID5kQMxPEeSng9W-IRKXig"/>
   <term:ValueSetCode xmi:id="_LxU4QMxPEeSng9W-IRKXig" conceptName="Hospital-oncology" base_EnumerationLiteral="_LxURMMxPEeSng9W-IRKXig"/>
-  <term:ValueSetCode xmi:id="_PVfikMxPEeSng9W-IRKXig" conceptName="Hospital-outpatient surgery" base_EnumerationLiteral="_PVeUcMxPEeSng9W-IRKXig"/>
+  <term:ValueSetCode xmi:id="_PVfikMxPEeSng9W-IRKXig" conceptName="Hospital-Outpatient Surgery" base_EnumerationLiteral="_PVeUcMxPEeSng9W-IRKXig"/>
   <term:ValueSetVersion xmi:id="_X3p1AM0MEeS2tKNWeEWjGg" identifier="2.16.840.1.113883.17.3.11.105" definition="Levels of care a unit may be able to provide" base_Enumeration="_X3nYwM0MEeS2tKNWeEWjGg">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_N1gIsM0OEeS2tKNWeEWjGg" conceptName="BLS-First Responder/EMR" base_EnumerationLiteral="_N1e6kM0OEeS2tKNWeEWjGg"/>
   <term:ValueSetCode xmi:id="_WKpOsM0OEeS2tKNWeEWjGg" conceptName="BLS-Basic /EMT" base_EnumerationLiteral="_WKonoM0OEeS2tKNWeEWjGg"/>
-  <term:ValueSetCode xmi:id="_cIu9wM0OEeS2tKNWeEWjGg" conceptName="BLS-AEMT" base_EnumerationLiteral="_cItvoM0OEeS2tKNWeEWjGg"/>
   <term:ValueSetCode xmi:id="_icpy4M0OEeS2tKNWeEWjGg" conceptName="BLS-Intermediate" base_EnumerationLiteral="_icpL0M0OEeS2tKNWeEWjGg"/>
   <term:ValueSetCode xmi:id="_nh51cM0OEeS2tKNWeEWjGg" conceptName="BLS-Community Paramedicine" base_EnumerationLiteral="_nh5OYM0OEeS2tKNWeEWjGg"/>
   <term:ValueSetCode xmi:id="_qiuiIM0OEeS2tKNWeEWjGg" conceptName="ALS-AEMT" base_EnumerationLiteral="_qit7EM0OEeS2tKNWeEWjGg"/>
@@ -2936,7 +2957,9 @@
   <term:ValueSetCode xmi:id="_4a6Z8M0OEeS2tKNWeEWjGg" conceptName="ALS-Nurse" base_EnumerationLiteral="_4a5y4M0OEeS2tKNWeEWjGg"/>
   <term:ValueSetCode xmi:id="_ClGWAM0PEeS2tKNWeEWjGg" conceptName="ALS-Physician" base_EnumerationLiteral="_ClFu8M0PEeS2tKNWeEWjGg"/>
   <term:ValueSetCode xmi:id="_GJSOcM0PEeS2tKNWeEWjGg" conceptName="Specialty Critical Care" base_EnumerationLiteral="_GJRnYM0PEeS2tKNWeEWjGg"/>
-  <term:ValueSetVersion xmi:id="_LdpU8M0YEeSJm6m0rTs9zw" identifier="2.16.840.1.113883.17.3.11.106" binding="Dynamic" base_Enumeration="_Ldot4M0YEeSJm6m0rTs9zw"/>
+  <term:ValueSetVersion xmi:id="_LdpU8M0YEeSJm6m0rTs9zw" identifier="2.16.840.1.113883.17.3.11.106" definition="Additional tactics or approaches used to support emergent response mode" binding="Dynamic" base_Enumeration="_Ldot4M0YEeSJm6m0rTs9zw">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_LdpU8c0YEeSJm6m0rTs9zw" conceptName="Intersection Navigation-Against Normal Light Patterns" base_EnumerationLiteral="_Ldot4c0YEeSJm6m0rTs9zw"/>
   <term:ValueSetCode xmi:id="_Ldp8AM0YEeSJm6m0rTs9zw" conceptName="Intersection Navigation-With Automated Light Changing Technology" base_EnumerationLiteral="_Ldot4s0YEeSJm6m0rTs9zw"/>
   <term:ValueSetCode xmi:id="_Ldp8Ac0YEeSJm6m0rTs9zw" conceptName="Intersection Navigation-With Normal Light Patterns" base_EnumerationLiteral="_Ldot480YEeSJm6m0rTs9zw"/>
@@ -2949,7 +2972,9 @@
   <term:ValueSetCode xmi:id="_Ldp8CM0YEeSJm6m0rTs9zw" conceptName="Initial Lights and Sirens, Downgraded to No Lights or Sirens" base_EnumerationLiteral="_Ldot6s0YEeSJm6m0rTs9zw"/>
   <term:ValueSetCode xmi:id="_ajQpMM0YEeSJm6m0rTs9zw" conceptName="Scheduled" base_EnumerationLiteral="_ajPbEM0YEeSJm6m0rTs9zw"/>
   <term:ValueSetCode xmi:id="_e6a2sM0YEeSJm6m0rTs9zw" conceptName="Unscheduled" base_EnumerationLiteral="_e6aPoM0YEeSJm6m0rTs9zw"/>
-  <term:ValueSetVersion xmi:id="_wrf2MM0ZEeSJm6m0rTs9zw" identifier="2.16.840.1.113883.17.3.11.107" definition="Technique for measuring blood pressure" base_Enumeration="_wrfPIM0ZEeSJm6m0rTs9zw"/>
+  <term:ValueSetVersion xmi:id="_wrf2MM0ZEeSJm6m0rTs9zw" identifier="2.16.840.1.113883.17.3.11.107" definition="Technique for measuring blood pressure" base_Enumeration="_wrfPIM0ZEeSJm6m0rTs9zw">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_3hFN8M0ZEeSJm6m0rTs9zw" conceptName="Arterial line" base_EnumerationLiteral="_3hD_0M0ZEeSJm6m0rTs9zw"/>
   <term:ValueSetCode xmi:id="_83l_oM0ZEeSJm6m0rTs9zw" conceptName="Doppler" base_EnumerationLiteral="_83kxgM0ZEeSJm6m0rTs9zw"/>
   <term:ValueSetCode xmi:id="__SEeAM0ZEeSJm6m0rTs9zw" conceptName="Cuff-automated" base_EnumerationLiteral="__SD28M0ZEeSJm6m0rTs9zw"/>
@@ -3079,7 +3104,9 @@
   <term:ValueSetCode xmi:id="_nlHxgdYiEeSOzuJFX8ssTQ" conceptName="EMS Crew Accompanies Patient for Facility Procedure" base_EnumerationLiteral="_nlHxgNYiEeSOzuJFX8ssTQ"/>
   <term:ValueSetCode xmi:id="_A4FjMNYmEeSOzuJFX8ssTQ" conceptName="Subcutaneous port" base_EnumerationLiteral="_A4E8INYmEeSOzuJFX8ssTQ"/>
   <term:ValueSetCode xmi:id="_D93oYdYmEeSOzuJFX8ssTQ" conceptName="Blow by oxygen mask" base_EnumerationLiteral="_D93oYNYmEeSOzuJFX8ssTQ"/>
-  <term:ValueSetVersion xmi:id="_2NLqQNYmEeSOzuJFX8ssTQ" identifier="2.16.840.1.113883.17.3.11.109" definition="Specifications for site of substance administration when Route is insufficiently specific" base_Enumeration="_2NLDMNYmEeSOzuJFX8ssTQ"/>
+  <term:ValueSetVersion xmi:id="_2NLqQNYmEeSOzuJFX8ssTQ" identifier="2.16.840.1.113883.17.3.11.109" definition="Specifications for site of substance administration when Route is insufficiently specific" base_Enumeration="_2NLDMNYmEeSOzuJFX8ssTQ">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_5Rd6odYmEeSOzuJFX8ssTQ" conceptName="Tracheostomy stoma" base_EnumerationLiteral="_5Rd6oNYmEeSOzuJFX8ssTQ"/>
   <term:ValueSetCode xmi:id="_9CulwNYmEeSOzuJFX8ssTQ" conceptName="Structure of respiratory region of nose" base_EnumerationLiteral="_9Ct-sNYmEeSOzuJFX8ssTQ"/>
   <term:ValueSetCode xmi:id="_woJ80NZlEeSOzuJFX8ssTQ" conceptName="Improved" base_EnumerationLiteral="_woJVwNZlEeSOzuJFX8ssTQ"/>

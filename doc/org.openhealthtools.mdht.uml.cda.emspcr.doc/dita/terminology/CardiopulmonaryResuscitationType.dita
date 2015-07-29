@@ -8,7 +8,7 @@
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1"><tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
@@ -16,7 +16,7 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Kind of procedure used for cardiopulmonary resuscitation</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table frame="all" rowsep="1" colsep="1"><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
@@ -28,7 +28,7 @@
 <row><entry>LA17751-1</entry><entry>LOINC</entry><entry>Compressions-external plunger type device</entry></row>
 <row><entry>LA17752-9</entry><entry>LOINC</entry><entry>Compressions-external thumper type device</entry></row>
 <row><entry>LA17753-7</entry><entry>LOINC</entry><entry>Compressions-intermittant with ventilation</entry></row>
-<row><entry>LA17754-5</entry><entry>LOINC</entry><entry>Compressions-other device (not listed)</entry></row>
+<row><entry>LA17754-5</entry><entry>LOINC</entry><entry>Compressions-other device</entry></row>
 <row><entry>LA17755-2</entry><entry>LOINC</entry><entry>Ventilation-bag valve mask</entry></row>
 <row><entry>LA17756-0</entry><entry>LOINC</entry><entry>Ventilation-impedence threshold device</entry></row>
 <row><entry>LA17757-8</entry><entry>LOINC</entry><entry>Ventilation-mouth to mouth</entry></row>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="EMS Drug Allergy Organizer"/>
+<meta name="abstract" content="[Organizer: templateId null]"/>
+<meta name="description" content="[Organizer: templateId null]"/>
+<meta name="DC.Coverage" content="Organizer"/>
+<meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>EMS Drug Allergy Organizer</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">EMS Drug Allergy Organizer</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Organizer: templateId <tt class="ph tt">null</tt>]</p>
+
+<div class="section">
+</div>
+
+
+<div class="section">
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>=""</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">component</strong></tt>, where its type is <a class="xref" href="EMSDrugAllergy.html" title="[Act: templateId 2.16.840.1.1133883.17.3.10.1.48]">EMS Drug Allergy</a> (CONF:11323)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EMSDrugAllergy.html" title="[Act: templateId 2.16.840.1.1133883.17.3.10.1.48]">EMS Drug Allergy</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.48</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>, where its type is <a class="xref" href="ExistenceOfDrugAllergyObservation.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.102]">Existence Of Drug Allergy Observation</a> (CONF:11324)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ExistenceOfDrugAllergyObservation.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.102]">Existence Of Drug Allergy Observation</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.102</tt>)</li>
+</ol>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">EMS Drug Allergy Organizer example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;organizer xmlns="urn:hl7-org:v3"&gt;
+  &lt;id root="MDHT" extension="1396603008"/&gt;
+  &lt;statusCode code="completed"/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2014"/&gt;
+    &lt;high value="2014"/&gt;
+  &lt;/effectiveTime&gt;
+  &lt;component&gt;
+    &lt;act&gt;
+      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.48"/&gt;
+      &lt;id root="MDHT" extension="2048702516"/&gt;
+      &lt;code code="1330701020"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2014"/&gt;
+        &lt;high value="2014"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;participant&gt;
+        &lt;participantRole/&gt;
+      &lt;/participant&gt;
+    &lt;/act&gt;
+  &lt;/component&gt;
+  &lt;component&gt;
+    &lt;observation moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.102"/&gt;
+      &lt;id root="MDHT" extension="1879041014"/&gt;
+      &lt;code code="67794-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Does the patient have any medication allergies NEMSIS"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2014"/&gt;
+        &lt;high value="2014"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/observation&gt;
+  &lt;/component&gt;
+&lt;/organizer&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/ClinicalStatementTemplates.html">CLINICAL STATEMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

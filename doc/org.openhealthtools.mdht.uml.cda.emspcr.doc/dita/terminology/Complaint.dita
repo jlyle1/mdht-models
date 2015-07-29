@@ -8,7 +8,7 @@
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1"><tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
@@ -16,14 +16,14 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Kind of medical problem or incident reported</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table frame="all" rowsep="1" colsep="1"><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
 <thead><row>
 <entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA15468-4</entry><entry>LOINC</entry><entry>Abdominal pain</entry></row>
+<row><entry>LA23843-8</entry><entry>LOINC</entry><entry>Abdominal pain/problems</entry></row>
 <row><entry>LA15903-0</entry><entry>LOINC</entry><entry>Headache</entry></row>
 <row><entry>LA17117-5</entry><entry>LOINC</entry><entry>Allergic reaction/stings</entry></row>
 <row><entry>LA17118-3</entry><entry>LOINC</entry><entry>Animal bite</entry></row>
@@ -63,6 +63,8 @@
 <row><entry>LA18211-5</entry><entry>LOINC</entry><entry>Well person check</entry></row>
 <row><entry>LA9553-4</entry><entry>LOINC</entry><entry>Stroke/CVA</entry></row>
 <row><entry>LA9555-9</entry><entry>LOINC</entry><entry>Traumatic injury</entry></row>
+<row><entry>LA17130-8</entry><entry>LOINC</entry><entry>Drowning/Diving/SCUBA Accident</entry></row>
+<row><entry>LA23800-8</entry><entry>LOINC</entry><entry>Air medical Transport</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

@@ -8,7 +8,7 @@
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1"><tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
@@ -16,7 +16,7 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Type of instrument used to evaluate for stroke</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table frame="all" rowsep="1" colsep="1"><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
@@ -29,6 +29,7 @@
 <row><entry>LA17113-4</entry><entry>LOINC</entry><entry>NIH</entry></row>
 <row><entry>LA18300-6</entry><entry>LOINC</entry><entry>Other stoke scale type</entry></row>
 <row><entry>LA3774-2</entry><entry>LOINC</entry><entry>Massachusetts</entry></row>
+<row><entry>LOINC_TBDA_617</entry><entry>LOINC</entry><entry>F.A.S.T. Exam</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

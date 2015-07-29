@@ -8,7 +8,7 @@
 <body>
 <!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
 <section id="definition">
-<table><tgroup cols="2">
+<table frame="all" rowsep="1" colsep="1"><tgroup cols="2">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
@@ -16,7 +16,7 @@
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 <row><entry>Definition</entry><entry>Finding resulting from EMS neurological assessment</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="3">
+<table frame="all" rowsep="1" colsep="1"><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
 <colspec colname="col2" colwidth="1*"/>
 <colspec colname="col3" colwidth="2*"/>
@@ -46,6 +46,8 @@
 <row><entry>LA18264-4</entry><entry>LOINC</entry><entry>Decorticate posturing</entry></row>
 <row><entry>LA18265-1</entry><entry>LOINC</entry><entry>Strength-asymmetric</entry></row>
 <row><entry>LA6630-3</entry><entry>LOINC</entry><entry>Not done</entry></row>
+<row><entry>LA23822-2</entry><entry>LOINC</entry><entry>Arm Drift-Left</entry></row>
+<row><entry>LA23823-0</entry><entry>LOINC</entry><entry>Arm Drift-Right</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>
