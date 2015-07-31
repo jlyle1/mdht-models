@@ -4,6 +4,8 @@
 <topic id="topicId" xml:lang="en-us">
 	<title>VALUE SETS</title>
 	<body>
-		<p>The following tables summarize the value sets used in this Implementation Guide.</p>
+		<p>The following tables summarize the value sets used in this Implementation Guide. Note that for
+			dynamically bound properties, these values may change, so they should be obtained from
+			their source publications. Up-to-date distributions may also be found at NEMSIS.org.</p>
 	</body>
 </topic>
