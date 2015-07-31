@@ -38,10 +38,6 @@
 <row><entry>LA18706-4</entry><entry>LOINC</entry><entry>Community paramedicine</entry></row>
 <row><entry>LA4687-5</entry><entry>LOINC</entry><entry>Physician</entry></row>
 <row><entry>LA9297-8</entry><entry>LOINC</entry><entry>Respiratory therapist</entry></row>
-<row><entry>LOINC_TBDA_610</entry><entry>LOINC</entry><entry>Nurse Practitioner</entry></row>
-<row><entry>LOINC_TBDA_611</entry><entry>LOINC</entry><entry>Physician Assistant</entry></row>
-<row><entry>LOINC_TBDA_612</entry><entry>LOINC</entry><entry>Licensed Practical Nurse (LPN)</entry></row>
-<row><entry>LOINC_TBDA_613</entry><entry>LOINC</entry><entry>Registered Nurse</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>
