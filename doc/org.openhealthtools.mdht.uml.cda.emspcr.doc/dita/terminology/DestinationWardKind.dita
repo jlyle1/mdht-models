@@ -48,8 +48,6 @@
 <row><entry>LA22830-6</entry><entry>LOINC</entry><entry>Hospital-radiation</entry></row>
 <row><entry>LA22831-4</entry><entry>LOINC</entry><entry>Hospital-rehabilitation</entry></row>
 <row><entry>LA22832-2</entry><entry>LOINC</entry><entry>Hospital-SICU</entry></row>
-<row><entry>LOINC_TBDA_326</entry><entry>LOINC</entry><entry>Hospital-oncology</entry></row>
-<row><entry>LOINC_TBDA_327</entry><entry>LOINC</entry><entry>Hospital-Outpatient Surgery</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

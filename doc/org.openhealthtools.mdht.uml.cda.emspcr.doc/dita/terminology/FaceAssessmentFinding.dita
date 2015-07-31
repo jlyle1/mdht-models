@@ -42,10 +42,6 @@
 <row><entry>LA7410-9</entry><entry>LOINC</entry><entry>Abrasion</entry></row>
 <row><entry>LA7452-1</entry><entry>LOINC</entry><entry>Laceration</entry></row>
 <row><entry>LA7460-4</entry><entry>LOINC</entry><entry>Pain</entry></row>
-<row><entry>LOINC_TBDA_545</entry><entry>LOINC</entry><entry>Crush Injury</entry></row>
-<row><entry>LOINC_TBDA_546</entry><entry>LOINC</entry><entry>Swelling</entry></row>
-<row><entry>LOINC_TBDA_547</entry><entry>LOINC</entry><entry>Contusion</entry></row>
-<row><entry>LOINC_TBDA_548</entry><entry>LOINC</entry><entry>Tenderness</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>
