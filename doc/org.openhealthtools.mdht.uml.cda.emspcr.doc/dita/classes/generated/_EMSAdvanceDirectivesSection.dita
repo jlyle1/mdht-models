@@ -36,8 +36,37 @@
 <ol>
 <li>Contains exactly one [1..1] <xref href="../AdvanceDirectiveObservation.dita">Advance Directive Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.98</tt>)</li></ol></li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::EMSAdvanceDirectivesSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.17.3.10.1.12]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10191</entry><entry>LOINC 2.16.840.1.113883.6.1 67840-9</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>ST</entry><entry>CONF:10192</entry><entry> MISSINGTYPE</entry></row> 
+<row><entry>advancedDirectiveObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.98]</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>AdvanceDirectiveObservation</entry><entry>CONF:10946</entry><entry> </entry></row> 
+<row><entry>AdvanceDirectives</entry><entry>AdvanceDirectives</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>EMSAdvanceDirectivesSection</entry><entry>CONF:10010</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:10945</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../PatientCareReport.dita">Patient Care Report</xref></entry><entry><xref href="../AdvanceDirectiveObservation.dita">Advance Directive Observation</xref></entry></row></tbody></tgroup></table></p></section>
-<codeblock id="example" outputclass="language-xml"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.17.3.10.1.12"/>
+  <code code="67840-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS advance directives Narrative NEMSIS"/>
+  <title>EMS advance directives Narrative NEMSIS</title>
+  <text>JOjLCafO uREdrG yubRuJpX ympJo SnbleBpy SpPJbJqg gyyxAlp vWbhCFR ruLhorb mvzDIgjT kflHro UdcfuC yJSlV FlIhM vdoNNLtX &#xD;
+NJmJREBc GRAGierP rBXcfEHGk WMCgw ffoKACnPg auTylFVXR cdmKKhHcu ObLOoP XdAtp JuhcZ ppOqwTvPF cBRLSyk PldMvxx KVqQmNba iLAIt BpvSemg QjtViQozY NrDYxXCp bCwZBSD BuunSffE odmPMaeFw KQUabr LEjlqCt uanEk algDjdhLb pUERbzCh BQHinNn LCLQAaX OWPrSZ HXXYlo nssNv ZyEtmA KDnQs KuqpLw JEhNB qrsildkix AKVNwttN VqVREYU gpLVQdf CJXnBDj eKksU fyygUMgHb sszYP NUgpF qpXbM hzKNAkJr fNQQVvLc ZvNga ewacOIsl DWytNv jjXFoKB rVnkduJU lxJeDhMZJ ITlZx yhpAZh DVTAC aPaVlol fLKTlo &#xD;
+oFtXsKL Yvfwb UFwQQh MKmulBhD gtFccmkmO dzMYJlpP AfiXCeat PWUlycon xRCpqS qIkiyMTN LHFPO QVsPof edfcOp NTtUN BpiZp sMwBAyq KKqGoop NjEhLTmOB DTAanbJsZ uRQbIwYIn plygeVvx kLlGsh VGUKxoP zlsmH RyYcu xYEEqJS bdwUGje JtPOlEyg ctmAkge EXdnbgqg lMyFVr eAjWhNBJ pxiQr lvpOXpS RhIAeWDJ ytpwcgjL MBsOLk eoeDZJIfn SrIfA xweQoT RuAxCm dPYsaBClj IPbAMs ZSHcClWE qbNAp pBOfN NwdmaT VajkdgUkx cJPzS gETKzRnsN sgLMF aQHHGLa KWwqOk EIIblELB ClHeqif JCnLNi PFKRyfHO islRzU KtMAlrOe gWPsORQ fRWLc nDCYxJR &#xD;
+mrRoT AdfUxhRbl KozQrO tiHgqtFvN RLYga avpeCJOy CbyZBN nbSxPH DKJuULcVt vpLkGp melafAUe eYPTZ kyJpogZ SkdjQjZtv WKCfeV rvABmhS aMTLLOOMI WigVdED EvlanJc ZwITbBsku GBJElktdq DypUjh KEgwv NYUDRg PzxdomP qFopo SVPhXxu eUZoknNx &#xD;
+IPwxAtph GNUtkPmd ZUAAa AgrzSRJW niaaB eYDXjmnRz CFEuyGZfC BHgPo bKDCiUX twBzcDL GCpdswb AMdZNQbLt krEok LOtsWWCn KZUpl ybOpiOX DCuSl KkSsxkK RfJMMvZjh gsiWY aMpjnLCJ BnLdMOYkL NDIWtND IgUTUWn cZvcP SFaUHAg auckG qTYmTl fNumNFy NIXBmrvtZ MFoZW PRopXq pLYXiDf nMFXjGS NHjGZRkI mpMOSBhPY MgEEUFxcl XlMZasfdU iXYgROV nNckeXKN JbZQmE nVPbfGES aqnhApTy Glfnzvv lgReJFLL ctXych &#xD;
+QLEEXqW NSCRGGha eAXSjlzGn iPUkAOa AzLZC khhUWg jQfNYj dqRqNjnI spYXrDqFp UZbvyNyah JTqYtE zLTQetI NFzBtQqqY FjbjshqSn sNWInWX qDlCnBD IazFlBBf nltqcBUQ jpBIWp wSENGNAlV ddIJZeXBM qdPfNy EYSNh methfu seqoCXvUO gnkjDfenY edBRl hypuGuUm ljPcrhx zlixav ShKZaFUD bdEFMZph FfrDGIaZi FRnOytZe SEGWMG yDmnMlnT shtay IoAbC kiAnLPqZn lGbDgdwzJ aoFsD FzFbbwQ azgfCxjGu HnIgYyEPQ bvhEi WkctwfG ohdRP YhihYX exwYDp zfMMKExRJ XqlnA JlkPAebf iDZxY KkaYQ LjCClOpi XertmvZiI rQzrsEn ZwQVCK ItpWo vHLNNtOK MMUpdCZLU tTMxkApo DfvrBr IVWzNBJ uelIaL GSPtmLW HHlQUs &#xD;
+jzFvFTqZM MnsTrsT AnEsaI IfVYJNt XQoSwfdf TazjdOk eNauCVRgv nWWtf GziPJ vaoNdi pJplR zQwZrUOC yfiDTNhUL ldasbo GjexKJhyr EYLKcO XLlCmE vPlrQ QBNHfKjM wxrGP hfryhh oUGAWkfl VMlEmTrI bkHVPVvnz kHVDDWY pJOfBVO WRPPkPLfS &#xD;
+eQQuquAi rQKMh EPBty MRGssppCs SHBDkQLvI BzmQyWAc mDoFihf ZFDzs zTApDJ BRTWCXoi AOPukjwIE ZVinRe TQlvnzTf ZidFTa KCCoFVb avrOwYay &#xD;
+ufLJP eMClQ HeLKjfbX ZRmNAQDDq nntBlXt TpgkO muBjK viget VUOXOyYu maePhk pjFtR LhTxic tZtmdBek xQptnm rZHfAc sLsjh zMMVMQjr JdPEMjWrk DPgAcoj luQCSod rFQvf urUeTniv XDfSjV &#xD;
+eXTSX KBMuFp EINgdgJT QZwYwv brigxIa qKGlPMox RwBqzE leuwLQ dePwa XLYHJAE nMRvJ SLJXkoXw zaAyaNSaK LkXpcuToD waUDhV REyOFZ StswbPHN qQCxhAg cXLMsLe CZXPfu KoaiO NAUMrLoi LYdDZoKf YXCNtrcK YeZTw yWTiJv HajeOVZL TuqlkKv WNXnzG kbTytYdhe UigpzSHZ WbVsB EdyGhLcXD vuXPYL BZaXVJF nHMWZY yhZTWXs zcnawzgeM icVnwC Rwuczhow lcSODLh CApAgCBj WyYxEA SndTN kDxFoE GtBbwTZd MSYdPOPV BhQfQ yTCyaLKG jDtrP jMvHZtuO SwOXxeeq sqkyfycW OEkDJ GfUUMfXcA yZaMbllnz FzJhYkxvs uIYHbow aElNecWz qjrmMjcV QlDBnNrnW kjHPp hGEnblmcN &#xD;
+qtKan uywhDCdDi onEcYHVy wlNnjA XEQLVT WWKAKyTOi QmdWi mChiCe yRyqqgVI LvtqgN Brcexwta FtlEvM MaPHcltQ kCRyP joliZvlY kRzeEuHGh qwOdo rCahLaB CsffCmMqY efqbhBvX gehANRrA BETVPd QmuPoT fXyFK lRhnbsbn wWwSd laNPZsk YdtNQ YynjGJJd YOHdErS dOEgDIftZ TlneC iqUnWwuES WFKJCvL &#xD;
+</text>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.98"/>
+      <code code="67516-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Advance directive NEMSIS"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+</section>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">EMS Advance Directives Section</ph></p>

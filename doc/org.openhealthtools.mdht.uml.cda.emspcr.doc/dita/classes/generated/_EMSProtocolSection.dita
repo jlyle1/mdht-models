@@ -42,8 +42,49 @@
 <ol>
 <li>Contains exactly one [1..1] <xref href="../CandidatePatientRegistryType.dita">Candidate Patient Registry Type</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.94</tt>)</li></ol></li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::EMSProtocolSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.17.3.10.1.7]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10713</entry><entry>LOINC 2.16.840.1.113883.6.1 67663-5</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:11021</entry><entry> MISSINGTYPE</entry></row> 
+<row><entry>candidatePatientRegistryType</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.94]</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CandidatePatientRegistryType</entry><entry>CONF:11026</entry><entry> </entry></row> 
+<row><entry>protocolObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.93]</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>ProtocolObservation</entry><entry>CONF:11024</entry><entry> </entry></row> 
+<row><entry>ProtocolSection</entry><entry>ProtocolSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSProtocolSection</entry><entry>CONF:10022</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:11023</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../PatientCareReport.dita">Patient Care Report</xref></entry><entry><xref href="../CandidatePatientRegistryType.dita">Candidate Patient Registry Type</xref></entry></row><row><entry></entry><entry><xref href="../ProtocolObservation.dita">Protocol Observation</xref></entry></row></tbody></tgroup></table></p></section>
-<codeblock id="example" outputclass="language-xml"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.17.3.10.1.7"/>
+  <code code="67663-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS protocol Narrative NEMSIS"/>
+  <title>EMS Protocol Section</title>
+  <text>TdUdHBZLL MFPIVQ JjPwNWv CnuyMR ZNarsPrs fgasYbvHW gygHqq AWODMhV WPKumgL yDGdDhAl UVkYMf YhwVAJiQN vlmRXx HmHwPi TmdYkXko wpyrL ofAdBh oiyZext HzuXxib UztrxQ heTIuyoIp depTqDpV TFVmbIzGm vkcnQ MyZvH ZZLAPhdQs PGfEtGLb KcaAnyu wuPzTjHYh zvqlVp NvQtBR Apqhqwy jCiBWUgi SPQbm ghJRf aGLVZjXy JaOdBxkb AxUzD BqgJYni TLweARP LXfkul PWertmZm bsfLSd qcXqm GRcFrACKm qxtpq nmTRvmAU sNLfxrT JMWbjA ENqOzI TuZeWFww UjaRl zMSOvSY eihxdwlnp GiFpU YBsXnzh UWhJr Wjjieojxc cwBeFnF LvDGQd lhbaJ gCnvv thzif OyRRnZk kTApjCDDI zcMvsLUBK MFeLBp OupQM ZiuPQLF EAVShTxn jVbAcj TZzEO zoOGtmk nKAnBi LcRhMc &#xD;
+XqziHW WVVEmvpzb mfnsAnIj gmjdtPJZf cuGxYP aAaKaB FsKRv xDxMe wXzAwhe HrCnPa ggOeXw xejnBg KyGHsNa BcyALsN XbKysXe SfKhsK cYZHms wRmxqoXmd TUnlEwk IhljluCE RpiYx ScrzFbz tOJfc IfytcbL EnZxe BLnsxJ QHFhIk JPYjzhFv EjKXoA OHIzjFhS iloOu mJrgNa &#xD;
+BuobgijP UyMLeQscb UGSYeob Ydzit VtwNFxGrX czplD wexEKVN rCyINV WrhzgAjre HeLhYR nHdECh UiJLh GtvxW VFVWsPkQ BJTLovJzw KIEeBiydp QaPlDyEB ihkWlQpL AARfvy PUpgkgZyi mruAq YixkWio eoYSCqF wVooevgkW GFGOHB RjsCjrUz suvapV tVzVcwU jbJbbPqU yWvJyq MyJOzuT aetnL NSCgC ARLls zMsOXkUib VREheKr RFeZyAz Bzfbqa UfKdDUlTL NqybR avnpJcH xkUCtudo MAqVxgqj xsDIPS VXKds OYpLqeJ DLNWWZe OEyShS OSODttFn kIZop FDCmM GPDAjOGY GhSARx iwuxCLxYw rxluLVTh DWehV oSVEzZ lVlAO &#xD;
+AWrLfI FCQLZ aayDH vYnvghE rZCIBHkW JfCCpO cBToXx mUEfs jCcyBXkA ipzQjDzc zOdwwm KPwNLhTJ lFZBqE SYofUY WRVnZug xduhuJ UjKKoXa yovcXYoeI tkcKYJD RoPEKjoBG idODMT NgWXS ddIYIR nMPaX BfsSKGR aSnRnGkE otVkmPR eDRsZxaAa nAHMiNyD piOvgcBO jTYzcMki vQMyA IrCGqG ZpYFCMsiV HdKpuawUA JXTHjZ aTJqx oKNQFaPGM borhVncj BoFZHg oclLIba yKbPkmz bpRxiz AnySOTC wolUJl vgFnHTCy DuFapWNKy XhRKuV aqpAIsI NKkHjo LOjfjNjL egdogN sXLLf LMaea MKjcb LinSFQFra qBuijDHS baMiKvVV QMNOCriLQ OOaTWN qWcgj NOmzyKR NcAaxCR vUvtU roawyGh XaHskRe obqZd &#xD;
+vejsmXQQm UZpkJyX PlVmcUIHz OJaFYgeqD oarUXodPS TQkdXRa asDrTM cqSYUWN QQWivejRu TixwjP xbqkOIc HXOyTScYN HjaHkrV ohKaRol MqfsEio CjAidHq WvDsynT nNnSgblYt VuxtAvBNA hnTskwPQ vIOMttej cgUPJQN rhaOr Gumoz kCUEuW neLwEL KguQDZR TOyxR kJjhLW WBsSRXt qoqdAkNb kwHDgnH gPrjoJJl aqcquPe KCuDgvjmc FMJMBoA uQYwIdd RIOmNalNJ VaRzv yLFAHdZ ENyskDAdi EAxQXa ZiMqmPcVV SRrJKnJ lwvxJFT nZfTXCz GLPvUsxnN nFROG YjnluTah gOxaiH cDvKWG PfefDpMJ anaQwSutV nfFrO mignZKRrG NmAhOM wsEkCeSqB pSfUlEJqR YKVyu vmIXaXNf ncpIZpTNJ sdcvuDNb URkik bPJebnqVL &#xD;
+VkRBY OajLyx elcSPwUlY zyHrGmT dWatyW KNweaeFQX yZISw mdbzxwSK mpHlagZqz AJeHDO wcJpFw KnFltDuA ilDlaQDU oVfZbDZSM UxwqhxwJ qxJZwXYpc rGFniRsI kmOlvSFB gXUZCLKx OfaxfzQJ EdsydKGVx vhpGC uVMJYkBx bBmysMSxz jhPnoMST EJDxV wyrPQl vDpBPk qllnatTCm VCBnqMr fwzcK HHofOnf &#xD;
+JHKznXvx WPhaaKxv uVOpVtgx yfdhVlek tDQpXnDvi jyGlLhiga WCYaD DNmoDBZf qANjgNH gBVrnlH aZUCOm pjgTPsFCG yttbl JpkyfkmT vRvWyC rVlCHpLO BNgcYfVdT oxuvRwvo sIMGI FzSRY qTAEPn FZQpB Qpiiq PUqFHPFj SJALuzrp fLXey tVIBLuNAD RvqYCzQyy Ltlwx xjmZRCRmw uKanOA vmgUxFiHs ezmeb jgOtD ejLBU VZUfCeI XjDle jfxjArv kljDEsqy NJFaXYhS mocPxX kSnYagm jWCTi CmkKSEC eGrCYZY QpIeg XPwdIqlZ oblbcgW obbybpwp FiDMvs koPHvoR yiiNpqsDr HirEWoV DxxTimmq yUZxyt qRGOlkgKk mouScKhSY pTNoncj xhyyMB rZvVeuSPg mFEiZ ERFhIpN XuHfPQGMN &#xD;
+gtudgO Ozuat SoVeut fbpiYmxvY CbqSdMq mIbZiFrRk kBSBOrV LBjhbhi LurqRWOXi gAueXg bNabdwBUr BIcoh wagJu OlFcgJnF NEsQt urmrEKaNw MTiuKcLRP JfKxR XyFblXpjl cCtHfwR Xtkds CivNLvdFn QidRik lOhIwgD GeAMr RMiMNZb ohHsPUq MiVQTcVHT RMqZi EaIIkwvK grEYsnHp &#xD;
+MkJgYX iyiwvDCv GIaYR CKIriI mGopCJ aurZnHgR akjYUCCHw QjhTTJH CGKgZUwN vcPlnBf aOkNTk HfmMKBW ZvWDSk hMWbM VgQDZQm lIgVlSS qwtjzxV cABFB IGiqgU xppqk IJyTGO vGvjEngmj YwPUq nZkwQh qukeCKiVh GXPxZX BTnqa iogwaYJy urDQl uZYFiTXuh uAjFkHXm fzZkAq moxcJDiM CECLMZVm pkVvq uocYx QvWVcyWYJ sqbgl ZSTgdzMAa KwezzNj ccpDnn nBYNplXSU JSxFNZl ECxXRX dQatvxQ bpEAAOl znBhL ZqqqrhJa qDAswpkd KlHlDTZj yxGXQPVtu JlVlIZjC eSRaFxKb lkidNl RjjYoq WyEzqb OEWpU kgeOKA &#xD;
+YrJJNeaq KGUnpDbS sydzgOMQa RAvclPlX MfKwTv lskQK GVwSHOcEX aTWhBF PHsWtfbc lwELcFEfR LiPnchbKG tLQuoIoL jkuyJMek mlHFeQuY vYNLAkElJ zKjIaXlc yBylK DxNqEsMwe FOUYdKxK JQSWXRT XXIyhNL NmzuQx kOhgVa hOmHgLxFK lIifahCc hzYBqDO WPqxawklf UqPUBv lIhmtSn CRSNh &#xD;
+wGAJhmn GejcQNG SpNXGJV eFgtQPPB mefmebGgL aCduqEaej dFcUA jPPkh iHGbFtl PaQIwD fPhdJePNG jSZaGFAuH oWWFJDcZ EecTgSHW AGQAzDbSt xcsZuqEj RFYrnTOaT GchEYbyc SHffz WvdNgpw AOODnm uKjTizkpG IxaUKywA xAwal nVLNW DJmvuhXvY OBqKmzI AIfMRTlT qZKocg YFsrWxMmj USkoq xeVnKK aPmWDKQUr TKfuXqsI JKkGeMTIr fCGxLECPK igfSCv ZfRIB QVSim eGFWnD bCnYyD EWRNIM pmsZJtqkN rNPzJVYs agqTMu TxpUuqN vxUZaiha &#xD;
+tpFWIqwHH TMONGt eBGls fDlzr YHeaH ADroBR ASrbF eQeaB wFAmZcU fdmOHMEZ VEeEjs qanUpcXbe gXXLATElE icysZNmnJ xiwMQHZT ImGatUl xnRYgRmI Xahhcue PSqfX hQpitc pRVGh qqSFT &#xD;
+</text>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.93"/>
+      <code code="67537-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Protocol used NEMSIS"/>
+      <text>Text Value</text>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.94"/>
+      <code code="67553-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Condition indicating eligibility for illness or injury registry NEMSIS"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+</section>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">EMS Protocol Section</ph></p>

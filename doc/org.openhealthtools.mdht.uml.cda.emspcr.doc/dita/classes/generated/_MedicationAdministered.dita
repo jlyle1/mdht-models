@@ -100,8 +100,83 @@ Note: all of RxNorm is legal in this field, but NEMSIS provides a selected list 
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>participant</b></tt> (CONF:11074) <ol><li>This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="DEV" </tt> (CONF:11182)</li><li>This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:11075) <ol><li>This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="MANU" </tt> (CONF:11183)</li><li>This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>playingDevice</b></tt> (CONF:11076) <ol><li>This playingDevice <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11184), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/EMSMedicationAdministrationDevice.dita">EMSMedicationAdministrationDevice</xref> 2.16.840.1.113883.17.3.11.108</tt><b> DYNAMIC</b> (CONF:11381)<p><lines><i>For NEMSIS route codes that imply devices (eHistory.15 & eMedications.04</i></lines></p></li></ol> </li></ol> </li></ol> 
 </li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::MedicationAdministered</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::substanceadministration[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.72]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF:10445</entry><entry> SBADM</entry></row> 
+<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry>MAY</entry><entry>NO</entry><entry>Boolean</entry><entry>CONF:10448</entry><entry> </entry></row> 
+<row><entry>approachSiteCode</entry><entry>approachSiteCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CD</entry><entry>CONF:11180</entry><entry> </entry></row> 
+<row><entry>doseQuantity</entry><entry>doseQuantity</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>IVL_PQ</entry><entry>CONF:10446</entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>SXCM_TS</entry><entry>CONF:10447</entry><entry> </entry></row> 
+<row><entry>rateQuantity</entry><entry>rateQuantity</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>IVL_PQ</entry><entry>CONF:7517</entry><entry> </entry></row> 
+<row><entry>routeCode</entry><entry>routeCode</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10449</entry><entry> null</entry></row> 
+<row><entry>medicationAdministered</entry><entry>medicationAdministered</entry><entry>0..*</entry><entry>SHALL</entry><entry>YES</entry><entry>MedicationAdministered</entry><entry>CONF:10989</entry><entry> </entry></row> 
+<row><entry>medicationAdministeredResponseRelationship</entry><entry>medicationAdministeredResponseRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>MedicationAdministeredResponseRelationship</entry><entry>CONF:10453</entry><entry> </entry></row> 
+<row><entry>medicationAdministrationDeviceParticipant</entry><entry>medicationAdministrationDeviceParticipant</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>MedicationAdministrationDeviceParticipant</entry><entry>CONF:11074</entry><entry> </entry></row> 
+<row><entry>MedicationAuthorizationRelationship</entry><entry>MedicationAuthorizationRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>MedicationAuthorizationRelationship</entry><entry>CONF:10457</entry><entry> </entry></row> 
+<row><entry>MedicationComplicationRelationship</entry><entry>MedicationComplicationRelationship</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>MedicationComplicationRelationship</entry><entry>CONF:10454</entry><entry> </entry></row> 
+<row><entry>MedicationConsumable</entry><entry>MedicationConsumable</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>MedicationAdministeredConsumable</entry><entry>CONF:10452</entry><entry> </entry></row> 
+<row><entry>medicationNotAdministeredEntryRelationship</entry><entry>medicationNotAdministeredEntryRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>MedicationNotAdministeredReasonEntryRelationship</entry><entry>CONF:10451</entry><entry> </entry></row> 
+<row><entry>MedicationPerformerParticipation</entry><entry>MedicationPerformerParticipation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>MedicationPerformerParticipation</entry><entry>CONF:10456</entry><entry> </entry></row> 
+<row><entry>MedicationPriorAdministrationRelationship</entry><entry>MedicationPriorAdministrationRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>MedicationPriorAdministrationRelationship</entry><entry>CONF:10455</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../EMSMedicationsAdministeredSection.dita">EMS Medications Administered Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
-<codeblock id="example" outputclass="language-xml"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="SBADM">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.72"/>
+  <text>Text Value</text>
+  <effectiveTime value="20150802"/>
+  <routeCode codeSystem="2.16.840.1.113883.3.26.1.1.1" codeSystemName="FDA Route of Administration"/>
+  <approachSiteCode code="25808628"/>
+  <doseQuantity/>
+  <rateQuantity/>
+  <consumable>
+    <manufacturedProduct>
+      <id root="MDHT" extension="1861910780"/>
+      <manufacturedMaterial>
+        <code codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/>
+      </manufacturedMaterial>
+    </manufacturedProduct>
+  </consumable>
+  <performer>
+    <assignedEntity>
+      <id root="MDHT" extension="139559668"/>
+      <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+    </assignedEntity>
+  </performer>
+  <participant typeCode="DEV">
+    <participantRole classCode="MANU">
+      <playingDevice>
+        <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+      </playingDevice>
+    </participantRole>
+  </participant>
+  <entryRelationship typeCode="RSON" inversionInd="true">
+    <observation>
+      <code code="702982224"/>
+      <value xsi:type="CD" code="434871732"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <code code="358721415"/>
+      <value xsi:type="CD" code="946698914"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <code code="1194717625"/>
+      <value xsi:type="CD" code="787690600"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <code code="1141716391"/>
+      <value xsi:type="BL"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <act classCode="INFRM">
+      <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+    </act>
+  </entryRelationship>
+</substanceadministration>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Medication Administered</ph></p>

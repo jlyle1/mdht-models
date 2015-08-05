@@ -8,9 +8,9 @@
     </booktitle>
     <bookmeta>
     	<author>Clinical Interoperative Council</author>
-    	<author>Emergency Care Work Group</author>
+    	<!-- <author>Emergency Care Work Group</author>
     	<author>Patient Care Work Group</author>
-    	<author>Public Health and Emergency Response Work Group</author>
+    	<author>Public Health and Emergency Response Work Group</author>  -->
     	<prodinfo>
 			<prodname>CDAR2L3_IG_EMSRUNRPT</prodname>
 			<vrmlist>

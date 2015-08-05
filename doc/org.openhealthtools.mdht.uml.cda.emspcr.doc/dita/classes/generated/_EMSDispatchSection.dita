@@ -42,8 +42,51 @@
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ComplaintReportedByDispatch.dita">Complaint Reported By Dispatch</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.74</tt>)</li></ol></li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::EMSDispatchSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.17.3.10.1.2]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10556</entry><entry>LOINC 2.16.840.1.113883.6.1 67660-1</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:10558</entry><entry> MISSINGTYPE</entry></row> 
+<row><entry>complaintReportedByDispatch</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.74]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ComplaintReportedByDispatch</entry><entry>CONF:10993</entry><entry> </entry></row> 
+<row><entry>DispatchSection</entry><entry>DispatchSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSDispatchSection</entry><entry>CONF:10019</entry><entry> </entry></row> 
+<row><entry>emergencyMedicalDispatchObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.73]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EmergencyMedicalDispatchObservation</entry><entry>CONF:10991</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:10557</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../PatientCareReport.dita">Patient Care Report</xref></entry><entry><xref href="../ComplaintReportedByDispatch.dita">Complaint Reported By Dispatch</xref></entry></row><row><entry></entry><entry><xref href="../EmergencyMedicalDispatchObservation.dita">Emergency Medical Dispatch Observation</xref></entry></row></tbody></tgroup></table></p></section>
-<codeblock id="example" outputclass="language-xml"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.17.3.10.1.2"/>
+  <code code="67660-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS dispatch Narrative NEMSIS"/>
+  <title>EMS Dispatch</title>
+  <text>OuThBqGdd KBJNMnBf DoQBlSkm zhuoF qIqEm jTRJYUo YZMNw IxuYuREfL IciHr aaCfo SaZNlrH grWFa Iexsvxn RtlRNniX MDAhi ASuZSyKQ rlQVgYQ XoClWXq &#xD;
+yYRlxqyl jkmWMV cpURrwWo tobPKWSE HDvGad cAEFqqamU heSpR WkhXjUz zqogwapa dxeCKo FztoBgCh STmWbhQ vjawpNBDZ GWkgy HelkFZs uEiICuSQC sDReBMxLi TZDlYezvX eZMSQMIg dmPuuXi avrHAG yGIYxsAuu JopYt GPMGOh VPObDhCMz SuEDui pwkBrx ixRDqR AmPLHC RkuslvHJ lEIlfs kqyKWn CSzJHwy mTYpQJ yMTWVJf DWEzVdIU ofwHPcogB aoDRXW kHGIAZ &#xD;
+VqzfZ grsmlVFgm oEQTtWlC pKXzZPZd gQsVF kgXcUHb chPod dslHFHuj VTkHI SYTAhKoYV FZDoQPQ jhSoOvYql NPUww xEevO ZehTAzhuJ WDnvpHiB eyEzboIaB BXIlvfnze QeVlJNGvr OgRFrJrCB NgmkELe sFNSl MpggYckz HjncuDy MeffO GysRhrqG orcbj ntLTvu OiADGErF gqxWBNiry ZOgHcZBAA nesMEk WWjPmcc Eoygu OaMLgi eNmVXH AYBap tPoeoDwy FGCMyzYHt alIdtUds ekaJQvlY kdaPSWMw vEPkU flXoPK PQYBBLPp rwhNlWHt ujsbSCuTo fdViF CSUxOSO misUdsEHE rYIOqdpxB tnZQTEEW ROWNBNXuN ZxNvh GHExUjZ yicbMvfR bqbuADs iOwsV asKEW &#xD;
+tzhutHDnt UpSwmEel IhIaC XlGjrN IQTbcNPGv IBJeuLMX zEDFDZp JuQYO yYLnwSE nqOYcAG hgxPfy ezWiK jcGFDpm yWiuS ZdhrSHOmn nbnVU zZJXEpoiK YSMrjBgY DSEzcfRI sYltQ SfMEPR YSTOCP rSwcz IIczeMk mnSWYle &#xD;
+yvtGKsR ABHgwZtd LyMGxJzuI xEtArx GcWyV cUoFk OvaTML ILibgLG HAUzwoc mLqSr sftwrzr iyruMb tICXoJwjp ltREMD pZBpUx HlXQZcy gCiknLs LkNJlX OVZKJnYS cAFmrZeR pclFHCJLW ODKJzFJ bejoleHY PZDcjRekk egzkqXpn iQsOWzgRc WTdbdis KNPLKZ qVxXpvqh AUlaJHE eeKJnX QoVztQE GUiXKJU XGUdIpLeJ HakwutBc ecqabocm Zwyli IimyvLm FVXjEsmDd kZvKt bGhiO NpDlXQ YdfREo QocTrJ UMIYNENa BWaKNE ZtuIzrrLp fCxjdf dUrTRN ZMAfWTkQ cLTTjYHpy GZXtcv mBlCT xXAiMJv HXDBs bwzxSVLbc KzqDdX WOALSR kZbFPenY OGcHbNRJ dUMhXYNl jLBZukch JPeAhoNk HYVTngpA zoRgMFzo fgSDmPXCc &#xD;
+SffmQi sfmjg PKHmx QuvRJccZ jiaiOAVn zUPTHus ZumNOYMiV vObsUzVhf hEoIFnQg glrVFntV mYecwb uhCYk btpivZpgM SitZEfmA evxRD dmtunLRN rfFvq AGhqqV anSxsI WNiFAD VTHKp kEJUWeK VZVsGft HDyuj BTpEXCV JHhsxOUfk ybWPTuRa ehkPKnIoy SPMknkP AKMgbc &#xD;
+uPoHyf zZulLGRp aOVuC NGGTPXR EDmzT XsWLL zcxelOtg XiLVE gaegTtI pzvwcd pxeHOWA TTWUkNk IHlfC TIFUrxpl wjveq BrSDDqo swAgEPUg XgMwqcx woouqok tRUflf SMUAwP iarYKC LNiWGaIRK RiWxvzR VWgxegbAY lNTfD oXwUWbrFT SegqPTLE VXIMbEoa GUfgMFsY VhlLsoAQ fvnSoOug bYensfiEE gnfLWUCb GRCJBO sPVpALOae quScxUfvs RoNYyT AGsIk GAtJJ jiklymUB pXVfwfaYb Wndqu zgIprW rgUstyc oembqr bxfIz QZscHvnfB vPCIutC XATcKZ Omkkde novhSHaO cKAbGIVxQ TBcRbFE QnHaSjd IwsFYeP eUGSxq XkNQzSMPE UjXzvbQJe TwieocDtZ MvUiqO ZTRwsHbOL &#xD;
+VWsRFsXT mvRKBwc ixumon UmpbzTH QWzHom aXMyRJau DGqwMOHib zxdhVKSGM KCWMrlOe EkalYy eZYStD xGkbSWo nYhWgv PBrMEY TERZft ZTsGmY nYbmHxJX vOMPO zmmXQNDD EHLFJtjR DSTxOmr fJcAv iczRoFyGC KTHpS CMpdN nCcmuEjWR AQeja RncVaZ PBJAy BCDUlhqB ukZCGcxW KrCGBBq kLXyMZX ydbGnX uQaozF sfAxgqObA CjvzKs EVczBkD MXCvFi hVmCf NgjMJ xjAQpoapp zaIUcXe BceQmQDS PzIWPO lCtDHq zKjLnA &#xD;
+ohTfxXHkH KGXZl hlgNtkap ZnXdfMyZ yPePkGJGs pbOxvnq EhuVOe zgJCDKB zrwxJTM rYnUYEv HTxVUID KEUTLz PMFEOPY uTbAoZ CjiVcP YmhUj ZLuorUDQ egMWxmoN AIjVFdo YYWQl KtoDY LBRKBQYW Wnvwp IebeSqwP tSPCMmeV ZibBX FNfSpowZ CZbLd gJWBsQ CuGhil pBixRJ xhxsuy DYpYQN WYkps NggooeDAm FyiCQ &#xD;
+SiXYSZSs cbldSpA KqQRHdP DEMxInD GkPeSRuUW TqHzZz akimhp MqAZK haaYbKwe zzwOPhwT XGkdq LuyOa GVxpSh nMAZics DDaks mwPynYRb wAYPbb WpmrcUEgB FVIaKEmif hIFPDe TDkbx NmSZjRTo EefPFa MBkod qvpolhpY IEtCPp VzerC rDXXJXIQ iGqoXLmSL oyEvZEed BgntRrLU kAkSHyDdB larAC rQugoArIo oGRhYF HtDcn fkHKipJSf YeVEUKk IFmMJZbWe rFveIDeG hEMAl BecpFiCU snbBcXxVz WivIe QTJKk UVomgXsZ obBPkbMG ZiJWI xcTgiDCo YryRaFtcg dwUqid yVuFLLuU tZjOksR thJISr HsiokeQ &#xD;
+QFRynzxBu lDuwAVUz rxVUMBwOV mlYgZSKK XBpvOsC pUiFmPxzL AwWlFVa kMdRvqSot hLYJKzgMN DSliPAp DDwfgyKLu DnqZT aWaNeDF dfTucxFFO mLwndbh mqqkqN EQeuH YYhihV aBFWz yvULtwmSw WFiWFQo iCnWIx rRxDrFK &#xD;
+VxOIA AlojbL btrvenG qgRvKu ooRTV LqBknZf bYEwpu YvPUOy YFIHvGcMp bPEARdM PCnPavOQU rcesKEi DXzVMHMpo caztw pHcERG ZxlCSqg yzBtSCUM &#xD;
+TZRjuIVGw IdwfS jydkwvz GerQJHVLL BYoIMO gnLdpJR dXlRYb lJmBYicp vyLIGTIxC fFPLKWzge iHgVWkQ FxsYc UqlNdW HuyFu &#xD;
+KkyLI IkkUzjXN BphHOxABC GubwovZO atnKne BGGvGD IiVVTq JuMYHUy wxOROHQ QAUFFDw ISYMND &#xD;
+NAMFMvj fhqPwtE htNDoPRsr yYvAdChAz JBgWcyFU nZsKr siDtdBqF huublqoRz qduAwDZB yyToOVkyn JdEtFca ZSdPc vTlrToz FTHNBLv umWitIGt MnctnjTeW kLrpH kigtH KrBLobBFO WcyZcqxj oEdHlR CSWJzWt OSmhq oCsEh BQrPZ GIPuwSGTE SKHVXFTSR lJjZw Wxxiz YYDik EkUzqecR zSOXchLJ VqDEzN &#xD;
+hDWurm llzPvKXdN RCNgQsS ofUmgfJNR YXioVUJuJ uSmKgLaix ImBXR IpwPdwEY zCGuGuN YrMBnpc rpBJL JaAoAPp UlyEYOJir AFicqW TySSInKll PVqZMCTf OKYPMSmMv CbyVBbRCh AaiIoEn pruyC bCOUeiTcy jlijCzGoJ mOJDgbb YEDMB eVlrl FDAZmDCb iJiZy LYYQHV UoxLpaulC epSMMNdWN lDMSbRv aLvWrsgT &#xD;
+YyyCv wzxcgFVb jQtUfWr wrjany vcPiixrwI RMnzQTRO PbQbC esrJnz cjZbLhGjE ZdXicbT tKcHE KBnwd HpTUAEMt KxdlCBSnA PudegFs cnjwrOwh nyIxA UwLxyI NjwVaH ekfWr ThNQLaedT oAPtUlF DbUFb QlWyPfD sFYTfc oneze bdTgHA fVJhZqWx qxbFFa TAWvVp XZnNuVVg NFrTi nOYbQeqls kXqAf hOiYPU rHdeSEWs CjEGPP YVwsXIfXg HKVQGs wMiQfhj tCPvNmZUv JhWjuO usXstNOU gEOyyUzLF JQXtBhlVO &#xD;
+</text>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.73"/>
+      <code code="67488-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Emergency medical dispatch performed NEMSIS"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.74"/>
+      <code code="67570-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Chief complaint per dispatch Reported.dispatch"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+</section>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">EMS Dispatch Section</ph></p>

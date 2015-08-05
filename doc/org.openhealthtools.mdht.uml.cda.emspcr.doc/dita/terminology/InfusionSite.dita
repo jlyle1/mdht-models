@@ -54,6 +54,14 @@
 <row><entry>LA18816-1</entry><entry>LOINC</entry><entry>Subclavian-left</entry></row>
 <row><entry>LA18817-9</entry><entry>LOINC</entry><entry>Subclavian-right</entry></row>
 <row><entry>LA18818-7</entry><entry>LOINC</entry><entry>Umbilical</entry></row>
+<row><entry>LOINC_TBDA_553</entry><entry>LOINC</entry><entry>Lower Extremity- Left</entry></row>
+<row><entry>LOINC_TBDA_554</entry><entry>LOINC</entry><entry>Lower Extremity- Right</entry></row>
+<row><entry>LOINC_TBDA_555</entry><entry>LOINC</entry><entry>Venous Cutdown-Left Lower Extremity</entry></row>
+<row><entry>LOINC_TBDA_556</entry><entry>LOINC</entry><entry>Venous Cutdown- Right Lower Extremity</entry></row>
+<row><entry>LOINC_TBDA_557</entry><entry>LOINC</entry><entry>Upper Arm- Left</entry></row>
+<row><entry>LOINC_TBDA_558</entry><entry>LOINC</entry><entry>Upper Arm- Right</entry></row>
+<row><entry>LOINC_TBDA_559</entry><entry>LOINC</entry><entry>Radial- Left</entry></row>
+<row><entry>LOINC_TBDA_560</entry><entry>LOINC</entry><entry>Radial- Right</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

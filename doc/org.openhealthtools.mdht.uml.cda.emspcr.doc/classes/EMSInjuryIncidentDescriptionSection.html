@@ -43,7 +43,7 @@
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.17.3.10.1.17"</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.17.3.10.1.17"</li>
 </ol>
 </li>
 
@@ -56,61 +56,61 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:10916)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10917)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain  [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10917)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="InjuryCauseCategory.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.50]">Injury Cause Category</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.50</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10919)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain  [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10919)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="InjuryMechanism.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.51]">Injury Mechanism</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.51</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10921)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain  [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10921)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="TraumaCenterCriteria.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.52]">Trauma Center Criteria</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.52</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10923)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain  [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10923)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="InjuryRiskFactor.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.53]">Injury Risk Factor</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.53</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10925)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain  [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10925)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="VehicleImpactArea.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.54]">Vehicle Impact Area</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.54</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10927)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain  [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10927)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="PatientLocationInVehicle.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.55]">Patient Location In Vehicle</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.55</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10929)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain  [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10929)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="VehicleOccupantSafetyEquipment.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.56]">Vehicle Occupant Safety Equipment</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.56</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10931)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain  [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10931)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="AirbagDeploymentStatus.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.57]">Airbag Deployment Status</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.57</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10933)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain  [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10933)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="HeightOfFall.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.58]">Height Of Fall</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.58</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10935)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain  [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10935)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="DisasterType.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.59]">Disaster Type</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.59</tt>)</li>
 </ol>

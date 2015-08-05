@@ -38,6 +38,7 @@
 <row><entry>LA22847-0</entry><entry>LOINC</entry><entry>Trauma center level 5</entry></row>
 <row><entry>LA22848-8</entry><entry>LOINC</entry><entry>Cardiac-STEMI/PCI Capable</entry></row>
 <row><entry>LA22849-6</entry><entry>LOINC</entry><entry>Cardiac-STEMI/PCI Capable (24/7)</entry></row>
+<row><entry>LOINC_TBDA_416</entry><entry>LOINC</entry><entry>Cardiac-STEMI/Non-PCI Capable</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

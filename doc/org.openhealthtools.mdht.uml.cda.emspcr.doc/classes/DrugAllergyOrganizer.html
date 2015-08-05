@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Drug Allergy Organizer"/>
+<meta name="abstract" content="[Organizer: templateId 2.16.840.1.1133883.17.3.10.1.183]"/>
+<meta name="description" content="[Organizer: templateId 2.16.840.1.1133883.17.3.10.1.183]"/>
+<meta name="DC.Coverage" content="Organizer"/>
+<meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Drug Allergy Organizer</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Drug Allergy Organizer</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Organizer: templateId <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.183</tt>]</p>
+
+<div class="section">
+</div>
+
+
+<div class="section">
+<div class="p"><p class="lines"><em class="ph i">This organizer contains a set of discrete drug allergy observations or an assertion that there are no such allergies.</em></p>
+</div>
+
+</div>
+
+<div class="section"><div class="p">
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" width="100%" frame="border" border="1" rules="all"> <thead class="thead" align="left"><tr class="row"><th class="entry" colspan="1" align="left" valign="top" id="d31138e46">Contained By</th>
+<th class="entry" colspan="1" align="left" valign="top" id="d31138e48">Contains</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" align="left" valign="top" headers="d31138e46 "><a class="xref" href="EMSAllergiesAndAdverseReactionsSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.13]">EMS Allergies And Adverse Reactions Section</a></td>
+<td class="entry" align="left" valign="top" headers="d31138e48 "><a class="xref" href="DrugAllergy.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.48]">Drug Allergy</a></td>
+</tr>
+<tr class="row"><td class="entry" align="left" valign="top" headers="d31138e46 "> </td>
+<td class="entry" align="left" valign="top" headers="d31138e48 "><a class="xref" href="ExistenceOfDrugAllergyObservation.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.102]">Existence Of Drug Allergy Observation</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.1133883.17.3.10.1.183"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain  [0..*] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11323)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="DrugAllergy.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.48]">Drug Allergy</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.48</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain  [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11324)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ExistenceOfDrugAllergyObservation.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.102]">Existence Of Drug Allergy Observation</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.102</tt>)</li>
+</ol>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Drug Allergy Organizer example</strong></p>
+
+
+
+<pre class="pre codeblock language-xml">&lt;organizer xmlns="urn:hl7-org:v3"&gt;
+  &lt;templateId root="2.16.840.1.1133883.17.3.10.1.183"/&gt;
+  &lt;statusCode code="completed"/&gt;
+  &lt;component&gt;
+    &lt;observation moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.48"/&gt;
+      &lt;code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="ASSERTION"/&gt;
+      &lt;text&gt;Text Value&lt;/text&gt;
+      &lt;participant&gt;
+        &lt;participantRole/&gt;
+      &lt;/participant&gt;
+    &lt;/observation&gt;
+  &lt;/component&gt;
+  &lt;component&gt;
+    &lt;observation moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.1133883.17.3.10.1.102"/&gt;
+      &lt;code code="67794-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Does the patient have any medication allergies NEMSIS"/&gt;
+      &lt;text&gt;Text Value&lt;/text&gt;
+    &lt;/observation&gt;
+  &lt;/component&gt;
+&lt;/organizer&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/ClinicalStatementTemplates.html">CLINICAL STATEMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

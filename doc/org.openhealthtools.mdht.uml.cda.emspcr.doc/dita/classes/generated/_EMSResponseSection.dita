@@ -60,8 +60,118 @@
 <ol>
 <li>Contains exactly one [1..1] <xref href="../UnitLevelOfCareCapability.dita">Unit Level Of Care Capability</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.190</tt>)</li></ol></li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::EMSResponseSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.17.3.10.1.3]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10572</entry><entry>LOINC 2.16.840.1.113883.6.1 67664-3</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:10575</entry><entry> MISSINGTYPE</entry></row> 
+<row><entry>delayOrganizer</entry><entry>cda:entry/cda:organizer[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.95]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DelayOrganizer</entry><entry>CONF:10995</entry><entry> </entry></row> 
+<row><entry>dispatchLocationOrganizer</entry><entry>cda:entry/cda:organizer[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.96]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DispatchLocationOrganizer</entry><entry>CONF:10997</entry><entry> </entry></row> 
+<row><entry>responseModeToScene</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.182]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ResponseModeToScene</entry><entry>CONF:11001</entry><entry> </entry></row> 
+<row><entry>responseOdometerReadingOrganizer</entry><entry>cda:entry/cda:organizer[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.97]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ResponseOdometerReadingOrganizer</entry><entry>CONF:10999</entry><entry> </entry></row> 
+<row><entry>ResponseSection</entry><entry>ResponseSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSResponseSection</entry><entry>CONF:10023</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:10574</entry><entry> </entry></row> 
+<row><entry>unitLevelOfCareCapability</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.190]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>UnitLevelOfCareCapability</entry><entry>CONF:11329</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../PatientCareReport.dita">Patient Care Report</xref></entry><entry><xref href="../DelayOrganizer.dita">Delay Organizer</xref></entry></row><row><entry></entry><entry><xref href="../DispatchLocationOrganizer.dita">Dispatch Location Organizer</xref></entry></row><row><entry></entry><entry><xref href="../ResponseModeToScene.dita">Response Mode To Scene</xref></entry></row><row><entry></entry><entry><xref href="../ResponseOdometerReadingOrganizer.dita">Response Odometer Reading Organizer</xref></entry></row><row><entry></entry><entry><xref href="../UnitLevelOfCareCapability.dita">Unit Level Of Care Capability</xref></entry></row></tbody></tgroup></table></p></section>
-<codeblock id="example" outputclass="language-xml"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.17.3.10.1.3"/>
+  <code code="67664-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS response Narrative NEMSIS"/>
+  <title>EMS Response</title>
+  <text>GDbzJAid xvzhcpRBe SxClYXm cpKWq ZFSEkITov OFxNVaKS oOzJxXzm ONAZhB clwjz BcFHT IUXgWAk cicpYTTyw mBFEkey WuxfdWMh XwMUqF NbGrOuLlm SmTas EMrETV oIZlime rpGqnw YihNsq MtkSHdZ ODqpErRf vfpjLt HhHWFExsL OqBLB iRtukcu IzoBvr SKmBmkqe fyfJgwdIC jUTOHmD TFgjV rFbSLVXnJ xMXIO pZyOAMTEI Muutar qWSGzCt oSSeC usnLQjZsR QmZkozhn BOGkUjae pyNgaG &#xD;
+uHhapms FNOEJqAa chsjIQxb InOvP rpBdP VnEwryBQ jHGklnP wyllYAWd GJBYCEUAN BhbLkx WFZUdaWj qihFzKd ZxCoPIAC LmqYIZYY elxLWSRVs kxEDYJKy &#xD;
+aCNzre bWjSPjZ xMVTzCu shguvD qiDiyZ wPVrPE WnTqsIK ARuysmo XmGBSu vNhwSRd FdMlDRtWt mvQol XXferv qqCQJReb GoWKHhGH XaTDfi HFSgNWSUd obpwrs higTA uMXZKieYx PqSUoSaqe iCynx wpzerzys uVSeBM yNoAULOE zVjxE gKroEm zRPJcIA VpjZwSLG zGmzx yXwDMKIs CjFQOiZ LCBlXklX AJKNmRPP ynSZPmq bDaweUoj FjfegZw IEqCHQJs iYyBt KAiaLpqD PQwpxGLiu CBYjNUic PaXuhij vvvuCgT WCEehi maGzC yPIMxnN oBotszY RIARBr fFIrlR fLvvEYI MWRePW BCLuR &#xD;
+aSqCEeggC NHvfIFat EvVnP GMbNZYooV VSLGNHACI sZYnqTS LwPkuxPa ERGDWnM CvVEfw fZxEmOun WWkaLFBMU IWpuYIVlt DRDIFLX FspVj FpuonYjb iFhVvEE tynekPeX PpdGb OZetYnVZI SCCla fsuyvD rhemvSQ KToesSZE KvhbYOkF ZSddos DAxLcd MssSwQ Rrcqg WgbSfi OIKvn dPqnfYqkD FyiRlUrb XGfpT bFvoL OcVCnH UmCHpihdd zVSrn iNeFj NSGxB FFqJNz IHFZHDpww jgjqyOa LllcglbXs zcnIvvDEH srewwx HyVwWLam LWDuo nmyVD SmuMK RirygBX cgsqLQ pVrLC MmXSAr akbMyyy VdquOe YebOR LXXHoyf ZwctvCvc CXOBRu syftEMTL &#xD;
+HOVdv rqDCnqJSZ JeplZGfLk ZCVcUnE pwEshnGX gdXoAd WFUjMvd TvwZA zFOacOcrR dXMQapIwP UoRoIKn LguKhy hCvrInWg loSWs SxRHCRfKg ATyviGZZx RELNx ZMaRVy lDoMzyrD dOGjMOHVG clSRXQw ygrYz uaPABb OQmPKFtbQ IGHmku CtClZBZQ AjUxb IeuSiHeX vGoIlO nicrHEnE axXHIRMQR lZaxGMgi XNOdM xOmgYoEUG CtMmfgQS mFQMI FZgIZxCif EbPJwq tQXrn eEjaTl fzbSl FrPauT TiupAcUQ RhVXVPM LSpzTY nmXWWP OYgGvN LgRfGx mVBSfgwwn aXkrGWi HjjdeRPcF PJYqBO SkIiBAhC YsWyWcQmJ gGdHPclPB TxcaH NYasm kFLewfC imqrNHQOz NLJtpMs oItMg YbOMwM xHHBI fXwRE fabTEh pHwcR UjydfqxGH tKbet hVxnGL hlHjS ITYKTtO &#xD;
+JdShPe IZCdRUka LojtudCP HLnbfc bzBhDkOQF XmjFJ GHvNCQbY jQIPCBYvF CNizDc FtgdlzUrx mFCvrLjU MmKgcLmt nUNjDCrJg ZRliAkPi RKdsG cwJolMbn MTAUi LgaDj elZDWG txayut qJhEbSHa RTRQqcidv XcimSIr CwgmLav VWRlQ FvxXBR xLevstB ozZfIf SmQaeb zBzQDRTl ldHdoiuWc OZiSboOr VPdysep PBYvxJ hClMit TPfQHrC XeETLDrar zjcptsTxU VdPeGFuW pjcyYEhR eWKxl LkHeUF ryfgFfKqm WvjiOW mdFdTzjne CQQzaJB vOwcObwP mOaKUx wiRbl SPQRpeQ kavzFya MScFT DIYKxxYkt feBHYcaoL TFZFkOXd rajOK irYzDj &#xD;
+ZzgTOZ ZJJzTfcg osnoXtGXy AJAwqBBMh IKXzpBLB PlSZB oSGcNZBm CMnIag NUybwWon shzceRT mhzDD IWmKonpDH zaatp oRDGLT &#xD;
+MlBUHfl DOApFnd YvJOTf xCKaRkC VpJixd RUwaBrxLp XyHNfbB tApnno pEXGTLsu UYhkK sGNTs RuRBFIE MCLBdU NSzis EWiDiTX DBlgd AaAsUW DlnuelYiF MiExg QrBmGBBz DGwHSMlK WuvRK hVKfEH cAsQizb kBhbEvJ TFMMGep ezRjDhu PJphq YCvbqSDs OtoHsKIy Wxwutu &#xD;
+dqHiCDz JwsYL JkzBTlVp JAODq HDNYWF nqWHocSbn RFQYJhjD lQfJP jMNHUv zQDxYm dVsUMp QrBeyFE cRksdog NUCJjfep UsxPz qEUurDNZx bBQIiK NTSveK BDjpkRV JIDDhv bGtzn FXGoDS AYoVHjVf OswrnlNRo YvJcGQ CXZdGP VbWihimQ YBNjHNip Sscth AaiuGaXjl OcZJs dJlha XrEqkIP gsGWjdl aWrOgiiDL yCBGMgC UCQnycHT &#xD;
+tUqrpjnD DIkUSqCg trkxwWT gWxKeBIU tpBjnm BpUzNs Bknnxqq VvVmG RAJnqX rtyvLdZp uUjRiD OqsEHQnw umiTfPng EFFtEs &#xD;
+LGRHv WdWAFOY xKFjZV wDpOMmFsU JRYzRMG nfWwJ RktErzW LMpcBBLv dogCeXjX HzQklJ ADmyANLh EkKZdvUiH uTjGg iOFjuaToa DsrquG kJlQi laKoltcM NxpKE YpoEhq kJKCJudac QdLWoWKC jCAyh WeqZxdYs gWsZSQXGD SrTAQena mdKMD SLGYt NMvPBgOaX mHxbgrKS YZclcvgbv eyvuEi OBfidLmlx rKAgVVI ijkoxsr OLbYFm ZVGsDu XWRdniKM SdPXN ZpVYJu wRHdRWOk yCxmY sxmTD xzYivJu PBKQTR irwBOMe ECfvxXHYh fomWcQgD lbNSrIPbg eYAKb kclvK pJivBMH HazJTB ATKgaUKn sOwCAQO QMHxY YLGVaDsrW ynzukV JuHCkW MdokFQJo gpCyvy UwNevjLYk FEpNZI sDmtF VtMgjYR MnzpPvDH NuVDIU xQFgSp THIjoAUQy WtkmRBHX aJhhEise kfqRIJkt oKDztCGrL &#xD;
+JKewdQ VAipRRx dDAnfzrv LuvEEKLz NrqVqIEDy kUIsgEM smZXnZL eJFZhb IMoPP LYhtItZIh YYMFWzew DTMAMyPJS WJTqJZr pDqGgZR xgGTT WVvpGGJk dcrChM DxmhkA QhOuC fyOxkBT HJLWJlY JqFNe &#xD;
+koZgpHZT gOokHv mDMxWrZNd xkKwZjO cWgILpc TqgRe bKfSEHPBg LfYxjC sfuWtF ndHXnHdfN PkWpB XhtyJXl bDUoe UmsAhXDQ YHHoKFa QibQd ysEvfhim KvUect shOMPsA NHIyJg fMouG wSrTMlf bBUtOogt XyjVt CayvAA jqcma xCgsvb sqtTye farOyOVmx evtyoSyAk EjXJhkU mqQFLyy LenKsop YEUqaM BseIuxnF GoFbNdMB YczRwbR OqvUlL fDCSiPVie ZdWqH EGKISQyY &#xD;
+TbOfenOhw NxuLD gvslb QqFAZj InHlWNs vStqs wRDnBNHw VFlrp GseONncnX zYtuxjN asTtjoQg VtRZx KmbdCl NHEKrrz yZlcct BCiSrqMsm &#xD;
+</text>
+  <entry>
+    <organizer>
+      <templateId root="2.16.840.1.1133883.17.3.10.1.95"/>
+      <code code="1065051084"/>
+      <statusCode code="completed"/>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation/>
+      </component>
+    </organizer>
+  </entry>
+  <entry>
+    <organizer>
+      <templateId root="2.16.840.1.1133883.17.3.10.1.96"/>
+      <code code="323875535"/>
+      <statusCode code="completed"/>
+      <component>
+        <templateId root="null"/>
+        <observation/>
+      </component>
+      <component>
+        <templateId root="null"/>
+        <observation/>
+      </component>
+      <component>
+        <templateId root="null"/>
+        <observation/>
+      </component>
+    </organizer>
+  </entry>
+  <entry>
+    <organizer>
+      <templateId root="2.16.840.1.1133883.17.3.10.1.97"/>
+      <code code="1068244817"/>
+      <statusCode code="completed"/>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation/>
+      </component>
+    </organizer>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.182"/>
+      <code code="67482-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Response mode to scene NEMSIS"/>
+      <text>Text Value</text>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.1133883.17.3.10.1.191"/>
+          <code code="77157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Response mode descriptors"/>
+          <text>Text Value</text>
+        </observation>
+      </entryRelationship>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.190"/>
+      <code code="77156-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS level of care capability"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+</section>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">EMS Response Section</ph></p>

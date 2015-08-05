@@ -74,8 +74,128 @@
 <li>contain zero or one [0..1] <tt><b>lengthBasedBodyWeight</b></tt> {subsets  Section::entry} <ol><li>This lengthBasedBodyWeight <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../LengthBasedPatientBodyWeightClass.dita">Length Based Patient Body Weight Class</xref> (CONF:11100)</li></ol> 
 </li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::EMSPhysicalAssessmentSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.17.3.10.1.20]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10336</entry><entry>LOINC 2.16.840.1.113883.6.1 29545-1</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:10339</entry><entry> MISSINGTYPE</entry></row> 
+<row><entry>barriersToPatientCare</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.83]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>BarriersToPatientCare</entry><entry>CONF:10985</entry><entry> </entry></row> 
+<row><entry>bodyWeight</entry><entry>bodyWeight</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>BodyWeightComponent</entry><entry></entry><entry> </entry></row> 
+<row><entry>lastOralIntake</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.80]</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>LastOralIntake</entry><entry>CONF:10979</entry><entry> </entry></row> 
+<row><entry>lengthBasedBodyWeight</entry><entry>lengthBasedBodyWeight</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>LengthBasedPatientBodyWeightClassComponent</entry><entry></entry><entry> </entry></row> 
+<row><entry>patientAge</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.81]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PatientAge</entry><entry>CONF:10981</entry><entry> </entry></row> 
+<row><entry>patientPregnancy</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.79]</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PatientPregnancy</entry><entry>CONF:10977</entry><entry> </entry></row> 
+<row><entry>physicalAssessmentOrganizer</entry><entry>cda:entry/cda:organizer[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.78]</entry><entry>0..*</entry><entry>SHALL</entry><entry>YES</entry><entry>PhysicalAssessmentOrganizer</entry><entry>CONF:10975</entry><entry> </entry></row> 
+<row><entry>PhysicalAssessmentSection</entry><entry>PhysicalAssessmentSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSPhysicalAssessmentSection</entry><entry>CONF:10014</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:10338</entry><entry> </entry></row> 
+<row><entry>thrombolyticContraindications</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.82]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ThrombolyticContraindications</entry><entry>CONF:10983</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../PatientCareReport.dita">Patient Care Report</xref></entry><entry><xref href="../BarriersToPatientCare.dita">Barriers To Patient Care</xref></entry></row><row><entry></entry><entry><xref href="../LastOralIntake.dita">Last Oral Intake</xref></entry></row><row><entry></entry><entry><xref href="../PatientAge.dita">Patient Age</xref></entry></row><row><entry></entry><entry><xref href="../PatientPregnancy.dita">Patient Pregnancy</xref></entry></row><row><entry></entry><entry><xref href="../PhysicalAssessmentOrganizer.dita">Physical Assessment Organizer</xref></entry></row><row><entry></entry><entry><xref href="../ThrombolyticContraindications.dita">Thrombolytic Contraindications</xref></entry></row></tbody></tgroup></table></p></section>
-<codeblock id="example" outputclass="language-xml"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.17.3.10.1.20"/>
+  <code code="29545-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Physical findings Narrative"/>
+  <title>EMS Physical Assessment Section</title>
+  <text>jcCcMBN ayjEQmnw GpkSGfjVH eJrSDVEm SOiZnsVa imdOU vRVRyII BfeGfhtM OJyHXUv MhoTDDKL daLrbtfw ZzFOByJn wCydrrUX IOCEAvA oRGHbEbDg YaZTFIn eujZpJHp YUIvCJ CEvYvE cjfTdJw gpiuVbYPK LJzvVnOSN aLzskW unjgwU qSZdvmrYJ xtoqump KShtNiBx XidhcxKL MnvarR cASovC rTNCVek PdMEPlEN SKUZMair vjeReiX CRorA vgPioEFQw KcTXy eHLYdJ yPpnUHjC GAXUpkh QVLBmWS DdbrB AZkMwzqxf yaCZaDviQ iqHSSppy TsafnIDq OACEggQUh NpXKvWFJ sQgrvEi ZAjZi dgLpFmVe XdEoUaEA SWFdn BEyBWzfN MxfIEG TtqYLe &#xD;
+tfUQmqr qyGLBSMbh IxrMboS IfnSUkQ DpEtH MOJacCWN fbvylZtNF zvaqU LQLocADUl XbUNNkxcX ZTgMKRygt oUGnxS eRQHAl IKnlXJr PLsvgjwBE qYXqF uiWDAbR NRSxYs DWJMbbgyp itcsbC ZGCLkaDu fnJUuHLt ZckjdInzV EKtql zonjMmAo QIzZRo mUQyjRgt pFQxbOoZ hwHZRSI zvXWid LROaL EwBJytTgy TMXifd WKfJT PzCXkEBKS elkoDcea lOwyseGaW DpOIk latIMwkdg UlKEQrNvU nauLCN WOoKFTcPs FwHMwqCc hlwDg OUFrVGW FBoZuk SSKzASNf uxkpNx oVFSYQcRj oIQWM WJOoOwzZc OYPFuTy yLJDzNy CTMdv oRfuxVnU OeKPooYot uzyrmx jlGHeRZ nbfmijXmL JsKAoOZbl AjMLvpAF jGeiyL rbrXX DPezwd MYvqDqD eymMKOKW aZpyE dVYRgTPh LZyArzobv &#xD;
+BQumq FmQiLBLK MpvSZ QvvRy oODkIMEk InLsx slYrI RoRvMVkHC HACJsz kevAwgZJl iZaVFE OrznnZYxN FtGeq WsnXJxly cLqqgpSHq NNdhkD STsmZUIy FPblshbg vFgTkTYJ frVHoLARt mUdniewSI NeULhgMu bprXQ ldDwv sZqTsSEQ uLGLSv fmUUKKo oXJdPM zJWcL WErMrjc GelRz QEfOY CeYTO membjwo dLbJCuRk kphHpGU UTsDoFl xEskjR HMKRxUSJf aVtQIQs ABwLBd TCbztHK NMWiKvDJM snElMq pRUGr WcTPIfY OZCcju EaqOJ pfzgvM PoeVN dvgveIvd VdXnrT JnRSVPE fUpPanpZN pxQYKmjK XDcdp hhfbCmA tRazfehUi rtpWZryg zazsX XSRPwnqsd NWMcn juUhigGTu FGETAeTt UIJbqcTZ WIGcGaRh AVDmew WPpZFNsnV hGLalrHbC ySLHfzWfA FdPOLOJ mVBZx LCamMPd lJIoFti &#xD;
+TsBqJgqw HqcBm wpMBdnMM anonwg wgCtv ZrZNshkI EdFxUuuYy BuueSLmrk BmDsFid etPXRPZ RdiBydIv AnbzIc bTjJh ATXNC qUocrb qQfDeUFJS IPRbSy BEtkw YyUVbrKO TOrGVaV yyHAbwvV BjpmyJgh eEULzfL SSwiT hJCevsv uelEw ptviC zxadPpYCG CSeCsYiSW vMzjLpKBK LSInsvLAJ tQvLSSuk UZAxkIiwh VEgGeTq fIvAfX IRoiLFA WgbLbZQ oiQvGDds FmvFNtcKt uxxRZ sBbWpkT dfgZZTP fDtIgyR wjRmhhPqJ YLjwTk pCbdlM aBROH vGOyXXps fcGyOYUYw VECzqyGSD uZcmzPO ApcFrIKY VrRIsN ZBNly &#xD;
+vQshWtPDq kutHcItX CLNyZuhhL XgQWtJXo tzTTlEmi dFQqVfQTj EwsENB xxYWiuGAS YouAEbZa QMQqRj TCrCWwn eDJRvIL LuzHev rPrYG MeZjlYW MjfVvX mlpgawhR bYviXra iurOC miQJzTm SSpsR FQVFyHyuc IZANSJrrI oIhrDMa SmIdH BbwRrIkk NEYWs IQrTnu oXGxJFT oDEzcBI YCIipC huZJzqC fTngPSzw ByHlU WXyUvALL JMzuF NFHtjakJ irnKsyB eOMaBgQ puQyqxpoe DSRWbmkc WVFmln cFzkm uHOzK lzXehUiRi VYQTPQu KjNuxZ BvRhbvQ hbqDhjyiH xPDOZtQf OWwbESfa biQVqudEL kHJrCiA DWcSxVNU oPGJdi DcMrNGEpm GIOoY uytfnV WJHuCkrit aDdEz &#xD;
+feawT ZbSDoPkqO qQCdNCD QJLnzX WvYBxjcM rHdjEeR pYQclRuvO beofKxsbv pXQzxmWS wOTBNRska jHJSOoaBZ zxVTJpNoV BdTVX ORgwm zIrrhsny DbfTKtjSM AjeQYzLEl tOuqrfiW pKpbN zWwEYtHE rjiaNByF JFjCi buYcJYS cYLbUWHz OxpzIsGy XPzjC LKioVSZ uBYFn ogUyAF hxVEEosXd XQHtX zwRZlzwPj iPDbnUrNf icdBWIma eWmTcOux ydMUrXOFC dmGeLez TMxvEhUQU QaMlaf dFsvcfKIa JyPyxtjx QEAgKwt &#xD;
+sWyeqpuNW fSfigqHsq guBTDybt BrBAiy zXhVZ fnhsATld oSKWNkKY aussYjKk tYqdRR xjyanw KSzGv jZBty wuqHmBJa EdMxJ ZyXCjQvx IvHeWdFWx wHKZy pTPWbO oOquONB hYylrmwJX ePuOZbPR HJeTmt KXkJcajZY MAnZY OHgBNjQTQ wGwOUOE GFeSC BkadWpa rrsKiRN LeSdv dGioriPZI ITgUJ vDAyY UTaJjgAS mEGRQcW XiOFzP vWbmZ nWAmki BfzGPg NNcOQm mpMDD RwzHdNntx mwWuvBBRh zkjkSzpa vwfFuqH wwIkoph TlEnPpN pYDZV BeumniHhZ zUHMnm XVsOvcXc EZLQNZgVV BcYuDPm lLFJlrNmy fFhGOeNH ZvGxbSbgv ZQKELzarm QJqHSLoJE PFuexmvaq cJynmJTD GcvxpHSq nRVpNOs vZSHt UwNvDImX BYOrO tsNAIxpmP &#xD;
+cESNTNOO fIGwmVV xtNRHY uYFHNhmU PSrtONnIY nCBtVN qrmuo EYHSa Sxvdnxpo aPXMZR OabGUwSzh xgnvywF xnqHtPGSe OOHtu RIkDyGE OhLcXQeIp lAMyNnE IWzTGjFsD qEMoaq rLXNi jXNtH qlaUiaZ PuMIhbL &#xD;
+NmZwGt ELLvn lAbZO SDQEMG inHsjA ryHii Ylapx jwTZxBiMa yZMzCM SohszH SXCOM kCpuob lvvHSswTy WehOCq yPqwo OKlXXYbzs jjZdxnzT pfBJvJB wIHfJpuKT cYudmfwI RKWZecuIE FCDXQC bDBae &#xD;
+SyGbrq ZVjNQ IqJNsF KtarXAD bpSwysMod GZaTIVy aXTcmnlAm sgZDEm obeekBlXc AweGltm wsKxYW FDXpUY sczrOvPht CqaVoUtPT oDOxewsK bgLcQkPp hlOfnl PhZihy mIZZi PtOMUcv DOXDvnGk zInCbJPwk GYmsYBoUI TudQusP fTjBRQ Nytrigxw XDpXXpV qYhNYH GsksC FFygsFfXI AkBdVNJ oqIhRWI okHOAp tLyBDoEc wxHjInFnt igswrsJ kychn wXXvJSm zQNVWu qdLKZ hmfFIkf DNEvQP IeLbSPu HHVzo MExKVrL PIrnpmX WkxoDiz ivAZcNxr PBjrVZRAj zKrid ydXXaJDXP &#xD;
+VHNJkYFyo mMAjDthU DmoZMYTjj DQUDjZ RXAavl UXOPP uuZat HsoEQL dcDMnA YzkkBL wuVlmMh YlxMOT dGhsqg vrpqW QkPNWZkl TNexbjDr jlCcUs jVatFt ufGuu JFVrHMh ZQvaBhwI RnKGrwCIH duefK YKYVos ZzqEVq HraUUD ZoFhYPQ JlZJZehKv LabhajeEK NfEZCe sQHRs GisprcE xxhzo wyDtJf &#xD;
+mAOpWXzv KVNTST cobBDU KatZAi NOhoUG IBdGx WpxrBBW okjuGir ZjKGSXkNk urDxnDm dyVGWNrwY JMqVH TRnFKpzE Aetya nGtTG rFRNYwRJe HSvxkv NrJGJd NIWlVqsIp YHilZy CJjpPs qIcOw pGXtZ HsWkExT zsmToVs nhKGVd RRSfTMAn IbNSPzGfs JrDRdiI JJoKItNaN bklYdLqD QXdNyAo ByMxgKWJ hiUPG Qhhxximgg uADrh YIGuWoRbT TDbymZF RFAkoUk EzMhPexi ARCMiZ SAmzfOS avqhe zyYLi YgfZQoyl VHnKCYnVt GxnYQ uGRzEJ MDjfFP fCsvZs NYpOvTiq kZIEQIdI THUIXeym CAnHRfG oqcLAHhD &#xD;
+LXHUoRKr pDuvcbiL oCalGzGM qlSNR kDDGlm yRdXl QnwJBOv lwWZKWaa qUIsn bDhiDJUI gCVPZZH SYRXpiFG BEAxCx bUeYX BxCykjJ sxmJzVnA mbcuYB TUYbYDbw McPZQl uuzALQ Ruejfv eDgOz mOVOBT nOOcTFQ ZqUve RhfWenFC SaaKoEtdR vKXRzJmPp SBkyLZXVP IICHoHIIP ZuSkg jyATY ohqlYk mfJhCzA zOLqrqVi PRYCVOp piUqD hhJnKYX loEEfcj GaiLE UURXxc suUiZXc PxjfDl QMhfcr xtqBAerXB huysJoKl jcpvjdZH fnGHNf CkDYA jXeQaSuu CTgHdp YwLoJHvQ OmJyusCec UoRSSfU vnGjNs DdfBpYpb IaAuQg &#xD;
+</text>
+  <entry>
+    <organizer>
+      <templateId root="2.16.840.1.1133883.17.3.10.1.78"/>
+      <code code="703141716"/>
+      <statusCode code="completed"/>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <templateId root="null"/>
+        <observation/>
+      </component>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.1133883.17.3.10.1.180"/>
+          <code code="67524-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Physical findings of Skin NEMSIS"/>
+          <text>Text Value</text>
+        </observation>
+      </component>
+    </organizer>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.79"/>
+      <code code="67471-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pregnancy"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.80"/>
+      <code code="67517-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Last oral intake [Date and time] NEMSIS"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.81"/>
+      <code code="30525-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Age"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.82"/>
+      <code code="67523-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Contraindication for thrombolytic use NEMSIS"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.83"/>
+      <code code="67515-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Barriers to patient care NEMSIS"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+</section>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">EMS Physical Assessment Section</ph></p>

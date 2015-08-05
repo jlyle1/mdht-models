@@ -54,8 +54,56 @@
 <ol>
 <li>Contains exactly one [1..1] <xref href="../LocationTypeObservation.dita">Location Type Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.88</tt>)</li></ol></li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::EMSSceneSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.17.3.10.1.8]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10732</entry><entry>LOINC 2.16.840.1.113883.6.1 67665-0</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:10734</entry><entry> MISSINGTYPE</entry></row> 
+<row><entry>firstUnitIndicator</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.84]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>FirstUnitIndicator</entry><entry>CONF:11028</entry><entry> </entry></row> 
+<row><entry>locationTypeObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.88]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>LocationTypeObservation</entry><entry>CONF:11036</entry><entry> </entry></row> 
+<row><entry>massCasualtyIndicator</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.87]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>MassCasualtyIndicator</entry><entry>CONF:11034</entry><entry> </entry></row> 
+<row><entry>scenePatientCount</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.86]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ScenePatientCount</entry><entry>CONF:11032</entry><entry> </entry></row> 
+<row><entry>SceneSection</entry><entry>SceneSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSSceneSection</entry><entry>CONF:10018</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:10733</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../PatientCareReport.dita">Patient Care Report</xref></entry><entry><xref href="../FirstUnitIndicator.dita">First Unit Indicator</xref></entry></row><row><entry></entry><entry><xref href="../LocationTypeObservation.dita">Location Type Observation</xref></entry></row><row><entry></entry><entry><xref href="../MassCasualtyIndicator.dita">Mass Casualty Indicator</xref></entry></row><row><entry></entry><entry><xref href="../ScenePatientCount.dita">Scene Patient Count</xref></entry></row></tbody></tgroup></table></p></section>
-<codeblock id="example" outputclass="language-xml"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.17.3.10.1.8"/>
+  <code code="67665-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS scene Narrative NEMSIS"/>
+  <title>EMS Scene</title>
+  <text>iMMyoaiHJ GPwvbZvt rNmMHp APZcdtoT vfcYHlYW aGIxnl MprkLdK kGtzNuibE DrghvQ TcGOpU HAdqtqVF TyXtZr pJJZVZOh fbyTUhoF AXZdE oPkyfk oPMyzww yVOCLCdH lSiZioEL rsWedDnH ltqAj sHDrioRdS xnxxRzQm BaDLovxXL bJMZwr TIPwfoDK CJiXbeUPj OcejA PMthz xqswOs sBKBgOYD qImeJNY xYDYC tinkoi cuDApAz scNzxN BaphC NxCcD VpNlyM FsiUri lDotaXWr jzHNqCKW sbFNcJ iZWfonQDw QHBMoT WGhCuLcWV qRosuem HcjSvTqA mgErknM ViwWQlP JlFNB RPnmnx UFIFgPL mbiOXRu mvysPncSV FrMHpjszP mLHikVkk DLEoIt LQJHMwLM MmeNj mCuLVzo mFlqPPedd pULyj LoNTX fzjvQH NFJbloChS gPzwbV GhZUyQCD pMTMcg &#xD;
+EPrOpz cRJtk QPMcpzy uJNlg WQeXywIO EKQtkGjR OsshSwz BCBRkDuz Ryjfw msqRF sBjQy hzHgy kcFKxbo ahldFtCI nQLcUcNTH ckvBAtUz zeakNCfY HAIsP aDOMCie wnMHrsf ZmUUVu WFcibD pnkfIug AOUGlZ UJCAHb dwlZebH MPJNyrEy eYbLutCTR tgLAukZBM vdBqspDM AoTktW eHLRPtLhh dPiYWe &#xD;
+oTzLB DWPoyWnBJ RGtrCyZoK JYxfapEd tSVSiS mEyuWgTd lNoJO WuejTbVoh ULhci HxSeOST psovAZ PIYJrG oMEyEZ LvagAKwwz pNTioIQFq MyGNqSDGN YZVUIS DmzggSa fJPMhtTbw ubsJGM PWAyf MbkjgakM uAHJb lqqFk TspnrVsfa CKMAQpkXL kwfckou lCvep ohkcW xmiQryW PjVaKn gIqOp xANSlB bCrTpylR FtRIte HpWbku XUTAkdb emUbz gynnjw vKfTT GHOkgmDRZ &#xD;
+kjNcg nmNuAjcU GQSGhp TZHBIu UpNvJZ SxXQivF JHwlNLA GfJmaX rApiyCh mmbyzD FYaSEswV aAUdTF tYBqQEsf QXAhzxxwc AVEHpm FAOSVw oXQaFi jilZwAk lwBvG zZHTmOopS hEXHFRt MPzQdlUg eivlluzsq IbQveFfDK YaWiY yLqoMSszf LbokfyWZf havaJt zvYFLRdg wTWSK sQIPsv &#xD;
+YXeuzUmf TKZOivgx RWTzI dAVFCjKP qhcIuBQf hqOzYlWH sIaIL RUTAK ZqQYri xBqEDXDD UsaSefrBP gJZDj HBMEanZx vSviM JxHXpbs EVkolj BbUaXm QYmRbfKAq urIsKVA IZVmiEsUP xSuBlgRwi eMISMFU kTjZDf rsBhmGLFn UsAQek YOGltYz OUhXsHvA GLYcUU CynRoGWn cuKvwxrUV iqJDuQAk eezIhxdmV ZEqjD rPUNffQcI nknLAqJcm oyFJIP TucAFjDV svfYoMh ThExRytO SCrWND gwdNc rYjLIy rVLdlTd peHNqI zuSmcLvfc pbQNTh BRJhrvY DYXfAOio CDhndKtP HILbbjE wIKMD BBYdHnyS &#xD;
+UeVkEp lLdIwn bLWgLL mxnTJ sxFnMHn YreKdX FjYRaW DWVQupf hsaGtOIL YRcNmZ IUdsN NiwxA cCGaXCvM FFWRGz hprNtZ DLyMZB iSCAP zVZDyTIym WErGdb UjprfmTv xOOsy CgXdid AgeXxoulj ZVgmqO FDEeE ZVjTFkt UzkfwZk XEOdQnI rvjkO kXSNgr iMXcFFN rvwBB Fkldxlh DTwVNGCv PpoqyOqmX sCpLic wrycMi aeYXRhG nFHSv LfpuWt uhqVh cjxunUAb PhLLJpLFC FjfpNKrH ILqSQAqAt AWSUufXah SJSMIzIo PimVOcVl ZUpFDJDr pdIpxHB kHIID ZFykyKWSx WjatarVY rhSlajQP yuFGGs DpZPDirvG ArfWxrU ctjDNOaB oWveWlS jQrUiL ObqDohW BkfHEgojH HBTNI AlgthWd qMAVTJv aXEHY RhsQzjyHE HwvsW xQKpaiAu cehExsGB &#xD;
+</text>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.84"/>
+      <code code="67481-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="First EMS unit on scene NEMSIS"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.86"/>
+      <code code="67489-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Total patients at the scene NEMSIS"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.87"/>
+      <code code="67490-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Mass casualty incident NEMSIS"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+  <entry>
+    <observation>
+      <templateId root="2.16.840.1.1133883.17.3.10.1.88"/>
+      <code code="74496-1" codeSystemName="" displayName="Injury location ICD code"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+</section>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">EMS Scene Section</ph></p>

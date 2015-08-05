@@ -76,8 +76,154 @@
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt> {subsets  Organizer::component} (CONF:11125) <ol><li>This component <b>MAY</b> contain exactly one [1..1] <tt><b>observation</b></tt>, where its type is <xref href="../MentalStatusAssessment.dita">Mental Status Assessment</xref> (CONF:11124)</li></ol> 
 </li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::PhysicalAssessmentOrganizer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::organizer[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.78]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>component10</entry><entry>component10</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>PelvicAndGenitourinaryAssessmentComponent</entry><entry>CONF:11117</entry><entry> </entry></row> 
+<row><entry>component11</entry><entry>component11</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>BackAndSpineAssessmentComponent</entry><entry>CONF:11119</entry><entry> </entry></row> 
+<row><entry>component12</entry><entry>component12</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ExtremitiesAssessmentComponent</entry><entry>CONF:11121</entry><entry> </entry></row> 
+<row><entry>component13</entry><entry>component13</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>EyeAssessmentComponent</entry><entry>CONF:11123</entry><entry> </entry></row> 
+<row><entry>component14</entry><entry>component14</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>MentalStatusAssessmentComponent</entry><entry>CONF:11125</entry><entry> </entry></row> 
+<row><entry>component15</entry><entry>component15</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>NeurologicalAssessmentComponent</entry><entry>CONF:11342</entry><entry> </entry></row> 
+<row><entry>component3</entry><entry>component3</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>SkinAssessmentComponent</entry><entry>CONF:11103</entry><entry> </entry></row> 
+<row><entry>component4</entry><entry>component4</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>HeadAssessmentComponent</entry><entry>CONF:11105</entry><entry> </entry></row> 
+<row><entry>component5</entry><entry>component5</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>FaceAssessmentComponent</entry><entry>CONF:11107</entry><entry> </entry></row> 
+<row><entry>component6</entry><entry>component6</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>NeckAssessmentComponent</entry><entry>CONF:11109</entry><entry> </entry></row> 
+<row><entry>component7</entry><entry>component7</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ChestAndLungsAssessmentComponent</entry><entry>CONF:11111</entry><entry> </entry></row> 
+<row><entry>component8</entry><entry>component8</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>HeartAssessmentComponent</entry><entry>CONF:11113</entry><entry> </entry></row> 
+<row><entry>component9</entry><entry>component9</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>AbdomenAssessmentComponent</entry><entry>CONF:11115</entry><entry> </entry></row> 
+<row><entry>physicalAssessmentOrganizer</entry><entry>physicalAssessmentOrganizer</entry><entry>0..*</entry><entry>SHALL</entry><entry>YES</entry><entry>PhysicalAssessmentOrganizer</entry><entry>CONF:10975</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../EMSPhysicalAssessmentSection.dita">EMS Physical Assessment Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
-<codeblock id="example" outputclass="language-xml"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.78"/>
+  <statusCode code="completed"/>
+  <component>
+    <observation>
+      <code code="578844705"/>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="808534550"/>
+    </observation>
+  </component>
+  <component>
+    <templateId root="null"/>
+    <observation>
+      <code code="865270404"/>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="2027738082"/>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="1439570551"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="1623849092"/>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="1350514739"/>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="1215754679"/>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="1995693051"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="458863166"/>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="156744577"/>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="1919749382"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="115966073"/>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="2028272493"/>
+      <targetSiteCode code="1415932473"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="1683835273"/>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="1096244948"/>
+      <targetSiteCode code="1699011984"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="2095262628"/>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+      <value xsi:type="CD" code="2142046322"/>
+      <targetSiteCode code="485034629"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="368608872"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="655381987"/>
+      <value xsi:type="CD" code="1635973974"/>
+    </observation>
+  </component>
+  <component>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.180"/>
+      <code code="67524-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Physical findings of Skin NEMSIS"/>
+      <text>Text Value</text>
+    </observation>
+  </component>
+</organizer>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Physical Assessment Organizer</ph></p>

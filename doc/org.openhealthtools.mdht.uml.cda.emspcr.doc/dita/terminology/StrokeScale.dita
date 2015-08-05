@@ -29,6 +29,7 @@
 <row><entry>LA17113-4</entry><entry>LOINC</entry><entry>NIH</entry></row>
 <row><entry>LA18300-6</entry><entry>LOINC</entry><entry>Other stoke scale type</entry></row>
 <row><entry>LA3774-2</entry><entry>LOINC</entry><entry>Massachusetts</entry></row>
+<row><entry>LOINC_TBDA_617</entry><entry>LOINC</entry><entry>F.A.S.T. Exam</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

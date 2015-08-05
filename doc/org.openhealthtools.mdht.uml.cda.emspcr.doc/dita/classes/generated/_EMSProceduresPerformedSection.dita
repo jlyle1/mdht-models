@@ -36,8 +36,75 @@
 <ol>
 <li>Contains exactly one [1..1] <xref href="../Procedure.dita">Procedure</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.181</tt>)</li></ol></li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::EMSProceduresPerformedSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.17.3.10.1.21]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10489</entry><entry>LOINC 2.16.840.1.113883.6.1 29554-3</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:10492</entry><entry> MISSINGTYPE</entry></row> 
+<row><entry>procedureActivityProcedure1</entry><entry>cda:entry/cda:procedure[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.181]</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Procedure</entry><entry>CONF:6277</entry><entry> </entry></row> 
+<row><entry>ProceduresPerformedSection</entry><entry>ProceduresPerformedSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSProceduresPerformedSection</entry><entry>CONF:10016</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:10491</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../PatientCareReport.dita">Patient Care Report</xref></entry><entry><xref href="../Procedure.dita">Procedure</xref></entry></row></tbody></tgroup></table></p></section>
-<codeblock id="example" outputclass="language-xml"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.17.3.10.1.21"/>
+  <code code="29554-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure Narrative"/>
+  <title>EMS Procedures Performed</title>
+  <text>maVXiO vHPVUfcuP SLZnXLCRK CZDZhWtMa mNxmJ freaap sMKNIE pezlNBGqJ wOUMs pRKIhdfgT OCzQMYwU UpzTF aeBzaheh TlQfKAaah wrZxnO iwpSuzJ OfDGDw LQKyhiR dJGCSIvQ TSXOe xMeMAw uQKmqKyIX vATrYbEf CdYGv CxjkRdgti CAMTe CbRkRgW LxzLK iUpXaX BwKgP yIYIg tGanYVea uCKBJwoUU psrovOY VYTGR &#xD;
+XVuBdywB CIDxPlQ qNrbzw RxMUihS pMXIVqCd MSLxLdQWD ZXbtSkzy RtJkCPq PqcMJX QgRen DzAxl NZjHAO iWxYHhYG &#xD;
+HQbYTbTi tTYMbmhD UGARTv EYDWTvaAx ZQheNJbK BdOdJ SYwlhvtLN aoMPUcM qoBMOWp JnwEA wCkNzIM qrXUJRHj gmdzr QNTQrYVb nKjmE dokRYpZ GLljmLAu yrMgSApxm CznNJzu GuqRzN XpWlQEDm xXejaGep XXwenyOrb NbVvY ozZNQGKHr tvCdaz xOODP ynUnksxN oRBKD CwiSc YuQLCGrK NyXFlj NZUAglgQ swXhJ &#xD;
+WScpCU pqQCQNy vUVln yFZKOdLrs bLyypcda sjYtK FlmIKprW ccsMAg gjFJbUip eaPPnVO auTzfG RWNIpn vhOaGrZz duLxWx bHQKu TNzqvVc jqguVg YNDllWC bTeSxxSdN GIYNCNQw KkAMapyPY NGPDtBMH DAobplL vghGIpGo mfGfX beFTf YPYeX lyJPJYvfb MaNUpOTEU ZmhdhuWb EEsvPWrHa wwOahD YNYquqC iqPiNXOY wNOtLp ypFfdrPxg vvwtStOSL mXTFICI nvOniT xhwUr PlKYDpt wbIZJm cSZDYJTb eYpImgxee zYPLiE axUAJ iZQLfEL EgPqyqH RdjeH lRmDAdVT wzVlxmi KrohTr tymzMKTt PLMJci &#xD;
+baOCLQkOx mHWDzDpW IIGuXEcFi NafbNh tdhcjthyD RhdUnqael pNsFk OTfcESn NyDfzM EzgZwYPSB RFFJIyZta SezNgpy gAjzNuY ZGltgpDZ MUihw CNTPYtHq dkPAwsoiT jZlmbVoe EyXjsi ehffJieEN ueggywWL sBBTkCTn lrVOTLJ PibvFZ oTdGgsvq PhbIqU bGjTLf YYXyTklt UEAVkRCWR KUNvLYpeE LXHNMwcQU fMDkhi uWWMsW KhWqsCDsJ ZfXqASZ eiJjhUs YlgEpkX Rgtykhgcf ySekqIXHT UWFJRu QXjYjcW bPzNU zgCzSEn zKEXD VGgLAFcO eRrTLL WDSnis &#xD;
+CVUBfYy ItaBG TzwnYnRe HnXZOIeh fEtFfs wuCOEGrC ZsFAo qKBrLmY FDxOedrYI fIwHD ogUlnTmm MbaTrgel qQgYWsqPZ ADbdTsV IEYwrzvZ WqZyz SPRLQ FbJWnm AhzxmXR qzLQuZRGu yczfpbcKe rHkicP itlGV rpBzBC kWiLGQz YqBNL RCfdr ZAymFF ZMirdcdQ cPZFjat TajllyGGZ NcSMr nnpKrdQk dKDpT cllAqt HRYGfRo ZVSPrmN PRtxuleR PiersOJl wQLgjzHzM zTbbYb uaVoTwSiG AGLtqZKhz YBEtS UZWfjxo ctnBVwpY NTOCCwgka ZntbN vXIjK avXXqv KlTedWtXC eLoTP qfHuaMt bsAzVKVZs EjYWmj YexGabv nSgNRJr gSfCLx HdNEv VwdzIe &#xD;
+wcNRJnn VkQPvS ZBJLzPMA uWyDmVF WyPXUKBgH xfsKjAfC dyCZJN ZXrTblYoD SuOOgj tlAKtGcMw XSCuvJ DWqUHAg HSljQVnQa WVjkZPUzV TFhprKszl JzkwaNkJQ rXCWyvI bicgnxC VQfrK OWhqpLY vQAiShrUm ooRSDE NKNMMF UFqGQCFO gfyjI OtiXWFV bVEEKg MIroDuivk uNMUJZT UfFElp gpimIGfU HuGhxie hPznncj ZtGWQBM wqRneNh RHMElU FqIlxRAB HzJMSKIu XFiCvGQ DTZHc oLejmEJB XSUUep feIju nWlyvSjd tChuSIvui pJmIv FuowqksZ fOExdOCO eFYDROv WdESeWD yNyWk SYkRU TVsSZb aTMOZcN tTQKMKI EwPfsEFRJ DjZOloKLa zFGbYyOCN dpvcGzi Hhiqmq OsmSr IgwpC lVKNJ gVcOmBFSC uwdmCxA xrLPuF lzDaxg &#xD;
+YfCkI hefuleAHI AjoRGL sDDEGI QZxcF XsHNKhCbi ApVcYHKCZ luBzSHvN IZtJOsZm yOAyidUzC BLWOV ZhwrjO UwIrtMi jaITPU fuDXmQv UkJPlGZ pDahgd kKasPGDcR EMQbTzasH ebxwL FqKpvW ESSPV PIWILrC &#xD;
+MRNVtG umknUqRqn oTdqHeXa sxYnBNJuw jDHGkxPc ebMKAqS amLJuEER FTLjQP QxOOwh IZuRSiVW fmTKt unXDFYWA UGKRnxeu dGqmnkEMo UsIMTFP rvKNdax yjHZikJ IhwVffvdD HAEPSsS LWyjuup hIrpyWNfg YvvjyXq pYKPP wJoAk KNNadYP danAB KrXYDd PZrJdlN CnycIlp jDqvWWUQ qPxGwzO HPKGpCkm qVvQtJ rZKauUJlr hDIjRLBxK ILasJa &#xD;
+EgCZbO fCHfgNuJ RwbTEgCj kMIvYvrYp SOfKXy DfcLHRraS bKLjESEMj fPkzjn gKIQAlW vDuhOuPFw SlzoDPrI fRwbQfV FoMDwzABF wFXaAiKz sqsxi LZMCrm jiYIyFfY acAmouF GWwan mXJEnSuY iUEpSWyQe pXoMaB RAQRWQ HWFyIo VCtnnv WLYUR kyNiRkT ykmsr HBCKC BnNsFHJh NuFPTGX mUewe PyriFkn qJXbCol WNcimdqa vrDLUFh ZLszqUB ezmpP xPtROuh CwbWWmIa UBSEmPc kfeUH zBHxD TPCAy aXnKPwcm uZqHzjq GZAPerQK QPgMzFiy &#xD;
+AMergPIcN dLSUEL tWQHxD OVBGTtXVI iPEHzmSNL lUjENRUV ckwHpsW ZckxwpZO OoGToxp bszTD xnZxgyoYC hJTnAw tnvoOdXx ZQUiK WRRcKe riKPvcDq amwue AQxgqsH DDuPmtHp lfbLwfVVR RTxyHGks bxfgVY HqSRofnw fncpCYIZd NVTqWG adQrTn WveKrwbZ eBnqH fVyFmftK xcqPoqfI &#xD;
+UeCJW ZjpomEF FieQFlNn yMnIft TIsfTZ litIhp bkKrg MLqsc eRntqPPhJ cxlTy VdEfJgzAW RvWKclD OBNEiSz GeVCZVpTq SuPCy JJKZKQR WkurFGKHs gUyov WrDxvyP fNXUbWo sVqcdSFP ufXzfoU bdKJpQU BhjJznRkb HNFkSSiq ATzbJMx qOfvvE QbNdyYcv spdKnA lRgKERLO HdFaycp YqojuH zZjvLq KrifZJcX BHkCAZpu FTkVn UPOqn zpbjTW RTWnGMs &#xD;
+ItGAUE tvKBpHHdq eujoNdU zgVTZ BGDHlE hpawEyYki quCCV vrjZhTR WaSvJJh SCJidVV XhRXQx xoKaswM mpQLeAJp XxQQua JBdAjqP XCsaYb NZQYv qxaXkJE uyCzxp gBDVVtG ZRTWhy cGnYPzfuF eHGZBX tLiiXHQia kLkseqEI HPrqXNfQn gwVGWKAf bXRLPTaPf RmEFoxC cnleuPJXg uOvMsCl jkCNXfka INkLYI HKkbvgw ZxkmaLPl pBQYvFi BzpOnVPEA &#xD;
+xBScPsoiq ylWnG nVQfE geGIBdW zmUdk omjdlctt KYTfQKYn ItDirO HNbJiiHV oirmx EvFWUJz ljHIGg UvUSNBFt KPrKQvU rHaiqg znljQrSLS cHpgRcy iQZNJVu XufQB KOHdbCaEp FXIEMCWy bjqCmhF lfeZh jtnvrCS oTSLALF vIXSobec CoJXiCYFV NjQQza tjpRnOz xmDQC wXFxef uJIjQF zsKqs hbZynWREm aJGUpy NVNNKp knyerG aySeCGxEW qXdKnZReu oOuGi LmcKUH KaJvOCx hfBJhPSuB tVBCchEw GSCBkf &#xD;
+mknfOh UxrlLDVrp ZNwgmm EaUccITv EcRILMMWJ nfgYhU ruLBwxO jLlpoEunR Chidjn bregUp rtMcBIBuG jkbsq AUDKe hcgSE HwDiCojl FGStewWs IqFQdkSSu SWOEbtv sZWLdZhL BCMWIb aIigao sCRQzJbkR SRyqV dmpez &#xD;
+</text>
+  <entry>
+    <procedure>
+      <templateId root="2.16.840.1.1133883.17.3.10.1.181"/>
+      <code code="1023053202"/>
+      <text>Text Value</text>
+      <statusCode code="Aborted"/>
+      <approachSiteCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+      <performer>
+        <assignedEntity>
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+        </assignedEntity>
+      </performer>
+      <participant>
+        <participantRole/>
+      </participant>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+    </procedure>
+  </entry>
+</section>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">EMS Procedures Performed Section</ph></p>

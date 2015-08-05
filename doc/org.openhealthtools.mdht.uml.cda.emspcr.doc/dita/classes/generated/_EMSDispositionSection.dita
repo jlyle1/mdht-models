@@ -84,8 +84,96 @@
 <ol>
 <li>Contains exactly one [1..1] <xref href="../DestinationWard.dita">Destination Ward</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.186</tt>)</li></ol></li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::EMSDispositionSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.17.3.10.1.4]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10651</entry><entry>LOINC 2.16.840.1.113883.6.1 67661-9</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:10654</entry><entry> MISSINGTYPE</entry></row> 
+<row><entry>destinationWard</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.186]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DestinationWard</entry><entry>CONF:11331</entry><entry> </entry></row> 
+<row><entry>DispositionSection</entry><entry>DispositionSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>EMSDispositionSection</entry><entry>CONF:10020</entry><entry> </entry></row> 
+<row><entry>incidentDispositionObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.32]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>IncidentDispositionObservation</entry><entry>CONF:11005</entry><entry> </entry></row> 
+<row><entry>numberOfPatientsObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.31]</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>NumberOfPatientsTransportedObservation</entry><entry>CONF:11003</entry><entry> </entry></row> 
+<row><entry>patientConditionChangeAtDestinationObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.37]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PatientConditionAtDestinationObservation</entry><entry>CONF:11015</entry><entry> </entry></row> 
+<row><entry>prearrivalActivationObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.36]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PrearrivalActivationObservation</entry><entry>CONF:11013</entry><entry> </entry></row> 
+<row><entry>primaryDestinationHospitalCapability</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.104]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PrimaryDestinationHospitalCapability</entry><entry>CONF:11330</entry><entry> </entry></row> 
+<row><entry>reasonForChoosingDestinationObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.35]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ReasonForChoosingDestinationObservation</entry><entry>CONF:11011</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:10653</entry><entry> </entry></row> 
+<row><entry>transportMethodObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.34]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>TransportMethodObservation</entry><entry>CONF:11009</entry><entry> </entry></row> 
+<row><entry>transportModeObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.33]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>TransportModeObservation</entry><entry>CONF:11007</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../PatientCareReport.dita">Patient Care Report</xref></entry><entry><xref href="../DestinationWard.dita">Destination Ward</xref></entry></row><row><entry></entry><entry><xref href="../IncidentDispositionObservation.dita">Incident Disposition Observation</xref></entry></row><row><entry></entry><entry><xref href="../NumberOfPatientsTransportedObservation.dita">Number Of Patients Transported Observation</xref></entry></row><row><entry></entry><entry><xref href="../PatientConditionAtDestinationObservation.dita">Patient Condition At Destination Observation</xref></entry></row><row><entry></entry><entry><xref href="../PrearrivalActivationObservation.dita">Prearrival Activation Observation</xref></entry></row><row><entry></entry><entry><xref href="../PrimaryDestinationHospitalCapability.dita">Primary Destination Hospital Capability</xref></entry></row><row><entry></entry><entry><xref href="../ReasonForChoosingDestinationObservation.dita">Reason For Choosing Destination Observation</xref></entry></row><row><entry></entry><entry><xref href="../TransportMethodObservation.dita">Transport Method Observation</xref></entry></row><row><entry></entry><entry><xref href="../TransportModeObservation.dita">Transport Mode Observation</xref></entry></row></tbody></tgroup></table></p></section>
-<codeblock id="example" outputclass="language-xml"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.17.3.10.1.4"/>
+  <code code="67661-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS disposition Narrative NEMSIS"/>
+  <title>EMS Disposition</title>
+  <text>RCySjos pBfFfn hTpBTT sBOxA WEFaEI PBTtuc YLAphcIT HaVRtpUl YSWwjy GBrPLl okbATshe blAKQNv QODdsl jpAFoqc GAxrqZXq IKMaeVT wumFosfrh yaFsE aZvLDc jlwaWF qmnFq sAjWZen eajMH URYuA YMpIjdXKW MPPSh xFKiIT hXREopqt GOHvudoEn MPotIlyB KKSmW oLSNT sBhEGTWF LIKaSnV BBHcI YSLGV meubiUyfY CWydC hKjDtedwS OlxETfGsB cvgAGxJ IGZnGL VDcNOMSTc NPHrRX mUvzYXg zBcPWfbeK JuZzGN sXDFUj KimkiBT kovKba tPFcnWc pFjsEA vnVvFeb nVhDfBvHA oTXUA cGRBFutz ZPkUv TcerMQ oBuLlm BTJLb UAdTcvvF tMCWwr FAYYQxw &#xD;
+IUaFYYJ WiQTQRk gIvFh yAJEX YhwQJyLY ySiQC dqEmNrL WPWkXC YbOKcMRY zRTJq yJRnvwRTW UBchW dBCqRfN yNqHA SVoVfJrzW WWLidMCXo OtIJMYiU AXGPe SIdJAoNSa qMaNU jgXMRXW yIlvFc wBWZzWm gwCRUKs gFiNSDK lOqtpubNN vlCZmEVOP JfqRE WYcJL ygadcOF JyzPMmEF MwOMzyuC fJmAw wNodAi alkJDq RxPcLUl XAfef EJBjiWu AVFGhh QiIryMIam XehBFTKb zgFGkT tOCxrA owMDdAG owKhWhu xwDrr LiwVE bhMuA uMhwiklg tuiBvtF xBoInKd sTvPsWY VMnAgm XocdMX THpPFg CbPfmVtDN &#xD;
+UOOyg WvJryEfn NbeDWTeVD wSQsQLAj SPhWHF ouWSGuUvf TXcsL BQCRCZG WarDwed dQDVFyAeB gJZuMTut RLievZB PGwYTa wiuUueIsN oyvWPAX oyxen SmdpnFJ hzkSoW zShlOhD teWfUzJ frQKGLwu eyuDZL GClDCIffA MtpriWK amZrW sAMHrwcb &#xD;
+</text>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.31"/>
+      <code code="67547-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patients transported in EMS unit [#] NEMSIS"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.32"/>
+      <code code="67548-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Incident - patient disposition NEMSIS"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.33"/>
+      <code code="67550-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Transport mode from scene NEMSIS"/>
+      <text>Text Value</text>
+      <entryRelationship typeCode="COMP">
+        <observation/>
+      </entryRelationship>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.34"/>
+      <code code="67549-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Transport method NEMSIS"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.35"/>
+      <code code="67552-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reason for choosing destination NEMSIS"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.36"/>
+      <code code="69462-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Activation of the destination healthcare facility team NEMSIS"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.37"/>
+      <code code="67551-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Condition of patient at destination NEMSIS"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+  <entry>
+    <observation classCode="OBS">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.104"/>
+      <code code="77155-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hospital designation capability"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+  <entry>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.186"/>
+      <code code="77154-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hospital inpatient destination"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+</section>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">EMS Disposition Section</ph></p>

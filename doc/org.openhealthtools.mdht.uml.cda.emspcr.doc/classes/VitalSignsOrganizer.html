@@ -36,7 +36,8 @@
 
 <div class="section">
 <div class="p"><p class="lines"><em class="ph i">A collection vital signs observations<br/>
-For any observation within the organizer, if the NEMSIS value is "Refused," the value SHALL be "NI;" the string "Refused" MAY be recorded in Observation.text.</em></p>
+For any observation within the organizer, if the NEMSIS value is "Refused," the value SHALL be "NI;" the string "Refused" MAY be recorded in Observation.text.<br/>
+Note that NEMSIS collects times at the vitals cluster level, whereas systems may record them at the observation level. No preference is indicated regarding how close individual observation timestamps must be to allow their inclusion in a cluster or how the cluster effectiveTime is determined. effectiveTime is modeled on the observations to support unanticipated uses and to conform more closely to the Consolidated CDA pattern, though the exclusion of the id property makes it impossible to assert compliance to the Consolidated template in this guide (though it remains possible to do so in an implementation).</em></p>
 </div>
 
 </div>
@@ -44,11 +45,9 @@ For any observation within the organizer, if the NEMSIS value is "Refused," the 
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.1133883.17.3.10.1.28"</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.1133883.17.3.10.1.28"</li>
 </ol>
 </li>
-
-<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/VitalSignsOrganizer.html">Consol Vital Signs Organizer</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.26</tt>)</li>
 
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:10257)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.01</em></p>
@@ -57,58 +56,63 @@ For any observation within the organizer, if the NEMSIS value is "Refused," the 
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11078) <ol class="ol" type="a"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="SystolicBloodPressure.html" title="[Observation: templateId 2.16.840.1.113883.17.3.10.1.23.1]">Systolic Blood Pressure</a> (CONF:11077)<ol class="ol" type="i">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="SystolicBloodPressure.html" title="[Observation: templateId 2.16.840.1.113883.17.3.10.1.23.1]">Systolic Blood Pressure</a> (templateId: <tt class="ph tt">2.16.840.1.113883.17.3.10.1.23.1</tt>)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11078) <ol class="ol" type="a"><li class="li">This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="SystolicBloodPressure.html" title="[Observation: templateId 2.16.840.1.113883.17.3.10.1.23.1]">Systolic Blood Pressure</a> (CONF:11077)</li>
 </ol>
-</li>
-</ol>
-
+ 
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11080) <ol class="ol" type="a"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="DiastolicBloodPressure.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.144]">Diastolic Blood Pressure</a> (CONF:11079)<ol class="ol" type="i">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="DiastolicBloodPressure.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.144]">Diastolic Blood Pressure</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.144</tt>)</li>
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11080) <ol class="ol" type="a"><li class="li">This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="DiastolicBloodPressure.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.144]">Diastolic Blood Pressure</a> (CONF:11079)</li>
 </ol>
-</li>
-</ol>
-
+ 
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11082) <ol class="ol" type="a"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="HeartRate.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.145]">Heart Rate</a> (CONF:11081)<ol class="ol" type="i">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="HeartRate.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.145]">Heart Rate</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.145</tt>)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11082) <ol class="ol" type="a"><li class="li">This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="HeartRate.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.145]">Heart Rate</a> (CONF:11081)</li>
 </ol>
-</li>
-</ol>
-
+ 
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11084) <ol class="ol" type="a"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="RespiratoryRate.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.146]">Respiratory Rate</a> (CONF:11083)<ol class="ol" type="i">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="RespiratoryRate.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.146]">Respiratory Rate</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.146</tt>)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11084) <ol class="ol" type="a"><li class="li">This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="RespiratoryRate.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.146]">Respiratory Rate</a> (CONF:11083)</li>
 </ol>
-</li>
-</ol>
-
+ 
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11086) <ol class="ol" type="a"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="BodyTemperature.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.176]">Body Temperature</a> (CONF:11085)<ol class="ol" type="i">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="BodyTemperature.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.176]">Body Temperature</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.176</tt>)</li>
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11086) <ol class="ol" type="a"><li class="li">This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="BodyTemperature.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.176]">Body Temperature</a> (CONF:11085)</li>
 </ol>
-</li>
-</ol>
-
+ 
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11090) <ol class="ol" type="a"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="OxygenSaturation.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.177]">Oxygen Saturation</a> (CONF:11087)<ol class="ol" type="i">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="OxygenSaturation.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.177]">Oxygen Saturation</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.177</tt>)</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> {subsets  Organizer::component} (CONF:11090) <ol class="ol" type="a"><li class="li">This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="OxygenSaturation.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.177]">Oxygen Saturation</a> (CONF:11087)</li>
 </ol>
-</li>
-</ol>
-
+ 
 </li>
 
-<li class="li">Contains zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt>
+<li class="li"><strong class="ph b">SHALL</strong> contain  [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11335)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="PriorAidVitals.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.29]">Prior Aid Vitals</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.29</tt>)</li>
 </ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11336) <ol class="ol" type="a"><li class="li">This component <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:11134)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.01</em></p>
+</div>
+</li>
+<li class="li">This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11133)</li>
+<li class="li">This component <strong class="ph b">MAY</strong> contain  [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11094)</li>
+<li class="li">This component <strong class="ph b">MAY</strong> contain  [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11096)</li>
+<li class="li">This component <strong class="ph b">MAY</strong> contain  [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11095)</li>
+<li class="li">This component <strong class="ph b">MAY</strong> contain  [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11097)</li>
+<li class="li">This component <strong class="ph b">SHALL</strong> contain  [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11135)</li>
+<li class="li">This component <strong class="ph b">MAY</strong> contain  [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11093)</li>
+<li class="li">This component <strong class="ph b">MAY</strong> contain  [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11092)</li>
+<li class="li">This component <strong class="ph b">MAY</strong> contain  [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:11091)</li>
+</ol>
+ 
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:11338)<tt class="ph tt"><strong class="ph b">/@code</strong>="46680005" </tt><em class="ph i">Vital signs</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:11337)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">May also use LOINC 74728-7 "Vital signs, weight, height, head circumference, oximetry, BMI, and BSA panel - HL7.CCDAr1.1"</em></p>
+</div>
+</li>
+</ul>
 </li>
 
 </ol>

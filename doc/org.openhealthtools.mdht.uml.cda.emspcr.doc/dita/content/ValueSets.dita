@@ -2,7 +2,7 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
  "topic.dtd">
 <topic id="topicId" xml:lang="en-us">
-	<title>VALUE SETS</title>
+	<title>VALUE SETS (Non-normative)</title>
 	<body>
 		<p>The following tables summarize the value sets used in this Implementation Guide. Note that for
 			dynamically bound properties, these values may change, so they should be obtained from

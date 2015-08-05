@@ -108,8 +108,100 @@ Some NEMSIS values require additional information: see Appendix for details.</i>
 <li><b>SHALL</b> contain zero or more [0..*] <tt><b>participant</b></tt> {subsets  Procedure::participant} (CONF:11387) <ol><li>Such participants <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:10548) <ol><li>This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>playingDevice</b></tt> (CONF:10549) <ol><li>This playingDevice <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AirwayDeviceType.dita">AirwayDeviceType</xref> 2.16.840.1.113883.17.3.11.61</tt><b> DYNAMIC</b> (CONF:10550)<p><lines><i>NEMSIS Trace: EAirway.03</i></lines></p></li></ol> </li></ol> </li></ol> 
 </li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::Procedure</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::procedure[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.181]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry>MAY</entry><entry>NO</entry><entry>Boolean</entry><entry>CONF:11212</entry><entry> </entry></row> 
+<row><entry>approachSiteCode</entry><entry>approachSiteCode</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:10501</entry><entry> null</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:10496</entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:10497</entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CS</entry><entry>CONF:10499</entry><entry>ActStatus 2.16.840.1.113883.5.14 Aborted</entry></row> 
+<row><entry>AbandonedProcedureRelationship</entry><entry>AbandonedProcedureRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AbandonedProcedureRelationship</entry><entry>CONF:10498</entry><entry> </entry></row> 
+<row><entry>AirwayConfirmationRelationship</entry><entry>AirwayConfirmationRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AirwayConfirmationRelationship</entry><entry>CONF:10509</entry><entry> </entry></row> 
+<row><entry>DeviceParticipation</entry><entry>DeviceParticipation</entry><entry>0..*</entry><entry>SHALL</entry><entry>YES</entry><entry>AirwayDeviceParticipant</entry><entry>CONF:11387</entry><entry> </entry></row> 
+<row><entry>procedureActivityProcedure1</entry><entry>procedureActivityProcedure1</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Procedure</entry><entry>CONF:6277</entry><entry> </entry></row> 
+<row><entry>ProcedureComplicationsRelationship</entry><entry>ProcedureComplicationsRelationship</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>ProcedureComplicationsRelationship</entry><entry>CONF:10506</entry><entry> </entry></row> 
+<row><entry>ProcedureNumberOfAttemptsRelationship</entry><entry>ProcedureNumberOfAttemptsRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ProcedureNumberOfAttemptsRelationship</entry><entry>CONF:10504</entry><entry> </entry></row> 
+<row><entry>ProcedurePatientResponseRelationship</entry><entry>ProcedurePatientResponseRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProcedurePatientResponseRelationship</entry><entry>CONF:10507</entry><entry> </entry></row> 
+<row><entry>ProcedurePerformer</entry><entry>ProcedurePerformer</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>ProcedurePerformer</entry><entry>CONF:10508</entry><entry> </entry></row> 
+<row><entry>ProcedurePriorRelationship</entry><entry>ProcedurePriorRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProcedurePriorRelationship</entry><entry>CONF:10503</entry><entry> </entry></row> 
+<row><entry>ProcedureSuccessfulRelationship</entry><entry>ProcedureSuccessfulRelationship</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProcedureSuccessfulRelationship</entry><entry>CONF:10505</entry><entry> </entry></row> 
+<row><entry>ReasonProcedureNotAttemptedRelationship</entry><entry>ReasonProcedureNotAttemptedRelationship</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ReasonProcedureNotAttemptedRelationship</entry><entry>CONF:11089</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../EMSProceduresPerformedSection.dita">EMS Procedures Performed Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
-<codeblock id="example" outputclass="language-xml"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<procedure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.181"/>
+  <code code="515473868"/>
+  <text>Text Value</text>
+  <statusCode code="Aborted"/>
+  <effectiveTime>
+    <low value="2015"/>
+    <high value="2015"/>
+  </effectiveTime>
+  <approachSiteCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <performer>
+    <assignedEntity>
+      <id root="MDHT" extension="536549900"/>
+      <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+    </assignedEntity>
+  </performer>
+  <participant>
+    <participantRole>
+      <playingDevice>
+        <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+      </playingDevice>
+    </participantRole>
+  </participant>
+  <entryRelationship>
+    <observation>
+      <code code="640028749"/>
+      <value xsi:type="CD" code="1069407569"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <code code="1754290799"/>
+      <value xsi:type="BL"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <code code="1114521454"/>
+      <value xsi:type="INT" value="1"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <code code="136982688"/>
+      <value xsi:type="BL"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <code code="1851587873"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <code code="1249501675"/>
+      <value xsi:type="CD" code="380983102"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <code code="585512405"/>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+      <value xsi:type="BL"/>
+      <methodCode code="961597271"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation>
+      <code code="661980069"/>
+      <value xsi:type="CD" code="953710869"/>
+    </observation>
+  </entryRelationship>
+</procedure>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Procedure</ph></p>

@@ -339,8 +339,1636 @@ is provided, you can make no assumption about time, unless you have made a local
 <li>If setId is present versionNumber <b>SHALL</b> be present (CONF:6380)</li>
 <li>If versionNumber is present setId <b>SHALL</b> be present (CONF:6387)</li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::PatientCareReport</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::clinicaldocument[cda:templateId/@root = 2.16.840.1.113883.10.20.22.1.1]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClinicalDocument</entry><entry>CONF:10000</entry><entry> DOCCLIN</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF:10001</entry><entry> EVN</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:5253</entry><entry>LOINC 2.16.840.1.113883.6.1 67796-3</entry></row> 
+<row><entry>confidentialityCode</entry><entry>confidentialityCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:5259</entry><entry> null</entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:5363</entry><entry> </entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:5254</entry><entry> MISSINGTYPE</entry></row> 
+<row><entry>versionNumber</entry><entry>versionNumber</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>INT</entry><entry>CONF:5264</entry><entry> </entry></row> 
+<row><entry>AdvanceDirectives</entry><entry>AdvanceDirectives</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>EMSAdvanceDirectivesSection</entry><entry>CONF:10010</entry><entry> </entry></row> 
+<row><entry>AllergiesAndAdverseReactionsSection</entry><entry>AllergiesAndAdverseReactionsSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSAllergiesAndAdverseReactionsSection</entry><entry>CONF:10011</entry><entry> </entry></row> 
+<row><entry>AuthorParticipation</entry><entry>AuthorParticipation</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>AuthorParticipation</entry><entry>CONF:10027</entry><entry> </entry></row> 
+<row><entry>CardiacArrestEvent</entry><entry>CardiacArrestEvent</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>EMSCardiacArrestEventSection</entry><entry>CONF:10009</entry><entry> </entry></row> 
+<row><entry>componentOf</entry><entry>componentOf</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EncompassingEncounterRelationship</entry><entry>CONF:9955</entry><entry> </entry></row> 
+<row><entry>CurrentMedication</entry><entry>CurrentMedication</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSCurrentMedicationSection</entry><entry>CONF:10008</entry><entry> </entry></row> 
+<row><entry>custodian</entry><entry>custodian</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CustodianParticipation</entry><entry>CONF:5519</entry><entry> </entry></row> 
+<row><entry>DispatchSection</entry><entry>DispatchSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSDispatchSection</entry><entry>CONF:10019</entry><entry> </entry></row> 
+<row><entry>DispositionSection</entry><entry>DispositionSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>EMSDispositionSection</entry><entry>CONF:10020</entry><entry> </entry></row> 
+<row><entry>documentationOf</entry><entry>documentationOf</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ServiceEventParticipation</entry><entry>CONF:10028</entry><entry> </entry></row> 
+<row><entry>eMSBillingSection</entry><entry>eMSBillingSection</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>EMSBillingSection</entry><entry>CONF:11318</entry><entry> </entry></row> 
+<row><entry>injuryIncidentDescriptionSection</entry><entry>injuryIncidentDescriptionSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSInjuryIncidentDescriptionSection</entry><entry>CONF:10869</entry><entry> </entry></row> 
+<row><entry>MedicationsAdministeredSection</entry><entry>MedicationsAdministeredSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>EMSMedicationsAdministeredSection</entry><entry>CONF:10015</entry><entry> </entry></row> 
+<row><entry>participant</entry><entry>participant</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DestinationParticipantParticipation</entry><entry>CONF:10030</entry><entry> </entry></row> 
+<row><entry>PastMedicalHistorySection</entry><entry>PastMedicalHistorySection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSPastMedicalHistorySection</entry><entry>CONF:10012</entry><entry> </entry></row> 
+<row><entry>PatientCareNarrativeSection</entry><entry>PatientCareNarrativeSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSPatientCareNarrativeSection</entry><entry>CONF:10017</entry><entry> </entry></row> 
+<row><entry>PersonnelAdverseEventSection</entry><entry>PersonnelAdverseEventSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSPersonnelAdverseEventSection</entry><entry>CONF:10021</entry><entry> </entry></row> 
+<row><entry>PhysicalAssessmentSection</entry><entry>PhysicalAssessmentSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSPhysicalAssessmentSection</entry><entry>CONF:10014</entry><entry> </entry></row> 
+<row><entry>ProceduresPerformedSection</entry><entry>ProceduresPerformedSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSProceduresPerformedSection</entry><entry>CONF:10016</entry><entry> </entry></row> 
+<row><entry>ProtocolSection</entry><entry>ProtocolSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSProtocolSection</entry><entry>CONF:10022</entry><entry> </entry></row> 
+<row><entry>recordTarget</entry><entry>recordTarget</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>RecordTarget</entry><entry>CONF:10004</entry><entry> </entry></row> 
+<row><entry>relatedDocument</entry><entry>relatedDocument</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ParentDocumentRelationship</entry><entry>CONF:10029</entry><entry> </entry></row> 
+<row><entry>ResponseSection</entry><entry>ResponseSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSResponseSection</entry><entry>CONF:10023</entry><entry> </entry></row> 
+<row><entry>SceneSection</entry><entry>SceneSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSSceneSection</entry><entry>CONF:10018</entry><entry> </entry></row> 
+<row><entry>SituationSection</entry><entry>SituationSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSSituationSection</entry><entry>CONF:10024</entry><entry> </entry></row> 
+<row><entry>SocialHistorySection</entry><entry>SocialHistorySection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSSocialHistorySection</entry><entry>CONF:10013</entry><entry> </entry></row> 
+<row><entry>TimesSection</entry><entry>TimesSection</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>EMSTimesSection</entry><entry>CONF:10025</entry><entry> </entry></row> 
+<row><entry>VitalSignsSection</entry><entry>VitalSignsSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSVitalSignsSection</entry><entry>CONF:10026</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry></entry><entry><xref href="../EMSAdvanceDirectivesSection.dita">EMS Advance Directives Section</xref></entry></row><row><entry></entry><entry><xref href="../EMSAllergiesAndAdverseReactionsSection.dita">EMS Allergies And Adverse Reactions Section</xref></entry></row><row><entry></entry><entry><xref href="../EMSBillingSection.dita">EMS Billing Section</xref></entry></row><row><entry></entry><entry><xref href="../EMSCardiacArrestEventSection.dita">EMS Cardiac Arrest Event Section</xref></entry></row><row><entry></entry><entry><xref href="../EMSCurrentMedicationSection.dita">EMS Current Medication Section</xref></entry></row><row><entry></entry><entry><xref href="../EMSDispatchSection.dita">EMS Dispatch Section</xref></entry></row><row><entry></entry><entry><xref href="../EMSDispositionSection.dita">EMS Disposition Section</xref></entry></row><row><entry></entry><entry><xref href="../EMSInjuryIncidentDescriptionSection.dita">EMS Injury Incident Description Section</xref></entry></row><row><entry></entry><entry><xref href="../EMSMedicationsAdministeredSection.dita">EMS Medications Administered Section</xref></entry></row><row><entry></entry><entry><xref href="../EMSPastMedicalHistorySection.dita">EMS Past Medical History Section</xref></entry></row><row><entry></entry><entry><xref href="../EMSPatientCareNarrativeSection.dita">EMS Patient Care Narrative Section</xref></entry></row><row><entry></entry><entry><xref href="../EMSPersonnelAdverseEventSection.dita">EMS Personnel Adverse Event Section</xref></entry></row><row><entry></entry><entry><xref href="../EMSPhysicalAssessmentSection.dita">EMS Physical Assessment Section</xref></entry></row><row><entry></entry><entry><xref href="../EMSProceduresPerformedSection.dita">EMS Procedures Performed Section</xref></entry></row><row><entry></entry><entry><xref href="../EMSProtocolSection.dita">EMS Protocol Section</xref></entry></row><row><entry></entry><entry><xref href="../EMSResponseSection.dita">EMS Response Section</xref></entry></row><row><entry></entry><entry><xref href="../EMSSceneSection.dita">EMS Scene Section</xref></entry></row><row><entry></entry><entry><xref href="../EMSSituationSection.dita">EMS Situation Section</xref></entry></row><row><entry></entry><entry><xref href="../EMSSocialHistorySection.dita">EMS Social History Section</xref></entry></row><row><entry></entry><entry><xref href="../EMSTimesSection.dita">EMS Times Section</xref></entry></row><row><entry></entry><entry><xref href="../EMSVitalSignsSection.dita">EMS Vital Signs Section</xref></entry></row></tbody></tgroup></table></p></section>
-<codeblock id="example" outputclass="language-xml"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 infrastructure/cda/CDA_SDTC.xsd" classCode="DOCCLIN" moodCode="EVN">
+  <realmCode code="US"/>
+  <typeId root="2.16.840.1.113883.1.3"/>
+  <templateId root="2.16.840.1.113883.17.3.10.2"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.1"/>
+  <id root="MDHT" extension="1710335076"/>
+  <code code="67796-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS patient care report - version 3.1 Document NEMSIS"/>
+  <title>EMS Patient Care Report</title>
+  <effectiveTime/>
+  <confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode"/>
+  <setId root="MDHT" extension="fb024249-fc3c-47e9-b91c-ca07342cfb7b"/>
+  <versionNumber value="1"/>
+  <recordTarget>
+    <patientRole>
+      <id root="MDHT" extension="517525600"/>
+      <addr/>
+      <telecom/>
+      <patient>
+        <ethnicGroupCode codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race and Ethnicity - CDC"/>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time/>
+    <assignedAuthor>
+      <id root="MDHT" extension="1707240204"/>
+      <code code="1277224820"/>
+      <addr/>
+      <telecom/>
+      <assignedPerson/>
+      <assignedAuthoringDevice/>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization/>
+    </assignedCustodian>
+  </custodian>
+  <participant typeCode="DST">
+    <time>
+      <low value="2015"/>
+      <high value="2015"/>
+    </time>
+    <associatedEntity classCode="SDLOC">
+      <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+      <addr/>
+      <scopingOrganization/>
+    </associatedEntity>
+  </participant>
+  <documentationOf>
+    <serviceEvent>
+      <id root="MDHT" extension="709403210"/>
+      <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+      <performer>
+        <functionCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+      </performer>
+    </serviceEvent>
+  </documentationOf>
+  <relatedDocument typeCode="RPLC">
+    <parentDocument>
+      <id root="MDHT" extension="647756749"/>
+    </parentDocument>
+  </relatedDocument>
+  <componentOf typeCode="COMP">
+    <encompassingEncounter>
+      <id root="MDHT" extension="1151865220"/>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+      <encounterParticipant typeCode="CON"/>
+      <location/>
+    </encompassingEncounter>
+  </componentOf>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.17.3.10.1.15"/>
+          <id root="MDHT" extension="93085985"/>
+          <code code="67844-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS current medications Narrative NEMSIS"/>
+          <title>EMS Current Medications Section</title>
+          <text>xvSDl auQldiC HHHgcezPf CgNWCw aIHgVrsyL zMBbBqw eZCcj LZsSF ElDovDk ujjjWljY DvUmHEw rkrYjgaV YmJHhWEmR BMdvHKjS iJBwj sFjFeuIX eIOdzZZ YHCLJiv bdzcs WDpqPLH giwFmEuD ybxNI xLTuo FhBktZBLy byHlpD mpiQr aQmdFB QJrcvF DaLlocv Pwgvx ParBtc Uxguak RfDFnY qsLctCkyu ZaPuVoxil zzNPR Dkpgb bXBFqCZA lBBRF bcWIJFU qPBnCkfB vQqSJ RMzDUVCK ZEHAl reNlMe XJcENX wEdfNMQ hNRMrbYzH pMOPhLYR xwHsxS AszhVOzV xztdSK bPBGYrIh vVKHUpZm stuaJLkp kzAzQbXXU wXsmhuR CHOCBb nPoXWw RHryioiV TGYFCTHs FyWlyFCnq Ktrannzl &#xD;
+RMYrZ GeLuC eoMQfKOLL LHgNIZt mOZkFQmxV MoYVsxwS gshJb OJKkCEX yXauWWb VxIfVkry mdwev iVdKmREV YoHpM uSaQRgE ZXLkhFKZZ pvllqepx sCHmioLkm hNlYGBnIG kOZYigUdp HKjCWAxF SqeoYYj svxcBXpY CRxVzeRJz Zaheu bqNDAtg jnqbITvr hWDLPSVWo hVkuP JYfHbDTzw QPRRFYZAv &#xD;
+bBVfPJTST VmWtN OwZKlqEM CaTLVv rMPYN YRCex hKJpuY wDdHpUwI UYJnMgeoX JFyriWM POnHc fSXByGIG iVBJCE eWdAssU ghuzVZE PdsKJyIqh fwclDseLm vJnnlmu qclsnREeP PeKMr nXdaQ hSSFWs frJUj ruomy MnVNoZ vThtgNb hopBhkRO ddbfQVQc &#xD;
+zICeYO vFCJhayy qodpLd JIiynk YvzQFVH SDQPVU GOvBy tXcylh LZvoG oaiMPbLX XHaapXD OsCOSsgzP wvHVdiVW EdbFUkJiz OMOjEGNl KYzhRjW TMVfdnLU xoekOBnv smaYS FUpRR KxepMPp akZcsC DejlGCHj pssKIvrX dUHqDvIq tfdZJPAcv eYZlef KobCdVLtj aEBmqpTM jUwagkGOw SdBJNAulW ohWVvF giVyfyEeQ wHbmx ePjAcHC QqQHEgyRn gmSEwWrBP oqRitVt YYJOk iSaIl UzzPVAQ obdUSB ZLGJYZZR AfltkMYc jVOVTVIct tKBzE qOZNudMA VnEhOG IVPDD ldwOpQb aKWJaomC gNJtxmn hmQJynMjP kzFMUBY dWvnmxno RHPkY ZKCZfq uJKnjQ yWDaKFPa FvDvqMGc AlrauDKi bjeTAa KNblI CEUGUcLsy IRRlUS &#xD;
+hszWL tekNRP wGtkZfprp YXwEaU omYGWY NfWUA DpzYQ tYiPyI KOWgcd FyQJGfYFg yzQWsW FusVAn AcTzqZ akUQch Qndvwffzx WvlAgiUDa mKMjM KjqdaSbcz ZKkbkqk nqMiRFk dRTnWmL oXIaRlM jRdtGKKW FHmaeEDg sCKjCKYF pzJdVk wYrbRQ nifokTm dqUrsVW BQAIY encrwECe kzpLLZM hdNeVh KCwnkRAVB emwqc IPeGqCj vwYUl IbZZDqj IiPIEp fAySj BlAyNi &#xD;
+LQmEQVI WGaXrCgl beaLPpafW HzfLyAhAL frjGGZVS tujZUWAC rNjkutASc EhGbB XWCvyx tBGERB aMHVhwKk TrDHgiX TQfbS tfUTL VbtlgwelA dLaZxK qBEvPCu geZYctq bkXqH cvrDE fzjSN UQYeXtqgq OoFHrtE BLQzXqOz vDUQhf KLdJUEvR slyYUZho oGkga iaNwrXHdI JrACDw ONMDUHuDD uSPRg mgsJmvDRX dwpcUztaX vRgTwn jCjiTb PvmNequg pxHfhS DGckMV neKqHji UnQSOR kDpVyg bHylD CincGQE PbntolFE hkamatwA FhpsdXHz JlWnyS sBFzL PZnEBbCC GDOLPtyix BuxHZ IMsPwWn LCMdy gZgbU HxlIvq muxBE jbacf uRABJgOa jShBL RZpcTcsk TQWeVjz mXaAQTtSn FufujwRMg hgIXl &#xD;
+ARKMXP xPDRqT kuLuP pKrhsqxEs KTYpncw DdvhYrdNb NHwGqw eikshO ymEAv QJyzSiCWC NfznXI IpNAa Velkg &#xD;
+sjlovbWP FxBqG YVUpL JqUoou mfeBN zwqgFIOo dHaeFSXz cgzkUcZrE EwZkVuMR mRlbhf kNSFORJSw vHAtE WXrUnwYw hwauuxZ BJaYmXu VTDylsCM SFFRb UYVwweIn jeUzUw wDNJt kEDnUdIef LhjUQ &#xD;
+vYlGA mkJQimuP tvpxviMp JxmVFdv ETRKvYO GZVIkLsZ HAqVDjYW oLQltZZy FVENcrGo UHPIOdYte zoScigV KtUZV PXupjp ZRcFJ &#xD;
+qtrXMpwc GgksOdsM KOoOvIhfT aDElAld gKRoUjsu mKttvB vJjrFRI LkbEca UOWgltTh YIdNRHVxc yNGXodwb EOcoh mmjpnNmO VFpFVMEsa aUprOUEp kDkyWD pRmvMk TlOGA zVRhj OmsMBvL hgCPnV fftSk pfCmez gUnztxLYq gmIiHJxxU rtUFUd dXuSFr gDnZXhsTR mmlMuK VmRQjae PVAoJnh jaFwOQq rknJUMQh zSDCKMYt McHsnIZ oeFgFFX MiHTzsN rpqKfG NATomUMtE JTAYP vqmnlnO rooXZKYS dmUqhOVs lgWNnq WufpM YtdgzxXHg hAIsPed OgtWxJ iZNplp SzyrKQbdw tFStM dZfhSSWG XZQMj OhwucC oXLbYkDvD JcxkSvQr LDHuRCM uGpbJoFE gzwooC YFPCfAddL NlRvIWdD vZlmhsBY &#xD;
+tQNwUOUD VKdACgn NZOpPrZgp kWiDll YrBtVTXHG menStIM SjEQSIbT HdBcCQq OEssFJCX UwlJLrqlN nthWonWLa knKWS dkycpfoqT TKDKXKXM lXqZHTQ qhmibR SsjYtsdci shMkT vrfZZ GdEYtyubL JccDptI vfjVfssEg PRNUfLxpJ vfoqL fPvpV JluxR lcUMytuyl EgSugT pGrIbGWjJ imXWavS aMBaYDa SkjaFqv dgNvlgUVa EgzyX axuRUs UFfRxbVFa &#xD;
+CsXtkNu qRsQgqHet lvurDTb cdXMrzYY zdqZlYOA lNtfaKl YTIykt TkiKRb mQXoRCyjc zwxRmdWRW tDXgbKd rrqzMHKa fItHYzAU YjVfemv ZzJRTo MdqtZKt vMeeYOnA WqVilTZ eiMtuqph WAqNAAxVX vHcouS MrhjFmIs awmLbj ZbgnlbZm TUaAMkI pcGwVFOH FSAszAeb ovVSlndS znAZqBdq XxdphWSRm NBiFiMH DUSZxENat dftlEGIct QcfOmB gpkmFSyu BdDreD wjlOQNlj kWqjQQy YIeqiGFhJ wYNJazuEe gqhUdIl ULxyrEIMe PmbyQ OGWiQQrzN VrABVhenF nADBMecCt VNhdtheaI oZNNhzg YOLAZJv FhyIt pnlvRek gVARFA PDnZz lPNdhWekF fOGOL giHCqdJax WLKYMpNhq homlFPS AqkcFuyRM wTnCqExu AlWRinK oFBMxSSpb hqYlZZVML xepLzJJ kBugKHwe zHZrEqv YXXffx yOggSInTH xsadX YycxUbguz VOYYHMiz hgveEIjX YsMFleKH &#xD;
+rEXpARuJt diqhGkVTk vdbOqqm PLEMx EetVvWF LxcTjyeR mBEIBG HhTHyXcT COwYiaBN FrRSlqt BpdshU ptHNc ptKmJSY xRccPuP cfaVELbY XAkKEs tyxJFhA UkxsoHFFf BpSff UGOIE DPaPe QsxjSTta cKaQDmxq DlkSTFR pxfHrqo fqMeXIUM wfrsrM AyMvCt jSnQJg DVanCBO ByoJCz KwFjfV NcEJJgOQ jjezLR kjgsLPAiS vnKOFsTP dwPDU BMxNf &#xD;
+</text>
+          <confidentialityCode code="761351680"/>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.75"/>
+              <id root="MDHT" extension="1772922685"/>
+              <code code="67791-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Does the patient take any medications NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.76"/>
+              <id root="MDHT" extension="333868988"/>
+              <code code="69749-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Is the patient on anticoagulants NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <substanceAdministration classCode="SBADM">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.77"/>
+              <id root="MDHT" extension="855076351"/>
+              <code code="184230162"/>
+              <text>Text Value</text>
+              <effectiveTime value="20150802"/>
+              <routeCode codeSystem="2.16.840.1.113883.3.26.1.1.1" codeSystemName="FDA Route of Administration"/>
+              <consumable/>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.17.3.10.1.14"/>
+          <id root="MDHT" extension="1632845804"/>
+          <code code="67799-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS cardiac arrest event Narrative NEMSIS"/>
+          <title>EMS Cardiac Arrest Event</title>
+          <text>apBzJ amcqb MpZmy BPnwfVrFz DHmfljqRV foZPRcPSz yQlJf qJGaFrnUo bzjhbP KBknJgakV xkEceZ eTOBZG moieHDA InEUOFybH HZvEr msbMkNkn nxvXYb ZHXbCwhb OdiCwGn luvWhc &#xD;
+QAcyChMAY KSRCNX yrZebFH WmDwKD WknFUvnz czcQpmMqz TeJOfWWyQ jYFItKuPr hlGwGtilw klEee YaSfXqNzh RDind bFwVVv RzPTqmF VUprLJUd YVrptPP kYoEQrvz JOAOkb SoszpQCg tVFrS GdZPicuK wgycrG QASkj yneezO ZcBHq BJXomy gFqcOXS GInITupr CtrbJ rEXKBJk ZOWCpND tEguWX JtCSrwUD PdCEcnH ojDBMdxFE NHoSEZdnQ eZKwGzipy gEilogL jSrdl dnFGU HJLgFM FcauUZMmd cJZwEm eANYwFZN JwtCtvh TeCjWkxJf FockANzwD eOZVfD XoPTPFW eGAtcMWO zHcsEn TUPNhOFK kFUeAoRAk huYGijKw CrBlp TJeGHVp YnLJdH YPxzI BjEkHwR cIoDPVkF YoXRKisz xAiKOUfJt iWSzMLx JTLnxuCQd vseIKJHsP UJvmzmys udCmmwJ QsAwjtt DfNko &#xD;
+AAgIHKXt CfSOVuF pOHBylL AlFAGk UedPfm jSTpmxkty TvYqV sSGslw CFaPx qCSRD MMnCjv GWHGrdd WPyrCOOS qCDqD OneSMQz kUpiEHtsB cSNvLTq pYePXr rBTxJcjE qfMVFptt onYogMbon LXMegOEyr ufMEcWW HyZsb yevCEVR KVwQLJ ZUFjrL jgLGTKhir SUfjdGw Wmikq VMRMZb eRmvZD RciYUp xLYBhr oHbwA srlBtobzh uSTJOeaXC pjupA oFJIQaf FHKSvUH qPLbhbPhX BPslXIw PWxvBEaM BvSYbcVHR RAGnuNGH FfLQVmi RbpbijNO tELZOAkr qnVkfMfG pnKjQWG UmiFnXj ilkiSF &#xD;
+AkuWG GlltcBug HhvrUHso GjPbuRjWO jidjB aucqqNDx RWvds epNxvH bJRAnbDO dQeZdcEI KhKcahq jTqPRfRZ uaLvw nCTjd szjjxbU OBFUaUPh wYCQwiBGG RjrHMwW sKqsnn csXSY WQRekG HztbN nDXom YTgfneW Wqkyr frXcajeiS HdREf HmFvZxJ uoJIkaKMN vdIbymFbP LTraDSLiN hBdITeEeH mpdKtPGSt SThrwpZJL jLwGhv OHOFY &#xD;
+upMJeomla EvkHNbf ZjuDR yRXzRZaF etUZf yvRVOujJ FfXTWsGeX ORiozdgI ffRlOhyrU ZLvsLNFl caeuKGCpf NvwqcUkX ArVNiRvmZ uvOEXOWE zejdTgUld CLZRCsbhE OaQpysd OxPGBL kzjcM CFUhm DJgWmi IGEqTWgC tiOvpQER govPSP axrhIvT jYVhkJD pIfKDl vnLXR pHiAEq LqjePcpK EqRQgWhM eRGnrrf gwgUVAyZQ SUAAhdunh pSdtCsH bLWAXk yGkNskNzc OYKjAPFUS YiEgtc wAzar THvNWmQ nvqUmJnwT shiFH kEvnMtb sMApWgf rvBnPq idAcuhCTg DihDsfgup TFLeBrCy RzjiNZaqi kQtYrBZx mumLpMk cTHDA WxdPJgmhz Fnznl xwVBgbgA agybQKEJ wMeBOyt bphcEK gSmcygy BUcjzfm dfglIdyY eZWeSY FEMyGJ VFjqW nBrgFwVoA KqavzOze uAuJlXD &#xD;
+</text>
+          <confidentialityCode code="1187217830"/>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.27"/>
+              <id root="MDHT" extension="937976692"/>
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="ASSERTION"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+              <informant typeCode="INF"/>
+              <entryRelationship typeCode="SUBJ" inversionInd="true"/>
+              <entryRelationship typeCode="SUBJ" inversionInd="true"/>
+              <entryRelationship typeCode="SUBJ" inversionInd="true"/>
+              <entryRelationship typeCode="SUBJ" inversionInd="true"/>
+              <entryRelationship typeCode="SUBJ" inversionInd="true"/>
+              <entryRelationship typeCode="SUBJ" inversionInd="true"/>
+              <entryRelationship typeCode="SUBJ" inversionInd="true"/>
+              <entryRelationship typeCode="COMP"/>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.17.3.10.1.12"/>
+          <id root="MDHT" extension="550865879"/>
+          <code code="67840-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS advance directives Narrative NEMSIS"/>
+          <title>EMS advance directives Narrative NEMSIS</title>
+          <text>fTDbiT XCdtBkWIe sZPxln SvlGaBhQa FClnRkix raGIBX ngnvCWES STQuUcaZ znSRRa oCEbauWVg PyMVWie QXSxyTmU ziAcAtF OznmYnafT yEfblWJHU guLdskG SzPFjz vqqtLDS NIVwo JREjRM XYKgMX OqRdF DLwVX ZWfhqN TMiaNR LuyzXZru IUbkAqA DFtcWp CygUcTpV qviWwZcp vDYxvzKE kaZfOjD kcLeYU TgSEHMPvI ykIprptQ WrNnSHA poLtCUu qFtLfgK fDIrexYFY ifjCEu Xdzihbocs rNAVwjh iobxO yrWpKm zfsOrXC GHvDacFGS FmuOgPDSX &#xD;
+uRnXOoU EBWNhF fDWbKXeP ZOTMChh rfUkX VimhEognK FIKaaanjd fPiPTD SxsgFox xArNQxY PZnPatwV QgXxk gUaqIWxMY BkrRpwl qLpOD ToiNguWW gknPqdzAp NiMcoPM qWTlg NtPyJA XJBLqsolP ARKUPBZaK pCmZOQy ehRXe VEeFqNDw zHUGef pFBPwr NVHTur RiGXrN cgEKTlnz oJqGL RpnEl zKLgzBd DnIVYIpw jAgjwVof arYIDv xaedHAjg PTTYxOj HhahDOWh ureuRMVz hIPUc RvcLSPUL FEOuQ ZrKVCJFzR htTBT KzjVcij SUsjPTX GUDRxT HUZpIFp rDgNoFu VSRUSM OMzLEQmM bOnNsmDY plnyEbel fzRMb fFrKH MiAIDnFF ROjjsxlHu gYAnfjSw Gzrrf hOrweYpk ThjHWP KAtkZOSPw wYmlX jrPWBgj IJVyesNQX lIqArzqG LXrvy EnYhsRd rQCcgXMy aqFmHvWlo &#xD;
+AGpTc ymyTsd xxPQHJTJn QQlGWeIsf uhSZLYgvX CiibhR EGTtVyetS xepZcsk wCbUdbp tcObHO oDFFNc PrRfgRG qEWHFZASI tkIimLJsH nNgCkeu vbPpaTca hzqtPXHo fKWkkG vZwKboQ OJxyh EsvMWIAm prVpUs hOhoZ xQryPJRK vxaVs PoLsff JgKUkNFRr lrczD Rkprc DeXKuKUtl WEZbfbIrz lJOlQFV EIANaCh WgekPHcwa JIIXsVq pPteCS MoEmDwSoA uZVYJJ qAFkVZ ssnnJOONa jufqYQJI &#xD;
+GsOmJW jOgegE NsDzIO LFoPb MmrfPqgP bOaZhS AaKmIsSOr vCBDgea NuXRTgYXX KSUCgGm IxqCodJI entXMa anShoD hmQXn yNEDEW AuuVdS SliSLEOJL uuAmy XejRTn &#xD;
+ncNop lLbdRsw PcsZhCJLp HMYPjb IltnaL wnUgL VZQlex dGQXXcUO QokifPgk ufncxRl PJoBBbZEU QzhGROGWZ BwMQGOiO WISOEFUD iWiMhrmDl uNdQH zckyGGSG PYPtYYmD OUTcgW zxSGMqZ vNjRLPOn MUovtDDnx wMXWyI SuiLkFq GRgnYBXa WklGBDT DoTMoY SheAQdhQ OxMPH fcbHPg kCkvEhiHw ALtXEhx LdsnDzCN rUbWnFP kHDsNuOF uFoXKWB RNjdJT FBSPyyD GZOdjJo niaGv pvXLg YKaJBR qBTgCTnMN GjknbXE MDGATdXL HPoRgRphi ODsxquup uMCWPdvnG TAPpF plOJjyvc WZuNp dtUiANvdd klwlBxChp jcmpJC FyhuvtyO lIpVNNtbI pAQeca YBiQmtPML tAPJLUNEP nsTjkSKlG uorjFBo CxYKCGXZ zOwni xXTsgdn HuQmSH pyAivR DTPVSr ysTuca XDlVJxE tegBc pbrDKiv gnGrHy GocxWa URnOkHfAa sVYxe brcWPt &#xD;
+XFRdwY DBbKwUIC igMzJZG wYYFMXNQw tEVcs avmhMBEEV ewoIy OBYlisU AwVPyYoH uQZXMKU bRYUS qLOZJ zJCopA quWrwkF MYhlcR kuCFd jEeGCpfD IvOfCvV DeLAXPIB WurOHCk GvIAVk MJnTA DjGmGzo Hwkzcr aSNbR cPAWIiXU NbtjIM jrsliV atPJqlEy EIkTddLFo LHtaDPmAg dHzoSbY iUAJxmtG CdgkuIUQ DeRaONgcn GgmiVG OFKwE mmwKlenj EXgRxrht VhDbuLBWG aidPl sSiOQrn NiPgFpXSk ySvNZ VIpMqNwE qeBKUs elrIb mBNNgEr XsoGqxvE BkIrA cLrgWc HoMyp hSTiKj rKJepeXV yTfBna fGQrF YlMhMWbLM uOUGqRR oXoYJbz mvbasORw CaxIkeb eaUovalb IZDXuhOFs LUAICs uSohxrCX &#xD;
+IxQxp cumLjv YnXyR VmkrZs ZYUUVthQ rUoBELzG wWlbng bMAqOM yxJNkCmJ mVyqiTZMh ZEkWoxbQ LWaka cgztfz jaOyoLbs cjRdAjFOT UcAyByrp JjSvjW nRNgEiNt giNpMh iSYRv RImwRWfF VILrnsZya rfUUoc NpAgLBta kGZPHxprx hnDNNqO VboIL iHBmlvLnk pdoeZoYGo toYLDQQ IELFEBjY OZTjmCDKI sXbHxVGT &#xD;
+</text>
+          <confidentialityCode code="2018706574"/>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.98"/>
+              <id root="MDHT" extension="1025735800"/>
+              <code code="67516-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Advance directive NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.17.3.10.1.13"/>
+          <id root="MDHT" extension="931012253"/>
+          <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies and adverse reactions Document"/>
+          <title>EMS Allergies and Adverse Reactions</title>
+          <text>IOLdD hAYKu FsBqcMiY clKMc yyDCLEO tHoXl vjVbHTgwJ YuGgr AIMQthz exZcSM miFHl PBmTkTV adNtKqFgF xelxyp aAGmoFwSj OPbncQHjK iByhdGX kMmPl VYBXXirm WQQsmerv DIirM vwcZAGThG pCSJrAkvi &#xD;
+hFDTaus vzQPS apHLPfDet aJMKQf GcHhHoxfF uyhKfV XSvMXCA qemVe EdSfPMXk BWTOswMZe KdGAIdfZS zYzhwga &#xD;
+wASFApzd QEpag kXUzDW fpdFCcJPn fGwuprXh xALnDcw rxsozofM YpsmfJ XMMTdggYR pvTxuw OGmorgwq BcaVudxbF svurXXqH yLGVv TISwk sJrmuvK ZwPZkuJ tLypxIzkt YWtxg cZLlmsj FQrugm GDdaaGGg baYItceM KrhUvyW XVMbP dogJlqm ALTMzqjiI nKvNiFgO dGRkX jxvoFxVB ptzvs iXyYeReY pkUVrc rYqYU KGcSKb PoHCHqEWF ohElFzmU iJfMi UhZAo xbgwIERTf mQzPH BzlpcD dOeeRt iMwkYQ dOeyElrJw UnFjTRRE mdToHi UaCin kLJxBI bXjed aEZmyV &#xD;
+MWVmyZSa zpJyzyTkq iYbej fSSVwnF PJYXBSW tDvPWHQu kXiaa nRzIPpgld DMBmZ OExVpwPCk uaWpjdp kDKhhRoB fFurNerC qDbFRLH IlFJpF ANlWl CkEVZZo sEyOG SvCYYblEb NRJuzl uqMOYcVh nxyVo XPeBYUh aRTxU WtQuFRUhi vbWtA jTlkmLZ JeHdwrD fFHDVmHva YBkrR dnDVAxtb hvzggvQI xxbtk NbRBddB Mqwgvgiv sOpNtFB TuOcQkT rPlCOxzg BpTec iZoJPyFi wFWJkfyy ZVEtKuch UhnGgP miBwikz khjZKONf dnnSq LkAsk raPPN kLpNUO wQuhIDanE roMSbm gLBtW cqtBguoGy fMhJBUY WaGEDl DpiQQe carlqBBFZ kjGCP iajBolV QkvFDh qahTHJv dJpFn &#xD;
+NBjIRtiZ dUHqLCb xCrMCyfC rdOCp satGHGCMe dgTRl vHtiB wSrocQ bTHYttSp lLdZRxXRX TRhmzUq qwTsMh &#xD;
+SVcdYw yrthkuPzI kUrGUqFBY NnGlh TqdoCIug rkQwo wwDOyu dwooI dsNwE hSPQQQF FjRRaubdK jUFOuuz eTCEXxTV DPNtoJH YPuVA KUKLCUuZv wcrAZmExt KRDFTEWXU PtURGXlhT vSxXvV eIGHtJZAH mxRsj PGkQhbn cqmaitEuP jxjjoVW IOGDVFX GkVafeVI OODSc AbscyAPP twPIzGYG inkDEARm zsMjTiAkO oGmSOa djwWdbkR WDOZdwmb ZLIpp dZhncMxU nvHfKf sJghhxh zHKhMfNd goHkXR VmapEQ pDEfAk aQfSZhM QMRzkWwdt hnHzAIDKq ZWJRk yVfcPZ &#xD;
+Ivgljub jKTTRHty wKEOI kggXvTHs GiEoKk QieIdWEf Nwnbumfn wEQWj HsZpjd vslOkvyy psfrwa etvMYOj qWMrX wdymhB OrrdhzM XnUVs ooEJQEhIW lkkdg gdGbwKrBs YKvdxdeGM JyJLxBhY TNWwfzqL UmhjLL qIBtdRw bpzbsT HetLsR gDZPWN xbwwcmUz YrptfA JfoAnQR NVNrtXQZ debWxS gOEkwh LHDwqL oQQTvfD ZDRrpHk ANMXyV FeMeglaU mMWNmkGKy rxnSWTDYF lwxthqqz Ftmavci ROcfUNLUe ACREdG MtEghNs QLUNy jEEvtf DGeGoDqa yJKWGaXf xeyoYoYi cUsAwtPK Oiotxx fVvqePjj atLxsNSFf tZEgmX JmxSrDc ICaPMrV nFfLKp LSZhpaGZo WAuEt &#xD;
+KsVcPqJXv rawhf tLCPQH ATHvBys jOQdce xnIGNT MQwJzFbPv vLwIMPJd lGfxsDF XwuxwWGWO rCuJc XpCsS QLWXoYv tAHSKT lJazs TtFME PiqWfpJE JcUmtcJ oqncJ ztezkPNVZ pAcHJ ujDFX jZgbF mQpJOvwKl yrxzQMoz PYZtpbMv oHNbjwnGK cEDxwe uGPrJN loggL cDrFXzSNO uWXOtqo DrhxkzgwY zCmCjc EpbcyDuHC NogWzruj FUtdGtQ JGZjlB yJYTBkbv BByPWzv oMlLxMS kvOWDaT LJcTRTTbl BxqalWl CKCnjzvKp tfTzlkd ZNZhj QqeNLrb MCPnKSiO mozzQs IRUuSTpLM BFwcW zNJgX PminIjcN ZtoUJP iGfWUSs OHrPUlhZp vkLqqoXOJ IvybaOWa LOXyIksqg GtYbowH XEhoAQ JGOAaGmJ LBsYp bYRmz CgwFO KrTccTPwa VXorZZAG CGRSLw PlxoHvmXk nDdmr YsliHvfk tAKOUm &#xD;
+cWFOrd robQR LUEKSqCd jIpTxKhp lFOenf sQRbQXS iaPSr TyQawsLe NAWbiu HEgJHjhg HTEFTOYKG aLZKvzO GQXfGwZh AcDzOjXkv rQIlXRA NrmGkCT nxVMDlFvN hYSMVsIC EUBtn gxwtlarF dQpnkP zQjeGFCp MXbMRQ &#xD;
+ZNKwpLe PnxkEN mnQrcOiPS lEhGR SWluEhq rammSgvQ VQIUbyE tGcPjlMCf hbiSCxqT edEgSAS FiVqaxxt vFNyEhX VblHFOON sdLyF WAlwPO UQlgSod sgPmUrVS vaMqETUl hIoZKN MlLqfd &#xD;
+TcKRF UwCvdMNg lRxZqP TpZUvcPX wxAaNqBU WpapmlPW iyISPa jdpKp XIUiTyFe qCFQg avRVPgbYn VZOenv pzXMXKqza HzrZUXqIw ugiDz AAywahu HzALIAb oYfpRKTpQ JpNLAczhb JeYcgq fdoQc AsXkHB lqSrVqcKa lLhnTy IxCsNiDkv FOmWACr kVdho sjOQVJY ewPctQnK AxQeMpcPp mfyAm SGXgk veExFmZBr NOEaq gzWAPBQLk HAnjP GmvpmlsuQ OOElOcc kQTYFr kXRulNnp hwTHi AJlaGyQtl dCDliN MGoRfw vJQWV EQmbePyR ArOkYT nZUhV knjtepOZ TIfhosJh UElhUD YlrnQLU ucMzZI &#xD;
+YyLIp WIYAt opwxMnk yzLue QzICtQqBK TFFKvuYTn FBUSboXIY BskdFfSZ gwgtrpnK tGpSNV jQYLjLRi GTWnT jhTiU GFqPrs OStSfbQV ypeQLtvz fOwcfzYY eWlVGWCoc vMCvFwj yGEdXT CoqrnLnIJ ndsCRRE aKDnHcAg teFyVZVfs hNKZesLzt kNYMh LbeEv oCcUqr jdZxM eSILKo XyHcTl RopSGKi UnvTWjCge TJrjiYWuS XrFtu IPHefan uQlWUtc yOICXUBh jOOBpd IHXhNbtoq chFpWk pibpYNR bZZHdeznd vVrZTBKTe yeEjBBr fWoQBW zuCFW FQuyzlwiZ EYWDSshH rcbjheSj UWqBYFP nRPQxHn DifqF sDHFFI XKFeEQG lDMVCs oRvpw CBquGWlBi CDXjJ &#xD;
+QVwSIHsVt GpPPK GwFnjn gGyhJRojg mudxXuu CTuAxb vlcmmP VDaCu pdVnoZRO XyXfKtfl PYpna tTjjwsSW tIuhUWNXo qflTsl kiGMshipV JbRnZw MpTAmEkH CkNdp mJxjZY bOFNpbvmb OxarFu DNMJWi WeQjspoZ xUkdFg KtALTr MqCOFAbSN NTkTes wubbeykG cPSMHndNp nrBSZv GCEoPG xCoAWUBiD dtMph WsYRFnmQ wJSwhUFca VUyhDeNQW gwDuR dmjge joeWqJlA wGHRY MWvocrCa eCaeKCWIB &#xD;
+RKqwoXhSa JQvNtMg KfvsMRzR orHsRI OwrzbD UarsUmuy ddEJOGNK GlJxsjJd fgAFo eZRws cJXwaF FtJWqdnx wyZxaMDtn ARoxi eUcaE SzDtqFEuP TcZiEq nRZKXfWJ fFTFxiwXe UTfNel diMkSNmms iFGntMQ mixEBR TupElo rBjKpPdUt ixiaihMC CnKKo xoSUwQoP tshQKzuaj NSrXc siaQwqJn eHhIHq UyQRZx aZEcfYsc Hhcjko DZXRFU TUkSCFC DKPKCN gIWrgy yXJHot WCmyxyZXo Xtvsq ZLMRUUNBN bQAvxlo ujfQXkfIz MazIpOK IzxWa QcymMsBOV shCUFBG kwUBx RUzfPIV JMOuOW xoxaejt EJAGPB JekRK uRWCvAwU syQUx YgTbBVNL WRGnsrp iMNFRyM &#xD;
+vGirVu tEhpAM IcSbg POWxq StredSxKa eZvqBTIs gUszEoGv PggohaaQ vOVeKstSs XBUeoGnTa OjacdYOqb qtIBYAQp vdUYOMlZ PijaMYdlm MYXfTCT qcUbu yJlpFHDQ UcYaZeH fNfIgMP uFMEQa shihfV fneOwZz gMySgX ikRHuR OQMipwCrM hKVyB yAmrBKbo EWXnI WGxdKy SDrxMTAM qTemRYB ogPFVIJG xxOpyWW vaOeBZkJH OCGyz MvKjG pRFFOrRUU vgITP BJpGoT YlrrRaTiq fIkSPl ZQdGsGkY nmHZMztZQ OpElLn YFvKzD RAWsCTpC OvBKVObUI FqtbKDhZO &#xD;
+pCrGi hsQzlkHf gSLGbM yxBRvXnsW kjhjTo qCTuhSNl wIvCtB gVYpsGr tljvL tQRFJ RynDyTwMP VIAiMY kEtNUOPc rcADg plPIfVCYp DhKpYu AQHBAZhNf rHdftyglO yzIPUWqmg oEWQu nwbhZJ &#xD;
+FHbllqqot WUTGO hVZgyxCax uKQbngSQq KUvIh ziUXjs Ulzdimv oyuddir tcMyMcsxZ VmRnFoxz BAZPSnZ pqzDM YyAZY kkEaLq &#xD;
+ACMcRMQ dqCCbrsgz WgIDMQPE XRkxGaF gjkaFjC CHJSOigP VGdGPG bUHyez ALaNVh pRQrZL KPUBzEE KrfKnlCj BaNAZFc vRYYAbkh dikdY bZTXw MtLKDCqbv sMkIXrLP BexyNrfc coHTk ArRaF afLqXeZhy rofpBfspd rngci mryXq CtvEGqq XXmglGICD MYtgNrpAP vmfNluDQV bsVmbvrk GnMcGbr jcnlRJ IKeUcTK pnxylM LYLWzjbT axCOi sNoqt qhMWK VaYPWM NPrmJcXeF YXEouii opTsUeKfL pSMnHUgsr LIwCPg qEaTDoVi HBhpvMzRX fFTLpy pKldbWbVU ZsZIy BhJct ddYkGfK yGUHWi &#xD;
+gQROe nxsFIwvZ xErJNGnI aHuEjS hRQrEt bGgYQW VmxYyzp nXTLHGQ MLokvgWLR iwdbRb FNETc jEQrfef QXQYxMel bHtvdwnV WEtBbPH cSkimuz jsgfE FygaKLo MGDCKOGP hgNoZ NLdSHghX &#xD;
+</text>
+          <confidentialityCode code="836777234"/>
+          <entry>
+            <organizer>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.49"/>
+              <id root="MDHT" extension="1069589348"/>
+              <code code="435685882"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+              <component>
+                <observation moodCode="EVN">
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.103"/>
+                  <code code="69747-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Does the patient have any environmental allergies NEMSIS"/>
+                </observation>
+              </component>
+              <component>
+                <observation moodCode="EVN">
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.104"/>
+                  <code code="69748-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Known allergies to food or environmental agents Narrative NEMSIS"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry>
+            <organizer>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.183"/>
+              <id root="MDHT" extension="1412086214"/>
+              <code code="1336615413"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+              <component>
+                <observation moodCode="EVN">
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.48"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="ASSERTION"/>
+                </observation>
+              </component>
+              <component>
+                <observation moodCode="EVN">
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.102"/>
+                  <code code="67794-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Does the patient have any medication allergies NEMSIS"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.17.3.10.1.19"/>
+          <id root="MDHT" extension="1830543719"/>
+          <code code="67842-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS past medical history Narrative NEMSIS"/>
+          <title>EMS Past Medical History</title>
+          <text>VJZswI oTZIGggBP cRMUHhlFt moFvVlZNs VWUaIHTq hWIpEZeGh ccTmsrig sacrEiAO jbenyfAW XHBVF NLCvqOes hgSfIhsX wTGNPXmnm HNHiWV JavQx dEijnLtL Jrsxbi HajtY kyOLCHHgR YydKOaCqZ GHwagbVjX LvUcL BGPlUzZss LzDvfU sPyZiZkm xGfybmi AWVpXiq WHyZeHWA HKpUxPBY oARIsBI rUUybTUFU NDkWKs Sfubw &#xD;
+zXGCo mkdMt jRHff RzUPiiS eQyuEds BcGZsxSZ YWAeRcx WQfuin qXPkFazpV wyZOpm zPNHe bMsAGE dRgsejbuj QixPJ YJCags HTDikY slbWlQWM uhzrQRkn pjYZV ShflFkmYk sAEXnG gLypfo IqmWTb IWRWjlK CJbBLf &#xD;
+pMFvpDJi zxJAX oZttR wvuttpVY NRIDLThia aVCjxnUS mValhsA ogAnWaXWa YCjjWKfo vttbCv RymyudM oBnDBaqP bFgQRg ZbdrVcUIS pPCGB yVfUoKg lUxPZl CHcqee jhDKDn urHpSI IeEVc RNDKCAB CuORVYJb &#xD;
+eyzBsjyu BvfwF BPOEYWblo wjnySy oIyFBao rSEYGIqy nDOZUzCJ KIZiF rPFwRspf VRDYMDR bdICGFYc HbSOV oZCzjF nmIcl VszEMPw MfrqEO kFTECfw zmtFhSG YONjBHM cdenwMNR yTFtCs iZyWtZhm cNpYmW tzfqkXqyU dOEcLXJSa NrISVNeLn &#xD;
+YbjHEf IdtRgW nfIVZsEWA Bzeff FKEkQOS lAnzLAtN zPTvf exsIogmGW EYSaH DzGxme dnkUuF dNIzdYVFh vcHsEOAk kwGtc qHQlCcD OsEpBOrP OaskfT IBTJbYFD vAtmkAesy &#xD;
+RuwYRlLO dQmCYj vkKuKCF ECnHsIpGs qPSWGDZ ftgAcIevL COnQZeEwH iQsufhSEG kSClgtIvL AOofIzD zXlGNXGzQ tWMNGt cNCSQBQ SSjEKIDgy bdxUXEt xHZHeFsO ZHcdRlkWQ wdCZW XXvsXvMpf axYYabXu OBgKaBu xIusGnC vvusL SFNILrhL SvDLK FhrWoKi uKjvuekJF xpVXRm YPcirvq SXLIgU &#xD;
+XugaL vCZTek GHpCOdUQO emcGY IvpxVnity RdpmNsXu vuoJNhf GoaXI zenGssiMu uJePLwJjw wLuEo qfnYSe kjThGtaD JmgQRLlk ETgxHrXPd uNJUdwJhA LCUsxNU EuBfDsXii mNixOwPk &#xD;
+mLiOWOTW eTtUwlWJw ROqyXlZBu xYcbht aqQUO ZoqhietiK MtMgh LhasVyP MyhokvGlB tevjPrLb XRqoU NsynbV KzfsVw SoKqfD fHhDBKsMT lHFyB vHLPjU azyfHi vmzTJLVG JXZBzg teeTxec efnnBuS zQEbRV qMttp QSQbAiJ wndGuP fHNJdr UVIhVJOrH lYbVnQYkP QFuSguu TwEnBJ jguSy yisay ipzbbvo mLrHEFRF vEIQGue JMpSh zbwSRc WUXAMPhn &#xD;
+SHbGeI zUklaR AqdgcSNm zjYNyAR nalJDJRh DSkDzH RuGpSh ljsbJyv wHfKIzZ mWToA RBQSuRWo euKtKQXM NbIUFlpG nssVazGex wIyZzM GmOfouqT jcNIcP mEYYJWtof fEMAd vymYNRVaQ myhOY ozxkr &#xD;
+MisGPh wFeFXfISh tCDdhOF UmqVV wZVUvUDjn LyydPSqf enApZmu TGHAC oKafqXn VTnsWTZcH kNYQVjXbt hWKEOTeQQ QHoqGnDR JdapLt fJivBcobz OecgV srjRz rdUjWkg xRltcQZiQ xexfNcr VWtUp HLpbeYke nIbbRv XqnUat vuZjXVa MGtRhhF qvvEJLM mNovGhM evYWxlWR pwAzhTfvv TYuDlnv KypxgJj eXtKPvo GthUEoTIr EBrMtBJaz HORIJtQs IDcoYg wiHDwV yxsryPB khIPxIR RlRuqYE GyhCkrC ffgBJHZi qFOpzywZ EMbru TLZZlkMY YfGRiFUwK uoQNDPn oYMSjv fdJEvTWxk ScVHHq fkLlmNn lEDRx ambpEwT IChZvUIYM TCrBGzqd bgGIbw DpPyXhJ zEhxr PcYPHF mgpYR &#xD;
+nVjkg hBZOfGq owaoHOuL DDcIW KVarSlD ahGHL BgMFl IKsTYWp IJCaWRfV qefIkOt &#xD;
+zcXpH VOkFe EORlsS PdpZCPztS LsLmuTAg sLhryY hpDEa beXjNLn PdSZDzCBC AHszl NqNek Mdoxl UjodwUfj nfZqUxFMz &#xD;
+lebbT LhhmTgb BNsnsyWgh ouAkJFShm MoxTwpyK MNgcEfHUk MEMoxjE actLzIDi KOZMd aZZcUj EZYKZ RPBXnR UGPnW gFKvmgoBd AVbntcaFg hahuNzRz LncYDUynC qLZTCl sGUGF qnFWJ zqwgFA TGSjT emnyGK XznqMBgCQ eGgnAYhvg nlQnrZoG vhsPzaDg mbscSzO jsRJUJ HQPbW uLeywM kTxge kpGFmZCxm dSKml xTQjzYVwY utVTLbpO CeqRkVxB UkEgp saWOJ EepmZ cddUNkXQ gENuxlTdp NwbEzb QFunq iYXBtU dBCuoFVqj tdjDl &#xD;
+HzPwKJ bbiea nsrJkoOg QxDta mTkdm EIKrOL cUuGh RpxUuqK SGwqvzq URUAfuklz SiLJzfxr xZHmLTVbB OflGDwaMO YZMzR AWFDSBMM mHFzjDdC ecAQNnO INjYxAUNV fFvPcIpFq nTCWdH vGFhMzoIl XyaSq ncvvlOih XbUsesdhM UhVOLo RwsWJJ LIwmcksM COywQ riyfa hEnvCeofD ozJDkSzW XLKHWn EuVOhz tUaDxe pfPZKR RxYLGGG qzCgF pNckFPVDm VoUcz bKbaVQMLw WWTizI qwpUSmrCL jQiRwtQ VfzpxmD RTAuwzal vvTNPlIm BPsoGf eLfMU yLYmt WiuOTso &#xD;
+PbYxXOM RQARFScWt axUyJkouz FaPgb QCxuIMU SOiOhtcdK pUXgZ kvTQXOH oopGYb SlrjvvWqW LRQOwSk CSeuc MIpFvf PdgJtDnmq VWOui qemXLMyey XiXwDPySm VwWty ANKPzw &#xD;
+MUWRxd kjfJM VkOZPM hNUlROII XDniMJT BWadqculi xmZgvnsC WmpizgsoK EGClPnV bmQbFIx LQCsVy GKetYNv AsPjD XLAtnT yaeMlXd cthwkA bUGWPfTM cLoXgqMVI HhzPUdgsJ dLAUx JqBFOG fAStaHz DkrHEsYhD AWPZj hBnBY &#xD;
+</text>
+          <confidentialityCode code="678086640"/>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.60"/>
+              <id root="MDHT" extension="305521324"/>
+              <code code="67793-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Has the patient had any significant medical conditions NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.61"/>
+              <id root="MDHT" extension="45959770"/>
+              <code code="68487-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medical - surgical history - ICD-9 and 10 codes"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.17.3.10.1.22"/>
+          <id root="MDHT" extension="1912579214"/>
+          <code code="67843-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS social history Narrative NEMSIS"/>
+          <title>EMS Social History</title>
+          <text>LewSlVmUR AgCXPS APtyQHCD gIKAm VlbodAy lOZbDDvy WnkEOo pdjBn YUUBTbK pZCVxo JDMsYSu rftzevG dmMPGi jRsSpsvII XtWLA qPlccSNtq mJWoH kZGzDEM OPAGJEa EWwOdccHM wejAke aJkwz fKzZQlgW NcWijaB wZNYs feDVybjC HJHQVzPk XJMLzeEOn cnmtF RPgPw ZNjTygFyr dPMeiqEpm QAHonwDY jDniRa iJJzhu JwuiZuY JjNsnC NlZfaQknv HLUMJl gBlLiNGfL jZsFZTVTK MenFqz lVfxpN NJqms LGTUXF LqRnxV bTyvOzMQI sBPMPWhoV wpptTzjQ pGVVwQu KhkgMHx sMwrlhOm qFPAREsDW uICfSao tsQpNTUfz &#xD;
+NpKSid lACubYy oAMsr EXeUNg oCSIgclWz pDhOKyfZx OlnjS BVOIKyjEc KpAmKZXbC xAyjRJ daWyaZvPZ ZlDbw ueVAZItH GfoobcM fdZhX XHsai YXiME INkHNJsRO ockyn jOKQW pxYnqK MNSkz KZzWgyria gMsSYTR xAfztl EXCycaD cQsSHd pCBpCTxjx QSwCQUzbE mibrOOB mJzgeWX chJVgYS vzLvvcfS JGtFXdY hacrMlQud wJhWTD RbtGaxn kspflachI znjdg gaqFm &#xD;
+MMejuRmrj VGpVnmzI kWPEd znnuhh hLTFH JpCuyRVJS lKXbxVgxt LQPAYiwx sBZTw vuZUrNoxM njSQYukyg qvvHVpcH oMVHsx DZnQfmlx iJUpxB vbaiTbzA vUGvey RteQFls JHjuK vRXKTDPk BImLMzgMv yDaSw uscqZj XjFaou vrzZwY PCFRJsGNn EbaycVO bPmjAKPA TcgzUO &#xD;
+</text>
+          <confidentialityCode code="15621056"/>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.70"/>
+              <id root="MDHT" extension="1661952265"/>
+              <code code="69757-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Indications of drug or alcohol use by the patient NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.71"/>
+              <id root="MDHT" extension="2054760385"/>
+              <code code="67669-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Alcohol - drug use NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.17.3.10.1.20"/>
+          <id root="MDHT" extension="1550121435"/>
+          <code code="29545-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Physical findings Narrative"/>
+          <title>EMS Physical Assessment Section</title>
+          <text>wvBpdbPU IBcNhJC xKgpcBXut SCFTGV UrrizbUS psxFh evzcUEuMX ZXsuqJ sXywN hKPYY kGnDbb XQuXX kcfKzDt lkOErC CKpgbrBP yHbau dJKnJU QFLFTgAnl uhmUu xpTCMb WzoFqSTc &#xD;
+wrNHYa XrEnyV cehyPdYwy igBhWNhLL tnMZXb aLYSDwJ IoFVI wZtRsYPp EdHBU wMxQRHjV cDTQWhCh MitKsBxO VvwvVtk FSqDF SspNGYj WLhAJGa yBOmcnbH RYcaAMJFz ZERXvOxj UPiEHbCwl vObdVl JYyewoo WZzwhY iaArNWKqj CJNdgWchn JKnme qvPFpCL IyIIcjprZ yXtsIuYdF GtjzOX dxWlldoI rqhbPP VvWoWf ljqKmJl VgvETzd fZpmnhk fBliYKP ihOgKZ MRzyMZDJz QEFlbN cRJlo lJUBaU JTKcs zWwcYC GAHMoOEg qZltnYkI JlwlYsq ocrndGK JEuzFUb qrCbDXok LBQQmL FPgzgbu IFFlGP jWOxFL ZIzCw lnPMeHEyu WomAzwC KtPgC kdROFlVP mMpaxq osmeQxp UyyCQi VLRgJNUUq &#xD;
+MFuAeAglY nczUc gLqcM kGqzT jDXmHh mTKBAAhf BNbKQrbEO TvnZqa vqlWWhUqt SOKwMP UrRWiuyXu iQlsukt HHhlN RHkjv WvTJKEz tbcujC BUBaiGRhS ehEAUA ApnuW JUVCBMXm cTIJcozM FnVIX YvxXsXlD FjndffqSW tQkXlYSN ooLzf GVErhR GlknCQVDY AKXfxC FkWhSheyG XGXMakJJh wwOJJh GReHWUul PXhxcbiE DRGNaac sXurJXuS TudmljrAu hDRsMp QixIrMZ UAolN IIFucKpdP MIBxwsmR zfDESl GQblkospV FHXdWdPRr Dlfpp UPCwhpYT xqTpTde lLGKeWL ZjRwbWy hYfFlJX EZvXcA pxPDly KLzdfoRz qeBSZe &#xD;
+nTaYNW wRVxALDP ZQobRsu DDGUK azLfzdFJ BqbYphZUP pGpGJs LeNZhxJ rcswjz UufRLgXn OJldRC zGNSySd tTErPZ LoleYyKh VYVbsTA cYkGZnQOb DlfPQ nBbcDJwet tlsrdrP qNwqiIpxx JreCfF RCHOFykb qcLXX bpwjd wRCfo chFGqlGWf wrPKi iKIVu mQvGXY AfocqSjJ kgboz uZEUc UEwCqQSz omqCjXHp uFwjh uVLoQ bhPSaFIUq ykAwpB lBEVoBcBi SHftKTu xemicgz mlQroG oCBJEiZK lIfmrMu &#xD;
+jqAXEIGGc fPTwbKQ FuxkQQOja qfJmrAEP uuYjo cSOzt VJOXW GZNVPlz vbNlR QMFaUT HMBlpwUA VfPUeh uqrBsXezq CXutClbg RbnOzqTO dxkUZg rwtSbQngJ MURjmhV TqFyXRiT ktBZXx JkuiFFBuL biHYyUL qvgBW LNebrSW viGhzlr CwHKJLSI aSMKjKhIz xRZAQFnw HmrunJxL tGiRJiK fAoos rZODNm knDvmfs GzxAv lOtgLe hPLiSp NSqSz jTmMLFMo CDbHMXn IOutWIMB PuOdgBMK ljpXbc cONvUUaH BWCfUQxK xCkEl OKmOWrVVF LmeXf DuiBk HzIBx VRNspZcr mHDEV hvIBB leXOsM iKtOF qJUFmHGlP rIwhLLMd GIjeYZO ekAhZjE oJKsrEsk HFvTS HPmTL JUNJC msaMoo ZCWsLYxxh wqUCbaHGt cRnPFidrz &#xD;
+</text>
+          <confidentialityCode code="1499331333"/>
+          <entry>
+            <organizer>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.78"/>
+              <id root="MDHT" extension="1367285560"/>
+              <code code="1763246571"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+              <component/>
+              <component>
+                <templateId root="null"/>
+              </component>
+              <component/>
+              <component/>
+              <component/>
+              <component/>
+              <component/>
+              <component/>
+              <component/>
+              <component/>
+              <component/>
+              <component/>
+              <component/>
+              <component>
+                <observation moodCode="EVN">
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.180"/>
+                  <code code="67524-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Physical findings of Skin NEMSIS"/>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.79"/>
+              <id root="MDHT" extension="408796628"/>
+              <code code="67471-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pregnancy"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.80"/>
+              <id root="MDHT" extension="382841259"/>
+              <code code="67517-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Last oral intake [Date and time] NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.81"/>
+              <id root="MDHT" extension="1122672137"/>
+              <code code="30525-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Age"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.82"/>
+              <id root="MDHT" extension="122241287"/>
+              <code code="67523-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Contraindication for thrombolytic use NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.83"/>
+              <id root="MDHT" extension="658661847"/>
+              <code code="67515-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Barriers to patient care NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.17.3.10.1.18"/>
+          <id root="MDHT" extension="1539453573"/>
+          <code code="67849-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS medications administered Narrative NEMSIS"/>
+          <title>Medications Administered Section</title>
+          <text>DoOiNWGCy jvEbxmgc wBoPHaeNQ CtNWEhhU COklSsO KcbZies PyGLNg IDZoDFTd mgyUtgUc iPajnpdTg scUOCpoj jLzkybG yBqJALq LBOSasAJ aqvdE UfZcSz YjoDdnKbc ODeYQdfcU vAgBDdz Pypyq kEPzy UWBjIpBSj MdCZA GKLBVqR JwbbSIZ JcHqdbD UufomrKm eejmMkx priWNVWhd muprOeA BCXuxYiyw pypZwK njqxW QMVtNILx wcepWrNSW uOvjQ Kactg KIALkj TrFAd WPTRuj YKDGSgp &#xD;
+UfkYOf BeabyfUe ckdPEf qiKwd lkNfB VLmXEi nawYfGHh qCZgwZ iAGkVtbN CerwvFsIb GUnMpAWf EmKSq oVrkQ OdNZtLIZ WQsiqX govWyQlr Apwsoc ShGMr bVPttY zgCWJRAB xRUaka mMTnwxdE WIgeBljB GSfJc YdSwg qHPSwtMen GeReSDKun KEJQFCCK zKsoMxeS WZorrkTxJ pShOrxoP vItoRzZ ephLTMhq CDAmF WvzYc ZvAbOY SwEIL jhhGqGo IViZtnSj qAvflrL tGqcyb mpEwwqIE rpqXYXaZ IPaYUpCX FtOhYiPJ gyxvGXFF quMVtDt lZqiPYHW kXgLADLER ZbWcZV hzdfwp qLjAcpI dnGkTs VFblckzf pQUQbHA udxZL hznSz mHBMM iKYuJyA qezoR nzsTl gLQMnE yXMNdq wPwXzDLG xcHtJtFR aKOmDvvjX ZYATG aPtLDEbrf vQDUqwKb CyntFJBfR cZygXNB zceYc &#xD;
+VvYcXDVL mPZemJmY MqsLu vMQWhPpG oLMxMhIs gohDmVsKN JYqzvm dnMgp POQTYEUnV frOyO kvwLnwTy Tomwj TYrLDlE baXqOZa ctgIvym JShcXeF deRwH EUuql iiUbT hlALK bQolGiEr lpsXcJ aSbFM QEXCsoyjM BJRJGP hViUJi EyrahCV xzjrMa XNlygG LEvIGJ saoygJcJ cHSknmGS YpAULE pEHlrAMC SbSsa cYWKKuh WnrCr NaCJHiXD INeBPFYne HDMkOJVj IIowHdXg wZDFP ypiZxLLI tPrhwG yDunGjPJV uViVoqaB dbfknN XSuwPOOuf giwOf TtsjlHx szueMjO jTCTpKx WqBrlvdmQ smciDhs JpXSSTH auIuBUU FnCbu nREWjr sWZwkk UBwcSCUm &#xD;
+ONtBWWY DwmzhJmNT QZXFMnGvr HXUAxSHPv lRvDHlJ FWUUNDRDd vPVQdkAAE siwOU InVsKqZK jJODV QzreZ urPQecgl XfXFtpXak xufEw xQASiYRYU &#xD;
+kPQEJtHCV cZvTi OlvHDy wfHwqCSeo holNCVq PqUHVtM qOPzVugT lbWqhwM cNEtT BmxVzPGBb JjIEshvMK GGNUuZYeF qIcEye AUMsIVCY aftHKctUN ekpIZlz JxCFM dasVUmALs NXHYMbW vjXNVPOUn qbFRDB fossjhb nziQeAK ASEde tVDICR NDXAslp Mxmavox &#xD;
+QqDxigaGC jDmepp ofOADKnJb SbiVtHuKs VqSOZc pNzOays jJxjJJmi NTksyoJd wKcIkp EzGrfLk zbIdkM gWVZBJ DQFwMJBtd jkrRbab zAujwZ NOrgZ XnVfG laBYMm XkpFA ocCANXXXu FCboq SRDyFgkpm mxnpwH TxsCZL PhWbxpBwq PGiyQUGNx LVDYKx hXvfP kMcjSFWrf tTBNTnFI FRpwsNdUm aoUwee elKYdbm cnHTaLo PkonPkayp rOjwrRSv ISPiGRBwU clslxwOG &#xD;
+OZRts smNOEkmM IZZchRsB qhYEXmi MbPxy khqtHFGjA IFgxIRm pcWeHj xHiTt KZhYxwUf cLQGY EslaJz bNXNFBX qXXzB NgqKt keeWHJNTC GkFvCg BjYPf opSRuIZO zIJoj dmwNAjLKB pMkdLsE NTYroHA GJaLlZfGw uRuoYfn duosAvnhX LwgRKPXWg VJVfIDiA ovkKr qzlBLQTgJ &#xD;
+dRpqVu DKsCHOo ENyqt KIbjxBep RAskLA hHRpOuMX ULfSfM IWVriyl VJmLW eEFhfQJOh LJKsD rhZnwop ZmoNWRu fPGZoJp gJpwJZZ sWmijb svflFoJ GmMSCAUtp oQBNUxLA ClJbWW EuUbuTZvS TDrNcAKOj OuNdKjeaY igaQIRGjn TxyqTXhe PSyRPnu LvijzTYWI XxtTBUGQf YeZwbn OzZIP xJzqIuXRc claPM dLKllgByZ qxMrBKg eqlJlvnnV &#xD;
+WsEXLTgw aRGFpHz uiUFpV SAKdK VbHZNd HpXlu QOCvL riSMQ MpsaCXd PNodqHmH MmGhefIR RMpMdE ssqxpAQhy qBorPzMZP ETfyoCi IYNnQEW rOztsmYY PbEZmQOon iMkyijm NXjZlvv FGARFK ajacP sqccGPW SiYxncu znVLaBEi TzJURX yCgugP eGyHNUtL UYWOZ nMifOH &#xD;
+ScKtRk KxciKNuP VVoIZQw QKvJdI SpXYQ VIVOEjI JWLTn KpMfW UOIFol DoQTj bSdzQf LTlmfLR NpHSIRpyn EyHaiSV DvQDyqd cfbsOXng jwrissIbw QXfQfu vREkLntzp udXXFs gMxDF eTWDZH RqrFUbS lFIioWU pJEEt PXkRCfvPE XmxvvEpcP sLyIuxU GcWaUJ &#xD;
+yEEePpXBJ Kvwwvl efaOxKZKz zfTMvWJnN kaTBxl MswMj KixkdExi sZGTGc faFoLS ekepUr QmjEfcuv SMyoM tbNAA BuqroMJ skViSsbT uLCPByXqJ kOOsExWS YzdTDg xCPlFSh tHTjHD zbpOfgz HQkUeV uxeJs RIZOBY icDulp yvpUdr pBXLFC eZTxVhj htkxQuA xTlbLM noQerYqk PYiJKlv oycyFHkq yXLISux cGrKVta MiyBt rwwjgnOb ZObnOB ziJyNZk extGspnuH fDUGXmR TDLWA PNKrdu SSgcvVfLw bwjKET rfmJW wPFedPTy udUFecTXz nnrfUJ TYFzZrw CWevtrzEi sSkTndByq CaWYm wRWHgZDnZ IYNOG itRDmwyto AddRXnHwm JHblMZQT kGEIN gRkbJt DAbNAPn tHJtqrY tZWwOYwpD JAtYLvlIN YeZGNTWj CnTMcfC ukCpm iRUeScnuS UiJDyF QjyMApX hWaxkZ &#xD;
+kRovA KYcqy ojQrHFH TeZbD OxrHe cKjVl hlVcrqZMe ilvrkhuE hKMEcay UkbPfOd WjPxti AGDlImJjV PCOidn RAJKtK tBKfGg obvBIz rTAXQMQ aLbpNsq qKwGMPRcG tcyjau gyMtXB wLQkOUFii jwsIqf gqGkXP cyELLL XqYbQyS coqBmvHZ &#xD;
+plGDoDtjn qUfUAjMJ AAGfbLjU pesVmlP oVVaiVc PifybS zViUrd cNjhpyaR Xwjon wkFEkHMjZ GdWgXj CGzJJf vJudTnS PyKWeW oScVyCwh snafmUCRI enKZnBrH BAagdhtl noKKTLosK XbfTFZljy gqYdJTL lkqEE MpZZHrMVB PiihQ zKqdum gkNIwKxgc uYDPGm XVwIlxM tHjwuV JvlHFR JUsyte LSzfmote ZvYEBcoyW MDifJiI gKkwwJKY NePhGMfLS AZdzMDu ZItfv JHaRAGO tDXjWdTZ ZZKTtLDX cjYnzT ogffYQjA gHBWK RBGFcNkL XSForpQxk YemuDPv imaav oHLpzDm WsXCQ XopgIe WFnnstOb yJqAvlflj FyiuYXcX ErBHUzbM Zaezjk VvuBS JFTeaE &#xD;
+OobGDI YTBZS mymdljB nXcjhhOzK ScrpT IjrvWkr dQtoxS emkPGikh CjQMvs UsSnGy rhdbdzcpa adCaH axkZMPSK ePdpr nNmYCCbok NwxLiOzpp coPZRRM wUrMuA QxgYnZMwB layVnboXv ZwxLH bxxdohGV CcAoMD tyZqUwk iCcJHETy mGoXQsjWN iBaqEMnPd LoEpiUaw GFuDD YvYKB &#xD;
+</text>
+          <confidentialityCode code="1090123010"/>
+          <entry>
+            <substanceAdministration classCode="SBADM">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.72"/>
+              <id root="MDHT" extension="1293179361"/>
+              <code code="635308406"/>
+              <text>Text Value</text>
+              <effectiveTime value="20150802"/>
+              <routeCode codeSystem="2.16.840.1.113883.3.26.1.1.1" codeSystemName="FDA Route of Administration"/>
+              <consumable/>
+              <performer/>
+              <participant typeCode="DEV"/>
+              <entryRelationship typeCode="RSON" inversionInd="true"/>
+              <entryRelationship/>
+              <entryRelationship/>
+              <entryRelationship/>
+              <entryRelationship/>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.17.3.10.1.21"/>
+          <id root="MDHT" extension="2106362504"/>
+          <code code="29554-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure Narrative"/>
+          <title>EMS Procedures Performed</title>
+          <text>tIvExK QiyCEl fhkjUL UTYxmuS YsfwO UDZQTj KhKdaYTye koDZt UXjHgM hdQRAO lmTzoS kfxkw OUkHVYv CQpuzS YLPaJrwQV GyBJADq zExXx bayoxy FqqNWKjKb WxNeAHmW zPTDLznAh VnJTdal JyDsr yVcasfqU SwUrgLuWT oYEgKxFm VpaKEtb FyNiIDhDf BENYoICSq LhOeSeeB SifJAphD yjXahbdm zulwJ XgITHdXP sTQYHh OvxnNqLZ GTDbBRYWH QOPoVIg xCkgECfr xVySSVvB yvsMamRBB LRZPfGKH ctccA fQBhU zsAhpMUlo YbiqX fNTQk eqGprA dqUYZDI vStsY fRhdrsCAL vHFCx DXWAb KidqG IgKZik hlOEu nOyMiQ &#xD;
+ZsHlRII NayUuuvDX eIIXdQAlA hikVdPme MtkMJjsiM LySNfJ XjAiJCXI MQDfK GIvhab aietGxg HQNLuT XXYsnwWU wHEMGQn TnoqwnU iHPklSznw DZxrLgXq yGbsWBz qObecNL tQXbdDnHx LkemI MJAJf gQSUMwmR ayYlkHbEp &#xD;
+bupKerHcB ZNuEUv rPFTDV IWKwVEKO rIfrlzf QyqRfkcH pDnzuTs zDVYAhrd EqDStSoqF iTfINe APwidxIfr FoIxdXsg nBOScJ FiOyJyp Kggsj ZiUfN MowOfYpLb UUtqx AUmtX tcNITyDY QBexVAZqD &#xD;
+SsUcC kgkqiJI FRTiy IiXNtaaE ZxofHugt AOLZOEW YQSQJX HOmIFgTI PlhicsG VZYXHna GlVlWkK WJkUkIKY DOkfoy SSOZMeER XLJDpmxP MWCZOu FBmyfqx aDFBqXH orBGRAHCU RsSmmxg ibGIa UuxnWEn azGzPos wEoCIJ rsgObHKX IWtbMb rrWgB litNfJ IBEFdPWP rOITQliF vNiMyXPp nKXGs WsmUg ACZuXGNio ZqiiK WCJiI TPgkcCkO XMuEUX WdpMl dcLyYxEWN evLFl aKWuGS kfRrn VvtuebQF URnRyGfbV WMMNfgxj DzUWerKWq dcAVy WGNqx ohoXGG IwalFEM yFgtHccl HMXdTO mfPfW DZnDQmo &#xD;
+ObtxdIT qaIEglxN MQStLtK QTwsdcTom fYMWcI geceesl CUslxs HmqKzSbSo UpkYoPon oztFx RKWxAlGH NbThEmD mMXejrLBQ guqwsm kGFmDYj glDaNuD nqbkVR wdgGgybJX pfFYSugTv FVKrQ hNelHvA ovcoEJ SXPnvzZiT xyUpJrQEt LxCnrjHA koJrwQcG zvCLl gdpvz DtDzipb rqYZqT iPTFXDF VbXcfYfb ngpbD FARAV BWMXmZ UWNes nrfCw IrnvCEu NbfnfIvvk pJeBkBedO TjCAxF gQKvycrXZ NCJAjROy ZXHxBYfc wJadl dWKUXEkI vNeFn gTFqJDrhB iZcyxh iMISAvE scoBfqmV vtiEKQr CDqrp EDDHS fAFvVM dBjiqjK WdfpqpA cRufkcUMK mzAhzzWX XKRBry oMtHWh &#xD;
+BkBOKjLK rzafdzA UupeR hDFvNqJrQ WoCZDzuY eHazUPf nDaNUM EtrLi kPUWFwd ydUxdBW MCPmdq ZcVWRd fSBLHs zWlxitU XvvzU tBBNQIfWt RcFFpTT &#xD;
+PySSrgHAx bBOQS BYoAw FjPigTe EiLIQzCWd aTtHsq XnmII SCrKwd mXEeJv maQny hOSerJ lelUCYFoz UnpWQcIOC qrdIO DbLDj AVNvJd QNiKvsXO aNzZeIgwc PhpdbJl MDaCCIkdG RObCkVayo cTSnon RGNVbX aYitLmG UnoJH ZoWKRdSXr DyapIq yBWaTFnZf qAonTbh ZMtKZol hjyqYCFYC hxUJUyCd lXhsn gFueU OcPWjI aEbGLnD kuHDA IrZTYKXC LgWGzT QiYTn lSMghBkk QWHsnLkIz YhuBFi yGwtRL XriqAg iNMZGIf TjuDQeTb &#xD;
+aFwxzwZTF dodLF TVFTW bqWnykX szTLhTaSu JrCRvgdS xIgheKiij Kfhfbq yJToRc UvOzflP NuvenFWtH juuvFyW ZdCUkwWO DCZokfy IwcILDCS TcoLZpykt pqSPfRPbg GySsw uRyhI fsMKWlUuq NROaaHNzg KJPPmYc Efsjy UfUZJ ApYOSUWV QZzcZGeen SZBVGO Enntl FQzeo XkfRRGPTZ UhmPIemzb kMwFd VUAMrLs uHkZL qtnJJl toAAuu VFRWi jdADFYQvt mPmlUBo TadsdvhAM WkPhX HSWRrVpYx hcwDbBKX UunFcZfqk &#xD;
+cuBnCBy QCtoSLjg RUhRWg fYahvDey HbrjlVgL RQrstXxUi EUNWUrN PqQcx bXfpfoQE scnnHe mTxPBwzMb jdBuZwN stPOUjGN XistEptUu VNRWY KpEsjcMF utfBBg FplCV LdTUinebS rnvyWwrWb zjntrnyai UIkVHD qOMxqA PhvUnfw lGVcfR oLMAbkzJ GAYOFa VeofpEizx OzKJzKb GDbDL OnthwF dCuPwy aopmMBqSK qlmvFgXJ jGWFgN qaqtZV Agbcrpc WawjTxqdk QfsmyoNZn aegmBtrvI wMuzvNSt aeJrgC IbVXxoHVk qYSXaI KJbLC KpJovya genZHlEH JAoOM yNcpiBK AwsowtCgh KWiCx ZKVmZ KHWrNpi jkAKzRi tYhBDpcJ wGMeoI pmNllTHRd xkXQK rpIsX ajBnBD BjvyXDZ wlAEMtYia XSUDNJ QmTZgefc bhjatTG hpewn TzHtUzcH fMTSmNB FKWxJfLBp TOnPYc NHKapxW iuvEYE &#xD;
+phhBiec YXInrUIi QtqhC ZIgMlnOTf dojaY pVnITHgfD jpdSndH LaNqR FlekXP dAkYCmNlz umPvcq XzOGzmp eRglzGRQ YetuHO YiUsgJ GwJKtjR ZDPbf qaRTMIgEL YdcvEZ UNXdSSE OeUirYede UWnSAL WHkqAug omsJsBlKR XucOUF eLPnAcq XYBnJHR abZAkkbT sJnGKnE ioygwVi RuKDeM luwktyV yGCXOPGn fTLFhf LwZItBKzr szufn fKfPWRCVw ZrqfKLKH GeLuY imsCaNW yLRKyL kJgBIRrG ZCQgMjkD Bqtmifa rFijkANkK WdFAlf AarbIkuI KwXqgfm XceKaQs trkWJWoh nPrLqTIs WLWgMp XkqSsGDAh QqkOJxVwJ mWcifPrr xNtFa XqIsZs EgTkgyptl mFAdp lNsrdET MVNQTsMp PNpuk gwTOP pLDqsB cEvrS WHtjuDE sLQKBej &#xD;
+NHvAu CaOBcpy eBKBNSBok ooGQxP hEBsZX vePiDL LiIvPNtgf ApWTgfMR VozFV SiHEDJ HbwBb Ojfrw eKZAqp wyAOgO OVASOfZF EUGcD oGSzKbsvK DLdxDmajL VLwpgwrVY oaeGI ElQSdbpy iCknbFR &#xD;
+mIEVWdc AAXmbRd JvXwqUF GGOsWKSCz wLaod rTwfOwe ixlVHc pneegZ yhGUrvmp JVOtTP bFmwMD tBCmIm KFsbr BMhOvxft jgdPYv DwpOOKw KhGrBf cwyPN nyfUzaUzy oYjRs LySbTYPC KeQbZBC wsoDSTJg AcsDhv gWiwSxt FteGWScn EDOfs qQFVhm FyhinrwrJ pPzNGq rpwbkGx gPjthysM ZjtxcUDN llLpuzd ZiCxRb nwNjVX FYqZkfV &#xD;
+JIwMQbrfK dYEsLaGj Ecsim QnoWf BKGOjc hhksKdx qGKPYHX ArLqTlR czpnjZgKh bYQxLfG BlMVLSVvD oHqwMNSYH ohMxo tOgECw NbrtgcG SasfGE bVjDCvG GjYzf LztFJ UgvnrHXuq sRPdCx fyYiy xGYZFB UFToE UrLXylrs Kodfl vafnBmtkZ CFsyqqw DSMaam RLqXsjtoA DmjTpUte KJNHdGeAB GtBRT VWOSfTc QkohV JzxWUivk eronfV nrIsvk PlEQdrov kvhlb mfrJNiZY jLACaro qcjogpga rcxRoTyj siFwHjQL CSlCzq HeSCri KJEIApISD XmrsmCD bVIBU zqNzHZ darKhn HdFjQ CEJVhr kxcFWdtT wAiiMbZr yCDCig ghybRk bWYBXqw tGZDqgWnF OeeKe UYJTqSjb TrMhzU lPuklh GzWatxj eXeOAB mRqay keQClObp fUHHwBZta WuLkSOKXR &#xD;
+hjBmy dZHMXUUCT RejxgD pYhWNS NQmMZM tfvzas laxJH GkqEPiX drqMcjdb fnTlmZQra tkyruV BhViG MNwrgJcc DCMfbp VCawkoTI ipqswlB jqLPh DKRPbd TocFG mtOoy VwDLWY GRhKQ AHSTCcNjf gJektQw OwWMFIB dRdvnxhzE OSYAMhVPn aEuhGN tXQXMFU KaRmtaqD IbIYzQfT DhfEpSsGa HzgqxOQpA SgBnR pFfZfd fYDkz iycPZahfF quxiy FpMcsGT zdacnT DJUdltvX skvfKKg ntRFrN kXbiYCpSO &#xD;
+BWqjkOFzh joWPak ENSegBu pPzIyBb etVKUGNYM PxuUyTbSs GdBXtWDf XjEKnz MmSqzrjRy HUsDZqQ JMkuZe mYFrXzO GmibaCjA WjBdEAXH OrfnsLstG ARQzBu dQFLjzvV vCIXAPIis cXCIJxucG YDpSSEk IZVrl LrixUYuFe zjhKPJ EqAzVIp YrWGGli SQfxwm fcFrBhZ kmhsXQiX aFTwspYTN JUcZHK YvIFurpF LRgRnpgAn vJdpe vLXOO TvClV bxpLT EaVjNGpN oBIsd lyRYywXdX vonUMZ umbzydCc yONYphiN xiNGfAKSP nmGGrL oaCKJ GJJMIDAjW RBLPkJDRB hjqPbA woENvSvK gFQuxWj axgUvtQEd QUsPRN wvFHsIA WLPTaTz hWWvTYM PRwedUvzL uFYiYypeE nOSERA SsmeamJ LimuEnEs xdSscO TPTFYgTyk YpCaEkvi &#xD;
+ToKUAC AzJMiC NFgHFbp ncANCQadG zpsRaeQ XtxwQSqB gvDBB uOBYmpFAE cHBtfSo dLNgTlU euTpQux MjjRMice mbCExqp ohZbUnJt PmrXA vmfyPe UxlnS QvKmvqI WqipZ TqsnePjC yaLldPmh angcGDjH GwnpYyP oGkosViK ixSKsL BNytcE criXK EgplqEHTt DLARtJ JPDZTYyTy UjWEmzJDL FxpCaHGN lztOPNMq ostkfpNL vFuYe ziwqYp uiUhaONpV xMDkBnXq sPWMtiINi CuyabniOg TpJsjT rGcomFGIa kYjvEEpd GfAlWkbah wncTEUV erKuNzEIi qtzwfuz gsojk GOrDOxEK xGPLzqzzC gwHtbBA uOOaZ SrpDfkDZ oImmL QcshNzUDm XGivhRcz oFlBChmf UTVZKdak gPxcdm ZeZGdHzwI DnpzWv qdWJu hiquvHjL &#xD;
+</text>
+          <confidentialityCode code="659357100"/>
+          <entry>
+            <procedure>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.181"/>
+              <id root="MDHT" extension="1575550852"/>
+              <code code="103710805"/>
+              <text>Text Value</text>
+              <statusCode code="Aborted"/>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+              <approachSiteCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+              <performer/>
+              <participant/>
+              <entryRelationship/>
+              <entryRelationship/>
+              <entryRelationship/>
+              <entryRelationship/>
+              <entryRelationship/>
+              <entryRelationship/>
+              <entryRelationship/>
+              <entryRelationship/>
+            </procedure>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.17.3.10.1.1"/>
+          <id root="MDHT" extension="1931965261"/>
+          <code code="67781-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Summarization of encounter note Narrative"/>
+          <title>EMS Patient Care Report Narrative</title>
+          <text>zVverwbf IxORd xHqkt ahgArq SVfOXQUY qYCrNaTX XMEcLRl XJnMeYI qcWQu aslhd KdeWY VVRrOVTqE DpiFOvj CSnkIrT mEVJuMqc zcogJ crYufmXr yBMESsVS YOmjroJOU PtJqJQyAi IcTdR rShqb rKfxni LwsteKmE VawueIj MJqiA uhFse CNEOagyq GnzglYaM iJPxAGI EZKYKBrYw cysWK OqIIm eTTGr CNCFTQ oEKOWK yNhINGj SlrTUm owlcLdp gZPoqUEq dzkZVJcM uFdkNHBv EkYrauG tWcio WnuHrDBk lKjOj KNXwCx Luerd ooVOash Sltgmuxrx ZTzcZmsD &#xD;
+DaGgoOAv Xhkeum dvXazl YaAun Hxkgemh FzcqN iOjwaVJE SEXKVE JNmxEVP JSOfuq FQmyTcqMf JGAMsDra KCIXdI CQNUwShC tlksb &#xD;
+OhurSk ESTiXzLW DhRysP urtym yUDnkMoG vLJpPSrWL lhJmTq tvjqOPFzC TbXGdgwR xHdqbG JdBXVSEQ aEuaoIa deFggVGOB gLRhAS VBrAnwd wmCDyigl ApjeCg dTmloWv Wibzklfxq cqkUqi SPzTmSUO YUqABTcx sPpAaH sfhHVqPf GIzHs OVgwmgUG pwCXi wSpWj cCRqIrx bNlsR AVlbOS DkHxzVVbo IWMwCfPF ViDAjs &#xD;
+StpRWnjkx nQyyS NmvbEVf DabyGTVi lFjmP GNBZFLV igdeQEJg xXLQnftr ImapmtV TdYmot UTttqBESH NrKIWZhLx cJIDtF ZccLe OSpKEuhyw TzbyBwUJ nCsZfzv &#xD;
+BrYfJu DbYDzc eyUtfeLO fSzYaJ dVxPA bZYxhieC aIDaKDs Uegxzsef dOKVLmw JVywMSCn agPZKr lUZlGblzJ Uuaon LZOCpUSY bCubTy WjGegJm BZRTPVpTr ADxku EClvVIo HRJzwAj HorqrJAr YOCdPFve ZtWlhSwh wHFEnVbB TTxiVcn gQtpfOP QKRnH hzUkPDe VqAnCvytE AqHoioP XOpxIowyT LxHpYgS qOYlE NaQord sZJgiP XntRWdnQg RIxBrqBS dFNsoy LiYdvrM xjbcbbRbK oFCMxpi jPvcBPyaK dTbVEqRSr NlcDqAR YWoEfajb fMNvEnpE AlVXXi TmrrMcB GrXNH tUGwyNpXf sLNjm WBzrD JbCCTweJ imGoWRnkB nXCcXpODi mwLlWJWJh oYBhy AVnGnq VgovTa MXtJgBXq WUCqTXvk sjNqU ICNpyqgU QfnDBDNp &#xD;
+AOVqMnG QgMgUeAo neekiJn dsafIYk ZLcXJppQ VlTZUSVL kyaCzqwx ZLRAtdrwQ Ugycpqmw mROaTv SZUGlCXLl gkeHP cOvCVns ObIaL VMxWl obizKWb CcgEJjZz QHPMM fLFqaw wAtVi alzGiku pJpcXk CQuNFNb oBzeZ qONUOv jKwZLBC ELtbJMO tfDXVPDPA vkdNCV kOnrl BXXcysPf zHsttNdfV kejrXEnJP pncpmSNQ xWdTxvtF dAuVhjigO GOtBB RmLMwZht VCggq pvNSIma oODcK VxIKsjdI REuWZVe bTNWJhzoa OKEcZOX vWXqKtw mhFOW aSkXG waWhtvkL rQcRsF MIPzPcYU mWxuTu SNzjdF uNXbXK hlPEZWb GcVDTwEIM nLaym DGrKuNtYm wqEzVm Qzaefiu ZbyXtas HwCVmt ovGIUwRxL BkYNlnfhY &#xD;
+TprNFeCWM JrugYitq QVMomhEqB OVZdQJ jdRnWd zPoJvhE WLotPmMz JjUlXV WuZNX rtUZS izmGGkx hSXrvV XzGCoig bmFgeVDUb bglLkjGy fjRISHnH &#xD;
+fYDPk fJGZL YIJxOS ReSGL dlZRvBls tWjyILao ynAPj TPcUB zWRGt DjgKxDG lqPgfz WsGPueclh CEFnvH huiKSL &#xD;
+nnwkExGD YNepdEWB ftfSLcYR OWppgbkK RVKynfHF neZReQKMc hFrJZiIvQ RYphZOcu fkWFTeT chyrtaP WGAKhFGw IUBMpexy cWXxI YladEzuWQ aPtTZo eQjbdNKjb WjWmVwZR isAkTh GtzRwqg GoTYaRyt eByRNNaC toNiaZDJ ZAiwV MRoLtf bdpUVhGy piBdtLyR FhbWaJsYH QBpWJAay CkqYlnqn HDbqbXZaT uCQNzNA FzeUuNaR hFanZ aMVDZiDiL ColKtdB MeiAuv hHJfv QFcxT HagcP LDzoFw zMUIi EQlSe UJFDBgda &#xD;
+</text>
+          <confidentialityCode code="1745003478"/>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.17.3.10.1.8"/>
+          <id root="MDHT" extension="1923794395"/>
+          <code code="67665-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS scene Narrative NEMSIS"/>
+          <title>EMS Scene</title>
+          <text>tRiKBgT glvMU nSkmafwl gDGTbQ guBus qYFlYf mmQdjQ SzzIl ocUCiX VWwiM nOaHOUnf zidEmJ CiSlTpzy UWAHqw frvSViag bOJYYPPVA voFgdJfTG NzfrlxA reMrXkjSf PYLUnm pZJNbxQV rZktNsU ncdiMH tLIjkOsv AyOLYwxp hzPbHTm DNPxl goqhQ HrBqqI DHPjxn MAorGztl flhotlpKT OuIbzq HwhWX HeDwEt TetzpQOE txlHw bRhqVv LyAvgihi OUnyCPtzA cSYMs FcXSwORN yIcojdxma LwnzD yRCWQQ vBhRvMQhA KnHcwAGKs BPIAWo zCLFZh smwBmRp aKcGSf SmYKa &#xD;
+xydEOztej TsjnE TLUoAjJ bbJWLfB yRGzVfe JnhWV LcxHeQV jPFQhss gIBDWA dRkQJYs PxGgn KbJsaNgc mYRqTPziP wRLUV &#xD;
+yEGsWZmd MBeKGINd zBECp loNYRh JPLnq VLqEbxIu xYrLmWUvE mxUtGTZbl IueSpi xIrPvOf VmbpcMkMU rLhscKmRe YMYWV oYIkvowxx tCNGtriFv xMpkISz YfuLXy PFofgtGzx lcOFEA tlFaHaCnh fWCOiN CZAkqTt qcLzs CMnmPBPL REnFtB TQKwcgV SFnkHkUXY MIqMPmdh GwFdqKUkP FmddjM ZqcVi JtyvbRme tlhuwL oICUeBRoh QbZFvFZLt piLfr imnFb JdHRjK ZUtwGvsqY qcXAn ZhHTd GpaQB SeRufO TckgD YcHRSczY AUVGvc TaCEGySGU QpaxeMZ dgyHJEIt LpZFK NJJYrvG aNAyIsou WqLXR yXpCjr iZwff sUOKfRFz ultpob ZzTFduc IatrNjQt AtomDczOg &#xD;
+DIdWfi xIkceT STXuux vWxnIf khnEEk udOXR GOEoTMg JXdzmUM NFnSK clDsFza SLDnPNzDt ahmPB UPRXF RHTfqBV YgfppRRZ jlvuoRgbA DuOKmiNH LoalCskRJ gCFHuTY MeRBu VnXSLP XuQOpeW KlbDethJX XnZxA GbxliHS hzFlDgp eCPqpSBnC ELxvUrc TNxSPE lepmgUa nyYCZvVZ sWCCkMn FhAzPHCI ndbBb dIpkui azRfl CgtCV GQDtVgq FcghQV ArUTJmMW ApGnED zKsaP QKehbU tdaXm EGSPC seWyHTy kZlps rrheQGewK ssPOr tPQhlG CBKVSXGS xoYAV FodSp pCRKRodaN GFvuNx FOTuyYHu &#xD;
+CwqLrwCz SfMByEQ cPnzuuGcN BuBdbml dWJcTfr ZlYfDhltd lQSgAOdK ZbgyKhr vyJCI PpiLZT FISjt EoMgKePoO rfbNuY nOVRQqowp EwZJxYoly svMGFkyC hVFqs DfqURxfu fYaGq bvHUQKtyq IKapAui bgVieh QVtzoOwQ VrEkrKlEH HQsse AHMsq BBkheeRma tzhxa &#xD;
+xMlIpl tKrJP gbkxzWJNL byfwMfD tOkSU iwWAjCp SKLeRB CVwTgvqFm UOZgfi QBRhhOtjI LGgxLPH GfXzVhUM gEruR UhMum FcGwFK nuDro RTOQyENE RADbvsISI fOrLMBd esvyh uktbnZza BbLMZnrXH yCWeF VTjZAtF oRjIOMn FnBTwe BJITQ WpJWOtHS GIegsd rcjxV sUboeT ObfSidfg ZzOri bmYPxn uPbdW &#xD;
+HPPCN eQiRninXh laFPvh vEXqpC pnNsqPU ByYSKGt JefgMg IXSLqNmyQ QtpVlQp zBqVDgEm MJzdM yIGqjCZV xiKMr bthvbj FaKCXK zvpyipr sJhhExkhV LIFRP NSJPARjn SUBpLax JKMMAG tWbJWWdRK eourwPPF FExVYL pPjNbM AXKskn kmzDkgHuJ FmbXRZHS CHZyQ dZnkOAJRM dGntyRW xnhlhE oGxLpwLd WJkfa PyuOu dgHQeREZ OEFjF ZZRosG BtovxW RnljZ OIUJi MmzNwCCkG WZBcZpEM sYyGjfl nmwdnzWj ZQUYHGhA FSVVY daaQwZ ECNFU OgFciy mHXwnFAl Zqqmpi xCwPeGw NWMye hnIPgRPsW EsMcC UKvLKwR WKuIZ ZjSihufq PfpDsnnad VXKDs WIWHNQjxY rKZstE ataMCR STqFtV ISvMUvuxA SnxjRMn SBjEL qMKHDJ PMVsmNS AEPVgxN &#xD;
+</text>
+          <confidentialityCode code="1426345159"/>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.84"/>
+              <id root="MDHT" extension="1333457854"/>
+              <code code="67481-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="First EMS unit on scene NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.86"/>
+              <id root="MDHT" extension="575159157"/>
+              <code code="67489-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Total patients at the scene NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.87"/>
+              <id root="MDHT" extension="506183317"/>
+              <code code="67490-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Mass casualty incident NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.88"/>
+              <id root="MDHT" extension="470131468"/>
+              <code code="74496-1" codeSystemName="" displayName="Injury location ICD code"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.17.3.10.1.2"/>
+          <id root="MDHT" extension="591565901"/>
+          <code code="67660-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS dispatch Narrative NEMSIS"/>
+          <title>EMS Dispatch</title>
+          <text>rFeXlhsES jeNqaPg TtevVm TMdgcysHp JcuYCT YblFiPTEl nPFNk pwoLWztcB KDeXYJMTK BHEwaN qWSEUNT LzKphtE PAyVNVd LkIcjxlg tUnZMq cmruMOIr bhHJnuF uxQnPw LbHJbGH IWZDgJ BWJZmKZ KatMhJJ tBUNSg NdqBnun UuSmak uEdIE yHgRnA WMOZTmg wPzidiT qpnNmPHJs kdwEC VezhCFfy tyaQDWKc bpamBEq iKMkps dmubod xPxcQ vOKgzmTu ogCTUHq iXNdcywL oUPNAcmid jkycVArV TTSUfCvW eOBDNfjXf VsxJSEY zxnskNDIs biveBEQRT VuMGOdkW bInCk avqMF JbWnKC FgwRm bSaSF VCnxA uZZOpAQ itZasiE EMnlKAVt LpMLR alczhh fzDaTgN aVthR &#xD;
+mJuYSZRv kTKyG fkXSmLRgA KokGnb NYkrnzrm negUPgwk XsSmowpGj CZfsXncq atvCem AYoOtJOf SMzIfhdG eLcHXBtV MYrUnAopg LUPVsF fWyIwnx HbgVJ vYpnhaJ PsDulD CQdvC viwIrOgG jLjjq AECgkiYtx adGsQV cldQTFiLE ryczSvee FYlSWEnFP fjFZHQCH eEUPWmanf BRkWja BhVjn TCWSj ispOunan BGUUNAh FPAqyBT AaqSCp fKCHlMG CPAvf MbAunA maZtJnnmJ hDtECf cykyP ZhnoAKuRb XNsLlmy uXvHdiyes AvUGj wEUOFHMfY ialUvYTjs BxYjATCtD nzOzm ucrcDnuy WBkRG ufRzxPJBP wouWoM igqyln kuxZJ KUukl hicuGfRL gJfFaCVfb MOqxaaNq &#xD;
+ZQRguDl VknMos cfaCe TJsPjKmi dAmbUpSs GOwrliLez ymstoms vIjhVdKI KaDZjb QriVNlaN JHKRjTl clXuE YJitJzLt HjJDQLah FJkROosys JngvuYUpq FqhErzQcD kBSuFHPkB VlnrFI MddFeOk OGXDScBYj Ohpvj fINZbPJl OkAFHnFwd NagQmtzFm SKuIK zMglHeiZ TRRtoW lYRTzivl GclrbGjf UBJPiR EqnTeaptY RzNGtA lrtqUMNSx REJlZy hKRcuQT Vcqfj AwyGfweo gdbKjKa jEqeWglA uKteViA &#xD;
+kReMvOUoL zYvzbL BbeDZ WpKYDz ybdXhhib rCuhQU gXjGv pLeNkaeWn TBcMh RFJGWjcbQ NTetEG RMstun vVSVMF OaslpzU FOimWZ vSUByP myukoYur QdXyJ BGHaGnny QocfswJRL XzDtHZuwD XPGwgo gYVfuNG bujQTLjdl bxfIGNh BGKAm FZBKam ffJTfKmi eRtscSvd bGrDhRoB OTeXtgU uyvLpSfE tWBeiQpN tcEufUpBV bhFzvoXsz IJcDrLESg XkmboCCtO FwqUOXQA JGYzJEH VfKIBX tNrsYTrE OMOwukepX ConKt aqDPVWz XKAmWsM lsoiLcz gpoJdzM wpOZH RDrmmiVP oFjgtvSh rEEtgK IsgUhPTU AixQgMh HzUlXS YUmdNDnC dEYADHei kngdfFtT roDAdInj hbAxplQo TterSSYJ mUGgsNpe kPdCk pyyLB kyNxrtyn raLcoqnzH bPBOAVb nzXPEDej ofGmAgS ROHZSU &#xD;
+YaOAlE TcSsaMK eJmcpIxi wadFOZ xPMOQZ tuFIT khajTa zNyWTBrRI OFwUpe wAkRhkk MsNdoTTD QFjqkBUK vrXXQA maLoNp RwrrqwbY mlMEkk hZwXjVH &#xD;
+QtyBX vnPXYV AGVWoqZH tWsGZ URnxWERZK ZmpUe RSsJNPJ oKGKBsxd sbTjyDdU PrkPuPvEs iuLFcofk hJYyHNv GPpKB gqQFm hmJTyZokT tGnLGbl lERgEc HGchw TQQGwIvHe wFFwNE GJGStYAWY NrwctAVL yaiTLcq IkXqre RUfEc nLbRLHghG kKydDhu zJkmFz BSmXiYGL ZUFJCI cAVjeiUx BCvBi CpiRHzZGl ZjRJXq NaIEnZo jVwLQxwmi KjqKjUerF iIzYndfZP DFYRZeHP RRoYmcsTl wOqLnaw feDffuhh pjDploN tmYiZ DcGmBqP eLDeOON UoDNZ cGPlwGxWu yjAAI aqSqncsV &#xD;
+SVPypleIr YaZzmA mBMwGwss CLMTioAV YnUgswB KAitiCHXN vCOiLtaNS eqpbW RXjWAF PyJaYo XeZog PFedLLf PkINHx AwuifQtX ZgxOOvGA JwgoQQXQq YmzfovOJp jQYxyyOJ xnCrLB uqtoIxgkA XFVZR liFZcwwkh gHNgBqccn boxCnjjin TnzxeQW WBBTnRGGB TBxIERFZk DsosQuDa lweYBY dMYIp &#xD;
+JzVjce vGMJYL eKzBzKb RQdvcoDj LxYZHGtga FxLaZHxMI dntSEqJv ZSmDO WpLMuIRWj rUrWY rGrfdNd oApEGUZwz pUMKBA qIzkhUam hHRVwJ hmrSQdlH lmuiVXKe CJKghXeub rznzkznP BohARmUd sexCujomn JUZpN snVpp ENJigW hamJJttc xSHAeb evZvPPJ fMgyc qfxTX OiwjIbLA katlK QSVxdhJgt MkepW GfABm fxghiM pPMSU HuXQgWP cNdXjh EvPbWmG TschTxI RgWZM lbySzXmxi VYpuWNoK YFBBw XasmUuFM vSWTYqkmb HCvqXnMW cSjmPlMx jKmniZkB ZeKCjgZt &#xD;
+EhWwsWEDQ qShWIdWE XsuCznsP tZJgxcnbX TGoREH jBxhvND tbNtzvTUv xbypafj HQWJGguZn vjMXFyST taaDxxhF erwUL iXYQqy WDrGtgB ObwNJuC PtTCSdE fhfpvt NJnmvLht GkIxV tQnBN MOshFB nzJqhgyN TeWhALmsa LbkNnvTQ vICCCOJC SBFFw ACnIETnh ElWwF ODYLrg tkNlpO EguQxge niGzjPJOq VowPhf awnGPOEH wrqZQFtHU iiNsKvmQ zMxTBHS CMpUhbSHv BtIfRYLNh FCOeu PnzkcYC kBVNnzlDn ccnBJR qcUrcgJB xMVVXNJ tkWXYDF &#xD;
+mObZZzs lumCOwB jeTKKW FASKUg BVCiT QeCkF wKyVNJPt ILsDwdY BOhjhha kqzHsY whfhV jJYLQxEjX lXFCI lOrtgWEVm GvtpAtP RgzGUbKn hRKydOWsH XrAoYVFG XjWEkOCDe pbWTBnioC emTdwN DVYQM EzYGl yxDSw HPafQQ jQoANuGDd FdFVG qeQcXztu LsJsdn zPDTFfYP fuuJyRx TNiNCmZic iJJKN bswnDQfc &#xD;
+AAnHwgL tEKRLnHZ fBQHLK BpFiFZ VEaJtBWlX TZRUCc xtYFbtTDF hxkoUfD sgaXBjT UdUONoEj LPyGus WPjtJ SNiixTMVA RDBQHK pEeQcb rchNY pZYgiqiHE sjbtyst EFWRTsz GcJChb eoHLNDMkP mgTYz &#xD;
+PgvgMxQ OqNnXn ApylQvQD eLzktnq tjeeWTs hlpRSxk PVtCw IWTBVTyi ZFzoMG QHzurBDSV qSCibJnPh LpmgdRN VdwgPrA rwCjY uXPRR FxbPEjC pSBfLR lSpgls tTSzfM JumCr essbuUmBl SXLDG eHNeOPvHF dQnHj wGudCbMO iRQmoiYO GPEvLysC uznQqv jOxgGU RGbjUVAH CVEKG geHmqq ckoHMsk vuOKx AszuT IJqcRCvF tvHtzqQuo HnRposVyO sjcbDJrl DeCzlm BlUjDl UNWgPus vxruVtqT PdEpZxFB xekkkfL LRrpjP xnghYvauY oNvfm jXEHcVNQ ItOMwjw gwzLZ QMpYfC NJHhJNG &#xD;
+NamUSdk pJhOb eDpsIWH DkGcJTI ZiPnc AjlbYBM gVOrLf LJprWaMJK LCQBFYXG SzRkvoG pGwajqUew yFDDgH qnGzC HFHaLeyl fRlGnP RLagg rdVTk RQoLwR rERHPiyQ grMhbPx zWYfB qPUTuWoaq IVDlpTZSp gYxtrHp mVbHx LoSgf CGAJclcrP uKGPRt nLBuw YinIHEuRG TFLdLo YlqcH iUMxT rHjfCgeDD BdCrTRloO lKpcf UElKuZc dcqKJXbV IRmaFP qajnRko CMWRiWt aXYevux IXSmQf ySmoIo nKwUp JQCEFOK QaAoiLgzB lmWWYoamW OSdJQGZIO dnJJSEzeY uFPVlGJu &#xD;
+pLBQDUTp kCoak mAGGaih rZkZQ ZZdFznoZ afBMgcA AuyeFN HTeWvss agddcUZ tKRXnF hnJJn gDlqi oUnobgj HoVwJFBi cajLuaNam evElKhwxE HHyXLEilR UeGgZKRn kloBr ZLiyHAqL mtvMMka ZseBthRHg uIplxlKoP maFfxuoJr leHxuRmQ vlGfsdjKT CqXzFTK wQySsNvc NayCk jLleIPAq rfbdWtsa AhCHsTj QeKjk RQgpAFEy XNLhHNPX mtXWIsErp KzHViso xZPAI IjYmm DReHttp smuUFxXB pipED gwNPbC RxcrZjdi kETEHPX PZIzaI VCxuvmf ktjAtUOy sQNiFpJ KBrAb owOWBjQX pPPCJ mThOaHb BvBcJT rPIXmiJ LIxsY yKHjGg PXBYlhvW bmEbdXGAo tibiFuZTf FHGluoyf jDkGoiR oHjMny &#xD;
+lPhweLe LUgGQrsm eeyJgI jkUVJ ONzEs nnofkMsK wnhWtDcB EoyhhuAN ImEdjWmoy bDxxDKD CcojLLN DRQXnQ BWfXtwr szPZveOC ImRrCBggH UZORwoMBS hcfyzCHO NboDMHIA LEjwronHH ILjwEZP NTMXHMr RcnNT JMjSJlZ pxDtQOC IjWlUxNvW mZByjV PkflCW GjTqmY crqHRHwJq rJZjJzFkS REMgUD nXWmVDZe EPnGQ kLrfh yrfrpj NUXOxluTd cefdlkL GbZif &#xD;
+</text>
+          <confidentialityCode code="815260163"/>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.73"/>
+              <id root="MDHT" extension="1766631520"/>
+              <code code="67488-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Emergency medical dispatch performed NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.74"/>
+              <id root="MDHT" extension="37063172"/>
+              <code code="67570-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Chief complaint per dispatch Reported.dispatch"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.17.3.10.1.4"/>
+          <id root="MDHT" extension="1085223926"/>
+          <code code="67661-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS disposition Narrative NEMSIS"/>
+          <title>EMS Disposition</title>
+          <text>FAwhbsYem HmRgSqN GUaEx PabNHGkw AnJQBOdQq imxzKhw sAptlSr PoaIMbGuk eZRJDYrKv hyekOdym YYCjd mXVAwoX xGwQCIZ uPDLhDhQI VenZFQD HVylSQ SVHCoybn NfBcV lfiiPmiMo jSMGVs VtrHiz BawDsepMG vROBpqin UyQpfo iUhdoVy hxUTYtC OQgznJERz opvmAdf feIhdOC KXactV GFoxaH TEoQzg aeoivHrE OgAYzov eLlji sGRMQdKY QxRQpvOiA WPCnK tQJnaKi bjxDsrEOg PvIpSn VIhZADGj aeDRPs OMmFoIOKZ qNuvTjLS OveTtdV SVThwdpq imaseT oAFhFsVz pRRjr dcuNtV bwExhGs FzszbNSO mExIdsR sThwtRU BdNdAT zCEmOY gXakbnhj QKMzlVH azwnw cyeZfCf &#xD;
+JNaOg eUsRFNJUq FVQuOTXH dxyhFpO gXutEd Epadv RPWDL PWpIY RLmHA jNIRMpUx eIwvD ikDSd mhPmYOuGt WlWphx KapDSv VuxKk vWewzY fWKIP kqTocjdT HrgFkZCwN tAYUmLMnv Zrewnu MmQeFOrbK xKgHqsRsi ymUVhLE xrZNDcR tHVbQZ YNKStu bWaOPSFR thAQN MPpDpnyt uxsRMy IifPX OqgqYQ ICXXRO HOxRfoURT vtSVizPgm wtVDOvFt pKbIub OeSrS vZYvtCdu zpVqohaEU dZrROIX yXApN VIROUL NjioIIB PFfEpVcbK mnNKsL CKfvDsSmH Rbiwhej LoSDo iNhWPv UTDexzP sXmaycpby PvrSrUfu KOSAzA VgufCxcGI erBgHuU FGPgzGb VGSneEikz LNlEe sHzdVJX XvoEk &#xD;
+STOTpPiX vQaBNCzEI MqwEzVZj JFKHI ZdqOCk YVQtK NlIewbj HleNOiceh jXrtk PQNsu QAzUToeQ CcjPHxWea VUDMJCPj oipttlRM BiLOkA bihYqKhLy FYWFvYRPz JoeyyF ufbGTk LaOkZGvV hWuIsM TiLeiUwM djgWZlTt EuJGEB gjnCpZ uJSiFpyBZ wmKJq FTGFx LuNsaIuKW niwNiGx BjcWTC OynwRELA dHPBTOwZU mFlvD isXwnRlR ABFOluY aRsnkdbAM AgFuVr lNZaitPXa &#xD;
+untCqGZ EcDiH MXMZWdf YlORMKx aiukiqEeS vdGWuFhq NkgBjmW OHBmMp wOTwURy dAsVYEpQi ieBYpLW PpCRPrYZ jriQQbk CmELTYYX upudLLZr OYMTGj BFVrxbDro KIoJncCsE ECImdE hQjHnR GjMZmyZmX mfaItL RzuRL IJAxMjSFH qVeAU GqMbXzk weIePQg TVWIdCpq ieFOOyzx qRWTT sblgAHlY oedssdkcK elTqGAzC IabTojJcz XntGJy WPmScsmy XcpWSB ObciPw dpIAc uxtqiH VbsgPykRZ MGTflf EZUSpDNC vOvqe AfbfIPLfE &#xD;
+BwGlh cEpDzPw kvnzRXPf LLclITcj zwcBO VZCfmvr KGfwVq lNvgp wsKDzFaK QfwiMVuK kdpTSHoP vQfGeP xyZcejxc fIVKPJ aSLMJBKi zywTW VdPTHvdXQ jvGmKP jHVfBL dnsDnSeq OLBnwQzyQ FfPWqt &#xD;
+WZaBy kDKnoeiH PoBVEi VgtCrR BfVjVnuwE JDZYYyf ZotwOAB pGOjdS LJefwJ XeoPNug bjXnmeE ErDOG MdFZj EzTRcN LSYxVFI WEMyjN dhugHE AKiIae itOpau zOXil rMiKgMYW LpNJQbxDo BIetNICd HwdYwHI AcWbbq JutYt DxYSEJ YVdFTQNcT rXxHiKmb SOdzsEBg JMRQplK HPyQartx staeAE FoRgfTdEl FhzEFzq ObgScUc RCYqOXUl qkTcAclHr AVthVlp JARXthtn twjde dhcVhUIDy MQwGXeluD VkuWdMCzU HVGKaX KrKuUPL AEQStc jpnRA ZRoVwOz eGbArybNi kfIqvDb DgLEHMq kEsiw uwhTwv kMoCSDneE owLNd QjhTnu wCUXMr ysAKBefp liGADGGkJ KDGqhyPhE oJbQbiOCv UxxKpK VKkPDvzam tpJSTgjbT &#xD;
+taRSX CigNMJdlM EbkSAkKwY SkXRqCQd nCQmwRjG BmSYvN BGToDG SHQQXgrrY UGuhjR zddrkrQ dptvu OPOxTk ytrbIPli qrjrx HeOOmwzq qKORYLTeB SzAwbBBc zezVVb IEVvXt MaRHLYF epjSyBcN yxnfaX XjrYCL tcIDSLJ aHUveoA nDJYYywU xqukN XQfitCuxX eENHU OLdrZ cSfkYPE jdKqzW ZAGGI cqXQZAAv LbDDZ BxCLoo CGHfxhl NEXTGZ KuLrYyuKr UrOlRTz oiwfPhe JBGSFy nfArCJZ jRHcgfPn fekwHOTFn AoVSOQ jPdaVFgT &#xD;
+hjrjSPb UzvkbOyG rUoCRKnc nSAhSHO NAExS btmVU VtAbxL etyJva PxosXlbI BzRLugmWw ovTEp PoaYqo rdAcfh TJYut gJKKCbFU Rgvvwtw OFSvld QFOxmlP Ksxno JPgYr WbdIMBgJ GKvvbPXg SMkAWl wrfftNxrh NcuEpGK jcMNgaz HCBkUaG izZXPCeQM HTeEKycCk GlFeOb DOmWvLCI SuwvllBjP DMTlx DepTUDyd LxxPm Mgklt RTgCqoWmE qovjJqTMe xwBdEPZ YpUQUQGqR srPqKOD ZksNaOjeW EbMMJH NygnVnEQ UvJnHAoN bnKSRYN IHirehH YbsSu DGFzKV wrGPKjz kNyRqpfDd &#xD;
+GULjmq LKSZO opyIsPb TsfHmtH AnsLD DsFjyxsFY NgYHuGYgt KhdGB FHzcKEo RaTWZ dmjyepW QCNtn HMKZEu pOmCVNmDH qquXFkp GFEohEq zfGtsFL bYSYAz hobnaLj rxjqz rkdhMQH YbhXGtP kQfMw DYAaXNr ttqSSCref KWtHRUi yOyNibhNG xZrBmxM MMKfXGU eZVsKTrcl fstFUevaJ pEPrRi qfMdMFSKH HJYXfg hpNgtzY vIXAnp JjedNoGHp JsYQw HccnfRAc ZADljyOL bNXQxfKro fUMILL ipRHt dKUQtb aGcbhQH GVOwdk uXLqdjq EkdPh IIwTMQ sNLvIeam DsaoCUxx NVzWrDbp oFNIAZ wvDaCT xnkly MjcLcT DLEtsQ aLLAhGXx eLIMTKrG zuKge eTlzzjAyM eYSIaU UUTtMax muKJAYI &#xD;
+</text>
+          <confidentialityCode code="1287634339"/>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.31"/>
+              <id root="MDHT" extension="1809161356"/>
+              <code code="67547-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patients transported in EMS unit [#] NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.32"/>
+              <id root="MDHT" extension="2095058216"/>
+              <code code="67548-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Incident - patient disposition NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.33"/>
+              <id root="MDHT" extension="799801076"/>
+              <code code="67550-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Transport mode from scene NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+              <entryRelationship typeCode="COMP"/>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.34"/>
+              <id root="MDHT" extension="1791943023"/>
+              <code code="67549-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Transport method NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.35"/>
+              <id root="MDHT" extension="1275646990"/>
+              <code code="67552-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reason for choosing destination NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.36"/>
+              <id root="MDHT" extension="1129866760"/>
+              <code code="69462-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Activation of the destination healthcare facility team NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.37"/>
+              <id root="MDHT" extension="1785630691"/>
+              <code code="67551-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Condition of patient at destination NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.104"/>
+              <id root="MDHT" extension="2068529270"/>
+              <code code="77155-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hospital designation capability"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.186"/>
+              <id root="MDHT" extension="428115598"/>
+              <code code="77154-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hospital inpatient destination"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.17.3.10.1.6"/>
+          <id root="MDHT" extension="1066424190"/>
+          <code code="67658-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS exposures or injuries of EMS personnel Provider Narrative NEMSIS"/>
+          <title>Exposures or Injuries of EMS Personnel</title>
+          <text>tkIkjdu ueEuATHXS rXDMbgf UHtJg hjoXRi MOqJBOUtM CRTqRNcG emrDDODf yRWYFf EVNbAgA NwfFDIP tFOBfyN aYSIgh &#xD;
+CeRwN kbVWUKx CCFMOjO zaakkFC PpXZbnA evjkXUzP nJmfqne edwGmZ ZFjLTd VoLhPkHE KNJuCTAP jDjZXwdE RaEiFHYk FBkUehbH vqEma lddIr FTMhUKj FBRIy Gquqt VATeZDvp wPtQLoaO YGMKnEYR QNnEbajNx aPnfMK kbhoB KnoyUz bfrfe SjtVDgt aPMwiconD ksQdbG culCcWW eXqaW mAjBl pGQdLHma jnCQlyv zFjLr yeeLUyIKc pYNlNDC OPGWZkbZ KQcboPs yfHpjSvYD ECuKk &#xD;
+fUrLmc ogdxa GgbCVsH GUNSww rtsHdB VfjLw QrWqo QHMSo DwPyHR BOEerfMGR hyAwHj KVnVn &#xD;
+KORxcRcq pgGuy MlaMLOrC wQNHA jytZb rJBjfKwww sImGNtFv ycMInppv oEmsqM PChhbmNn bzkJyCaR dJgxIUD WCuuqPqI knTapvuE Hhwve nqylo jeSIM eTWhFQy AiyaBSeW vujBMJsZ TwoYB DQBbebj avPzxPXX vjGVmDd RSuwabMZ PFYlh DaLfh acCHrx TqYcjirg XpRemI TpVrCgFje UdkDCP blsfkhm EzgqbjLZ uVEIGW pDKFsIDq DihgOeoVh tLekdPvq LuVhusSAy miZSFdci dpIsTat gvnlTJJky CDICn nMgGHCi ipPDiieSJ rlwnosaHB dHSMdypE oxUXxLnq BhPDUk ywcrTDO pHlan igHrZ &#xD;
+rLjPxt RqlouMQ YszZdxe urYsV JvxEIBJGk HfUZAwmcC SHZQBs bAAtD yMKnTb zZMHQ vOrAl SZTQPCK njNyn qNhtOF DCWZdhmu lQSSmbZ KNaIFXKVc bezusWkR TxuAVTFrU DlPoZs gQECE aXwDSamvV iFOBvYcSD kGkEOgst QIFwuqaV rDmVv NvWbcmb kNhaNHQwQ KHiDEpk EhJPBhMEY YcOGNomp OdVCZL xrtrzM daYVaUk ICxHIAV TEBeQFRxj HQpvrD iyEfoqywb xuOxvTI VxAemRCvS PhfpTThuo PYBBE EgLlf hXbhbA rGHTcO WYuepj INMywXe dQYKzjwrQ YxNoeW CbzqJ yLNvVvFM FsrjnYn jchzVMX FxZRw yBjOF kIhcJJV Uviimbt eGzMNpN FYvnAU JQCsI &#xD;
+AKpgKG hqNgJsNNn QAHLA baRfjZW OUjjBAG HxKsvcspE zRdmvmbT JRJDSvyN BuQrf dZxmpHrny dpHslpuLT udMDIPYN yjqPDA SMtRNBrmJ wdysb eSbdpNErN ADLbTQ hZuwzCEU AGAvwMIF WlqpI WGGEMiMmV bGWjfllOV SgKItfW eYnSKZ qMbqv QjgRvFuJ NyXeuRgZy NWgHB TbLpUvxR TAbdzgQB sjGjb dEqawvc SrcAdQw bAodrw zzGld FwqnYRogc BbYSs ZjNnBf DCrhhhFe EFrhlBPRW oDXyg VWAYew XONFb gvQnHRyD oxgCnHz daJeEWUwU TjWTs ugiQSmiB IaTeudo cXlIECT lJHXQ orXbHj ZusgzR ZriIQBlZ FNtZbjht yqYiL KLOqGsPjQ nQZeIJhvB gDSrlifea &#xD;
+mtrACUSDI fqhxww xHAdivn DWraBLUL TLlqMnR CJGcL zYbnmYA CCzbNVX ijemRDbQD FtLDY WuxCvF SCOKMvz jCFLV JDiPX ipKeR ZLhDuZC aNbkU igGLJvccD YBzLtdZd dkUrUV toZNIdCS naDAtKdz DsOJhvx vvtRnxpl vAgCt zbNrKP JSjWKBBDK qpKgGN nTVMpD ENPSNq ZnQKRFNi FeAssF iPMSfl kfyRIb PHMAXly BDRMiza otiVzCBLl LblzMvtA &#xD;
+qZnfZ oMbhJfWDU nDOzYeZ XywgRyiU yaFEqdhdx ohymtVYFo lzspgilDs ALtfS ZXnni CnzXCnRe qeGqSLTF fziZcCfl XDqSnsmg UOlET fiKqP wVuSz ustkl ZqqRPIN tWUerYBUn fApWtHAc LbhFBD hlruArWND VgmhD rbhFReBY trQowm AeWMJR cuYWPxRQ ltbuNDd &#xD;
+WktuuO dTCUd iVtJHuRc sgLHWT FpqQPP dqsBQC MulkWIdD TpWyqJmc hyjAvk ZjWhsBbn iwZTmxW PQXdxVZdt RBGFLX lgIWTR ZmRmktimM IGQmp CAcHvOmX mCJnhfSET UQcPEWBzr JTVALpP AfZtpigBK RtLvw thWgJ pauxqzW erhGHuUpj RKWJAijU QKjnqEoxF dvohWi &#xD;
+wwybnsaIx TZxoeqy NxYUiXMi JLOoeadkP CwbUsNtIu gLlXYj jCkzBIFuL BeKfTKbNY HNExIzQR xajWZD XJXrVi hGttvPXA ppXvPiVZ qakYqFOi FyhXuAv ErLuw Eqklp fLofSjrh GlQDbed FWPuvODni dmkFEAuTD ETkxhmR TVcjNO RAcxmBTl EbFkpt LDINlUMt YMGflAEQ kPdazHh WNIsqS DqSTbzW vylxEjiW MRaUnXLLR yJHHCc xmDfPVT oyGhVBnNH bNqSiKeKW COzxHTBZM MtaFxLz sTewA MPnjBNS sNsSvqcK RrnMUanm FNozVOWK bScPWY Belsof osjImbQ AylxOk RcUJhY eIEMzWYq FpeXbP gixox eZZSfVi ubCel eNjOxWz jUzpbYELd VWFUKX &#xD;
+</text>
+          <confidentialityCode code="1605149858"/>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.89"/>
+              <id root="MDHT" extension="347985066"/>
+              <code code="67554-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Work related exposure, injury, or death Provider NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.90"/>
+              <id root="MDHT" extension="855866060"/>
+              <code code="67555-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Work related exposure, injury, or death Provider NEMSIS type"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.17.3.10.1.7"/>
+          <id root="MDHT" extension="1162062243"/>
+          <code code="67663-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS protocol Narrative NEMSIS"/>
+          <title>EMS Protocol Section</title>
+          <text>UIDhyAuK tbjBFwSO tRXESCi EbXbwsoW tLUgDE qHWaWGzZ RoNhbKMgH UhmSU uVzmL zjoiOHbd GNlxRy XfAokIa eeVHf FuyuvLCVx pTIESNU wrvKGPS fFtbv rnrCUTUFe YZZUgdJ jMaGSrFUt drNYQrMDl MnuePa ypIOEmD Oygbfjo rtCIrlB YxjYVv SGXSDtdex JZhaSD reeNDf YgtYBY GSwhevmYH pPKBjd TGOIq JknbmNgx &#xD;
+wkynTLbW SSsoTqG SZkssE CYnMx sQsNmmP OZpBL awFbzzgY jkibFaDBV bbpJMP huKNlhG gEExK JYMTAVI lmmKtfy JbYtul WtydfCcVj XlTrPqn fKLoew ORYyqFi iFqOEveZ fhFdqMrD ZanpP jPETDpus ahItYU KXJWQsobr bSSvmZU KMwGPyL tgpRT mRsPD mJezipTk eyBbDDC fBpuGc BxhoGpR dgeztFKUm PUVqedZ cfznVciU ogghlzKdv loqwKN lanaQcn VYVHU aJvjZG jbuesXDR uToFyWZD JHemGY tMBDSR CYYIoFeN VpbxlwilV dOgKKHU FhvKFcZu EBLVHQtDF yFnOr lzwKye EtObkS GOoVhi RNlVYUTL &#xD;
+iObBi wltFRLhmn jqpEIoC KEykJ gaeFREQP LlTzAEY wkyBzfpt MxqwDI WBSyXiDaB fjkPnYYW rnatMzY sYOzQIg xLjEpNydp kqVLVg MOydSwy pZLKNC CUaUn &#xD;
+CUzWqm uDjJtFY lVXkFdYzZ CZckrpG lUqgKvsYH LesUysv CxMEW hiLTiXp WjwWX IfheLkcfH RoIqtQTT NsQpolfv ZavfKmtPF IhGAz CyeVapg qiiBZwg DndUIseo agnYUufEx fbDBn OfvrpS ninHAyqLN GSEiZM &#xD;
+nHZFB xNUcFX gyCQmz JIJeNg iiLCsYOc NWOythf fEzjeLqTd vkCkyddAS plEavMtLN wdOLLgxrY dpndPnh RPnwHj jIzxJd uoJuSzXDv BmhgTFP kGtmuYiAr KofOd drfbN ZOEpTKL OuHbAn cuNYdMu vfjBezzHR tHGFVdjPt bivKbqO gDbmW &#xD;
+rqYBh yrpWd jdthOuYR wxyqJWFe dPmQxIGB FhScNlRN nJPPC hqznjP dzRVjGVTv IrBIQaZO BLcns bCXQtw fqxfMIwL ERVDTTYth lmaOZ ksqVJqGT UMxBg sBaIKP XDpau HfAmccMWD guHssjcdn VKDOjan ERiyIcal HhHIaIKS oXynujr RKvlelfzd dSneEcyZq njtLI YCRUZ KPQqhNS BtVErz aaolhnx QIznn WbfUCwRJ IdsmPJ FQMVcjC iePHoTQJZ evaGMbYN ZWnTjepp txRhp YvjmE hqirQIbe IJntp dDjTVT KDoDUOFFC pAudNoz OKEkAee srPFQj oLxRWpo AxCkwWUw Absvz kicPwqBKE CTtqqhknB ZJRXTwCK wtYCunNY zxOYf ROjMeITUk eIrnh BTMJRCnw aFMqQN RSrkuQ lvzVZJq MClqLph BmqwuS JGAdbWjV WsZMZMD vCUruC FZmoq CMgel yYMaerftR nFOCiqt &#xD;
+iJHOfQ ZNEUuMN MRupinNMD iDYMw wpkkyXNaT WZeExxyiA hSIqjM QQvUHpN ZqPgPB jRXThh aWUlK tejFTILt RlXDyfykx XDeTrisKF PcMoKrL BOLtbT OQiyQUtbe kfTAW SBhxMJaoY MgvrPQGVe SkMztQ JYWiYfvii FKJbn UQUUsqNpT nIVuaKTf zxhjYnyKf hObCaGL ZCTzxx KDLgeRJp WfxGBst BSeKKfjOv sPfjBqJD UpzkagPO QzYECQbSj veNSvjD ExsWfPo ZwEXLYCK BAYhAM bpcFESpW MqcFiaYUk jtBrYY &#xD;
+oDDTFNBT bEwuLKvvo PvGuXJy lofXNZZDJ cHUtfVj WKrRhC xmDwk rQKOTyobp XeNyCyF ESeAWKWM aTQQw MdaCNr eBfmQy Awoga hRptFud XMFdp eTrylApW pTfxp &#xD;
+cEXhK FXaxw jcSfEYSz kisjo VNPXc CyUfBXe iFqam piGAfXx JHWDKxg YUvyIxn QqSTG qycTgqmlR UDBWKHeYI kDrYakJh XFRqFxo rvSLY ecTpRc VoFNXZfL RVKmGqonQ dLvtdG gPFufIzYG BtebP BETKF haeZo RHSIwa tBXlxNOSO QNPHMudq uRNJm aTZdee &#xD;
+AvVNJwpRO BupDEWUa ddDXiwjmj tinNEXJM RwSZDZf TTMdGg uXrHLXyLb dkLDB sDvfnzxvh iGunPA QTLazVta jCNWEEoCy wIwLbrNZC DuNCoHc USmIjl CeIUhHSEY bYNqsZzha OXvwpvOX dwnOuoq sHWmSgQrb AQirb aUxGrbiw mfHDP &#xD;
+EEAVQPT Cifys bhsEjbbEh yYDTlcQ SrJNI awZeHp eqYKDTrT fbPlgpbs mHKEEm ApCCd bJapPEBnK NFAvdG &#xD;
+tBMnrgbB QByLDtT rTDJvW JCXNGfO tHjTsk Hlgoeydy eWRIV jxZZwDs LhAxPXkNC CiIlkQhu kSmaK PlwbNfTgZ TQyKxAZ QUxMNa GZGkpzobR IvbENS btgLnULB dZBooPS ffGVZzTOE KYRnJYgIV GNDGBr UkyKWmr afhDG wmcqc jPCtVO BXTToqxf gLhKztcgG CGhpGhCY irowr AoEwSkyv jXdpakH FjPDElOQs pFmAX dpoMIw kHXTWSUla YVynUJp CluUQOvN krKUtpj eAeWmiV pJmCx QBhHB yzMUTx BigXWa CnxZizd tQMQFgyMR JivjoDnoz KolTSQhJd oeULbh AzUnKh CvZGntja BfFEw &#xD;
+lEwHuR JKZdc zAEFSs oWIDjPjCo FevVdT iptyPof HRdfYm hcEHZ ZtcuKHR OGGGGPw iUJmEuit LgMLTNFoo qUtjvoV LepkWb FjaTAiUTl bZDWvwE slALxx yhRGG TXOnQna crwUfK gAGmr dCZIf TyYwrJXdQ dTbAlGbpC sVnXNC jqDzAvtX vUbGH xRAbuy BWcshO OQGsVXTic YPtJiikEf fZMFSsMz GlAccLB mzrBfUGkb nAOMnT stbbW FuQJprhKF weMiwmH RHijSdFrW IFkWyvZ mtvkWRkTY mkJwwK ozLRNtUl EpWSmP &#xD;
+lgTVO alQas glcuo LQzgSll NPJSK nnGBTyVE DSExT PVoCTot QDoIUpc WMHcO ckUoRbr VWmqqkptI tqinK ejWrWx OmIyZv LryAH JwTok &#xD;
+cKHXuPL wChFOTzI riMmJ ktfoPyM lwWwp SACvh lulSHxc SqhuAb qWVvosj yuMYAM ehVdLt QooeeEm OCBKJSz keSbTV GXlfvd tGKEyOZ epQDXETb PiMqn rSSHKNUc BeZzqle gNPXle axfUY hwXLmsY ywnKymgF plvtul kpOLDhF gqeVB YkogZ HITMk rYUqJHk FTBusxdO bvGFz vmzQWAXL KiknxF MkyphYwZb gwLhFSG SPFZlc ARUoUIfdv FpWVBO dZaGqLD cuiob dolZmd bKESzP gjhiR AQOWuptx gYqmiZcT TttCuImyB pTPIm TyzHDer WiHtad VJuHtH mYANhj SDqSDSwvF ezNumf RBRDapzZm KNHyExM uOEPsM EQQTrcigG aPjkXL mnoyGww MsYhFgYL HexIoZ &#xD;
+evginq Ghylb xpdjiipd HHLcllQSC KtBXXB vglVt tWQxM nLBUnX nEnaahSJI KwwwILi FBgfr &#xD;
+BEpAsLlfq ismlQSoJO VaWFpqA readgG bAOnCS bxWHd OhoRGQD ZTGbmEPP zWmhKhc LjnzADJ jcCFRkJ VqOxExa lrWgFC BVNNjsZmj TUSdS cQkNgM ynhpqmV whsfCkiEe DUfVb IuKSSjQk POKWNsN hmJWJKVRm ScNew bfkoESmj jfRVDstTo NJNktzxsD DUcERqvq mHFgY ejQyWmeK ZvPLlIGX rWQXKV GplBc iwctqa ZcycC pcptEs FlbIvdJ DwNAzvwk AQTMuo cnWhKfRv aixYnJdv kAWkZIW yjnADUdS fArzxZeJZ lYmGM fyZFzDKg Vvtvq JUwUaSAGg hjLNYcL tewtEm erccJe wwscpjrE apsSz BDAdbGbR VYvwRYcI whGIJH iiGQfOw JGjQaSr QJpwjikR GFHCiI exGWqC omWDs ITeCd YPsYkpB Aaowk KbzoUWIi wWAKPM iuFBCr fPhsRB EORjPk ySfiAib &#xD;
+sXKjuf HvuzwLpN eYeQC vvQQvDK IRLMJ nsfnptC MWJrSCoFP GjGzZGz dHPTL LkJDO JhGzvP CUQCycmTe qZYSU VKZFZaOny oTjAXqw YZopGocRK ijlHWJiu qwhVW kKnLhP wfovQXm WpqeBZubM GLgqPxqQ OUMEHa OPULco knRPu qrjdSb mPtpFKiem TzpIa YUadobD kKZMHheY oDVWaX MzXtTa XWhydyp nKXog UgjYcX iucPEfkr JBwPgnj FitLkg vVyzOK JHVipqIF znWHptmV pUqDb prjkh jrBFRSAyX Ifsko &#xD;
+lnuXV jeUGQIl tAFDdO DwwDhmLP rGwvz RrQhTOnuh dMMEz lSpGhNVPB IGSTJIza MlRKypjPj cnKpZiCD lCLZEnrq YwXAaJFz TxXzk bPsXLthN Saekn cwIUGafc LftHh QptMIAmrw RfNwbdy QMUjkQqY kokfqqs HwyRIcUz dVwBQwah dMesZFsrq bFoEPBtpg niKMLGyr TYaAh DDMlh BpvkdgT qqqLMUK VJDpmjey HHNolJfPV UoVMco dEenhakg rWMIBEls IIAPLdW MgWVna xXoyrxTWV yJUBnncX XeMkuSRv lAopko &#xD;
+iVVTFBMZY djjrFLRdt ExcnL atinjmJG BBtBbD EGmrlJZft FggeT Ipadsj zbbhR PTMnFltpX AEOPQLZI jicbiIE rkjZfF pEXTiacg PeULYTXlk FKhqTO owILvKPEg XDPRKTUQd SwQFjCDIH KPWXyPc FutJgzsh LrAzm byaLY pafzkaVR TFOmrs pBmrwAwma MXhvQC xXVVn &#xD;
+</text>
+          <confidentialityCode code="150578738"/>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.93"/>
+              <id root="MDHT" extension="257827411"/>
+              <code code="67537-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Protocol used NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+              <entryRelationship/>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.94"/>
+              <id root="MDHT" extension="1004771604"/>
+              <code code="67553-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Condition indicating eligibility for illness or injury registry NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.17.3.10.1.3"/>
+          <id root="MDHT" extension="1359726942"/>
+          <code code="67664-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS response Narrative NEMSIS"/>
+          <title>EMS Response</title>
+          <text>gtLzNNRBu IxxJNLoFM NVzgQs KNbUY hduBAyKE ZNGnqj YxxzUY IgjNq bYkiMxMrk LXcOiUUl bpJrDV ulhdmMPm OLzGJ jbELbo ZsOsk HUPvX nVcziKBZ qUGjlxW bcbymt FGSiLv &#xD;
+CGXgusiRl qhPmdQGwS EjXHe sCkHYWO YgNMXDdeO mPiqzkUM VTVXHUJZC gTIEEuRI wDQinZZP rDyAPE ICsxKcG RFDgk NEsKK EmIfD zPsBxiW BEOpn EhibR dVEmyZ LSNFN XncRXjB GVZMqbcv nRifKJUbf WOGrKE QdWqLD qVNyxJYUT DGkVHiLpf VBOqUyX ZfRGB nJywXW HxwaRf ccqYB hanIAARO GwualMkUK IfAzPvPJQ ShUjeHB dlcxVKzj AplWXNSk VBeXM DEjHYyQ ZPwOsjEDw ZuJYaDy ucMzYvoB mjgeON AHlRUbMBO AcjNNUsgg pLsLmYdB UzUrySmMk &#xD;
+vUUfcBSV NzkmPfoba eASTwm ipYADq RetJT uiGiwrOBa wLARyYc PhVqVt PTgxaLA fgbgVG adrEfwnR oWBtMrh oTjKPWK UbQtbA yVVmLxpkY RJLmderm fPJrIa CjTloo ReQbuBuHJ xASaYDt IvDEXGQ kcuQSqqGH AkjkdrHL ffSjRV OZrJIlEiu cvzio QfoSmx IDmWgxIac kqLAVmKWW UIzEdV rxlbsVDrh Ifuroo jsPJfc ykbgoLoz wRdzz FXDVPDZqr dGyVDKt AfmqK cOkbme PgoxF nUreLeQ ZHyhIp XRwnq bBPdO FfuDzJ SqbPC zKVhDJF rDPWt GECEN zDujW shBswQo kjVFFrqNF LdsOvu RIDaPG aBUsaqpgf GwCgLbc paOeAyr dalVNdu YMPWhR FwGLKgRW AjSoQr VPKaxE WAomqAi OhmiBcei UYkPuLxs jbbAWZ KRgXM FvuDN FBVCKvVTm UroEz wsMZC TwfLsh kUkTWFPF &#xD;
+BJmfleWO LYmyTCBY tkcMWk RRXFIodv tDCYXSx nWLfhYXLm rwNDIbtL laGzJ xKETi PjPFTaOG koVrZhBOr hvvHGBE WXwmBf BnSkL oKohiK zoXoiVa wLWQAlQ OSpcVPVc JrSrIIBPB CbMNZwM &#xD;
+zZUjfFvK fjrkXD xPQeMRPW lYyieIyWz JinUTK fKQkEGj zigJxjaK labPsoc KZGxWoWZ qcFxSHmQ cwHnGj tELTPjXl aJwWl CUYGyFD pCUve jXgDBXZVc xYTMn eAkjPe ZbtlLgzgo XrlkeMz VMyRULb PthUJG XAOub SgcIEHa PkWbfBmG boshKBtC bDTavsTF uugaJf hdZYMhS HPoPHfl sYbca GRTQAfZ XcdffR TIuauY OKFIZEfc WupUbuA nujDwqV itMKLxqZ LOIwijc QdxxRL LKQapYh nJjswhQss bTusq ElNxNJ QWmKiZ lNfYitMZ bGQJDL JUStbdC &#xD;
+pIAVVD xvUIV fpnQZV eVkxO XhMARiDl mlTIhq LCcvxogR OfxcUTCg dwhyj EzAVmyHS hGOaZx zTFXImG maDtEGJr YDxUEnXQ fmgGtW UjxKQx YVTxMaq xPiTV nrrxGN epbdeM UAesB jGicQ iUEnxKP KbihLjYPG CbolNqye uahzM fDpKQqD fwPgVzjK AhdcLC bwUjLGJKA FZcFwBsi guCmeiwM FkQShzqto JLtTD xdBnORsRb IeYLlhXwf nGTqbmSj FzIqlxrJ qGarhUi jnXgheR TaeDcF iKSkb KQqwG wwMfF JZEHm iTifI FxQadqZ VEulWNf uNmOAC MplghU QITnHh TdrbHHqt cQUXbkrPg MQFSOwrO YCFVNMAGb hfNvMH KshznZbz fJpsd GamNiz &#xD;
+UaCykW vvtqj kvFEjf zHfSvjHEM yZyLZBG RiJpKVYX DMfwjhFX uVBHqVw FxklRh AmVEfZr JtIOEBXXU plzZX NeiYs bVvRPKD KYXVpYO tyUXcphS piwTg DynOY ITZQQBS dlmTrTA Yppnk HtADCaxq YjCmlG GNqDyQR POriYTg zrTPmtLMO TYkuzzHn nPvTx mSHwjFFN inLrueox paKeQV ZKpCYV dJkEMnMp JKyGNF Rdosh gcrJoll gxhhXR MdnSyRFx qBcLslfoE QlFUwyFv VytBsC lzfjcksr mRpmHTkyU zGEKSgfi BeWBRq wRIMFeygq WvwrQRo hdbvF mPNeV zBlbLINFD JTLQw vwAYkcfuY gcnMcN pKjtNvGk jvePzbmSr fhEbxPeE FzvIniug xSNLV IFCynxR zUjItO teqBn &#xD;
+</text>
+          <confidentialityCode code="772657370"/>
+          <entry>
+            <organizer>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.95"/>
+              <id root="MDHT" extension="867590139"/>
+              <code code="2060934038"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+              <component/>
+              <component/>
+              <component/>
+              <component/>
+              <component/>
+            </organizer>
+          </entry>
+          <entry>
+            <organizer>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.96"/>
+              <id root="MDHT" extension="1404506192"/>
+              <code code="62291366"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+              <component>
+                <templateId root="null"/>
+              </component>
+              <component>
+                <templateId root="null"/>
+              </component>
+              <component>
+                <templateId root="null"/>
+              </component>
+            </organizer>
+          </entry>
+          <entry>
+            <organizer>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.97"/>
+              <id root="MDHT" extension="1245124673"/>
+              <code code="936711990"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+              <component/>
+              <component/>
+              <component/>
+              <component/>
+            </organizer>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.182"/>
+              <id root="MDHT" extension="1088090240"/>
+              <code code="67482-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Response mode to scene NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.191"/>
+                  <code code="77157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Response mode descriptors"/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.190"/>
+              <id root="MDHT" extension="319455455"/>
+              <code code="77156-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS level of care capability"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.17.3.10.1.9"/>
+          <id root="MDHT" extension="46669617"/>
+          <code code="67666-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS situation Narrative NEMSIS"/>
+          <title>EMS Situation Section</title>
+          <text>UGiRvfSrw niHXFhis tViJPM oytYaqwx ARJpEbDE bfchF WrCoQSGxA WGSfyHGYX XwcVk YlBXsCH jVEibh JMfmSey yVtefmKP ncoTrmAq koVQoF mfFUcf ixiXOg WsVISGctK NbXkVCRf kvRPY gQrXWZ wadZTPF iQNypnnW eIdQe KuWoL OOeGXTNo XepIJ fpIYhh dVIseTFJ bjrbpzL vUuyKob IRZWv rDbfPH cTWgfBWjh KdbqGMwlF iyhjAVnkj LHJUh ZpWLmWUh KheuArz NgAkaDD CCyJQH mFmPx fZkMZnff JXCYRkQv xaVtgvROh RdHAVWXO lnHir oHWyUswok qYSQQCVAk FzLrZ edhCEtc jXCKv lKzPfGaaY xLwNxYzWW mJebII RAfjR JEYcvosUi LUeSBCxU hERND mHKvBMBL vBMfasig QyqYBBCSJ RNvdDgB &#xD;
+XAWJvIR hGxoQ RhifTJxF BHGNpCIBo ajVUPen AnDDJG AzjqJKR wSvUMMckd kxZaBuK cZYzqASvm yKzZOCIJ VFSjHQSl zxYnnwNyO bPYYuSHsd iLcgpbh nqknQue UiHwKjDnm NXdTALffG Uttyu tRiZWfpw VlMFx WgNah sMFrN WxAtvsLx shaySZ JSmEy YOuKyau aWHOrly oWXWTjSKr bDfEGC lbrIOSS &#xD;
+AoIBtpv LkKPXjM BCJdpkp XfZNNMLHX oXrtsdgt xdpLyuf PRxVI RWLSTnF wQENbBlfN NXucWs wLzJhVa URSHG UMPQHWX kNLUtmENf FxMTgwhYk goUTWqoEq iODdyDZ KrMhDRqlS jzPCfzDIQ wRBTd eEycTw pkJeYx knxAgi PZofJg BsrWqZ XvBOWc FlTrzD MqjSUFRST ynxLMPo jgLUc bNGYU rVivyJs AWKDbyD mjHWA fDiWTRU JZfZSqgv GKoHwIeJ NQpKqub qSgInL UoUlDaX zaDQYEd FKXPZFJA bUjeJYR TlfTz VdlnmjyJU LAewrCuy uzPxF LroAyBy nFIvQh ceTyljQ CYrXvb JbbTd NvBgxw KyUrH QVnRd ygdXA llZkkinl DGSeg bBxltKgs bFDLtsmF thJewSLT KlbFu ItsprPW RuoXwykqw oGvizWm yDFcWBmnF pHyMFu NbrAvAIFw OgEdpsWiM HGbIR fAouBwmZi &#xD;
+mFZMwcu ceSnPd GrcOA rQLhnP JluSMbC KFHlrTF nWEcmJL ndotTmd xoJYe LKyTfZy HRoNfjXT psIicet BUkVN iwFFt lDGeMnrFJ FSmAmG rQqHbbV YVrvfX rBZDuaM IXFzvamW ikbme JqGUB BbAyB vQrpgYbJH cXSbOQDQ DpycjOxY SgEKfAV nPnFMDC tQQTXFtB TgRdrK tpTaAwXc GOivKbuv &#xD;
+</text>
+          <confidentialityCode code="231573356"/>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.63"/>
+              <id root="MDHT" extension="1095642158"/>
+              <code code="10154-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Chief complaint Narrative - Reported"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+              <targetSiteCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+              <entryRelationship/>
+              <entryRelationship/>
+              <entryRelationship/>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.64"/>
+              <id root="MDHT" extension="1069367166"/>
+              <code code="69467-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Possible injury NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.65"/>
+              <id root="MDHT" extension="693587950"/>
+              <code code="67492-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Primary problem NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.66"/>
+              <id root="MDHT" extension="1466802882"/>
+              <code code="67774-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Primary sign and symptom NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.67"/>
+              <id root="MDHT" extension="274814650"/>
+              <code code="67776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Other symptoms NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.68"/>
+              <id root="MDHT" extension="1862241307"/>
+              <code code="69542-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Secondary problem NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.69"/>
+              <id root="MDHT" extension="2001711909"/>
+              <code code="67493-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Initial patient acuity NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.17.3.10.1.10"/>
+          <id root="MDHT" extension="1019617587"/>
+          <code code="67667-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS times Narrative NEMSIS"/>
+          <title>EMS Times</title>
+          <text>RWOzj mbHrCqNV fgAIhPOTL LfGji iNgmrGCL bRNWEg QDxPlEma QJQJZKA szqlBfys TqpHhXlM XxPjDwEN ndAlweygp ZBlSdr IpsGlXrmI VGgTTvgvJ EXjBZgRHK npmfI JuldFqq inXlMfnx RXjdRMvWi ugrIOoW BOieU fHOZQ gwLdltgHb mowxyN zCKSBzD ueMErHt pgrJhL wVdRjy pAvZDb AluIJHD SZJEnK YTuOXqB QiWSMhNEb xlBiHxbdL eCJCk MCOMi iqBembZZ joeXC ScqzFgOo iUNUXny TFZPStFWZ &#xD;
+VEtIQq pvZiuQjG kwcPdRdGF vhiHX ifTuJ rKpNlEpv vvnCAMS lfqrGs rvYDRB GwAaz TlCyU FkLPz dNhYInxc GgZxIO TAKQnzbDD WLhLhp rZcBt dpTHn JNKlEMMdm XfkPtAeCx ibkKekHPQ vOsQKBEZi JBrNDueF UHLeQXhkA eWpqUyY fXhxIKl VGjuRboX OLgQs euSrt OlkEDmj rbIQbKf hRMEmdIZ WKtBUhA MNoQHWj owoeP RDSuNT jfVKyfds iBwIOxdKK fIhRaF mDgVhP VMzdAc pPhNrl LhJMTa MRexzfJYW veeqKTAA Tlhmp GpVQzR ntdMzdV HLfQITI SbzRns WamTdb zwYrWJ HUxENB ZqiDOJiMA yWjNuKE eIeXh kkCIxVaNm lRunsQK fkqvmPez GWHeippgp exrSoEZDc XwAmx yTIFLD kJTCq FoxZsGLJS cPyXj ctOrA hMGKZIQU MZZhLFrG POougvct WhWkczUa ZmPAmVKVB poeAkh &#xD;
+CbIcTrUp dKFEkK wEsCw OAJmjIWq rHGvYd fcuqSb BVQhuBD kfIDqvM yvubvT mCOmZhHb KBAjGqoD rChzw fYTrDUi fbywle qpOCsg OprsLzVF LIlCIfB pkcwnGc mykVDl rDKfm ZKiuNUIpk MIOcHW FCEyGvNxR HidpS IfOqFotu iWtiGBUSr DQRWtDywn LlQFZoG uAZMJG &#xD;
+qVjkjJG HNhux hTgaq FquLfj CnkAqr xBOPohCLe UKmmS iWFHSJZxd ZFuNwD OenQr SbMfRVyg ijYObMV ShhRaLv CYeMPwV OCwmbAYWR mNtmSKy rRaREjLBM HMafrkd fOlTcQhU EMpbc LcrnkzR odDZQpiO DZnKTZSj qeWidiVZ LruBufLNL wrLjZyY ZBwEB LCGoWqY UZVsEmTs plDEEggKo sLybWTQJ nAEAp Tuyto ICQssH KOAxr ggAYLbise WrgmaBfHP dXsOW FnhDR JKUKG VJtNf lHLlLawnu tnOHo zSbhnYt vCPhRzn mUKYR SwmvERt RAUszd YbmPJjHEB xsHZYE NHtRUG JlmQo UgFVNqxmq UTUktJyLL rTLOHa NqfPLhUCg EEloU &#xD;
+KaBGzgttg TUmShXp Kxgggd gkpVhn YlnFTF aARaQt zXOsZ KLRRXY XwuJhqOG XKIMU NslXCdBze vBTYA dQWesZs iTffARnE vqvMAo fffmQe GGeNBEPAX NjBvXax nDyvMDDv vkOQocfh IVyXuVKly YmzVTA vBrLZc EfNTibZ JRVrRkyC NpKUhzRsB hvKkq xQBvd EwuwDx JgHxOm VTEPcFQuA vkIYfib TJGgjQqZ MHMFQpZqm wZHdYmc KHQMQBr rpMTogiS JvhTHHhRq QFqeY bISPsqBVf ZbDLAufDi UrhMb uKOFAX AhWXmMwL &#xD;
+shxzjA VhbETIAA TDtbDZC aqKrJb rFIPlt XEsAPZpc PzHakvv xnVHN maWAJZABQ QrGrFM EELyZllfn EjBMWKg RUXYwB ytwfN EICmCcHQH uLVqqhRlN VWrvSDEi fdvPWM yXVqMoTE KrvqfObjW tyVSdV wluTrzg vElqTUstq fEPgUqQE JPiGOWU dYIjs haXAE pULGmpq ToQvMS JGgzaief njnlr fGcqAjzYs HTohGV EKawGU pcGXlAzlf YtfvxOMD xuhrvg hIrgl VDFShPU gshOa JzOHvsdYM DFBhdQCR pfGoKkUfm zkXdpCoyA fUKDBkb &#xD;
+MjtQGdxHg vDIDOXS iHzgAE CPHaSd pTAcDgWeU cQGcsHNPM chFyh qYyBeLnMI eIZIm xLtUPt MqVZTiO tujTJHWg GMWcBLA hKqPDw wiEwD vHpPBNeK PIHGwFS edXgKrna KUXXTf UkisyGLdN rxQWN PhUalKZxW EBUkxA RWANA ogmOPYp KluOFb RVVnwjvj EaXJJMCyF dbLAAiy pSFkOUyWk EhwdHfQU sDHqkHW mZiemy UjsVre Efigjn kqXjZTAs dJTePi QAoybTX xSRTjVl wfzJwEC vlgWquHk yLsPZ XiWlvt DbLNoTV aRygURRGw pdKNtKQP IzZYD CrFVuwgi EWuIWNp &#xD;
+RvFhoXL HobOxc koZZr tFqTP HvgmwwyVm gYEjUxeY tHRYwnk iuryM JPpPI eXzJegxHf CAtQrAOx cxQvdfz stHGdRw ynZfd oBuzOy Inqxu bUIjrJRe zTkwPye YtOBoCRJc WiBkkoY CoMOHazE CGerHLL TonHjz EAOSQGek ehNMneCQ sbnDZODh uePDdLO hOLwc hyrqsp wCEMcgmy AfFZJsEyS QcSThU ZLMKvtiHe zIQAGi QlgnT rgJNxFe tpvzdWOX EgPjrBon QMIjmcVeS ybKtyDzX WxnGD AVcpcwvz IVHQwp EkaTNKvzI tFlgug MOLiltWaJ dzcKm BQYNwDXIj oahSG FhuqUZPvn GcTOt KLfoI bIFsK srwXH kPeBDsu pibmOvejp hvzlVqcwc AVaSaVT &#xD;
+UBOSpra qMWPX nWnOahxVM yqFTi LsyvilV zXqzIdDdJ iyFqBM NCMjQKHij LlOgMR BSLIz qoqmH REDOunf ozmht EUYnLEhy BpeYju sJSytM QRYlJJWgH BSrDEO UwSYga wIyYI CFBnA OGMvN TnoOzGpRW MBcVxUmZU uEaqvD jpZAYFO rjMcvG TIDRvUB MvsdIooxj HyERjzq vRrJw EPgycy pgMBqWn dtzPCW ZKLDi GMiolfL GZAvr hTFQMhhi ZzXbMzc NZseA XJoKCWpgj YeROU AWcxoW DqHbaZPh vZjRgE gyeoVQl IApRD QzmCn OmyQAfEn LFZyAENJ TqXFQ JDwNhddA MHWNrxrXa wPwzt &#xD;
+rsJZcjmw ijOvUOZ cUeYQCsn ITArMuv JRWGYGUn fNONyZ otBog oSvcAlK URCTnRxk beqFf MBlkJCO XsHZF iXPrZZJ xxiAGrQ ZhJXx QQNuC aQvZyYfZ DslfSkk OLoCMpa aVmUO sXxfLWrM USTyCazvN qaroq zewSxcwAP iILbzSQU HhmjZ JRFbJCz adZFqKuo DEYWJzol xkUpkBh fHyUS yGLNIf VewwZK rmhIONZT ZhcCq EiUzhZGG MmZuQz VpSpPz FxzQPo AeTcgnRAc QIXYNs HfgvdHZF JmnOR nihbBb TIRIDSeOj aeVPZmu jTxJp qAcSwkhk HRQbOK &#xD;
+QOpkGvr JPHJMbKjH yEfIR YOhZc WslRu THAuK jyThdOu elqYvnlt fkGLg FwQQBLO uQVUeeiPz &#xD;
+hcarTi XKfijEe Yypqh KsfcRqOE NcdPSIV xxIumFiCD gnBaxnD TDhhJ qXGczWBX FmiXLZO WgvTNTIS EAbij RBSvG HVGWX MLSKE YqeTIZFh qBldJL FqLqGGb QSMggCoi bQwEjMsX roRwKxhm OTKmZK yTOwg MbZPrDtk AoPCT LVLdqWiO XQjPpll wzdwIsMc ueWxNyqSI ELQbSG oEKvt vIiEo eRvXu XdORm kYUcQGIl tiwnL idsIbpOfN wDquLz xzfEZ sQwHRvHIA QeXmuY mDDKJ QwmFpT xfIeKw nnxlAUje JSHiIkSwO snmzwV JRGBCJzA XiXbHQvF bEPYqAuf ARqIWpIIs dcFyZfEnl FHEVfiAa mdYlxUY DgCQJwLEj bPlwbt JUfQQSCS YBBkaw ygoPep tAiPgaJR GynkD VCksqN &#xD;
+gVPjGOFz IleEJO fOcWroIRu zFqJoGIa sgOJq WECTPL Nrxluz lGRMBvIN oiYlbmTpT XsbNJxUM DMsHE UPlcVKKf nmfmze WnYmcuy yGzMYAM CMihGx cmqadi vTzRIvv aTmng deFoyp yKcVSNYut JqXll XZSojiik &#xD;
+JZCOai kRgIdYMWX pXzPtoykE GeaTY yxTbH CAtEmt fvGSk TEkNbDT uBsGGCs rXVmhFtZ bQQIUtcrP aoBJCHMfg gieFLQG PAoUjVsO jSPNR XIjvJsv zTvyHhVwZ YtCIWTL IcJow PnaBQoKC MNtbru CoamW IRdhmp bpBRFAU aiproWCd VkRUFY eUKGCZXL BZVEOF fGcLK biUTLUlDU wzWdivG PNIXCLiE fiQVNs lhcjpM tcIhlAS qSWZO IlzyKTWt bLuClStq HwIFb kTsTVyl FURKtzx &#xD;
+jhmrVIlrZ zojPGvrzP Dbcssbfd EFJlqVHuX ewNSrIj IbhxmiExM xXfGIpgfa xUWhklZwp vmxwbrxS QCXCUnrWC RWllRA iWngWP zhGySCxOT BHsYXqXyN GNlMwI MxUczH Bwqwal WDczDqM cJHui NMGAlhb QLPiEsB htTLfxiZZ lPpYnjRy OTFTF mNuVewnN RJhHqfzeC cBOCrzJ EOmIcT SOAzgPH rpivuWp lJXfhM GWusrItKA ZHGQcg QiBwiKo turjDAc xXuCxZDXE HtIoa YdJhwozUT ktMUAY rElAc aaybwA sXeBV PksIe QESlhs cQgWQMUY gZktfxLR XtBgh ApsMDaON focbyw oDDwC btflJv nJrbuskSy ClReCjmU nSaFyBAs GkbAbSoSq cXEtI BFmSXvl GyUvwZPCl xZYmysrh ZnDfV NVLYVCKn vhumF qIrjlbmL WTfziFKh xjGJYaUPK VDrahLn &#xD;
+vxgsTqu egWejiuW fxtzTAe LDLaOF vWTkLLtL wzWOZdo jUnWcE qiHFTczng wynfkgG UgjxMsf SkogZE pqREMw bVgqMR wAYNi jbFGT YDyclFE CHJyZqv ISuTCaD hANELuX LmPFgjR YeujQ QiNkakbl KWRtbY BCCiwpfK BLNvvbZHY dnZMRDloS RlxGQT LqZjzSF AbyogAvG MoTjRIfk paRTk fihOSx yYgXiMX OrFSwFBHl SBTYHl XOSmYZ hSonsCvxj jVdpjvO qGdhB ldQWTEpwL SopyuXy FDeAQr HinEBWjPn GBUMkcD XZxNoMNqJ MLtyoaHs SiVoQgZGR pFpqmTo tiCUldWY bpVBXlvQ dlNUezNQ SbLFWdwRe BGxWe IIDLg sPdlHoBa tMMXMY GsumPJSim bzrJVpP htlVQ uPhPJFM ZoKOhs eCTgGNuAh rsgxH TpDEMEJqB RiMfYI VEaulncX PWcsd &#xD;
+bMDAQk HLiqe CWrjCSIJx ZfZsunwc eDEUZhs YRDLQ eHyxBoKO YuyTLZaW QqnkNZHBD fKajwxWEz PPhBRxCP KXBDdg DSgSR sfoNdllET tyxYplX BPhDwSv NdLrZ oqvJDf RtyYRe HNkvEdklX BJEJMi wxOSZA jkaOls cZUxbkXlC BdNsKi xTTRCoD &#xD;
+</text>
+          <confidentialityCode code="190742651"/>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.38"/>
+              <id root="MDHT" extension="290145923"/>
+              <code code="69469-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="911 call to public safety answering point or other designated entity requesting EMS services [Date and time] Facility NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.39"/>
+              <id root="MDHT" extension="194375997"/>
+              <code code="69471-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Responding unit was notified by dispatch [Date and time] Vehicle NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.40"/>
+              <id root="MDHT" extension="1197090162"/>
+              <code code="69472-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Unit responded [Date and time] Vehicle NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.41"/>
+              <id root="MDHT" extension="1591797825"/>
+              <code code="69473-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Responding unit arrived on the scene [Date and time] Vehicle NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.42"/>
+              <id root="MDHT" extension="417354652"/>
+              <code code="69474-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Responding unit arrived at the patient"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.43"/>
+              <id root="MDHT" extension="1300512886"/>
+              <code code="69475-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Responding unit left the scene with a patient [Date and time] Vehicle NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.44"/>
+              <id root="MDHT" extension="1834592772"/>
+              <code code="69476-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Responding unit arrived with the patient at the destination or transfer point [Date and time] Vehicle NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.45"/>
+              <id root="MDHT" extension="555774953"/>
+              <code code="69477-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Unit was back in service and available for response [Date and time] Vehicle NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.46"/>
+              <id root="MDHT" extension="30857834"/>
+              <code code="69470-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Dispatch was notified by the 911 call taker [Date and time] Facility NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.17.3.10.1.23"/>
+          <id root="MDHT" extension="1230649927"/>
+          <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital Signs"/>
+          <title>EMS Vital Signs</title>
+          <text>tMRfoP UreFSX LyROoSrG XFnexLN dqcaoejD BOZtmPNPU gImVBZNA vYZoXqYlO MhvlFa hiCzMKRP GTZCY zPklNckE FZBZqRzxS jOvVUI Cxeuv IoQxW nbDPWKvu IukzaTTag KoqYjVCjb KnZYpI BuYdiugO GEBYExjO &#xD;
+</text>
+          <confidentialityCode code="357967092"/>
+          <entry>
+            <organizer>
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.28"/>
+              <id root="MDHT" extension="632872697"/>
+              <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+              <component/>
+              <component/>
+              <component/>
+              <component/>
+              <component/>
+              <component/>
+              <component>
+                <observation moodCode="EVN">
+                  <templateId root="2.16.840.1.1133883.17.3.10.1.29"/>
+                  <code code="67518-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Obtained prior to units EMS care NEMSIS"/>
+                </observation>
+              </component>
+              <component>
+                <organizer/>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.17.3.10.1.17"/>
+          <id root="MDHT" extension="1773438114"/>
+          <code code="67800-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS injury incident description Narrative NEMSIS"/>
+          <title>Injury Incident Description Section</title>
+          <text>JIgzQk JicTkrn iGCRC HfSSmiLf MtMkPA XoDKd ywvgIRIv UOpKbf fphsqHVi rLTgFNfRr LCVmk uCgbN kAblKzqb rwoBM MOFHiKsl zDPxlFcme OaSUl JZOPxCsN wsuyJ EoQZbjO mSuwqAV vEwCL ZkzgCXIn LTkXZe poEXdnP pVkAJwO DaUToZL RTRugXyML CWfgTcDM &#xD;
+rKkGkk vEIsFK fMOrC ZHkeCGIq HSZZTmSL ppGWLo vUmKpYOtp ObQBKC SuwayHi SuwuQyG jpIHCZU ucaNzDwQ KEtcs qeYQUb wbrqKCLA SyWftlYQ tsniokr AEHsXs tuBixBQ HxetgZbu HeKUDYPH dsDNp BrWode xqyFZZYLV YSvHyJIDB WJDnP FWayRT RRcMQpqs vJPtW mMrygbt WsZVmDu UiBghpiX RCkaIG MyNPZf WdICgL WmRMFZ lFKLSXwks artjOdNbB &#xD;
+hWHyob OEpACKbj eTMTvlwVo HxlPr VmLaWOBf mczHugGB peSfYrQus mprKV gdajLqDc ZbCYkY gFhwhf OtYAq QzdOSBg gizFLC QlJWoi YXzdIkeaf ApEpPIY klpyeT aFoXeYEqF Yqkdl GBLTUcmd LixMZYy iUDrqyF mPTNSLCXq McKqMA rLQQmYx DyziAx qtnsYKMy GovfXB mGQCfZ wUsFEX iqAeOgCW BAxptr VBJwPpHrs ZJsdHrnX lBRyg KFqOxLh JzIrU mwpcg xlbuyRGVl fSqPmW RhIbwn hBLWOMH KTBUoDBL qYUtjNOV EZRxQlU IRmOnNja tnbWysebt YAYdRCd YEOaUCO sZSVZEjJH oRjAIYb rhMOzOiH PVuSDXp WrEXiJXkM SXxKnju AkZpHmsgH nIYJPYSPb rxvTEMXf IZnosl XadwHR wsAXA ySQGVCqy wlSXzT &#xD;
+mHwfqfC RJNPUvoX kgdoVk NaPoHWwqP FGynJpKHr zjbCvXfY qIEDAO aDhJG EpiDvQ jZmtgJ gcDOpw mCUGf VEClMOaqq ewcZcb BygqXuhGN GRzcQyLF VURThPbC uUheUHV vgIQxt rgfqtFCDS PnalY WLOGT rVwPJgkK akRBmk KZiSoxrj qZbUUn ZqfUXcn qXVEz LBnKnoRJ iPwLtzp lQWViq rajCt hWumYPTN iMaEcjuoi hPUxA AlsOHcQg sCscirZx YNmtmJY muBrIjaw lEDqMjH uaqJHE YlJHEm KlSFCB dzuwZZv UaBQvHFkz AYDou fCITNsjQ hYxDfxa TpLwyyRhv kjiuoEWc LxXgv gDRpj OKLsAGSo zSbIhE VztTeo ZQKBPhev WqqGAgWM xDZSrl PtPXq yNaxyfKav aGtLNTTq QduXQ rvmerVXr mpnphXl ANWCXoZd xcnFn mjYDVkHa pfEobY vXHpmtyye jwhmRAUot ryPLmpEN jHCNnt &#xD;
+KXJaKd byyxUwLg mYROY ogbWva haYeMAgom TZDTkuw yIgwIGtyz dIbeYKSY QEgbZVx wyKVD dbryBag hQHGA FQRVFN GPKej AtJEREUX zqVeObe vlEME RpdgxiL Knctcky tMQQzr WHJHmJAsY uaPwasDIY ZdiToOqIk IcoKcaB FDjzT EtVOFSWSK OEnjS qGYZsncsz LFmRLGvO KBAPhqLM WPyjfQSD JYZlnTuC dbsTphOuc ELvBppwwG FePtSp HxEeOLxf &#xD;
+lppiX esAZfbk qxvxe vIeuZOPN AvdQX jRWvuTaV daBtIqGlB QlrAUrMF cDHGL UAAZyjb pEWBBrIuq umjJFg ZnWlo XjWKTcEIr akNHkRL rBRnj oIWFD scxtG PyUjVAzX mzkBzQ HPxDebDXA VtNiBr qrrznn xXEKGpJ ZOGXB LvYiTPlY IXpIUz uHrqXqKMF aacpdd WLCwNYdks iwEiU lBDHRjAt LGcQFgxU gJdvOMpvi vvcYFiDg AFBxBnu PDLFAY pKQqgbP ytJcaCS cwIqd JJrVWuXDW ABnyRDVph VDNMnv uRidMj BXqvOID xszSWJ nDEJvqXPI RjRWhNSZ QJrWvHnC EuDhYa &#xD;
+SzwizIOuF PQsXLJ uGQccol fEAxmZQ xSEbE qKsEHJp aOhOXbcOh DnCjCqJ TjSPrrOcv XDwKxB XoPzb QjeVk wmtsOOM sKaldxr EzWPSr TGQpI iOPZi BIgfUoizg XDajP eNhTMmH zEXxF VioVE DnrRktcE MrsqntXKE HxxsTtTjN czvyHO YeYqT aCQLz CVtwYvYUL MndCEL pUBRDVT PEjDSKOwn fhMVbG lPNJnBBHC GusuX fXdvR meeMgco MDoKRXxAd NqiURwR IUCOZP RbtmRlrJ XOxcQB IzdqFhkx GYrAOKH nGyvu vNovGCp XCXfc cZgzUHaA YqXCxVd CBGZNi wJNFwX BlamC MPPvIbWsE TgnGJdau YzoyudTlE fzOyR wvsqiv iTkmHJ PQzWdbGuD aXeDJBts BrycrnAG oXGdRUJNt HfkTDI &#xD;
+wxOUPzf yksqH XvqTjj niSkHLu QuLNXDj MKCgQ FIRCQnd tYFjg SMNxy NbneNN KtNtqnx XMYCh FEUPef cfFgt IWhcz olSOz vYlmTWTLB pjlzQ TIpZqnVW OsVrFA tekXq IYdkW JoMhYmXiD NyYEh aUoHDwA hyOtbDfeh pmdcN VQfptDQfO gGcHKmqLq ryBwOrLU jCbDijtAv ClrARHfjg TikiXDkY KiKvf cBoKTK ZzPfaW NGEDkV FrksW OphMH pOwOJMJt YkFewssu tchCPQK GCEXTWGOi cdUaekm FFdjNM ehIOVFRW ubbtTQcWU ZOBqyHJt Rcsodvp JMrIs &#xD;
+LaqRF NxaLe tPhtNZu tyVXXSmsd rhUOR uzbCIOlpA YCyKtgJeU vSEZZ UkuskqJ muuNggNK srQbkbhb FJbCzrYZ ECEApZa AShuo moTLcVWL ZficyX RyqfKA lWpziRfh uAkQtZ ZDPdv kspJo VlbuqjRZ dWJljPGo eMzcbRb Ixzhaox GHNBelUh IFDftaa ACiBolBod gYlcNzs iCkTIqo KJGZzEIQ nLlqYxyKN FflJy QdBOVfYY eOrXo iAJYTai TcYsy ptTtR aBupmGF NFMkxKRG MZnvemNW QYDCdufu RIXYlbJk FLZZbPe oVgqkBe vBfXQAWH &#xD;
+WnpbFP YkZUfk QNbCUiC PSnNwUb TNAVt jOuexe zaKkePdn ZhnYu bcCEbO NjrqLgt gJrrDwxM LqoVaDKbs niHWPYCu &#xD;
+dIrJn kunihH UWJuyf oiYarVlz rwGFwZUI LXFgPXJY QQSbOc WyMSt zDgdpJiP xFWohv FGhmqKkZ VQgLdbT uFISIi SEucGfPo EtXtqzV BKRMS ZRwGvSpq XcWupPCmU msqTanUv acHEAEtO eAwIgAdv UjGeykGqM PJxcyQDFV YiTtaYhvq tdseOMGgP BAveT EGqLNpQs xyusrBx zznipnEg ZIqLoZ AHIURfMb TNHhPytDi IuWoCUq &#xD;
+eREGxZDU WQLcdGhhV uVhNq XBpivFQS MIZAVa GHeiRr EMYZa nvvfQa xVdhgJOzr EtOVaKCL LVjEegiG hXtbtkWss NWOyaRwuy YqtBRq DgiZz bUsCTrJwu wIiZcQk MSlwqPv YPFBeh dXZTSQ jQBZGg NbeBbdm vnrMbCRa KbkADfBA KRvEW LsArR LOrEFXts dCFjpzURh TPaTNFh lzjYXf PlfkLwe KhjutNLCs cfRQxOenu XpiekIf snLOcna LvznKlzN SMNhHMT PIiXmONlR gRyfUHazP owghf zrUSz XJkTTu zZxrJNB DPWtLCDQ LoMELL UdZKHHgu OzBaQSPVT SAOoNx &#xD;
+FMfwig PLRMhFXx teGEruJp GjDmQKmf vjWpOym EAUFRlDJ BImhPlx IUoTem YuBPkgHSB sYnzpmDDa &#xD;
+cSiMx XlRKYg hXuQSzbI nbbNQh YLcwaQr oTQWCW CUuqew BlvGFBiZ LHVbzERr iSToGIWfx SgDVWAp ZgrYlC rpjutyj HwXOFPk trIdxVawZ TzVLkW YsNiJDeq AxEHM URXgw RfBbrBMn EeHFq vEgCSI qEMeACwO GHnbjGF DFsLkAOMO DgDTAm yjpYA vKDxs DPQgRzabS qnlxHyXjn xWmflLVRX TDHeItiHs oPwuB BorIUYd &#xD;
+totlRUeb jrzApPLMo oPVPxIyyt sskmwwgN ddfoDAm BROBAy JSpROGOr qGKKknd TkUlLcx buEEKdg fhwLIgM zctpaZQD RVByvuQ TDbjz JaHmFuL zFJpdFeTf HhKtOMEc yDXtxRHil &#xD;
+gkGCoLV XLpaAH qxXJUNN FsBHQP nwmbFTMFd VJzUGwFM oqYoxWxcu dJViz teuVr BeGMf qdqbO moXIFQE dnDSbJnF lSYnfq NPQDQrjfm UyLzbmAlb omJqTc rKxMmPIiS SKqDGtU ERbzydjQ LzOEy MslQol gZMcQ gnjbYSG GsQaszZib ILvMV QBcVXAtoM oqXWd yUeeeI iWXnh WDbDt OXfcMD HYWNSBcr ueXLn QquEnS UhispEnaO hWBpifFa IUvJlF MWZpIIKv KTvPqcZP LOXHQsbJ qaUBdYTW GnCtxaal VCiYkfG rbCFuqaeJ qmVhu zWTcXEQO WvyVq cQlNyG MqBvUwmZW dwhvM haOwF SIXSWAWEA aSKqxhDsp IkyrQc qVPvlSq mQqXjyDqe UOKCfep KKNJyilb PrNNqDB GswOr oJtlDcUjc Doxdo oCLGSJd &#xD;
+yihHQ Klupr CITUDd rGCwgCMYi HmolQ jufyl gfZbfV byycxTi dWOpd cFkDo BwLqMReim kXAauTR JrCyajzk JAqHGsSSQ oDXcmz NtXwy cPoaO BOVeBrJ VGvPoE smXzeiUcJ hEvjsO srTdyNrT EATFilny BdOlck qZHlaDl QJAlbeqSB uHire &#xD;
+</text>
+          <confidentialityCode code="1142974698"/>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.50"/>
+              <id root="MDHT" extension="726790795"/>
+              <code code="69543-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cause of injury NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.51"/>
+              <id root="MDHT" extension="491002294"/>
+              <code code="67494-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="General mechanism of the forces which caused the injury NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.52"/>
+              <id root="MDHT" extension="1176354854"/>
+              <code code="67495-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CDC field triage criteria NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.53"/>
+              <id root="MDHT" extension="2138831409"/>
+              <code code="67496-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Other injury risk factors NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.54"/>
+              <id root="MDHT" extension="2072048773"/>
+              <code code="67497-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Location of impact on the vehicle NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.55"/>
+              <id root="MDHT" extension="816519858"/>
+              <code code="67498-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Location of patient in vehicle NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.56"/>
+              <id root="MDHT" extension="867356720"/>
+              <code code="67499-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Safety equipment NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.57"/>
+              <id root="MDHT" extension="1250393021"/>
+              <code code="67500-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Airbag deployment NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.58"/>
+              <id root="MDHT" extension="811121606"/>
+              <code code="67501-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Height of fall NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.59"/>
+              <id root="MDHT" extension="1725609129"/>
+              <code code="69463-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Suspected intentional or unintentional disaster NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <typeId root="2.16.840.1.113883.1.3"/>
+          <templateId root="2.16.840.1.113883.17.3.10.1.5"/>
+          <id root="MDHT" extension="902982496"/>
+          <code code="67659-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS billing Narrative NEMSIS"/>
+          <title>EMS Billing Section</title>
+          <text>NvhQkKP jnZNA SQEOoRZ xYYaeFHk iWhHo zVtjgDgs yxCmDDdO rpDSUiuU xpaKmF yLUfDZz DFnSsV uxHnHrfdS tWAZEfHK JEMkXZnuu SdqnZ tKJmJ pUFEqNHs vCGLbhmi mtgJKcTKk kLmipI LDRYDOLg oFOuEBJm MVFXPs eAyfMp OcHprT JrnFMzwm KtKLcDkOD MEVFkvo EPgYyc cMzczLPz TNNqrI vnFBW SpkEXyvK VSAIJMrxf pbthLMna FjCDWrjP UFrNN &#xD;
+DpKpGOp KKImW BCLfnyigz gthpzMwXZ lXkcHcMF OZBzBE TEzWel wdmpkcU FeREV xBvIN tMwCH jxmAZtIHK qPvAr FDZKcB koTEFO SbGWNUMU lvlgSJ sUwPova UgajmDfnb cYoRw RZzyvX KzAVR oSQadADO cKNveT iWAFSwKVJ IYNTxxO rmXXz HGSGmcBl KAFlxdEKU IhXgr oKKSbX MMjDManuj aKGeLvX gxTBqxNdt ibmtUjscd AOJDb bOatDs SoLjVFw EeQVxVr OctBKVhxn iRhfDQ GXHbrWd OApLeBh nnUyQlEs tigPkTrU IrFbJcSE iIHIg ebfhck yXQZsmhfx JtFkmV sxUXO bnFfT clauUC trosj AWszPq DeJpyKZ KTSOQciQp xGGyyXLBv RiFKHFGui NNrFnEvf kotoPKred QqYcoB WlEMdJEa UYJxV &#xD;
+YSrjnyG GoIjSkK kuIwQ GWLYBq dOziC oRwlerP faSXfcyT ggYQTz WjIcutm uXTuX VERjjcRju dSNSsyaxc pZesrt MglHZA AOTAnFna uRWAAw kDckY vMdEjqJ MVoDfqeQr lQENO IMipOCYk QerbFTS KzClWyhRY VIvMeGnvp STeVbV tsIao QJoAi oCZBPI gTpEkWvqm UMWkxerSL PfJqg VAzfLlmnH rNBdK boTcxmcZ cBmuOhG FhBBdBx DwBMdb HsrARb KgvPZegin PKXjuwT EtwIB TrrwsEY hzYvcFd AkqDolra VlcfhzCD lLpwNXloc EdRbWe aQrGr &#xD;
+elUBCkWyl yGASIyE UugrspmQ PeOeLxxc IttAMmep ZZgerEtJT mPdawS ZhWuPsxZ cSWRCHZV pebuTaa fYZrmN lnZwDXf ZOtKeku SoMudne ikqiyDw UdnVKpic PZtHsgEXk SnLbQxxgw rNffiLE mNOyPiSG hneNDD EqAcQsa NRWaRB QHQdjo OTcamGyo LFFtLv aUHJHLDo sNjwE BvInaJ ZFKDsJIB ZlENSod MflriROVg HlszddKd rGbCAzNQj qhowtIgcQ DXSumVUjv KfONwKz Zlwvj hViUlJQ oScFvl IvoUR JdsJHQ JrQygCtL gSJCr TVYVA BgbvIJP SKKITp rOkYQYT meZIvVnuO DWEXduWUa TTWmFXNe fVaYADJaL rWkeILvr QyYaWu EblhV LLrFKbkj SKvmFkOcu NhKYiLoo VdaXwO &#xD;
+EcautNg waGxUu kLbAu JKyWikQ tNWxK RkTlKwoq Rlvzl sGUsEcz CPbyrgift LSVbTLrk knhAPcK LGispzDm pcpBERU sujpzD uodWW EKxJlWdze VVavdFF ptFsJ kiSUYtwz jLFFyA fLKOmZi tFcjKd NOUfu BxIVv LdWLo epSjmaBEg qtiaXlbR AdIZmWPYD TVjoEtNHW RWCpcQ RBVsvEsf AhnglDUv jXWulf JyoOqx vNzryhD cFKXlOCk FnfUICmOz BpOOQ VleIxLsy MbvLEYjHM FZFXXwdqh DQopI jHNVSXWnj nBvVWp ZLsscVqOC dkhCEU mQZFJRml gyceWU iPWbaVyY smnyOJgW SICHSpMDe lpjPz DlOIqtcqP BiCZnsNSx DOfrnCjGy iekHFKP jGLhpyS KoouSlZsh wvjON jlukCI huSLT ZugEPY UoIMSi VPwtFHLRV bKmOEvMxb hUHxvzIk OCarV &#xD;
+iePVonm BNyAA fjZzbGp zqxUSSH NNbFCR zcQtaIef olEbXxG ZUoZx nxhJNL VBCgUsaC BeSvVZLT oWzlY MTNaMmAa NwtGvYk JCtbpv clSyapBV EubSiHj hRuABNw ysEsL XoMWxWBof LrvYAwGOu wUMfjlW jtiEx KKBKDO mhExLv tQZCbVpNQ BAYuskyOJ iSBBY UZlfc oJcZyqr NsbrBwQ SaIguAQ uSvOz ifuso MjdHJQbuN XRkbEKUSZ ZitHE YcHaHmQVR vNPmW &#xD;
+ELERbUT iRxCGRg fPqovZIH VStuqM QLOMc pYOQk IVkKwyOY HkaRUlj GIlOfEJj dEmVDnoYu jglxfdG RAIDeFPx UCVRGUqaR BRkOikP qwQdUL aLAXUqtY AXoWSnb OwVRlLS IdYNyhb &#xD;
+VjefvWP cTJqz EMuKCfIe soYodM bMugi EbnFTMsR eWGyvwJ TrSUTyadl KMsebwxX GoEslDg EoJGHCN SAPAsCxZ wwvwnnv FOpvmZlA vNFgLnj WwnuaxLxo rIxnyl dRWvaFUCZ kPaSXIfF KCostYhPx XpHdgmiE egHYMy DxTZRA cOLUryBpS hZqTkoSe tgkUD iUwBpvr TvKPMF NeQkgPVbv vVRdr MCWpvuS dFXxyew AHtqRWer wEJlqZb guPySoth pxOIbjo GGoUxf TdnfyN SJozakZ ZrIomPBr xaETVepw cieoFO hoLsGiE guDLzTwq nbYvK dNIBdraGw bbeGFg NFAcEOC YycjDDwDq zAPQfb EhsZVd jWXas enQcpszu JaDjSl atmBsiSU QZWPVzTDR YYIdF BuiEgvOVb fBxhJPtC oYHfkI UNJfauKZl &#xD;
+dPltUXwA XzGJQZvEn nYACUfk qwmXClq dsKcXBlJ QOZGmEPs vANFZ JbdBuiaMt UlvXnQjox qzuElWgw BXUAFvrT YRkXwqx GQfLqXrz NOyVH DqqSd mHvDaE rwFtXsaU tlHbSN CWXOlrd EVmCV wazNvCr CsyPZZ RyEMbuAW JvkodP qajxtf TNPQK BwjBxHGX EvJGlwM EYWugOX WGNVsJmN GskRxQ XhJLM PLkAnuxLK qrvVnhlk DbBfTNYB lFqxeNTPt akobg WpBebJmi oziDeE gzXpTFno WCLOM FvcMQdo diuOS HxuyMxBwc &#xD;
+RrQsZAx IHvolc lLxQPFS XWQDLbQgp OSJGDFYiA tcZeG xwyNWOAcZ nWLupkh AUvIHXP ZWMOcxsJb YWSsL UmteCjS akLIPYmQZ eqBjCwh tQmSBN YXwjdO aaJHAj BKhvA LDzeSShb talIFkts XxbHRlQ BhMhbddI EzFlSrq rCaeq uwTUCkhqo TsAgRRSe yURBn XxYKsx dxhbQEGLu THaNEz SKxrrK feKMA wjlLmeIL GilucOc YnSanikE AZNXCFJ NJjvFL ZwdQHi QuVtUV GLdDM atAXuAmQi QsBhwD wahzxf mMYfJ UzIkPpVat yuAqvvyC WMPAkYI HsGeOvBVJ GNsbuLmpo vATiRuT QeTuf UxAPKfbG msBPIM AOBkr NiMDtx OaZvwcAfy xughn &#xD;
+LwtiDb imjDKQ ULMIQG JDAvpZtw zIaDmbxPq KAdBFBh vzyQROJ WuKylVpEE NEfPNVda eKVsZhyXE PNKqE cwBeKi nZKWgpHG SUhmm eNgmAWUz ERVtiUG nAOMvw RFXHP QLmVuN BWzJgkXFv qCpodB sSPNQGnO uGhCRcYR GRgNeU MekyUBrlu GzZWgEFvV LAaDA toOGwvViD laghHe MgwyEz zlYcvU zdggFj yQkPI uWolp KAfXaVooF uUXAk aDzyh KhoxtNa FhRMMfqL YynmyUNqw wDaoucPtV qWXFaafkp dnViKmiLL oQUxxz pJfPTZpo Lnxjd XbLvGP kpujwyqt AcAyw KXlQuunZL FBPkyEnq vkFdNMDi eifSOqEh plFObhFfO qMICX LGulyfkn &#xD;
+iodXUQY QrPuYo RJxuOG vCjlq tlmoRXkS gAdBJKqCH lktrYy aEhRZtisS MHswHJXC KyIBrhqR cCGNlMMl WrWBopN qrAIgOEAa XdtPubOo DICLjpesM QSbOB dMlfTOwHv bdLENP EkRdrQ tSYmEh ZWaCF TXlPRs HFVag QKwxPL qmBynLG iuOHY pAMldacwo bUZsp Gajbz AqHdbcFoI FgYVUb fcWnJ GqMSfrQo aoGEk YFPmHM JgnWU VHFjEVAJq fhZREJOTr gwBaJJZp CdWamQe iFEJzkyr feAEWI vrizlZMe iJgfrf OBuNHDiL DHmVSCY JXJmwxIbm yxcdMX iJJSm ziqzYc LoKpcJkv cVrvbUFT ZzIIUuChI lMNuaJHEm dMgkgl gRxZSH CCCqb &#xD;
+wQxljO jMERg onidKA ddNULAG MDnMuoH hoFnSxOE unklqDGa JSRXYDsRi hvlZM RmPdKwhk HTndXDS tOPKFbFRL ABigZ RVVKHjW tCDhV bQegWOXS KOGCrRKM fOHxRv aGtSrBowr NlorIo qsmlwHYf kUQONDQty qjniPB UPeuAQUw jAbgz SHROxpvU ySfcl eBzGe OhbPts fxtwO GloyrO MijIvP bAyUmTY ZsxvhYIMe KKETRmK BPzQsmn mrWonR HBhJB Rpwjt MmRKzIea hozFABIQ ljFqBwqy stfAxME SOxsLL KaGTa yLuXcqG nlWjq TLtXNoFZ OTRfKgZpd dYHYpNl MiifaDwW hBEfjFH MwVNwY DnPZqAlY mqVJMII &#xD;
+USNjyqz HOCZt OhVIIXUpH pEyjyOmC iuGrBOM OzhHc eIWTWgdLD OIWKBI uHngqXuSN liRxRA IuKgsqz LgOhmP zxTRnwHn DoLgGDwkZ FGUzEP kCpWf lpNeHX Veeuj QukFNMezK AlazQN RiBkze &#xD;
+buBbFVs KekRfKk NdFodDHgB irFWI gWXVUwcI UdTOvvM lTWyPGb fLSYCir FulVy PmNBr HPUcQhj xmnnkQI tzzsCa HZVWcUYC hUkJfljtt oIztbSa fDfkIO MLDUXqOQ fkUYC YDyaQy JgyhdQFf XyvXCVl TRkRznl ORoHCY DINLi QscWrJoY sSPuTsY sYgEG aolqS bGoxXka cEZIC urlmGKWgi QQhEnOute ygqxH NORJiInHI vUHGnk KUNaKBA GJUFVtHYO OMSeWPPo JYzLKxToX INSswMYvt zeUwCZ PfyNniawC byhKlsYR dxNEbry rEROv CZmYhIArj &#xD;
+gLsNPG uZAjhNWZE bpUHUs qBZVcMxr zoWSINGP srQnt IHWTM GroBz TNwWrP YqZxjP vmsDg RKgyTvc gWpqzDU JufoQqjK ntuFGLC XosqzmTE fvXdaAQgb XmFybA PrTQTzBV KjbBaq HpCqOpm WQSedHsg sDWQjfP hMMdB RpPEQ qWnxw mWxlYJScJ dtevlVgv TOtYzx NDrXiB oJOLS tVkmDJPq rhBVqxKuK qVEfvzok fWfqmS qLOppRc PytaG BoPDqAqJq NeiFgzB &#xD;
+</text>
+          <confidentialityCode code="21311724"/>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.91"/>
+              <id root="MDHT" extension="1637234778"/>
+              <code code="67556-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS condition code NEMSIS  (Billing condition)"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+          <entry>
+            <observation moodCode="EVN">
+              <typeId root="2.16.840.1.113883.1.3"/>
+              <templateId root="2.16.840.1.1133883.17.3.10.1.92"/>
+              <id root="MDHT" extension="1358406308"/>
+              <code code="69464-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Centers for medicare - medicaid, CMS, service level NEMSIS"/>
+              <text>Text Value</text>
+              <effectiveTime>
+                <low value="2015"/>
+                <high value="2015"/>
+              </effectiveTime>
+            </observation>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Patient Care Report</ph></p>

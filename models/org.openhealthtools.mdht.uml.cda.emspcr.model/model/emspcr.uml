@@ -2883,9 +2883,6 @@ Note that NEMSIS collects times at the vitals cluster level, whereas systems may
       </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_EagUtZ-fEeGorI3CPDW2ww" name="TransportMethodObservation">
-      <ownedComment xmi:id="_Ht-BEC0EEeO0H9tywllqaQ">
-        <body>Vehicle or device used to transport patient</body>
-      </ownedComment>
       <ownedComment xmi:id="__OmH8C4sEeWuwoPHpwTUeg">
         <body>Vehicle or device used to transport patient</body>
       </ownedComment>

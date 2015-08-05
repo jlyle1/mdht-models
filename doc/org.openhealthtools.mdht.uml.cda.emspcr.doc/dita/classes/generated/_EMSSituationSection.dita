@@ -72,8 +72,92 @@
 <ol>
 <li>Contains exactly one [1..1] <xref href="../InitialPatientAcuity.dita">Initial Patient Acuity</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.69</tt>)</li></ol></li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::EMSSituationSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.17.3.10.1.9]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10755</entry><entry>LOINC 2.16.840.1.113883.6.1 67666-8</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:10758</entry><entry> MISSINGTYPE</entry></row> 
+<row><entry>complaint</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.63]</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>Complaint</entry><entry>CONF:11039</entry><entry> </entry></row> 
+<row><entry>initialPatientAcuity</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.69]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>InitialPatientAcuity</entry><entry>CONF:11051</entry><entry> </entry></row> 
+<row><entry>otherSymptoms</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.67]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>OtherSymptoms</entry><entry>CONF:11047</entry><entry> </entry></row> 
+<row><entry>possibleInjury</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.64]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PossibleInjury</entry><entry>CONF:11041</entry><entry> </entry></row> 
+<row><entry>primarySymptom</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.66]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PrimarySymptom</entry><entry>CONF:11045</entry><entry> </entry></row> 
+<row><entry>providerPrimaryImpression</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.65]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProviderPrimaryImpression</entry><entry>CONF:11043</entry><entry> </entry></row> 
+<row><entry>providerSecondaryImpressions</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.68]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProviderSecondaryImpressions</entry><entry>CONF:11049</entry><entry> </entry></row> 
+<row><entry>SituationSection</entry><entry>SituationSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSSituationSection</entry><entry>CONF:10024</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:10757</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../PatientCareReport.dita">Patient Care Report</xref></entry><entry><xref href="../Complaint.dita">Complaint</xref></entry></row><row><entry></entry><entry><xref href="../InitialPatientAcuity.dita">Initial Patient Acuity</xref></entry></row><row><entry></entry><entry><xref href="../OtherSymptoms.dita">Other Symptoms</xref></entry></row><row><entry></entry><entry><xref href="../PossibleInjury.dita">Possible Injury</xref></entry></row><row><entry></entry><entry><xref href="../PrimarySymptom.dita">Primary Symptom</xref></entry></row><row><entry></entry><entry><xref href="../ProviderPrimaryImpression.dita">Provider Primary Impression</xref></entry></row><row><entry></entry><entry><xref href="../ProviderSecondaryImpressions.dita">Provider Secondary Impressions</xref></entry></row></tbody></tgroup></table></p></section>
-<codeblock id="example" outputclass="language-xml"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.17.3.10.1.9"/>
+  <code code="67666-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS situation Narrative NEMSIS"/>
+  <title>EMS Situation Section</title>
+  <text>IdgGQo KKXgluuVW izWaI PEMOZ IOONkqy BDAWE FgLzwpmiv tkxjeffKj sWaxomsi MZKai LInDdFwrh vjHnfVinT WLjnpRTe KuvYYKEW oUEhahh lhTeT zuGTBRKz KCZDujT &#xD;
+auNykaQs YPQPd gSmzXkMr eqxhcQx WPKGSrGwl DirCgzCEm veLqjktx rcajd LNTpxeSk nBqZfUWn mxlQUo idcKOE kSOtjE kTpPnSjk oqhEUxl sTKOf mEEuyjD bLbSJcfN eJiBr McTxjGvyS KoRIQ svGpyS bwrewvyLT lDZQqS vxEKxtTER CwAVuqiA dVKzncwdk iaTbOu bIofk YvVRxsM amKNU tmcxF UVbde ZluMGEe EpUiQ ilEwP qTWhlp maBfyCj jKLmasXk lbrYdFr iTieUcIf jGnFE VbjNYVept &#xD;
+FpwMhWSg ZSkxd gcRqcr EAGdIRsq dgqBpTYu iJeFy WazIK UCjbkrN yQbxuLG sAovibGY qXYYb XsDQETEYN TIKSgdy mrqeo glgfQIEA BNgdJu kTLWJQ RdMzHEI VdShAxC rVVNZMb zoEDzsRJC bTDyc xlmkTVQf bvRyfIkj CTezZmhi CBXlh LKJbWIS rrCQCg kHwYP HmrUzYED JrNrv ZrcIA SLpMLMSe ywUlL jQrTJ nvsPQM RVuXiVa JqIoLEQ XOkhxR DiyFSPXIS IgZVtzv tvmTUEhO OQHkkruh ybXdrmcHU lRSgMTJs &#xD;
+nFkUwaQk fcIgI tQcdJBeV JVJcbUgY jpvPaJ zKZAxm ZMBLx CnGmdUVF XFKTIrNtc olZNRQMqH istenBRFE czJEfmTe YWpuJF BkJxBc BYikZDiXU QhIZMxs CDEysqC NUXJd kAfbSV ZxTUTRxb ZTRLr CJLjfU KxiFe UlNnEjt rVmybNS UXkexim bcRQB ueVoZHqdH clqxJvri GPaWuUM MdKCuputH EcaUUT kIMpoZ &#xD;
+HkVatLe jqIXxQZ LVdLb xkXHgS dmVCdb JmsOOuPzl CiNhC PieaAbhcP fSGswXyX GNLqQ rGZddb bPglzk lWvEdi WWlRCteC gtvsm zzmBGlCt OBoFelR QIvlGp XzGWB vEHWG jNVdx NtOml TSlFZLj NLgoe BLuFPCuCF MAmSUvX QgOesTC yArmzL HfPUiHxdH DNVGgkPF eyYTOOSZU KUGHl njdyObQ btZNmEpI XlLXMSfMX PUHUan Amrlgf YUuzifhYx DaotIbiD bpQiTbM XTbVWOE UIWQjRAK NQemypHz OUdCTx GOInkfhne sTlvyNvNW gwNYlJ UlsdQFren YMrLCsAz fcpPD VFOwgWek DgVjc CwbCHRVUq RGqHoiYw hdPVt BzxPww EPAUVr gjvaanV LFYhEm aEaQqXDvQ rdbhWhg ZiLxJU GoCQzY MQCGn HpyoF JWLmU XmBSNCi GtWPtTWNO RSBNOk ulIXW hMUVykE vhCXzG cfgcty YjgBrwF WtXnw IYhOaUr GarFNsfQ BGZuZQ SjXGRDA &#xD;
+bEJri UaCgvnSzJ gGLQFN hbSuBWB hCXYt CxakAf BDSyo pofqtG DASykGfc EKeTrPyPK QBsevilv koMjmU ziDvThAw zHRonG cFjbhTHhu faRJYF LMVAvJQCP eWlmSuGX dDKPzA gwLHWRI wApjPms LvaUh LypGf JDNFxqoA ZAgoZBZ RpZEE PAWtIx TYqcmsFfG TFCyACu AFkMdc VkGagYW NXJlA vXZhN oESKcCJxp vswZNUCxi vupkyuo ZlRBRVJtb MITJg HNgoik RsCnLxDSy lfHTspBFR WNUfJ &#xD;
+TLKeFOAbU dGPOth XrJyaFacX cNAvFEIlH RfYGJj ygWFvsj tHcnK GteTfVPNV tpkDV uLbFhcn spqtK tNwSkgC sLGsP ZoeeLRAV FOBZNMy PbvQjyxE btpYZ PqhWoQctb ceQNha nqAYY NQWTE DCMAr qvmXmy JybsTNrz SzmOldc vJptYhau GEvsd DhNPmt MYbqov bOIbVUS OKJMMYqa nwbcO ZQnZEQ cwXUJmNr XYWBWGz QHnHAplI ypYlogUUY HfLGG EHAeokp &#xD;
+OYHlhqOOA sMnjPiqXu WuXfcAWHu krEBu HceZR HtljCjtD uukHD NswvW SiXBh zVHweDA gSmvRi ZGzwbfSJa lZBHRvcW hykYGhc zDpFTo WJfPRU &#xD;
+</text>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.63"/>
+      <code code="10154-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Chief complaint Narrative - Reported"/>
+      <text>Text Value</text>
+      <targetSiteCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+      <entryRelationship>
+        <observation/>
+      </entryRelationship>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.64"/>
+      <code code="69467-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Possible injury NEMSIS"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.65"/>
+      <code code="67492-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Primary problem NEMSIS"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.66"/>
+      <code code="67774-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Primary sign and symptom NEMSIS"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.67"/>
+      <code code="67776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Other symptoms NEMSIS"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.68"/>
+      <code code="69542-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Secondary problem NEMSIS"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.69"/>
+      <code code="67493-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Initial patient acuity NEMSIS"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+</section>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">EMS Situation Section</ph></p>

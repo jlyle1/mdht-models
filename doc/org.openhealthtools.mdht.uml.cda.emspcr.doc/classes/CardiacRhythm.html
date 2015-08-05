@@ -43,7 +43,7 @@
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.1133883.17.3.10.1.169"</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.1133883.17.3.10.1.169"</li>
 </ol>
 </li>
 
@@ -60,29 +60,31 @@
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:10278), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/CardiacRhythmReading.html">CardiacRhythmReading</a> 2.16.840.1.113883.17.3.11.16</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10279)
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with @xsi:type="CD" (CONF:10278), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/CardiacRhythmReading.html">CardiacRhythmReading</a> 2.16.840.1.113883.17.3.11.16</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10279)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.03</em></p>
 </div>
 </li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">methodCode</strong></tt> (CONF:10277), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/MethodOfECGInterpretation.html">MethodOfECGInterpretation</a> 2.16.840.1.113883.17.3.11.20</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10276)
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">methodCode</strong></tt> (CONF:10277), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/MethodOfECGInterpretation.html">MethodOfECGInterpretation</a> 2.16.840.1.113883.17.3.11.20</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10276)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.05</em></p>
 </div>
 </li>
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> (CONF:11127) <ol class="ol" type="a"><li class="li"> This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participantRole</strong></tt> (CONF:11128) <ol class="ol" type="i"><li class="li"> This participantRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">playingDevice</strong></tt> (CONF:11129) <ol class="ol"><li class="li"> This playingDevice <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:11311), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ECGType.html">ECGType</a> 2.16.840.1.113883.17.3.11.19</tt><strong class="ph b"> DYNAMIC</strong> (CONF:11312)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.04</em></p>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participant</strong></tt> {subsets  Observation::participant} (CONF:11127) <ol class="ol" type="a"><li class="li">This participant <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">participantRole</strong></tt> (CONF:11128) <ol class="ol" type="i"><li class="li">This participantRole <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">playingDevice</strong></tt> (CONF:11129) <ol class="ol"><li class="li">This playingDevice contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="DEV" </tt></li>
+<li class="li">This playingDevice <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:11311), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ECGType.html">ECGType</a> 2.16.840.1.113883.17.3.11.19</tt><strong class="ph b"> DYNAMIC</strong> (CONF:11312)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EVitals.04</em></p>
 </div>
 </li>
+<li class="li">This playingDevice contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@determinerCode</strong>="INSTANCE" </tt></li>
 </ol>
  </li>
 </ol>
  </li>
 </ol>
-
+ 
 </li>
 
 </ol>

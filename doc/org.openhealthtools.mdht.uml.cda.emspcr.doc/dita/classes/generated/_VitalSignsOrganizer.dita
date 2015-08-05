@@ -68,8 +68,104 @@ Note that NEMSIS collects times at the vitals cluster level, whereas systems may
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (CONF:11336) <ol><li>This component <b>MAY</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:11134)<p><lines><i>NEMSIS Trace: EVitals.01</i></lines></p></li><li>This component <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11133)</li><li>This component <b>MAY</b> contain  [1..1] <tt><b>component</b></tt> (CONF:11094)</li><li>This component <b>MAY</b> contain  [1..1] <tt><b>component</b></tt> (CONF:11096)</li><li>This component <b>MAY</b> contain  [0..1] <tt><b>component</b></tt> (CONF:11095)</li><li>This component <b>MAY</b> contain  [1..1] <tt><b>component</b></tt> (CONF:11097)</li><li>This component <b>SHALL</b> contain  [1..1] <tt><b>component</b></tt> (CONF:11135)</li><li>This component <b>MAY</b> contain  [1..1] <tt><b>component</b></tt> (CONF:11093)</li><li>This component <b>MAY</b> contain  [1..1] <tt><b>component</b></tt> (CONF:11092)</li><li>This component <b>MAY</b> contain  [1..1] <tt><b>component</b></tt> (CONF:11091)</li></ol> 
 </li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::VitalSignsOrganizer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::organizer[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.28]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CD</entry><entry>CONF:11337</entry><entry>SNOMEDCT 2.16.840.1.113883.6.96 46680005</entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:10257</entry><entry> </entry></row> 
+<row><entry>additionalVitalSignsOrganizer</entry><entry>additionalVitalSignsOrganizer</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>AdditionalVitalSignsOrganizer</entry><entry>CONF:11336</entry><entry> </entry></row> 
+<row><entry>BodyTemperatureComponent</entry><entry>BodyTemperatureComponent</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>BodyTemperatureComponent</entry><entry>CONF:11086</entry><entry> </entry></row> 
+<row><entry>DiastolicBloodPressureComponent</entry><entry>DiastolicBloodPressureComponent</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>DiastolicBloodPressureComponent</entry><entry>CONF:11080</entry><entry> </entry></row> 
+<row><entry>HeartRateComponent</entry><entry>HeartRateComponent</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>HeartRateComponent</entry><entry>CONF:11082</entry><entry> </entry></row> 
+<row><entry>OxygenSaturationComponent</entry><entry>OxygenSaturationComponent</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>OxygenSaturationComponent</entry><entry>CONF:11090</entry><entry> </entry></row> 
+<row><entry>priorAidVitals</entry><entry>priorAidVitals</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PriorAidVitals</entry><entry>CONF:11335</entry><entry> </entry></row> 
+<row><entry>RespiratoryRateComponent</entry><entry>RespiratoryRateComponent</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>RespiratoryRateComponent</entry><entry>CONF:11084</entry><entry> </entry></row> 
+<row><entry>SystolicBloodPressureComponent</entry><entry>SystolicBloodPressureComponent</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>SystolicBloodPressureComponent</entry><entry>CONF:11078</entry><entry> </entry></row> 
+<row><entry>vitalSignsOrganizer</entry><entry>vitalSignsOrganizer</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>VitalSignsOrganizer</entry><entry>CONF:10970</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../EMSVitalSignsSection.dita">EMS Vital Signs Section</xref></entry><entry><xref href="../AdditionalVitalSignsOrganizer.dita">Additional Vital Signs Organizer</xref></entry></row><row><entry></entry><entry><xref href="../PriorAidVitals.dita">Prior Aid Vitals</xref></entry></row></tbody></tgroup></table></p></section>
-<codeblock id="example" outputclass="language-xml"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.28"/>
+  <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2015"/>
+    <high value="2015"/>
+  </effectiveTime>
+  <component>
+    <observation>
+      <code code="16984200"/>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+      <value xsi:type="PQ"/>
+      <methodCode code="512596464"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="704697780"/>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+      <value xsi:type="PQ"/>
+      <methodCode code="2006982620"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="1437665602"/>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+      <value xsi:type="PQ"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="372862723"/>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+      <value xsi:type="PQ"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="1830773257"/>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+      <value xsi:type="PQ"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="1165723131"/>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+      <value xsi:type="PQ"/>
+    </observation>
+  </component>
+  <component>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.29"/>
+      <code code="67518-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Obtained prior to units EMS care NEMSIS"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+    </observation>
+  </component>
+  <component>
+    <organizer/>
+  </component>
+</organizer>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Vital Signs Organizer</ph></p>

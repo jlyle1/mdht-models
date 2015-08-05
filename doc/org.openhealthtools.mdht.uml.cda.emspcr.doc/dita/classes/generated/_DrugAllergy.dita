@@ -39,8 +39,24 @@ The drug, to be placed in the participating product, is encoded in RxNorm.</i></
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>participant</b></tt> {subsets  Act::participant} (CONF:11126) <ol><li>This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:10208) <ol><li>This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>playingEntity</b></tt> (CONF:10209) <ol><li>This playingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.88 RxNorm</tt>) (CONF:11320)<p><lines><i>NEMSIS Trace: EHistory.06</i></lines></p></li></ol> </li></ol> </li></ol> 
 </li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::DrugAllergy</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.48]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:11340</entry><entry>ActCode 2.16.840.1.113883.5.4 ASSERTION</entry></row> 
+<row><entry>value1</entry><entry>value1</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:11341</entry><entry>SNOMEDCT 2.16.840.1.113883.6.96 </entry></row> 
+<row><entry>eMSDrugAllergy</entry><entry>eMSDrugAllergy</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>DrugAllergy</entry><entry>CONF:11323</entry><entry> </entry></row> 
+<row><entry>participant1</entry><entry>participant1</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DrugAllergyParticipation</entry><entry>CONF:11126</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../DrugAllergyOrganizer.dita">Drug Allergy Organizer</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
-<codeblock id="example" outputclass="language-xml"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<observation xmlns="urn:hl7-org:v3" moodCode="EVN">
+  <templateId root="2.16.840.1.1133883.17.3.10.1.48"/>
+  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="ASSERTION"/>
+  <text>Text Value</text>
+  <participant>
+    <participantRole>
+      <playingEntity>
+        <code codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/>
+      </playingEntity>
+    </participantRole>
+  </participant>
+</observation>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">Drug Allergy</ph></p>

@@ -33,6 +33,8 @@
 <row><entry>LA18691-8</entry><entry>LOINC</entry><entry>Other EMS responder (air)</entry></row>
 <row><entry>LA18692-6</entry><entry>LOINC</entry><entry>Other EMS responder (ground)</entry></row>
 <row><entry>LA18693-4</entry><entry>LOINC</entry><entry>Police/jail</entry></row>
+<row><entry>LOINC_TBDA_539</entry><entry>LOINC</entry><entry>Urgent Care</entry></row>
+<row><entry>LOINC_TBDA_540</entry><entry>LOINC</entry><entry>Freestanding Emergency Department</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

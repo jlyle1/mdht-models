@@ -36,8 +36,63 @@
 <ol>
 <li>Contains exactly one [1..1] <xref href="../VitalSignsOrganizer.dita">Vital Signs Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.28</tt>)</li></ol></li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::EMSVitalSignsSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.17.3.10.1.23]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10252</entry><entry>LOINC 2.16.840.1.113883.6.1 8716-3</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>ST</entry><entry>CONF:10253</entry><entry> MISSINGTYPE</entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:10969</entry><entry> </entry></row> 
+<row><entry>vitalSignsOrganizer</entry><entry>cda:entry/cda:organizer[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.28]</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>VitalSignsOrganizer</entry><entry>CONF:10970</entry><entry> </entry></row> 
+<row><entry>VitalSignsSection</entry><entry>VitalSignsSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSVitalSignsSection</entry><entry>CONF:10026</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../PatientCareReport.dita">Patient Care Report</xref></entry><entry><xref href="../VitalSignsOrganizer.dita">Vital Signs Organizer</xref></entry></row></tbody></tgroup></table></p></section>
-<codeblock id="example" outputclass="language-xml"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.17.3.10.1.23"/>
+  <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital Signs"/>
+  <title>EMS Vital Signs</title>
+  <text>EYQSxyTw MyIpmYtaG utALnsXwu eVoPxhOu hMoTsgIdk NskfrlFL qEOVj RLHdEm ybtXtoX mJFpaZPDQ DhhGSNyV SzpGg eUYXePwSX gSvHSSFrA bASpm nIWRPMp IjIFbh DzzEoHl VusLFX AtTOfem VxyrP qUSLgGte WOQeThpW glUaCG JOBElDV whxpqtx NoVEcvv xKDXUalA drStkWHic MykFhO idQyOiLo ATrtq ErgWwWgmh ouKNTZk OxTtXWc FclkDCc sWisFAz KeEwyiF WPFjc qzYnNZuc qJcLfKU GvqUjcD eGtMS uXqiFky yklvGy SLKSn wvvAGVYr tdQQAM AxXHj CwfksiVT ziUMhLCXB foqEAHIRB qIBnyHC FBQQVnaVY cgjQcpUp FEmFnuMV jBCtzsD wrdgMDdzr WOLqiy ArUkJ jjEszGcp WNYof &#xD;
+kikKMFRba SEHePI cSqmg NbZPa gVPexB iIgrNn BwSyoFHk NZFexo UiPOD JOtfizE dcDmfmkU BzXlha CYkejiZ dWjwXaER KXQYHfbhC ifYebo yvFnkGlz MDEuxzS ZCIUn reMDkA qoMAwai lqRli VMDDdb nOletO zLTGr jMScd FFaPpt aNQwuPQY lzOxaooe obIDtpbY ZXYaG LcImBPc wSlImTDrF DStZrPnk qvDLog GuSinqQF tyIezc bqAtI sObjVk WPIQyd npGrEpsD LCZmFkcQ KvNoDc yjIHCWX pzMEZrzTr uVwAnaeeN xqbsGAuPK vNpZm nFckGu rAXrppefp HvAhs ebnxCjP ijwtP LgHfNhA tmwul HbFUTjU nNdBhEV KiQXcri &#xD;
+lvZHR RRLufAv YOYXmjTWD bWgIC BOhMM UBLlSlNN dslZMNK pJmpmSGET UXPoWDB NPnpK CkUyjEX JLhxybtmM oxwPFbm ZtVtYhpWL WuMMjdMj NrrKcni EjcASqJb sDRZjPhMp uHaOTbLl IfNvsR nydkepkYb eZJcQbyLl jMaJhP DirgNhN hpEZTzTh lbWKVpooA PXkrdJKf Msmlqw omuKChbwS amDThoqyZ iYPVznBC fLmkVniiq zwydr YkGFLnB lEaCbr VyMyQJvDq FgcNRLc IfKTDgew jFQlnSMzv XSAkDrPV PHTTYQi dCRBB CORRLsfJ iJjoTgYD KPjhuF vghEPUk qYZnT lwQOcK XgtQFdi ixeWeDdO RfQtGMwB FjzmUpD ZKFIySpk ykvIo &#xD;
+xJbUMFPP AsiGb BGVCa oijmUuwz SZsPQVtU eBotgg BrJXc MHrpiWeb QKhPTnCO RNBgwdD vajTT DZVELt lFENlGr ulRJLoT SayIrIbm &#xD;
+TpzsmqN tVsWxqoeq hjkynu YRExoeTab zfmWCEX WvRZuBO JzlAwex qgJSa vaBYFetV DAQbibj DbVyNXsz IqcRbQGqz HUefZ sQabLr LwUWQZJE techm kpdXcnLfo sJkjiErNr ozKIw JvDNDFQk ioxUim iPHcBLHI DviGMUhvR HZdSW VRrnzFgo pHvBF ayvTb fCyrjsMb cfUSRA DbiSPr HVkJDLgL VIStVC zUtIpa DUVnX unNQAczP NvsOCM BiGdmP jpEzxNjxs tnLXD UpFzOj CjEffI uNZSXgOcN gxCKF CZPIhyr IXvUroWV fozyBTVF jxNdoaP kHNIj gvKubrZ IMpHlu TSHaq WrRYfQ eKEGARgiF RnuWVL JKNdDqHb PeMXiC MAuFPba POzKEKWn tkhjNsZpX MeqaMt tMTSLPfb ElxoIzV NpNUcDixz AVHzhux PlTCpsml ENRBRY zfCohqJa uujRvd CIQZcf PJOKP IERGia &#xD;
+FWqEkKlTF kjJaZLCL fKsMCLzxA jZbppYWT fzBwUUoDV AqFSQSeiI CANLBz nbmlCHNNV VjAntoAl GblOk FtzYyxTCZ eWPVL LiVVQa vBSUs nihXNsutk dckZGVX vNYkbctzn FQWQqTljM wkOxuAMS dgezZS jokNP XmSdK cltoagB pkFJSwS dKgRoGvm VNpxLcU GSFln WaHMlf HhWCV eDsIJI BkSvCyNg BrWCoNc DbZcnMW bNrSBHxU AkpjLvsHl HvGgKK ZTbYw tEnJT lpUKY WwIno dUVuA NEwHGLxhn scGeQAaBD YQCCA oiYmF iiJjfyGb GXFSbdHI wGdoPHI SaKjzpcAM IBbRYWiss YIyTtPfZP eqfMF BvRANxDFg ocmXdIv YyaRNH uNjCg ecWAtETj pCwzJ tKLMsBG fMDLX rtCad BiRKVZkxl cptwp aRCXWCKk zcUAhtTDC YrnJTas tPqalMu zvNSJTys uCBMnQ ZrnOl HtmiDWar &#xD;
+iCMPdBDv nltgYXr puaGNSXW DGEppyO whzZiusng uRzrS wQzGpVly sxyAIQZRZ bNFte RCvAruuF QMAhJY kqoTONZAj icnHu Qzmzs UBgqBUVeK ZKcPZcMql qYWvjCqE oRhcnoUCV UGYJaEL GRvnsOLW BytSOg yHCehnZv XpcUHYj knmas wxHvIP VHtot zNynVtTn KtqXo bCjOutYV ITkgGA WWCWz PeTgEJ NEAKSoyd Fdkzyae KtaNoYh ujUzycYqJ zupONZY AqakhUN bIigVtH NxBDNPDr YacqGIiEI GzXpEetGW pMyhNfhGC &#xD;
+ezHJYQRu iSqRyLaP ZnIZmdths PrfMEJoz jRGrQ wcyQxK SEdblR RUODPV FuwJcxFI YpsICxY Lpyjw OgbmauPjK oSgDrUHMM YUdsmPv KGVqnHR ihAoB xzHFUEgk scmAd vOAjhIO bUdCoCIXY WgSktpikX ZrwnANKq wbWWo LxMwjosh cywwFwpje RVegnsehr mYnmlbjyW UTleWqIxn lNONxcX ufTXs HXzJLF HAjOeuM JcVeYxl vltExHfEf AZOdNUHKK NFmDO XAXHxI qgHbKnQ XCaQnKXwd &#xD;
+VBmLom MrWBkTY SkrygpU RQbUXLga tLddRVI PvtsRvi cXdfW LabMK uIvye QnILd TEHAcItrP xlSgWl IllpydasA gRzwDkyD jTWdsMMai NOXZLPdV iEgCnv SoCPx YSrtiL xMrRZ jkilpw NpnpRHyI BKzcli DzzYF JxXnVlOP pGLgwzNCS ltKeAjTW DhqFWPBOE hCOhx RdyJjbgW dWKrtpQl cvhqytMT fqtQSKXjY zghoq VVACkvf FePYGMfo VzAQeGJxf AjGmMc NSBWFsOO OOmNNk EYEJad nekZIPnZ bLQme plrHNfpm GjtDdtHX VMMUP UxzuSFQ Fzvky SEuFOaOZ ImWKfA yshQwCxT jXlep mEJHtkzJ rMTCTa fvWuoggJ hrzjG GRAXt DUUQigo dmVNgJUtj XxRrUfPS &#xD;
+</text>
+  <entry>
+    <organizer>
+      <templateId root="2.16.840.1.1133883.17.3.10.1.28"/>
+      <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/>
+      <statusCode code="completed"/>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation/>
+      </component>
+      <component>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.1133883.17.3.10.1.29"/>
+          <code code="67518-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Obtained prior to units EMS care NEMSIS"/>
+          <text>Text Value</text>
+        </observation>
+      </component>
+      <component>
+        <organizer/>
+      </component>
+    </organizer>
+  </entry>
+</section>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">EMS Vital Signs Section</ph></p>

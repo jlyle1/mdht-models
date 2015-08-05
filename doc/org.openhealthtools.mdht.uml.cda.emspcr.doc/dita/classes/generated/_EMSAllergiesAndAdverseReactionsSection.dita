@@ -42,8 +42,81 @@
 <ol>
 <li>Contains exactly one [1..1] <xref href="../DrugAllergyOrganizer.dita">Drug Allergy Organizer</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.183</tt>)</li></ol></li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::EMSAllergiesAndAdverseReactionsSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.17.3.10.1.13]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10196</entry><entry>LOINC 2.16.840.1.113883.6.1 48765-2</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>ST</entry><entry>CONF:10197</entry><entry> MISSINGTYPE</entry></row> 
+<row><entry>AllergiesAndAdverseReactionsSection</entry><entry>AllergiesAndAdverseReactionsSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EMSAllergiesAndAdverseReactionsSection</entry><entry>CONF:10011</entry><entry> </entry></row> 
+<row><entry>eMSDrugAllergyOrganizer</entry><entry>cda:entry/cda:organizer[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.183]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DrugAllergyOrganizer</entry><entry>CONF:11319</entry><entry> </entry></row> 
+<row><entry>environmentalAllergies</entry><entry>cda:entry/cda:organizer[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.49]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>NonDrugAllergyOrganizer</entry><entry>CONF:10953</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:10949</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../PatientCareReport.dita">Patient Care Report</xref></entry><entry><xref href="../DrugAllergyOrganizer.dita">Drug Allergy Organizer</xref></entry></row><row><entry></entry><entry><xref href="../NonDrugAllergyOrganizer.dita">Non Drug Allergy Organizer</xref></entry></row></tbody></tgroup></table></p></section>
-<codeblock id="example" outputclass="language-xml"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.17.3.10.1.13"/>
+  <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies and adverse reactions Document"/>
+  <title>EMS Allergies and Adverse Reactions</title>
+  <text>gknYntt knyJIv tSAlCfzF CwqCa mZqkival HYyRaNg erMElMQR oOOQSbcf etCtNU xDnurwq LnCeW utmTZHRxZ npyMBP ODFJkLCCp FMmTQUQ HhzUFPm HmUSJ ZJYjGQs dWDrv ODqjSi wPWDoSFnL hnGqkjOh ntjgIFICa LFkaygL DUfnaGmX PJURpAYiB stilFpPty MtwNJL GWZLyTWZf wwWrJ fVsiILfF glkVq ZODantGxs vAhzMB kJjVboRc TKRIlev HHabE YdKDb BHgeYDYwq dKainf UqrqgR tEuPC jWRxvOH urcDtq GiccMRT OufqTNH JUBKknvb RBzXn QfdNJ ZaJed NHbBEVRm GqyHb Lulrx UoYcWeOc HXvflYaB HmVTbPFf &#xD;
+YgasfcNEw nmGuj RoGJoo ttkEhN hdTNVl nGaEs yJbSXzZhI QsMUqNF FRclaX ZXjlRFTh iQlmvOT yKvib ZnGBLUHO jSeIiRb ikHgGQbAj eZYHel uHfWvL AhTMRVY MUzhzMPBb KBJZzDkhN qJhGP JSUiW VmKSfmlNE YolTR gNZhTTwXt hdxoz HDejaxJF RVvGjBQ OxdZaYSIB BbjbBZG FahiVvYTf &#xD;
+IOKMNA EVEfeGDsU FXCqWgMHd nEORZ DUkuuP LEGbxN TLmGMg JpefP VfMZB WsYYOfB PATXtuTpa SOGkrKJ PzWolJ lGwgABQ qaJSklck XEUqd fkoKZy ZjgHCzxo QKNspUr uLEpgfPci QdjCAibLT nnVZOy VpiKs vekjzTB KEckOgtX BvWbD GAdRsi ctWZFGH nkMKue hJfVNfNK pBzeKhgHO JfwRK vGGibpIEv cXdIrbIDi Xhdarpnn zRjDUw KuzdInX dmKQcShFM arMdb &#xD;
+OemOQIzl IMOnQmRF OydlSEV kiQHj rHorYCL eBvvQvLbT hOULn kNQaZaQ JTrVLvHU xoTMjh BMJNUIJi AsLElZTCp tvdefiunG hfKDgd AiXhdXjPo KaCtVOk JKxStvTSw PZQsyWzZQ lnTczbFFI gsTAmsz IUXDLajuS hxeEmro ZTgNcJLC PYmWrZa yTBrp IiYFWok OmuSqh tDyzo xcdMsBM thZtUxY nVwOy MyIssLhd prFiIcDjq eLAZDlN jCiBCv yFchEyHV qGCgZ vuuYY jhKQuNgb umgyar gsvIIUTf RMbSRLsKq OGZQjJU &#xD;
+KVPZuBJA JTMvf sBoYgxa hVocRcy WeuQzYGjm IeyozzM JpBnuKzZ eTECbnilS ARsuNP qLtnd SmYkGa OMviMSdSA RZJzbd eqgMKwh EhqAQYyU bsVTNtZ iobfkQH bqsRk fLDqFge VcwuBeEq uWBPQRojh pEkWT vUezDCrm ddvzOsZvO lKCSce XcnmOf GvEKHOw gcZHodCn fVvaodbLL nlgSCXuCP SDQGqadKj kuQrFEzlN bRmslLA qEAGH OZEzU stZuSmjvh PTQOTNNW BxYrKYnY ALKwpEhVi TFdQd &#xD;
+HAxNW TUMNSd HZNRpX TryYP MRPDa xFuHPu GDUrH wGjZIGkE TnJDCcT HNowjxDhD IrMFaSppN lFWqix FsADkvzjl mxBiek AWrJfhgf hABYBPfbz uublQA RFXrTm wUCije UHdQE YKjLeqx RICMEVO dbDzEx NOouRCd HUziIG yJNnUe UaNDKP giUVNJJ nlycxNdm aXfuN otKdacl CdauqhA BabVt EfYeDWLh WqXcut yTJLwPq NRYFDFJ bQNsMbWlV GhmtvldT yEBfQ BtuIMJQRc YrIzF ZZduM HdnrS pGgIghHzz LQIWM DMowWPDT vucfXC GcxKy hQola ffUZioQQ bZOEE tvpGVxg nETZMy DdHYmm sAnKf ZlgLgj lEUjeZKBp HorigCB LXEVY BmUeXrot oWDlpGAZD &#xD;
+mOwZKB XQVvqL wCFbSzN svMpCsmG qGPIXgCGb pdukJvbGz cHDgIc TFjiFVj CBgUAeS nLzAJNF HJYDLjCM xsVAlx YSXpg iSPiEJFc hgFUOnvA Pcjzzcjc rdouP CNeIsz ZMCgFCYx iTyDPCt UumPeEeuF NwNMN yiClUsrj &#xD;
+lkKKuhzLt imPJW cmOpD UjnGmC HzGIaYTyi UPMEwTu qhpbt TlrYzyh mccsSo coVPmf MEMqig RPrQMR mKtRSzDq MfIuvhYdC SxtOppK cBAtpOog NUKXMFNpg oWLjndJ PIJPOAb urlUNLRX xVXtVcP SoeiSeJ ltaZdsb fwpXZjhv EPkctp fkPwKjOGw uNAgNO bbGnUvARt XvJfCWqP FHfAZse tmboHK ddvDSDGZB ZzxnOw NHjQLQ CxgTeUv NvbciEybC LqzsYxvw wCDfvU QjxrHqs oaJPmRfMP dTXbYl XfzahfQD lIUeJd zFgKVjtMY usssQnaU wxBuMR UdTkRcZ GhIgFF bqcDHOOZC DjGaTnQxK BjAsieAsy wbyyfkR xHDnQfP OGvgV SKscotolF hAhFM TIeHo IeYJF sJzorr tVUnfQQ hXsyt pEbQtaxI ZkjAxsy yZnxt ffyyUFX bLEVg &#xD;
+WWqKi mFJZy zYWLN qAvhdDM WdHiUjcN FWjIdfmr HyEWdhv XvVcPLDNr IYqLCmzb UanwvT mSsjEsFZ gDwWecPLo OTBtI Embslhyo wekuwh znWML RiEfUhx smGgk mErOGoGU UeWsdZF xSedhWr aBnKIJOs OOpXmZhgN oKByWzas vFaojDQ HRFjUIVX lquGF JgJTzgqfy Bfpqb wufhWCz CpHuqDx slzkFn POKiCOf jSTaKzF cBicihakx &#xD;
+kfSfLETA QavOtZGN MOARu KtxkRT cAbGtMaij ZXIVT aLJvnTwh ZOxDckkvD sGVrs vXApXsyA ZWpSyd TcBJLR SaXQSPH FkgFScG OrfsoO JjfnKaY xSjDPSuV PjYKZ QuITqo jIQsacQ aMDqP CUhAp NfSMWEgN mBnZvin lpuWf mwjDbgYW EoPrsMlyC esuHRWaGV YgGaDpSj iaqKqNSc NJsik YKjEPbU &#xD;
+NwYHmxtx WmeDpj lyEEf ZzLwydY fSPPl gpcYUNhsR THhGD ViLqXypAY iOWzC NwGrZ BlqTVIKvi HoFxMUM kQkZHA IFyvC leBoBbFUm biRBFF mjvXfptg XIRnpgq fKbMbpkSZ bSsPRWFJK fMrVkl VKYhNA lUDMYm JTmmA pbXBUqGeH LmVLicK vYiVh YotNsG clsaiWUz gDLJc CNHsi GuhlI GEnhk uuyAhKZ GedMGqx NTFAfJ yYyHrgv fdHwaPMgS SJDveJHW AwrNBkf &#xD;
+OQqWwPe VZDeAG zezQlC hpjXESK oGPhN KTMkAQl HywPm pmWLRxS XLIfTKs IkSDwNVnZ XsVjw KtDIlDd LnMADrEUS OXOuvuI vCYMARnFT EjXoGw VParkJbF yQBfdwalI NxFmjjc niZsrGuMJ mXlhPyC acPwecj oxjEd eUftCqlcc scAtnMkc KXnPv anSnzK TodUmpyU ECQYIGYX EXYdQYv kmOTxipT NHXcdF CpUgtAl EHYKTzG iDysLw dOksMzmDu wMvQzjQf mnyvXWRR &#xD;
+FrjTOQxX XjWVs SIGxTaU qRcjsbYN mzjUcDS BATAq dmRVOpIsC HXwKV UsvLiVjJJ oLbdtX FXWTpChep wfuFVy noZBxDnk rMgdbgw NIkzaNPp iHXttBM RzWJb JPyfXRRJR hspjXrBd BQhtdE VShaUi EyTcErVMt loJpBDyx kkqYFAN tfVRTTLGL YeMkuAIj sKmxa &#xD;
+GUnwpkQq liFPQkDsv lMnVNEzfw OTSmtDtUj ElcnIT GyquqAy Cymwv hMfqwLlzv AWZVr LyreH gnoRyQDCb sioOy oGcjmL hQJLcLW okyYAJESw leWGW ruKDOpN tSmSIP keWUIf qCGGta hUCpQ mlNuhcWl BPpibQD yfGLyYMIa cYSdqEyh yKSCgIzAM WiQkYXI eGcBYAVt Gzyuyb DYplym sSBtYELAh Rmcbl OlCuxmKK XBOJkvkDi VsWmhBF SjQGp rwSlTYZ BlPvJQTrW GuPHxKZce JbHVXBeEu qicrIKrWL bSaMzWD WLadXmb itwSyC AKdjn FvXFgVnTc dqtsNcMif mcOwzFg GqOWo UBMHqLTG ThDtZI QNmdVqDkb tNejAo ZNWJgoWaY MSAPPY hhXInbZ &#xD;
+dwXjISQ jOsqUItS EYFNlbGRV bRYKXJJ gSQRlg ioRNrGV tMgMbz RaOjHjAR wwXEhP SmHAQ IVkfEFhz kMAPbU wGdBN WbnULw gYeyszfOT OQCfjH KMmWEy QeQnZcwFV IZqPthJf uZaeL TESkqDJSZ qHCMKfq pIIYjSA zgsEC kfUvWXN BSCNGq yYRPh TaAkIjebo nhaGP niDgJ Xiqqn uUMjHMLBu EmZZoBxV rPOxTrKMi tsZqsg yHuLZxu LwGHPnU MvVrbeGl stcUexSkt BFZHLYRQ oemsfwd hknEK &#xD;
+oLzYzmW UDDmvadO ionOiK BjCMLHNKh ZhBxjXu DFtWKFEmB mpaBq jmfqBxM Vrqbb YSCAlOYF NoyOUr eCOITTWzI iUqBSORu oSQsrElE jZLYMGPq LaBfEWZ lKiMaPxs PRQbgDY JAwQqLqEX ZLOMwp LJMxMKBz oLasaz jFYyjUin lDNHz XHwOOl yeVxLgYC ydCZg mlMIRufg FyTDHVb LIOAdvxiP UfMGXHk SjKaHKz RDGRlEzqy mwuAbv rheRNYQB mCPQDS JFbbloHZ &#xD;
+npuDuLF fvFTjXn jKWnbvbVe fjNeC yacyngzRM TZEWVrE XohaNV pSUOsREa cbGivk ehsRhexQj BmjAEAUyj nEancGQj vDciNfzI mxgZdH TzpBGbw PkYFAMn FKrnxh OEunq eAXEWD fFbGYvv ejOdBKv HqgFlmdBT UbroEohxt lIGRZ CGqwbK qeCJXY lYwcq EZAkpvP BDbasrq wvBaqcH AOfPoS vjQoKh IMIKfa ppGeBF jKZLelH mvRNzFD TJNJTyKp ybNyCzd kblkTIR uNImbmhS aubWx iIwWd pZSwwoz TitRnsMl fAhBlagK AkGIr RoUOTM SrWQKLEs XjrfN UioJdi pbLIVXau naGxRDKeP ojDPq dmTELIaSQ QcAjm bNMekFspr nDEEfCmcx HGxYPTNml EuUXibCK ZzGJa LrRmDoBqd plFsFO NhdjkbYXw rHntLDpgm GZEgNKogL epvlkKj pAdkwkvZ AokKmCiiu uYCrbuEBN xiMZArvQL lTCKTdKj aTaYNGZC gRAYXR foFhurd fIUhirv aIXEzqIg VUDfo xyXiWK fZSWQd fZsgFw &#xD;
+FCIapTM HWXvjHJs QfXFV JPkuYhIOi USsYAZq DTLeJL fQGsgBLG kkpbmnZK idNgqyd otqvBnb hMvXdsDG hzAkh vsraXP VIkpH YHVwuhhE WUqmrATRQ dyjWPNJK DzZcbQN nIiXrouF DryWX rMOrLfpDA lhYnyKm ymXePIXk ShzQjkSkX hAwLBo wYlAI gaZjA magYvMjvT yEXfDWI sNrwPqHT RuvZvtqfK xpmnsp pCPUPjDa njrpPWRW mRMdnpH vaDSD jsfhvx zYahpdb JhSYs iFTtAYA NbWsVwTCe qlNuJoQ mhCWUXuL JJmXnq RRrSspc yHoQb JBNEuc ZwTWVrCr eAILdfSH MnmoAf zjqjnZ hKWiGFrgg QETSYb qRGhjnhm CVqXKLKUa dFaPn IXHXcUvA PyfzzedfG CKbIOI CQnALl MxgPtovX mNwVmR MBmChcPnq orwreR &#xD;
+BvDntMka ufUMvSS Layxmutol fuzwu zCAManrIz batwXpHB WMlUtHg uVeAChzz IYWXWdEW KsrlqibO tRMdm HJGoWb OzNBNPFN KlkKE mhnLIe SugmIvfwU QhiLjOL WcppXM yibfRYwrD bshGbLBV ftlQVpD orkSqKvI UhDZCFqk UkPZzIfH AbmLYFq IHGNZKvL VfeNLtNl MMwLS WferPVHhJ LnnXmCHd WJYrDwqC EObenAl HOyQwimm ujHSrEIFY nSEFGDrdz TBQLWGu YSxIBOgz EgPQhC AnzjnwHJ EKcmaQ DGIUfrJPo hLIeTYi EFQzx JSDaA QoeMxj sZxiKKfSI EiIqi nlXneq zINggfkGy vcsNdi PZBlivMpj CcIPxrA vInYp BDQqxZWlj pFfaF SioBDm mlcPzpnN HzEmphU BeStQkXK KiPgQ ICCNMO MzGuiondu klwEGMbU NKPcG fxspgaO &#xD;
+bxlBbXdj OWtVUuVN sjDJg YFRJtOF TjnbPpxO tRIIPY VtGWDn ROyeX FZIqRfZW bZYwx FyoSsq ebxVEIqs AtdzmGlfi qwLmKze nzVToS KgPqHrv XrZBHdtL mVBGWiBd PGdzIhUq GUwltb OymFpO ZytBvh nkImdzq cXjlVvuOR bfgKBHj RwGMtJ KywDg FqaSxRDst dpQmcz SwsXzpD RQFyQHmfi XcWbiC bxikMm tzbMilNm iTtFJHGr HdDGRy FeLbSaHbD ihQiIS FvXEuKFG TnaDtd OvgGBMuj SqnXB tPdJyBkZr PmXijY Sdhhx &#xD;
+</text>
+  <entry>
+    <organizer>
+      <templateId root="2.16.840.1.1133883.17.3.10.1.49"/>
+      <statusCode code="completed"/>
+      <component>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.1133883.17.3.10.1.103"/>
+          <code code="69747-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Does the patient have any environmental allergies NEMSIS"/>
+          <text>Text Value</text>
+        </observation>
+      </component>
+      <component>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.1133883.17.3.10.1.104"/>
+          <code code="69748-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Known allergies to food or environmental agents Narrative NEMSIS"/>
+          <text>Text Value</text>
+        </observation>
+      </component>
+    </organizer>
+  </entry>
+  <entry>
+    <organizer>
+      <templateId root="2.16.840.1.1133883.17.3.10.1.183"/>
+      <statusCode code="completed"/>
+      <component>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.1133883.17.3.10.1.48"/>
+          <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="ASSERTION"/>
+          <text>Text Value</text>
+          <participant/>
+        </observation>
+      </component>
+      <component>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.1133883.17.3.10.1.102"/>
+          <code code="67794-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Does the patient have any medication allergies NEMSIS"/>
+          <text>Text Value</text>
+        </observation>
+      </component>
+    </organizer>
+  </entry>
+</section>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">EMS Allergies And Adverse Reactions Section</ph></p>

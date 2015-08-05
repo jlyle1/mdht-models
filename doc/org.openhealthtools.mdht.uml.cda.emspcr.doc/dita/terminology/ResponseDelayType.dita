@@ -38,6 +38,8 @@
 <row><entry>LA18270-1</entry><entry>LOINC</entry><entry>Rendezvous transport unavailable</entry></row>
 <row><entry>LA18271-9</entry><entry>LOINC</entry><entry>Route obstruction (e.g., train)</entry></row>
 <row><entry>LA18301-4</entry><entry>LOINC</entry><entry>Diversion</entry></row>
+<row><entry>LOINC_TBDA_614</entry><entry>LOINC</entry><entry>Mechanical Issue-Unit, Equipment, etc.</entry></row>
+<row><entry>LOINC_TBDA_615</entry><entry>LOINC</entry><entry>Flight Planning</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

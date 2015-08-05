@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Unit Level Of Care Capability"/>
+<meta name="abstract" content="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.190]"/>
+<meta name="description" content="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.190]"/>
+<meta name="DC.Coverage" content="Observation"/>
+<meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Unit Level Of Care Capability</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Unit Level Of Care Capability</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Observation: templateId <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.190</tt>]</p>
+
+<div class="section">
+</div>
+
+
+<div class="section">
+<div class="p"><p class="lines"><em class="ph i">The level of care the unit is able to provide</em></p>
+</div>
+
+</div>
+
+<div class="section"><div class="p">
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" width="100%" frame="border" border="1" rules="all"> <thead class="thead" align="left"><tr class="row"><th class="entry" colspan="1" align="left" valign="top" id="d88543e46">Contained By</th>
+<th class="entry" colspan="1" align="left" valign="top" id="d88543e48">Contains</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" align="left" valign="top" headers="d88543e46 "><a class="xref" href="EMSResponseSection.html" title="[Section: templateId 2.16.840.1.113883.17.3.10.1.3]">EMS Response Section</a></td>
+<td class="entry" align="left" valign="top" headers="d88543e48 "> </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.1133883.17.3.10.1.190"</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:11368)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:11382)<tt class="ph tt"><strong class="ph b">/@code</strong>="77156-8" </tt><em class="ph i">EMS level of care capability</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:11367)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with @xsi:type="CD" (CONF:11369), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/UnitLevelOfCare.html">UnitLevelOfCare</a> 2.16.840.1.113883.17.3.11.105</tt><strong class="ph b"> STATIC</strong> (CONF:11370)
+<ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: eResponse.15 (Unit level of care)</em></p>
+</div>
+</li>
+</ul>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Unit Level Of Care Capability example</strong></p>
+
+
+
+<pre class="pre codeblock language-xml">&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.1133883.17.3.10.1.190"/&gt;
+  &lt;code code="77156-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS level of care capability"/&gt;
+  &lt;text&gt;Text Value&lt;/text&gt;
+  &lt;value xsi:type="CD" code="754964995"/&gt;
+&lt;/observation&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/ClinicalStatementTemplates.html">CLINICAL STATEMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

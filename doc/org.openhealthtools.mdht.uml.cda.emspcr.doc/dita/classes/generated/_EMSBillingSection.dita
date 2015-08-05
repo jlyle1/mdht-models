@@ -42,8 +42,45 @@
 <ol>
 <li>Contains exactly one [1..1] <xref href="../LevelOfServiceObservation.dita">Level Of Service Observation</xref> (templateId: <tt>2.16.840.1.1133883.17.3.10.1.92</tt>)</li></ol></li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::EMSBillingSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.17.3.10.1.5]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10080</entry><entry>LOINC 2.16.840.1.113883.6.1 67659-3</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:10907</entry><entry> MISSINGTYPE</entry></row> 
+<row><entry>billingCondition</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.91]</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>BillingCondition</entry><entry>CONF:10910</entry><entry> </entry></row> 
+<row><entry>eMSBillingSection</entry><entry>eMSBillingSection</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>EMSBillingSection</entry><entry>CONF:11318</entry><entry> </entry></row> 
+<row><entry>levelOfServiceObservation</entry><entry>cda:entry/cda:observation[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.92]</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>LevelOfServiceObservation</entry><entry>CONF:10912</entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:10909</entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../PatientCareReport.dita">Patient Care Report</xref></entry><entry><xref href="../BillingCondition.dita">Billing Condition</xref></entry></row><row><entry></entry><entry><xref href="../LevelOfServiceObservation.dita">Level Of Service Observation</xref></entry></row></tbody></tgroup></table></p></section>
-<codeblock id="example" outputclass="language-xml"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<codeblock id="example" outputclass="language-xml"><![CDATA[<section xmlns="urn:hl7-org:v3">
+  <templateId root="2.16.840.1.113883.17.3.10.1.5"/>
+  <code code="67659-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS billing Narrative NEMSIS"/>
+  <title>EMS Billing Section</title>
+  <text>bEYZLaE YhxctzA ZHXDO lndJw ImiJTDj tzuUImJ TkoILJhlb VvRpGTDG bpPjTuake XfRrMyC XRFhMrUW vcCZD mvwtnh fiiHhzVy DyxgfzVuC XnNmNe hxalsvVaI WsgskiPD bUmxonIy SIKgTrU HoFiv AynROZ KIkMx mNiyD &#xD;
+FnxpvpzVe SDwwNX SyaiWqgpP MZVyf ifbsmHob XTNjGuS lMIgcN YJGXZXI geNCSk HipAL ESSHgPp cArGkXGF VPVGN EifYwk bLhmYhAi pVwKWb skeBGdxKy pwpTZ aCTsrAKbV hXOUq ADwpdMxJy FQxHpW DkXrPVB WdzssJ iryZWn bSnHc JJaBjUBD lBNDiY wvOlOV fcdMZ UlmZEP WqhhJQ roqVZovH LXDkMq zyWUXRn BmNnfoqSC SUBRAqz DvSRotbg NvYYaYQT wmyFFsZDV lJUOXDzJG IEbEPL teGxi GiVWud KgUtz FkjdfBPdg WfBfMqsE NQuReFHg EtOzKfq MFbbyzCjq Eekgs jARvDkO bQMlju NrxjF ZoEfMy UANaB ZpddGT EvfNkAQWx &#xD;
+IlIlfG eqZDbvD DomsiaL tQrZLhcbB DMiiEPi bydPvmWjf cjoNjc XqxqDSJB WzWfZH ANtNgyO NmNZT wYRnHyz jzKtwR ScAlYPC XehCpyST NSkWibyQ eUtBQZ PwMgg BHFGXWTyt WeUgt PgSmlaOvl RrfuX EffDRy jQvpC TomhIi xnjDCzd cRgboeCYp vGlOrHwHG WLMaip oGuBDd waCEf LupOz JEZfZLuwk fUSztswI tskikYne OTTARsAD XuNiCuu gquvoXHg sqLktNeXC &#xD;
+mxZkMCCU GvPHOFu MhCODNZdg SeBiPq npJZx XnvKCpdih KhLAtLCjT cYEzrpZ FuUszxeN XNFAEB KcTCmvOcc HWzyjJci WLOcQEuoh BbxrRa lpQJWK xKZSiHD wJylT gyqyY lvMMlL qfvBYycB aElJfGXuS toqbtfTnU afBSi bxQiu otljy ytWIKv HMrOTs NIiugjV PVovCo OwzkJDGg KNidWhq ntVvOLYm CldWkdL xrlMn ZhSFWUVT jPbSajcc &#xD;
+XkQIAKbyy yWuNdoeZ hvZKA kojZkJdw ZttLQsDX WsuSet IFfkBp xsozl DNwTcfM vWdkqGLzF JXceELFs LygMiwjY lhyVm EuTeLoJEs heLqUvBD KJWLtV YHpFRxW HLkhA fpiBR YkKBNbAF sfqMNXpJc eBIMBZX AMZRSHxu nhlYhq fqjzZIClA VCXIWxedd wuUCXXXCa UUMAb pqQnyAuS ZfZdCbb WzWysqkX hYyFAnLi YUeIMGiIw exOeaJKxR sZPOWmAp MKLdYWcaV GlIvymYH LmBQW oesLCSYGd jxarBTW rYNXZV ifaJQck epDAOXBk NgJWuye FBwkyBHt MiqBe sZGuwI OFIblxQi BnPBlNS nzwkDg fPuPAte EgHnzIm wToKYu VdPIbaoc xDPto CamnMV aMdfoTTfX pUntdJT FKmdpIkMb TCPKlzoA elZVYCvb HqKXK SBhrXh FSTeIaxA ILhdXae bMZjgo JJgjVkl xWRsNN BzKBPlbNj oPECJnbfy &#xD;
+NbaJJ xcygW biQyZN ludEG OYMICoz kMdrJzdK DsoypUgzh SyweCqA QXUjhfVU PLargeDof tljGggYIr QZfoPhM bgsmV qRNsDQ szMGZU QiGrclIt wGJNCIp TvBaJ PajIX KZCJvCyX PuFclH UIkIVNVx nszdQON kusrGqqbh AvCCQXFbY xSrZMkh EtjpE fkTPMPjNV rkZzfOAQ UxupQkJE SbANRe fkGtkv PNXPUravd oiAoAqZ dzlqMKAY DwAZLEC hMtVoy &#xD;
+ajxDaqsp jHuBVmoPt SitGDIeV zPNJbj OxMKRBdH kacCCd zrpWcn yWXTsZjk pNjuJlAOe zfwMX &#xD;
+DVDwe FqItW wuLHbJN ggUWuSiEc lLRBGzic TDqwPnaIc HwPJaSwMq hZvvzmo upQqY YKwuWrYyo rUZYoour aCYXq otrju bsalN KzOME gkHUou ElTsrtbux UhiaIJCQ IfsBcwvK NKpwNwi NMTdd QUHOS ffNhLCNBP tAAfn VehVhuG jRMAMFFwN LHrGlLvh NmCFzKCN hlUtja znzOw nOhRus MBsJh ftzBG vvFPvun RTKdYwtr fbPMRAp JgLBAQTI EaPjBHbMU KaHNhOZLy DIlGs obbJTQj WcNBpdo NtXFadtEq GNwGZ bddMDngu FqObDE CuZEn sWQqdrR Bhtuun ILCVzC wcPItp GTVNV TttwuAsLU qkEfim rJMCt xIbSED IbYwbGwu &#xD;
+NPXMdJ AdriWhEOz ojapD hnNrjlMHX ufrmZjZ XtGEodq GDnASGjx UmQJUjLa iOUrinOlh QLQPdbjq awgNhyo Kdkvz qOwlIFDIS LjTUCEZ czecVoEm ZKeDyY dRlLXBLsh mOPFWY fMqFpLng SlOcK OTMqHOw GoimO jfJMQPCx oxNcPfouz JJFKzZzs rzrBU oLNORpxg QZunE ryfLAdqqo vTlcK PohtekM kDjomVtk TAZnLHxD mySQAliqi trViVJPI qtFwHL jUwhIlTbO nGupSuEQk vObRN xePWI AuLOQSao BtUhq nWJap wlXtd YOpAzHNi QzHMC luFhGm RJtqlrhU tPJvk &#xD;
+sUAqi QlmIN aFOUCJwpq lkQglHJCG APVXt uMwNdPkU TcTDTOmp urpjeBMbO rknMrYroO uYYVTpcKD FnKrAfMB QCvINde BdIZT HXnPuc syqRPXaz XNGIng VBndW DgUbdAAx AqFjYFLJ COOdw JErFldRD sFehkuCaQ yDJNC jBdFc DQWTMemi fzqIbVKwS OXudf RLNzGF QFEmT awiPbw jfVREdM CvcwaF LmrUbI USkebl HOAYR GycGAz KWhlhBixb IRwph sYiRvizIZ ZVwFF uHuzdHdF THLzkJ Ktuaj sXEgbTcP IeoLcf WzcYr hTVlOD peNghgP &#xD;
+rdIvNLkq PmJDDinth dlFVmIPI RSUmLpfZw UKusYz evuQgKwK zBTNAgna BUxaBKJl EfdhDs IyJVX oPAWg qltFZCn EiVPLvJA TrTpXacEK XoMtBP KfCkPHX QPweTIZa hrJnU nCHainCY SVrFeSwx UbyDKDov wTYxP &#xD;
+</text>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.91"/>
+      <code code="67556-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS condition code NEMSIS  (Billing condition)"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.1133883.17.3.10.1.92"/>
+      <code code="69464-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Centers for medicare - medicaid, CMS, service level NEMSIS"/>
+      <text>Text Value</text>
+    </observation>
+  </entry>
+</section>]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">EMS Billing Section</ph></p>

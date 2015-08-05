@@ -43,7 +43,7 @@
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.17.3.10.1.20"</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.113883.17.3.10.1.20"</li>
 </ol>
 </li>
 
@@ -56,40 +56,50 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:10338)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10975)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain  [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10975)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="PhysicalAssessmentOrganizer.html" title="[Organizer: templateId 2.16.840.1.1133883.17.3.10.1.78]">Physical Assessment Organizer</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.78</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10977)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain  [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10977)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="PatientPregnancy.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.79]">Patient Pregnancy</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.79</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10979)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain  [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10979)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="LastOralIntake.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.80]">Last Oral Intake</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.80</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10981)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain  [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10981)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="PatientAge.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.81]">Patient Age</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.81</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10983)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain  [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10983)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="ThrombolyticContraindications.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.82]">Thrombolytic Contraindications</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.82</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10985)
+<li class="li">If section/@nullFlavor is not present, <strong class="ph b">SHALL</strong> contain  [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:10985)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="BarriersToPatientCare.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.83]">Barriers To Patient Care</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.83</tt>)</li>
 </ol>
+</li>
+
+<li class="li">contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">bodyWeight</strong></tt> {subsets  Section::entry} <ol class="ol" type="a"><li class="li">This bodyWeight <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="PatientBodyWeight.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.178]">Patient Body Weight</a> (CONF:11099)</li>
+</ol>
+ 
+</li>
+
+<li class="li">contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">lengthBasedBodyWeight</strong></tt> {subsets  Section::entry} <ol class="ol" type="a"><li class="li">This lengthBasedBodyWeight <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt>, where its type is <a class="xref" href="LengthBasedPatientBodyWeightClass.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.110]">Length Based Patient Body Weight Class</a> (CONF:11100)</li>
+</ol>
+ 
 </li>
 
 </ol>

@@ -43,7 +43,7 @@
 
 
 <ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId (  ) such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.1133883.17.3.10.1.182"</li>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] templateId such that it <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <strong class="ph b">@root</strong>="2.16.840.1.1133883.17.3.10.1.182"</li>
 </ol>
 </li>
 
@@ -53,11 +53,17 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:10647)<tt class="ph tt"><strong class="ph b">/@code</strong>="67482-0" </tt><em class="ph i">Response mode to scene NEMSIS</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10648)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD (CONF:10650), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/TransportationMode.html">TransportationMode</a> 2.16.840.1.113883.17.3.11.66</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10649)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with @xsi:type="CD" (CONF:10650), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/TransportationMode.html">TransportationMode</a> 2.16.840.1.113883.17.3.11.66</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10649)
 <ul class="ul"><li class="li"><div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EResponse.23</em></p>
 </div>
 </li>
 </ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain  [1..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> (CONF:11343)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ResponseModeQualifier.html" title="[Observation: templateId 2.16.840.1.1133883.17.3.10.1.191]">Response Mode Qualifier</a> (templateId: <tt class="ph tt">2.16.840.1.1133883.17.3.10.1.191</tt>)</li>
+</ol>
 </li>
 
 </ol>

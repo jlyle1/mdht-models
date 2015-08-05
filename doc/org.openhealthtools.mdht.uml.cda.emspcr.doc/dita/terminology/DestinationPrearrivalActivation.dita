@@ -31,6 +31,7 @@
 <row><entry>LA18122-4</entry><entry>LOINC</entry><entry>Yes, STEMI</entry></row>
 <row><entry>LA18123-2</entry><entry>LOINC</entry><entry>Yes, stroke</entry></row>
 <row><entry>LA32-8</entry><entry>LOINC</entry><entry>No</entry></row>
+<row><entry>LOINC_TBDA_538</entry><entry>LOINC</entry><entry>Yes-Trauma (general)</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

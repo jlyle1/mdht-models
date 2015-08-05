@@ -49,6 +49,10 @@
 <row><entry>LA18257-8</entry><entry>LOINC</entry><entry>Sluggish</entry></row>
 <row><entry>LA18258-6</entry><entry>LOINC</entry><entry>8 mm or ></entry></row>
 <row><entry>LA6630-3</entry><entry>LOINC</entry><entry>Not done</entry></row>
+<row><entry>LOINC_TBDA_541</entry><entry>LOINC</entry><entry>Glaucoma Present</entry></row>
+<row><entry>LOINC_TBDA_542</entry><entry>LOINC</entry><entry>Swelling</entry></row>
+<row><entry>LOINC_TBDA_543</entry><entry>LOINC</entry><entry>Contusion</entry></row>
+<row><entry>LOINC_TBDA_544</entry><entry>LOINC</entry><entry>Puncture/Stab wound</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

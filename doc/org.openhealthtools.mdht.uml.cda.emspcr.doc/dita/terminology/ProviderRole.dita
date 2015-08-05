@@ -39,6 +39,10 @@
 <row><entry>LA18714-8</entry><entry>LOINC</entry><entry>Patient/lay person</entry></row>
 <row><entry>LA4687-5</entry><entry>LOINC</entry><entry>Physician</entry></row>
 <row><entry>LA9297-8</entry><entry>LOINC</entry><entry>Respiratory therapist</entry></row>
+<row><entry>LOINC_TBDA_606</entry><entry>LOINC</entry><entry>Nurse Practitioner</entry></row>
+<row><entry>LOINC_TBDA_607</entry><entry>LOINC</entry><entry>Physician Assistant</entry></row>
+<row><entry>LOINC_TBDA_608</entry><entry>LOINC</entry><entry>Licensed Practical Nurse (LPN)</entry></row>
+<row><entry>LOINC_TBDA_609</entry><entry>LOINC</entry><entry>Registered Nurse</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>
