@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML">
+  <uml:Package xmi:id="_7anMICYtEeWWbL2nbj5DdA" name="emshospitaloutcomes-vocab">
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_mHeDED3xEeW8QcLHABJt8A" name="LOINC"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_D2cNYD3yEeW8QcLHABJt8A" name="EDDischargeDisposition">
+      <ownedLiteral xmi:id="_JLrzwD3yEeW8QcLHABJt8A" name="LA20587-4"/>
+      <ownedLiteral xmi:id="_cpvH4D3yEeW8QcLHABJt8A" name="LA20591-6"/>
+      <ownedLiteral xmi:id="_hSkUMD3yEeW8QcLHABJt8A" name="LA20590-8"/>
+      <ownedLiteral xmi:id="_kHNmED3yEeW8QcLHABJt8A" name="LA20594-0"/>
+      <ownedLiteral xmi:id="_nOI6wD3yEeW8QcLHABJt8A" name="LA20596-5"/>
+      <ownedLiteral xmi:id="_qoStcD3yEeW8QcLHABJt8A" name="LA20595-7"/>
+      <ownedLiteral xmi:id="_tdL28D3yEeW8QcLHABJt8A" name="LA20588-2"/>
+      <ownedLiteral xmi:id="_ylMSkD3yEeW8QcLHABJt8A" name="LA7222-8"/>
+      <ownedLiteral xmi:id="_1eNuID3yEeW8QcLHABJt8A" name="LA20589-0"/>
+      <ownedLiteral xmi:id="_5ak2AD3yEeW8QcLHABJt8A" name="LA20597-3"/>
+      <ownedLiteral xmi:id="_8Pi4AD3yEeW8QcLHABJt8A" name="LA20592-4"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_J9u1UD6uEeW8QcLHABJt8A" name="CMS-1450 Data Set (UB-04)"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_axBzYD6uEeW8QcLHABJt8A" name="InpatientDischargeDisposition">
+      <ownedLiteral xmi:id="_eN2fkD6uEeW8QcLHABJt8A" name="01"/>
+      <ownedLiteral xmi:id="_hTO8ID6uEeW8QcLHABJt8A" name="02"/>
+      <ownedLiteral xmi:id="_kbMLkD6uEeW8QcLHABJt8A" name="03"/>
+      <ownedLiteral xmi:id="_mMiNYD6uEeW8QcLHABJt8A" name="04"/>
+      <ownedLiteral xmi:id="_ny7jcD6uEeW8QcLHABJt8A" name="05"/>
+      <ownedLiteral xmi:id="_phjBYD6uEeW8QcLHABJt8A" name="06"/>
+      <ownedLiteral xmi:id="_t9lu4D6uEeW8QcLHABJt8A" name="07"/>
+      <ownedLiteral xmi:id="_vhLokD6uEeW8QcLHABJt8A" name="20"/>
+      <ownedLiteral xmi:id="_xKJKcD6uEeW8QcLHABJt8A" name="21"/>
+      <ownedLiteral xmi:id="_ynMXQD6uEeW8QcLHABJt8A" name="30"/>
+      <ownedLiteral xmi:id="_0HyAQD6uEeW8QcLHABJt8A" name="43"/>
+      <ownedLiteral xmi:id="_1hSw4D6uEeW8QcLHABJt8A" name="50"/>
+      <ownedLiteral xmi:id="_3_c1YD6uEeW8QcLHABJt8A" name="51"/>
+      <ownedLiteral xmi:id="_5qUbwD6uEeW8QcLHABJt8A" name="61"/>
+      <ownedLiteral xmi:id="_7PwvkD6uEeW8QcLHABJt8A" name="62"/>
+      <ownedLiteral xmi:id="_85kmAD6uEeW8QcLHABJt8A" name="63"/>
+      <ownedLiteral xmi:id="_-ZqfwD6uEeW8QcLHABJt8A" name="64"/>
+      <ownedLiteral xmi:id="_AAcQUD6vEeW8QcLHABJt8A" name="65"/>
+      <ownedLiteral xmi:id="_BzhXgD6vEeW8QcLHABJt8A" name="66"/>
+      <ownedLiteral xmi:id="_Dd0WID6vEeW8QcLHABJt8A" name="70"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_vIoW8D60EeW8QcLHABJt8A" name="DegreeOfDisability (Modified rankin scale)">
+      <ownedLiteral xmi:id="_zrzAID60EeW8QcLHABJt8A" name="LA6111-4"/>
+      <ownedLiteral xmi:id="_33NQoD60EeW8QcLHABJt8A" name="LA6112-2"/>
+      <ownedLiteral xmi:id="_6ss3ED60EeW8QcLHABJt8A" name="LA6113-0"/>
+      <ownedLiteral xmi:id="_8szGkD60EeW8QcLHABJt8A" name="LA6114-8"/>
+      <ownedLiteral xmi:id="_AqymID61EeW8QcLHABJt8A" name="LA6115-5"/>
+      <ownedLiteral xmi:id="_DZlHoD61EeW8QcLHABJt8A" name="LA10137-0"/>
+      <ownedLiteral xmi:id="_Gd-swD61EeW8QcLHABJt8A" name="LA10138-8"/>
+    </packagedElement>
+    <profileApplication xmi:id="_7anMISYtEeWWbL2nbj5DdA">
+      <eAnnotations xmi:id="_7anMIiYtEeWWbL2nbj5DdA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://MDHT_TERM_PROFILES/Terminology.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+  </uml:Package>
+  <term:CodeSystemVersion xmi:id="_mHeDET3xEeW8QcLHABJt8A" identifier="2.16.840.1.113883.6.1" fullName="Logical Observation Identifiers Names and Codes" url="loinc.org" base_Enumeration="_mHeDED3xEeW8QcLHABJt8A"/>
+  <term:ValueSetVersion xmi:id="_D2cNYT3yEeW8QcLHABJt8A" codeSystem="_mHeDET3xEeW8QcLHABJt8A" base_Enumeration="_D2cNYD3yEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_JLrzwT3yEeW8QcLHABJt8A" conceptName="Floor bed (general admission, non-specialty unit bed)" base_EnumerationLiteral="_JLrzwD3yEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_cpvH4T3yEeW8QcLHABJt8A" conceptName="Died/Expired" base_EnumerationLiteral="_cpvH4D3yEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_hSkUMT3yEeW8QcLHABJt8A" conceptName="Home with services" base_EnumerationLiteral="_hSkUMD3yEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_kHNmET3yEeW8QcLHABJt8A" conceptName="Home without services" base_EnumerationLiteral="_kHNmED3yEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_nOI6wT3yEeW8QcLHABJt8A" conceptName="Intensive Care Unit (ICU)" base_EnumerationLiteral="_nOI6wD3yEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_qoStcT3yEeW8QcLHABJt8A" conceptName="Left against medical advice" base_EnumerationLiteral="_qoStcD3yEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_tdL28T3yEeW8QcLHABJt8A" conceptName="Observation unit (unit that provides &lt; 24 hour stays)" base_EnumerationLiteral="_tdL28D3yEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_ylMSkT3yEeW8QcLHABJt8A" conceptName="Operating Room" base_EnumerationLiteral="_ylMSkD3yEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_1eNuIT3yEeW8QcLHABJt8A" conceptName="Telemetry/step-down unit (less acuity than ICU)" base_EnumerationLiteral="_1eNuID3yEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_5ak2AT3yEeW8QcLHABJt8A" conceptName="Transferred to another hospital" base_EnumerationLiteral="_5ak2AD3yEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_8Pi4AT3yEeW8QcLHABJt8A" conceptName="Other (jail, institutional care, mental health, etc.)" base_EnumerationLiteral="_8Pi4AD3yEeW8QcLHABJt8A"/>
+  <term:CodeSystemVersion xmi:id="_J9u1UT6uEeW8QcLHABJt8A" fullName="CMS-1450 Data Set (UB-04)" base_Enumeration="_J9u1UD6uEeW8QcLHABJt8A"/>
+  <term:ValueSetVersion xmi:id="_axBzYT6uEeW8QcLHABJt8A" base_Enumeration="_axBzYD6uEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_eN2fkT6uEeW8QcLHABJt8A" conceptName="Discharged to home or self care (routine discharge)" base_EnumerationLiteral="_eN2fkD6uEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_hTO8IT6uEeW8QcLHABJt8A" conceptName="Discharged/transferred to another short term general hospital for inpatient care" base_EnumerationLiteral="_hTO8ID6uEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_kbMLkT6uEeW8QcLHABJt8A" conceptName="Discharged/transferred to a skilled nursing facility (SNF)" base_EnumerationLiteral="_kbMLkD6uEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_mMiNYT6uEeW8QcLHABJt8A" conceptName="Discharged/transferred to an intermediate care facility (ICF)" base_EnumerationLiteral="_mMiNYD6uEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_ny7jcT6uEeW8QcLHABJt8A" conceptName="Discharged/transferred to another type of institution not defined elsewhere in this code list" base_EnumerationLiteral="_ny7jcD6uEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_phjBYT6uEeW8QcLHABJt8A" conceptName="Discharged/transferred to home under care of organized home health service organization in anticipation of covered skills care" base_EnumerationLiteral="_phjBYD6uEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_t9lu4T6uEeW8QcLHABJt8A" conceptName="Left against medical advice or discontinued care" base_EnumerationLiteral="_t9lu4D6uEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_vhLokT6uEeW8QcLHABJt8A" conceptName="Deceased/Expired (or did not recover - Religious Non Medical Health Care Patient)" base_EnumerationLiteral="_vhLokD6uEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_xKJKcT6uEeW8QcLHABJt8A" conceptName="Discharged/transferred to court/law enforcement" base_EnumerationLiteral="_xKJKcD6uEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_ynMXQT6uEeW8QcLHABJt8A" conceptName="Still a patient or expected to return for outpatient services" base_EnumerationLiteral="_ynMXQD6uEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_0HyAQT6uEeW8QcLHABJt8A" conceptName="Discharged/transferred to a Federal Health Care Facility (e.g., VA or federal health care facility)" base_EnumerationLiteral="_0HyAQD6uEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_1hSw4T6uEeW8QcLHABJt8A" conceptName="Discharged/transferred to Hospice - home" base_EnumerationLiteral="_1hSw4D6uEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_3_c1YT6uEeW8QcLHABJt8A" conceptName="Discharged/transferred to Hospice - medical facility" base_EnumerationLiteral="_3_c1YD6uEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_5qUbwT6uEeW8QcLHABJt8A" conceptName="Discharged/transferred within this institution to a hospital based Medicare approved swing bed" base_EnumerationLiteral="_5qUbwD6uEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_7PwvkT6uEeW8QcLHABJt8A" conceptName="Discharged/transferred to a inpatient rehabilitation facility including distinct part units of a hospital" base_EnumerationLiteral="_7PwvkD6uEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_85kmAT6uEeW8QcLHABJt8A" conceptName="Discharged/transferred to long term care hospitals" base_EnumerationLiteral="_85kmAD6uEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_-ZqfwT6uEeW8QcLHABJt8A" conceptName="Discharged/transferred to a nursing facility certified under Medicaid but not certified under Medicare" base_EnumerationLiteral="_-ZqfwD6uEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_AAcQUT6vEeW8QcLHABJt8A" conceptName="Discharged/transferred to a psychiatric hospital or psychiatric distinct part unit of a hospital" base_EnumerationLiteral="_AAcQUD6vEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_BzhXgT6vEeW8QcLHABJt8A" conceptName="Discharged/transferred to a Critical Access Hospital (CAH)" base_EnumerationLiteral="_BzhXgD6vEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_Dd0WIT6vEeW8QcLHABJt8A" conceptName="Discharged/transferred to another type of health care institution not defined elsewhere in the code list" base_EnumerationLiteral="_Dd0WID6vEeW8QcLHABJt8A"/>
+  <term:ValueSetVersion xmi:id="_vIoW8T60EeW8QcLHABJt8A" base_Enumeration="_vIoW8D60EeW8QcLHABJt8A">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_zrzAIT60EeW8QcLHABJt8A" conceptName="No symptoms" base_EnumerationLiteral="_zrzAID60EeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_33XBoD60EeW8QcLHABJt8A" conceptName="No significant disability despite symptoms; able to carry out all usual duties and activities" base_EnumerationLiteral="_33NQoD60EeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_6ss3ET60EeW8QcLHABJt8A" conceptName="Slight disability; unable to carry out all previous activities, but able to look after own affairs without assistance" base_EnumerationLiteral="_6ss3ED60EeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_8szGkT60EeW8QcLHABJt8A" conceptName="Moderate disability; requiring some help, but able to walk without assistance" base_EnumerationLiteral="_8szGkD60EeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_AqymIT61EeW8QcLHABJt8A" conceptName="Moderately severe disability; unable to walk without assistance and unable to attend to own bodily needs without assistance" base_EnumerationLiteral="_AqymID61EeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_DZlHoT61EeW8QcLHABJt8A" conceptName="Severe disability; bedridden, incontinent and requiring constant nursing care and attention" base_EnumerationLiteral="_DZlHoD61EeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_Gd-swT61EeW8QcLHABJt8A" conceptName="Dead" base_EnumerationLiteral="_Gd-swD61EeW8QcLHABJt8A"/>
+</xmi:XMI>

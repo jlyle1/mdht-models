@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>ICU Length Of Stay Observation - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>null</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="null"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt></tt><b> STATIC</b>
+<ul><li><p><lines><i>NEMSIS Trace: eOutcome.14 - Total ICU Length of Stay</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>templateId</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="PQ"
+</li>
+</ol>
+<ol id="aggregate">
+<li>contain exactly one [1..1] <tt><b>@classCode</b></tt> with @xsi:type="ActClassObservation"
+</li>
+<li>contain exactly one [1..1] <tt><b>@moodCode</b></tt> with @xsi:type="x_ActMoodDocumentObservation"
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>templateId</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt></tt><b> STATIC</b>
+<ul><li><p><lines><i>NEMSIS Trace: eOutcome.14 - Total ICU Length of Stay</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with @xsi:type="PQ"
+</li>
+</ol>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">ICU Length Of Stay Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>null</tt>]</p>
+</body>
+</topic>

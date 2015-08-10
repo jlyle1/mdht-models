@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>ICU Length Of Stay Observation</title>
+<shortdesc conref="generated/_ICULengthOfStayObservation.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_ICULengthOfStayObservation.dita#classId/prolog"></prolog>
+<body>
+<section conref="generated/_ICULengthOfStayObservation.dita#classId/knownSubclasses">
+</section>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_ICULengthOfStayObservation.dita#classId/description">
+</section>
+<section audience="contextTable" conref="generated/_ICULengthOfStayObservation.dita#classId/contextTable">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_ICULengthOfStayObservation.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_ICULengthOfStayObservation.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<p><b>ICU Length Of Stay Observation example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock conref="generated/_ICULengthOfStayObservation.dita#classId/example">
+</codeblock>
+</body>
+</topic>

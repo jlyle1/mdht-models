@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>DegreeOfDisability (Modified rankin scale)</title>
+<prolog id="prolog">
+<resourceid id="not specified"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table frame="all" rowsep="1" colsep="1"><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>DegreeOfDisability (Modified rankin scale) - (OID not specified)</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+</tbody></tgroup></table>
+<table frame="all" rowsep="1" colsep="1"><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>LA6111-4</entry><entry>LOINC</entry><entry>No symptoms</entry></row>
+<row><entry>LA6112-2</entry><entry>LOINC</entry><entry>No significant disability despite symptoms; able to carry out all usual duties and activities</entry></row>
+<row><entry>LA6113-0</entry><entry>LOINC</entry><entry>Slight disability; unable to carry out all previous activities, but able to look after own affairs without assistance</entry></row>
+<row><entry>LA6114-8</entry><entry>LOINC</entry><entry>Moderate disability; requiring some help, but able to walk without assistance</entry></row>
+<row><entry>LA6115-5</entry><entry>LOINC</entry><entry>Moderately severe disability; unable to walk without assistance and unable to attend to own bodily needs without assistance</entry></row>
+<row><entry>LA10137-0</entry><entry>LOINC</entry><entry>Severe disability; bedridden, incontinent and requiring constant nursing care and attention</entry></row>
+<row><entry>LA10138-8</entry><entry>LOINC</entry><entry>Dead</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

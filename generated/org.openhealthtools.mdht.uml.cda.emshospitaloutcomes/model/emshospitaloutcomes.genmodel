@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="org.openhealthtools.mdht.uml.cda.emshospitaloutcomes/src"
+    modelPluginID="org.openhealthtools.mdht.uml.cda.emshospitaloutcomes" templateDirectory="/org.openhealthtools.mdht.uml.cda/templates"
+    dynamicTemplates="true" modelName="emshospitaloutcomes_Ecore" modelPluginClass="EMSHOSPITALOUTCOMESPlugin"
+    importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="7.0" copyrightFields="false"
+    runtimeVersion="2.5" usedGenPackages="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.genmodel#//cda platform:/plugin/org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab platform:/plugin/org.openhealthtools.mdht.uml.hl7.rim/model/rim.genmodel#//rim platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore platform:/plugin/org.eclipse.uml2.types/model/Types.genmodel#//types"
+    pluralizedGetters="true" invariantPrefix="validate">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="UNION_PROPERTIES" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURES" value="PROCESS"/>
+    <details key="SUBSETTING_PROPERTIES" value="PROCESS"/>
+    <details key="COMMENTS" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURE_INHERITANCE" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATIONS" value="PROCESS"/>
+    <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
+    <details key="REDEFINING_PROPERTIES" value="PROCESS"/>
+    <details key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATION_INHERITANCE" value="PROCESS"/>
+    <details key="REDEFINING_OPERATIONS" value="PROCESS"/>
+    <details key="DERIVED_FEATURES" value="IGNORE"/>
+    <details key="OPERATION_BODIES" value="PROCESS"/>
+    <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+  </genAnnotations>
+  <foreignModel>emshospitaloutcomes_Ecore.uml</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="EMSHOSPITALOUTCOMES" basePackage="org.openhealthtools.mdht.uml.cda"
+      disposableProviderFactory="true" ecorePackage="emshospitaloutcomes.ecore#/"
+      operationsPackage="org.openhealthtools.mdht.uml.cda.emshospitaloutcomes.operations">
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="emshospitaloutcomes.ecore#//InpatientDischargeDiagnosisAct"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="emshospitaloutcomes.ecore#//emsHospitalOutcomes">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//emsHospitalOutcomes/EmsHospitalOutcomesTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//emsHospitalOutcomes/EmsHospitalOutcomesTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//emsHospitalOutcomes/EmsHospitalOutcomesTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//emsHospitalOutcomes/emsHospitalOutcomesEDOutcomesSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//emsHospitalOutcomes/emsHospitalOutcomesEDOutcomesSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//emsHospitalOutcomes/emsHospitalOutcomesEDOutcomesSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//emsHospitalOutcomes/emsHospitalOutcomesComponentOf">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//emsHospitalOutcomes/emsHospitalOutcomesComponentOf/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//emsHospitalOutcomes/emsHospitalOutcomesComponentOf/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//emsHospitalOutcomes/getEDOutcomesSection"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="emshospitaloutcomes.ecore#//EDOutcomesSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EDOutcomesSection/EDOutcomesSectionCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDOutcomesSection/EDOutcomesSectionCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDOutcomesSection/EDOutcomesSectionCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EDOutcomesSection/EDOutcomesSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDOutcomesSection/EDOutcomesSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDOutcomesSection/EDOutcomesSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EDOutcomesSection/EDOutcomesSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDOutcomesSection/EDOutcomesSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDOutcomesSection/EDOutcomesSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EDOutcomesSection/EDOutcomesSectionText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDOutcomesSection/EDOutcomesSectionText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDOutcomesSection/EDOutcomesSectionText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EDOutcomesSection/EDOutcomesSectionTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDOutcomesSection/EDOutcomesSectionTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDOutcomesSection/EDOutcomesSectionTitle/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="emshospitaloutcomes.ecore#//EDDischargeDiagnosis">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EDDischargeDiagnosis/EDDischargeDiagnosisCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDDischargeDiagnosis/EDDischargeDiagnosisCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDDischargeDiagnosis/EDDischargeDiagnosisCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EDDischargeDiagnosis/EDDischargeDiagnosisCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDDischargeDiagnosis/EDDischargeDiagnosisCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDDischargeDiagnosis/EDDischargeDiagnosisCode/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="emshospitaloutcomes.ecore#//EDProceduresSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EDProceduresSection/EDProceduresSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDProceduresSection/EDProceduresSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDProceduresSection/EDProceduresSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EDProceduresSection/EDProceduresSectionTemplateId1">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDProceduresSection/EDProceduresSectionTemplateId1/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDProceduresSection/EDProceduresSectionTemplateId1/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EDProceduresSection/EDProceduresSectionText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDProceduresSection/EDProceduresSectionText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDProceduresSection/EDProceduresSectionText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EDProceduresSection/EDProceduresSectionTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDProceduresSection/EDProceduresSectionTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDProceduresSection/EDProceduresSectionTitle/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="emshospitaloutcomes.ecore#//EDDischargeDispositionSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EDDischargeDispositionSection/EDDischargeDispositionSectionTemplateId1">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDDischargeDispositionSection/EDDischargeDispositionSectionTemplateId1/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDDischargeDispositionSection/EDDischargeDispositionSectionTemplateId1/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EDDischargeDispositionSection/EDDischargeDispositionSectionText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDDischargeDispositionSection/EDDischargeDispositionSectionText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDDischargeDispositionSection/EDDischargeDispositionSectionText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EDDischargeDispositionSection/EDDischargeDispositionSectionTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDDischargeDispositionSection/EDDischargeDispositionSectionTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDDischargeDispositionSection/EDDischargeDispositionSectionTitle/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="emshospitaloutcomes.ecore#//EDDischargeDispositionObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EDDischargeDispositionObservation/EDDischargeDispositionObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDDischargeDispositionObservation/EDDischargeDispositionObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDDischargeDispositionObservation/EDDischargeDispositionObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EDDischargeDispositionObservation/EDDischargeDispositionObservationTemplateId1">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDDischargeDispositionObservation/EDDischargeDispositionObservationTemplateId1/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDDischargeDispositionObservation/EDDischargeDispositionObservationTemplateId1/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EDDischargeDispositionObservation/EDDischargeDispositionObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDDischargeDispositionObservation/EDDischargeDispositionObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDDischargeDispositionObservation/EDDischargeDispositionObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="emshospitaloutcomes.ecore#//EMSOutcomesProcedure">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EMSOutcomesProcedure/EMSOutcomesProcedureCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EMSOutcomesProcedure/EMSOutcomesProcedureCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EMSOutcomesProcedure/EMSOutcomesProcedureCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EMSOutcomesProcedure/EMSOutcomesProcedureTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EMSOutcomesProcedure/EMSOutcomesProcedureTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EMSOutcomesProcedure/EMSOutcomesProcedureTemplateId/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="emshospitaloutcomes.ecore#//EDChiefComplaintSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EDChiefComplaintSection/EDChiefComplaintSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDChiefComplaintSection/EDChiefComplaintSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDChiefComplaintSection/EDChiefComplaintSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EDChiefComplaintSection/EDChiefComplaintSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDChiefComplaintSection/EDChiefComplaintSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDChiefComplaintSection/EDChiefComplaintSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EDChiefComplaintSection/EDChiefComplaintSectionText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDChiefComplaintSection/EDChiefComplaintSectionText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDChiefComplaintSection/EDChiefComplaintSectionText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EDChiefComplaintSection/EDChiefComplaintSectionTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDChiefComplaintSection/EDChiefComplaintSectionTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDChiefComplaintSection/EDChiefComplaintSectionTitle/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="emshospitaloutcomes.ecore#//EDSystolicBPObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EDSystolicBPObservation/EDSystolicBPObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDSystolicBPObservation/EDSystolicBPObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDSystolicBPObservation/EDSystolicBPObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EDSystolicBPObservation/EDSystolicBPObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDSystolicBPObservation/EDSystolicBPObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDSystolicBPObservation/EDSystolicBPObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="emshospitaloutcomes.ecore#//EDCauseOfInjuryObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EDCauseOfInjuryObservation/EDCauseOfInjuryObservationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDCauseOfInjuryObservation/EDCauseOfInjuryObservationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDCauseOfInjuryObservation/EDCauseOfInjuryObservationCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EDCauseOfInjuryObservation/EDCauseOfInjuryObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDCauseOfInjuryObservation/EDCauseOfInjuryObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDCauseOfInjuryObservation/EDCauseOfInjuryObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EDCauseOfInjuryObservation/EDCauseOfInjuryObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDCauseOfInjuryObservation/EDCauseOfInjuryObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EDCauseOfInjuryObservation/EDCauseOfInjuryObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="emshospitaloutcomes.ecore#//InpatientOutcomesSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//InpatientOutcomesSection/InpatientOutcomesSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientOutcomesSection/InpatientOutcomesSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientOutcomesSection/InpatientOutcomesSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//InpatientOutcomesSection/InpatientOutcomesSectionCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientOutcomesSection/InpatientOutcomesSectionCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientOutcomesSection/InpatientOutcomesSectionCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//InpatientOutcomesSection/InpatientOutcomesSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientOutcomesSection/InpatientOutcomesSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientOutcomesSection/InpatientOutcomesSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//InpatientOutcomesSection/InpatientOutcomesSectionText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientOutcomesSection/InpatientOutcomesSectionText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientOutcomesSection/InpatientOutcomesSectionText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//InpatientOutcomesSection/InpatientOutcomesSectionTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientOutcomesSection/InpatientOutcomesSectionTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientOutcomesSection/InpatientOutcomesSectionTitle/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="emshospitaloutcomes.ecore#//EMSOutcomesEncompassingEncounter">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//EMSOutcomesEncompassingEncounter/EMSOutcomesEncompassingEncounterEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EMSOutcomesEncompassingEncounter/EMSOutcomesEncompassingEncounterEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//EMSOutcomesEncompassingEncounter/EMSOutcomesEncompassingEncounterEffectiveTime/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="emshospitaloutcomes.ecore#//OutcomesPriorDocument">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//OutcomesPriorDocument/OutcomesPriorDocumentId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//OutcomesPriorDocument/OutcomesPriorDocumentId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//OutcomesPriorDocument/OutcomesPriorDocumentId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//OutcomesPriorDocument/OutcomesPriorDocumentTemplateId1">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//OutcomesPriorDocument/OutcomesPriorDocumentTemplateId1/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//OutcomesPriorDocument/OutcomesPriorDocumentTemplateId1/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="emshospitaloutcomes.ecore#//InpatientProceduresSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//InpatientProceduresSection/InpatientProceduresSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientProceduresSection/InpatientProceduresSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientProceduresSection/InpatientProceduresSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//InpatientProceduresSection/InpatientProceduresSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientProceduresSection/InpatientProceduresSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientProceduresSection/InpatientProceduresSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//InpatientProceduresSection/InpatientProceduresSectionText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientProceduresSection/InpatientProceduresSectionText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientProceduresSection/InpatientProceduresSectionText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//InpatientProceduresSection/InpatientProceduresSectionTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientProceduresSection/InpatientProceduresSectionTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientProceduresSection/InpatientProceduresSectionTitle/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="emshospitaloutcomes.ecore#//InpatientDischargeDiagnosisSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//InpatientDischargeDiagnosisSection/InpatientDischargeDiagnosisSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientDischargeDiagnosisSection/InpatientDischargeDiagnosisSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientDischargeDiagnosisSection/InpatientDischargeDiagnosisSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//InpatientDischargeDiagnosisSection/InpatientDischargeDiagnosisSectionCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientDischargeDiagnosisSection/InpatientDischargeDiagnosisSectionCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientDischargeDiagnosisSection/InpatientDischargeDiagnosisSectionCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//InpatientDischargeDiagnosisSection/InpatientDischargeDiagnosisSectionTemplateId1">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientDischargeDiagnosisSection/InpatientDischargeDiagnosisSectionTemplateId1/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientDischargeDiagnosisSection/InpatientDischargeDiagnosisSectionTemplateId1/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//InpatientDischargeDiagnosisSection/InpatientDischargeDiagnosisSectionText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientDischargeDiagnosisSection/InpatientDischargeDiagnosisSectionText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientDischargeDiagnosisSection/InpatientDischargeDiagnosisSectionText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//InpatientDischargeDiagnosisSection/InpatientDischargeDiagnosisSectionTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientDischargeDiagnosisSection/InpatientDischargeDiagnosisSectionTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientDischargeDiagnosisSection/InpatientDischargeDiagnosisSectionTitle/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="emshospitaloutcomes.ecore#//InpatientDischargeDiagnosisObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//InpatientDischargeDiagnosisObservation/InpatientDischargeDiagnosisObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientDischargeDiagnosisObservation/InpatientDischargeDiagnosisObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientDischargeDiagnosisObservation/InpatientDischargeDiagnosisObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//InpatientDischargeDiagnosisObservation/InpatientDischargeDiagnosisObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientDischargeDiagnosisObservation/InpatientDischargeDiagnosisObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientDischargeDiagnosisObservation/InpatientDischargeDiagnosisObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//InpatientDischargeDiagnosisObservation/InpatientDischargeDiagnosisObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientDischargeDiagnosisObservation/InpatientDischargeDiagnosisObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//InpatientDischargeDiagnosisObservation/InpatientDischargeDiagnosisObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="emshospitaloutcomes.ecore#//ICULengthOfStayObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//ICULengthOfStayObservation/ICULengthOfStayObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//ICULengthOfStayObservation/ICULengthOfStayObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//ICULengthOfStayObservation/ICULengthOfStayObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//ICULengthOfStayObservation/ICULengthOfStayObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//ICULengthOfStayObservation/ICULengthOfStayObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//ICULengthOfStayObservation/ICULengthOfStayObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//ICULengthOfStayObservation/ICULengthOfStayObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//ICULengthOfStayObservation/ICULengthOfStayObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//ICULengthOfStayObservation/ICULengthOfStayObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="emshospitaloutcomes.ecore#//VentilatorDaysObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//VentilatorDaysObservation/VentilatorDaysObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//VentilatorDaysObservation/VentilatorDaysObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//VentilatorDaysObservation/VentilatorDaysObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//VentilatorDaysObservation/VentilatorDaysObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//VentilatorDaysObservation/VentilatorDaysObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//VentilatorDaysObservation/VentilatorDaysObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//VentilatorDaysObservation/VentilatorDaysObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//VentilatorDaysObservation/VentilatorDaysObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//VentilatorDaysObservation/VentilatorDaysObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="emshospitaloutcomes.ecore#//PatientDegreeOfDisabilityAtDischarge">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//PatientDegreeOfDisabilityAtDischarge/PatientDegreeOfDisabilityAtDischargeCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//PatientDegreeOfDisabilityAtDischarge/PatientDegreeOfDisabilityAtDischargeCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//PatientDegreeOfDisabilityAtDischarge/PatientDegreeOfDisabilityAtDischargeCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//PatientDegreeOfDisabilityAtDischarge/PatientDegreeOfDisabilityAtDischargeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//PatientDegreeOfDisabilityAtDischarge/PatientDegreeOfDisabilityAtDischargeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//PatientDegreeOfDisabilityAtDischarge/PatientDegreeOfDisabilityAtDischargeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//PatientDegreeOfDisabilityAtDischarge/PatientDegreeOfDisabilityAtDischargeTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//PatientDegreeOfDisabilityAtDischarge/PatientDegreeOfDisabilityAtDischargeTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//PatientDegreeOfDisabilityAtDischarge/PatientDegreeOfDisabilityAtDischargeTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//PatientDegreeOfDisabilityAtDischarge/PatientDegreeOfDisabilityAtDischargeValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//PatientDegreeOfDisabilityAtDischarge/PatientDegreeOfDisabilityAtDischargeValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//PatientDegreeOfDisabilityAtDischarge/PatientDegreeOfDisabilityAtDischargeValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="emshospitaloutcomes.ecore#//PatientDegreeOfDisabilityAtDischarge/PatientDegreeOfDisabilityAtDischargeValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//PatientDegreeOfDisabilityAtDischarge/PatientDegreeOfDisabilityAtDischargeValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="emshospitaloutcomes.ecore#//PatientDegreeOfDisabilityAtDischarge/PatientDegreeOfDisabilityAtDischargeValueP/context"/>
+      </genOperations>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

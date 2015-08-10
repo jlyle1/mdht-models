@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Value Sets">
+<topicref href="CMS1450DataSetUB04.dita" type="topic" />
+<topicref href="DegreeOfDisabilityModifiedRankinScale.dita" type="topic" />
+<topicref href="EDDischargeDisposition.dita" type="topic" />
+<topicref href="InpatientDischargeDisposition.dita" type="topic" />
+<topicref href="LOINC.dita" type="topic" />
+</map>

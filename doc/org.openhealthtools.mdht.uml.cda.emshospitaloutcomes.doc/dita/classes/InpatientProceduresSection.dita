@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Inpatient Procedures Section</title>
+<shortdesc conref="generated/_InpatientProceduresSection.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_InpatientProceduresSection.dita#classId/prolog"></prolog>
+<body>
+<section conref="generated/_InpatientProceduresSection.dita#classId/knownSubclasses">
+</section>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_InpatientProceduresSection.dita#classId/description">
+</section>
+<section audience="contextTable" conref="generated/_InpatientProceduresSection.dita#classId/contextTable">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_InpatientProceduresSection.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_InpatientProceduresSection.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<p><b>Inpatient Procedures Section example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock conref="generated/_InpatientProceduresSection.dita#classId/example">
+</codeblock>
+</body>
+</topic>

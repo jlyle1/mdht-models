@@ -1,0 +1,2 @@
+Bundle-Name: Model Bundle emshospitaloutcomes
+Bundle-SymbolicName: org.openhealthtools.mdht.uml.cda.emshospitaloutcomes.model;singleton:=true

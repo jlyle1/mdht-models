@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Package: emshospitaloutcomes">
+<topicref href="EDCauseOfInjuryObservation.dita" type="topic" />
+<topicref href="EDChiefComplaintSection.dita" type="topic" />
+<topicref href="EDDischargeDiagnosis.dita" type="topic" />
+<topicref href="EDDischargeDispositionObservation.dita" type="topic" />
+<topicref href="EDDischargeDispositionSection.dita" type="topic" />
+<topicref href="EDOutcomesSection.dita" type="topic" />
+<topicref href="EDProceduresSection.dita" type="topic" />
+<topicref href="EDSystolicBPObservation.dita" type="topic" />
+<topicref href="EMSOutcomesEncompassingEncounter.dita" type="topic" />
+<topicref href="EMSOutcomesProcedure.dita" type="topic" />
+<topicref href="EmsHospitalOutcomes.dita" type="topic" />
+<topicref href="ICULengthOfStayObservation.dita" type="topic" />
+<topicref href="InpatientDischargeDiagnosisAct.dita" type="topic" />
+<topicref href="InpatientDischargeDiagnosisObservation.dita" type="topic" />
+<topicref href="InpatientDischargeDiagnosisSection.dita" type="topic" />
+<topicref href="InpatientOutcomesSection.dita" type="topic" />
+<topicref href="InpatientProceduresSection.dita" type="topic" />
+<topicref href="OutcomesPriorDocument.dita" type="topic" />
+<topicref href="PatientDegreeOfDisabilityAtDischarge.dita" type="topic" />
+<topicref href="VentilatorDaysObservation.dita" type="topic" />
+</map>

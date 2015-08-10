@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>ED Discharge Disposition Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>null</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="null"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from
+</li>
+<li>contains zero or more [0..*] <tt><b>templateId1</b></tt> with @xsi:type="II"
+</li>
+<li>contain zero or one [0..1] <tt><b>text</b></tt>
+</li>
+<li>contain zero or one [0..1] <tt><b>title</b></tt>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from
+</li>
+<li>contain zero or one [0..1] <tt><b>title</b></tt>
+</li>
+<li>contain zero or one [0..1] <tt><b>text</b></tt>
+</li>
+<li>contains zero or more [0..*] <tt><b>templateId1</b></tt> with @xsi:type="II"
+</li>
+</ol>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">ED Discharge Disposition Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>null</tt>]</p>
+</body>
+</topic>
