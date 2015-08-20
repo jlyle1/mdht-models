@@ -4,6 +4,21 @@
 <topic id="topicId" xml:lang="en-us">
 	<title>CLASS REFERENCES</title>
 	<body>
-		<p>This section of the Implementation Guide describes classes from other implementation guides.</p>
+		<p>
+			<ul>
+				<li>Dolin RH, Alschuler L, Boyer S, Beebe C, Behlen FM, Biron PV, Shabo A, (Editors). HL7 Clinical Document
+					Architecture, Release 2.0. ANSI-approved HL7 Standard; May 2005. Ann Arbor, Mich.: Health Level Seven, Inc.
+					Available through HL7 or if an HL7 member with the following link: CDA Release 2 Normative Web Edition.</li>
+				<li>LOINC® : Logical Observation Identifiers Names and Codes, Regenstrief Institute.</li>
+				<li>SNOMED CT® : SNOMED Clinical Terms SNOMED International Organization.</li>
+				<li>Dolin RH, Alschuler L, Boyer S, Beebe C, Behlen FM, Biron PV, Shabo A., HL7 Clinical Document Architecture,
+					Release 2. J Am Med Inform Assoc. 2006;13:30-39. Available at: http://www.jamia.org/cgi/reprint/13/1/30 .</li>
+				<li>National Emergency Medical Services Information System (NEMSIS) Data Dictionary, version 3. Available at
+					NEMSIS.org</li>
+				<li>HL7 EMS Domain Analysis Model, available from HL7 or via the HL7 wikiHL7 wiki.</li>
+				<li>Health Level Seven (HL7<tm tmtype="reg"/>) HL7<tm tmtype="reg"/> 
+					Implementation Guide for CDA&#0169; Release 2: IHE Health Story Consolidation, DSTU Release 1.1. </li>
+			</ul>
+		 </p>
 	</body>
 </topic>

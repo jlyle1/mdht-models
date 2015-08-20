@@ -45,7 +45,7 @@
   <templateId root="2.16.840.1.1133883.17.3.10.1.104"/>
   <code code="77155-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hospital designation capability"/>
   <text>Text Value</text>
-  <value xsi:type="CD" code="161719283"/>
+  <value xsi:type="CD" code="1749737557"/>
 </observation>]]></codeblock>
 <section id="changes">
 </section>

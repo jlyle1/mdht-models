@@ -4,13 +4,18 @@
 <topic id="topicId" xml:lang="en-us">
 	<title>Acknowledgments</title>
 	<body>
-		<p>This document contains an example of healthcare standards and specifications publication
-			generated from UML models, using the OHT Model Driven Health Tools (MDHT). Some portions of this
-			document may not be publicly available but are included for demonstration purposes only,
-			therefore this version of the document is to be treated as CONFIDENTIAL by the project
-			participants.</p>
-
-		<p>This demonstration document contains informtion from the following sources:</p>
+		
+		<p>This implementation guide was developed with the support and sponsorship of the National EMS Information System
+			(NEMSIS), directed by Clay Mann. Additional clinical guidance was provided by Dr. Greg Mears. NEMSIS is
+			supported by the US National Highway Traffic Safety Administration, the Centers for Disease Control, and the
+			Health Resources and Services Administration, as well as dozens of other government agencies, universities, and
+			professional organizations.</p>
+		
+		<p>The HL7 Clinical Interoperability Council, Emergency Care, and Structured Documents working groups sponsored the 
+			project. Special thanks go to Sean Muir, whose assistance was indispensible in making available the rich 
+			functionality of Open Health Tools' Model Driven Health Tools.</p>
+		
+		<p>This document contains informtion from the following sources:</p>
 
 		<p>&#169;2010 ANSI. This material may be copied without permission from ANSI only if and to the
 			extent that the text is not altered in any fashion and ANSI’s copyright is clearly noted.</p>
@@ -23,13 +28,10 @@
 		Observation Identifiers Names and Codes (LOINC) Committee and available at no cost under the
 		license at http://loinc.org/terms-of-use .</p>
 
-		<p>Certain materials contained in this Interoperability Specification
-			are reproduced from Health Level Seven (HL7<tm tmtype="reg"/>) HL7<tm tmtype="reg"/> Implementation
-			Guide: CDA<tm tmtype="reg"/> Release 2 – Continuity of Care Document (CCD), HL7<tm tmtype="reg"/>
-			Implementation Guide for CDA<tm tmtype="reg"/> Release 2: History and Physical (H&amp;P)
-			Notes, HL7<tm tmtype="reg"/> Implementation Guide for CDA<tm tmtype="reg"/> Release 2: Consult Notes, or
-			HL7<tm tmtype="reg"/> Implementation Guide for CDA<tm tmtype="reg"/> Release 2: Operative Notes with
-			permission of Health Level Seven, Inc. No part of the material may be
+		<p>Certain classes contained in this Interoperability Specification conform to specifications
+			defined in Health Level Seven (HL7<tm tmtype="reg"/>) HL7<tm tmtype="reg"/> 
+			Implementation Guide for CDA&#0169; Release 2: IHE Health Story Consolidation, DSTU Release 1.1. 
+			No part of the material may be
 			copied or reproduced in any form outside of the Interoperability
 			Specification documents, including an electronic retrieval system, or
 			made available on the Internet without the prior written permission

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>ED Context Reference Entry - conformance rules</title>
+<shortdesc id="shortdesc">[EntryRelationship: templateId <tt>null</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>EntryRelationship</category></metadata>
+<resourceid id="null"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="REFR" </tt> (CONF:57)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>act</b></tt> <ol><li>This act <b>SHALL</b> contain exactly one [1..1] <tt><b>id1</b></tt> with @xsi:type="II"</li></ol> 
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="REFR" </tt> (CONF:57)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>act</b></tt> <ol><li>This act <b>SHALL</b> contain exactly one [1..1] <tt><b>id1</b></tt> with @xsi:type="II"</li></ol> 
+</li>
+</ol>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">ED Context Reference Entry</ph></p>
+<p id="shortdesc">[EntryRelationship: templateId <tt>null</tt>]</p>
+</body>
+</topic>

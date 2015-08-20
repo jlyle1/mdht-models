@@ -24,7 +24,7 @@
 <p><b>EMS Times Section example</b></p>
 <!-- TODO: insert custom instance example here -->
 <!-- generated instance example follows -->
-<codeblock conref="generated/_EMSTimesSection.dita#classId/example">
+<codeblock audience="examples" conref="generated/_EMSTimesSection.dita#classId/example">
 </codeblock>
 </body>
 </topic>

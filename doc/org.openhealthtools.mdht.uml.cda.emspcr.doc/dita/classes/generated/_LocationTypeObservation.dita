@@ -41,7 +41,7 @@ See NEMSIS recommended subset at http://nemsis.org/v3/resources.html. ICD-10 CM 
   <templateId root="2.16.840.1.1133883.17.3.10.1.88"/>
   <code code="74496-1" codeSystemName="" displayName="Injury location ICD code"/>
   <text>Text Value</text>
-  <value xsi:type="CD" code="619859131"/>
+  <value xsi:type="CD" code="483018389"/>
 </observation>]]></codeblock>
 <section id="changes">
 </section>

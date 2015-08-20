@@ -61,7 +61,7 @@
     <low value="2015"/>
     <high value="2015"/>
   </effectiveTime>
-  <value xsi:type="CD" code="1757906241"/>
+  <value xsi:type="CD" code="65968496"/>
   <methodCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
   <participant>
     <participantRole>

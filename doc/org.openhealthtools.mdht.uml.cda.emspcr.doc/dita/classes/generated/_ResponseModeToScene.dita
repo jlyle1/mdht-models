@@ -49,13 +49,13 @@
   <templateId root="2.16.840.1.1133883.17.3.10.1.182"/>
   <code code="67482-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Response mode to scene NEMSIS"/>
   <text>Text Value</text>
-  <value xsi:type="CD" code="774464726"/>
+  <value xsi:type="CD" code="1442006886"/>
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.1133883.17.3.10.1.191"/>
       <code code="77157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Response mode descriptors"/>
       <text>Text Value</text>
-      <value xsi:type="CD" code="1933963960"/>
+      <value xsi:type="CD" code="199725493"/>
     </observation>
   </entryRelationship>
 </observation>]]></codeblock>

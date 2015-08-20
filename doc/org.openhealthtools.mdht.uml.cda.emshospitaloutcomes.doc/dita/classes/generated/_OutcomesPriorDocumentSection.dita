@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Outcomes Prior Document Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>null</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="null"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:51)<tt><b>/@code</b>="LOINC_TBD_001" </tt><i>External Document Section</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:50)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:52)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "External Document" (CONF:53)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> {subsets  Section::entry} (CONF:55) <ol><li>Such entries <b>SHALL</b> contain exactly one [1..1] <tt><b>outcomesPriorDocument</b></tt> <ol><li>This outcomesPriorDocument <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt></tt><b> STATIC</b> (CONF:25)<p><lines><i>NEMSIS Trace:  eOutcome.03 - External Report ID/Number Type, eOutcome.05 - Other Report Registry Type. If the type is not found, the type code may be null and the other type text placed in the code original text attribute.</i></lines></p></li><li>This outcomesPriorDocument <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:26)<p><lines><i>NEMSIS Trace: eOutcome.04 - External Report ID/Number. This will typically be placed in the extension, as NEMSIS will not maintain an OID registry for all responder and healthcare organizations. The vendor or implementer may discover or assign OIDS.</i></lines></p></li></ol> </li></ol> 
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:51)<tt><b>/@code</b>="LOINC_TBD_001" </tt><i>External Document Section</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:50)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "External Document" (CONF:53)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:52)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> {subsets  Section::entry} (CONF:55) <ol><li>Such entries <b>SHALL</b> contain exactly one [1..1] <tt><b>outcomesPriorDocument</b></tt> <ol><li>This outcomesPriorDocument <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt></tt><b> STATIC</b> (CONF:25)<p><lines><i>NEMSIS Trace:  eOutcome.03 - External Report ID/Number Type, eOutcome.05 - Other Report Registry Type. If the type is not found, the type code may be null and the other type text placed in the code original text attribute.</i></lines></p></li><li>This outcomesPriorDocument <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:26)<p><lines><i>NEMSIS Trace: eOutcome.04 - External Report ID/Number. This will typically be placed in the extension, as NEMSIS will not maintain an OID registry for all responder and healthcare organizations. The vendor or implementer may discover or assign OIDS.</i></lines></p></li></ol> </li></ol> 
+</li>
+</ol>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../EmsHospitalOutcomes.dita">ems Hospital Outcomes</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Outcomes Prior Document Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>null</tt>]</p>
+</body>
+</topic>

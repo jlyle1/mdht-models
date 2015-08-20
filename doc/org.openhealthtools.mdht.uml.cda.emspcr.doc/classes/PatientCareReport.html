@@ -113,7 +113,6 @@ EPatient.17</em></p>
 <li class="li">This patient <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">ethnicGroupCode</strong></tt> (CONF:10874), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/EthnicityGroup.html">Ethnicity Group</a> 2.16.840.1.114222.4.11.837</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10032)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EPatient.14</em></p>
 </div>
 </li>
-<li class="li">This patient <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">maritalStatusCode</strong></tt> (CONF:5303), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="generated/../../terminology/HL7MaritalStatus.html">HL7 Marital Status</a> 2.16.840.1.113883.1.11.12212</tt><strong class="ph b"> STATIC</strong> 1</li>
 <li class="li">This patient <strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">name</strong></tt> (CONF:10875)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace<br/>
 EPatient.02 . . . /PatientRole/Patient/name/family<br/>
 EPatient.03 . . . /PatientRole/Patient/name/given<br/>
@@ -127,50 +126,9 @@ NEMSIS collects race and ethnicity in the one-question format (see guidance at h
 selected for the NEMSIS question. Further, the CDA model includes a single race code. In order to support multiple race codes as required by OMB, we adopt a second race code entry from the HL7 SDWG namespace. All documents with a race code must populate the CDA race code; if more than one race code is recorded, then the SDWG element may also be populated. No semantic priority is implied by the element selection.</em></p>
 </div>
 </li>
-<li class="li">This patient <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">religiousAffiliationCode</strong></tt> (CONF:5317), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="generated/../../terminology/HL7ReligiousAffiliation.html">HL7 Religious Affiliation</a> 2.16.840.1.113883.1.11.19185</tt><strong class="ph b"> STATIC</strong> 1</li>
 <li class="li">This patient <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">sdtc:RaceCode</strong></tt> (CONF:10877), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/RaceCategory.html">RaceCategory</a> 2.16.840.1.114222.4.11.836</tt><strong class="ph b"> DYNAMIC</strong> (CONF:10034)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: EPatient.14</em></p>
 </div>
 </li>
-<li class="li">This patient <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">sDTCRaceCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="generated/../../terminology/RaceValueSet.html">Race Value Set</a> 2.16.840.1.113883.1.11.14914</tt><strong class="ph b"> DYNAMIC</strong> (CONF:7263)<div class="p"><p class="lines"><em class="ph i">Note: The sdtc:raceCode is only used to record additional values when the patient has indicated multiple races or additional race detail beyond the five categories required for Meaningful Use Stage 2. The prefix sdtc: SHALL be bound to the namespace "urn:hl7-org:sdtc". The use of the namespace provides a necessary extension to CDA R2 for the use of the additional raceCode elements.</em></p>
-</div>
-</li>
-<li class="li">This patient <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">birthplace</strong></tt> (CONF:5395) <ol class="ol" type="a"><li class="li">This birthplace <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">place</strong></tt> (CONF:5396) <ol class="ol" type="i"><li class="li">This place <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">addr</strong></tt> (CONF:5397)</li>
-<li class="li">This place If country is US, this addr <strong class="ph b">SHALL</strong> contain exactly one [1..1] state, which <strong class="ph b">SHALL</strong> be selected from ValueSet StateValueSet 2.16.840.1.113883.3.88.12.80.1 DYNAMIC</li>
-<li class="li">This place This addr <strong class="ph b">MAY</strong> contain zero or one [0..1] postalCode, which <strong class="ph b">SHALL</strong> be selected from ValueSet PostalCodeValueSet 2.16.840.1.113883.3.88.12.80.2 DYNAMIC</li>
-<li class="li">This place This addr <strong class="ph b">SHOULD</strong> contain zero or one [0..1] country, which <strong class="ph b">SHALL</strong> be selected from ValueSet CountryValueSet 2.16.840.1.113883.3.88.12.80.63 DYNAMIC</li>
-</ol>
- </li>
-</ol>
- </li>
-<li class="li">This patient <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">guardian</strong></tt> (CONF:5325) <ol class="ol" type="a"><li class="li">Such guardians <strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt> with @xsi:type="USRealmAddress" <ol class="ol" type="i"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">city</strong></tt> (CONF:7292)</li>
-<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">country</strong></tt> (CONF:7295)</li>
-<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">postalCode</strong></tt> (CONF:7294)</li>
-<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">state</strong></tt> (CONF:7293)</li>
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">streetAddressLine</strong></tt> (CONF:7291)</li>
-<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@use</strong></tt> (CONF:7290), which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="generated/../../terminology/PostalAddressUse.html">PostalAddressUse</a> 2.16.840.1.113883.1.11.10637</tt><strong class="ph b"> STATIC</strong></li>
-<li class="li">State is required if the country is US. If country is not specified, its assumed to be US. If country is something other than US, the state <strong class="ph b">MAY</strong> be present but <strong class="ph b">MAY</strong> be bound to different vocabularies (CONF:10024)</li>
-<li class="li">PostalCode is required if the country is US. If country is not specified, its assumed to be US. If country is something other than US, the postalCode <strong class="ph b">MAY</strong> be present but <strong class="ph b">MAY</strong> be bound to different vocabularies (CONF:10025)</li>
-<li class="li"><strong class="ph b">SHALL NOT</strong> have mixed content except for white space (CONF:7296)</li>
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one and not more than 4 streetAddressLine (CONF:7291)</li>
-</ol>
- </li>
-<li class="li">Such guardians <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:5326)</li>
-<li class="li">Such guardians <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">telecom</strong></tt> with @xsi:type="TEL" <ol class="ol" type="i"><li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@use</strong></tt> (CONF:7993)</li>
-</ol>
- </li>
-<li class="li">Such guardians <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">guardianPerson</strong></tt> <ol class="ol" type="i"><li class="li">This guardianPerson <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">name</strong></tt></li>
-<li class="li">This guardianPerson The content of name <strong class="ph b">SHALL</strong> be a conformant US Realm Person Name (PTN.US.FIELDED) (2.16.840.1.113883.10.20.22.5.1.1) (CONF:10414)</li>
-</ol>
- </li>
-<li class="li">Such guardians The guardian code, if present, <strong class="ph b">SHALL</strong> be selected from ValueSet PersonalRelationshipRoleType 2.16.840.1.113883.1.11.19563 DYNAMIC or ValueSet Responsible Party 2.16.840.1.113883.1.11.19830 DYNAMIC (CONF:5326)</li>
-</ol>
- </li>
-<li class="li">This patient <strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">languageCommunication</strong></tt> (CONF:5406) <ol class="ol" type="a"><li class="li">Such languageCommunications <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">languageCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="generated/../../terminology/Language.html">Language</a> 2.16.840.1.113883.1.11.11526</tt><strong class="ph b"> DYNAMIC</strong> (CONF:5407)</li>
-<li class="li">Such languageCommunications <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">modeCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="generated/../../terminology/HL7LanguageAbilityMode.html">HL7 LanguageAbilityMode</a> 2.16.840.1.113883.1.11.12249</tt><strong class="ph b"> STATIC</strong> 1 (CONF:5409)</li>
-<li class="li">Such languageCommunications <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">preferenceInd</strong></tt> (CONF:5414)</li>
-<li class="li">Such languageCommunications <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">proficiencyLevelCode</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="generated/../../terminology/LanguageAbilityProficiency.html">LanguageAbilityProficiency</a> 2.16.840.1.113883.1.11.12199</tt><strong class="ph b"> STATIC</strong> (CONF:9965)</li>
-</ol>
- </li>
 </ol>
  </li>
 <li class="li">This patientRole <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">providerOrganization</strong></tt> (CONF:5416) <ol class="ol"><li class="li">This providerOrganization <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">addr</strong></tt> with @xsi:type="USRealmAddress" <ol class="ol" type="a"><li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">city</strong></tt> (CONF:7292)</li>

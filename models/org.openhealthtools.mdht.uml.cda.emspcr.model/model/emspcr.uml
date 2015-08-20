@@ -246,7 +246,7 @@ appendix A.</body>
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_BsLoQGevEeGtXKebdWh3hg" name="Patient">
             <generalization xmi:id="_FDRf4GevEeGtXKebdWh3hg">
-              <general xmi:type="uml:Class" href="pathmap://CONSOL_MODEL/.controlled/consol-documents.uml#_wfQTkCylEeGMXrZ0DiQwGg"/>
+              <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_mxsCMEALEd6wZe6nFLrjsw"/>
             </generalization>
             <ownedAttribute xmi:id="_skFM4HSCEeGa4IXs2ghZEw" name="birthTime" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_8QFWQHSDEeGa4IXs2ghZEw">
@@ -4345,7 +4345,7 @@ Note: all of RxNorm is legal in this field, but NEMSIS provides a selected list 
             </generalization>
             <ownedAttribute xmi:id="_BbDLwEJHEeK3I6jW34aYTg" name="code" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_KFuc4EJHEeK3I6jW34aYTg">
-                <body>For NEMSIS route codes that imply devices (eHistory.15 &amp; eMedications.04</body>
+                <body>For NEMSIS route codes that imply devices (eHistory.15 and eMedications.04)</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0d8aQE_TEeOQyePZE5R0SQ" value="1"/>

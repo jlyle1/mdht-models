@@ -52,25 +52,25 @@
   <statusCode code="completed"/>
   <component>
     <observation>
-      <code code="296956653"/>
+      <code code="1880406363"/>
       <value xsi:type="PQ"/>
     </observation>
   </component>
   <component>
     <observation>
-      <code code="1537586837"/>
+      <code code="1551776798"/>
       <value xsi:type="PQ"/>
     </observation>
   </component>
   <component>
     <observation>
-      <code code="1684284160"/>
+      <code code="774104551"/>
       <value xsi:type="PQ"/>
     </observation>
   </component>
   <component>
     <observation>
-      <code code="1792583078"/>
+      <code code="1994435476"/>
       <value xsi:type="PQ"/>
     </observation>
   </component>

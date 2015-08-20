@@ -15,12 +15,24 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] templateId such that it <ol><li><b>SHALL</b> contain exactly one [1..1] <b>@root</b>="2.16.840.1.113883.17.3.10.3"</li></ol></li>
-<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../EDOutcomesSection.dita">ED Outcomes Section</xref></li></ol></li>
-<li>contain  [0..1] <tt><b>componentOf</b></tt>
+<li><b>MAY</b> contain  [0..1] <tt><b>componentOf</b></tt>
 <ol>
 <li>Contains exactly one [1..1] CDA Encompassing Encounter</li></ol></li>
+<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EDObservationsSection.dita">ED Observations Section</xref></li></ol></li>
+<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../OutcomesProceduresSection.dita">Outcomes Procedures Section</xref></li></ol></li>
+<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../OutcomesPriorDocumentSection.dita">Outcomes Prior Document Section</xref></li></ol></li>
+<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../OutcomesDischargeDiagnosisSection.dita">Outcomes Discharge Diagnosis Section</xref></li></ol></li>
+<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../OutcomesInpatientObservationsSection.dita">Outcomes Inpatient Observations Section</xref></li></ol></li>
 </ol>
 <ol id="aggregate">
 <li>contain exactly one [1..1] <tt><b>typeId</b></tt> with @xsi:type="InfrastructureRootTypeId"
@@ -45,12 +57,24 @@
 <li>contain exactly one [1..1] <tt><b>component</b></tt>, where its type is <xref href="../Component2.dita">Component2</xref>
 <ol>
 <li>Contains exactly one [1..1] <xref href="../Component2.dita">Component2</xref></li></ol></li>
-<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt>
-<ol>
-<li>Contains exactly one [1..1] <xref href="../EDOutcomesSection.dita">ED Outcomes Section</xref></li></ol></li>
-<li>contain  [0..1] <tt><b>componentOf</b></tt>
+<li><b>MAY</b> contain  [0..1] <tt><b>componentOf</b></tt>
 <ol>
 <li>Contains exactly one [1..1] CDA Encompassing Encounter</li></ol></li>
+<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EDObservationsSection.dita">ED Observations Section</xref></li></ol></li>
+<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../OutcomesProceduresSection.dita">Outcomes Procedures Section</xref></li></ol></li>
+<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../OutcomesPriorDocumentSection.dita">Outcomes Prior Document Section</xref></li></ol></li>
+<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../OutcomesDischargeDiagnosisSection.dita">Outcomes Discharge Diagnosis Section</xref></li></ol></li>
+<li><b>MAY</b> contain  [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../OutcomesInpatientObservationsSection.dita">Outcomes Inpatient Observations Section</xref></li></ol></li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[Error: Missing Runtime Class]]></codeblock>

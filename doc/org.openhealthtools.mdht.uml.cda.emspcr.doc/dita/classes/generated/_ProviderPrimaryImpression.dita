@@ -42,7 +42,7 @@
   <templateId root="2.16.840.1.1133883.17.3.10.1.65"/>
   <code code="67492-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Primary problem NEMSIS"/>
   <text>Text Value</text>
-  <value xsi:type="CD" code="788919015"/>
+  <value xsi:type="CD" code="721347524"/>
 </observation>]]></codeblock>
 <section id="changes">
 </section>

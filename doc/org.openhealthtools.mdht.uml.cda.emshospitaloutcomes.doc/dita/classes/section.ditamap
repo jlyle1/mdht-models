@@ -2,10 +2,9 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map title="Section Templates">
 <topicref href="EDChiefComplaintSection.dita" type="topic" />
-<topicref href="EDDischargeDispositionSection.dita" type="topic" />
-<topicref href="EDOutcomesSection.dita" type="topic" />
-<topicref href="EDProceduresSection.dita" type="topic" />
-<topicref href="InpatientDischargeDiagnosisSection.dita" type="topic" />
-<topicref href="InpatientOutcomesSection.dita" type="topic" />
-<topicref href="InpatientProceduresSection.dita" type="topic" />
+<topicref href="EDObservationsSection.dita" type="topic" />
+<topicref href="OutcomesDischargeDiagnosisSection.dita" type="topic" />
+<topicref href="OutcomesInpatientObservationsSection.dita" type="topic" />
+<topicref href="OutcomesPriorDocumentSection.dita" type="topic" />
+<topicref href="OutcomesProceduresSection.dita" type="topic" />
 </map>

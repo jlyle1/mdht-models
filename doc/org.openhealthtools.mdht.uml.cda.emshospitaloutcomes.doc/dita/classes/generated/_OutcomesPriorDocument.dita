@@ -13,19 +13,19 @@
 <section id="description">
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt></tt><b> STATIC</b>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt></tt><b> STATIC</b> (CONF:25)
 <ul><li><p><lines><i>NEMSIS Trace:  eOutcome.03 - External Report ID/Number Type, eOutcome.05 - Other Report Registry Type. If the type is not found, the type code may be null and the other type text placed in the code original text attribute.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:26)
 <ul><li><p><lines><i>NEMSIS Trace: eOutcome.04 - External Report ID/Number. This will typically be placed in the extension, as NEMSIS will not maintain an OID registry for all responder and healthcare organizations. The vendor or implementer may discover or assign OIDS.</i></lines></p></li></ul></li>
-<li>contains at least one [1..*] <tt><b>templateId1</b></tt> with @xsi:type="II"
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>templateId1</b></tt> with @xsi:type="II"
 </li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:26)
 <ul><li><p><lines><i>NEMSIS Trace: eOutcome.04 - External Report ID/Number. This will typically be placed in the extension, as NEMSIS will not maintain an OID registry for all responder and healthcare organizations. The vendor or implementer may discover or assign OIDS.</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt></tt><b> STATIC</b>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt></tt><b> STATIC</b> (CONF:25)
 <ul><li><p><lines><i>NEMSIS Trace:  eOutcome.03 - External Report ID/Number Type, eOutcome.05 - Other Report Registry Type. If the type is not found, the type code may be null and the other type text placed in the code original text attribute.</i></lines></p></li></ul></li>
-<li>contains at least one [1..*] <tt><b>templateId1</b></tt> with @xsi:type="II"
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>templateId1</b></tt> with @xsi:type="II"
 </li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody></tbody></tgroup></table></p></section>

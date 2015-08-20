@@ -13,23 +13,23 @@
 <section id="description">
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="11535-2" </tt><i>Hospital Discharge Diagnosis</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:32)<tt><b>/@code</b>="11535-2" </tt><i>Hospital Discharge Diagnosis</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:33)
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>templateId1</b></tt> with @xsi:type="II"
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>templateId1</b></tt> with @xsi:type="II" (CONF:34)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:35)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "Inpatient Discharge Diagnosis"
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "Inpatient Discharge Diagnosis" (CONF:36)
 </li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="11535-2" </tt><i>Hospital Discharge Diagnosis</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:32)<tt><b>/@code</b>="11535-2" </tt><i>Hospital Discharge Diagnosis</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:33)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "Inpatient Discharge Diagnosis"
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "Inpatient Discharge Diagnosis" (CONF:36)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:35)
 </li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>templateId1</b></tt> with @xsi:type="II"
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>templateId1</b></tt> with @xsi:type="II" (CONF:34)
 </li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody></tbody></tgroup></table></p></section>

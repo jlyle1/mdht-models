@@ -13,20 +13,30 @@
 <section id="description">
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69543-7" </tt><i>Cause of injury NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:20)<tt><b>/@code</b>="11373-8" </tt><i>Injury cause</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:19)
 </li>
-<li><b>SHALL</b> contain zero or more [0..*] <tt><b>value</b></tt> with @xsi:type="CD", which <b>SHALL</b> be selected from (CodeSystem:<tt> </tt>)
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:21), which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.3.1 ICD-10</tt>) (CONF:22)
 <ul><li><p><lines><i>NEMSIS Trace: eOutcome.08 - Emergency Department Recorded Cause of Injury</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> {subsets  Observation::entryRelationship}, where its type is <xref href="../EDContextReferenceEntry.dita">ED Context Reference Entry</xref>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EDContextReferenceEntry.dita">ED Context Reference Entry</xref></li></ol></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>templateId1</b></tt> with @xsi:type="II"
+</li>
 </ol>
 <ol id="aggregate">
 <li>contain exactly one [1..1] <tt><b>@classCode</b></tt> with @xsi:type="ActClassObservation"
 </li>
 <li>contain exactly one [1..1] <tt><b>@moodCode</b></tt> with @xsi:type="x_ActMoodDocumentObservation"
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69543-7" </tt><i>Cause of injury NEMSIS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:20)<tt><b>/@code</b>="11373-8" </tt><i>Injury cause</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:19)
 </li>
-<li><b>SHALL</b> contain zero or more [0..*] <tt><b>value</b></tt> with @xsi:type="CD", which <b>SHALL</b> be selected from (CodeSystem:<tt> </tt>)
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:21), which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.3.1 ICD-10</tt>) (CONF:22)
 <ul><li><p><lines><i>NEMSIS Trace: eOutcome.08 - Emergency Department Recorded Cause of Injury</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>templateId1</b></tt> with @xsi:type="II"
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> {subsets  Observation::entryRelationship}, where its type is <xref href="../EDContextReferenceEntry.dita">ED Context Reference Entry</xref>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EDContextReferenceEntry.dita">ED Context Reference Entry</xref></li></ol></li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[Error: Missing Runtime Class]]></codeblock>

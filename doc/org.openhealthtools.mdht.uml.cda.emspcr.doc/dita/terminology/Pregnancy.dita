@@ -28,7 +28,6 @@
 <row><entry>LA17331-2</entry><entry>LOINC</entry><entry>Yes, confirmed greater than 20 weeks</entry></row>
 <row><entry>LA17332-0</entry><entry>LOINC</entry><entry>Possible, unconfirmed</entry></row>
 <row><entry>LA32-8</entry><entry>LOINC</entry><entry>No</entry></row>
-<row><entry>LOINC_TBDA_588</entry><entry>LOINC</entry><entry>Yes, Weeks unknown</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

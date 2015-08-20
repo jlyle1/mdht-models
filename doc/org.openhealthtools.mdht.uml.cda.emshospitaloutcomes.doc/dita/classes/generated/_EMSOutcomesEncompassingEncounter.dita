@@ -13,15 +13,15 @@
 <section id="description">
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>dischargeDispositionCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/InpatientDischargeDisposition.dita">InpatientDischargeDisposition</xref></tt><b> STATIC</b>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>dischargeDispositionCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/InpatientDischargeDisposition.dita">InpatientDischargeDisposition</xref></tt><b> STATIC</b> (CONF:23)
 <ul><li><p><lines><i>NEMSIS Trace: eOutcome.02 - Hospital Disposition</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:24)
 <ul><li><p><lines><i>NEMSIS Trace: eOutcome.11 - Date/Time of Hospital Admission, eOutcome.16 - Date/Time of Hospital Discharge</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:24)
 <ul><li><p><lines><i>NEMSIS Trace: eOutcome.11 - Date/Time of Hospital Admission, eOutcome.16 - Date/Time of Hospital Discharge</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>dischargeDispositionCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/InpatientDischargeDisposition.dita">InpatientDischargeDisposition</xref></tt><b> STATIC</b>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>dischargeDispositionCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/InpatientDischargeDisposition.dita">InpatientDischargeDisposition</xref></tt><b> STATIC</b> (CONF:23)
 <ul><li><p><lines><i>NEMSIS Trace: eOutcome.02 - Hospital Disposition</i></lines></p></li></ul></li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody></tbody></tgroup></table></p></section>

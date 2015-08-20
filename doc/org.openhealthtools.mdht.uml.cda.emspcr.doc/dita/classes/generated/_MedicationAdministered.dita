@@ -50,7 +50,7 @@ Note: all of RxNorm is legal in this field, but NEMSIS provides a selected list 
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>doseQuantity</b></tt> (CONF:10446)
 <ul><li><p><lines><i>NEMSIS Trace: EMedications.05, 06
 Note: rate values should be recorded in rateQuantity, not doseQuantity</i></lines></p></li></ul></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>participant</b></tt> (CONF:11074) <ol><li>This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="DEV" </tt> (CONF:11182)</li><li>This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:11075) <ol><li>This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="MANU" </tt> (CONF:11183)</li><li>This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>playingDevice</b></tt> (CONF:11076) <ol><li>This playingDevice <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11184), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/EMSMedicationAdministrationDevice.dita">EMSMedicationAdministrationDevice</xref> 2.16.840.1.113883.17.3.11.108</tt><b> DYNAMIC</b> (CONF:11381)<p><lines><i>For NEMSIS route codes that imply devices (eHistory.15 & eMedications.04</i></lines></p></li></ol> </li></ol> </li></ol> 
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>participant</b></tt> (CONF:11074) <ol><li>This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="DEV" </tt> (CONF:11182)</li><li>This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:11075) <ol><li>This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="MANU" </tt> (CONF:11183)</li><li>This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>playingDevice</b></tt> (CONF:11076) <ol><li>This playingDevice <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11184), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/EMSMedicationAdministrationDevice.dita">EMSMedicationAdministrationDevice</xref> 2.16.840.1.113883.17.3.11.108</tt><b> DYNAMIC</b> (CONF:11381)<p><lines><i>For NEMSIS route codes that imply devices (eHistory.15 and eMedications.04)</i></lines></p></li></ol> </li></ol> </li></ol> 
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>rateQuantity</b></tt> (CONF:7517)
 <ul><li><p><lines><i>NEMSIS Trace: EMedications.05, 06
@@ -97,7 +97,7 @@ Note: all of RxNorm is legal in this field, but NEMSIS provides a selected list 
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:10457) <p><lines><i>This relationship is required if the medication is administered by the crew; i.e., if EMSMedicationPriorAdministrationObservation is FALSE.</i></lines></p><ol><li>This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>act</b></tt> (CONF:10485) <ol><li>This act <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b></tt> (CONF:10486)<tt><b>/@code</b>="INFRM" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:10487)</li><li>This act <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MedicationAuthorizationType.dita">MedicationAuthorizationType</xref> 2.16.840.1.113883.17.3.11.47</tt><b> DYNAMIC</b> (CONF:10488)<p><lines><i>NEMSIS Trace: EMedications.11</i></lines></p></li></ol> </li></ol> 
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>participant</b></tt> (CONF:11074) <ol><li>This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="DEV" </tt> (CONF:11182)</li><li>This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:11075) <ol><li>This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="MANU" </tt> (CONF:11183)</li><li>This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>playingDevice</b></tt> (CONF:11076) <ol><li>This playingDevice <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11184), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/EMSMedicationAdministrationDevice.dita">EMSMedicationAdministrationDevice</xref> 2.16.840.1.113883.17.3.11.108</tt><b> DYNAMIC</b> (CONF:11381)<p><lines><i>For NEMSIS route codes that imply devices (eHistory.15 & eMedications.04</i></lines></p></li></ol> </li></ol> </li></ol> 
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>participant</b></tt> (CONF:11074) <ol><li>This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="DEV" </tt> (CONF:11182)</li><li>This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:11075) <ol><li>This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="MANU" </tt> (CONF:11183)</li><li>This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>playingDevice</b></tt> (CONF:11076) <ol><li>This playingDevice <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:11184), which <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/EMSMedicationAdministrationDevice.dita">EMSMedicationAdministrationDevice</xref> 2.16.840.1.113883.17.3.11.108</tt><b> DYNAMIC</b> (CONF:11381)<p><lines><i>For NEMSIS route codes that imply devices (eHistory.15 and eMedications.04)</i></lines></p></li></ol> </li></ol> </li></ol> 
 </li>
 </ol>
 <section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::MedicationAdministered</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::substanceadministration[cda:templateId/@root = 2.16.840.1.1133883.17.3.10.1.72]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF:10445</entry><entry> SBADM</entry></row> 
@@ -121,14 +121,14 @@ Note: all of RxNorm is legal in this field, but NEMSIS provides a selected list 
 <codeblock id="example" outputclass="language-xml"><![CDATA[<substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" classCode="SBADM">
   <templateId root="2.16.840.1.1133883.17.3.10.1.72"/>
   <text>Text Value</text>
-  <effectiveTime value="20150802"/>
+  <effectiveTime value="20150817"/>
   <routeCode codeSystem="2.16.840.1.113883.3.26.1.1.1" codeSystemName="FDA Route of Administration"/>
-  <approachSiteCode code="25808628"/>
+  <approachSiteCode code="429175800"/>
   <doseQuantity/>
   <rateQuantity/>
   <consumable>
     <manufacturedProduct>
-      <id root="MDHT" extension="1861910780"/>
+      <id root="MDHT" extension="978263842"/>
       <manufacturedMaterial>
         <code codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/>
       </manufacturedMaterial>
@@ -136,7 +136,7 @@ Note: all of RxNorm is legal in this field, but NEMSIS provides a selected list 
   </consumable>
   <performer>
     <assignedEntity>
-      <id root="MDHT" extension="139559668"/>
+      <id root="MDHT" extension="1729051413"/>
       <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
     </assignedEntity>
   </performer>
@@ -149,25 +149,25 @@ Note: all of RxNorm is legal in this field, but NEMSIS provides a selected list 
   </participant>
   <entryRelationship typeCode="RSON" inversionInd="true">
     <observation>
-      <code code="702982224"/>
-      <value xsi:type="CD" code="434871732"/>
+      <code code="744087257"/>
+      <value xsi:type="CD" code="244193062"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <code code="358721415"/>
-      <value xsi:type="CD" code="946698914"/>
+      <code code="1595808431"/>
+      <value xsi:type="CD" code="533173911"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <code code="1194717625"/>
-      <value xsi:type="CD" code="787690600"/>
+      <code code="1377055676"/>
+      <value xsi:type="CD" code="1893559691"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <code code="1141716391"/>
+      <code code="1227542747"/>
       <value xsi:type="BL"/>
     </observation>
   </entryRelationship>

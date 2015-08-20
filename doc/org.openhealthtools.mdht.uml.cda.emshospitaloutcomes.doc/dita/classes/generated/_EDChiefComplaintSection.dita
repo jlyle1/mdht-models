@@ -13,23 +13,23 @@
 <section id="description">
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt> (CONF:13)<tt><b>/@code</b>="46239-0" </tt><i>Chief Complaint and Reason for Visit</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
 </li>
-<li>contains zero or more [0..*] <tt><b>templateId</b></tt>
+<li><b>SHALL</b> contain zero or more [0..*] <tt><b>templateId</b></tt>
 </li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>text</b></tt>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:14)
 </li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "Emergency Department Chief Complaint"
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "Emergency Department Chief Complaint" (CONF:15)
 </li>
 </ol>
 <ol id="aggregate">
-<li>contains zero or more [0..*] <tt><b>templateId</b></tt>
+<li><b>SHALL</b> contain zero or more [0..*] <tt><b>templateId</b></tt>
 </li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt> (CONF:13)<tt><b>/@code</b>="46239-0" </tt><i>Chief Complaint and Reason for Visit</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
 </li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "Emergency Department Chief Complaint"
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "Emergency Department Chief Complaint" (CONF:15)
 </li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>text</b></tt>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:14)
 </li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody></tbody></tgroup></table></p></section>

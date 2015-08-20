@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Outcomes Procedures Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>null</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="null"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="47519-4" </tt><i>History of Procedures</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>templateId1</b></tt> with @xsi:type="II"
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "History of Procedures"
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> <ol><li>Such entries <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.4 ICD-10 PCS</tt>)</li><li>Such entries <b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>, where its type is <xref href="../EDContextReferenceEntry.dita">ED Context Reference Entry</xref><p><lines><i>ED procedures (eOutcome.09) should be identified with this relationship; hospital procedures (eOutcome.12) should not</i></lines></p></li></ol> 
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="47519-4" </tt><i>History of Procedures</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "History of Procedures"
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>templateId1</b></tt> with @xsi:type="II"
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> <ol><li>Such entries <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.4 ICD-10 PCS</tt>)</li><li>Such entries <b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>, where its type is <xref href="../EDContextReferenceEntry.dita">ED Context Reference Entry</xref><p><lines><i>ED procedures (eOutcome.09) should be identified with this relationship; hospital procedures (eOutcome.12) should not</i></lines></p></li></ol> 
+</li>
+</ol>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../EmsHospitalOutcomes.dita">ems Hospital Outcomes</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Outcomes Procedures Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>null</tt>]</p>
+</body>
+</topic>

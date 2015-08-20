@@ -128,7 +128,7 @@ Some NEMSIS values require additional information: see Appendix for details.</i>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../EMSProceduresPerformedSection.dita">EMS Procedures Performed Section</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
 <codeblock id="example" outputclass="language-xml"><![CDATA[<procedure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
   <templateId root="2.16.840.1.1133883.17.3.10.1.181"/>
-  <code code="515473868"/>
+  <code code="1037666575"/>
   <text>Text Value</text>
   <statusCode code="Aborted"/>
   <effectiveTime>
@@ -138,7 +138,7 @@ Some NEMSIS values require additional information: see Appendix for details.</i>
   <approachSiteCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
   <performer>
     <assignedEntity>
-      <id root="MDHT" extension="536549900"/>
+      <id root="MDHT" extension="1408240041"/>
       <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
     </assignedEntity>
   </performer>
@@ -151,54 +151,54 @@ Some NEMSIS values require additional information: see Appendix for details.</i>
   </participant>
   <entryRelationship>
     <observation>
-      <code code="640028749"/>
-      <value xsi:type="CD" code="1069407569"/>
+      <code code="140399178"/>
+      <value xsi:type="CD" code="1586770605"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <code code="1754290799"/>
+      <code code="1219219806"/>
       <value xsi:type="BL"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <code code="1114521454"/>
+      <code code="1297668340"/>
       <value xsi:type="INT" value="1"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <code code="136982688"/>
+      <code code="848210943"/>
       <value xsi:type="BL"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <code code="1851587873"/>
+      <code code="1204117470"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <code code="1249501675"/>
-      <value xsi:type="CD" code="380983102"/>
+      <code code="1686054666"/>
+      <value xsi:type="CD" code="1168763022"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <code code="585512405"/>
+      <code code="1270375953"/>
       <effectiveTime>
         <low value="2015"/>
         <high value="2015"/>
       </effectiveTime>
       <value xsi:type="BL"/>
-      <methodCode code="961597271"/>
+      <methodCode code="815902033"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <code code="661980069"/>
-      <value xsi:type="CD" code="953710869"/>
+      <code code="380430552"/>
+      <value xsi:type="CD" code="1382897498"/>
     </observation>
   </entryRelationship>
 </procedure>]]></codeblock>

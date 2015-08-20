@@ -91,39 +91,29 @@ Note that NEMSIS collects times at the vitals cluster level, whereas systems may
   </effectiveTime>
   <component>
     <observation>
-      <code code="16984200"/>
+      <code code="1349840119"/>
       <effectiveTime>
         <low value="2015"/>
         <high value="2015"/>
       </effectiveTime>
       <value xsi:type="PQ"/>
-      <methodCode code="512596464"/>
+      <methodCode code="1107508673"/>
     </observation>
   </component>
   <component>
     <observation>
-      <code code="704697780"/>
+      <code code="1187901219"/>
       <effectiveTime>
         <low value="2015"/>
         <high value="2015"/>
       </effectiveTime>
       <value xsi:type="PQ"/>
-      <methodCode code="2006982620"/>
+      <methodCode code="537089618"/>
     </observation>
   </component>
   <component>
     <observation>
-      <code code="1437665602"/>
-      <effectiveTime>
-        <low value="2015"/>
-        <high value="2015"/>
-      </effectiveTime>
-      <value xsi:type="PQ"/>
-    </observation>
-  </component>
-  <component>
-    <observation>
-      <code code="372862723"/>
+      <code code="2058666573"/>
       <effectiveTime>
         <low value="2015"/>
         <high value="2015"/>
@@ -133,7 +123,7 @@ Note that NEMSIS collects times at the vitals cluster level, whereas systems may
   </component>
   <component>
     <observation>
-      <code code="1830773257"/>
+      <code code="726366457"/>
       <effectiveTime>
         <low value="2015"/>
         <high value="2015"/>
@@ -143,7 +133,17 @@ Note that NEMSIS collects times at the vitals cluster level, whereas systems may
   </component>
   <component>
     <observation>
-      <code code="1165723131"/>
+      <code code="1892837106"/>
+      <effectiveTime>
+        <low value="2015"/>
+        <high value="2015"/>
+      </effectiveTime>
+      <value xsi:type="PQ"/>
+    </observation>
+  </component>
+  <component>
+    <observation>
+      <code code="166783632"/>
       <effectiveTime>
         <low value="2015"/>
         <high value="2015"/>

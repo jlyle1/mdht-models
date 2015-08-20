@@ -57,32 +57,32 @@
   <statusCode code="completed"/>
   <component>
     <observation>
-      <code code="523841685"/>
-      <value xsi:type="CD" code="1851258814"/>
+      <code code="1353714455"/>
+      <value xsi:type="CD" code="87732054"/>
     </observation>
   </component>
   <component>
     <observation>
-      <code code="1611810524"/>
-      <value xsi:type="CD" code="811355182"/>
+      <code code="1434238235"/>
+      <value xsi:type="CD" code="829605682"/>
     </observation>
   </component>
   <component>
     <observation>
-      <code code="1606400142"/>
-      <value xsi:type="CD" code="1615726580"/>
+      <code code="1077236646"/>
+      <value xsi:type="CD" code="1980300371"/>
     </observation>
   </component>
   <component>
     <observation>
-      <code code="36601233"/>
-      <value xsi:type="CD" code="2962029"/>
+      <code code="1904125170"/>
+      <value xsi:type="CD" code="1486228164"/>
     </observation>
   </component>
   <component>
     <observation>
-      <code code="60895158"/>
-      <value xsi:type="CD" code="38056058"/>
+      <code code="1375534496"/>
+      <value xsi:type="CD" code="1920807097"/>
     </observation>
   </component>
 </organizer>]]></codeblock>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Outcomes Discharge Diagnosis Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>null</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="null"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="11535-2" </tt><i>Hospital Discharge Diagnosis</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>templateId1</b></tt> with @xsi:type="II"
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "Hospital Discharge Diagnosis"
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> <ol><li>This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> <ol><li>This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> Problem Type 2.16.840.1.113883.3.88.12.3221.7.2</tt><b> STATIC</b> 2008-12-18</li><li>This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>value1</b></tt> with @xsi:type="CD"<p><lines><i>NEMSIS Trace: eOutcome.13 - Hospital Diagnosis
+Note that the C-CDA template requires a SCT code, which can be null; NEMSIS specifies an ICD-10 CM value, which should be placed in a code translation</i></lines></p></li></ol> <ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li></ol></li></ol> 
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="11535-2" </tt><i>Hospital Discharge Diagnosis</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> and <b>SHOULD</b> equal "Hospital Discharge Diagnosis"
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>templateId1</b></tt> with @xsi:type="II"
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> <ol><li>This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> <ol><li>This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> Problem Type 2.16.840.1.113883.3.88.12.3221.7.2</tt><b> STATIC</b> 2008-12-18</li><li>This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>value1</b></tt> with @xsi:type="CD"<p><lines><i>NEMSIS Trace: eOutcome.13 - Hospital Diagnosis
+Note that the C-CDA template requires a SCT code, which can be null; NEMSIS specifies an ICD-10 CM value, which should be placed in a code translation</i></lines></p></li></ol> <ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li></ol></li></ol> 
+</li>
+</ol>
+<section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody><row><entry><xref href="../EmsHospitalOutcomes.dita">ems Hospital Outcomes</xref></entry><entry></entry></row></tbody></tgroup></table></p></section>
+<codeblock id="example" outputclass="language-xml"><![CDATA[Error: Missing Runtime Class]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Outcomes Discharge Diagnosis Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>null</tt>]</p>
+</body>
+</topic>

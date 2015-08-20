@@ -42,7 +42,7 @@
   <templateId root="2.16.840.1.1133883.17.3.10.1.53"/>
   <code code="67496-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Other injury risk factors NEMSIS"/>
   <text>Text Value</text>
-  <value xsi:type="CD" code="2024356130"/>
+  <value xsi:type="CD" code="135981287"/>
 </observation>]]></codeblock>
 <section id="changes">
 </section>

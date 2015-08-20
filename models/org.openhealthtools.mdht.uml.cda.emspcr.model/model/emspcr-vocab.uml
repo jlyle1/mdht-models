@@ -173,10 +173,6 @@
       <ownedLiteral xmi:id="_cZ9X4MFTEeGyGv5RKvEgDA" name="LA7410-9"/>
       <ownedLiteral xmi:id="_caEFkMFTEeGyGv5RKvEgDA" name="LA7452-1"/>
       <ownedLiteral xmi:id="_caKMMMFTEeGyGv5RKvEgDA" name="LA7460-4"/>
-      <ownedLiteral xmi:id="_NB1X8NWREeS4GMCgd_3pyQ" name="LOINC_TBDA_549"/>
-      <ownedLiteral xmi:id="_RjEHcNWREeS4GMCgd_3pyQ" name="LOINC_TBDA_550"/>
-      <ownedLiteral xmi:id="_WE5T4NWREeS4GMCgd_3pyQ" name="LOINC_TBDA_551"/>
-      <ownedLiteral xmi:id="_ezOV8NWREeS4GMCgd_3pyQ" name="LOINC_TBDA_552"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Ts2CAHSMEeGa4IXs2ghZEw" name="FaceAssessmentFinding">
       <ownedLiteral xmi:id="_caQS0MFTEeGyGv5RKvEgDA" name="LA17208-2"/>
@@ -198,10 +194,6 @@
       <ownedLiteral xmi:id="_ccMzkMFTEeGyGv5RKvEgDA" name="LA7410-9"/>
       <ownedLiteral xmi:id="_ccS6MMFTEeGyGv5RKvEgDA" name="LA7452-1"/>
       <ownedLiteral xmi:id="_ccZA0MFTEeGyGv5RKvEgDA" name="LA7460-4"/>
-      <ownedLiteral xmi:id="_vqlxINWQEeS4GMCgd_3pyQ" name="LOINC_TBDA_545"/>
-      <ownedLiteral xmi:id="_0Odk8NWQEeS4GMCgd_3pyQ" name="LOINC_TBDA_546"/>
-      <ownedLiteral xmi:id="_7JyYUNWQEeS4GMCgd_3pyQ" name="LOINC_TBDA_547"/>
-      <ownedLiteral xmi:id="_DxyI4NWREeS4GMCgd_3pyQ" name="LOINC_TBDA_548"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_XG-mkHSMEeGa4IXs2ghZEw" name="NeckAssessmentFinding">
       <ownedLiteral xmi:id="_ccfugMFTEeGyGv5RKvEgDA" name="LA17208-2"/>
@@ -344,7 +336,6 @@
       <ownedLiteral xmi:id="_co8PEMFTEeGyGv5RKvEgDA" name="LA18723-9"/>
       <ownedLiteral xmi:id="_cpCVsMFTEeGyGv5RKvEgDA" name="LA18724-7"/>
       <ownedLiteral xmi:id="_cpIcUMFTEeGyGv5RKvEgDA" name="LA18725-4"/>
-      <ownedLiteral xmi:id="_EipYwNNaEeSysKjHSGZfJQ" name="LOINC_TBDA_924"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_rf5AcHSMEeGa4IXs2ghZEw" name="PelvisGenitourinaryAssessment">
       <ownedLiteral xmi:id="_cpVQoMFTEeGyGv5RKvEgDA" name="LA17208-2"/>
@@ -375,7 +366,6 @@
       <ownedLiteral xmi:id="_csGQwMFTEeGyGv5RKvEgDA" name="LA7460-4"/>
       <ownedLiteral xmi:id="_BxnXwNYcEeSOzuJFX8ssTQ" name="LA17229-8"/>
       <ownedLiteral xmi:id="_E0WI8NYcEeSOzuJFX8ssTQ" name="LA7423-2"/>
-      <ownedLiteral xmi:id="_JnGGQNYcEeSOzuJFX8ssTQ" name="LOINC_TBDA_587"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_um6bwHSMEeGa4IXs2ghZEw" name="BackSpineAssessmentFinding">
       <ownedLiteral xmi:id="_csMXYMFTEeGyGv5RKvEgDA" name="LA17208-2"/>
@@ -456,7 +446,6 @@
       <ownedLiteral xmi:id="_czerIMFTEeGyGv5RKvEgDA" name="LA7410-9"/>
       <ownedLiteral xmi:id="_czkxwMFTEeGyGv5RKvEgDA" name="LA7452-1"/>
       <ownedLiteral xmi:id="_czrfcMFTEeGyGv5RKvEgDA" name="LA7460-4"/>
-      <ownedLiteral xmi:id="_WZih0NNaEeSysKjHSGZfJQ" name="LOINC_TBDA_927"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_397OcHSMEeGa4IXs2ghZEw" name="ExtremityFindingLocation">
       <ownedLiteral xmi:id="_czxmEMFTEeGyGv5RKvEgDA" name="LA18739-5"/>
@@ -522,12 +511,6 @@
       <ownedLiteral xmi:id="_c7-f0MFTEeGyGv5RKvEgDA" name="LA17357-7"/>
       <ownedLiteral xmi:id="_c8EmcMFTEeGyGv5RKvEgDA" name="LA17360-1"/>
       <ownedLiteral xmi:id="_c8LUIMFTEeGyGv5RKvEgDA" name="LA18124-0"/>
-      <ownedLiteral xmi:id="_oGzksNWSEeS4GMCgd_3pyQ" name="LOINC_TBDA_565"/>
-      <ownedLiteral xmi:id="_0bVRYNWSEeS4GMCgd_3pyQ" name="LOINC_TBDA_566"/>
-      <ownedLiteral xmi:id="_3vUxsNWSEeS4GMCgd_3pyQ" name="LOINC_TBDA_567"/>
-      <ownedLiteral xmi:id="_6WtDoNWSEeS4GMCgd_3pyQ" name="LOINC_TBDA_568"/>
-      <ownedLiteral xmi:id="_9BEYINWSEeS4GMCgd_3pyQ" name="LOINC_TBDA_569"/>
-      <ownedLiteral xmi:id="_AAIKQNWTEeS4GMCgd_3pyQ" name="LOINC_TBDA_570"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Nu1WAHSNEeGa4IXs2ghZEw" name="NeurologicalAssessmentFinding">
       <ownedLiteral xmi:id="_c8SB0MFTEeGyGv5RKvEgDA" name="LA15899-0"/>
@@ -567,7 +550,6 @@
       <ownedLiteral xmi:id="_c_REYMFTEeGyGv5RKvEgDA" name="LA17331-2"/>
       <ownedLiteral xmi:id="_c_XLAMFTEeGyGv5RKvEgDA" name="LA17332-0"/>
       <ownedLiteral xmi:id="_c_d4sMFTEeGyGv5RKvEgDA" name="LA32-8"/>
-      <ownedLiteral xmi:id="_WjC_UNYcEeSOzuJFX8ssTQ" name="LOINC_TBDA_588"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_hKCKcHSNEeGa4IXs2ghZEw" name="MedicationAdministrationRoute">
       <ownedComment xmi:id="_Wh_OgFKIEeK-YbJf-zpN1g">
@@ -638,10 +620,6 @@
       <ownedLiteral xmi:id="_dC94oMFTEeGyGv5RKvEgDA" name="LA18714-8"/>
       <ownedLiteral xmi:id="_dDEmUMFTEeGyGv5RKvEgDA" name="LA4687-5"/>
       <ownedLiteral xmi:id="_dDKs8MFTEeGyGv5RKvEgDA" name="LA9297-8"/>
-      <ownedLiteral xmi:id="_9PESQNYeEeSOzuJFX8ssTQ" name="LOINC_TBDA_606"/>
-      <ownedLiteral xmi:id="__-BL0NYeEeSOzuJFX8ssTQ" name="LOINC_TBDA_607"/>
-      <ownedLiteral xmi:id="_Cm1BINYfEeSOzuJFX8ssTQ" name="LOINC_TBDA_608"/>
-      <ownedLiteral xmi:id="_FI2R8NYfEeSOzuJFX8ssTQ" name="LOINC_TBDA_609"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_e70xAHSOEeGa4IXs2ghZEw" name="MedicationAuthorizationType">
       <ownedLiteral xmi:id="_dDXhQMFTEeGyGv5RKvEgDA" name="LA17187-8"/>
@@ -748,10 +726,6 @@
       <ownedLiteral xmi:id="_c64ToMFTEeGyGv5RKvEgDA" name="LA18257-8"/>
       <ownedLiteral xmi:id="_c6-aQMFTEeGyGv5RKvEgDA" name="LA18258-6"/>
       <ownedLiteral xmi:id="_c7FH8MFTEeGyGv5RKvEgDA" name="LA6630-3"/>
-      <ownedLiteral xmi:id="_oFrDoNWPEeS4GMCgd_3pyQ" name="LOINC_TBDA_541"/>
-      <ownedLiteral xmi:id="_sAViYNWPEeS4GMCgd_3pyQ" name="LOINC_TBDA_542"/>
-      <ownedLiteral xmi:id="_uypR8NWPEeS4GMCgd_3pyQ" name="LOINC_TBDA_543"/>
-      <ownedLiteral xmi:id="_zICk4NWPEeS4GMCgd_3pyQ" name="LOINC_TBDA_544"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_AsjgkHSPEeGa4IXs2ghZEw" name="VehicleImpactArea">
       <ownedLiteral xmi:id="_dIOMEMFTEeGyGv5RKvEgDA" name="LA10137-0"/>
@@ -783,8 +757,6 @@
       <ownedLiteral xmi:id="_dLjz8MFTEeGyGv5RKvEgDA" name="LA18270-1"/>
       <ownedLiteral xmi:id="_dLqhoMFTEeGyGv5RKvEgDA" name="LA18271-9"/>
       <ownedLiteral xmi:id="_dLxPUMFTEeGyGv5RKvEgDA" name="LA18301-4"/>
-      <ownedLiteral xmi:id="_51FXUNYhEeSOzuJFX8ssTQ" name="LOINC_TBDA_614"/>
-      <ownedLiteral xmi:id="_84CK8NYhEeSOzuJFX8ssTQ" name="LOINC_TBDA_615"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_P2eGAHSPEeGa4IXs2ghZEw" name="SceneDelayType">
       <ownedLiteral xmi:id="_dL39AMFTEeGyGv5RKvEgDA" name="LA17059-9"/>
@@ -806,7 +778,6 @@
       <ownedLiteral xmi:id="_dNftoMFTEeGyGv5RKvEgDA" name="LA18275-0"/>
       <ownedLiteral xmi:id="_dNl0QMFTEeGyGv5RKvEgDA" name="LA18276-8"/>
       <ownedLiteral xmi:id="_dNsh8MFTEeGyGv5RKvEgDA" name="LA7540-3"/>
-      <ownedLiteral xmi:id="_F7mdMNYiEeSOzuJFX8ssTQ" name="LOINC_TBDA_616"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_TzswkHSPEeGa4IXs2ghZEw" name="TransportDelayType">
       <ownedLiteral xmi:id="_dNzPoMFTEeGyGv5RKvEgDA" name="LA17059-9"/>
@@ -824,7 +795,6 @@
       <ownedLiteral xmi:id="_dPAwkMFTEeGyGv5RKvEgDA" name="LA18270-1"/>
       <ownedLiteral xmi:id="_dPHeQMFTEeGyGv5RKvEgDA" name="LA18271-9"/>
       <ownedLiteral xmi:id="_dPNk4MFTEeGyGv5RKvEgDA" name="LA18301-4"/>
-      <ownedLiteral xmi:id="_aijTENYiEeSOzuJFX8ssTQ" name="LOINC_TBDA_618"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_WDj6YHSPEeGa4IXs2ghZEw" name="TurnAroundDelayType">
       <ownedLiteral xmi:id="_dPUSkMFTEeGyGv5RKvEgDA" name="LA17059-9"/>
@@ -842,8 +812,6 @@
       <ownedLiteral xmi:id="_dQ2joMFTEeGyGv5RKvEgDA" name="LA18270-1"/>
       <ownedLiteral xmi:id="_dQ9RUMFTEeGyGv5RKvEgDA" name="LA18271-9"/>
       <ownedLiteral xmi:id="_dRDX8MFTEeGyGv5RKvEgDA" name="LA7497-6"/>
-      <ownedLiteral xmi:id="_kqw5MNYiEeSOzuJFX8ssTQ" name="LOINC_TBDA_619"/>
-      <ownedLiteral xmi:id="_nlHxgNYiEeSOzuJFX8ssTQ" name="LOINC_TBDA_620"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_dEV1gHSPEeGa4IXs2ghZEw" name="Infusion Site">
       <ownedLiteral xmi:id="_dRW58MFTEeGyGv5RKvEgDA" name="LA18757-7"/>
@@ -877,14 +845,6 @@
       <ownedLiteral xmi:id="_dUMykMFTEeGyGv5RKvEgDA" name="LA18816-1"/>
       <ownedLiteral xmi:id="_dUS5MMFTEeGyGv5RKvEgDA" name="LA18817-9"/>
       <ownedLiteral xmi:id="_dUZm4MFTEeGyGv5RKvEgDA" name="LA18818-7"/>
-      <ownedLiteral xmi:id="_u8-nwNWREeS4GMCgd_3pyQ" name="LOINC_TBDA_553"/>
-      <ownedLiteral xmi:id="_xj18UNWREeS4GMCgd_3pyQ" name="LOINC_TBDA_554"/>
-      <ownedLiteral xmi:id="_2S-k8NWREeS4GMCgd_3pyQ" name="LOINC_TBDA_555"/>
-      <ownedLiteral xmi:id="_5gmXgNWREeS4GMCgd_3pyQ" name="LOINC_TBDA_556"/>
-      <ownedLiteral xmi:id="_8gcz0NWREeS4GMCgd_3pyQ" name="LOINC_TBDA_557"/>
-      <ownedLiteral xmi:id="__d-78NWREeS4GMCgd_3pyQ" name="LOINC_TBDA_558"/>
-      <ownedLiteral xmi:id="_Cg89sNWSEeS4GMCgd_3pyQ" name="LOINC_TBDA_559"/>
-      <ownedLiteral xmi:id="_HMlmYNWSEeS4GMCgd_3pyQ" name="LOINC_TBDA_560"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_hkC7AHSPEeGa4IXs2ghZEw" name="ReasonResuscitationNotAttempted">
       <ownedLiteral xmi:id="_d--08MFTEeGyGv5RKvEgDA" name="LA17063-1"/>
@@ -1002,10 +962,6 @@
       <ownedLiteral xmi:id="_deIKoMFTEeGyGv5RKvEgDA" name="LA18214-9"/>
       <ownedLiteral xmi:id="_deORQMFTEeGyGv5RKvEgDA" name="LA18215-6"/>
       <ownedLiteral xmi:id="_deU-8MFTEeGyGv5RKvEgDA" name="LA18216-4"/>
-      <ownedLiteral xmi:id="_Yll5kNWSEeS4GMCgd_3pyQ" name="LOINC_TBDA_561"/>
-      <ownedLiteral xmi:id="_bhr3QNWSEeS4GMCgd_3pyQ" name="LOINC_TBDA_562"/>
-      <ownedLiteral xmi:id="_eXql4NWSEeS4GMCgd_3pyQ" name="LOINC_TBDA_563"/>
-      <ownedLiteral xmi:id="_hHd0ANWSEeS4GMCgd_3pyQ" name="LOINC_TBDA_564"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_NwW4oHSQEeGa4IXs2ghZEw" name="TransportMethod">
       <ownedLiteral xmi:id="_debsoMFTEeGyGv5RKvEgDA" name="LA17168-8"/>
@@ -1048,8 +1004,6 @@
       <ownedLiteral xmi:id="_diyoMMFTEeGyGv5RKvEgDA" name="LA18691-8"/>
       <ownedLiteral xmi:id="_di5V4MFTEeGyGv5RKvEgDA" name="LA18692-6"/>
       <ownedLiteral xmi:id="_djADkMFTEeGyGv5RKvEgDA" name="LA18693-4"/>
-      <ownedLiteral xmi:id="_XZpnsNWOEeS4GMCgd_3pyQ" name="LOINC_TBDA_539"/>
-      <ownedLiteral xmi:id="_bcWBENWOEeS4GMCgd_3pyQ" name="LOINC_TBDA_540"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_ehZiAHSSEeGa4IXs2ghZEw" name="SafetyEquipmentType">
       <ownedLiteral xmi:id="_djGxQMFTEeGyGv5RKvEgDA" name="LA137-2"/>
@@ -1279,10 +1233,6 @@
       <ownedLiteral xmi:id="_d20-gMFTEeGyGv5RKvEgDA" name="LA18706-4"/>
       <ownedLiteral xmi:id="_d27sMMFTEeGyGv5RKvEgDA" name="LA4687-5"/>
       <ownedLiteral xmi:id="_d3CZ4MFTEeGyGv5RKvEgDA" name="LA9297-8"/>
-      <ownedLiteral xmi:id="_RS9eYNYfEeSOzuJFX8ssTQ" name="LOINC_TBDA_610"/>
-      <ownedLiteral xmi:id="_Te5xgNYfEeSOzuJFX8ssTQ" name="LOINC_TBDA_611"/>
-      <ownedLiteral xmi:id="_V2X_MNYfEeSOzuJFX8ssTQ" name="LOINC_TBDA_612"/>
-      <ownedLiteral xmi:id="_YnT1wNYfEeSOzuJFX8ssTQ" name="LOINC_TBDA_613"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_nU1REHSTEeGa4IXs2ghZEw" name="UnitResponseRole">
       <ownedLiteral xmi:id="_d3V74MFTEeGyGv5RKvEgDA" name="LA17575-4"/>
@@ -1345,7 +1295,6 @@
       <ownedLiteral xmi:id="_d8F5AMFTEeGyGv5RKvEgDA" name="LA18122-4"/>
       <ownedLiteral xmi:id="_d8MmsMFTEeGyGv5RKvEgDA" name="LA18123-2"/>
       <ownedLiteral xmi:id="_d8TUYMFTEeGyGv5RKvEgDA" name="LA32-8"/>
-      <ownedLiteral xmi:id="_NWSsYNWOEeS4GMCgd_3pyQ" name="LOINC_TBDA_538"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_BYIa4HSUEeGa4IXs2ghZEw" name="StrokeScale">
       <ownedLiteral xmi:id="_d8aCEMFTEeGyGv5RKvEgDA" name="LA17110-0"/>
@@ -1354,7 +1303,6 @@
       <ownedLiteral xmi:id="_d8tkEMFTEeGyGv5RKvEgDA" name="LA17113-4"/>
       <ownedLiteral xmi:id="_d80RwMFTEeGyGv5RKvEgDA" name="LA18300-6"/>
       <ownedLiteral xmi:id="_d86YYMFTEeGyGv5RKvEgDA" name="LA3774-2"/>
-      <ownedLiteral xmi:id="_Vwy0QNYiEeSOzuJFX8ssTQ" name="LOINC_TBDA_617"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Deg4kHSUEeGa4IXs2ghZEw" name="GlasgowComaScoreSpecialCircumstances">
       <ownedLiteral xmi:id="_d9BGEMFTEeGyGv5RKvEgDA" name="LA17102-7"/>
@@ -1528,7 +1476,6 @@
       <ownedLiteral xmi:id="_rvJ9QMxDEeSOI6Ao2VuoSQ" name="LA22847-0"/>
       <ownedLiteral xmi:id="_vFwssMxDEeSOI6Ao2VuoSQ" name="LA22848-8"/>
       <ownedLiteral xmi:id="_yrkVwMxDEeSOI6Ao2VuoSQ" name="LA22849-6"/>
-      <ownedLiteral xmi:id="_3jkmgMxDEeSOI6Ao2VuoSQ" name="LOINC_TBDA_416"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_PLHNoMxGEeSOI6Ao2VuoSQ" name="DestinationWardKind">
       <ownedLiteral xmi:id="_bdovMMxGEeSOI6Ao2VuoSQ" name="LA22808-2"/>
@@ -1556,8 +1503,6 @@
       <ownedLiteral xmi:id="__XemsMxOEeSng9W-IRKXig" name="LA22830-6"/>
       <ownedLiteral xmi:id="_C1HyQMxPEeSng9W-IRKXig" name="LA22831-4"/>
       <ownedLiteral xmi:id="_ID5kQMxPEeSng9W-IRKXig" name="LA22832-2"/>
-      <ownedLiteral xmi:id="_LxURMMxPEeSng9W-IRKXig" name="LOINC_TBDA_326"/>
-      <ownedLiteral xmi:id="_PVeUcMxPEeSng9W-IRKXig" name="LOINC_TBDA_327"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_X3nYwM0MEeS2tKNWeEWjGg" name="UnitLevelOfCare">
       <ownedLiteral xmi:id="_N1e6kM0OEeS2tKNWeEWjGg" name="LA22851-2"/>
@@ -1583,16 +1528,10 @@
       <ownedLiteral xmi:id="_Ldot6M0YEeSJm6m0rTs9zw" name="LA22805-8"/>
       <ownedLiteral xmi:id="_Ldot6c0YEeSJm6m0rTs9zw" name="LA22806-6"/>
       <ownedLiteral xmi:id="_Ldot6s0YEeSJm6m0rTs9zw" name="LA22807-4"/>
-      <ownedLiteral xmi:id="_ajPbEM0YEeSJm6m0rTs9zw" name="LOINC_TBDA_017"/>
-      <ownedLiteral xmi:id="_e6aPoM0YEeSJm6m0rTs9zw" name="LOINC_TBDA_018"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_wrfPIM0ZEeSJm6m0rTs9zw" name="BloodPressureMeasurementMethod">
-      <ownedLiteral xmi:id="_3hD_0M0ZEeSJm6m0rTs9zw" name="LONC_TBDA_701"/>
-      <ownedLiteral xmi:id="_83kxgM0ZEeSJm6m0rTs9zw" name="LONC_TBDA_702"/>
       <ownedLiteral xmi:id="__SD28M0ZEeSJm6m0rTs9zw" name="LA24013-7"/>
       <ownedLiteral xmi:id="_BnePIM0aEeSJm6m0rTs9zw" name="LA24012-9"/>
-      <ownedLiteral xmi:id="_E3jf0M0aEeSJm6m0rTs9zw" name="LONC_TBDA_705"/>
-      <ownedLiteral xmi:id="_H51lEM0aEeSJm6m0rTs9zw" name="LONC_TBDA_706"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_2NLDMNYmEeSOzuJFX8ssTQ" name="MedicationAdministrationSite">
       <ownedLiteral xmi:id="_5Rd6oNYmEeSOzuJFX8ssTQ" name="280361007"/>
@@ -2912,7 +2851,6 @@
   <term:ValueSetCode xmi:id="_rvKkUMxDEeSOI6Ao2VuoSQ" conceptName="Trauma center level 5" base_EnumerationLiteral="_rvJ9QMxDEeSOI6Ao2VuoSQ"/>
   <term:ValueSetCode xmi:id="_vFxTwMxDEeSOI6Ao2VuoSQ" conceptName="Cardiac-STEMI/PCI Capable" base_EnumerationLiteral="_vFwssMxDEeSOI6Ao2VuoSQ"/>
   <term:ValueSetCode xmi:id="_yrk80MxDEeSOI6Ao2VuoSQ" conceptName="Cardiac-STEMI/PCI Capable (24/7)" base_EnumerationLiteral="_yrkVwMxDEeSOI6Ao2VuoSQ"/>
-  <term:ValueSetCode xmi:id="_3jl0oMxDEeSOI6Ao2VuoSQ" conceptName="Cardiac-STEMI/Non-PCI Capable" base_EnumerationLiteral="_3jkmgMxDEeSOI6Ao2VuoSQ"/>
   <term:ValueSetVersion xmi:id="_PLJC0MxGEeSOI6Ao2VuoSQ" identifier="2.16.840.1.113883.17.3.11.103" definition="The location within the hospital that the patient was taken directly by EMS" base_Enumeration="_PLHNoMxGEeSOI6Ao2VuoSQ">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
@@ -2941,8 +2879,6 @@
   <term:ValueSetCode xmi:id="__XfNwMxOEeSng9W-IRKXig" conceptName="Hospital-radiation" base_EnumerationLiteral="__XemsMxOEeSng9W-IRKXig"/>
   <term:ValueSetCode xmi:id="_C1IZUMxPEeSng9W-IRKXig" conceptName="Hospital-rehabilitation" base_EnumerationLiteral="_C1HyQMxPEeSng9W-IRKXig"/>
   <term:ValueSetCode xmi:id="_ID6LUMxPEeSng9W-IRKXig" conceptName="Hospital-SICU" base_EnumerationLiteral="_ID5kQMxPEeSng9W-IRKXig"/>
-  <term:ValueSetCode xmi:id="_LxU4QMxPEeSng9W-IRKXig" conceptName="Hospital-oncology" base_EnumerationLiteral="_LxURMMxPEeSng9W-IRKXig"/>
-  <term:ValueSetCode xmi:id="_PVfikMxPEeSng9W-IRKXig" conceptName="Hospital-Outpatient Surgery" base_EnumerationLiteral="_PVeUcMxPEeSng9W-IRKXig"/>
   <term:ValueSetVersion xmi:id="_X3p1AM0MEeS2tKNWeEWjGg" identifier="2.16.840.1.113883.17.3.11.105" definition="Levels of care a unit may be able to provide" base_Enumeration="_X3nYwM0MEeS2tKNWeEWjGg">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
@@ -2970,17 +2906,11 @@
   <term:ValueSetCode xmi:id="_Ldp8Bs0YEeSJm6m0rTs9zw" conceptName="No Lights or Sirens" base_EnumerationLiteral="_Ldot6M0YEeSJm6m0rTs9zw"/>
   <term:ValueSetCode xmi:id="_Ldp8B80YEeSJm6m0rTs9zw" conceptName="Initial No Lights or Sirens, Upgraded to Lights and Sirens" base_EnumerationLiteral="_Ldot6c0YEeSJm6m0rTs9zw"/>
   <term:ValueSetCode xmi:id="_Ldp8CM0YEeSJm6m0rTs9zw" conceptName="Initial Lights and Sirens, Downgraded to No Lights or Sirens" base_EnumerationLiteral="_Ldot6s0YEeSJm6m0rTs9zw"/>
-  <term:ValueSetCode xmi:id="_ajQpMM0YEeSJm6m0rTs9zw" conceptName="Scheduled" base_EnumerationLiteral="_ajPbEM0YEeSJm6m0rTs9zw"/>
-  <term:ValueSetCode xmi:id="_e6a2sM0YEeSJm6m0rTs9zw" conceptName="Unscheduled" base_EnumerationLiteral="_e6aPoM0YEeSJm6m0rTs9zw"/>
   <term:ValueSetVersion xmi:id="_wrf2MM0ZEeSJm6m0rTs9zw" identifier="2.16.840.1.113883.17.3.11.107" definition="Technique for measuring blood pressure" base_Enumeration="_wrfPIM0ZEeSJm6m0rTs9zw">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetCode xmi:id="_3hFN8M0ZEeSJm6m0rTs9zw" conceptName="Arterial line" base_EnumerationLiteral="_3hD_0M0ZEeSJm6m0rTs9zw"/>
-  <term:ValueSetCode xmi:id="_83l_oM0ZEeSJm6m0rTs9zw" conceptName="Doppler" base_EnumerationLiteral="_83kxgM0ZEeSJm6m0rTs9zw"/>
   <term:ValueSetCode xmi:id="__SEeAM0ZEeSJm6m0rTs9zw" conceptName="Cuff-automated" base_EnumerationLiteral="__SD28M0ZEeSJm6m0rTs9zw"/>
   <term:ValueSetCode xmi:id="_Bne2MM0aEeSJm6m0rTs9zw" conceptName="Cuff-manual auscultated" base_EnumerationLiteral="_BnePIM0aEeSJm6m0rTs9zw"/>
-  <term:ValueSetCode xmi:id="_E3kG4M0aEeSJm6m0rTs9zw" conceptName="Cuff-manual palpated only" base_EnumerationLiteral="_E3jf0M0aEeSJm6m0rTs9zw"/>
-  <term:ValueSetCode xmi:id="_H52MIM0aEeSJm6m0rTs9zw" conceptName="Venous line" base_EnumerationLiteral="_H51lEM0aEeSJm6m0rTs9zw"/>
   <term:ValueSetCode xmi:id="_97fl8NNWEeSysKjHSGZfJQ" conceptName="Injury-Conducted Electrical Weapon (e.g., Taser)" base_EnumerationLiteral="_97e-4NNWEeSysKjHSGZfJQ"/>
   <term:ValueSetCode xmi:id="_DOnFYdNXEeSysKjHSGZfJQ" conceptName="Injury-Facial Trauma" base_EnumerationLiteral="_DOnFYNNXEeSysKjHSGZfJQ"/>
   <term:ValueSetCode xmi:id="_IDqIwNNXEeSysKjHSGZfJQ" conceptName="Injury-General Trauma Management" base_EnumerationLiteral="_IDphsNNXEeSysKjHSGZfJQ"/>
@@ -2993,17 +2923,15 @@
   <term:ValueSetCode xmi:id="_iEl7ENNXEeSysKjHSGZfJQ" conceptName="Medical-Respiratory Distress-Bronchiolitis" base_EnumerationLiteral="_iElUANNXEeSysKjHSGZfJQ"/>
   <term:ValueSetCode xmi:id="_lccnsNNXEeSysKjHSGZfJQ" conceptName="Medical-Respiratory Distress-Croup" base_EnumerationLiteral="_lccAoNNXEeSysKjHSGZfJQ"/>
   <term:ValueSetCode xmi:id="_oxqQANNXEeSysKjHSGZfJQ" conceptName="Medical-Stimulant Poisoning/Overdose" base_EnumerationLiteral="_oxpo8NNXEeSysKjHSGZfJQ"/>
-  <term:ValueSetCode xmi:id="_wkf6MdNXEeSysKjHSGZfJQ" conceptName="Critical (Red) " base_EnumerationLiteral="_wkf6MNNXEeSysKjHSGZfJQ"/>
-  <term:ValueSetCode xmi:id="_yK1JYdNYEeSysKjHSGZfJQ" conceptName="Emergent (Yellow) " base_EnumerationLiteral="_yK1JYNNYEeSysKjHSGZfJQ"/>
-  <term:ValueSetCode xmi:id="_2dzacNNYEeSysKjHSGZfJQ" conceptName="Lower Acuity (Green) " base_EnumerationLiteral="_2dyzYNNYEeSysKjHSGZfJQ"/>
-  <term:ValueSetCode xmi:id="_5lLbENNYEeSysKjHSGZfJQ" conceptName="Dead without Resuscitation Efforts (Black) " base_EnumerationLiteral="_5lK0ANNYEeSysKjHSGZfJQ"/>
-  <term:ValueSetCode xmi:id="_0Mqo0NNZEeSysKjHSGZfJQ" conceptName="Capillary Nail Bed Refill less than 2 seconds " base_EnumerationLiteral="_0MqBwNNZEeSysKjHSGZfJQ"/>
-  <term:ValueSetCode xmi:id="_3uVYwNNZEeSysKjHSGZfJQ" conceptName="Capillary Nail Bed Refill 2-4 seconds " base_EnumerationLiteral="_3uUxsNNZEeSysKjHSGZfJQ"/>
+  <term:ValueSetCode xmi:id="_wkf6MdNXEeSysKjHSGZfJQ" conceptName="Critical (Red)" base_EnumerationLiteral="_wkf6MNNXEeSysKjHSGZfJQ"/>
+  <term:ValueSetCode xmi:id="_yK1JYdNYEeSysKjHSGZfJQ" conceptName="Emergent (Yellow)" base_EnumerationLiteral="_yK1JYNNYEeSysKjHSGZfJQ"/>
+  <term:ValueSetCode xmi:id="_2dzacNNYEeSysKjHSGZfJQ" conceptName="Lower Acuity (Green)" base_EnumerationLiteral="_2dyzYNNYEeSysKjHSGZfJQ"/>
+  <term:ValueSetCode xmi:id="_5lLbENNYEeSysKjHSGZfJQ" conceptName="Dead without Resuscitation Efforts (Black)" base_EnumerationLiteral="_5lK0ANNYEeSysKjHSGZfJQ"/>
+  <term:ValueSetCode xmi:id="_0Mqo0NNZEeSysKjHSGZfJQ" conceptName="Capillary Nail Bed Refill less than 2 seconds" base_EnumerationLiteral="_0MqBwNNZEeSysKjHSGZfJQ"/>
+  <term:ValueSetCode xmi:id="_3uVYwNNZEeSysKjHSGZfJQ" conceptName="Capillary Nail Bed Refill 2-4 seconds" base_EnumerationLiteral="_3uUxsNNZEeSysKjHSGZfJQ"/>
   <term:ValueSetCode xmi:id="_6Gb4kNNZEeSysKjHSGZfJQ" conceptName="Capillary Nail Bed Refill more than 4 seconds" base_EnumerationLiteral="_6GbRgNNZEeSysKjHSGZfJQ"/>
-  <term:ValueSetCode xmi:id="_Eip_0NNaEeSysKjHSGZfJQ" conceptName="Epigastric" base_EnumerationLiteral="_EipYwNNaEeSysKjHSGZfJQ"/>
   <term:ValueSetCode xmi:id="_KVhWUNNaEeSysKjHSGZfJQ" conceptName="Rebound Tenderness" base_EnumerationLiteral="_KVgvQNNaEeSysKjHSGZfJQ"/>
   <term:ValueSetCode xmi:id="_OIvwUdNaEeSysKjHSGZfJQ" conceptName="Rigidity" base_EnumerationLiteral="_OIvwUNNaEeSysKjHSGZfJQ"/>
-  <term:ValueSetCode xmi:id="_WZih0dNaEeSysKjHSGZfJQ" conceptName="Arm Drift " base_EnumerationLiteral="_WZih0NNaEeSysKjHSGZfJQ"/>
   <term:ValueSetCode xmi:id="_dvjGENNaEeSysKjHSGZfJQ" conceptName="Agitation" base_EnumerationLiteral="_dvifANNaEeSysKjHSGZfJQ"/>
   <term:ValueSetCode xmi:id="_f2dvQNNaEeSysKjHSGZfJQ" conceptName="Somnolent" base_EnumerationLiteral="_f2dIMNNaEeSysKjHSGZfJQ"/>
   <term:ValueSetCode xmi:id="_pDJhQNNaEeSysKjHSGZfJQ" conceptName="Stupor" base_EnumerationLiteral="_pDI6MNNaEeSysKjHSGZfJQ"/>
@@ -3025,39 +2953,6 @@
   <term:ValueSetCode xmi:id="_wgpWwNWNEeS4GMCgd_3pyQ" conceptName="Crush injury" base_EnumerationLiteral="_wgovsNWNEeS4GMCgd_3pyQ"/>
   <term:ValueSetCode xmi:id="_z1Yd8NWNEeS4GMCgd_3pyQ" conceptName="Swelling" base_EnumerationLiteral="_z1XP0NWNEeS4GMCgd_3pyQ"/>
   <term:ValueSetCode xmi:id="_3KpwoNWNEeS4GMCgd_3pyQ" conceptName="Contusion" base_EnumerationLiteral="_3KoigNWNEeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_NWT6gNWOEeS4GMCgd_3pyQ" conceptName="Yes-Trauma (general)" base_EnumerationLiteral="_NWSsYNWOEeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_XZqOwNWOEeS4GMCgd_3pyQ" conceptName="Urgent Care" base_EnumerationLiteral="_XZpnsNWOEeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_bcWoINWOEeS4GMCgd_3pyQ" conceptName="Freestanding Emergency Department" base_EnumerationLiteral="_bcWBENWOEeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_oFrqsNWPEeS4GMCgd_3pyQ" conceptName="Glaucoma Present" base_EnumerationLiteral="_oFrDoNWPEeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_sAWJcNWPEeS4GMCgd_3pyQ" conceptName="Swelling" base_EnumerationLiteral="_sAViYNWPEeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_uypR8dWPEeS4GMCgd_3pyQ" conceptName="Contusion" base_EnumerationLiteral="_uypR8NWPEeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_zIDL8NWPEeS4GMCgd_3pyQ" conceptName="Puncture/Stab wound" base_EnumerationLiteral="_zICk4NWPEeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_vqmYMNWQEeS4GMCgd_3pyQ" conceptName="Crush Injury" base_EnumerationLiteral="_vqlxINWQEeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_0OeMANWQEeS4GMCgd_3pyQ" conceptName="Swelling" base_EnumerationLiteral="_0Odk8NWQEeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_7JyYUdWQEeS4GMCgd_3pyQ" conceptName="Contusion" base_EnumerationLiteral="_7JyYUNWQEeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_DxyI4dWREeS4GMCgd_3pyQ" conceptName="Tenderness" base_EnumerationLiteral="_DxyI4NWREeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_NB1_ANWREeS4GMCgd_3pyQ" conceptName="Crush Injury" base_EnumerationLiteral="_NB1X8NWREeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_RjEHcdWREeS4GMCgd_3pyQ" conceptName="Swelling" base_EnumerationLiteral="_RjEHcNWREeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_WE5T4dWREeS4GMCgd_3pyQ" conceptName="Contusion" base_EnumerationLiteral="_WE5T4NWREeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_ezO9ANWREeS4GMCgd_3pyQ" conceptName="Tenderness" base_EnumerationLiteral="_ezOV8NWREeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_u8_O0NWREeS4GMCgd_3pyQ" conceptName="Lower Extremity- Left" base_EnumerationLiteral="_u8-nwNWREeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_xj2jYNWREeS4GMCgd_3pyQ" conceptName="Lower Extremity- Right" base_EnumerationLiteral="_xj18UNWREeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_2S_MANWREeS4GMCgd_3pyQ" conceptName="Venous Cutdown-Left Lower Extremity" base_EnumerationLiteral="_2S-k8NWREeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_5gm-kNWREeS4GMCgd_3pyQ" conceptName="Venous Cutdown- Right Lower Extremity" base_EnumerationLiteral="_5gmXgNWREeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_8gda4NWREeS4GMCgd_3pyQ" conceptName="Upper Arm- Left" base_EnumerationLiteral="_8gcz0NWREeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="__d-78dWREeS4GMCgd_3pyQ" conceptName="Upper Arm- Right" base_EnumerationLiteral="__d-78NWREeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_Cg9kwNWSEeS4GMCgd_3pyQ" conceptName="Radial- Left" base_EnumerationLiteral="_Cg89sNWSEeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_HMmNcNWSEeS4GMCgd_3pyQ" conceptName="Radial- Right" base_EnumerationLiteral="_HMlmYNWSEeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_YlmgoNWSEeS4GMCgd_3pyQ" conceptName="Patient Dead at Scene-No Resuscitation Attempted (With Transport)" base_EnumerationLiteral="_Yll5kNWSEeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_bhseUNWSEeS4GMCgd_3pyQ" conceptName="Patient Dead at Scene-No Resuscitation Attempted (Without Transport)" base_EnumerationLiteral="_bhr3QNWSEeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_eXrM8NWSEeS4GMCgd_3pyQ" conceptName="Patient Dead at Scene-Resuscitation Attempted (Without Transport)" base_EnumerationLiteral="_eXql4NWSEeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_hHfCINWSEeS4GMCgd_3pyQ" conceptName="Patient Dead at Scene-Resuscitation Attempted (With Transport)" base_EnumerationLiteral="_hHd0ANWSEeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_oG0y0NWSEeS4GMCgd_3pyQ" conceptName="Anticoagulants and Bleeding Disorders" base_EnumerationLiteral="_oGzksNWSEeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_0bV4cNWSEeS4GMCgd_3pyQ" conceptName="SBP &lt; 110 for age > 65" base_EnumerationLiteral="_0bVRYNWSEeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_3vVYwNWSEeS4GMCgd_3pyQ" conceptName="Pregnancy > 20 weeks" base_EnumerationLiteral="_3vUxsNWSEeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_6WuRwNWSEeS4GMCgd_3pyQ" conceptName="EMS Provider Judgment" base_EnumerationLiteral="_6WtDoNWSEeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_9BFmQNWSEeS4GMCgd_3pyQ" conceptName="Burn, without other trauma" base_EnumerationLiteral="_9BEYINWSEeS4GMCgd_3pyQ"/>
-  <term:ValueSetCode xmi:id="_AAIxUNWTEeS4GMCgd_3pyQ" conceptName="Burn, with trauma mechanism" base_EnumerationLiteral="_AAIKQNWTEeS4GMCgd_3pyQ"/>
   <term:ValueSetCode xmi:id="_jCLF0NWVEeS4GMCgd_3pyQ" conceptName="Buccal" base_EnumerationLiteral="_jCJ3sNWVEeS4GMCgd_3pyQ"/>
   <term:ValueSetCode xmi:id="_sMv_ANWVEeS4GMCgd_3pyQ" conceptName="Intradermal" base_EnumerationLiteral="_sMvX8NWVEeS4GMCgd_3pyQ"/>
   <term:ValueSetCode xmi:id="_y8OuwNWVEeS4GMCgd_3pyQ" conceptName="Intraosseous" base_EnumerationLiteral="_y8OHsNWVEeS4GMCgd_3pyQ"/>
@@ -3068,8 +2963,6 @@
   <term:ValueSetCode xmi:id="_i2hYkNYbEeSOzuJFX8ssTQ" conceptName="Tenderness" base_EnumerationLiteral="_i2gxgNYbEeSOzuJFX8ssTQ"/>
   <term:ValueSetCode xmi:id="_Bxn-0NYcEeSOzuJFX8ssTQ" conceptName="Crush Injury" base_EnumerationLiteral="_BxnXwNYcEeSOzuJFX8ssTQ"/>
   <term:ValueSetCode xmi:id="_E0WwANYcEeSOzuJFX8ssTQ" conceptName="Contusion" base_EnumerationLiteral="_E0WI8NYcEeSOzuJFX8ssTQ"/>
-  <term:ValueSetCode xmi:id="_JnGtUNYcEeSOzuJFX8ssTQ" conceptName="Swelling" base_EnumerationLiteral="_JnGGQNYcEeSOzuJFX8ssTQ"/>
-  <term:ValueSetCode xmi:id="_WjDmYNYcEeSOzuJFX8ssTQ" conceptName="Yes, Weeks unknown" base_EnumerationLiteral="_WjC_UNYcEeSOzuJFX8ssTQ"/>
   <term:ValueSetCode xmi:id="_ldbT8dYcEeSOzuJFX8ssTQ" conceptName="Bradypnea" base_EnumerationLiteral="_ldbT8NYcEeSOzuJFX8ssTQ"/>
   <term:ValueSetCode xmi:id="_EJjqENYdEeSOzuJFX8ssTQ" conceptName="Cardiac Arrest-Do Not Resuscitate" base_EnumerationLiteral="_EJjDANYdEeSOzuJFX8ssTQ"/>
   <term:ValueSetCode xmi:id="_AOwzANYeEeSOzuJFX8ssTQ" conceptName="Cardiac Arrest-Special Resuscitate Orders" base_EnumerationLiteral="_AOwL8NYeEeSOzuJFX8ssTQ"/>
@@ -3087,21 +2980,6 @@
   <term:ValueSetCode xmi:id="_oq2AQNYeEeSOzuJFX8ssTQ" conceptName="Medical-Apparent Life Threatening Event (ALTE)" base_EnumerationLiteral="_oq1ZMNYeEeSOzuJFX8ssTQ"/>
   <term:ValueSetCode xmi:id="_rdl0sNYeEeSOzuJFX8ssTQ" conceptName="Medical-Tachycardia" base_EnumerationLiteral="_rdlNoNYeEeSOzuJFX8ssTQ"/>
   <term:ValueSetCode xmi:id="_uhC-oNYeEeSOzuJFX8ssTQ" conceptName="Cardiac Arrest-Determination of Death / Withholding Resuscitative Efforts" base_EnumerationLiteral="_uhCXkNYeEeSOzuJFX8ssTQ"/>
-  <term:ValueSetCode xmi:id="_9PE5UNYeEeSOzuJFX8ssTQ" conceptName="Nurse Practitioner" base_EnumerationLiteral="_9PESQNYeEeSOzuJFX8ssTQ"/>
-  <term:ValueSetCode xmi:id="__-By4NYeEeSOzuJFX8ssTQ" conceptName="Physician Assistant" base_EnumerationLiteral="__-BL0NYeEeSOzuJFX8ssTQ"/>
-  <term:ValueSetCode xmi:id="_Cm1oMNYfEeSOzuJFX8ssTQ" conceptName="Licensed Practical Nurse (LPN)" base_EnumerationLiteral="_Cm1BINYfEeSOzuJFX8ssTQ"/>
-  <term:ValueSetCode xmi:id="_FI25ANYfEeSOzuJFX8ssTQ" conceptName="Registered Nurse" base_EnumerationLiteral="_FI2R8NYfEeSOzuJFX8ssTQ"/>
-  <term:ValueSetCode xmi:id="_RS-FcNYfEeSOzuJFX8ssTQ" conceptName="Nurse Practitioner" base_EnumerationLiteral="_RS9eYNYfEeSOzuJFX8ssTQ"/>
-  <term:ValueSetCode xmi:id="_Te6YkNYfEeSOzuJFX8ssTQ" conceptName="Physician Assistant" base_EnumerationLiteral="_Te5xgNYfEeSOzuJFX8ssTQ"/>
-  <term:ValueSetCode xmi:id="_V2YmQNYfEeSOzuJFX8ssTQ" conceptName="Licensed Practical Nurse (LPN)" base_EnumerationLiteral="_V2X_MNYfEeSOzuJFX8ssTQ"/>
-  <term:ValueSetCode xmi:id="_YnUc0NYfEeSOzuJFX8ssTQ" conceptName="Registered Nurse" base_EnumerationLiteral="_YnT1wNYfEeSOzuJFX8ssTQ"/>
-  <term:ValueSetCode xmi:id="_51FXUdYhEeSOzuJFX8ssTQ" conceptName="Mechanical Issue-Unit, Equipment, etc." base_EnumerationLiteral="_51FXUNYhEeSOzuJFX8ssTQ"/>
-  <term:ValueSetCode xmi:id="_84CyANYhEeSOzuJFX8ssTQ" conceptName="Flight Planning" base_EnumerationLiteral="_84CK8NYhEeSOzuJFX8ssTQ"/>
-  <term:ValueSetCode xmi:id="_F7nEQNYiEeSOzuJFX8ssTQ" conceptName="Mechanical Issue-Unit, Equipment, etc." base_EnumerationLiteral="_F7mdMNYiEeSOzuJFX8ssTQ"/>
-  <term:ValueSetCode xmi:id="_VwzbUNYiEeSOzuJFX8ssTQ" conceptName="F.A.S.T. Exam" base_EnumerationLiteral="_Vwy0QNYiEeSOzuJFX8ssTQ"/>
-  <term:ValueSetCode xmi:id="_aij6INYiEeSOzuJFX8ssTQ" conceptName="Patient Condition Change (e.g., Unit Stopped)" base_EnumerationLiteral="_aijTENYiEeSOzuJFX8ssTQ"/>
-  <term:ValueSetCode xmi:id="_kqxgQNYiEeSOzuJFX8ssTQ" conceptName="Traffic" base_EnumerationLiteral="_kqw5MNYiEeSOzuJFX8ssTQ"/>
-  <term:ValueSetCode xmi:id="_nlHxgdYiEeSOzuJFX8ssTQ" conceptName="EMS Crew Accompanies Patient for Facility Procedure" base_EnumerationLiteral="_nlHxgNYiEeSOzuJFX8ssTQ"/>
   <term:ValueSetCode xmi:id="_A4FjMNYmEeSOzuJFX8ssTQ" conceptName="Subcutaneous port" base_EnumerationLiteral="_A4E8INYmEeSOzuJFX8ssTQ"/>
   <term:ValueSetCode xmi:id="_D93oYdYmEeSOzuJFX8ssTQ" conceptName="Blow by oxygen mask" base_EnumerationLiteral="_D93oYNYmEeSOzuJFX8ssTQ"/>
   <term:ValueSetVersion xmi:id="_2NLqQNYmEeSOzuJFX8ssTQ" identifier="2.16.840.1.113883.17.3.11.109" definition="Specifications for site of substance administration when Route is insufficiently specific" base_Enumeration="_2NLDMNYmEeSOzuJFX8ssTQ">

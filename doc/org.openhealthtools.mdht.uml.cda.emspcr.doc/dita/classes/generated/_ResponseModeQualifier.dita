@@ -45,7 +45,7 @@
   <templateId root="2.16.840.1.1133883.17.3.10.1.191"/>
   <code code="77157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Response mode descriptors"/>
   <text>Text Value</text>
-  <value xsi:type="CD" code="2042714560"/>
+  <value xsi:type="CD" code="1114282046"/>
 </observation>]]></codeblock>
 <section id="changes">
 </section>

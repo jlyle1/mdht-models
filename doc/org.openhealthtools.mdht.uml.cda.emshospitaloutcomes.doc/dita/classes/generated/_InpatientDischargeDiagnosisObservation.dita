@@ -17,7 +17,7 @@
 </li>
 <li>contains at least one [1..*] <tt><b>templateId</b></tt>
 </li>
-<li><b>SHALL</b> contain zero or more [0..*] <tt><b>value</b></tt> with @xsi:type="CD", which <b>SHALL</b> be selected from (CodeSystem:<tt> </tt>)
+<li><b>SHALL</b> contain zero or more [0..*] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:38), which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.90 ICD-10 CM</tt>) (CONF:39)
 <ul><li><p><lines><i>NEMSIS Trace: eOutcome.13 - Hospital Diagnosis</i></lines></p></li></ul></li>
 </ol>
 <ol id="aggregate">
@@ -29,7 +29,7 @@
 </li>
 <li>contain exactly one [1..1] <tt><b>code</b></tt>
 </li>
-<li><b>SHALL</b> contain zero or more [0..*] <tt><b>value</b></tt> with @xsi:type="CD", which <b>SHALL</b> be selected from (CodeSystem:<tt> </tt>)
+<li><b>SHALL</b> contain zero or more [0..*] <tt><b>value</b></tt> with @xsi:type="CD" (CONF:38), which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.90 ICD-10 CM</tt>) (CONF:39)
 <ul><li><p><lines><i>NEMSIS Trace: eOutcome.13 - Hospital Diagnosis</i></lines></p></li></ul></li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody></tbody></tgroup></table></p></section>

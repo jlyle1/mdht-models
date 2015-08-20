@@ -15,7 +15,7 @@
       <ownedLiteral xmi:id="_5ak2AD3yEeW8QcLHABJt8A" name="LA20597-3"/>
       <ownedLiteral xmi:id="_8Pi4AD3yEeW8QcLHABJt8A" name="LA20592-4"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_J9u1UD6uEeW8QcLHABJt8A" name="CMS-1450 Data Set (UB-04)"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_J9u1UD6uEeW8QcLHABJt8A" name="nubc-UB-04-Manual-code set"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_axBzYD6uEeW8QcLHABJt8A" name="InpatientDischargeDisposition">
       <ownedLiteral xmi:id="_eN2fkD6uEeW8QcLHABJt8A" name="01"/>
       <ownedLiteral xmi:id="_hTO8ID6uEeW8QcLHABJt8A" name="02"/>
@@ -47,6 +47,23 @@
       <ownedLiteral xmi:id="_DZlHoD61EeW8QcLHABJt8A" name="LA10137-0"/>
       <ownedLiteral xmi:id="_Gd-swD61EeW8QcLHABJt8A" name="LA10138-8"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_2dcl8EaXEeW4gPrfTID4ag" name="CPT4"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_Q6fcwEapEeW4gPrfTID4ag" name="ICD-10 PCS"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_jC2ugEbkEeW4gPrfTID4ag" name="DocumentKind">
+      <ownedLiteral xmi:id="_lvfT4EbkEeW4gPrfTID4ag" name="Disaster Tag"/>
+      <ownedLiteral xmi:id="_tQ4BsEbkEeW4gPrfTID4ag" name="Fire Incident Report"/>
+      <ownedLiteral xmi:id="_wCkGMEbkEeW4gPrfTID4ag" name="Hospital-Receiving"/>
+      <ownedLiteral xmi:id="_yhzv0EbkEeW4gPrfTID4ag" name="Hospital-Transferring"/>
+      <ownedLiteral xmi:id="_01tFEEbkEeW4gPrfTID4ag" name="Law Enforcement Report"/>
+      <ownedLiteral xmi:id="_2_dm4EbkEeW4gPrfTID4ag" name="Other"/>
+      <ownedLiteral xmi:id="_5Ifv8EbkEeW4gPrfTID4ag" name="Summary registry report {NOS}"/>
+      <ownedLiteral xmi:id="_7owGMEbkEeW4gPrfTID4ag" name="Other Report"/>
+      <ownedLiteral xmi:id="_94FrkEbkEeW4gPrfTID4ag" name="Patient ID"/>
+      <ownedLiteral xmi:id="_Adm8UEblEeW4gPrfTID4ag" name="EMS Patient Care Report"/>
+      <ownedLiteral xmi:id="_CZmH4EblEeW4gPrfTID4ag" name="STEMI Registry"/>
+      <ownedLiteral xmi:id="_UQM9EEblEeW4gPrfTID4ag" name="Stroke Registry"/>
+      <ownedLiteral xmi:id="_Yb13EEblEeW4gPrfTID4ag" name="Summary registry report {Trauma}"/>
+    </packagedElement>
     <profileApplication xmi:id="_7anMISYtEeWWbL2nbj5DdA">
       <eAnnotations xmi:id="_7anMIiYtEeWWbL2nbj5DdA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -67,13 +84,13 @@
   <term:ValueSetCode xmi:id="_1eNuIT3yEeW8QcLHABJt8A" conceptName="Telemetry/step-down unit (less acuity than ICU)" base_EnumerationLiteral="_1eNuID3yEeW8QcLHABJt8A"/>
   <term:ValueSetCode xmi:id="_5ak2AT3yEeW8QcLHABJt8A" conceptName="Transferred to another hospital" base_EnumerationLiteral="_5ak2AD3yEeW8QcLHABJt8A"/>
   <term:ValueSetCode xmi:id="_8Pi4AT3yEeW8QcLHABJt8A" conceptName="Other (jail, institutional care, mental health, etc.)" base_EnumerationLiteral="_8Pi4AD3yEeW8QcLHABJt8A"/>
-  <term:CodeSystemVersion xmi:id="_J9u1UT6uEeW8QcLHABJt8A" fullName="CMS-1450 Data Set (UB-04)" base_Enumeration="_J9u1UD6uEeW8QcLHABJt8A"/>
+  <term:CodeSystemVersion xmi:id="_J9u1UT6uEeW8QcLHABJt8A" identifier="2.16.840.1.113883.6.301" fullName="CMS-1450 Data Set (UB-04)" base_Enumeration="_J9u1UD6uEeW8QcLHABJt8A"/>
   <term:ValueSetVersion xmi:id="_axBzYT6uEeW8QcLHABJt8A" base_Enumeration="_axBzYD6uEeW8QcLHABJt8A"/>
   <term:ValueSetCode xmi:id="_eN2fkT6uEeW8QcLHABJt8A" conceptName="Discharged to home or self care (routine discharge)" base_EnumerationLiteral="_eN2fkD6uEeW8QcLHABJt8A"/>
   <term:ValueSetCode xmi:id="_hTO8IT6uEeW8QcLHABJt8A" conceptName="Discharged/transferred to another short term general hospital for inpatient care" base_EnumerationLiteral="_hTO8ID6uEeW8QcLHABJt8A"/>
   <term:ValueSetCode xmi:id="_kbMLkT6uEeW8QcLHABJt8A" conceptName="Discharged/transferred to a skilled nursing facility (SNF)" base_EnumerationLiteral="_kbMLkD6uEeW8QcLHABJt8A"/>
   <term:ValueSetCode xmi:id="_mMiNYT6uEeW8QcLHABJt8A" conceptName="Discharged/transferred to an intermediate care facility (ICF)" base_EnumerationLiteral="_mMiNYD6uEeW8QcLHABJt8A"/>
-  <term:ValueSetCode xmi:id="_ny7jcT6uEeW8QcLHABJt8A" conceptName="Discharged/transferred to another type of institution not defined elsewhere in this code list" base_EnumerationLiteral="_ny7jcD6uEeW8QcLHABJt8A"/>
+  <term:ValueSetCode xmi:id="_ny7jcT6uEeW8QcLHABJt8A" conceptName="Discharged/transferred to a designated cancer center or children’s hospital" base_EnumerationLiteral="_ny7jcD6uEeW8QcLHABJt8A"/>
   <term:ValueSetCode xmi:id="_phjBYT6uEeW8QcLHABJt8A" conceptName="Discharged/transferred to home under care of organized home health service organization in anticipation of covered skills care" base_EnumerationLiteral="_phjBYD6uEeW8QcLHABJt8A"/>
   <term:ValueSetCode xmi:id="_t9lu4T6uEeW8QcLHABJt8A" conceptName="Left against medical advice or discontinued care" base_EnumerationLiteral="_t9lu4D6uEeW8QcLHABJt8A"/>
   <term:ValueSetCode xmi:id="_vhLokT6uEeW8QcLHABJt8A" conceptName="Deceased/Expired (or did not recover - Religious Non Medical Health Care Patient)" base_EnumerationLiteral="_vhLokD6uEeW8QcLHABJt8A"/>
@@ -99,4 +116,22 @@
   <term:ValueSetCode xmi:id="_AqymIT61EeW8QcLHABJt8A" conceptName="Moderately severe disability; unable to walk without assistance and unable to attend to own bodily needs without assistance" base_EnumerationLiteral="_AqymID61EeW8QcLHABJt8A"/>
   <term:ValueSetCode xmi:id="_DZlHoT61EeW8QcLHABJt8A" conceptName="Severe disability; bedridden, incontinent and requiring constant nursing care and attention" base_EnumerationLiteral="_DZlHoD61EeW8QcLHABJt8A"/>
   <term:ValueSetCode xmi:id="_Gd-swT61EeW8QcLHABJt8A" conceptName="Dead" base_EnumerationLiteral="_Gd-swD61EeW8QcLHABJt8A"/>
+  <term:CodeSystemVersion xmi:id="_2ddNAEaXEeW4gPrfTID4ag" identifier="2.16.840.1.113883.6.12" fullName="Current Procedural Terminology" base_Enumeration="_2dcl8EaXEeW4gPrfTID4ag"/>
+  <term:CodeSystemVersion xmi:id="_Q6fcwUapEeW4gPrfTID4ag" identifier="2.16.840.1.113883.6.4" base_Enumeration="_Q6fcwEapEeW4gPrfTID4ag"/>
+  <term:ValueSetVersion xmi:id="_jC3VkEbkEeW4gPrfTID4ag" base_Enumeration="_jC2ugEbkEeW4gPrfTID4ag">
+    <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_vbHVcEgcEeSfpbeq3Ftc1g"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_lvf68EbkEeW4gPrfTID4ag" conceptName="TBD_010" base_EnumerationLiteral="_lvfT4EbkEeW4gPrfTID4ag"/>
+  <term:ValueSetCode xmi:id="_tQ4BsUbkEeW4gPrfTID4ag" conceptName="TBD_011" base_EnumerationLiteral="_tQ4BsEbkEeW4gPrfTID4ag"/>
+  <term:ValueSetCode xmi:id="_wCktQEbkEeW4gPrfTID4ag" conceptName="TBD_012" base_EnumerationLiteral="_wCkGMEbkEeW4gPrfTID4ag"/>
+  <term:ValueSetCode xmi:id="_yh0W4EbkEeW4gPrfTID4ag" conceptName="TBD_013" base_EnumerationLiteral="_yhzv0EbkEeW4gPrfTID4ag"/>
+  <term:ValueSetCode xmi:id="_01tsIEbkEeW4gPrfTID4ag" conceptName="TBD_014" base_EnumerationLiteral="_01tFEEbkEeW4gPrfTID4ag"/>
+  <term:ValueSetCode xmi:id="_2_eN8EbkEeW4gPrfTID4ag" conceptName="TBD_015" base_EnumerationLiteral="_2_dm4EbkEeW4gPrfTID4ag"/>
+  <term:ValueSetCode xmi:id="_5Ifv8UbkEeW4gPrfTID4ag" conceptName="75219-6" base_EnumerationLiteral="_5Ifv8EbkEeW4gPrfTID4ag"/>
+  <term:ValueSetCode xmi:id="_7owGMUbkEeW4gPrfTID4ag" conceptName="TBD_016" base_EnumerationLiteral="_7owGMEbkEeW4gPrfTID4ag"/>
+  <term:ValueSetCode xmi:id="_94FrkUbkEeW4gPrfTID4ag" conceptName="TBD_017" base_EnumerationLiteral="_94FrkEbkEeW4gPrfTID4ag"/>
+  <term:ValueSetCode xmi:id="_Adm8UUblEeW4gPrfTID4ag" conceptName="67796-3" base_EnumerationLiteral="_Adm8UEblEeW4gPrfTID4ag"/>
+  <term:ValueSetCode xmi:id="_CZmH4UblEeW4gPrfTID4ag" conceptName="TBD_019" base_EnumerationLiteral="_CZmH4EblEeW4gPrfTID4ag"/>
+  <term:ValueSetCode xmi:id="_UQM9EUblEeW4gPrfTID4ag" conceptName="TBD_020" base_EnumerationLiteral="_UQM9EEblEeW4gPrfTID4ag"/>
+  <term:ValueSetCode xmi:id="_Yb13EUblEeW4gPrfTID4ag" conceptName="74198-3" base_EnumerationLiteral="_Yb13EEblEeW4gPrfTID4ag"/>
 </xmi:XMI>

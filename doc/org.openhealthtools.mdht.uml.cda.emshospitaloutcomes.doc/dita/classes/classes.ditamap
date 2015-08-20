@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map title="Other Classes">
+<topicref href="EDContextReferenceEntry.dita" type="topic" />
 <topicref href="EMSOutcomesEncompassingEncounter.dita" type="topic" />
-<topicref href="OutcomesPriorDocument.dita" type="topic" />
 </map>

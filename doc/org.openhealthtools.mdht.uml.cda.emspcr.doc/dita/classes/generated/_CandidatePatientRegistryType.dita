@@ -42,7 +42,7 @@
   <templateId root="2.16.840.1.1133883.17.3.10.1.94"/>
   <code code="67553-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Condition indicating eligibility for illness or injury registry NEMSIS"/>
   <text>Text Value</text>
-  <value xsi:type="CD" code="1739341695"/>
+  <value xsi:type="CD" code="1537434862"/>
 </observation>]]></codeblock>
 <section id="changes">
 </section>

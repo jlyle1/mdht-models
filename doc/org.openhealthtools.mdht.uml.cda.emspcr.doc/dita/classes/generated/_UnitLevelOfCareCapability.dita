@@ -42,7 +42,7 @@
   <templateId root="2.16.840.1.1133883.17.3.10.1.190"/>
   <code code="77156-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS level of care capability"/>
   <text>Text Value</text>
-  <value xsi:type="CD" code="1573913016"/>
+  <value xsi:type="CD" code="327647326"/>
 </observation>]]></codeblock>
 <section id="changes">
 </section>

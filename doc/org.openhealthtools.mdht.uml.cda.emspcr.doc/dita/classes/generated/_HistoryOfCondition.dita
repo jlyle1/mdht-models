@@ -46,7 +46,7 @@ ICD-10 code (D66, D67, D68) and negationIndicator should be TRUE.</i></lines></p
   <templateId root="2.16.840.1.1133883.17.3.10.1.61"/>
   <code code="68487-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medical - surgical history - ICD-9 and 10 codes"/>
   <text>Text Value</text>
-  <value xsi:type="CD" code="1702459710"/>
+  <value xsi:type="CD" code="711755664"/>
 </observation>]]></codeblock>
 <section id="changes">
 </section>

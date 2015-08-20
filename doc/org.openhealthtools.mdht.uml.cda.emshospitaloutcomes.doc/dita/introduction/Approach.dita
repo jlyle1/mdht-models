@@ -4,20 +4,20 @@
 <topic id="topicId" xml:lang="en-us">
 	<title>Approach</title>
 	<body>
-		<p>Working with specifications generated from formal UML models provides the
-			opportunity to work with the data from the perspective of the
-			underlying model and electronic format and to explore many design
-			issues thoroughly. Taking this as an initial step ensures that the
-			data set developers and standards community can reach consensus prior
-			to the larger commitment of time that would be required to bring the
-			full data set into standard format.</p>
-		<p>This project supports reusability and ease of data collection
-			through a standard data representation harmonized with work developed
-			through Health Information Technology Expert Panel (HITEP), balloted
-			through Health Level Seven (HL7<tm tmtype="reg"/>) and/or recognized by the Health
-			Information Technology Standards Panel (HITSP).</p>
-		<p>This implementation guide (IG) specifies a standard for electronic
-			submission of NCRs in a Clinical Document Architecture (CDA<tm tmtype="reg"/>), Release
-			2 format.</p>
+		<p>The approach for standardization of NEMSIS elements has been to rely on the 
+			expertise of the twenty professional societies that defined the elements, and 
+			to focus on clearly articulating their adaptation to the CDA formalism.</p>
+		<p>As HL7 offers the expertise of EHR and emergency care professionals, the 
+			project team solicits input from these communities.</p>
+		<p>Special attention is requested for </p>
+		<ul>
+			<li>The method of identifying ED vs inpatient context</li>
+			<li>The possibility that there may be alternatives to the Rankin scale for 
+				discharge functional assessment</li>
+			<li>The value of asserting conformance to C-CDA templates, which may
+			enable more reuse for EHR firms, but which will also require a fairly 
+			heavy amount of nullification of elements designed for clinical care that
+			would be inappropriate for this tool.</li>
+		</ul>
 	</body>
 </topic>

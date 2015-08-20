@@ -48,21 +48,21 @@
   <component>
     <templateId root="null"/>
     <observation>
-      <code code="1376669531"/>
+      <code code="1644537733"/>
       <value xsi:type="ST">TEXT FOR VALUE</value>
     </observation>
   </component>
   <component>
     <templateId root="null"/>
     <observation>
-      <code code="30875061"/>
+      <code code="1526083992"/>
       <value xsi:type="PQ"/>
     </observation>
   </component>
   <component>
     <templateId root="null"/>
     <observation>
-      <code code="54407847"/>
+      <code code="365132442"/>
       <value xsi:type="PQ"/>
     </observation>
   </component>

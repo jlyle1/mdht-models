@@ -56,7 +56,7 @@
     <low value="2015"/>
     <high value="2015"/>
   </effectiveTime>
-  <value xsi:type="CD" code="1297377782"/>
+  <value xsi:type="CD" code="1734621296"/>
   <methodCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 </observation>]]></codeblock>
 <section id="changes">

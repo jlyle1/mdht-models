@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
     <booktitle>
 		<mainbooktitle>Emergency Medical Services Patient Care Report</mainbooktitle>
-		<booktitlealt id="ballot">May 2015</booktitlealt>
+		<booktitlealt id="Publication">May 2015</booktitlealt>
 		<booktitlealt id="image"><image href="images/hl7logo.gif"/></booktitlealt>	
     </booktitle>
     <bookmeta>
@@ -17,7 +17,7 @@
 				<vrm release="R2" version="2015AUG" ></vrm>
 			</vrmlist>
 			<brand>HL7 IG for CDA R2</brand>
-			<series>Normative</series>
+			<series>Normative (provisional)</series>
 			<platform>US Realm</platform>
 		</prodinfo>
         <bookid>

@@ -77,20 +77,20 @@ Complaint site is required if complaint is type "Chief complaint"</i></lines></p
   <targetSiteCode codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
   <entryRelationship>
     <observation>
-      <code code="370651743"/>
+      <code code="1798881986"/>
       <value xsi:type="PQ"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <code code="1764839021"/>
-      <value xsi:type="CD" code="370743994"/>
+      <code code="1566875038"/>
+      <value xsi:type="CD" code="372860795"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
     <observation>
-      <code code="107359705"/>
-      <value xsi:type="CD" code="1023339725"/>
+      <code code="442209"/>
+      <value xsi:type="CD" code="340863303"/>
     </observation>
   </entryRelationship>
 </observation>]]></codeblock>

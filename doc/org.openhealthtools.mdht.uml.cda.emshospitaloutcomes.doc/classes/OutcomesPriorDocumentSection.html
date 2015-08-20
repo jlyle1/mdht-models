@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Outcomes Prior Document Section"/>
+<meta name="abstract" content="[Section: templateId null]"/>
+<meta name="description" content="[Section: templateId null]"/>
+<meta name="DC.Coverage" content="Section"/>
+<meta name="DC.Relation" scheme="URI" content="../content/SectionTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Outcomes Prior Document Section</title>
+</head>
+<body id="classId">
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7<tm tmtype="reg"/>, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Outcomes Prior Document Section</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">null</tt>]</p>
+
+<div class="section">
+</div>
+
+
+<div class="section">
+</div>
+
+<div class="section"><div class="p">
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" width="100%" frame="border" border="1" rules="all"> <thead class="thead" align="left"><tr class="row"><th class="entry" colspan="1" align="left" valign="top" id="d6351e41">Contained By</th>
+<th class="entry" colspan="1" align="left" valign="top" id="d6351e43">Contains</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" align="left" valign="top" headers="d6351e41 "><a class="xref" href="EmsHospitalOutcomes.html" title="[ClinicalDocument: templateId 2.16.840.1.113883.17.3.10.3]">ems Hospital Outcomes</a></td>
+<td class="entry" align="left" valign="top" headers="d6351e43 "> </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:51)<tt class="ph tt"><strong class="ph b">/@code</strong>="LOINC_TBD_001" </tt><em class="ph i">External Document Section</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:50)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:52)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> and <strong class="ph b">SHOULD</strong> equal "External Document" (CONF:53)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> {subsets  Section::entry} (CONF:55) <ol class="ol" type="a"><li class="li">Such entries <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">outcomesPriorDocument</strong></tt> <ol class="ol" type="i"><li class="li">This outcomesPriorDocument <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"/><strong class="ph b"> STATIC</strong> (CONF:25)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace:  eOutcome.03 - External Report ID/Number Type, eOutcome.05 - Other Report Registry Type. If the type is not found, the type code may be null and the other type text placed in the code original text attribute.</em></p>
+</div>
+</li>
+<li class="li">This outcomesPriorDocument <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:26)<div class="p"><p class="lines"><em class="ph i">NEMSIS Trace: eOutcome.04 - External Report ID/Number. This will typically be placed in the extension, as NEMSIS will not maintain an OID registry for all responder and healthcare organizations. The vendor or implementer may discover or assign OIDS.</em></p>
+</div>
+</li>
+</ol>
+ </li>
+</ol>
+ 
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Outcomes Prior Document Section example</strong></p>
+
+
+
+<pre class="pre codeblock language-xml">Error: Missing Runtime Class</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/SectionTemplates.html">SECTION TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

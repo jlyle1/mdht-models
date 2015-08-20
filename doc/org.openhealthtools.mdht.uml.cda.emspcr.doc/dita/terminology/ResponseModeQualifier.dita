@@ -33,8 +33,6 @@
 <row><entry>LA22805-8</entry><entry>LOINC</entry><entry>No Lights or Sirens</entry></row>
 <row><entry>LA22806-6</entry><entry>LOINC</entry><entry>Initial No Lights or Sirens, Upgraded to Lights and Sirens</entry></row>
 <row><entry>LA22807-4</entry><entry>LOINC</entry><entry>Initial Lights and Sirens, Downgraded to No Lights or Sirens</entry></row>
-<row><entry>LOINC_TBDA_017</entry><entry>LOINC</entry><entry>Scheduled</entry></row>
-<row><entry>LOINC_TBDA_018</entry><entry>LOINC</entry><entry>Unscheduled</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

@@ -47,10 +47,10 @@
   <templateId root="2.16.840.1.1133883.17.3.10.1.33"/>
   <code code="67550-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Transport mode from scene NEMSIS"/>
   <text>Text Value</text>
-  <value xsi:type="CD" code="608226007"/>
+  <value xsi:type="CD" code="2119161340"/>
   <entryRelationship typeCode="COMP">
     <observation>
-      <code code="412779492"/>
+      <code code="17383008"/>
     </observation>
   </entryRelationship>
 </observation>]]></codeblock>

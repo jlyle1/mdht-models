@@ -108,46 +108,46 @@
   </informant>
   <entryRelationship typeCode="SUBJ" inversionInd="true">
     <observation>
-      <code code="345829701"/>
+      <code code="210462985"/>
     </observation>
   </entryRelationship>
   <entryRelationship typeCode="SUBJ" inversionInd="true">
     <observation>
-      <code code="1782090225"/>
+      <code code="1652646961"/>
       <value xsi:type="BL"/>
       <participant typeCode="RESP"/>
     </observation>
   </entryRelationship>
   <entryRelationship typeCode="SUBJ" inversionInd="true">
     <observation>
-      <code code="1149945549"/>
+      <code code="393627687"/>
       <participant typeCode="RESP"/>
     </observation>
   </entryRelationship>
   <entryRelationship typeCode="SUBJ" inversionInd="true">
     <observation>
-      <code code="1915966321"/>
-      <value xsi:type="CD" code="902618432"/>
+      <code code="1908272229"/>
+      <value xsi:type="CD" code="138373120"/>
     </observation>
   </entryRelationship>
   <entryRelationship typeCode="SUBJ" inversionInd="true">
     <observation>
-      <code code="1105095202"/>
+      <code code="956498705"/>
     </observation>
   </entryRelationship>
   <entryRelationship typeCode="SUBJ" inversionInd="true">
     <observation>
-      <code code="1752144876"/>
+      <code code="1849938595"/>
     </observation>
   </entryRelationship>
   <entryRelationship typeCode="SUBJ" inversionInd="true">
     <observation>
-      <code code="529723821"/>
+      <code code="464094464"/>
     </observation>
   </entryRelationship>
   <entryRelationship typeCode="COMP">
     <observation>
-      <code code="55996049"/>
+      <code code="772430630"/>
     </observation>
   </entryRelationship>
 </observation>]]></codeblock>

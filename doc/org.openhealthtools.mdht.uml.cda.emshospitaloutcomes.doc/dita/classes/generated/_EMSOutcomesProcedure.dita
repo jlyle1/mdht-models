@@ -13,9 +13,9 @@
 <section id="description">
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from (CodeSystem:<tt> </tt>)
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt> (CONF:11), which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.4 ICD-10 PCS</tt>) (CONF:10)
 <ul><li><p><lines><i>NEMSIS Trace: eOutcome.12 - Hospital Procedures, eOutcome.09 - Emergency Department Procedures</i></lines></p></li></ul></li>
-<li><b>SHALL</b> contain zero or more [0..*] <tt><b>templateId</b></tt>
+<li><b>SHALL</b> contain zero or more [0..*] <tt><b>templateId</b></tt> (CONF:12)
 </li>
 </ol>
 <ol id="aggregate">
@@ -23,9 +23,9 @@
 </li>
 <li>contain exactly one [1..1] <tt><b>@moodCode</b></tt> with @xsi:type="x_DocumentProcedureMood"
 </li>
-<li><b>SHALL</b> contain zero or more [0..*] <tt><b>templateId</b></tt>
+<li><b>SHALL</b> contain zero or more [0..*] <tt><b>templateId</b></tt> (CONF:12)
 </li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from (CodeSystem:<tt> </tt>)
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt> (CONF:11), which <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.4 ICD-10 PCS</tt>) (CONF:10)
 <ul><li><p><lines><i>NEMSIS Trace: eOutcome.12 - Hospital Procedures, eOutcome.09 - Emergency Department Procedures</i></lines></p></li></ul></li>
 </ol>
 <section id="contextTable"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="2" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><thead><row><entry namest="col0" nameend="col0" >Contained By</entry><entry namest="col1" nameend="col1" >Contains</entry></row></thead><tbody></tbody></tgroup></table></p></section>
