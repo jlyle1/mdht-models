@@ -72,7 +72,7 @@
     </profileApplication>
   </uml:Package>
   <term:CodeSystemVersion xmi:id="_mHeDET3xEeW8QcLHABJt8A" identifier="2.16.840.1.113883.6.1" fullName="Logical Observation Identifiers Names and Codes" url="loinc.org" base_Enumeration="_mHeDED3xEeW8QcLHABJt8A"/>
-  <term:ValueSetVersion xmi:id="_D2cNYT3yEeW8QcLHABJt8A" codeSystem="_mHeDET3xEeW8QcLHABJt8A" base_Enumeration="_D2cNYD3yEeW8QcLHABJt8A"/>
+  <term:ValueSetVersion xmi:id="_D2cNYT3yEeW8QcLHABJt8A" identifier="2.16.840.1.113883.17.3.11.112" codeSystem="_mHeDET3xEeW8QcLHABJt8A" base_Enumeration="_D2cNYD3yEeW8QcLHABJt8A"/>
   <term:ValueSetCode xmi:id="_JLrzwT3yEeW8QcLHABJt8A" conceptName="Floor bed (general admission, non-specialty unit bed)" base_EnumerationLiteral="_JLrzwD3yEeW8QcLHABJt8A"/>
   <term:ValueSetCode xmi:id="_cpvH4T3yEeW8QcLHABJt8A" conceptName="Died/Expired" base_EnumerationLiteral="_cpvH4D3yEeW8QcLHABJt8A"/>
   <term:ValueSetCode xmi:id="_hSkUMT3yEeW8QcLHABJt8A" conceptName="Home with services" base_EnumerationLiteral="_hSkUMD3yEeW8QcLHABJt8A"/>
@@ -85,7 +85,7 @@
   <term:ValueSetCode xmi:id="_5ak2AT3yEeW8QcLHABJt8A" conceptName="Transferred to another hospital" base_EnumerationLiteral="_5ak2AD3yEeW8QcLHABJt8A"/>
   <term:ValueSetCode xmi:id="_8Pi4AT3yEeW8QcLHABJt8A" conceptName="Other (jail, institutional care, mental health, etc.)" base_EnumerationLiteral="_8Pi4AD3yEeW8QcLHABJt8A"/>
   <term:CodeSystemVersion xmi:id="_J9u1UT6uEeW8QcLHABJt8A" identifier="2.16.840.1.113883.6.301" fullName="CMS-1450 Data Set (UB-04)" base_Enumeration="_J9u1UD6uEeW8QcLHABJt8A"/>
-  <term:ValueSetVersion xmi:id="_axBzYT6uEeW8QcLHABJt8A" base_Enumeration="_axBzYD6uEeW8QcLHABJt8A"/>
+  <term:ValueSetVersion xmi:id="_axBzYT6uEeW8QcLHABJt8A" identifier="2.16.840.1.113883.17.3.11.113" base_Enumeration="_axBzYD6uEeW8QcLHABJt8A"/>
   <term:ValueSetCode xmi:id="_eN2fkT6uEeW8QcLHABJt8A" conceptName="Discharged to home or self care (routine discharge)" base_EnumerationLiteral="_eN2fkD6uEeW8QcLHABJt8A"/>
   <term:ValueSetCode xmi:id="_hTO8IT6uEeW8QcLHABJt8A" conceptName="Discharged/transferred to another short term general hospital for inpatient care" base_EnumerationLiteral="_hTO8ID6uEeW8QcLHABJt8A"/>
   <term:ValueSetCode xmi:id="_kbMLkT6uEeW8QcLHABJt8A" conceptName="Discharged/transferred to a skilled nursing facility (SNF)" base_EnumerationLiteral="_kbMLkD6uEeW8QcLHABJt8A"/>
@@ -106,7 +106,7 @@
   <term:ValueSetCode xmi:id="_AAcQUT6vEeW8QcLHABJt8A" conceptName="Discharged/transferred to a psychiatric hospital or psychiatric distinct part unit of a hospital" base_EnumerationLiteral="_AAcQUD6vEeW8QcLHABJt8A"/>
   <term:ValueSetCode xmi:id="_BzhXgT6vEeW8QcLHABJt8A" conceptName="Discharged/transferred to a Critical Access Hospital (CAH)" base_EnumerationLiteral="_BzhXgD6vEeW8QcLHABJt8A"/>
   <term:ValueSetCode xmi:id="_Dd0WIT6vEeW8QcLHABJt8A" conceptName="Discharged/transferred to another type of health care institution not defined elsewhere in the code list" base_EnumerationLiteral="_Dd0WID6vEeW8QcLHABJt8A"/>
-  <term:ValueSetVersion xmi:id="_vIoW8T60EeW8QcLHABJt8A" base_Enumeration="_vIoW8D60EeW8QcLHABJt8A">
+  <term:ValueSetVersion xmi:id="_vIoW8T60EeW8QcLHABJt8A" identifier="2.16.840.1.113883.17.3.11.110" base_Enumeration="_vIoW8D60EeW8QcLHABJt8A">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_zrzAIT60EeW8QcLHABJt8A" conceptName="No symptoms" base_EnumerationLiteral="_zrzAID60EeW8QcLHABJt8A"/>
@@ -118,7 +118,7 @@
   <term:ValueSetCode xmi:id="_Gd-swT61EeW8QcLHABJt8A" conceptName="Dead" base_EnumerationLiteral="_Gd-swD61EeW8QcLHABJt8A"/>
   <term:CodeSystemVersion xmi:id="_2ddNAEaXEeW4gPrfTID4ag" identifier="2.16.840.1.113883.6.12" fullName="Current Procedural Terminology" base_Enumeration="_2dcl8EaXEeW4gPrfTID4ag"/>
   <term:CodeSystemVersion xmi:id="_Q6fcwUapEeW4gPrfTID4ag" identifier="2.16.840.1.113883.6.4" base_Enumeration="_Q6fcwEapEeW4gPrfTID4ag"/>
-  <term:ValueSetVersion xmi:id="_jC3VkEbkEeW4gPrfTID4ag" base_Enumeration="_jC2ugEbkEeW4gPrfTID4ag">
+  <term:ValueSetVersion xmi:id="_jC3VkEbkEeW4gPrfTID4ag" identifier="2.16.840.1.113883.17.3.11.111" base_Enumeration="_jC2ugEbkEeW4gPrfTID4ag">
     <codeSystem href="pathmap://TERM_MODEL/CodeSystems.uml#_vbHVcEgcEeSfpbeq3Ftc1g"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_lvf68EbkEeW4gPrfTID4ag" conceptName="TBD_010" base_EnumerationLiteral="_lvfT4EbkEeW4gPrfTID4ag"/>

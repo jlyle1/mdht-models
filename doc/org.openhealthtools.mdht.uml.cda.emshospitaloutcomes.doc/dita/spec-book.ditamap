@@ -34,7 +34,7 @@
 	<frontmatter>
 		<preface>
 			<topicref href="preface/Acknowledgments.dita" navtitle="Acknowledgments" type="topic"/>
-			<topicref href="preface/IP.dita" navtitle="IP Notes" type="topic"/>
+			<!-- <topicref href="preface/IP.dita" navtitle="IP Notes" type="topic"/>  -->
 			<topicref href="preface/RevisionHistory.dita" navtitle="Authors" type="topic"/>
 		</preface>
 		<booklists>
